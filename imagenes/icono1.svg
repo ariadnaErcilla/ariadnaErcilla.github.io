@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="144px" height="142px" viewBox="0 0 144 142" enable-background="new 0 0 144 142" xml:space="preserve">
+<circle fill="#00A6A5" cx="74.451" cy="72.519" r="58.283"/>
+<g>
+	<path fill="#FFFFFF" d="M105.572,38.352H43.344c-2.65,0-4.799,2.156-4.799,4.816v44.213c0,2.66,2.148,4.83,4.799,4.83h23.869
+		c0,0,1.047,9.646-7.236,9.646v4.83h28.957v-4.83c-8.6,0-7.244-9.646-7.244-9.646h23.885c2.646,0,4.785-2.17,4.785-4.83V43.168
+		C110.359,40.508,108.221,38.352,105.572,38.352L105.572,38.352z M70.633,86.303c0-2.287,1.857-4.137,4.145-4.137
+		c2.289,0,4.137,1.85,4.137,4.137c0,2.285-1.85,4.137-4.137,4.137C72.491,90.439,70.633,88.588,70.633,86.303L70.633,86.303z
+		 M105.229,80.758H43.674V43.479h61.555V80.758z"/>
+</g>
+<path fill="#ED1654" d="M-174.496-540.3c-1.408,0-2.551-1.139-2.551-2.549h5.1C-171.947-541.438-173.088-540.3-174.496-540.3
+	L-174.496-540.3z"/>
+<g id="Mensaje_de_error_1" display="none">
+	
+		<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 898.5586 1066.2832)" display="inline" fill="#ED1C24" font-family="'Lato-Bold'" font-size="24">+</text>
+	<text transform="matrix(1 0 0 1 921.667 1071.1387)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">Este correo electrónico no es válido por favor </text>
+	<text transform="matrix(1 0 0 1 921.667 1089.1387)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">inténtelo nuevamente</text>
+	
+		<rect x="902.273" y="1017.534" display="inline" fill="none" stroke="#ED1C24" stroke-width="0.5" stroke-miterlimit="10" width="239.434" height="30"/>
+</g>
+<g id="Mensaje_de_error_2_copy" display="none">
+	
+		<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 898.5586 1066.2832)" display="inline" fill="#ED1C24" font-family="'Lato-Bold'" font-size="24">+</text>
+	<text transform="matrix(1 0 0 1 921.667 1071.1387)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">Por favor escriba un correo eléctrónico para que </text>
+	<text transform="matrix(1 0 0 1 921.667 1089.1387)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">podamos informarle de las novedades </text>
+	
+		<rect x="902.273" y="1017.534" display="inline" fill="none" stroke="#ED1C24" stroke-width="0.5" stroke-miterlimit="10" width="239.434" height="30"/>
+</g>
+<g id="Mensaje_de_error_3_copy_2">
+</g>
+</svg>

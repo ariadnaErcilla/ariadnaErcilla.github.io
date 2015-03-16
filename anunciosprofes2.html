@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anuncios de los Profesores</title>
+    <link rel="stylesheet" href="css/anunciosprofes.css">
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/pie.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+            <div id="imglogo">
+                 <a href="index2.html">
+                <img src="imagenes/logoytexto.png" alt="Logo" style="width:156px"></a>
+            </div>
+    <div id="menu">
+        <div class="menuizquierda">
+            <ul>
+                <li class="encuentra"><a href="anunciosprofes2.html" style="text-decoration:none; color:black">ENCUENTRA TU CURSO</li>
+                <li class="busca"><a href="anuncios2.html" style="text-decoration:none; color:black">AYUDA A UN CREATIVO</a></li>
+            </ul>
+        </div>
+        <div class="menuderecha">
+            <ul>
+                <li class="cursos"><a href="perfil_sobremi.html" style="text-decoration:none;color:black">Mi perfil</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+   <div id="publicar" class="masc">
+    <div class="popupbox popupbox2 movedown movedown3">
+        <a href="#close" title="close" class="close">X</a>
+        <div class="contenidopublicar cf">
+            <div class="cajainstrucciones">
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                        Título:
+                    </p>
+                    <p class="subtitulospublicar">
+                        *Máximo 30 caracteres
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                       Categoría:
+                   </p>
+                   <form>
+                    <select name="text" class="estiloinputs">
+                        <option value="Arquitectura">Arquitectura</option>
+                        <option value="Animación">Animación</option>
+                        <option value="Diseño Audiovisual">Diseño Audiovisual</option>
+                        <option value="Diseño Industrial">Diseño Industrial</option>
+                        <option value="Linux">Diseño Gráfico</option>
+                        <option value="Linux">Diseño de Moda</option>
+                        <option value="Linux">Diseño Web</option>
+                        <option value="Linux">Fotografía</option>
+                        <option value="Linux">Programación</option>
+                    </select>
+                </form>
+            </div>
+            <div class="cajaformulario">
+                <p class="titulospublicar">
+                    Método de clase:
+                </p>
+                <form>
+                    <input type="checkbox"><p class="metodoclase">Presencial</p>
+                    <input type="checkbox"><p class="metodoclase">Skype</p>
+                    <input type="checkbox"><p class="metodoclase">Email</p>
+                </form>
+            </div>
+            <div class="cajaformulario">
+                <p class="titulospublicar">
+                    Descripción:
+                </p>
+                <p class="subtitulospublicar">
+                    *Máximo 200 caracteres
+                </p>
+                <form>
+                    <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
+                </form>
+            </div>
+            <div class="cajaformulario">
+                <p class="titulospublicar">
+                   Tags:
+               </p>
+               <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
+           </div>
+           <div class="cajaformulario">
+            <p class="titulospublicar">
+                Sube una foto de tu trabajo:
+            </p>
+            <p class="subtitulospublicar">
+                *Máximo 3,2 x 3,2 cm
+            </p>
+            <form>
+                <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
+            </form>
+        </div>
+    </div>
+    <div class="cajaconsejos">
+        <div class="consejos">
+            <h3 class="tituloconsejos">¡Mira mis consejos!</h3>
+            <div class="botonconsejos">1</div>
+            <p class="consejo">Pon un título corto y directo a tu anuncio</p>
+            <div class="botonconsejos">2</div>
+            <p class="consejo">Selecciona una categoria para clasificar tu anuncio.</p>
+            <div class="botonconsejos">3</div>
+            <p class="consejo">Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
+            <div class="botonconsejos">4</div>
+            <p class="consejo">Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
+            <div class="botonconsejos">5</div>
+            <p class="consejo">Sube una buena foto y verás como funciona tu anuncio.<p>
+            </div>
+            <div class="publicaranuncios">
+                <a href="graciaspublicar.html" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+ <div class="tituloencabezado">
+        <h3 class="encuentratucurso">
+            Encuentra tu curso
+        </h3>
+        <p class="subtituloencuentratucurso">
+            Busca el curso que te interesa según tu áera creativa y contacta con el profesor.
+        </p>
+        <div class="munecobusqueda">
+            <img src="imagenes/muñecobusqueda.svg">
+        </div>
+    </div>
+    <div id="container">
+        <article class="categorias">
+            <div class="publicaranuncios">
+                <a href="#publicar" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
+            </div>
+            <p class="titulocategorias">Categorías</p>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/arquitectura_b.svg" width="45px">
+                <a href="arquitectura2.html" style="text-decoration:none"><p class="categoriasmenu">Arquitectura</p></a>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/animacion_b.svg" width="45px">
+                <p class="categoriasmenu">Animación</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/audiovisual_b.svg" width="45px">
+                <p class="categoriasmenu">Diseño Audiovisual</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/industrial_b.svg" width="45px">
+                <p class="categoriasmenu">Diseño Industrial</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/grafico_b.svg" width="45px">
+                <p class="categoriasmenu">Diseño Gráfico</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/moda_b.svg" width="45px">
+                <p class="categoriasmenu">Diseño de Moda</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/web_b.svg" width="45px">
+                <p class="categoriasmenu">Diseño Web</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/foto_b.svg" width="45px">
+                <p class="categoriasmenu">Fotografía</p>
+            </div>
+            <div class="iconos">
+                <img class="icononaranja" src="imagenes/programacion_b.svg" width="45px">
+                <p class="categoriasmenu">Programación</p>
+            </div>
+        </article>
+        <article class="todosanuncios">
+            <div class="anuncioshorizontal cf">
+                <div class="anuncioizquierda">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/foto_videojuego.jpg" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/foto_videojuego.jpg';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Animar videojuegos en Unity</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/animacion_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Animación</p>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <h3 class="contactame">
+                            <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Marta pérez</a>
+                        </h3>
+                    </div>
+                    <div class="botonmail">
+                        <a href="mailto:direccion@dominio.com">
+                        <img src="imagenes/mail-b.svg" width="45px">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="anunciomedio">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/ejemploanimacion.png" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/ejemploanimacion.png';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Modela tu objeto en 3D Studio</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/industrial_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Diseño industrial</p>
+                        </div>
+                        <div class="boton">
+                            <h3 class="contactame">
+                                <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Santi Rodríguez</a>
+                            </h3>
+                        </div>
+                        <div class="botonmailmedio">
+                            <a href="mailto:direccion@dominio.com">
+                                <img src="imagenes/mail-b.svg" width="45px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anuncioderecha">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/foto_noche.jpg" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/foto_noche.jpg';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Aprende a tractar fotos nocturnas</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/grafico_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Fotografía</p>
+                        </div>
+                        <div class="boton">
+                            <h3 class="contactame">
+                                <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Paco González</a>
+                            </h3>
+                        </div>
+                        <div class="botonmailmedio">
+                            <a href="mailto:direccion@dominio.com">
+                                <img src="imagenes/mail-b.svg" width="45px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anuncioshorizontal cf">
+                <div class="anuncioizquierda">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/foto_videojuego.jpg" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/foto_videojuego.jpg';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Animar videojuegos en Unity</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/animacion_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Animación</p>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <h3 class="contactame">
+                            <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Marta pérez</a>
+                        </h3>
+                    </div>
+                    <div class="botonmail">
+                        <a href="mailto:direccion@dominio.com">
+                        <img src="imagenes/mail-b.svg" width="45px">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="anunciomedio">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/ejemploanimacion.png" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/ejemploanimacion.png';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Modela tu objeto en 3D Studio</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/industrial_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Diseño industrial</p>
+                        </div>
+                        <div class="boton">
+                            <h3 class="contactame">
+                                <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Santi Rodríguez</a>
+                            </h3>
+                        </div>
+                        <div class="botonmailmedio">
+                            <a href="mailto:direccion@dominio.com">
+                                <img src="imagenes/mail-b.svg" width="45px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anuncioderecha">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/foto_noche.jpg" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/foto_noche.jpg';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Aprende a tractar fotos nocturnas</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/grafico_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Fotografía</p>
+                        </div>
+                        <div class="boton">
+                            <h3 class="contactame">
+                                <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Paco González</a>
+                            </h3>
+                        </div>
+                        <div class="botonmailmedio">
+                            <a href="mailto:direccion@dominio.com">
+                                <img src="imagenes/mail-b.svg" width="45px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anuncioshorizontal cf">
+                <div class="anuncioizquierda">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/foto_videojuego.jpg" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/foto_videojuego.jpg';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Animar videojuegos en Unity</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/animacion_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Animación</p>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <h3 class="contactame">
+                            <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Marta pérez</a>
+                        </h3>
+                    </div>
+                    <div class="botonmail">
+                        <a href="mailto:direccion@dominio.com">
+                        <img src="imagenes/mail-b.svg" width="45px">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="anunciomedio">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/ejemploanimacion.png" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/ejemploanimacion.png';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Modela tu objeto en 3D Studio</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/industrial_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Diseño industrial</p>
+                        </div>
+                        <div class="boton">
+                            <h3 class="contactame">
+                                <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Santi Rodríguez</a>
+                            </h3>
+                        </div>
+                        <div class="botonmailmedio">
+                            <a href="mailto:direccion@dominio.com">
+                                <img src="imagenes/mail-b.svg" width="45px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anuncioderecha">
+                    <div class="foto">
+                        <a href="perfil_sobremi.html">
+                            <img src="imagenes/foto_noche.jpg" onmouseover="this.src='imagenes/anuncioprofe1.svg';" onmouseout="this.src='imagenes/foto_noche.jpg';" width="97%">
+                        </a>
+                    </div>
+                    <h3 class="titulo">Aprende a tractar fotos nocturnas</h3>
+                    <div class="franja">
+                        <div class="subfranja">
+                            <div class="botoncategoria">
+                                <img src="imagenes/grafico_c.svg" width="25px">
+                            </div>
+                            <p class="textocategoria" style="color:#404041">Fotografía</p>
+                        </div>
+                        <div class="boton">
+                            <h3 class="contactame">
+                                <a href="mailto:direccion@dominio.com" style="text-decoration:none; color:#404041; font-size:12px">Paco González</a>
+                            </h3>
+                        </div>
+                        <div class="botonmailmedio">
+                            <a href="mailto:direccion@dominio.com">
+                                <img src="imagenes/mail-b.svg" width="45px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </article>
+
+    <article class="article3">
+        <div class="pie">
+        <section class="miniboxpie"><span>Contacto</span>
+            <p class="textoarticle3">holapuntoyseguido@gmail.com</p>
+            <p class="textoarticle3">(+34)722 563 505</p>
+        </section>
+        <section class="miniboxpie">
+            <div id="iconos">
+            <div class="twitter"><a target="blank" href="https://twitter.com/puntoyseguidoo" style="text-decoration:none"><img src="imagenes/twitter.svg" alt="twitter" style="width:40"></a></div>
+            <div class="facebook"><a target="blank" href="https://www.facebook.com/puntoyseguidoo" style="text-decoration:none"><img src="imagenes/facebook.svg" alt="facebook" style="width:40"></a></div>
+            </div>
+        </section>
+        <section class="miniboxpie"><span>Newsletter</span>
+            <div class="newsletter">
+            <div class="caja">
+                <input type="text" size="35" maxlength="70" value="ejemplo@gmail.com" name="ejemplo"></div>
+            <div class="botonunete"><a href="graciasnews.html" style="text-decoration:none; color:black">Únete</a>
+            </div>
+             <p class="derechos">Haciendo click aquí aceptas nuestras <a href="normasnews.html" target="_blank">bases y condiciones</a></p>
+            </div>
+        </section>
+    </div>
+        <footer>
+        <p class="textopie" style="margin:0px">©2014 puntoyseguido.All rights reserved.</p>
+    </footer>
+
+    </article>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="43px" height="44.666px" viewBox="0 0 43 44.666" enable-background="new 0 0 43 44.666" xml:space="preserve">
+<g id="Mensaje_de_error_1" display="none">
+	
+		<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 363.2246 73.6162)" display="inline" fill="#ED1C24" font-family="'Lato-Bold'" font-size="24">+</text>
+	<text transform="matrix(1 0 0 1 386.333 78.4717)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">Este correo electrónico no es válido por favor </text>
+	<text transform="matrix(1 0 0 1 386.333 96.4717)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">inténtelo nuevamente</text>
+	
+		<rect x="366.939" y="24.867" display="inline" fill="none" stroke="#ED1C24" stroke-width="0.5" stroke-miterlimit="10" width="239.434" height="30"/>
+</g>
+<g id="Mensaje_de_error_2_copy" display="none">
+	
+		<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 363.2246 73.6162)" display="inline" fill="#ED1C24" font-family="'Lato-Bold'" font-size="24">+</text>
+	<text transform="matrix(1 0 0 1 386.333 78.4717)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">Por favor escriba un correo eléctrónico para que </text>
+	<text transform="matrix(1 0 0 1 386.333 96.4717)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">podamos informarle de las novedades </text>
+	
+		<rect x="366.939" y="24.867" display="inline" fill="none" stroke="#ED1C24" stroke-width="0.5" stroke-miterlimit="10" width="239.434" height="30"/>
+</g>
+<g id="Mensaje_de_error_3_copy_2" display="none">
+	
+		<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 363.2246 73.6162)" display="inline" fill="#ED1C24" font-family="'Lato-Bold'" font-size="24">+</text>
+	<text transform="matrix(1 0 0 1 386.333 78.4717)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">Este correo ya está registrado en nuestra base </text>
+	<text transform="matrix(1 0 0 1 386.333 96.4717)" display="inline" fill="#ED1C24" font-family="'Lato-Light'" font-size="16">de datos</text>
+	
+		<rect x="366.939" y="24.867" display="inline" fill="none" stroke="#ED1C24" stroke-width="0.5" stroke-miterlimit="10" width="239.434" height="30"/>
+</g>
+<g>
+	<circle fill="#FFFFFF" cx="21.571" cy="22.813" r="19.429"/>
+	<path d="M12.132,10.276h18.88c1.793,0,3.262,1.328,3.262,3.261v18.88c0,1.934-1.469,3.262-3.262,3.262h-18.88
+		c-1.794,0-3.262-1.328-3.262-3.262v-18.88C8.87,11.604,10.338,10.276,12.132,10.276L12.132,10.276z M27.376,13.1
+		c-0.632,0-1.145,0.514-1.145,1.142v2.74c0,0.628,0.513,1.142,1.145,1.142h2.869c0.629,0,1.145-0.513,1.145-1.142v-2.74
+		c0-0.627-0.516-1.142-1.145-1.142H27.376L27.376,13.1z M31.4,21.019h-2.235c0.213,0.691,0.327,1.421,0.327,2.18
+		c0,4.224-3.534,7.65-7.896,7.65c-4.36,0-7.895-3.427-7.895-7.65c0-0.759,0.113-1.488,0.324-2.18h-2.333v10.729
+		c0,0.556,0.457,1.013,1.012,1.013h17.687c0.556,0,1.01-0.457,1.01-1.013V21.019L31.4,21.019z M21.594,17.979
+		c-2.817,0-5.101,2.213-5.101,4.943c0,2.732,2.284,4.943,5.101,4.943c2.819,0,5.103-2.211,5.103-4.943
+		C26.696,20.192,24.413,17.979,21.594,17.979z"/>
+</g>
+</svg>

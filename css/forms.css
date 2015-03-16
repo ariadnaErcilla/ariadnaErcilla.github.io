@@ -1,0 +1,53 @@
+.popupbox{
+	
+	position:relative;
+	padding:5px 20px 13px 20px;
+	background:white;
+	border-radius:5px;
+	top: 30px;
+	transition:all 500ms ease-in;
+	border: 5px solid #54c4c7;
+
+
+
+}
+
+.popupbox3{
+
+	top:0;
+
+}
+.formulario{
+
+	margin-top: 20px;
+
+}
+
+.cajaformulario{
+    padding-left: 10px;
+    clear: both;
+    margin-top: 20px;
+}
+
+.estiloinputs {
+    height: 30px;
+    width: 290px;
+}
+
+.close{
+	background: #f15c22;
+	color:#FFF;
+	line-height:25px;
+	position:absolute;
+	right:1px;
+	text-align:center;
+	top:1px;
+	width:24px;
+	text-decoration:none;
+	font-weight:bold;
+	border-radius:3px;
+}
+
+.close:hover{
+	background:#333333;
+}

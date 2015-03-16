@@ -1,0 +1,155 @@
+button {
+	
+	font-size: 18px;
+	font-weight: bolder;
+    border: none;
+    margin: 0 auto;
+    width: 240px;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+button:hover{
+
+    background-color:#404041;
+}
+
+button a{
+    color:white;
+}
+
+button a.ayuda{
+    color:#f15c22;
+}
+/*------
+popup
+------*/
+
+
+/*---------
+encuentra un curso
+---------*/
+.botonmailmedio {
+    position: absolute;
+    background-color: #f15c22;
+    width: 110px;
+    height: 52px;
+    border: 10px solid white;
+    border-radius: 15px;
+    left:0;
+    margin:0 auto;
+    right:0;
+    bottom: -27px;
+}
+
+.botonmailmedio:hover{
+
+    background-color:#404041;
+}
+
+.botonayuda {
+    background-color: #f15c22;
+    border: 10px solid white;
+    border-radius: 15px;
+    margin-top: 36px;
+    position: absolute;
+    width: 65%;
+    height: 13%;
+    left:0;
+    margin:36px auto;
+    right:0;
+    
+}
+.botonayuda:hover{
+
+    background-color:#404041;
+}
+.mailcursos{
+    width: 40px;
+    left: 24px;
+    top:-4px;
+    position: absolute;
+   
+}
+/*-----------
+ayuda a un creativo
+----------*/
+.publicaranuncios{
+    background-color:#f15c22;
+    color:white;
+
+}
+.publicaranuncios-3{
+    background-color:#f15c22;
+    color:white;
+    width: 100%;
+
+
+}
+.botonquieres{
+
+    width: 90%;
+}
+
+
+
+/*----------
+perfil
+-----------*/
+.botonesperfil{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.publicaranuncios2 {
+    background-color: white;
+    color: #f15c22;
+    border: 2px solid #f15c22;
+}
+/*----------
+pie
+----------*/
+.botonunete{
+
+    background-color: white;
+    width: 83px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.botonunete a{
+    color: #404041;
+}
+.botonunete:hover{
+    background-color:#f15c22;
+
+}
+/*-------
+
+.botonanuncios{
+
+    background-color: #f15c22;
+    width: 200px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+
+}
+.botonanuncios:hover{
+    background-color:#404041;
+
+}
+
+.botonanuncios-2{
+
+    margin-top: 30px;
+}
