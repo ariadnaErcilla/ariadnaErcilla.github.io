@@ -1,22 +1,67 @@
-Sintaxis
 
-// Width Variables
-$primaryWidth: 240px;
-$secondaryWidth: 65%;
-$thirdWidth: 83px;
 
-// Height Variables
-$primaryHeight: 70px;
-$secondaryHeight: 13%;
-$thirdHeight: 20px;
+button {
+    font-size: $fourthFontsize;
+    font-weight: $thirdFontweight;
+    border: $thirdBorder;
+    margin: 0 auto;
+    text-align: $secondaryTextalign;
+    padding:$primaryPadding;
+    border-radius: $primaryBorderR;
+    display:inline-block;
+}
 
-// Border-radius Variables
-$primaryBorderR: 8px;
-$secondaryBorderR: 15px;
+button:hover {
+    background-color:$primaryColor;
+}
 
-// Border Variables
-$primaryBorder: 2px solid #f15c22;
-$secondaryBorder: 10px solid white;
+
+.publicaranuncios{
+    background-color:$secondaryColor;
+    color:$fourthColor;
+    width: 240px;
+    height: 70px;
+
+}
+.publicaranuncios2 {
+    background-color: $fourthColor;
+    color: $secondaryColor;
+    border: 2px solid #f15c22;
+}
+
+
+.botonmail {
+    background-color: $secondaryColor;
+    border: $secondaryBorder;
+    border-radius: $secondaryBorderR:;
+    margin-top: 36px;
+    position: absolute;
+    width: 65%;
+    height: 13%;
+    left:0;
+    margin:36px auto;
+    right:0;
+
+}
+.botonmail:hover{
+
+    background-color:$primaryColor;
+}
+.botonunete{
+
+    background-color: $fourthColor;
+    width: 83px;
+    height: 20px;
+    float: left;
+    text-align: $secondaryTextalign;
+    margin-left: 20px;
+}
+
+
+.botonunete:hover{
+    background-color:$secondaryColor;
+
+}
 
 
 
