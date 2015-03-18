@@ -1,0 +1,217 @@
+Sintaxis
+
+// Color Variables
+$primaryColor: #404041;
+$secondaryColor: #f15c22;
+$thirdColor: #00A6A5;
+$fourthColor: white;
+
+// Font size Variables
+$primaryFontsize: 48px;
+$secondaryFontsize: 36px;
+$thirdFontsize: 24px;
+$fourthFontsize: 18px;
+$fifthFontsize:16px;
+$sixFontsize: 14px;
+$seventhFontsize: 12px;
+$eigthFontsize: 10px;
+
+// Font families Variables
+$primaryFontfamily: "Lato", sans-serif;
+$secondaryFontfamily: "Dosis", sans-serif;
+
+// Font weight Variables
+$primaryFontweight: 400;
+$secondaryFontweight:200; 
+$thirdFontweight:bolder; 
+
+// text-transform Variables
+$primaryTexttransform: uppercase;
+
+
+// text-align Variables
+$primaryTextalign:left;
+$secondaryTextalign:center;
+$thirdTextalign:right;
+
+
+// font-style Variables
+$primaryFontstyle: italic;
+
+
+// text-decoration Variables
+$primaryTextdecoration:underline;
+
+// line-height Variables
+$primaryLineheight:0.5;
+
+
+
+// Aplying Variables
+body{
+
+	color: $primaryColor;
+	font-family:$primaryFontfamily;
+	font-weight:$primaryFontweight;
+	 margin: 0;
+}
+
+h1 {
+    color: $thirdColor;
+    font-family:$secondaryFontfamily;
+    text-transform: $primaryTexttransform;
+     margin: 0px 0px 10px 0px;
+
+}
+
+
+h2{
+
+	font-size:$primaryFontsize;
+	font-weight: $primaryFontweight;
+		margin: 0;
+    
+
+}
+
+h3{
+
+	font-size:$secondaryFontsize;
+	font-family: $secondaryFontfamily;
+	font-weight: $primaryFontweight;
+}
+
+h4{
+	
+	font-size: $thirdFontsize;
+		margin: 0;
+
+}
+
+h5{
+	font-size:$fourthFontsize ;
+	font-weight: $thirdFontweight;
+		margin: 0;
+
+}
+
+h6{
+	 font-size: $sixFontsize;
+	 	margin: 0;
+
+}
+
+p{
+	font-size: $fifthFontsize;
+	text-align: $primaryTextalign;
+
+}
+.titulo-ampliar-curso {
+    color: $primaryColor;
+    font-weight:$thirdFontweight;
+    	margin-top: 50px;
+    	max-width: 500px;
+}
+
+.texto-curso{
+
+    text-align: $secondaryTextalign;
+    color:$thirdColor;
+    text-transform: $primaryTexttransform;
+    	margin: 0;
+
+}
+
+.tamanomaximo {
+    font-weight: $secondaryFontweight;
+   		margin: 10px 10px 10px 0px;
+  
+}
+
+.tags {
+  
+    font-weight: $secondaryFontweight;
+    font-style: $primaryFontstyle;
+}
+
+.categoriasmenu {
+
+    line-height: $primaryLineheight;
+    	float: left;
+    	padding-right: 10px;
+    	margin: 0;
+   
+}
+
+.categoriasmenu:hover {
+    color:$secondaryColor;
+}
+
+
+.light {
+    font-weight: $secondaryFontweight;
+    color:$thirdColor;
+    	margin: 0;
+    
+}
+
+
+.ayudame {
+	font-weight: $primaryFontweight;
+		display: inline-block;
+    	margin-top: 5px;
+    	width: 30%;
+  
+}
+
+
+.textpopup{
+
+    font-size: $seventhFontsize;
+    text-decoration: $primaryTextdecoration;
+    	display: inline-block;
+}
+
+.terminos{
+
+    font-size: $seventhFontsize;
+}
+.textopie {
+    text-align: $secondaryTextalign;
+    color: $fourthColor;
+    font-size: $eigthFontsize;
+    	padding:10px;
+    	margin: 0;
+   
+}
+
+.derechos{
+    font-size: $eigthFontsize;
+    color: $thirdTextalign;
+    text-align: $thirdTextalign;
+    	clear: both;
+    	width: 110px;
+    	float: right;
+}
+
+.nofloat{
+       float: none;
+   		margin: 0;
+}
+
+.white{
+    color: $thirdTextalign;
+    	padding: 0;
+ 
+  
+
+}
+.centrado{
+
+    text-align: $secondaryTextalign;
+}
+
+.line{
+
+    line-height: $primaryLineheight;
+}
