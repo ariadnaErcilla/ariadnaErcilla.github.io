@@ -1,70 +1,70 @@
 Sintaxis
 
 // Color Variables
-$greyColor: #404041;
-$orangeColor: #f15c22;
-$blueColor: #00A6A5;
-$whiteColor: white;
+$color-primary: #404041;
+$color-secondary: #f15c22;
+$color-third: #00A6A5;
+$color-fourth: white;
 
 // Font size Variables
-$primaryFontsize: 48px;
-$secondaryFontsize: 36px;
-$thirdFontsize: 24px;
-$fourthFontsize: 18px;
-$fifthFontsize:16px;
-$sixFontsize: 14px;
-$seventhFontsize: 12px;
-$eigthFontsize: 10px;
+$font-size-xx-large: 48px;
+$font-size-x-large: 36px;
+$font-size-large: 24px;
+$font-size-medium: 18px;
+$font-size-regular:16px;
+$font-size-small: 14px;
+$font-size-x-small: 12px;
+$font-size-xx-small: 10px;
 
 // Font families Variables
-$latoFontfamily: "Lato", sans-serif;
-$dosisFontfamily: "Dosis", sans-serif;
+$font-family-primary: "Lato", sans-serif;
+$font-family-secondary: "Dosis", sans-serif;
 
 // Font weight Variables
-$normalFontweight: 400;
-$thinFontweight:200; 
-$boldFontweight:bolder; 
+$font-weight-regular: 400;
+$font-weight-light:200; 
+$font-weight-bold:500; 
 
 // text-transform Variables
-$mayusTexttransform: uppercase;
+$font-text-transform: uppercase;
 
 
 // text-align Variables
-$leftTextalign:left;
-$centerTextalign:center;
-$rightTextalign:right;
+$font-text-align-primary:left;
+$font-text-align-secondary:center;
+$font-text-align-third:right;
 
 
 // font-style Variables
-$italicFontstyle: italic;
+$font-style: italic;
 
 
 // text-decoration Variables
-$underlineTextdecoration:underline;
+$font-text-decoration:underline;
 
 // line-height Variables
-$menosLineheight:0.5;
+$font-line-height:0.5;
 
 
 // Width buttons Variables
-$bigbuttonWidth: 240px;
-$smallbuttonWidth: 65%;
-$footerbuttonWidth: 83px;
+$button-width-large: 240px;
+$button-width-medium: 65%;
+$button-width-small: 83px;
 
 // Height buttons Variables
-$bigbuttonHeight: 70px;
-$smallbuttonHeight: 13%;
-$footerbuttonHeight: 20px;
+$button-height-large: 70px;
+$button-height-medium: 13%;
+$button-height-small: 20px;
 
 // Border-radius Variables
-$primaryBorderR: 8px;
-$secondaryBorderR: 15px;
+$border-radius-small: 8px;
+$border-radius-large: 15px;
 
 // Border Variables
-$primaryBorder: 2px solid #f15c22;
-$secondaryBorder: 10px solid white;
-$thirdBorder: none;
+$border-primary: 2px solid #f15c22;
+$border-secondary: 10px solid white;
+$border-third: none;
 
 // Padding buttons Variables
-$primaryPadding: 10px 10px;
-$secondaryPadding: ;
+$button-padding: 10px 10px;
+$button-padding: ;
