@@ -1,10 +1,10 @@
 Sintaxis
 
 // Color Variables
-$primaryColor: #404041;
-$secondaryColor: #f15c22;
-$thirdColor: #00A6A5;
-$fourthColor: white;
+$greyColor: #404041;
+$orangeColor: #f15c22;
+$blueColor: #00A6A5;
+$whiteColor: white;
 
 // Font size Variables
 $primaryFontsize: 48px;
@@ -17,44 +17,44 @@ $seventhFontsize: 12px;
 $eigthFontsize: 10px;
 
 // Font families Variables
-$primaryFontfamily: "Lato", sans-serif;
-$secondaryFontfamily: "Dosis", sans-serif;
+$latoFontfamily: "Lato", sans-serif;
+$dosisFontfamily: "Dosis", sans-serif;
 
 // Font weight Variables
-$primaryFontweight: 400;
-$secondaryFontweight:200; 
-$thirdFontweight:bolder; 
+$normalFontweight: 400;
+$thinFontweight:200; 
+$boldFontweight:bolder; 
 
 // text-transform Variables
-$primaryTexttransform: uppercase;
+$mayusTexttransform: uppercase;
 
 
 // text-align Variables
-$primaryTextalign:left;
-$secondaryTextalign:center;
-$thirdTextalign:right;
+$leftTextalign:left;
+$centerTextalign:center;
+$rightTextalign:right;
 
 
 // font-style Variables
-$primaryFontstyle: italic;
+$italicFontstyle: italic;
 
 
 // text-decoration Variables
-$primaryTextdecoration:underline;
+$underlineTextdecoration:underline;
 
 // line-height Variables
-$primaryLineheight:0.5;
+$menosLineheight:0.5;
 
 
 // Width buttons Variables
-$primaryWidth: 240px;
-$secondaryWidth: 65%;
-$thirdWidth: 83px;
+$bigbuttonWidth: 240px;
+$smallbuttonWidth: 65%;
+$footerbuttonWidth: 83px;
 
 // Height buttons Variables
-$primaryHeight: 70px;
-$secondaryHeight: 13%;
-$thirdHeight: 20px;
+$bigbuttonHeight: 70px;
+$smallbuttonHeight: 13%;
+$footerbuttonHeight: 20px;
 
 // Border-radius Variables
 $primaryBorderR: 8px;

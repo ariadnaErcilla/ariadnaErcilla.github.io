@@ -2,36 +2,36 @@
 
 button {
     font-size: $fourthFontsize;
-    font-weight: $thirdFontweight;
+    font-weight: $boldFontweight;
     border: $thirdBorder;
     margin: 0 auto;
-    text-align: $secondaryTextalign;
+    text-align: $centerTextalign;
     padding:$primaryPadding;
     border-radius: $primaryBorderR;
     display:inline-block;
 }
 
 button:hover {
-    background-color:$primaryColor;
+    background-color:$greyColor;
 }
 
 
 .publicaranuncios{
-    background-color:$secondaryColor;
-    color:$fourthColor;
+    background-color:$orangeColor;
+    color:$whiteColor;
     width: 240px;
     height: 70px;
 
 }
 .publicaranuncios2 {
-    background-color: $fourthColor;
-    color: $secondaryColor;
+    background-color: $whiteColor;
+    color: $orangeColor;
     border: 2px solid #f15c22;
 }
 
 
 .botonmail {
-    background-color: $secondaryColor;
+    background-color: $orangeColor;
     border: $secondaryBorder;
     border-radius: $secondaryBorderR:;
     margin-top: 36px;
@@ -45,21 +45,21 @@ button:hover {
 }
 .botonmail:hover{
 
-    background-color:$primaryColor;
+    background-color:$greyColor;
 }
 .botonunete{
 
-    background-color: $fourthColor;
+    background-color: $whiteColor;
     width: 83px;
     height: 20px;
     float: left;
-    text-align: $secondaryTextalign;
+    text-align: $centerTextalign;
     margin-left: 20px;
 }
 
 
 .botonunete:hover{
-    background-color:$secondaryColor;
+    background-color: $orangeColor;
 
 }
 
