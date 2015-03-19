@@ -441,13 +441,15 @@ popup login-registro
 	position: absolute;
 	margin: 0 auto;
 	width: 100%;
-	background-image: url(../imagenes/ninologin.png) ;
 	background-position: top center;
 	background-repeat: no-repeat;
 
 }
+.todopopup-image{
 
-.todopopup-todopopup2{
+    background-image: url(../imagenes/ninologin.png) ;
+}
+.todopopup-noimage{
 
     background-image: none;
 }
@@ -465,24 +467,14 @@ popup login-registro
 
 
 }
-.popupbox3{
+.form{
 
-	top: 60px;
-
-
-}
-.formulario{
-
-	margin-top: 20px;
-
+	padding-top: 20px;
+    margin: 0px;
 }
 
-.popupinput{
 
-	width: 290px;
-	height: 30px;
 
-}
 .subform{
 
 	padding-top: 20px;
@@ -499,10 +491,7 @@ popup login-registro
 	margin:15% auto;
 
 }
-.masc:target .movedown2{
-	margin:8% auto;
 
-}
 .close{
 	background: #f15c22;
 	color:#FFF;
@@ -521,7 +510,7 @@ popup login-registro
 	background:#333333;
 }
 .linkfacebook{
-width: 100%;
+    width: 100%;
 
 }
 .imgfacebook{
@@ -535,7 +524,7 @@ popup publicar
 
 -----*/
 
-.popupbox2 {
+.popupbox-slim {
     width: 85%;
     border-radius: 20px;
     margin-bottom: 100px;
@@ -543,31 +532,24 @@ popup publicar
 
 }
 
-.masc:target .movedown3{
-	margin:0% auto;
-
-}
-.contenidopublicar{
+.contenido-slim{
     width: 100%;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin: 0 auto;
 
 
 
 }
 .cajainstrucciones {
 
-    margin-left: 60px;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
 
 
 
 }
-.cajainstrucciones-cajainstrucciones2{
 
-width: 100%;
-float: none;
-margin: 0 auto;
-
-}
 .imgproceso{
     margin: 0 auto;
 
@@ -617,15 +599,6 @@ margin: 0 auto;
 
 }
 
-.todosanuncios_popup {
-    float:left;
-    width: 75%;
-    margin-top: 70px;
-    background-color: white;
-    border-radius: 20px;
-    border:4px solid #54c4c7;
-    margin-bottom: 100px;
-}
 
 .estiloinputs {
     height: 20px;
@@ -633,10 +606,7 @@ margin: 0 auto;
 }
 
 
-form {
-    padding-left: 0px;
-    margin: 0px;
-}
+
 /*-----------
 popup contactar
 ----------*/
@@ -917,7 +887,7 @@ AYUDA A UN CREATIVO
 
 
 .col-xs-6 {
-  width: 50%;
+  width: 100%;
 
 }
 
@@ -931,7 +901,7 @@ AYUDA A UN CREATIVO
 }
 
 .col-xs-6 {
-  width: 70%;
+  width: 100%;
 }
 
 
@@ -1121,13 +1091,6 @@ img.icononaranja{
     float: left;
     width:50%;
 
-
-
-
-}
-.textoicono2{
-    width: 50%;
-    float: left;
 
 }
 

@@ -40,11 +40,12 @@ $font-style: italic;
 
 
 // text-decoration Variables
-$font-text-decoration:underline;
+$font-text-decoration-primary:underline;
+$font-text-decoration-secondary:none;
 
 // line-height Variables
-$font-line-height:0.5;
-
+$font-line-height-small:0.5;
+$font-line-height-large:25px;
 
 // Width buttons Variables
 $button-width-large: 240px;
@@ -57,14 +58,21 @@ $button-height-medium: 13%;
 $button-height-small: 20px;
 
 // Border-radius Variables
-$border-radius-small: 8px;
+$border-radius-small: 5px;
+$border-radius-medium: 8px;
 $border-radius-large: 15px;
 
 // Border Variables
 $border-primary: 2px solid #f15c22;
 $border-secondary: 10px solid white;
 $border-third: none;
+$border-fourth: 5px solid #00A6A5;
+$border-fifth: 2px solid #00A6A5;
 
 // Padding buttons Variables
 $button-padding: 10px 10px;
 $button-padding: ;
+
+//margin Variables
+
+

@@ -2,16 +2,17 @@
 // Aplying Variables
 body{
 
-	color: $primaryColor;
-	font-family:$primaryFontfamily;
-	font-weight:$primaryFontweight;
+	color: $color-primary;
+	font-family:$font-family-primary;
+	font-weight:$font-weight-regular;
 	 margin: 0;
 }
 
 h1 {
-    color: $thirdColor;
-    font-family:$secondaryFontfamily;
-    text-transform: $primaryTexttransform;
+    color: $color-third;
+    font-family:$font-family-secondary;
+    text-transform: $font-text-transform;
+    font-size:$font-size-xx-large;
      margin: 0px 0px 10px 0px;
 
 }
@@ -19,8 +20,8 @@ h1 {
 
 h2{
 
-	font-size:$primaryFontsize;
-	font-weight: $primaryFontweight;
+	font-size:$font-size-xx-large;
+	font-weight:$font-weight-regular;
 		margin: 0;
     
 
@@ -28,67 +29,61 @@ h2{
 
 h3{
 
-	font-size:$secondaryFontsize;
-	font-family: $secondaryFontfamily;
-	font-weight: $primaryFontweight;
+	font-size:$font-size-x-large;
+	font-family:$font-size-x-large;
+	font-weight: $font-weight-regular;
 }
 
 h4{
 	
-	font-size: $thirdFontsize;
+	font-size: $font-size-large;
 		margin: 0;
 
 }
 
 h5{
-	font-size:$fourthFontsize ;
-	font-weight: $thirdFontweight;
+	font-size:$font-size-medium;
+	font-weight: $font-weight-bold;
 		margin: 0;
 
 }
 
 h6{
-	 font-size: $sixFontsize;
+	 font-size: $font-size-small;
 	 	margin: 0;
 
 }
 
 p{
-	font-size: $fifthFontsize;
-	text-align: $primaryTextalign;
+	font-size: $font-size-regular;
+	text-align: $font-text-align-primary;
 
 }
 .titulo-ampliar-curso {
-    color: $primaryColor;
-    font-weight:$thirdFontweight;
+    color: $color-primary;
+    font-weight:$font-weight-bold;
     	margin-top: 50px;
     	max-width: 500px;
 }
 
 .texto-curso{
 
-    text-align: $secondaryTextalign;
-    color:$thirdColor;
-    text-transform: $primaryTexttransform;
+    text-align: $font-text-align-secondary;
+    color:$color-third;
+    text-transform: $font-text-transform;
     	margin: 0;
 
 }
 
 .tamanomaximo {
-    font-weight: $secondaryFontweight;
+    font-weight: $font-weight-light;
    		margin: 10px 10px 10px 0px;
   
 }
 
-.tags {
-  
-    font-weight: $secondaryFontweight;
-    font-style: $primaryFontstyle;
-}
-
 .categoriasmenu {
 
-    line-height: $primaryLineheight;
+    line-height: $font-line-height-small;
     	float: left;
     	padding-right: 10px;
     	margin: 0;
@@ -96,20 +91,20 @@ p{
 }
 
 .categoriasmenu:hover {
-    color:$secondaryColor;
+    color:$color-secondary;
 }
 
 
 .light {
-    font-weight: $secondaryFontweight;
-    color:$thirdColor;
+    font-weight: $font-weight-light;
+    color:$color-third;
     	margin: 0;
     
 }
 
 
 .ayudame {
-	font-weight: $primaryFontweight;
+	font-weight: $font-weight-regular;
 		display: inline-block;
     	margin-top: 5px;
     	width: 30%;
@@ -119,51 +114,60 @@ p{
 
 .textpopup{
 
-    font-size: $seventhFontsize;
-    text-decoration: $primaryTextdecoration;
+    font-size: $font-size-x-small;
     	display: inline-block;
 }
 
-.terminos{
+/*.terminos{
 
-    font-size: $seventhFontsize;
-}
+    font-size: $font-size-x-small;
+}*/
+
 .textopie {
-    text-align: $secondaryTextalign;
-    color: $fourthColor;
-    font-size: $eigthFontsize;
+    text-align: $font-text-align-secondary;
+    color: $color-fourth;
+    font-size: $font-size-xx-small;
     	padding:10px;
     	margin: 0;
    
 }
 
 .derechos{
-    font-size: $eigthFontsize;
-    color: $thirdTextalign;
-    text-align: $thirdTextalign;
+    font-size: $font-size-xx-small;
+    color: $color-fourth;
     	clear: both;
     	width: 110px;
     	float: right;
 }
 
-.nofloat{
-       float: none;
-   		margin: 0;
+.underline{
+
+    text-decoration: $font-text-decoration-primary;
+}
+
+.italic{
+
+    font-style: $font-style;
 }
 
 .white{
-    color: $thirdTextalign;
+    color:$color-fourth;
     	padding: 0;
  
   
 
 }
+.rigth{
+    
+    text-align: $font-text-align-third;
+
+}
 .centrado{
 
-    text-align: $secondaryTextalign;
+    text-align: $font-text-align-secondary;
 }
 
 .line{
 
-    line-height: $primaryLineheight;
+    line-height: $font-line-height-small;
 }

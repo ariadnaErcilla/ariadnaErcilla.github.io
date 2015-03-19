@@ -1,0 +1,197 @@
+.form{
+
+    padding-top: 20px;
+    margin: 0px;
+}
+
+.masc{
+    position: absolute;
+    	top: 0;
+    	right: 0;
+    	left: 0;
+    	bottom: 0;
+    z-index:99999;
+    opacity: 0;
+    -webkit-transition:opacity 400ms ease-in;
+    -moz-transition:opacity 400ms ease-in;
+    transition:opacity 400ms ease-in;
+    pointer-events:none;
+}
+.masc::before {
+	background:rgba(0,0,0,0.8);
+    content: '';
+    display: block;
+    position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
+
+.masc:target{
+	opacity:1;
+	pointer-events:auto;
+
+}
+.movedown{
+    margin:0 auto;
+}
+.masc:target .movedown{
+    margin:15% auto;
+
+}
+.masc:target .movedown2{
+    margin:8% auto;
+
+}
+.close{
+    background: $color-secondary;
+    color:$color-fourth;
+    line-height:$font-line-height-large;
+    position:absolute;
+    text-align:$font-text-align-secondary;
+    width:24px;
+    text-decoration:$font-text-decoration-secondary;
+    font-weight:$font-weight-bold;
+    border-radius:$border-radius-small;
+        right:1px;
+        top:1px;
+}
+
+.close:hover{
+    background:#333333;
+}
+
+.todopopup{
+
+    height: 500px;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+.todopopup-image{
+    @extend .todopopup;
+     background-image: url(../imagenes/ninologin.png);
+}
+
+.todopopup-noimage{
+    @extend .todopopup;
+    background-image: none;
+}
+
+.popupbox{
+    width:350px;
+    position:relative;
+    padding:5px 20px 13px 20px;
+    background:$color-fourth;
+    border-radius:$border-radius-small;
+    top: 30px;
+    transition:all 500ms ease-in;
+    border: $border-fourth;
+
+
+
+}
+
+.popupbox-slim{
+    @extend .popupbox;
+    width: 85%;
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+
+}
+.contenido-slim{
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 auto;
+
+
+
+}
+.cajaformulario{
+    padding-left: 10px;
+    clear: both;
+    margin-top: 20px;
+}
+
+.estiloinputs {
+    height: 20px;
+    width: 250px;
+}
+
+
+.subform{
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 50%;
+}
+/*---------
+
+-----------*/
+.linkfacebook{
+    width: 100%;
+
+}
+.imgfacebook{
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #404041;
+}
+.imgproceso{
+    margin: 0 auto;
+
+}
+.proceso{
+
+    width: 100%;
+
+
+}
+.boxdias{
+
+    border: $border-fifth;
+    clear: both;
+    margin-bottom: 10px;
+}
+.miniboxdias{
+
+    background-color: $color-primary;
+    opacity: 0.5;
+    position: relative;
+}
+
+.miniboxdias2{
+
+    background-color: #808284;
+     opacity: 0.5;
+     position: relative;
+}
+.diassemana{
+
+    float: left;
+    width: 30%;
+}
+.totalpartesdia{
+
+    float: left;
+    width: 30%;
+}
+
+.cuadrocheck1{
+
+    position: absolute;
+    left: 120px;
+}
+
+.cuadrocheck2{
+
+    position: absolute;
+    left: 70px;
+}
+
