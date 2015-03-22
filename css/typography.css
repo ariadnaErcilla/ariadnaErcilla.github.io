@@ -27,7 +27,12 @@
      margin: 0px 0px 10px 0px;
      text-transform: uppercase;
 }
-
+.title{
+     font-size: 48px;
+     font-family: "Dosis";
+     margin: 0px 0px 10px 0px;
+     text-transform: uppercase;
+}
 
 h1.titulo-ampliar-curso {
     color: #404041;
@@ -49,7 +54,12 @@ h2 {
      font-weight: 400;
      font-style: normal;
 }
-
+.destacado{
+     font-size: 36px;
+     font-family: "Dosis";
+     font-weight: 400;
+     font-style: normal;
+}
 h3.texto-curso{
 
     text-align: center;
