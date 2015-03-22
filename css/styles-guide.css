@@ -36,18 +36,35 @@
 .sg-subtitle{
 }
 
+.container-colores{
+	width:400px;
+	height:400px;
+}
+
 .sg-color-corportivo1{
-	background-color:#1BA8A6;
+	width:150px;
+	height: 150px;
+	background-color:#00A6A5;
 	margin-left: 20px;
 	float: left;
 
 }
 
 .sg-color-corportivo2{
-	background-color:#f15c22;
+	width:150px;
+	height: 150px;
+	background-color:#F15C22;
 	margin-left: 20px;
 	float: left;
 
+}
+
+.sg-color-corportivo3{
+	width:150px;
+	height: 150px;
+	background-color:#404041;
+	margin-left: 20px;
+	float: left;
 }
 
 .sg-color-tipografia{
@@ -61,15 +78,6 @@
 	padding-left: 0px;
 }
 
-.circle{
-	width: 60px;
-	height: 60px;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-	float: left;
-	margin-bottom: 40px;
-}
 
 .sg-margin-auto{
 
