@@ -1,3 +1,13 @@
+.container-button{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 50%;
+}
+.left{
+
+    float: left;
+}
 .general-button{
 
     border: none;
