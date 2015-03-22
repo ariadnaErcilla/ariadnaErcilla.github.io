@@ -97,7 +97,6 @@ h6 {
 h6.tamanomaximo {
     font-weight: 200;
     margin: 10px 10px 10px 0px;
-
 }
 
 
@@ -330,6 +329,14 @@ padding-top:30px;
 
     width: 90%;
 }
+
+.container-button{
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 50%;
+}
 /*----------
 header
 ---------*/
@@ -435,23 +442,19 @@ popup login-registro
 	pointer-events:auto;
 
 }
-.todopopup{
+.popup{
 
-	height: 500px;
 	position: absolute;
 	margin: 0 auto;
 	width: 100%;
-	background-position: top center;
-	background-repeat: no-repeat;
 
 }
-.todopopup-image{
+.popup-image{
 
+    background-position: top center;
+    background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png) ;
-}
-.todopopup-noimage{
 
-    background-image: none;
 }
 
 .popupbox{
@@ -467,20 +470,10 @@ popup login-registro
 
 
 }
-.form{
+.pform{
 
 	padding-top: 20px;
     margin: 0px;
-}
-
-
-
-.subform{
-
-	padding-top: 20px;
-	padding-bottom: 40px;
-    margin: 0 auto;
-    width: 50%;
 }
 
 
@@ -524,15 +517,9 @@ popup publicar
 
 -----*/
 
-.popupbox-slim {
-    width: 85%;
-    border-radius: 20px;
-    margin-bottom: 100px;
 
 
-}
-
-.contenido-slim{
+.container-popup{
     width: 100%;
     padding-top: 40px;
     margin: 0 auto;
