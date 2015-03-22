@@ -1,54 +1,63 @@
-.popupbox{
-	
-	position:relative;
-	padding:5px 20px 13px 20px;
-	background:white;
-	border-radius:5px;
-	top: 30px;
-	transition:all 500ms ease-in;
-	border: 5px solid #54c4c7;
 
+/*--------
+Text inputs and text areas
+--------*/
 
+.container-popup{
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 auto;
 
 }
+.pform{
 
-.popupbox3{
-
-	top:0;
-
+    padding-top: 20px;
+    margin: 0px;
 }
-.formulario{
 
-	margin-top: 20px;
-
-}
 
 .cajaformulario{
-    padding-left: 10px;
     clear: both;
     margin-top: 20px;
 }
 
-.estiloinputs {
-    height: 30px;
-    width: 290px;
-    color:;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    background: #404041;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .5rem; 
+    width: 100%;
 }
 
-.close{
-	background: #f15c22;
-	color:#FFF;
-	line-height:25px;
-	position:absolute;
-	right:1px;
-	text-align:center;
-	top:1px;
-	width:24px;
-	text-decoration:none;
-	font-weight:bold;
-	border-radius:3px;
+.pform input{
+	height: 30px;
+}
+.pform textarea{
+	height: 78px;
+
+}
+.mini-input{
+	width: 20px;
+}
+/*----------
+Checkboxes, selects
+----------*/
+
+.form-check{
+
+	display:inline;
+    padding-right: 10px;
+    margin: 0;
 }
 
-.close:hover{
-	background:#333333;
+select{
+
+	background: #404041;
+
 }
+
+

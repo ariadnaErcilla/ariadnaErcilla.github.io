@@ -473,7 +473,7 @@ popup login-registro
 .pform{
 
 	padding-top: 20px;
-    margin: 0px;
+    margin: 0;
 }
 
 
@@ -527,14 +527,15 @@ popup publicar
 
 
 }
-.cajainstrucciones {
-
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-
-
-
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    background: #404041;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .5rem; 
 }
 
 .imgproceso{
@@ -548,7 +549,6 @@ popup publicar
 
 }
 .cajaformulario{
-    padding-left: 10px;
     clear: both;
     margin-top: 20px;
 }
@@ -585,13 +585,6 @@ popup publicar
     margin-right: 10px;
 
 }
-
-
-.estiloinputs {
-    height: 20px;
-    width: 250px;
-}
-
 
 
 /*-----------
