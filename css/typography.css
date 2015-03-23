@@ -33,6 +33,11 @@
      margin: 0px 0px 10px 0px;
      text-transform: uppercase;
 }
+.title-form{
+    font-size: 48px;
+    font-family: "Lato";
+    text-align: center;
+}
 
 h1.titulo-ampliar-curso {
     color: #404041;
