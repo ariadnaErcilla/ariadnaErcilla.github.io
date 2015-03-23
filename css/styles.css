@@ -105,7 +105,7 @@ h3.texto-curso{
 p {
 	font-size: 16px;
 	text-align: left;
-	
+
 }
 
 
@@ -203,8 +203,6 @@ a {
 .naranja a{
     color: #f15c22;
     text-decoration: none;
-
-
 }
 
 .white a{
@@ -1296,4 +1294,3 @@ footer{
     background-color:#231F20;
     clear: both;
 }
->>>>>>> 04724c0f9905cecd2da0a18f434bd32e67a7ca08
