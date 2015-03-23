@@ -105,7 +105,7 @@ h3.texto-curso{
 p {
 	font-size: 16px;
 	text-align: left;
-	color:#808284;
+	
 }
 
 
@@ -591,43 +591,44 @@ textarea {
 /*-----------
 popup contactar
 ----------*/
-.boxdias{
+.box-check{
 
     border: 2px solid #1BA8A6;
     clear: both;
     margin-bottom: 10px;
+    width: 50%;
 }
-.miniboxdias{
+.mini-box-check{
 
     background-color: #404041;
     opacity: 0.5;
     position: relative;
 }
 
-.miniboxdias2{
+.mini-box-check-2{
 
     background-color: #808284;
      opacity: 0.5;
      position: relative;
 }
-.diassemana{
+.dias-semana{
 
     float: left;
     width: 30%;
 }
-.totalpartesdia{
+.total-partes-dia{
 
     float: left;
     width: 30%;
 }
 
-.cuadrocheck1{
+.cuadro-check-1{
 
     position: absolute;
     left: 120px;
 }
 
-.cuadrocheck2{
+.cuadro-check-2{
 
     position: absolute;
     left: 70px;
@@ -1338,13 +1339,6 @@ section.miniboxpie{
 }
 
 
-span{
-
-    color:white;
-    text-align: left;
-
-}
-
 #iconos{
     width: 200px;
     margin:0 auto;
@@ -1370,9 +1364,17 @@ span{
 
 }
 
-.caja{
+.caja-footer{
+
     float: left;
+}
+#input-footer{
+
     width: 180px;
+    background: white;
+    border: 1px solid black;
+    height: 30px;
+
 
 }
 

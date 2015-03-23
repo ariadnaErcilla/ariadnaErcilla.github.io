@@ -3,20 +3,14 @@
 Text inputs and text areas
 --------*/
 
-.container-popup{
-    width: 100%;
-    padding-top: 40px;
-    margin: 0 auto;
-
-}
 .pform{
 
     padding-top: 20px;
-    margin: 0px;
+    margin: 0;
 }
 
 
-.cajaformulario{
+.caja-formulario{
     clear: both;
     margin-top: 20px;
 }
@@ -24,24 +18,41 @@ Text inputs and text areas
 input[type="text"],
 input[type="password"],
 input[type="email"],
-textarea {
-    background: #404041;
+textarea,
+select {
+    background: #E6E6E6;
     display: block;
     font-size: 1rem;
     line-height: 1rem;
-    padding: .5rem; 
-    width: 100%;
+    padding: .5rem;
+    width: 50%;
+    border: none; 
+    color:#A0A0A0;
+    margin-top:6px; 
+
+    
 }
 
-.pform input{
-	height: 30px;
-}
-.pform textarea{
-	height: 78px;
+.big-textarea{
+	padding-bottom: 50px;
 
 }
 .mini-input{
-	width: 20px;
+	width: 20%;
+    display: inline-block;
+}
+.caja-footer{
+
+    float: left;
+}
+#input-footer{
+
+    width: 180px;
+    background: white;
+    border: 1px solid black;
+    height: 30px;
+
+
 }
 /*----------
 Checkboxes, selects
@@ -49,15 +60,81 @@ Checkboxes, selects
 
 .form-check{
 
-	display:inline;
+	display:inline-block;
     padding-right: 10px;
     margin: 0;
+    clear: both;
 }
+.form-check span{
+
+    color:#404041;
+    margin-left: 3px;
+
+}
+.total-partes-dia{
+
+    float: left;
+    width: 30%;
+    overflow: auto;
+
+}
+.box-check{
+
+    border: 2px solid #00A6A5;
+    clear: both;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+}
+.mini-box-check{
+
+    background-color: #404041;
+    opacity: 0.5;
+    position: relative;
+}
+
+.mini-box-check-2{
+
+    background-color: #808284;
+     opacity: 0.5;
+     position: relative;
+
+}
+
+.cuadro-check-1{
+
+    position: absolute;
+    left: 120px;
+
+
+}
+
+.cuadro-check-2{
+
+    position: absolute;
+    left: 70px;
+
+}
+
+.cuadro-check-3{
+
+    position: absolute;
+    left: 40px;
+
+}
+
+input[type="checkbox"]{
+
+    
+}
+
 
 select{
 
-	background: #404041;
-
+    height: 35px;
 }
+
+
 
 

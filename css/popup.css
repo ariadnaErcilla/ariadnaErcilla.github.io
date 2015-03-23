@@ -1,41 +1,38 @@
-.masc{
-    font-family:"Lato", sans-serif;
-    position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-    z-index:99999;
-    opacity: 0;
-    -webkit-transition:opacity 400ms ease-in;
-    -moz-transition:opacity 400ms ease-in;
-    transition:opacity 400ms ease-in;
-    pointer-events:none;
-}
-.masc::before {
-    background:rgba(0,0,0,0.8);
-    content: '';
-    display: block;
-    position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-}
 
-.masc:target{
-    opacity:1;
-    pointer-events:auto;
+.popup{
+
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.popup-image{
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninologin.png);
+    
+
+
+
+}
+.popup-image-2{
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninogracias.png);
+
+
 
 }
 
 .movedown{
     margin:0 auto;
 }
-.masc:target .movedown{
-    margin:15% auto;
-
+.movedown-2{
+    margin:13% auto;
 }
+
 .close{
     background: #f15c22;
     color:#FFF;
@@ -53,23 +50,9 @@
 .close:hover{
     background:#333333;
 }
-.popup{
 
-    position: absolute;
-    margin: 0 auto;
-    width: 100%;
-
-}
-.popup-image{
-
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-image: url(../imagenes/ninologin.png) ;
-
-}
-
-.popupbox{
-    width:350px;
+.popup-box{
+    width:400px;
     position:relative;
     padding:5px 20px 13px 20px;
     background:white;
@@ -80,7 +63,12 @@
 
 }
 
+.container-popup{
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 auto;
 
+}
 
 
 
