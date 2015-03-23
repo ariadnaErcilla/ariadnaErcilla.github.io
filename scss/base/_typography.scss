@@ -1,0 +1,173 @@
+
+// Aplying Variables
+body{
+
+	color: $color-primary;
+	font-family:$font-family-primary;
+	font-weight:$font-weight-regular;
+	 margin: 0;
+}
+
+h1 {
+    color: $color-third;
+    font-family:$font-family-secondary;
+    text-transform: $font-text-transform;
+    font-size:$font-size-xx-large;
+     margin: 0px 0px 10px 0px;
+
+}
+
+
+h2{
+
+	font-size:$font-size-xx-large;
+	font-weight:$font-weight-regular;
+		margin: 0;
+    
+
+}
+
+h3{
+
+	font-size:$font-size-x-large;
+	font-family:$font-size-x-large;
+	font-weight: $font-weight-regular;
+}
+
+h4{
+	
+	font-size: $font-size-large;
+		margin: 0;
+
+}
+
+h5{
+	font-size:$font-size-medium;
+	font-weight: $font-weight-bold;
+		margin: 0;
+
+}
+
+h6{
+	 font-size: $font-size-small;
+	 	margin: 0;
+
+}
+
+p{
+	font-size: $font-size-regular;
+	text-align: $font-text-align-primary;
+
+}
+.titulo-ampliar-curso {
+    color: $color-primary;
+    font-weight:$font-weight-bold;
+    	margin-top: 50px;
+    	max-width: 500px;
+}
+
+.texto-curso{
+
+    text-align: $font-text-align-secondary;
+    color:$color-third;
+    text-transform: $font-text-transform;
+    	margin: 0;
+
+}
+
+.tamanomaximo {
+    font-weight: $font-weight-light;
+   		margin: 10px 10px 10px 0px;
+  
+}
+
+.categoriasmenu {
+
+    line-height: $font-line-height-small;
+    	float: left;
+    	padding-right: 10px;
+    	margin: 0;
+   
+}
+
+.categoriasmenu:hover {
+    color:$color-secondary;
+}
+
+
+.light {
+    font-weight: $font-weight-light;
+    color:$color-third;
+    	margin: 0;
+    
+}
+
+
+.ayudame {
+	font-weight: $font-weight-regular;
+		display: inline-block;
+    	margin-top: 5px;
+    	width: 30%;
+  
+}
+
+
+.textpopup{
+
+    font-size: $font-size-x-small;
+    	display: inline-block;
+}
+
+/*.terminos{
+
+    font-size: $font-size-x-small;
+}*/
+
+.textopie {
+    text-align: $font-text-align-secondary;
+    color: $color-fourth;
+    font-size: $font-size-xx-small;
+    	padding:10px;
+    	margin: 0;
+   
+}
+
+.derechos{
+    font-size: $font-size-xx-small;
+    color: $color-fourth;
+    	clear: both;
+    	width: 110px;
+    	float: right;
+}
+
+.underline{
+
+    text-decoration: $font-text-decoration-primary;
+}
+
+.italic{
+
+    font-style: $font-style;
+}
+
+.white{
+    color:$color-fourth;
+    	padding: 0;
+ 
+  
+
+}
+.rigth{
+    
+    text-align: $font-text-align-third;
+
+}
+.centrado{
+
+    text-align: $font-text-align-secondary;
+}
+
+.line{
+
+    line-height: $font-line-height-small;
+}

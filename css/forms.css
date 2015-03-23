@@ -1,53 +1,140 @@
-.popupbox{
-	
-	position:relative;
-	padding:5px 20px 13px 20px;
-	background:white;
-	border-radius:5px;
-	top: 30px;
-	transition:all 500ms ease-in;
-	border: 5px solid #54c4c7;
 
+/*--------
+Text inputs and text areas
+--------*/
 
+.pform{
 
+    padding-top: 20px;
+    margin: 0;
 }
 
-.popupbox3{
 
-	top:0;
-
-}
-.formulario{
-
-	margin-top: 20px;
-
-}
-
-.cajaformulario{
-    padding-left: 10px;
+.caja-formulario{
     clear: both;
     margin-top: 20px;
 }
 
-.estiloinputs {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    background: #E6E6E6;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .5rem;
+    width: 50%;
+    border: none; 
+    color:#A0A0A0;
+    margin-top:6px; 
+
+    
+}
+
+.big-textarea{
+	padding-bottom: 50px;
+
+}
+.mini-input{
+	width: 20%;
+    display: inline-block;
+}
+.caja-footer{
+
+    float: left;
+}
+#input-footer{
+
+    width: 180px;
+    background: white;
+    border: 1px solid black;
     height: 30px;
-    width: 290px;
+
+
+}
+/*----------
+Checkboxes, selects
+----------*/
+
+.form-check{
+
+	display:inline-block;
+    padding-right: 10px;
+    margin: 0;
+    clear: both;
+}
+.form-check span{
+
+    color:#404041;
+    margin-left: 3px;
+
+}
+.total-partes-dia{
+
+    float: left;
+    width: 30%;
+    overflow: auto;
+
+}
+.box-check{
+
+    border: 2px solid #00A6A5;
+    clear: both;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+}
+.mini-box-check{
+
+    background-color: #404041;
+    opacity: 0.5;
+    position: relative;
 }
 
-.close{
-	background: #f15c22;
-	color:#FFF;
-	line-height:25px;
-	position:absolute;
-	right:1px;
-	text-align:center;
-	top:1px;
-	width:24px;
-	text-decoration:none;
-	font-weight:bold;
-	border-radius:3px;
+.mini-box-check-2{
+
+    background-color: #808284;
+     opacity: 0.5;
+     position: relative;
+
 }
 
-.close:hover{
-	background:#333333;
+.cuadro-check-1{
+
+    position: absolute;
+    left: 120px;
+
+
 }
+
+.cuadro-check-2{
+
+    position: absolute;
+    left: 70px;
+
+}
+
+.cuadro-check-3{
+
+    position: absolute;
+    left: 40px;
+
+}
+
+input[type="checkbox"]{
+
+    
+}
+
+
+select{
+
+    height: 35px;
+}
+
+
+
+

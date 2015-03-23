@@ -1,68 +1,86 @@
-button {
-	
-	font-size: 18px;
-	font-weight: bolder;
+.container-button{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 25%;
+}
+.left{
+
+    float: left;
+}
+.general-button{
+
     border: none;
     margin: 0 auto;
-    width: 240px;
+    width: 100%;
     height: 70px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
+
 }
-button:hover{
+.button-1{
 
-    background-color:#404041;
+    background-color:#00A6A5;
+   
+
 }
-
-button a{
-    color:white;
-}
-
-button a.ayuda{
-    color:#f15c22;
-}
-/*------
-popup
-------*/
-
-
-/*---------
-encuentra un curso
----------*/
-.botonmailmedio {
-    position: absolute;
-    background-color: #f15c22;
-    width: 110px;
-    height: 52px;
-    border: 10px solid white;
-    border-radius: 15px;
-    left:0;
-    margin:0 auto;
-    right:0;
-    bottom: -27px;
-}
-
-.botonmailmedio:hover{
-
-    background-color:#404041;
-}
-
-.botonayuda {
-    background-color: #f15c22;
-    border: 10px solid white;
-    border-radius: 15px;
-    margin-top: 36px;
-    position: absolute;
-    width: 65%;
-    height: 13%;
-    left:0;
-    margin:36px auto;
-    right:0;
+.button-2,
+.button-mail{
+    background-color:#f15c22;
     
 }
-.botonayuda:hover{
+
+.button-3{
+    background-color:white;
+    border: 2px solid #f15c22;
+
+
+}
+
+.general-button:hover{
+
+    background-color:#404041;
+}
+.button-1,
+.button-2,
+.button-3,
+.button-mail span{
+
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.button-1,
+.button-2,
+.button-mail span{
+    color:white;
+
+}
+
+.button-3 span{
+    color:#f15c22;
+}
+.container-mail{
+    position: absolute;
+    margin-top: 36px;
+    margin:36px auto;
+    left:0;
+    right:0;
+    width: 10%;
+
+}
+.button-mail {
+    border: 10px solid white;
+    border-radius: 15px;
+    width: 100%;
+    height: 13%;
+
+    
+}
+.button-mail:hover{
 
     background-color:#404041;
 }
@@ -73,83 +91,32 @@ encuentra un curso
     position: absolute;
    
 }
-/*-----------
-ayuda a un creativo
-----------*/
-.publicaranuncios{
-    background-color:#f15c22;
-    color:white;
-
-}
-.publicaranuncios-3{
-    background-color:#f15c22;
-    color:white;
-    width: 100%;
-
-
-}
-.botonquieres{
-
-    width: 90%;
-}
-
-
-
-/*----------
-perfil
------------*/
-.botonesperfil{
-
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.publicaranuncios2 {
-    background-color: white;
-    color: #f15c22;
-    border: 2px solid #f15c22;
-}
-/*----------
-pie
-----------*/
-.botonunete{
-
-    background-color: white;
-    width: 83px;
-    height: 20px;
-    float: left;
-    text-align: center;
+.container-unete{
     margin-left: 20px;
+    width: 10%;
+    margin: 0 auto;
+
+}
+.button-unete{
+
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
 }
 
-.botonunete a{
+.button-unete span{
     color: #404041;
+
 }
-.botonunete:hover{
+.button-unete:hover{
     background-color:#f15c22;
 
 }
-/*-------
-
-.botonanuncios{
-
-    background-color: #f15c22;
-    width: 200px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
 
 
-}
-.botonanuncios:hover{
-    background-color:#404041;
 
-}
 
-.botonanuncios-2{
 
-    margin-top: 30px;
-}

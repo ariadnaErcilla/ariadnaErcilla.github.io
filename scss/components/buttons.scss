@@ -1,0 +1,72 @@
+
+
+button {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    border: $border-third;
+    margin: 0 auto;
+    text-align: $font-text-align-secondary;
+    padding:$button-padding;
+    border-radius: $border-radius-medium;
+    display:inline-block;
+}
+
+button:hover {
+    background-color:$color-primary;
+}
+
+
+.publicaranuncios{
+    background-color:$color-secondary;
+    color:$color-third;
+    width: 240px;
+    height: 70px;
+
+}
+.publicaranuncios2 {
+    @extend .publicaranuncios;
+    background-color: $color-fourth;
+    color: $color-secondary;
+    border: $border-primary;
+}
+
+
+.botonmail {
+    background-color: $color-secondary;
+    border: $border-secondary;
+    border-radius: $border-radius-large;
+    margin-top: 36px;
+    position: absolute;
+    width: 65%;
+    height: 13%;
+    left:0;
+    margin:36px auto;
+    right:0;
+
+}
+.botonmail:hover{
+
+    background-color:$color-primary;
+}
+.botonunete{
+
+    background-color: $color-fourth;
+    width: 83px;
+    height: 20px;
+    float: left;
+    text-align: $font-text-align-secondary;
+    margin-left: 20px;
+}
+
+
+.botonunete:hover{
+    background-color: $color-secondary;
+
+}
+
+
+
+
+
+
+
