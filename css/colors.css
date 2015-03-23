@@ -1,0 +1,68 @@
+.container-colores{
+    width:800px;
+    height:150px;
+    margin: 0 auto;
+}
+.container-borde{
+    width:800px;
+    height:150px;
+    margin: 0 auto;
+}
+
+.sg-color-corporativo1{
+    width:150px;
+    height:150px;
+    background-color:#00A6A5;
+    float:left;
+    color:white;
+    margin-left: 10px;
+}
+
+.sg-color-corporativo2{
+    width:150px;
+    height:150px;
+    background-color:#F15C22;
+    float:left;
+    color:white;
+    margin-left: 10px;
+}
+
+.sg-color-corporativo3{
+    width:150px;
+    height:150px;
+    background-color:#404041;
+    color:white;
+    float:left;
+    margin-left: 10px;
+}
+
+.sg-color-corporativo4{
+    width:150px;
+    height:150px;
+    background-color:#E6E6E6;
+    color: #404041;
+    float:left;
+    margin-left: 10px;
+}
+
+.sg-border-grueso{
+    width:150px;
+    height:150px;
+    border:5px solid #00A6A5;
+    float:left;
+    margin-left: 10px;
+}
+.sg-border-fino2{
+    width:150px;
+    height:150px;
+    border:2px solid #00A6A5;
+    float:left;
+    margin-left: 10px;
+}
+.sg-border-fino3{
+    width:150px;
+    height:150px;
+    border:2px solid #F15C22;
+    float:left;
+    margin-left: 10px;
+}
