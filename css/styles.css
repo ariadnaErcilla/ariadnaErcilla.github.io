@@ -320,94 +320,6 @@ divs que contienen botones
     margin-top:80px;
 
 }
-.boton3{
-
-width: 40%;
-margin: 0 auto;
-padding-top:30px;
-}
-.botonquieres{
-
-    width: 90%;
-}
-
-.container-button{
-
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    width: 50%;
-}
-/*----------
-header
----------*/
-
-header{
-	padding-top: 10px;
-	padding-bottom: 40px;
-	padding-right: 60px;
-	padding-left: 20px;
-}
-
-.logo{
-    width: 150px;
-    float:left;
-    padding-top: 10px;
-}
-
-#menu{
-	text-align: center;
-	line-height: 5px;
-	float: right;
-	padding: 0px;
-    width: 72%;
-    margin: 0 auto;
-}
-
-#menu ul li{
-	font-size: 16px;
-	list-style: none;
-	float: left;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.menuizquierda {
-	width: 650px;
-    float: left;
-
-}
-
-.menuderecha {
-    float: right;
-    margin: 0 auto;
-}
-
-li.textomenu a{
-    color: #404041;
-    width: 260px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-li.textomenu a:hover{
-    color:#f15c22;
-}
-
-li.login a{
-    color: #404041;
-    width: 70px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
 
 /*---------
 popup login-registro
@@ -536,7 +448,7 @@ textarea {
     display: block;
     font-size: 1rem;
     line-height: 1rem;
-    padding: .5rem; 
+    padding: .5rem;
 }
 
 .imgproceso{
@@ -1312,6 +1224,8 @@ form.turnos {
 
 
 
+<<<<<<< HEAD
+=======
 /*---------
 pie
 ---------*/
@@ -1382,3 +1296,4 @@ footer{
     background-color:#231F20;
     clear: both;
 }
+>>>>>>> 04724c0f9905cecd2da0a18f434bd32e67a7ca08
