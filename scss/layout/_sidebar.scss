@@ -1,0 +1,80 @@
+.filtros {
+    float: left;
+    width: 17%;
+    margin-top: 40px;
+    clear: both;
+
+
+}
+
+.parteizquierda {
+    @extend .filtros;
+    margin-left: 75px;
+    margin-top: 100px;
+}
+
+.categorias{
+
+    margin-top:50px;
+}
+.listacategorias{
+
+    margin-top: 20px;
+}
+
+img.icononaranja{
+    float:left;
+    width: 10%;
+    margin-top: 4px;
+    margin-right: 7px;
+}
+
+
+.programas{
+
+    margin-top: 30px;
+}
+.cuadroprogram{
+
+    margin-top: 20px;
+    width: 60%;
+}
+
+.disponibilidad{
+
+    margin-top: 30px;
+}
+
+.metodo{
+
+    margin-top: 30px;
+}
+.checkbox{
+
+    padding: 0px;
+    margin-top: 20px;
+
+}
+
+
+.fotoperfil {
+
+  width: 100%;
+
+}
+.imgperfil{
+
+    width: 60%;
+}
+
+.totalinformacionpersona{
+
+    margin-top: 40px;
+
+}
+.infoperfil {
+
+    padding: 0px;
+
+
+}

@@ -1,7 +1,15 @@
-button {
-	
-	font-size: 18px;
-	font-weight: bolder;
+.container-button{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 50%;
+}
+.left{
+
+    float: left;
+}
+.general-button{
+
     border: none;
     margin: 0 auto;
     width: 240px;
@@ -10,46 +18,50 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
+
 }
-button:hover{
+.button-1{
+
+    background-color:;
+   
+
+}
+.button-2{
+    background-color:#f15c22;
+    
+}
+
+.button-3{
+    background-color:white;
+    border: 2px solid #f15c22;
+
+
+}
+
+.general-button:hover{
 
     background-color:#404041;
 }
+.button-1,
+.button-2,
+.button-3 a{
 
-button a{
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.button-1,
+.button-2 a{
     color:white;
+
 }
 
-button a.ayuda{
+.button-3 a{
     color:#f15c22;
 }
-/*------
-popup
-------*/
 
-
-/*---------
-encuentra un curso
----------*/
-.botonmailmedio {
-    position: absolute;
-    background-color: #f15c22;
-    width: 110px;
-    height: 52px;
-    border: 10px solid white;
-    border-radius: 15px;
-    left:0;
-    margin:0 auto;
-    right:0;
-    bottom: -27px;
-}
-
-.botonmailmedio:hover{
-
-    background-color:#404041;
-}
-
-.botonayuda {
+.botonmail {
     background-color: #f15c22;
     border: 10px solid white;
     border-radius: 15px;
@@ -62,7 +74,7 @@ encuentra un curso
     right:0;
     
 }
-.botonayuda:hover{
+.botonmail:hover{
 
     background-color:#404041;
 }
@@ -73,44 +85,7 @@ encuentra un curso
     position: absolute;
    
 }
-/*-----------
-ayuda a un creativo
-----------*/
-.publicaranuncios{
-    background-color:#f15c22;
-    color:white;
 
-}
-.publicaranuncios-3{
-    background-color:#f15c22;
-    color:white;
-    width: 100%;
-
-
-}
-.botonquieres{
-
-    width: 90%;
-}
-
-
-
-/*----------
-perfil
------------*/
-.botonesperfil{
-
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.publicaranuncios2 {
-    background-color: white;
-    color: #f15c22;
-    border: 2px solid #f15c22;
-}
-/*----------
-pie
-----------*/
 .botonunete{
 
     background-color: white;
@@ -128,28 +103,8 @@ pie
     background-color:#f15c22;
 
 }
-/*-------
-
-.botonanuncios{
-
-    background-color: #f15c22;
-    width: 200px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
 
 
-}
-.botonanuncios:hover{
-    background-color:#404041;
 
-}
 
-.botonanuncios-2{
 
-    margin-top: 30px;
-}

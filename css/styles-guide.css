@@ -1,3 +1,15 @@
+/*----------
+NO SE GUÍEN EN LOS TEXTOS DE LOS TITULARES, despues vemos que le ponemos.
+Cada vez que pongo span la tipo no aparece no se si lo tendremos que cambiar a <p> o que!
+----------*/
+
+
+body{
+	color: #404041;
+
+}
+
+
 .sg-style-guide{
 	margin: 0;
 	background: #ddd;
@@ -19,14 +31,12 @@
 }
 
 .sg-title-style-guide{
-	font-family: "Lato", sans-serif;
-	font-size: 1.5rem;
-	color:black;
-	padding-bottom: 20px;
+	font-family: "DOSIS", sans-serif;
+	font-size: 2rem;
+	color: black;
+	margin: 40px;
 	text-align: center;
-	margin: 50px 0px 30px;
 	text-transform: uppercase;
-	clear: both;
 }
 
 .sg-margin-bottom{
@@ -34,20 +44,43 @@
 }
 
 .sg-subtitle{
+
+	text-align: center;
+	margin: 30px;
+	margin-top: 10px;
+
 }
 
-.sg-color-corportivo1{
-	background-color:#1BA8A6;
-	margin-left: 20px;
+.container-colores{
+	width:700px;
+	height:150px;
+	margin: 0 auto;
+}
+
+.sg-color-corporativo1{
+	width:150px;
+	height:150px;
+	background-color:#00A6A5;
+	margin-right: 10px;
+	float:left;
+
+}
+
+.sg-color-corporativo2{
+	width:150px;
+	height:150px;
+	background-color:#F15C22;
+	margin-left: 80px;
 	float: left;
 
 }
 
-.sg-color-corportivo2{
-	background-color:#f15c22;
-	margin-left: 20px;
-	float: left;
+.sg-color-corporativo3{
+	width:150px;
+	height:150px;
+	background-color:#404041;
 
+	float:right;
 }
 
 .sg-color-tipografia{
@@ -61,15 +94,6 @@
 	padding-left: 0px;
 }
 
-.circle{
-	width: 60px;
-	height: 60px;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-	float: left;
-	margin-bottom: 40px;
-}
 
 .sg-margin-auto{
 

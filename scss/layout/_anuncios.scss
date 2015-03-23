@@ -1,0 +1,129 @@
+.anuncio {
+    width: 29%;
+    border: 1px solid #404041;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+
+
+}
+
+.foto{
+
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 20px;
+
+
+}
+.fotoalumno {
+    width: 100%;
+}
+
+.textocuadrado {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+
+}
+.textocurso{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background-color: white;
+
+}
+
+.contenidocurso{
+
+    margin: 7px;
+}
+
+.subcontenido{
+
+    margin-top: 10px;
+}
+.masinfo{
+
+    width: 100%;
+    padding-bottom: 60px;
+    margin-left: 10px;
+}
+
+.iconoizquierda{
+
+    float: left;
+    width: 40%;
+}
+
+.iconoderecha{
+
+    float: left;
+    width: 50%;
+    margin-left: 20px;
+
+
+}
+.icono {
+    float: left;
+    width: 20%;
+
+}
+.icono2{
+    float: left;
+     width: 100%;
+
+
+}
+.social{
+
+
+    width: 70%;
+    float: left;
+
+}
+.textoicono{
+
+    float: left;
+    width:50%;
+
+
+}
+
+.iconomail {
+    display: inline-block;
+    margin-left: 5px;
+    width: 25%;
+
+}
+.imgiconomail{
+
+    width: 100%;
+}
+.mailcursos{
+    width: 40px;
+    left: 24px;
+    top:-4px;
+    position: absolute;
+
+}
+.imgcurso{
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.imgcurso:hover{
+
+    z-index: 0;
+}
+
+
+
+
+
