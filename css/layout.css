@@ -1,0 +1,114 @@
+
+/*----------
+header
+---------*/
+
+header{
+    padding: 10px 60px 40px 20px;
+}
+
+.img-logo {
+    width: 15%;
+}
+
+.logo{
+     /*---sale fuera del div contenedor (body) ----*/
+    width: 100%;
+    float:left;
+    padding-top: 10px;
+}
+
+.menu{
+    text-align: center;
+    line-height: rem(5px);
+    float: right;
+    padding: 0px;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    list-style: none;
+    float: left;
+    padding: 25px 0;
+}
+
+.menu-izquierda {
+    width: 70%;
+    float: left;
+    text-transform: uppercase;
+}
+
+.menu-derecha {
+    float: right;
+    margin: 0 auto;
+}
+
+.menu li a{
+    padding: 30px 10px 30px 20px;
+    color: #404041;
+    text-align: center;
+}
+
+.menu a:hover{
+    color:#f15c22;
+}
+
+/*----------
+footer
+---------*/
+
+footer {
+    background-color: #231F20;
+    clear: both;
+    margin-top: 30px;
+    padding: 0px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.pie{
+
+}
+
+.mini-box-pie{
+    width: 33%;
+    float: left;
+    padding: 50px 0 0 85px;
+    margin: 0 auto;
+}
+
+span{
+    color:white;
+    text-align: left;
+}
+
+.icono-pie{
+    width: 100%;
+}
+
+.red-social{
+    float:left;
+    width: 14%;
+    padding: 0 10px 0 0;
+}
+
+.newsletter{
+    width:100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.caja{
+    float: left;
+    width: 180px;
+}
+
+.boton-unete{
+    background-color: white;
+    width: 83px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}

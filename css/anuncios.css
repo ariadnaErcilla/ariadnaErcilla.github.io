@@ -1,0 +1,137 @@
+.anuncio {
+    width: 29%;
+    border: 1px solid #404041;
+    float: left;
+    margin-right: 20px;
+    
+
+
+}
+.container-anuncio{
+
+    padding: 8px 8px 8px 8px;
+}
+.texto-cuadrado {
+    text-align: center;
+    padding: 20px 10px 30px 10px;
+
+}
+.mas-info{
+    width: 100%;
+    padding-bottom: 60px;
+    margin-left:20px;
+}
+.total-icono{
+
+    float: left;
+    width: 40%; 
+  
+}
+.container-stars{
+
+    float: left;
+    width:80%;
+
+
+}
+.container-icon{
+    width: 20%;
+    float: left;
+
+}
+
+.icono{
+
+    width: 100%;
+    padding-right:2px;
+
+}
+
+.icono-mail {
+    display: inline-block;
+    margin-left: 5px;
+    width: 25%;
+
+}
+.imgiconomail{
+
+    width: 100%;
+
+
+}
+
+/*-------
+ayuda
+
+-------*/
+.foto{
+
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 20px;
+}
+.foto-alumno {
+    width: 100%;
+}
+
+
+.mail-alumnos{
+    width: 40px;
+    left: 5px;
+    top:0;
+    position: absolute;
+   
+}
+
+/*----------
+encuentra
+---------*/
+.total-img-curso{
+
+    margin:0 auto;
+    position: relative;
+   height: 213px;
+
+}
+.imgcurso{
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.imgcurso:hover{
+
+    z-index: 0;
+}
+.texto-curso{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background-color: white;
+
+}
+
+.contenido-curso{
+
+    margin: 7px;
+}
+
+.sub-contenido-curso{
+
+    margin-top: 10px;
+}
+
+.mail-cursos{
+    width: 45px;
+    top:0;
+    left:35%;
+    position: absolute;
+   
+}
+

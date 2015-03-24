@@ -49,7 +49,7 @@ body {
 .modificar.type-color-2{
 
 }
-.title.type-color-1{
+.title{
 	 font-size: 48px;
 	 font-family: "Dosis";
 	 margin: 0px 0px 10px 0px;
@@ -71,21 +71,13 @@ h2 {
 	}
 
 
-.destacado.type-color-3{
+.destacado{
 	 font-size: 36px;
 	 font-family: "Dosis";
 	 font-weight: 400;
 	 font-style: normal;
 }
 
-h3.texto-curso{
-
-    text-align: center;
-    color: #00A6A5;
-    text-transform: uppercase;
-    margin: 0;
-
-}
 
 
 .subtitle {
@@ -101,11 +93,19 @@ h3.texto-curso{
 
 }
 
+.secondary-subtitle{
+
+    font-size:16px;
+    font-weight: 200;
+    margin: 0px;
+    color:#404041;
+}
+
 
 p {
 	font-size: 16px;
 	text-align: left;
-	
+
 }
 
 
@@ -203,8 +203,6 @@ a {
 .naranja a{
     color: #f15c22;
     text-decoration: none;
-
-
 }
 
 .white a{
@@ -224,21 +222,6 @@ buttons
 --------*/
 
 
-button {
-    font-size: 18px;
-    font-weight: bolder;
-    border: none;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    display:inline-block;
-}
-
-button:hover {
-    background-color:#404041;
-}
 
 
 .publicaranuncios{
@@ -320,94 +303,6 @@ divs que contienen botones
     margin-top:80px;
 
 }
-.boton3{
-
-width: 40%;
-margin: 0 auto;
-padding-top:30px;
-}
-.botonquieres{
-
-    width: 90%;
-}
-
-.container-button{
-
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    width: 50%;
-}
-/*----------
-header
----------*/
-
-header{
-	padding-top: 10px;
-	padding-bottom: 40px;
-	padding-right: 60px;
-	padding-left: 20px;
-}
-
-.logo{
-    width: 150px;
-    float:left;
-    padding-top: 10px;
-}
-
-#menu{
-	text-align: center;
-	line-height: 5px;
-	float: right;
-	padding: 0px;
-    width: 72%;
-    margin: 0 auto;
-}
-
-#menu ul li{
-	font-size: 16px;
-	list-style: none;
-	float: left;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.menuizquierda {
-	width: 650px;
-    float: left;
-
-}
-
-.menuderecha {
-    float: right;
-    margin: 0 auto;
-}
-
-li.textomenu a{
-    color: #404041;
-    width: 260px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-li.textomenu a:hover{
-    color:#f15c22;
-}
-
-li.login a{
-    color: #404041;
-    width: 70px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
 
 /*---------
 popup login-registro
@@ -536,7 +431,7 @@ textarea {
     display: block;
     font-size: 1rem;
     line-height: 1rem;
-    padding: .5rem; 
+    padding: .5rem;
 }
 
 .imgproceso{
@@ -591,7 +486,7 @@ textarea {
 /*-----------
 popup contactar
 ----------*/
-.box-check{
+./*box-check{
 
     border: 2px solid #1BA8A6;
     clear: both;
@@ -611,6 +506,7 @@ popup contactar
      opacity: 0.5;
      position: relative;
 }
+---*/
 .dias-semana{
 
     float: left;
@@ -621,7 +517,7 @@ popup contactar
     float: left;
     width: 30%;
 }
-
+/*---------
 .cuadro-check-1{
 
     position: absolute;
@@ -1039,11 +935,7 @@ img.icononaranja{
 
 
 }
-.icono {
-    float: left;
-    width: 20%;
 
-}
 .icono2{
     float: left;
      width: 100%;
