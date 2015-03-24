@@ -75,18 +75,21 @@ Checkboxes, selects
 
     float: left;
     width: 30%;
-    overflow: auto;
+ 
 
 }
 .box-check{
-
-    border: 2px solid #00A6A5;
+     position: relative;
+     background: url(../imagenes/box-dias.svg) no-repeat;
+     height: 120px;
     clear: both;
     margin-bottom: 10px;
-    width: 100%;
 
 }
-}
+
+
+/*---------
+
 .mini-box-check{
 
     background-color: #404041;
@@ -101,11 +104,12 @@ Checkboxes, selects
      position: relative;
 
 }
-
-.cuadro-check-1{
+--------------*/
+.cuadro-check-3{
 
     position: absolute;
-    left: 120px;
+    left: 150px;
+   
 
 
 }
@@ -113,23 +117,38 @@ Checkboxes, selects
 .cuadro-check-2{
 
     position: absolute;
-    left: 70px;
+    left: 85px;
+   
 
 }
 
-.cuadro-check-3{
+.cuadro-check-1{
 
     position: absolute;
-    left: 40px;
+    left: 20px;
+   
 
 }
 
-input[type="checkbox"]{
+.top-1{
 
-    
+    top:5px;
 }
 
+.top-2{
 
+    top:30px;
+}
+
+.top-3{
+
+    top:55px;
+}
+
+.top-4{
+
+    top:80px;
+}
 select{
 
     height: 35px;

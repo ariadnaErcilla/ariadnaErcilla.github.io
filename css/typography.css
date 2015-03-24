@@ -11,6 +11,9 @@
 .type-color-4{
     color: #9F9E9E;
 }
+.type-color-5{
+    color: #404041;
+}
 
 #container{
     max-width: 1000px;
@@ -21,12 +24,7 @@
 .modificar.type-color-2{
 
 }
-.title.type-color-1{
-     font-size: 48px;
-     font-family: "Dosis";
-     margin: 0px 0px 10px 0px;
-     text-transform: uppercase;
-}
+
 .title{
      font-size: 48px;
      font-family: "Dosis";
@@ -52,28 +50,12 @@ h2 {
     font-weight: 400;
     }
 
-
-.destacado.type-color-3{
-     font-size: 36px;
-     font-family: "Dosis";
-     font-weight: 400;
-     font-style: normal;
-}
 .destacado{
      font-size: 36px;
      font-family: "Dosis";
      font-weight: 400;
      font-style: normal;
 }
-h3.texto-curso{
-
-    text-align: center;
-    color: #00A6A5;
-    text-transform: uppercase;
-    margin: 0;
-
-}
-
 
 .subtitle {
     font-size: 24px;
@@ -107,7 +89,7 @@ p {
 
 
 .light {
-    font-weight: lighter;
+    font-weight: 200;
     color:#00A6A5;
     margin: 0;
 }

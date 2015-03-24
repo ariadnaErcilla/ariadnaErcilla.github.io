@@ -46,13 +46,29 @@
 .button-1,
 .button-2,
 .button-3,
-.button-mail span{
+.button-mail,
+.button-unete span{
 
-    font-size:18px;
     font-weight: bold;
     text-transform: uppercase;
 
 }
+
+.button-1,
+.button-2,
+.button-3 span{
+
+    font-size: 18px;
+}
+
+.button-mail span{
+
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+}
+
 .button-1,
 .button-2,
 .button-mail span{
@@ -63,20 +79,20 @@
 .button-3 span{
     color:#f15c22;
 }
+
 .container-mail{
     position: absolute;
-    margin-top: 36px;
     margin:36px auto;
     left:0;
     right:0;
-    width: 10%;
+    width: 51%;
 
 }
 .button-mail {
     border: 10px solid white;
     border-radius: 15px;
     width: 100%;
-    height: 13%;
+    padding: 13px 0px 13px 0px;
 
     
 }

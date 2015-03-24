@@ -224,21 +224,6 @@ buttons
 --------*/
 
 
-button {
-    font-size: 18px;
-    font-weight: bolder;
-    border: none;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    display:inline-block;
-}
-
-button:hover {
-    background-color:#404041;
-}
 
 
 .publicaranuncios{
@@ -591,7 +576,7 @@ textarea {
 /*-----------
 popup contactar
 ----------*/
-.box-check{
+./*box-check{
 
     border: 2px solid #1BA8A6;
     clear: both;
@@ -611,6 +596,7 @@ popup contactar
      opacity: 0.5;
      position: relative;
 }
+---*/
 .dias-semana{
 
     float: left;
@@ -621,7 +607,7 @@ popup contactar
     float: left;
     width: 30%;
 }
-
+/*---------
 .cuadro-check-1{
 
     position: absolute;
@@ -1039,11 +1025,7 @@ img.icononaranja{
 
 
 }
-.icono {
-    float: left;
-    width: 20%;
 
-}
 .icono2{
     float: left;
      width: 100%;
