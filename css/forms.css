@@ -81,6 +81,7 @@ Checkboxes, selects
 .box-check{
      position: relative;
      background: url(../imagenes/box-dias.svg) no-repeat;
+     background-size: contain;
      height: 120px;
     clear: both;
     margin-bottom: 10px;

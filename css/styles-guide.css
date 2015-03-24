@@ -44,7 +44,7 @@ body{
 }
 .sg-text-left{
 	text-align: left;
-	
+
 }
 .sg-subtitle{
 
@@ -115,7 +115,10 @@ body{
 }
 
 .sg-float-none{
-
 	float: none;
 	clear: both;
+}
+
+.contenedor-header{
+	width: 1500px;
 }

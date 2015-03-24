@@ -37,18 +37,12 @@
     text-align: center;
 }
 
-h1.titulo-ampliar-curso {
+.titulo-ampliar-curso {
     color: #404041;
     max-width: 500px;
     font-weight: 500;
     margin-top: 50px;
 }
-
-h2 {
-    font-size: 48px;
-    margin: 0px;
-    font-weight: 400;
-    }
 
 .destacado{
      font-size: 36px;
@@ -69,7 +63,13 @@ h2 {
      margin: 0px;
 
 }
+.secondary-subtitle{
 
+    font-size:14px;
+    font-weight: 200;
+    margin: 0;
+    color:#404041;
+}
 p {
     font-size: 16px;
     text-align: left;
@@ -94,13 +94,6 @@ p {
     margin: 0;
 }
 
-
-.ayudame{
-    font-weight: 400;
-    display: inline-block;
-    margin-top: 5px;
-    width: 30%;
-}
 
 .tags {
     font-size: 14px;

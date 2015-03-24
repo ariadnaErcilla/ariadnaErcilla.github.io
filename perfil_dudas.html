@@ -2,9 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Perfil Dudas</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Perfil</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link href="css/styles.css" rel="stylesheet" type="css/buttons">
+
+    <link href="css/styles.css" rel="stylesheet" type="css/forms">
+
+    <link href="css/styles.css" rel="stylesheet" type="css/lists">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/normas">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/popup">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/styles">
+
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -94,9 +109,6 @@
             <p class="titulospublicar">
                 Sube una foto de tu trabajo:
             </p>
-            <p class="subtitulospublicar">
-                *Máximo 3,2 x 3,2 cm
-            </p>
             <form>
                 <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
             </form>
@@ -124,47 +136,44 @@
     </div>
 </div>
 
-
-   <div class="parteizquierda">
+ <div class="parteizquierda">
         <div class="fotoperfil">
             <img class="imgperfil" src="imagenes/circuloperfil.svg">
-            <h6 class="modificar">
+            <span class="modificar">
                 <a href="#">
                     Sube tu foto
                 </a>
-            </h6>
-            <h6 class="tamanomaximo">
-                34 x 34 píxeles. Máximo 30MB
-            </h6>
+            </span>
         </div>
         <div class="totalinformacionpersona">
-            <h6 class="modificar">
+            <span class="modificar">
                <a href="#">
                 <u>modificar</u>
                 </a>
-            </h6>
-            <h4>
-                MARTA PÉREZ
-            </h4>
+            </span>
+            <h1 class="profile-name">
+                Marta Perez
+            </h1>
             <div class="infoperfil">
-                 <p class="infopersona"><strong>Correo:</strong> mperez@gmail.com</p>
-                <p class="infopersona"><strong>Status:</strong> Estudiante</p>
-                <p class="infopersona"><strong>Categoría:</strong> Diseñadora Gráfica</p>
-                <p class="infopersona"><strong>Edad:</strong> 22 años</p>
+                 <p><strong>Correo:</strong> mperez@gmail.com</p>
+                <p><strong>Status:</strong> Estudiante</p>
+                <p><strong>Categoría:</strong> Diseñadora Gráfica</p>
+                <p><strong>Edad:</strong> 22 años</p>
             </div>
         </div>
         <div class="botonesperfil">
         <div class="boton">
-            <button class="publicaranuncios"><a href="#publicar">PUBLICA TU CURSO</a></button>
+            <button class="general-button button-2"><a href="#publicar">Publica tu curso</a></button>
         </div>
-        <p class="infoutil">
+        <p class="centrado">
             ¡Aquí podrás publicar la clase que necesitas!
         </p>
         <div class="boton">
-            <button class="publicaranuncios2"><a class="ayuda" href="#publicaralumno">PUBLICA TU DUDA</a></button>
+            <button class="general-button button-3"><a class="ayuda" href="#publicaralumno">Publica tu duda</a></button>
         </div>
         </div>
     </div>
+
     <div class="partederecha">
         <div class="menuinterior">
             <ul>
@@ -180,30 +189,30 @@
                 <img class="iconosperfil" src="imagenes/iconodudas.svg">
             <div class="contenido">
             <div class="tituloperfil">
-            <h5>
+            <h2 class="secondary-title">
                 Dudas
-            </h5>
+            </h2>
             </div>
-            <h6 class="tamanomaximo">
+            <p class="secondary-subtitle">
                 Borra los anuncios que están desactualizados, así evitarás recibir mensajes no deseados.
-            </h6>
-            <h6 class="modificar">
+            </p>
+            <span class="modificar">
                 <a href="#">
                 <u>modificar</u>
                 </a>
-            </h6>
+            </span>
             <div class="nocursossuadrado">
             <div class="contenidonocursos">
                 <div class="personaje">
                 <img src="imagenes/personajepepe.png">
                 </div>
-                <h3 class="texto-curso">
+                <h4 class="destacado">
                     ¡No has publicado ninguna duda aún!
-                </h3>
-                <h5 class="subnocursos">Publica todos aqullos cursos que no encuentres otros creativos lo verán y te ayudarán.</h5>
+                </h4>
+                <p class="subtitle">Publica todos aqullos cursos que no encuentres otros creativos lo verán y te ayudarán.</p>
                 <div class="boton3">
-                    <button class="publicaranuncios"><a href="#publicar">PUBLICA TU DUDA</a></button>
-                </div>  
+                    <button class="general-button button-2"><a href="#publicar">Publica tu duda</a></button>
+                </div>
             </div>
             </div>
         </div>
