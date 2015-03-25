@@ -72,17 +72,14 @@ footer {
 }
 
 .mini-box-pie{
-    width: 33%;
     float: left;
     padding: 50px 0 0 85px;
     margin: 0 auto;
 }
+.mini-box-pie span{
 
-span{
-    color:white;
-    text-align: left;
+    color: white;
 }
-
 .icono-pie{
     width: 100%;
 }
@@ -98,17 +95,42 @@ span{
     margin: 0 auto;
     padding-top: 20px;
 }
+.caja-footer{
 
-.caja{
     float: left;
+}
+#input-footer{
+
     width: 180px;
+    background: white;
+    border: 1px solid black;
+    height: 20px;
+
+
 }
 
-.boton-unete{
-    background-color: white;
-    width: 83px;
-    height: 20px;
-    float: left;
-    text-align: center;
+.container-unete{
     margin-left: 20px;
+    width: 10%;
+    margin: 0 auto;
+
 }
+.button-unete{
+
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+.button-unete span{
+    color: #404041;
+
+}
+.button-unete:hover{
+    background-color:#f15c22;
+
+}
+

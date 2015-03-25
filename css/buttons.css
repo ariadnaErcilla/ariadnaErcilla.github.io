@@ -85,7 +85,7 @@
     margin:36px auto;
     left:0;
     right:0;
-    width: 51%;
+    width: 15%;
 
 }
 .button-mail {
@@ -100,13 +100,7 @@
 
     background-color:#404041;
 }
-.mailcursos{
-    width: 40px;
-    left: 24px;
-    top:-4px;
-    position: absolute;
-   
-}
+
 .container-unete{
     margin-left: 20px;
     width: 10%;
@@ -119,7 +113,7 @@
     border:1px solid black;
     border-radius: 0;
     width: 100%;
-    height: 30px;
+    height: 20px;
     text-align: center;
 }
 

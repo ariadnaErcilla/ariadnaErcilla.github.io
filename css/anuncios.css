@@ -47,19 +47,6 @@
 
 }
 
-.icono-mail {
-    display: inline-block;
-    margin-left: 5px;
-    width: 25%;
-
-}
-.imgiconomail{
-
-    width: 100%;
-
-
-}
-
 /*-------
 ayuda
 
@@ -93,7 +80,7 @@ encuentra
    height: 213px;
 
 }
-.imgcurso{
+.img-curso{
 
     width: 100%;
     margin: 0;
@@ -103,7 +90,7 @@ encuentra
     left: 0;
     z-index: 1000;
 }
-.imgcurso:hover{
+.img-curso:hover{
 
     z-index: 0;
 }

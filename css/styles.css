@@ -39,6 +39,9 @@ body {
 .type-color-4{
     color: #9F9E9E;
 }
+.type-color-5{
+    color: #404041;
+}
 
 #container{
     max-width: 1000px;
@@ -46,66 +49,61 @@ body {
 
 }
 
-.modificar.type-color-2{
+.modificar{
 
+   font-size:14px;
+   color:#F15C22;
 }
+
 .title{
-	 font-size: 48px;
-	 font-family: "Dosis";
-	 margin: 0px 0px 10px 0px;
-	 text-transform: uppercase;
+     font-size: 48px;
+     font-family: "Dosis";
+     margin: 0px 0px 10px 0px;
+     text-transform: uppercase;
+}
+.title-form{
+    font-size: 48px;
+    font-family: "Lato";
+    text-align: center;
 }
 
-
-h1.titulo-ampliar-curso {
+.titulo-ampliar-curso {
     color: #404041;
     max-width: 500px;
     font-weight: 500;
     margin-top: 50px;
 }
 
-h2 {
-	font-size: 48px;
-    margin: 0px;
-    font-weight: 400;
-	}
-
-
 .destacado{
-	 font-size: 36px;
-	 font-family: "Dosis";
-	 font-weight: 400;
-	 font-style: normal;
+     font-size: 36px;
+     font-family: "Dosis";
+     font-weight: 400;
+     font-style: normal;
 }
 
-
-
 .subtitle {
-	font-size: 24px;
+    font-size: 24px;
     margin: 0px;
 }
 
 
 .secondary-title {
-	 font-size: 18px;
-	 font-weight: bolder;
+     font-size: 18px;
+     font-weight: 500;
      margin: 0px;
 
 }
-
 .secondary-subtitle{
 
-    font-size:16px;
+    font-size:14px;
     font-weight: 200;
-    margin: 0px;
+    margin: 0;
     color:#404041;
 }
-
-
 p {
-	font-size: 16px;
-	text-align: left;
-
+    font-size: 16px;
+    text-align: left;
+    color:#808284;
 }
 
 
@@ -121,50 +119,28 @@ p {
 
 
 .light {
-    font-weight: lighter;
+    font-weight: 200;
     color:#00A6A5;
     margin: 0;
 }
 
-
-.ayudame{
-	font-weight: 400;
-    display: inline-block;
-    margin-top: 5px;
-    width: 30%;
-}
 
 .tags {
     font-size: 14px;
     font-weight: lighter;
     font-style: italic;
 }
-.textpopup{
-
-    display: inline-block;
-    font-size: 12px;
-    text-decoration: underline;
-}
 
 .terms{
     font-size: 12px;
     text-align: center;
 }
-.textopie{
+.copyright{
     text-align: center;
     padding:10px;
     color:white;
     font-size: 10px;
     margin: 0px;
-}
-
-.derechos{
-    font-size: 10px;
-    clear: both;
-    color: white;
-    text-align: right;
-    width: 110px;
-    float: right;
 }
 
 .nofloat{
@@ -186,6 +162,10 @@ p {
 .line{
 
     line-height: 0.5;
+}
+.underline{
+
+    text-decoration: underline;
 }
 /*-----------
 permalinks
@@ -210,63 +190,139 @@ a {
     color:white;
 }
 
-.botonunete a{
-    color: #404041;
-}
-
-button a.ayuda {
-    color:#f15c22;
-}
 /*--------
 buttons
 --------*/
+.container-button{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 25%;
+}
+.left{
 
+    float: left;
+}
+.general-button{
 
-
-
-.publicaranuncios{
-    background-color:#f15c22;
-    color:white;
-    width: 240px;
+    border: none;
+    margin: 0 auto;
+    width: 100%;
     height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
 
 }
-.publicaranuncios2 {
-    background-color: white;
-    color: #f15c22;
+.button-1{
+
+    background-color:#00A6A5;
+   
+
+}
+.button-2,
+.button-mail{
+    background-color:#f15c22;
+    
+}
+
+.button-3{
+    background-color:white;
     border: 2px solid #f15c22;
+
+
 }
 
-
-.botonmail {
-    background-color: #f15c22;
-    border: 10px solid white;
-    border-radius: 15px;
-    margin-top: 36px;
-    position: absolute;
-    width: 65%;
-    height: 13%;
-    left:0;
-    margin:36px auto;
-    right:0;
-
-}
-.botonmail:hover{
+.general-button:hover{
 
     background-color:#404041;
 }
-.botonunete{
+.button-1,
+.button-2,
+.button-3,
+.button-mail,
+.button-unete span{
 
-    background-color: white;
-    width: 83px;
-    height: 20px;
-    float: left;
-    text-align: center;
-    margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
 
+.button-1,
+.button-2,
+.button-3 span{
 
-.botonunete:hover{
+    font-size: 18px;
+}
+
+.button-mail span{
+
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+}
+
+.button-1,
+.button-2,
+.button-mail span{
+    color:white;
+
+}
+
+.button-3 span{
+    color:#f15c22;
+}
+
+.container-mail{
+    position: absolute;
+    margin:36px auto;
+    left:0;
+    right:0;
+    width: 51%;
+
+}
+.button-mail {
+    border: 10px solid white;
+    border-radius: 15px;
+    width: 100%;
+    padding: 13px 0px 13px 0px;
+
+    
+}
+.button-mail:hover{
+
+    background-color:#404041;
+}
+.mailcursos{
+    width: 40px;
+    left: 24px;
+    top:-4px;
+    position: absolute;
+   
+}
+.container-unete{
+    margin-left: 20px;
+    width: 10%;
+    margin: 0 auto;
+
+}
+.button-unete{
+
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+.button-unete span{
+    color: #404041;
+
+}
+.button-unete:hover{
     background-color:#f15c22;
 
 }
@@ -339,102 +395,84 @@ popup login-registro
 
 }
 .popup{
-
-	position: absolute;
-	margin: 0 auto;
-	width: 100%;
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
 
 }
 .popup-image{
 
     background-position: top center;
     background-repeat: no-repeat;
-    background-image: url(../imagenes/ninologin.png) ;
-
-}
-
-.popupbox{
-	width:350px;
-	position:relative;
-	padding:5px 20px 13px 20px;
-	background:white;
-	border-radius:5px;
-	top: 30px;
-	transition:all 500ms ease-in;
-	border: 5px solid #54c4c7;
+    background-image: url(../imagenes/ninologin.png);
+    
 
 
 
 }
-.pform{
+.popup-image-2{
 
-	padding-top: 20px;
-    margin: 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninogracias.png);
+
+
+
+
 }
-
-
-.movedown{
-	margin:0 auto;
-}
-.masc:target .movedown{
-	margin:15% auto;
-
+.top{
+    top:200px;
+   
 }
 
 .close{
-	background: #f15c22;
-	color:#FFF;
-	line-height:25px;
-	position:absolute;
-	right:1px;
-	text-align:center;
-	top:1px;
-	width:24px;
-	text-decoration:none;
-	font-weight:bold;
-	border-radius:3px;
+    background: #f15c22;
+    color:#FFF;
+    line-height:25px;
+    position:absolute;
+    right:1px;
+    text-align:center;
+    top:1px;
+    width:24px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:3px;
 }
 
 .close:hover{
-	background:#333333;
-}
-.linkfacebook{
-    width: 100%;
-
-}
-.imgfacebook{
-
-    padding-bottom: 20px;
-    border-bottom: 1px solid #404041;
+    background:#333333;
 }
 
-/*-----
-popup publicar
-
------*/
-
-
+.popup-box{
+    width:400px;
+    padding:5px 20px 13px 20px;
+    background:white;
+    border-radius:5px;
+    transition:all 500ms ease-in;
+    border: 5px solid #54c4c7;
+    margin:0 auto;
+    position:relative;
+}
 
 .container-popup{
     width: 100%;
     padding-top: 40px;
     margin: 0 auto;
 
-
-
-}
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea {
-    background: #404041;
-    display: block;
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: .5rem;
 }
 
-.imgproceso{
+.link-facebook{
+    width: 100%;
+
+}
+.img-facebook{
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #404041;
+}
+
+.img-proceso{
     margin: 0 auto;
 
 }
@@ -444,12 +482,8 @@ textarea {
 
 
 }
-.cajaformulario{
-    clear: both;
-    margin-top: 20px;
-}
 
-.cajaconsejos {
+.caja-consejos {
     float: left;
     width: 50%;
     margin-left: 40px;
@@ -469,7 +503,7 @@ textarea {
     margin-top: 50px;
 }
 
-.botonconsejos {
+.boton-consejos {
     background-color: black;
     width: 30px;
     height: 30px;
@@ -481,18 +515,97 @@ textarea {
     margin-right: 10px;
 
 }
+/*-----
+forms
+
+-----*/
+
+.pform{
+
+    padding-top: 20px;
+    margin: 0;
+}
+
+.caja-formulario{
+    clear: both;
+    margin-top: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    background: #E6E6E6;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .5rem;
+    width: 50%;
+    border: none; 
+    color:#A0A0A0;
+    margin-top:6px; 
+
+    
+}
+
+.big-textarea{
+    padding-bottom: 50px;
+
+}
+.mini-input{
+    width: 20%;
+    display: inline-block;
+}
+.caja-footer{
+
+    float: left;
+}
+#input-footer{
+
+    width: 180px;
+    background: white;
+    border: 1px solid black;
+    height: 30px;
 
 
-/*-----------
-popup contactar
+}
+/*----------
+Checkboxes, selects
 ----------*/
-./*box-check{
 
-    border: 2px solid #1BA8A6;
+.form-check{
+
+    display:inline-block;
+    padding-right: 10px;
+    margin: 0;
+    clear: both;
+}
+.form-check span{
+
+    color:#404041;
+    margin-left: 3px;
+
+}
+.total-partes-dia{
+
+    float: left;
+    width: 30%;
+ 
+
+}
+.box-check{
+     position: relative;
+     background: url(../imagenes/box-dias.svg) no-repeat;
+     background-size: contain;
+     height: 120px;
     clear: both;
     margin-bottom: 10px;
-    width: 50%;
+
 }
+
+
+/*---------
+
 .mini-box-check{
 
     background-color: #404041;
@@ -505,8 +618,58 @@ popup contactar
     background-color: #808284;
      opacity: 0.5;
      position: relative;
+
 }
----*/
+--------------*/
+.cuadro-check-3{
+
+    position: absolute;
+    left: 150px;
+   
+
+
+}
+
+.cuadro-check-2{
+
+    position: absolute;
+    left: 85px;
+   
+
+}
+
+.cuadro-check-1{
+
+    position: absolute;
+    left: 20px;
+   
+
+}
+
+.top-1{
+
+    top:5px;
+}
+
+.top-2{
+
+    top:30px;
+}
+
+.top-3{
+
+    top:55px;
+}
+
+.top-4{
+
+    top:80px;
+}
+select{
+
+    height: 35px;
+}
+
 .dias-semana{
 
     float: left;
@@ -517,18 +680,7 @@ popup contactar
     float: left;
     width: 30%;
 }
-/*---------
-.cuadro-check-1{
 
-    position: absolute;
-    left: 120px;
-}
-
-.cuadro-check-2{
-
-    position: absolute;
-    left: 70px;
-}
 
 /*-----------
 
@@ -669,26 +821,80 @@ section.minibox {
 	max-width: 90%;
 }
 
+/*----------
+
+anuncio
+----------*/
+
+.anuncio {
+    width: 29%;
+    border: 1px solid #404041;
+    float: left;
+    margin-right: 20px;
+    
+
+
+}
+.container-anuncio{
+
+    padding: 8px 8px 8px 8px;
+}
+.texto-cuadrado {
+    text-align: center;
+    padding: 20px 10px 30px 10px;
+
+}
+.mas-info{
+    width: 100%;
+    padding-bottom: 60px;
+    margin-left:20px;
+}
+.total-icono{
+
+    float: left;
+    width: 40%; 
+  
+}
+.container-stars{
+
+    float: left;
+    width:80%;
+
+
+}
+.container-icon{
+    width: 20%;
+    float: left;
+
+}
+
+.icono{
+
+    width: 100%;
+    padding-right:2px;
+
+}
+
 
 
 /*-----------
 ENCUENTRA TU CURSO
 ---------*/
-.totalimgcurso{
-
-    margin:0 auto;
-    position: relative;
-    height: 180px;
-
-}
-.munecobusqueda2 {
+.muneco-busqueda-2 {
     position: absolute;
     left:-130px;
     top:93px;
 
 }
 
-.imgcurso{
+.total-img-curso{
+
+    margin:0 auto;
+    position: relative;
+   height: 213px;
+
+}
+.img-curso{
 
     width: 100%;
     margin: 0;
@@ -698,11 +904,11 @@ ENCUENTRA TU CURSO
     left: 0;
     z-index: 1000;
 }
-.imgcurso:hover{
+.img-curso:hover{
 
     z-index: 0;
 }
-.textocurso{
+.texto-curso{
 
     position: absolute;
     right: 0;
@@ -712,22 +918,22 @@ ENCUENTRA TU CURSO
 
 }
 
-.contenidocurso{
+.contenido-curso{
 
     margin: 7px;
 }
 
-.subcontenido{
+.sub-contenido-curso{
 
     margin-top: 10px;
 }
 
-.mailcursos{
-    width: 40px;
-    left: 24px;
-    top:-4px;
+.mail-cursos{
+    width: 45px;
+    top:0;
+    left:35%;
     position: absolute;
-
+   
 }
 
 
@@ -792,14 +998,32 @@ BUSCA TU ALUMNO
 }
 
 }
+.foto{
 
-.tituloencabezado {
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 20px;
+}
+
+.foto-alumno {
+    width: 100%;
+}
+
+
+.mail-alumnos{
+    width: 40px;
+    left: 5px;
+    top:0;
+    position: absolute;
+   
+}
+.titulo-encabezado {
     clear: both;
     width: 100%;
     padding-bottom: 10px;
     border-bottom: 1px solid #404041;
 }
-.contenidotitulo{
+.contenido-titulo{
     position: relative;
     float: left;
      width: 40%;
@@ -809,17 +1033,36 @@ BUSCA TU ALUMNO
 
 
 }
-.munecobusqueda {
+.muneco-busqueda {
     position: absolute;
     left:480px;
     top:93px;
 
 }
+.todos-anuncios {
+    float:left;
+    width: 73%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
 
-.fondoanuncio{
+.anuncios-horizontal {
+    width: 100%;
+    margin-bottom: 50px;
+   float: left;
+
+
+}
+
+.fondo-anuncio{
 
     background-color: #1BA8A6;
 }
+
+/*--------
+aside
+--------*/
 .filtros {
     float: left;
     width: 17%;
@@ -874,101 +1117,8 @@ img.icononaranja{
 
 }
 
-.todosanuncios {
-    float:left;
-    width: 73%;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-}
-
-.anuncioshorizontal {
-    width: 100%;
-    margin-bottom: 50px;
-   float: left;
 
 
-}
-
-.anuncio {
-    width: 29%;
-    border: 1px solid #404041;
-    float: left;
-    margin-right: 20px;
-    position: relative;
-
-
-}
-
-.foto{
-
-    margin: 0 auto;
-    width: 30%;
-    padding-top: 20px;
-}
-.fotoalumno {
-    width: 100%;
-}
-
-.textocuadrado {
-    padding: 20px;
-    text-align: center;
-
-}
-.masinfo{
-    width: 100%;
-    padding-bottom: 60px;
-    margin-left: 10px;
-}
-
-.iconoizquierda{
-
-    float: left;
-    width: 40%;
-}
-
-.iconoderecha{
-
-    float: left;
-    width: 50%;
-    margin-left: 20px;
-
-
-}
-
-.icono2{
-    float: left;
-     width: 100%;
-
-
-}
-.social{
-
-
-    width: 70%;
-    float: left;
-
-}
-.textoicono{
-
-    float: left;
-    width:50%;
-
-
-}
-
-.iconomail {
-    display: inline-block;
-    margin-left: 5px;
-    width: 25%;
-
-}
-.imgiconomail{
-
-    width: 100%;
-
-
-}
 
 /*----------
 PERFIL
@@ -1208,53 +1358,45 @@ form.turnos {
 pie
 ---------*/
 
-.article3 {
-
+footer {
     background-color: #231F20;
     clear: both;
     margin-top: 30px;
     padding: 0px;
-}
-.pie{
-
     margin: 0 auto;
     width: 100%;
 }
-section.miniboxpie{
 
-    width: 33%;
+.pie{
+
+
+}
+
+.mini-box-pie{
     float: left;
-    padding-left: 85px;
-    padding-top:50px;
+    padding: 50px 0 0 85px;
     margin: 0 auto;
+}
+.mini-box-pie span{
 
+    color: white;
+}
+.icono-pie{
+    width: 100%;
 }
 
-
-#iconos{
-    width: 200px;
-    margin:0 auto;
-
-}
-.iconopie{
-
-    width: 40px;
-    margin-left: 5px;
-
-}
-.twitter{
+.red-social{
     float:left;
+    width: 14%;
+    padding: 0 10px 0 0;
 }
-.facebook{
-    float:left;
-}
+
 .newsletter{
     width:100%;
     margin: 0 auto;
     padding-top: 20px;
-
-
 }
+
 
 .caja-footer{
 
@@ -1265,12 +1407,7 @@ section.miniboxpie{
     width: 180px;
     background: white;
     border: 1px solid black;
-    height: 30px;
+    height: 20px;
 
 
-}
-
-footer{
-    background-color:#231F20;
-    clear: both;
 }
