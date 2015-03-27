@@ -38,9 +38,22 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 }
+.sg-subtitle-style-guide{
+	font-family: "DOSIS", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: black;
+	margin: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 
 .sg-margin-bottom{
 	margin-bottom: 15px;
+}
+.sg-padding-top{
+	padding-top: 15px;
 }
 .sg-text-left{
 	text-align: left;

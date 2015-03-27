@@ -25,7 +25,7 @@ select {
     font-size: 1rem;
     line-height: 1rem;
     padding: .5rem;
-    width: 50%;
+    width: 100%;
     border: none; 
     color:#A0A0A0;
     margin-top:6px; 
@@ -41,13 +41,10 @@ select {
 	width: 20%;
     display: inline-block;
 }
-.caja-footer{
 
-    float: left;
-}
 #input-footer{
 
-    width: 180px;
+    width: 100%;
     background: white;
     border: 1px solid black;
     height: 20px;
@@ -88,68 +85,6 @@ Checkboxes, selects
 
 }
 
-
-/*---------
-
-.mini-box-check{
-
-    background-color: #404041;
-    opacity: 0.5;
-    position: relative;
-}
-
-.mini-box-check-2{
-
-    background-color: #808284;
-     opacity: 0.5;
-     position: relative;
-
-}
---------------*/
-.cuadro-check-3{
-
-    position: absolute;
-    left: 150px;
-   
-
-
-}
-
-.cuadro-check-2{
-
-    position: absolute;
-    left: 85px;
-   
-
-}
-
-.cuadro-check-1{
-
-    position: absolute;
-    left: 20px;
-   
-
-}
-
-.top-1{
-
-    top:5px;
-}
-
-.top-2{
-
-    top:30px;
-}
-
-.top-3{
-
-    top:55px;
-}
-
-.top-4{
-
-    top:80px;
-}
 select{
 
     height: 35px;

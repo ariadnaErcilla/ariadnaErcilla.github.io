@@ -61,76 +61,60 @@ footer
 footer {
     background-color: #231F20;
     clear: both;
-    margin-top: 30px;
-    padding: 0px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 20px;
     width: 100%;
 }
 
 .pie{
-
+    margin: 0 auto;
 }
 
 .mini-box-pie{
     float: left;
-    padding: 50px 0 0 85px;
+    width: 33%;
     margin: 0 auto;
+    padding: 20px;
 }
-.mini-box-pie span{
 
-    color: white;
-}
 .icono-pie{
     width: 100%;
 }
 
 .red-social{
     float:left;
-    width: 14%;
+    width: 20%;
     padding: 0 10px 0 0;
 }
 
 .newsletter{
-    width:100%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .caja-footer{
 
     float: left;
 }
-#input-footer{
+/*---------
+grid
 
-    width: 180px;
-    background: white;
-    border: 1px solid black;
-    height: 20px;
+---------*/
 
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-xs-12 {
+  width: 100%;
+  background-color: #F0F0F0;
+}
+
+
+.col-xs-6 {
+  width: 100%;
+  background-color: #DCDCDB;
 
 }
 
-.container-unete{
-    margin-left: 20px;
-    width: 10%;
-    margin: 0 auto;
-
-}
-.button-unete{
-
-    background-color: white;
-    border:1px solid black;
-    border-radius: 0;
-    width: 100%;
-    height: 20px;
-    text-align: center;
-}
-
-.button-unete span{
-    color: #404041;
-
-}
-.button-unete:hover{
-    background-color:#f15c22;
-
-}
 

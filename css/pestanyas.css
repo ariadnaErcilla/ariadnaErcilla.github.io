@@ -1,0 +1,64 @@
+
+.box-perfil {
+    width: 65%;
+    background-color: white;
+    border: 2px solid #00A6A5;
+     overflow: hidden;
+   
+}
+.menu-interior {
+    width: 100%;
+    text-align: left;
+    line-height: 5px;
+    float: right;
+    padding: 0px;
+    background-color: #00A6A5;
+}
+
+.menu-interior ul {
+    font-size: 16px;
+    list-style: none;
+    float: left;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+li.pestanyas {
+    display: inline-block;
+    margin-right: 0px;
+    background-color: #00A6A5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pestanyas a{
+    color:white;
+    text-decoration: none;
+
+}
+
+
+li.pestanyas a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #00A6A5;
+}
+.contenido-perfil{
+
+    margin-left: 50px;
+    margin-top:70px;
+
+
+}
+
+.option-2, 
+.option-3,
+.option-4,
+.option-5{
+
+    display: none;
+}
