@@ -9,7 +9,6 @@
     float: left;
 }
 .general-button{
-
     border: none;
     margin: 0 auto;
     width: 100%;
@@ -18,18 +17,18 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
-
 }
+
 .button-1{
 
     background-color:#00A6A5;
-   
+
 
 }
 .button-2,
 .button-mail{
     background-color:#f15c22;
-    
+
 }
 
 .button-3{
@@ -94,7 +93,7 @@
     width: 100%;
     padding: 13px 0px 13px 0px;
 
-    
+
 }
 .button-mail:hover{
 
