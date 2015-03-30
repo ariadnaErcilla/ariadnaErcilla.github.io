@@ -26,11 +26,12 @@ select {
     line-height: 1rem;
     padding: .5rem;
     width: 100%;
-    border: none; 
+    border: none;
     color:#A0A0A0;
-    margin-top:6px; 
+}
 
-    
+.margin-none {
+    margin-top:0;
 }
 
 .big-textarea{
@@ -48,9 +49,8 @@ select {
     background: white;
     border: 1px solid black;
     height: 20px;
-
-
 }
+
 /*----------
 Checkboxes, selects
 ----------*/
@@ -69,12 +69,10 @@ Checkboxes, selects
 
 }
 .total-partes-dia{
-
     float: left;
     width: 30%;
- 
-
 }
+
 .box-check{
      position: relative;
      background: url(../imagenes/box-dias.svg) no-repeat;
@@ -82,7 +80,6 @@ Checkboxes, selects
      height: 120px;
     clear: both;
     margin-bottom: 10px;
-
 }
 
 select{
