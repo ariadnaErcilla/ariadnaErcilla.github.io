@@ -201,7 +201,6 @@ buttons
 }
 
 .left{
-
     float: left;
 }
 .general-button{
@@ -217,11 +216,9 @@ buttons
 
 }
 .button-1{
-
     background-color:#00A6A5;
-
-
 }
+
 .button-2,
 .button-mail{
     background-color:#f15c22;
@@ -397,24 +394,17 @@ popup login-registro
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png);
-
-
-
-
 }
+
 .popup-image-2{
 
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninogracias.png);
-
-
-
-
 }
+
 .top{
     top:200px;
-
 }
 
 .close{
@@ -1180,12 +1170,14 @@ li.pestanyas a:hover {
     float: left;
 }
 
-.iconored{
+.icono-perfil{
     float: left;
 }
+
 .url{
     float: left;
 }
+
 .redes-izquierda {
     display: inline-block;
     width: 30%;
@@ -1195,15 +1187,13 @@ li.pestanyas a:hover {
     display: inline-block;
     margin-left: 200px;
     width: 30%;
-
 }
+
 .galeria{
-
     margin-top: 20px;
-
 }
-.fotos-trabajos{
 
+.fotos-trabajos{
     margin-bottom: 80px;
     margin-top:20px;
 }
