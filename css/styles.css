@@ -298,8 +298,9 @@ buttons
 }
 .container-unete{
     margin-left: 20px;
-    width: 10%;
+    width: 25%;
     margin: 0 auto;
+
 
 }
 .button-unete{
@@ -314,6 +315,7 @@ buttons
 
 .button-unete span{
     color: #404041;
+
 
 }
 .button-unete:hover{
