@@ -100,13 +100,13 @@ p {
     color:#404041;
 }
 
-.categoriasmenu {
+.categorias-menu {
     padding-right: 10px;
     line-height: 30px;
     margin: 0px;
 }
 
-.categoriasmenu:hover {
+.categorias-menu:hover {
     color:#f15c22;
 }
 
@@ -130,7 +130,7 @@ p {
     font-style: italic;
 }
 
-.textpopup{
+.text-pop-up{
     display: inline-block;
     font-size: 12px;
     text-decoration: underline;
@@ -141,7 +141,7 @@ p {
     clear: both;
 }
 
-.copyright{
+.copy-right{
     text-align: center;
     padding:10px;
     color:white;
@@ -149,7 +149,7 @@ p {
     margin: 0px;
 }
 
-.nofloat{
+.no-float{
     float: none;
     margin: 0px;
 }
@@ -199,7 +199,6 @@ buttons
     margin: 0 auto;
 }
 .left{
-
     float: left;
 }
 .general-button{
@@ -214,11 +213,9 @@ buttons
 }
 
 .button-1{
-
     background-color:#00A6A5;
-
-
 }
+
 .button-2,
 .button-mail{
     background-color:#f15c22;
@@ -293,6 +290,14 @@ buttons
 
     background-color:#404041;
 }
+<<<<<<< HEAD
+=======
+.mail-cursos{
+    width: 40px;
+    left: 24px;
+    top:-4px;
+    position: absolute;
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
 .container-unete{
     margin-left: 20px;
@@ -332,14 +337,14 @@ divs que contienen botones
     text-align: center;
 }
 
-.botonpopup{
+.boton-pop-up{
 
     padding-top: 40px;
     padding-bottom: 5px;
 
 
 }
-.botonesperfil{
+.botones-perfil{
 
     margin-top: 40px;
     margin-bottom: 40px;
@@ -348,7 +353,7 @@ divs que contienen botones
 
     margin-top: 20px;
 }
-.boton2{
+.boton-2{
 
    float: left;
     margin-top:80px;
@@ -389,36 +394,29 @@ popup login-registro
 	pointer-events:auto;
 
 }
-.popup{
+.pop-up{
     display: none;
     position: absolute;
     margin: 0 auto;
     width: 100%;
 
 }
-.popup-image{
+.pop-up-image{
 
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png);
-
-
-
-
 }
-.popup-image-2{
+
+.pop-up-image-2{
 
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninogracias.png);
-
-
-
-
 }
+
 .top{
     top:200px;
-
 }
 
 .close{
@@ -439,7 +437,7 @@ popup login-registro
     background:#333333;
 }
 
-.popup-box{
+.pop-up-box{
     width:400px;
     padding:5px 20px 13px 20px;
     background:white;
@@ -450,7 +448,7 @@ popup login-registro
     position:relative;
 }
 
-.container-popup{
+.container-pop-up{
     width: 100%;
     padding-top: 40px;
     margin: 0 auto;
@@ -472,10 +470,7 @@ popup login-registro
 
 }
 .proceso{
-
     width: 100%;
-
-
 }
 
 .caja-consejos {
@@ -515,7 +510,7 @@ forms
 
 -----*/
 
-.pform{
+.p-form{
 
     padding-top: 20px;
     margin: 0;
@@ -538,9 +533,6 @@ select {
     width: 50%;
     border: none;
     color:#A0A0A0;
-    margin-top:6px;
-
-
 }
 
 .big-textarea{
@@ -618,28 +610,18 @@ Checkboxes, selects
 }
 --------------*/
 .cuadro-check-3{
-
     position: absolute;
     left: 150px;
-
-
-
 }
 
 .cuadro-check-2{
-
     position: absolute;
     left: 85px;
-
-
 }
 
 .cuadro-check-1{
-
     position: absolute;
     left: 20px;
-
-
 }
 
 .top-1{
@@ -683,7 +665,7 @@ select{
 HOME
 -------------*/
 
-.imgtop {
+.img-top {
 	margin: 0 auto;
 	margin-top: 50px;
 }
@@ -694,18 +676,18 @@ HOME
 	width: 100%;
 }*/
 
-.fondoimgtop {
+.fondo-img-top {
 	position: relative;
 }
 
-.contenidotop {
+.contenido-top {
 	margin: 0 auto;
 	width: 100%;
 	top:100px;
 	position:absolute;
 }
 
-.textotop-1 {
+.texto-top-1 {
 	text-align: center;
 	padding-bottom: 90px;
 	width: 50%;
@@ -713,7 +695,7 @@ HOME
     float: left;
 }
 
-.textotop-2 {
+.texto-top-2 {
     text-align: center;
     padding-bottom: 90px;
     width: 50%;
@@ -807,15 +789,21 @@ anuncio
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
+<<<<<<< HEAD
     position: relative;
     background-color: white;
 
 }
 
 .container-anuncio{
+=======
+}
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
+.container-anuncio{
     padding: 8px 8px 8px 8px;
 }
+
 .texto-cuadrado {
     text-align: center;
     padding: 20px 10px 30px 10px;
@@ -826,33 +814,42 @@ anuncio
     margin-left: 10px;
 }
 .total-icono{
-
     float: left;
+<<<<<<< HEAD
     width: 50%;
 
+=======
+    width: 40%;
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 }
-.container-stars{
 
+.container-stars{
     float: left;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width:80%;
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 }
 
 .container-icon{
     width: 20%;
     float: left;
-
 }
 
 .icono{
-
     width: 100%;
     padding-right:2px;
-
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 /*-----------
 ENCUENTRA TU CURSO
 ---------*/
+
 .muneco-busqueda-2 {
     position: absolute;
     left:-130px;
@@ -882,13 +879,11 @@ ENCUENTRA TU CURSO
     z-index: 0;
 }
 .texto-curso{
-
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
     background-color: white;
-
 }
 
 .contenido-curso{
@@ -1039,7 +1034,7 @@ aside
 
     margin-top:50px;
 }
-.listacategorias{
+.lista-categorias{
 
     margin-top: 20px;
 }
@@ -1113,18 +1108,20 @@ PERFIL
 }
 
 .parte-derecha{
-     margin-top: 80px;
+    margin-top: 80px;
     margin-right: 4%;
     margin-bottom: 50px;
     float: right;
+    background-color: red;
 }
+
 
 .box-perfil {
-    width: 65%;
     background-color: white;
     border: 2px solid #00A6A5;
-}
+     overflow: hidden;
 
+}
 .menu-interior {
     width: 100%;
     text-align: left;
@@ -1148,17 +1145,17 @@ li.pestanyas {
     display: inline-block;
     margin-right: 0px;
     background-color: #00A6A5;
-    color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    text-decoration: none;
 }
 
 .pestanyas a{
     color:white;
+    text-decoration: none;
 }
+
 
 li.pestanyas a:hover {
     background-color: white;
@@ -1171,7 +1168,19 @@ li.pestanyas a:hover {
     margin-top:70px;
 }
 
-.iconosperfil{
+.option-2,
+.option-3,
+.option-4,
+.option-5{
+    display: none;
+}
+
+.contenido-perfil{
+    margin-left: 50px;
+    margin-top:70px;
+}
+
+.iconos-perfil{
     float: left;
     margin-right: 10px;
     clear: both;
@@ -1182,54 +1191,51 @@ li.pestanyas a:hover {
     float: left;
 }
 
-.redeshorizontal {
-}
-
-.iconored{
+.icono-perfil{
     float: left;
 }
+
 .url{
     float: left;
 }
-.redesizquierda {
+
+.redes-izquierda {
     display: inline-block;
     width: 30%;
 }
 
-.redesderecha {
+.redes-derecha {
     display: inline-block;
     margin-left: 200px;
     width: 30%;
-
 }
+
 .galeria{
-
     margin-top: 20px;
-
 }
-.fotostrabajos{
 
+.fotos-trabajos{
     margin-bottom: 80px;
     margin-top:20px;
 }
 
-.fotoizquierda {
+.foto-izquierda {
     float: left;
     width: 30%;
 }
 
-.fotomedio {
+.foto-medio {
     float: left;
     width: 30%;
     margin-left: 10px;
 }
 
-.fotoderecha{
+.foto-derecha{
     float: left;
     width: 30%;
     margin-left: 10px;
 }
-.fotogaleriaperfil{
+.foto-galeria-perfil{
 
 width: 90%;
 
@@ -1241,7 +1247,7 @@ PERFIL-CURSOS
 
 --------*/
 
-.nocursossuadrado{
+.no-cursos-cuadrado{
 
     border: 1px solid #54c4c7;
     width: 90%;
@@ -1250,7 +1256,7 @@ PERFIL-CURSOS
 
 }
 
-.contenidonocursos{
+.contenido-no-cursos{
 
     position: relative;
     margin-top:30px;
@@ -1273,33 +1279,34 @@ PERFIL-CURSOS
 PERFIL-SOBRE MI
 
 --------*/
-.cuadradodisponibilidad{
+.cuadrado-disponibilidad{
 
 
 }
 
-.programasinfo{
-margin-bottom: 40px;
-margin-top: 30px;
+.programas-info{
+    margin-bottom: 40px;
+    margin-top: 30px;
 
 }
-.totalprogramas{
+.total-programas{
     margin-top: 10px;
 }
-.parteizquierdapro{
+.parte-izquierda-pro{
 
     float: left;
     width: 40%
 }
 
-.partederechapro{
-
+/*.parte-derecha-pro{
     float: left;
     width: 40%;
     margin-left: 20px;
 }
+existe?
+*/
 
-.ladotitulo{
+.lado-titulo{
 
 }
 form.turnos {
