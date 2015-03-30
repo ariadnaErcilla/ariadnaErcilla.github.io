@@ -4,6 +4,7 @@
     float: left;
     margin-right: 20px;
     position: relative;
+    background-color: white;
 
 }
 
@@ -17,20 +18,20 @@
 
 }
 .mas-info{
-    width: 100%;
     padding-bottom: 60px;
-    margin-left:20px;
+    margin-left:10px;
 }
 .total-icono{
 
     float: left;
-    width: 40%; 
-  
+    width: 50%;
+
 }
 .container-stars{
 
     float: left;
-    width:80%;
+    width: 80%;
+
 
 
 }
@@ -67,7 +68,7 @@ ayuda
     left: 5px;
     top:0;
     position: absolute;
-   
+
 }
 
 /*----------
@@ -119,6 +120,6 @@ encuentra
     top:0;
     left:35%;
     position: absolute;
-   
+
 }
 
