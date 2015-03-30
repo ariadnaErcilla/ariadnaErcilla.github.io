@@ -1356,6 +1356,16 @@ footer {
     float: left;
 }
 
+#input-footer{
+
+    width: 100%;
+    background: white;
+    border: 1px solid black;
+    height: 20px;
+
+
+}
+
 /*---------
 grid
 ---------*/
