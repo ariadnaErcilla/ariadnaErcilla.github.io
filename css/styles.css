@@ -143,7 +143,6 @@ p {
     clear: both;
 }
 
-
 .copyright{
     text-align: center;
     padding:10px;
@@ -932,8 +931,7 @@ BUSCA TU ALUMNO
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+
 }
 @media (min-width: 768px) {
 .col-xs-12 {
@@ -997,9 +995,9 @@ BUSCA TU ALUMNO
 .contenido-titulo{
     position: relative;
     float: left;
-     width: 40%;
-     padding-top: 80px;
-     margin-left: 400px;
+    width: 40%;
+    padding-top: 80px;
+    margin-left: 400px;
 
 
 
@@ -1013,9 +1011,7 @@ BUSCA TU ALUMNO
 .todos-anuncios {
     float:left;
     width: 73%;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    margin-left: 100px;
+    margin: 40px 0px 100px 100px;
 }
 
 .anuncios-horizontal {
@@ -1319,9 +1315,11 @@ form.turnos {
     width: 350px;
 }
 
+
 /*-------
 FOOTER
 --------*/
+
 
 footer {
     background-color: #231F20;
