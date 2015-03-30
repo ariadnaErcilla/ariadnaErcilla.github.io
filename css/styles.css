@@ -50,7 +50,6 @@ body {
 }
 
 .modificar{
-
    font-size:14px;
    color:#F15C22;
 }
@@ -120,40 +119,32 @@ p {
     margin: 0;
 }
 
-<<<<<<< HEAD
 .ayudame{
 	font-weight: 400;
     display: inline-block;
     margin-top: 5px;
     width: 30%;
 }
-=======
->>>>>>> a1a3a7358f6d1b9c67c92bd53666c206773bef5b
 
 .tags {
     font-size: 14px;
     font-weight: lighter;
     font-style: italic;
 }
-<<<<<<< HEAD
+
 .textpopup{
     display: inline-block;
     font-size: 12px;
     text-decoration: underline;
 }
-=======
->>>>>>> a1a3a7358f6d1b9c67c92bd53666c206773bef5b
 
 .terms{
     font-size: 12px;
     clear: both;
 }
-<<<<<<< HEAD
 
-.textopie{
-=======
+
 .copyright{
->>>>>>> a1a3a7358f6d1b9c67c92bd53666c206773bef5b
     text-align: center;
     padding:10px;
     color:white;
@@ -211,6 +202,7 @@ buttons
     margin: 0 auto;
     width: 25%;
 }
+
 .left{
 
     float: left;
@@ -242,34 +234,28 @@ buttons
 .button-3{
     background-color:white;
     border: 2px solid #f15c22;
-
-
 }
 
 .general-button:hover{
-
     background-color:#404041;
 }
+
 .button-1,
 .button-2,
 .button-3,
 .button-mail,
 .button-unete span{
-
     font-weight: bold;
     text-transform: uppercase;
-
 }
 
 .button-1,
 .button-2,
 .button-3 span{
-
     font-size: 18px;
 }
 
 .button-mail span{
-
     font-size: 16px;
     position: absolute;
     top: 15px;
@@ -280,7 +266,6 @@ buttons
 .button-2,
 .button-mail span{
     color:white;
-
 }
 
 .button-3 span{
@@ -345,9 +330,6 @@ divs que contienen botones
 .boton-centrado {
     text-align: center;
 }
-
-
-
 
 .botonpopup{
 
@@ -785,26 +767,6 @@ p.subtituloencontrar {
 	font-size:16px;
 }
 
-.botonanuncios {
-	background-color: #f15c22;
-	width: 200px;
-	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: 0 auto;
-	border-radius: 8px;
-}
-
-.botonanuncios:hover {
-	background-color:#404041;
-}
-
-.botonanuncios-2 {
-	margin-top: 30px;
-}
-
 p.textoveranuncios {
 	color:white;
 	font-size: 18px;
@@ -946,10 +908,6 @@ ENCUENTRA TU CURSO
     top:0;
     left:35%;
     position: absolute;
-<<<<<<< HEAD
-=======
-
->>>>>>> a1a3a7358f6d1b9c67c92bd53666c206773bef5b
 }
 
 /*----------
@@ -1137,46 +1095,43 @@ img.icononaranja{
 PERFIL
 ----------*/
 
-.parteizquierda {
+.parte-izquierda {
     float: left;
     width: 20%;
     margin-left: 75px;
     margin-top: 100px;
 }
 
-.fotoperfil {
+.foto-perfil {
   width: 100%;
 
 }
-.imgperfil{
+.img-perfil{
 
     width: 60%;
 }
 
-.totalinformacionpersona{
+.informacion-persona{
 
  margin-top: 40px;
 }
-.infoperfil {
-
+.info-perfil {
     padding: 0px;
-
-
 }
+
 .parte-derecha{
      margin-top: 80px;
     margin-right: 4%;
     margin-bottom: 50px;
     float: right;
-
 }
 
 .box-perfil {
     width: 65%;
     background-color: white;
     border: 2px solid #00A6A5;
-
 }
+
 .menu-interior {
     width: 100%;
     text-align: left;
@@ -1210,39 +1165,34 @@ li.pestanyas {
 
 .pestanyas a{
     color:white;
-
 }
-
 
 li.pestanyas a:hover {
     background-color: white;
     text-decoration: none;
     color: #00A6A5;
 }
-.contenido-perfil{
 
+.contenido-perfil{
     margin-left: 50px;
     margin-top:70px;
-
 }
-.iconosperfil{
 
+.iconosperfil{
     float: left;
     margin-right: 10px;
     clear: both;
-
 }
+
 .contenido{
     width: 80%;
     float: left;
-
 }
+
 .redeshorizontal {
-
 }
+
 .iconored{
-
-
     float: left;
 }
 .url{
@@ -1334,6 +1284,7 @@ PERFIL-SOBRE MI
 
 
 }
+
 .programasinfo{
 margin-bottom: 40px;
 margin-top: 30px;
@@ -1368,14 +1319,9 @@ form.turnos {
     width: 350px;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a1a3a7358f6d1b9c67c92bd53666c206773bef5b
-/*---------
-pie
----------*/
+/*-------
+FOOTER
+--------*/
 
 footer {
     background-color: #231F20;
@@ -1386,15 +1332,14 @@ footer {
 }
 
 .pie{
-
-
+    margin: 0 auto;
 }
 
 .mini-box-pie{
     float: left;
-    padding: 50px 0 0 85px;
+    width: 33%;
     margin: 0 auto;
-    width: 32%;
+    padding: 20px;
 }
 
 .icono-pie{
@@ -1403,29 +1348,94 @@ footer {
 
 .red-social{
     float:left;
-    width: 30%;
     padding: 0 10px 0 0;
 }
 
 .newsletter{
-    width:100%;
     margin: 0 auto;
     padding-top: 10px;
-
 }
-
-
 .caja-footer{
 
     float: left;
-    width: 75%;
 }
-#input-footer{
 
-    width: 180px;
-    background: white;
-    border: 1px solid black;
-    height: 20px;
+/*---------
+grid
+---------*/
 
-
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
+
+.col-xs-12 {
+  width: 100%;
+  background-color: #F0F0F0;
+}
+
+.col-xs-6 {
+  width: 100%;
+  background-color: #DCDCDB;
+}
+
+
+
+/* HEADER INICIO*/
+
+header{
+        margin: 1.5rem 0 3rem 0;
+        overflow: hidden;
+}
+
+.img-logo {
+    width: 12%;
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 800px){
+            .logo {
+                min-width: 100px;
+        }
+    }
+
+.logo{
+    width: 100%;
+    float:left;
+}
+
+.menu{
+    text-align: center;
+    line-height: rem(5px);
+    float: right;
+    width: 85%;
+}
+
+.menu ul li{
+    list-style: none;
+    float: left;
+}
+
+.menu-izquierda {
+    float: left;
+    margin-left: 10px;
+}
+
+.menu-derecha {
+    float: right;
+}
+
+.menu li a{
+    margin-right: 10px;
+    color: #404041;
+}
+
+.menu a:hover{
+    color:#f15c22;
+}
+
+.buscar-top {
+    display: inline;
+    width: 10%;
+}
+/* HEAEDER FIN */
