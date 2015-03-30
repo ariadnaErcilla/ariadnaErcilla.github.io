@@ -86,26 +86,22 @@ body {
     margin: 0px;
 }
 
-
 .secondary-title {
      font-size: 18px;
      font-weight: 500;
      margin: 0px;
-
 }
-.secondary-subtitle{
 
-    font-size:14px;
+.secondary-subtitle{
+}
+
+p {
+	font-size: 16px;
+	text-align: left;
     font-weight: 200;
     margin: 0;
     color:#404041;
 }
-p {
-    font-size: 16px;
-    text-align: left;
-
-}
-
 
 .categoriasmenu {
     padding-right: 10px;
@@ -124,7 +120,6 @@ p {
     margin: 0;
 }
 
-
 .tags {
     font-size: 14px;
     font-weight: lighter;
@@ -135,7 +130,11 @@ p {
     font-size: 12px;
     clear: both;
 }
+
+
+
 .copyright{
+
     text-align: center;
     padding:10px;
     color:white;
@@ -165,10 +164,10 @@ p {
 /*-----------
 permalinks
 -----------*/
-
+/*
 a {
     text-decoration: none;
-}
+}*/
 
 .type-color-5 a{
 
@@ -928,11 +927,15 @@ ENCUENTRA TU CURSO
     top:0;
     left:35%;
     position: absolute;
+<<<<<<< HEAD
 
 }
 
 
+=======
+>>>>>>> 9e6c12bdb025bfc9afa82e936abee82573dd9c7e
 
+}
 
 /*----------
 
@@ -956,8 +959,7 @@ BUSCA TU ALUMNO
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+ 
 }
 @media (min-width: 768px) {
 .col-xs-12 {
@@ -1021,9 +1023,9 @@ BUSCA TU ALUMNO
 .contenido-titulo{
     position: relative;
     float: left;
-     width: 40%;
-     padding-top: 80px;
-     margin-left: 400px;
+    width: 40%;
+    padding-top: 80px;
+    margin-left: 400px;
 
 
 
@@ -1037,9 +1039,7 @@ BUSCA TU ALUMNO
 .todos-anuncios {
     float:left;
     width: 73%;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    margin-left: 100px;
+    margin: 40px 0px 100px 100px;
 }
 
 .anuncios-horizontal {
@@ -1349,8 +1349,6 @@ form.turnos {
 .diashorizontal {
     width: 350px;
 }
-
-
 
 /*---------
 pie
