@@ -18,7 +18,7 @@
 .modificar{
 
    font-size:14px;
- 
+
 }
 
 .title{
@@ -57,19 +57,18 @@
      font-size: 18px;
      font-weight: 600;
      margin: 0px;
-
 }
-.secondary-subtitle{
 
+.secondary-subtitle{
     font-size:14px;
     font-weight: 200;
     margin: 0;
     color:#404041;
 }
+
 p {
     font-size: 16px;
     text-align: left;
-    
 }
 
 
@@ -83,13 +82,11 @@ p {
     color:#f15c22;
 }
 
-
 .light {
     font-weight: 200;
     color:#00A6A5;
     margin: 0;
 }
-
 
 .tags {
     font-size: 14px;
@@ -101,6 +98,7 @@ p {
     font-size: 12px;
     clear: both;
 }
+
 .copyright{
     text-align: center;
     padding:10px;
@@ -123,7 +121,7 @@ p {
 
     line-height: 0.5;
 }
-.underline{
 
+.underline{
     text-decoration: underline;
 }
