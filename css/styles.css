@@ -212,13 +212,13 @@ buttons
 .button-1{
 
     background-color:#00A6A5;
-   
+
 
 }
 .button-2,
 .button-mail{
     background-color:#f15c22;
-    
+
 }
 
 .button-3{
@@ -283,7 +283,7 @@ buttons
     width: 100%;
     padding: 13px 0px 13px 0px;
 
-    
+
 }
 .button-mail:hover{
 
@@ -294,7 +294,7 @@ buttons
     left: 24px;
     top:-4px;
     position: absolute;
-   
+
 }
 .container-unete{
     margin-left: 20px;
@@ -400,7 +400,7 @@ popup login-registro
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png);
-    
+
 
 
 
@@ -417,7 +417,7 @@ popup login-registro
 }
 .top{
     top:200px;
-   
+
 }
 
 .close{
@@ -535,11 +535,11 @@ select {
     line-height: 1rem;
     padding: .5rem;
     width: 50%;
-    border: none; 
+    border: none;
     color:#A0A0A0;
-    margin-top:6px; 
+    margin-top:6px;
 
-    
+
 }
 
 .big-textarea{
@@ -585,7 +585,7 @@ Checkboxes, selects
 
     float: left;
     width: 30%;
- 
+
 
 }
 .box-check{
@@ -620,7 +620,7 @@ Checkboxes, selects
 
     position: absolute;
     left: 150px;
-   
+
 
 
 }
@@ -629,7 +629,7 @@ Checkboxes, selects
 
     position: absolute;
     left: 85px;
-   
+
 
 }
 
@@ -637,7 +637,7 @@ Checkboxes, selects
 
     position: absolute;
     left: 20px;
-   
+
 
 }
 
@@ -826,7 +826,7 @@ anuncio
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
-    
+
 
 
 }
@@ -847,8 +847,8 @@ anuncio
 .total-icono{
 
     float: left;
-    width: 40%; 
-  
+    width: 40%;
+
 }
 .container-stars{
 
@@ -928,7 +928,7 @@ ENCUENTRA TU CURSO
     top:0;
     left:35%;
     position: absolute;
-   
+
 }
 
 
@@ -1010,7 +1010,7 @@ BUSCA TU ALUMNO
     left: 5px;
     top:0;
     position: absolute;
-   
+
 }
 .titulo-encabezado {
     clear: both;
@@ -1157,7 +1157,7 @@ PERFIL
     width: 65%;
     background-color: white;
     border: 2px solid #00A6A5;
-   
+
 }
 .menu-interior {
     width: 100%;
@@ -1205,7 +1205,7 @@ li.pestanyas a:hover {
 
     margin-left: 50px;
     margin-top:70px;
-  
+
 }
 .iconosperfil{
 
@@ -1390,7 +1390,7 @@ footer {
     width:100%;
     margin: 0 auto;
     padding-top: 10px;
-   
+
 }
 
 
