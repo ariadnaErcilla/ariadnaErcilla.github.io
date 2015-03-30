@@ -1,0 +1,40 @@
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th{
+
+	background-color: #DCDCDB;
+}
+
+td{
+
+	background-color: #F0F0F0;
+}
+.table-check{
+
+	border: 2px solid #00A6A5;
+}
+.second-td{
+
+	background-color: #DCDCDB;
+}
+.icono-tabla-off{
+
+	
+}
+.icono-tabla{
+	display: none;
+	margin: 0 auto;
+	
+
+}
+.title-table{
+
+	text-align: left;
+}

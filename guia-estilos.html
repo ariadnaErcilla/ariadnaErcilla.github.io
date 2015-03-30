@@ -7,10 +7,18 @@
     <link href="css/styles-guide.css" rel="stylesheet" type="text/css">
     <link href="css/forms.css" rel="stylesheet" type="text/css">
     <link href="css/popup.css" rel="stylesheet" type="text/css">
-    <link href="css/lists.css" rel="stylesheet" type="text/css">
     <link href="css/buttons.css" rel="stylesheet" type="text/css">
     <link href="css/typography.css" rel="stylesheet" type="text/css">
+    <link href="css/colors.css" rel="stylesheet" type="text/css">
+    <link href="css/tables.css" rel="stylesheet" type="text/css">
+    <link href="css/anuncios.css" rel="stylesheet" type="text/css">
     <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/pestanyas.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
 </head>
 <body class="sg-style-guide">
 	<div class="sg-wrapper">
@@ -30,12 +38,9 @@
 		<hr>
 		<h3 class="destacado">Destacados (anuncios)</h3>
 		<hr>
-		<span class="secondary-subtitle">títulos pequeños</span>
+		<span class="secondary-subtitle">Subtítulos pequeños</span>
 		<hr>
         <p>Filtros</p>
-        <hr>
-        <span class="secondary-subtitle">títulos pequeños</span>
-        <hr>
   </section>
 
 
@@ -55,9 +60,6 @@
         <span class="secondary-subtitle">span class="secondary-subtitle"</span>
         <hr>
         <p> p filtros</p>
-        <hr>
-        <span class="secondary-subtitle">span class="secondary-subtitle"</span>
-        <hr>
 </section>
 
 
@@ -66,10 +68,19 @@
     <h1 class="sg-title-style-guide">Colores</h1>
     <p class="sg-subtitle">Estos son los colores corporativos</p>
     <div class="container-colores">
-        <div class="sg-color-corporativo1">#00A6A5
-        </div>
+        <div class="sg-color-corporativo1">#00A6A5</div>
         <div class="sg-color-corporativo2">#F15C22</div>
         <div class="sg-color-corporativo3">#404041</div>
+         <div class="sg-color-corporativo4">#E6E6E6</div>
+    </div>
+
+   <h2 class="sg-subtitle-style-guide">Borders y Backgrounds</h2>
+    <p class="sg-subtitle">Estos son los borders de punto y seguido</p>
+    <div class="container-borde">
+        <div class="sg-border-grueso"></div>
+        <div class="sg-border-fino2"></div>
+        <div class="sg-border-fino3"></div>
+
     </div>
 
 </section>
@@ -86,10 +97,7 @@
     <div class="container-button">
          <button class="general-button button-3 sg-margin-bottom"><span>Botón</span></button>
      </div>
-      <div class="container-mail">
-         <button class="general-button button-mail sg-margin-bottom"><span>Botón</span></button>
-     </div>
-     <div class="container-unete">
+     <div class="container-unete sg-float-none">
          <button class="button-unete sg-margin-bottom"><span>Botón</span></button>
      </div>
     </div>
@@ -97,8 +105,8 @@
 
 <section>
 
-<h1 class="sg-title-style-guide">Formularios</h1>
-    <h2 class="sg-title-style-guide">Text inputs and textareas</h2>
+<h1 class="sg-title-style-guide sg-float-none">Formularios</h1>
+    <h2 class="sg-subtitle-style-guide">Text inputs and textareas</h2>
         <form class="pform">
             <div class="caja-formulario">
                 <label class="secondary-title">Label name</label>
@@ -120,35 +128,14 @@
             </div>
 
         </form>
-    <h2 class="sg-title-style-guide">Checkbox and select</h2>
+    <h2 class="sg-subtitle-style-guide">Checkbox and select</h2>
         <form class="pform">
             <div class="caja-formulario">
                     <label class="form-check"><input type="checkbox"><span>opción 1</span></label>
                     <label class="form-check"><input type="checkbox"><span>opción 2</span></label>
                     <label class="form-check"><input type="checkbox"><span>opción 3</span></label>
             </div>
-            <div class="caja-formulario">
-            <div class="total-partes-dia">
-            <div class="box-check">
-                    <div class="mini-box-check">
-                            <input class="cuadro-check-1" type="checkbox">
-                            <input class="cuadro-check-2" type="checkbox">
-                    </div>
-                    <div class="mini-box-check-2">
-                            <input class="cuadro-check-1" type="checkbox">
-                            <input class="cuadro-check-2" type="checkbox">
-                            <input class="cuadro-check-3" type="checkbox">
-                    </div>
-                    <div class="mini-box-check">
-                            <input class="cuadro-check-1" type="checkbox">
-                            <input class="cuadro-check-3" type="checkbox">
-                    </div>
-                    <div class="mini-box-check-2">
-                            <input class="cuadro-check-2" type="checkbox">
-                    </div>
-            </div>
-        </div>
-        </div>
+
         <div class="caja-formulario">
                 <select name="text" required="">
                     <option value="Arquitectura">Value 1</option>
@@ -159,53 +146,223 @@
        </form>
 </section>
 <section>
-    <h1 class="sg-title-style-guide">Popups</h1>
-<div class="sg-margin-bottom">
+<h1 class="sg-title-style-guide">Tablas</h1>
+<table class="sg-margin-auto">
+    <tr>
+    <th></th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+    <th>Jueves</th>
+    <th>Viernes</th>
+    <th>Sábado</th>
+    <th>Domingo</th>
+  </tr>
+    <tr>
+      <td class="title-table">Mañana</td>
+      <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+    <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+     <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+    </tr>
+    <tr>
+    <td class="second-td title-table">Tarde</td>
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg">
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg">
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg">
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg">
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg">
+    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg">
+    </tr>
+    <tr>
+      <td class="title-table">Noche</td>
+      <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+     <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+      <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+    </tr>
+
+</table> 
+<div class="sg-padding-top">
+<table class="table-check sg-margin-auto">
+    <tr>
+    <td></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td></td>
+    </tr>
+    <tr>
+    <td class="second-td"></td>
+     <td class="second-td"><input type="checkbox"></td>
+      <td class="second-td"></td>
+      <td class="second-td"><input type="checkbox"></td>
+    </tr>
+    <tr>
+    <td><input type="checkbox"></td>
+      <td></td>
+      <td></td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+    <td class="second-td"></td>
+      <td class="second-td"></td>
+      <td class="second-td"><input type="checkbox"></td>
+      <td class="second-td"></td>
+    </tr>
+</table>
+</div>
+<section>
+    <h1 class="sg-title-style-guide">Links</h1>
+    <p><span class="modificar underline centrado"><a class="type-color-2" href="#">Link 1</a></span></p>
+     <p><span class="modificar centrado"><a class="type-color-2" href="#">Link 2</a></span></p>
+      <p><span class="secondary-title underline centrado"><a class="type-color-5" href="#">Link 3</a></span></p>
+</section>
+</section>
+<section>
+<h1 class="sg-title-style-guide">Popups</h1>
+<p class="centrado"><a class="type-color-5" href="#"><u>Link al popup</a></u></p>
     <div class="popup popup-image">
-            <div class="popup-box movedown-2">
+            <div class="popup-box top">
             <a href="#close" title="close" class="close">X</a>
             <div class="container-popup cf">
-             <h2 class="title-form">Title</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
+                    <h2 class="title-form">Title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
             </div>
-            </div>
+        </div>
     </div>
-<div class="sg-float-left">
-            <div class="popup-box movedown">
+     <div class="popup">
+            <div class="popup-box">
                 <a href="#close" title="close" class="close">X</a>
                 <div class="container-popup cf">
-                 <h2 class="title-form">Title</h1>
+                        <h2 class="title-form">Title</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
                 </div>
             </div>
-</div>
+</div>  
+
+</section>
+<section>
+     <div class="sg-float-none sg-margin-bottom sg-margin-auto">
+     <h1 class="sg-title-style-guide">Anuncios</h1>
+     <div class="sg-margin-auto">
+     <article class="anuncio">
+        <div class="container-anuncio cf">
+                <div class="foto">
+                    <img class="foto-alumno" src="imagenes/fotohelena.jpg">
+                </div>
+                <div class="texto-cuadrado">
+                    <h2 class="secondary-title">Necesito clases de Joomla</h2>
+                    <p class="centrado">Necesito hacer una web en Joomla para un cliente. Me manejo en Wordpress pero casi no he tocado Joomla. Necesito alguien con disponibilidad para hacer un intensivo durante 15 días.
+                    </p>
+                </div>
+                <div class="mas-info">
+                    <div class="total-icono">
+                        <div class="container-icon">
+                        <img class="icono" src="imagenes/animacion_c.svg">
+                    </div>
+                        <div class="container-icon">
+                            <span class="secondary-subtitle">Animación</span>
+                        </div>
+                    </div>
+                     <div class="total-icono">
+                            <div class="container-stars">
+                            <img class="icono" src="imagenes/estrellasanuncios.svg">
+                        </div>
+                        <div class="container-icon">
+                            <span class="modificar type-color-2">(5)</span>
+                        </div>
+                </div>
+                        <div class="container-mail">
+                            <img class="mail-alumnos" src="imagenes/mail-b.svg">
+                            <button class="button-mail"><a href="#contactar"><span>Enséñale</span></a></button>
+                        </div>
+                </div>
+            </article>
+            <article class="anuncio">
+            <div class="total-img-curso cf">
+                <img class="img-curso" src="imagenes/foto_videojuego.jpg">
+                <div class="texto-curso">
+                    <div class="contenido-curso">
+                        <p>Te puedo enseñar a animar tus propios personajes. Trabajaremos con Unity y estoy a tu disposición para resolver las dudas que tengas. </p>
+                        <div class="sub-contenido-curso">
+                            <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                            <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
+                            <p class="light">Nombre:<span class="type-color-5">Marta Pérez</span></p>
+                            <p class="tags type-color-1">#retoque fotográfico #photoshop #ojos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container-anuncio cf">
+        <div class="texto-cuadrado">
+            <h2 class="secondary-title">Animar videojuegos en Unity</h2>
+        </div>
+        <div class="mas-info">
+            <div class="total-icono">
+                 <div class="container-icon">
+                <img class="icono"src="imagenes/animacion_c.svg">
+                </div>
+                <div class="container-icon">
+                    <span class="secondary-subtitle">Animación</span>
+                </div>
+            </div>
+            <div class="total-icono">
+                <div class="container-stars">
+                    <img class="icono" src="imagenes/estrellasanuncios.svg">
+                </div>
+                <div class="container-icon">
+                    <span class="modificar type-color-2">(5)</span>
+                </div>
+            </div>
+            <div class="container-mail">
+            <button class="button-mail"><a href="#contactar">
+                    <img class="mail-cursos" src="imagenes/mail-b.svg"></a></button>
+            </div>
+        </div>
+    </div>
+    </article>
+ </div>
 </div>
 </section>
 <section>
-     <div class="sg-float-none sg-margin-bottom">
-    <h1 class="sg-title-style-guide">Menu</h1>
-    <header>
-        <div class="contenedorheader cf" style="border:3px solid #f15c22; width:100%">
-            <div id="menu" style="float:none;width:100%;">
-                <div class="menuizquierda">
-                    <ul>
-                        <li class="textomenu sg-izquieda"><a href="anunciosprofes.html">ENCUENTRA TU CURSO</a></li>
-                        <li class="textomenu"><a href="anuncios.html">BUSCA TU ALUMNO</a></li>
-                        <li class="textomenu"><a href="funciona.html">¿CÓMO FUNCIONA?</a></li>
-                    </ul>
-                </div>
-                <div class="menuderecha">
-                    <ul>
-                       <li class="login"><a href="#login">Log in</a></li>
-                       <li class="login"><a href="#registro">Regístrate</a></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </header>
-</div>
+     <h1 class="sg-title-style-guide sg-float-none">Pestañas</h1>
+    <div class="box-perfil sg-margin-auto cf">
+    <div class="menu-interior">
+            <ul>
+                <li class="pestanyas"><a class="pestanya-1" href="#">Sobre Mi</a></li>
+                <li class="pestanyas"><a class="pestanya-2" href="#">Portafolio</a></li>
+                <li class="pestanyas"><a class="pestanya-3" href="#">Cursos</a></li>
+                <li class="pestanyas"><a class="pestanya-4" href="#">Dudas</a></li>
+                 <li class="pestanyas"><a class="pestanya-5" href="#">Valoraciones</a></li>
+            </ul>
+        </div>
+        <article class="contenido-perfil option-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
+        </article>
+        <article class="contenido-perfil option-2">
+            <p>PPP</p>
+        </article>
+        <article class="contenido-perfil option-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
+        </article>
+        <article class="contenido-perfil option-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
+        </article>
+        <article class="contenido-perfil option-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
+        </article>
 </section>
 
+
+<!--
+<div class="sg-float-none sg-margin-bottom">
     <h1 class="sg-title-style-guide">Tamaños iconos y avatars</h1>
      <section class="sg-margin-auto">
     <h5>ICONOS PERFIL</h5>
@@ -223,8 +380,15 @@
         <img class="imgiconomail" src="imagenes/mail.svg" style="width:40px;float:none;margin:0px">
 </section>
 </section>
+-->
+<section>
+<h1 class="sg-title-style-guide sg-float-none">Layout</h1>
+<h2 class="sg-subtitle-style-guide">Grid</h2>
 
+<!--   
+<h2 class="sg-subtitle-style-guide">Header</h2>
 <section class="contenedor-header">
+
 <header>
         <div class="img-logo">
             <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
@@ -246,11 +410,60 @@
     </nav>
 </header>
 </section>
+-->
+<div class="sg-float-none sg-margin-bottom">
+<h2 class="sg-subtitle-style-guide">Footer</h2>
+<footer>
+    <div class="pie cf">
+            <section class="mini-box-pie">
+                <span class="type-color-3">Contacto</span>
+                <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
+                <p class="terms type-color-3">(+34)722 563 505</p>
+            </section>
+            <section class="mini-box-pie">
+                <div class="iconos">
+                <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
 
+                <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
 
+                 <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
+                </div>
+            </section>
+            <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
+                <div class="newsletter cf">
+                <div class="caja-footer">
+                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
+                <div class="container-unete left">
+                <button class="button-unete"><a href="graciasnews.html"><span>Únete</span></button>
+                </div>
+                  </div>
+                 <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span class="underline"> bases y condiciones</span></a></p>
+                </div>
+                 <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+            </section>
+    </div>
 
+    </footer>
 </div>
-
+</section>
+</div>
+<script>
+    $('td .icono-tabla-off').click(function() {
+        $(this).hide();
+        $(this).siblings('.icono-tabla').show();
+    });
+    $('td .icono-tabla').click(function() {
+        $(this).hide();
+        $(this).siblings('.icono-tabla-off').show();
+    });
+    $('.pestanya-2').click(function() {
+        $('.option-1').hide();
+        $('.option-3').hide();
+        $('.option-4').hide();
+        $('.option-5').hide();
+        $('.option-2').show();
+    });
+</script>
 </body>
 
 </html>
