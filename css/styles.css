@@ -98,16 +98,12 @@ h3.texto-curso{
 	 font-size: 18px;
 	 font-weight: bolder;
      margin: 0px;
-
 }
-
 
 p {
 	font-size: 16px;
 	text-align: left;
-
 }
-
 
 .categoriasmenu {
     padding-right: 10px;
@@ -126,7 +122,6 @@ p {
     margin: 0;
 }
 
-
 .ayudame{
 	font-weight: 400;
     display: inline-block;
@@ -140,7 +135,6 @@ p {
     font-style: italic;
 }
 .textpopup{
-
     display: inline-block;
     font-size: 12px;
     text-decoration: underline;
@@ -150,6 +144,7 @@ p {
     font-size: 12px;
     text-align: center;
 }
+
 .textopie{
     text-align: center;
     padding:10px;
@@ -190,10 +185,10 @@ p {
 /*-----------
 permalinks
 -----------*/
-
+/*
 a {
     text-decoration: none;
-}
+}*/
 
 .gris a{
 
@@ -741,11 +736,7 @@ ENCUENTRA TU CURSO
     left: 24px;
     top:-4px;
     position: absolute;
-
 }
-
-
-
 
 /*----------
 
@@ -1220,10 +1211,6 @@ form.turnos {
     width: 350px;
 }
 
-
-
-<<<<<<< HEAD
-=======
 /*---------
 pie
 ---------*/
