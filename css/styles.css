@@ -536,9 +536,6 @@ select {
     width: 50%;
     border: none;
     color:#A0A0A0;
-    margin-top:6px;
-
-
 }
 
 .big-textarea{
@@ -1042,7 +1039,7 @@ aside
 
     margin-top:50px;
 }
-.listacategorias{
+.lista-categorias{
 
     margin-top: 20px;
 }
@@ -1174,7 +1171,7 @@ li.pestanyas a:hover {
     margin-top:70px;
 }
 
-.iconosperfil{
+.iconos-perfil{
     float: left;
     margin-right: 10px;
     clear: both;
@@ -1185,21 +1182,18 @@ li.pestanyas a:hover {
     float: left;
 }
 
-.redeshorizontal {
-}
-
 .iconored{
     float: left;
 }
 .url{
     float: left;
 }
-.redesizquierda {
+.redes-izquierda {
     display: inline-block;
     width: 30%;
 }
 
-.redesderecha {
+.redes-derecha {
     display: inline-block;
     margin-left: 200px;
     width: 30%;
@@ -1210,29 +1204,29 @@ li.pestanyas a:hover {
     margin-top: 20px;
 
 }
-.fotostrabajos{
+.fotos-trabajos{
 
     margin-bottom: 80px;
     margin-top:20px;
 }
 
-.fotoizquierda {
+.foto-izquierda {
     float: left;
     width: 30%;
 }
 
-.fotomedio {
+.foto-medio {
     float: left;
     width: 30%;
     margin-left: 10px;
 }
 
-.fotoderecha{
+.foto-derecha{
     float: left;
     width: 30%;
     margin-left: 10px;
 }
-.fotogaleriaperfil{
+.foto-galeria-perfil{
 
 width: 90%;
 
@@ -1244,7 +1238,7 @@ PERFIL-CURSOS
 
 --------*/
 
-.nocursossuadrado{
+.no-cursos-cuadrado{
 
     border: 1px solid #54c4c7;
     width: 90%;
@@ -1253,7 +1247,7 @@ PERFIL-CURSOS
 
 }
 
-.contenidonocursos{
+.contenido-no-cursos{
 
     position: relative;
     margin-top:30px;
@@ -1276,33 +1270,33 @@ PERFIL-CURSOS
 PERFIL-SOBRE MI
 
 --------*/
-.cuadradodisponibilidad{
+.cuadrado-disponibilidad{
 
 
 }
 
-.programasinfo{
+.programas-info{
 margin-bottom: 40px;
 margin-top: 30px;
 
 }
-.totalprogramas{
+.total-programas{
     margin-top: 10px;
 }
-.parteizquierdapro{
+.parte-izquierda-pro{
 
     float: left;
     width: 40%
 }
 
-.partederechapro{
+.parte-derecha-pro{
 
     float: left;
     width: 40%;
     margin-left: 20px;
 }
 
-.ladotitulo{
+.lado-titulo{
 
 }
 form.turnos {
