@@ -98,8 +98,6 @@ body {
 p {
 	font-size: 16px;
 	text-align: left;
-    font-weight: 200;
-    margin: 0;
     color:#404041;
 }
 
@@ -164,10 +162,10 @@ p {
 /*-----------
 permalinks
 -----------*/
-/*
+
 a {
     text-decoration: none;
-}*/
+}
 
 .type-color-5 a{
 
