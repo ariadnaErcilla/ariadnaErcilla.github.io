@@ -17,18 +17,18 @@
 
 .modificar{
 
-   font-size:14px;
+   font-size: 0,875rem;
 
 }
 
 .title{
-     font-size: 48px;
+     font-size: 3rem;
      font-family: "Dosis";
      margin: 0px 0px 10px 0px;
      text-transform: uppercase;
 }
 .title-form{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Lato";
     text-align: center;
 }
@@ -41,33 +41,33 @@
 }
 
 .destacado{
-     font-size: 36px;
+     font-size: 2,25rem;
      font-family: "Dosis";
      font-weight: 400;
      font-style: normal;
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 1,5rem;
     margin: 0px;
 }
 
 
 .secondary-title {
-     font-size: 18px;
+     font-size: 1.125rem;
      font-weight: 600;
      margin: 0px;
 }
 
 .secondary-subtitle{
-    font-size:14px;
+    font-size:0,875rem;
     font-weight: 200;
     margin: 0;
     color:#404041;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
 }
 
@@ -89,13 +89,13 @@ p {
 }
 
 .tags {
-    font-size: 14px;
+    font-size: 0,875rem;
     font-weight: lighter;
     font-style: italic;
 }
 
 .terms{
-    font-size: 12px;
+    font-size: 0,75rem;
     clear: both;
 }
 
@@ -103,7 +103,7 @@ p {
     text-align: center;
     padding:10px;
     color:white;
-    font-size: 10px;
+    font-size: 0,625rem;
     margin: 0px;
 }
 
@@ -113,7 +113,6 @@ p {
 }
 
 .centrado{
-
     text-align: center;
 }
 
