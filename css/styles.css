@@ -44,7 +44,7 @@ body {
 }
 
 #container{
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 0 auto;
 
 }
@@ -197,14 +197,11 @@ buttons
     padding-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
-    width: 25%;
 }
-
 .left{
     float: left;
 }
 .general-button{
-
     border: none;
     margin: 0 auto;
     width: 100%;
@@ -213,8 +210,8 @@ buttons
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
-
 }
+
 .button-1{
     background-color:#00A6A5;
 }
@@ -228,28 +225,34 @@ buttons
 .button-3{
     background-color:white;
     border: 2px solid #f15c22;
+
+
 }
 
 .general-button:hover{
+
     background-color:#404041;
 }
-
 .button-1,
 .button-2,
 .button-3,
 .button-mail,
 .button-unete span{
-    font-weight: bold;
+
+    font-weight: 400;
     text-transform: uppercase;
+
 }
 
 .button-1,
 .button-2,
 .button-3 span{
+
     font-size: 18px;
 }
 
 .button-mail span{
+
     font-size: 16px;
     position: absolute;
     top: 15px;
@@ -260,6 +263,7 @@ buttons
 .button-2,
 .button-mail span{
     color:white;
+
 }
 
 .button-3 span{
@@ -271,7 +275,7 @@ buttons
     margin:36px auto;
     left:0;
     right:0;
-    width: 13%;
+    width: 55%;
 
 }
 .button-mail {
@@ -286,17 +290,20 @@ buttons
 
     background-color:#404041;
 }
+<<<<<<< HEAD
+=======
 .mail-cursos{
     width: 40px;
     left: 24px;
     top:-4px;
     position: absolute;
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
-}
 .container-unete{
     margin-left: 20px;
-    width: 10%;
+    width: 25%;
     margin: 0 auto;
+    padding-top: 4px;
 
 }
 .button-unete{
@@ -304,7 +311,6 @@ buttons
     background-color: white;
     border:1px solid black;
     border-radius: 0;
-    width: 100%;
     height: 20px;
     text-align: center;
 }
@@ -312,11 +318,17 @@ buttons
 .button-unete span{
     color: #404041;
 
+
 }
 .button-unete:hover{
     background-color:#f15c22;
 
 }
+
+
+
+
+
 
 /*------------
 divs que contienen botones
@@ -777,7 +789,16 @@ anuncio
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
+<<<<<<< HEAD
+    position: relative;
+    background-color: white;
+
 }
+
+.container-anuncio{
+=======
+}
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
 .container-anuncio{
     padding: 8px 8px 8px 8px;
@@ -789,18 +810,26 @@ anuncio
 
 }
 .mas-info{
-    width: 100%;
     padding-bottom: 60px;
-    margin-left:20px;
+    margin-left: 10px;
 }
 .total-icono{
     float: left;
+<<<<<<< HEAD
+    width: 50%;
+
+=======
     width: 40%;
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 }
 
 .container-stars{
     float: left;
+<<<<<<< HEAD
+    width: 80%;
+=======
     width:80%;
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 }
 
 .container-icon{
@@ -813,7 +842,10 @@ anuncio
     padding-right:2px;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 /*-----------
 ENCUENTRA TU CURSO
 ---------*/
@@ -960,10 +992,8 @@ BUSCA TU ALUMNO
     width: 40%;
     padding-top: 80px;
     margin-left: 400px;
-
-
-
 }
+
 .muneco-busqueda {
     position: absolute;
     left:480px;
@@ -971,9 +1001,9 @@ BUSCA TU ALUMNO
 
 }
 .todos-anuncios {
-    float:left;
-    width: 73%;
-    margin: 40px 0px 100px 100px;
+    float:right;
+    width: 82%;
+    margin: 0px 0px 0px 0px;
 }
 
 .anuncios-horizontal {
@@ -994,7 +1024,7 @@ aside
 --------*/
 .filtros {
     float: left;
-    width: 17%;
+    width: 15%;
     margin-top: 40px;
     clear: both;
 
