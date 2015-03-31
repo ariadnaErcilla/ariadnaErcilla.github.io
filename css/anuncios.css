@@ -1,5 +1,5 @@
 .anuncio {
-    width: 29%;
+    width: 31%;
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
@@ -76,7 +76,6 @@ encuentra
 ---------*/
 .total-img-curso{
     cursor: pointer;
-
     margin:0 auto;
     position: relative;
    height: 213px;
@@ -107,13 +106,9 @@ encuentra
 
 .contenido-curso{
 
-    margin: 7px;
+    margin: 5px;
 }
 
-.sub-contenido-curso{
-
-    margin-top: 10px;
-}
 
 .mail-cursos{
     width: 45px;

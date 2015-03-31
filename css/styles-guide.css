@@ -132,3 +132,10 @@ body{
 .contenedor-header{
 	width: 1500px;
 }
+.sg-container-button{
+
+	width: 25%;
+	padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}

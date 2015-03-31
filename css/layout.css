@@ -53,59 +53,56 @@ header{
 }
 ---------*/
 
+
 header{
         margin: 1.5rem 0 3rem 0;
         overflow: hidden;
 }
 
 .img-logo {
-    width: 12%;
+    width: 100%;
     margin-right: 4px;
 }
+
 @media screen and (max-width: 800px){
             .logo {
                 min-width: 100px;
         }
     }
-/*
-@media screen and (max-width: 600px){
-            nav {
-                display: none;
-        }
-    }
-*/
 
 .logo{
-    width: 100%;
+    width: 13%;
     float:left;
-
 }
 
 .menu{
     text-align: center;
     line-height: rem(5px);
     float: right;
-    width: 85%;
-
+    
 }
 
 .menu ul li{
     list-style: none;
     float: left;
+    margin-left: 20px;
 }
 
 .menu-izquierda {
     float: left;
     margin-left: 10px;
+
 }
 
 .menu-derecha {
     float: right;
 }
-
 .menu li a{
-    margin-right: 10px;
+
     color: #404041;
+}
+.menu-izquierda li a{
+    text-transform: uppercase;
 }
 
 .menu a:hover{
@@ -114,10 +111,8 @@ header{
 
 .buscar-top {
     display: inline;
-    width: 10%;
+   
 }
-
-
 
 /*----------
 footer

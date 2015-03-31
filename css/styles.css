@@ -130,7 +130,7 @@ p {
     font-style: italic;
 }
 
-.text-pop-up{
+.text-popup{
     display: inline-block;
     font-size: 12px;
     text-decoration: underline;
@@ -141,7 +141,7 @@ p {
     clear: both;
 }
 
-.copy-right{
+.copyright{
     text-align: center;
     padding:10px;
     color:white;
@@ -168,6 +168,7 @@ p {
 
     text-decoration: underline;
 }
+
 /*-----------
 permalinks
 -----------*/
@@ -195,7 +196,6 @@ buttons
 --------*/
 .container-button{
     padding-top: 20px;
-    padding-bottom: 40px;
     margin: 0 auto;
 }
 .left{
@@ -290,20 +290,18 @@ buttons
 
     background-color:#404041;
 }
-<<<<<<< HEAD
-=======
+
 .mail-cursos{
     width: 40px;
     left: 24px;
     top:-4px;
     position: absolute;
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
+}
 .container-unete{
     margin-left: 20px;
-    width: 25%;
     margin: 0 auto;
-    padding-top: 4px;
+
 
 }
 .button-unete{
@@ -313,6 +311,7 @@ buttons
     border-radius: 0;
     height: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .button-unete span{
@@ -324,10 +323,6 @@ buttons
     background-color:#f15c22;
 
 }
-
-
-
-
 
 
 /*------------
@@ -394,21 +389,21 @@ popup login-registro
 	pointer-events:auto;
 
 }
-.pop-up{
+.popup{
     display: none;
     position: absolute;
     margin: 0 auto;
     width: 100%;
 
 }
-.pop-up-image{
+.popup-image{
 
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png);
 }
 
-.pop-up-image-2{
+.popup-image-2{
 
     background-position: top center;
     background-repeat: no-repeat;
@@ -437,7 +432,7 @@ popup login-registro
     background:#333333;
 }
 
-.pop-up-box{
+.popup-box{
     width:400px;
     padding:5px 20px 13px 20px;
     background:white;
@@ -448,7 +443,7 @@ popup login-registro
     position:relative;
 }
 
-.container-pop-up{
+.container-popup{
     width: 100%;
     padding-top: 40px;
     margin: 0 auto;
@@ -510,7 +505,7 @@ forms
 
 -----*/
 
-.p-form{
+.pform{
 
     padding-top: 20px;
     margin: 0;
@@ -552,7 +547,7 @@ select {
     width: 180px;
     background: white;
     border: 1px solid black;
-    height: 30px;
+    height: 20px;
 
 
 }
@@ -785,20 +780,15 @@ anuncio
 ----------*/
 
 .anuncio {
-    width: 29%;
+    width: 31%;
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
-<<<<<<< HEAD
     position: relative;
     background-color: white;
 
 }
 
-.container-anuncio{
-=======
-}
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
 .container-anuncio{
     padding: 8px 8px 8px 8px;
@@ -811,25 +801,18 @@ anuncio
 }
 .mas-info{
     padding-bottom: 60px;
-    margin-left: 10px;
+    margin: 0px 10px 0px 10px;
 }
 .total-icono{
     float: left;
-<<<<<<< HEAD
     width: 50%;
 
-=======
-    width: 40%;
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 }
 
 .container-stars{
     float: left;
-<<<<<<< HEAD
     width: 80%;
-=======
-    width:80%;
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
+
 }
 
 .container-icon{
@@ -842,23 +825,11 @@ anuncio
     padding-right:2px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 /*-----------
 ENCUENTRA TU CURSO
 ---------*/
-
-.muneco-busqueda-2 {
-    position: absolute;
-    left:-130px;
-    top:93px;
-
-}
-
 .total-img-curso{
-
+    cursor: pointer;
     margin:0 auto;
     position: relative;
    height: 213px;
@@ -874,16 +845,17 @@ ENCUENTRA TU CURSO
     left: 0;
     z-index: 1000;
 }
-.img-curso:hover{
-
+.total-img-curso:hover .img-curso {
     z-index: 0;
 }
 .texto-curso{
+
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
     background-color: white;
+
 }
 
 .contenido-curso{
@@ -891,17 +863,24 @@ ENCUENTRA TU CURSO
     margin: 7px;
 }
 
-.sub-contenido-curso{
 
-    margin-top: 10px;
-}
 
 .mail-cursos{
     width: 45px;
     top:0;
     left:35%;
     position: absolute;
+
 }
+
+
+.muneco-busqueda-2 {
+    position: absolute;
+    left:-130px;
+    top:93px;
+
+}
+
 
 /*----------
 
@@ -1008,8 +987,9 @@ BUSCA TU ALUMNO
 
 .anuncios-horizontal {
     width: 100%;
-    margin-bottom: 50px;
+    margin: 40px 0px 40px 0px;
    float: left;
+
 
 
 }
@@ -1038,11 +1018,11 @@ aside
 
     margin-top: 20px;
 }
-.iconoscat {
+.iconos-cat {
 
 
 }
-img.icononaranja{
+img.icono-naranja{
     float:left;
     width: 10%;
     margin-top: 4px;
@@ -1391,7 +1371,7 @@ header{
 }
 
 .img-logo {
-    width: 12%;
+    width: 100%;
     margin-right: 4px;
 }
 
@@ -1402,7 +1382,7 @@ header{
     }
 
 .logo{
-    width: 100%;
+    width: 13%;
     float:left;
 }
 
@@ -1410,26 +1390,30 @@ header{
     text-align: center;
     line-height: rem(5px);
     float: right;
-    width: 85%;
+    
 }
 
 .menu ul li{
     list-style: none;
     float: left;
+    margin-left: 20px;
 }
 
 .menu-izquierda {
     float: left;
     margin-left: 10px;
+
 }
 
 .menu-derecha {
     float: right;
 }
-
 .menu li a{
-    margin-right: 10px;
+
     color: #404041;
+}
+.menu-izquierda li a{
+    text-transform: uppercase;
 }
 
 .menu a:hover{
@@ -1438,6 +1422,9 @@ header{
 
 .buscar-top {
     display: inline;
-    width: 10%;
+  
 }
 /* HEAEDER FIN */
+
+
+
