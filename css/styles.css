@@ -290,16 +290,15 @@ buttons
 
     background-color:#404041;
 }
-<<<<<<< HEAD
-=======
+
 .mail-cursos{
     width: 40px;
     left: 24px;
     top:-4px;
     position: absolute;
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
+}
 
-.container-unete{
+.container-unete {
     margin-left: 20px;
     width: 25%;
     margin: 0 auto;
@@ -789,16 +788,11 @@ anuncio
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
-<<<<<<< HEAD
     position: relative;
     background-color: white;
 
 }
 
-.container-anuncio{
-=======
-}
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 
 .container-anuncio{
     padding: 8px 8px 8px 8px;
@@ -815,21 +809,14 @@ anuncio
 }
 .total-icono{
     float: left;
-<<<<<<< HEAD
-    width: 50%;
-
-=======
     width: 40%;
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
+
 }
 
 .container-stars{
     float: left;
-<<<<<<< HEAD
     width: 80%;
-=======
-    width:80%;
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
+
 }
 
 .container-icon{
@@ -842,10 +829,7 @@ anuncio
     padding-right:2px;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> e5e704bf9c9eb7177e3bc9e5faf16a322e3d6ce7
 /*-----------
 ENCUENTRA TU CURSO
 ---------*/
@@ -984,7 +968,6 @@ BUSCA TU ALUMNO
     clear: both;
     width: 100%;
     padding-bottom: 10px;
-    border-bottom: 1px solid #404041;
 }
 .contenido-titulo{
     position: relative;
@@ -996,8 +979,8 @@ BUSCA TU ALUMNO
 
 .muneco-busqueda {
     position: absolute;
-    left:480px;
-    top:93px;
+    margin-left: -150px;
+    top: 93px;
 
 }
 .todos-anuncios {
@@ -1009,6 +992,7 @@ BUSCA TU ALUMNO
 .anuncios-horizontal {
     width: 100%;
     margin-bottom: 50px;
+    margin-top: 40px;
    float: left;
 
 
@@ -1024,7 +1008,7 @@ aside
 --------*/
 .filtros {
     float: left;
-    width: 15%;
+    width: 17%;
     margin-top: 40px;
     clear: both;
 
