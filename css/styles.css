@@ -19,6 +19,7 @@ GENERAL
 .cf:after {
     clear: both;
 }
+
 body {
 	 margin: 0;
 	 font-family: 'Lato', sans-serif;
@@ -46,8 +47,6 @@ body {
 #container{
     max-width: 1024px;
     margin: 0 auto;
-    background-color: rgba(51, 51, 51, .15);
-
 }
 
 .modificar{
@@ -61,6 +60,7 @@ body {
      margin: 0px 0px 10px 0px;
      text-transform: uppercase;
 }
+
 .title-form{
     font-size: 3rem;
     font-family: "Lato";
@@ -165,6 +165,7 @@ p {
 
     line-height: 0.5;
 }
+
 .underline{
 
     text-decoration: underline;
@@ -177,7 +178,7 @@ permalinks
 a {
     text-decoration: none;
 }
-
+/*
 .type-color-5 a{
 
     text-decoration: none;
@@ -189,9 +190,10 @@ a {
 }
 
 .type-color-3 a{
-
     color:white;
 }
+*/
+
 /*--------
 buttons
 --------*/
@@ -230,14 +232,12 @@ buttons
 .button-3{
     background-color:white;
     border: 2px solid #f15c22;
-
-
 }
 
 .general-button:hover{
-
     background-color:#404041;
 }
+
 .button-1,
 .button-2,
 .button-3,
@@ -264,7 +264,6 @@ buttons
 .button-2,
 .button-mail span{
     color:white;
-
 }
 
 .button-3 span{
@@ -284,11 +283,9 @@ buttons
     border-radius: 15px;
     width: 100%;
     padding: 13px 0px 13px 0px;
-
-
 }
-.button-mail:hover{
 
+.button-mail:hover{
     background-color:#404041;
 }
 
@@ -451,15 +448,14 @@ popup login-registro
 
 }
 .img-facebook{
-
     padding-bottom: 20px;
     border-bottom: 1px solid #404041;
 }
 
 .img-proceso{
     margin: 0 auto;
-
 }
+
 .proceso{
     width: 100%;
 }
@@ -468,7 +464,6 @@ popup login-registro
     float: left;
     width: 50%;
     margin-left: 40px;
-
 }
 
 .consejos {
@@ -1054,14 +1049,15 @@ img.icono-naranja{
 PERFIL
 ----------*/
 .background-4 {
-    background-color: #E6E6E6;
+    background-color: rgba(51, 51, 51, .15);
 }
 
 .parte-izquierda {
     float: left;
-    width: 20%;
-    margin-left: 75px;
-    margin-top: 100px;
+    width: 30%;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: white;
 }
 
 .foto-perfil {
@@ -1088,9 +1084,8 @@ PERFIL
     float: right;
 }
 
-
 .box-perfil {
-    background-color: white;
+    background-color: red;
      overflow: hidden;
 
 }
