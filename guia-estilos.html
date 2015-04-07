@@ -27,7 +27,7 @@
 
 
  <section>
-		<h1 class="sg-title-style-guide">Tipografía</h1>
+		<h1 class="sg-title-style-guide">1 Tipografía</h1><hr>
 		<h1 class="title type-color-1">Titular</h1>
 		<hr>
 		<h1 class="title-form sg-text-left">Titular</h1>
@@ -46,7 +46,8 @@
 
 
   <section>
-    <h1 class="sg-title-style-guide">Clases para la tipografía</h1>
+    <h1 class="sg-title-style-guide">2 Clases para la tipografía</h1>
+    <p class="sg-subtitle"> Estas son las clases que utilizamos para las tipografías</p>
     <h1 class="title type-color-1">h1 class="title type-color-1"</h1>
         <hr>
         <h1 class="title-form">h1 class="title-form"</h1>
@@ -68,18 +69,19 @@
     <h1 class="sg-title-style-guide">Colores</h1>
     <p class="sg-subtitle">Estos son los colores corporativos</p>
     <div class="container-colores">
-        <div class="sg-color-corporativo1">#00A6A5</div>
-        <div class="sg-color-corporativo2">#F15C22</div>
-        <div class="sg-color-corporativo3">#404041</div>
-         <div class="sg-color-corporativo4">#E6E6E6</div>
+        <div class="sg-color-corporativo1"><p class="sg-codigo-color">#00A6A5</div>
+        <div class="sg-color-corporativo2"><p class="sg-codigo-color">#F15C22</div>
+        <div class="sg-color-corporativo3"><p class="sg-codigo-color">#404041</div>
+         <div class="sg-color-corporativo4"><p class="sg-codigo-color1">#E6E6E6</div>
     </div>
 
    <h2 class="sg-subtitle-style-guide">Borders y Backgrounds</h2>
     <p class="sg-subtitle">Estos son los borders de punto y seguido</p>
     <div class="container-borde">
         <div class="sg-border-grueso"></div>
-        <div class="sg-border-fino2"></div>
         <div class="sg-border-fino3"></div>
+        <div class="sg-background-1"></div>
+        <div class="sg-background-2"></div>
 
     </div>
 
@@ -88,16 +90,16 @@
 <div class="sg-float-none sg-margin-bottom">
 <h1 class="sg-title-style-guide">Botones</h1>
 
-    <div class="container-button">
+    <div class="sg-container-button">
         <button class="general-button button-1 sg-margin-bottom"><span>Botón</span></button>
     </div>
-    <div class="container-button">
+    <div class="sg-container-button">
          <button class="general-button button-2 sg-margin-bottom"><span>Botón</span></button>
     </div>
-    <div class="container-button">
+    <div class="sg-container-button">
          <button class="general-button button-3 sg-margin-bottom"><span>Botón</span></button>
      </div>
-     <div class="container-unete sg-float-none">
+     <div class="sg-container-button">
          <button class="button-unete sg-margin-bottom"><span>Botón</span></button>
      </div>
     </div>
@@ -384,7 +386,7 @@
 <h1 class="sg-title-style-guide sg-float-none">Layout</h1>
 <h2 class="sg-subtitle-style-guide">Grid</h2>
 
-   <div class="row cf">
+<div class="row cf">
     <p class="centrado">row</p>
             <div class="col-3 col-xs-12">
                 <p class="centrado">col-3</p>
@@ -403,32 +405,41 @@
             </div>
     </div>
 
-<!--
-<h2 class="sg-subtitle-style-guide">Header</h2>
-<section class="contenedor-header">
 
-<header>
-        <div class="img-logo">
-            <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
-         </div>
-    <nav class="menu">
-        <div class="menu-izquierda">
-            <ul>
-                <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
-                <li><a href="anuncios.html">Busca tu alumno</a></li>
-                <li><a href="funciona.html">¿Cómo funciona?</a></li>
-            </ul>
+<!--
+=======
+>>>>>>> d87a22e5e2d12d3eb01a0882ff2d429cd8084649
+<h2 class="sg-subtitle-style-guide">Header</h2>
+
+ <header>
+        <div class="logo">
+            <a href="index.html"><img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
         </div>
-        <div class="menu-derecha">
-            <ul>
-                <li class="texto-menu"><a class="a-menu" href="#login">Log in</a></li>
-                <li class="texto-menu"><a class="a-menu" href="#registro">Regístrate</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-</section>
--->
+            <nav class="menu cf">
+                <div class="menu-izquierda">
+                    <ul>
+                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html">Busca tu alumno</a></li>
+                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
+                    </ul>
+                </div>
+                <div class="menu-derecha">
+                    <ul>
+                        <li><a href="#login">Log in</a></li>
+                        <li><a href="#registro">Regístrate</a></li>
+
+                        <div class='buscar-top'>
+                        <form action='/search' id='searchthis' method='get'>
+                            <input id='search-box' name='q' placeholder='BUSCAR' type='text'/>
+                        </form>
+                        </div>
+
+                    </ul>
+
+                </div>
+            </nav>
+    </header>
+
 <div class="sg-float-none sg-margin-bottom">
 <h2 class="sg-subtitle-style-guide">Footer</h2>
 <footer>

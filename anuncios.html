@@ -21,27 +21,34 @@
 
 <body>
     <header>
-        <div class="contenedorheader">
-            <div id="imglogo">
-                <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
-            </div>
-            <div id="menu">
-                <div class="menuizquierda">
+        <div class="logo">
+            <a href="index.html"><img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+        </div>
+        <div>
+            <nav class="menu">
+                <div class="menu-izquierda">
                     <ul>
-                        <li class="textomenu"><a href="anunciosprofes.html">ENCUENTRA TU CURSO</a></li>
-                        <li class="textomenu"><a href="anuncios.html">BUSCA TU ALUMNO</a></li>
-                        <li class="textomenu"><a href="funciona.html">¿CÓMO FUNCIONA?</a></li>
+                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html">Busca tu alumno</a></li>
+                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
-                <div class="menuderecha">
+                <div class="menu-derecha">
                     <ul>
-                       <li class="login"><a href="#login">Log in</a></li>
-                       <li class="login"><a href="#registro">Regístrate</a></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </header>
+                        <li><a href="#login">Log in</a></li>
+                        <li><a href="#registro">Regístrate</a></li>
+
+                        <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'>
+                            <input id='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
+                        </form></div>
+
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
    <div id="recuperar" class="masc">
     <div class="todopopup">
         <div class="popupbox movedown">
@@ -453,68 +460,68 @@
             <div class="filtros">
                 <div class="categorias">
                     <h2 class="secondary-title">Categorías</h2>
-                    <div class="listacategorias">
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/arquitectura_b.svg">
-                            <a href="arquitecturaalumnos.html"><p class="categoriasmenu">Arquitectura</p></a>
+                    <div class="lista-categorias">
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/arquitectura_b.svg">
+                            <a href="arquitecturaalumnos.html"><p class="categorias-menu">Arquitectura</p></a>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/animacion_b.svg">
-                            <p class="categoriasmenu">Animación</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/animacion_b.svg">
+                            <p class="categorias-menu">Animación</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/audiovisual_b.svg">
-                            <p class="categoriasmenu">Audiovisual</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/audiovisual_b.svg">
+                            <p class="categorias-menu">Audiovisual</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/industrial_b.svg">
-                            <p class="categoriasmenu">Industrial</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/industrial_b.svg">
+                            <p class="categorias-menu">Industrial</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/grafico_b.svg">
-                            <p class="categoriasmenu">Gráfico</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/grafico_b.svg">
+                            <p class="categorias-menu">Gráfico</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/moda_b.svg">
-                            <p class="categoriasmenu">Moda</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/moda_b.svg">
+                            <p class="categorias-menu">Moda</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/web_b.svg">
-                            <p class="categoriasmenu">Web</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/web_b.svg">
+                            <p class="categorias-menu">Web</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/foto_b.svg">
-                            <p class="categoriasmenu">Fotografía</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/foto_b.svg">
+                            <p class="categorias-menu">Fotografía</p>
                         </div>
-                        <div class="iconoscat cf">
-                            <img class="icononaranja" src="imagenes/programacion_b.svg">
-                            <p class="categoriasmenu">Programación</p>
+                        <div class="iconos-cat cf">
+                            <img class="icono-naranja" src="imagenes/programacion_b.svg">
+                            <p class="categorias-menu">Programación</p>
                         </div>
                     </div>
                 </div>
                 <div class="disponibilidad">
                    <h2 class="secondary-title">Disponibilidad</h2>
-                   <div class="listacategorias">
-                    <div class="iconoscat cf">
-                        <img class="icononaranja" src="imagenes/manana.svg">
-                        <p class="categoriasmenu">Mañana</p>
+                   <div class="lista-categorias">
+                    <div class="iconos-cat cf">
+                        <img class="icono-naranja" src="imagenes/manana.svg">
+                        <p class="categorias-menu">Mañana</p>
                     </div>
-                    <div class="iconoscat cf">
-                        <img class="icononaranja" src="imagenes/tarde.svg">
-                        <p class="categoriasmenu">Tarde</p>
+                    <div class="iconos-cat cf">
+                        <img class="icono-naranja" src="imagenes/tarde.svg">
+                        <p class="categorias-menu">Tarde</p>
                     </div>
-                    <div class="iconoscat cf">
-                        <img class="icononaranja" src="imagenes/noche.svg">
-                        <p class="categoriasmenu">Noche</p>
+                    <div class="iconos-cat cf">
+                        <img class="icono-naranja" src="imagenes/noche.svg">
+                        <p class="categorias-menu">Noche</p>
                     </div>
                 </div>
             </div>
             <div class="metodo">
                 <h2 class="secondary-title">Método de clase</h2>
                 <form class="checkbox">
-                    <p class="nofloat"><input type="checkbox">Presencial</p>
-                    <p class="nofloat"><input type="checkbox">Videollamada</p>
-                    <p class="nofloat"><input type="checkbox">E-mail</p>
+                    <p class="no-float"><input type="checkbox">Presencial</p>
+                    <p class="no-float"><input type="checkbox">Videollamada</p>
+                    <p class="no-float"><input type="checkbox">E-mail</p>
                 </form>
             </div>
         </div>
@@ -607,7 +614,7 @@
                     </div>
                 </article>
             </div>
-            <div class="anuncios-horizontal cf">
+        </div>
                 <div class="col-4 col-xs-6">
                     <article class="anuncio">
                         <div class="container-anuncio cf">

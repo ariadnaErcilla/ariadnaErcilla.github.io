@@ -20,28 +20,19 @@ Anuncio ampliado
 }
 
 .botones-perfil {
+    margin: 0 auto;
     margin-top: 40px;
+
 }
 
 .button-izquierda {
     float: left;
+    margin-left: 100px;
 }
 
 .button-derecha {
     float: right;
-}
-
-.trabajos {
-    padding-top: 50px;
-    clear: both;
-}
-
-.imgtrabajos {
-    max-width: 25%;
-    float: left;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-bottom: 50px;
+    margin-right: 100px;
 }
 
 .iconoval {

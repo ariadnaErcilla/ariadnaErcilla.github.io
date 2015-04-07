@@ -46,22 +46,23 @@ body {
 #container{
     max-width: 1024px;
     margin: 0 auto;
+    background-color: rgba(51, 51, 51, .15);
 
 }
 
 .modificar{
-   font-size:14px;
+   font-size: 0,875rem;
    color:#F15C22;
 }
 
 .title{
-     font-size: 48px;
+     font-size: 3rem;
      font-family: "Dosis";
      margin: 0px 0px 10px 0px;
      text-transform: uppercase;
 }
 .title-form{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Lato";
     text-align: center;
 }
@@ -74,19 +75,19 @@ body {
 }
 
 .destacado{
-     font-size: 36px;
+     font-size: 2,25rem;
      font-family: "Dosis";
      font-weight: 400;
      font-style: normal;
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 1,5rem;
     margin: 0px;
 }
 
 .secondary-title {
-     font-size: 18px;
+     font-size: 1,125rem;
      font-weight: 500;
      margin: 0px;
 }
@@ -95,7 +96,7 @@ body {
 }
 
 p {
-	font-size: 16px;
+	font-size: 1rem;
 	text-align: left;
     color:#404041;
 }
@@ -125,27 +126,27 @@ p {
 }
 
 .tags {
-    font-size: 14px;
+    font-size: 0,875rem;
     font-weight: lighter;
     font-style: italic;
 }
 
-.text-pop-up{
+.text-popup{
     display: inline-block;
     font-size: 12px;
     text-decoration: underline;
 }
 
 .terms{
-    font-size: 12px;
+    font-size: 0,75rem;
     clear: both;
 }
 
-.copy-right{
+.copyright{
     text-align: center;
     padding:10px;
     color:white;
-    font-size: 10px;
+    font-size: 0,625rem;
     margin: 0px;
 }
 
@@ -168,6 +169,7 @@ p {
 
     text-decoration: underline;
 }
+
 /*-----------
 permalinks
 -----------*/
@@ -195,11 +197,14 @@ buttons
 --------*/
 .container-button{
     padding-top: 20px;
-    padding-bottom: 40px;
     margin: 0 auto;
+    width: 25%;
 }
 .left{
     float: left;
+}
+.margin-left{
+    margin-left: 20px;
 }
 .general-button{
     border: none;
@@ -297,12 +302,10 @@ buttons
     top:-4px;
     position: absolute;
 }
-
-.container-unete {
+.container-unete{
     margin-left: 20px;
-    width: 25%;
     margin: 0 auto;
-    padding-top: 4px;
+
 
 }
 .button-unete{
@@ -312,6 +315,7 @@ buttons
     border-radius: 0;
     height: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .button-unete span{
@@ -323,10 +327,6 @@ buttons
     background-color:#f15c22;
 
 }
-
-
-
-
 
 
 /*------------
@@ -344,9 +344,9 @@ divs que contienen botones
 
 }
 .botones-perfil{
-
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
 }
 .boton{
 
@@ -393,21 +393,21 @@ popup login-registro
 	pointer-events:auto;
 
 }
-.pop-up{
+.popup{
     display: none;
     position: absolute;
     margin: 0 auto;
     width: 100%;
 
 }
-.pop-up-image{
+.popup-image{
 
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png);
 }
 
-.pop-up-image-2{
+.popup-image-2{
 
     background-position: top center;
     background-repeat: no-repeat;
@@ -436,7 +436,7 @@ popup login-registro
     background:#333333;
 }
 
-.pop-up-box{
+.popup-box{
     width:400px;
     padding:5px 20px 13px 20px;
     background:white;
@@ -447,7 +447,7 @@ popup login-registro
     position:relative;
 }
 
-.container-pop-up{
+.container-popup{
     width: 100%;
     padding-top: 40px;
     margin: 0 auto;
@@ -509,7 +509,7 @@ forms
 
 -----*/
 
-.p-form{
+.pform{
 
     padding-top: 20px;
     margin: 0;
@@ -551,7 +551,7 @@ select {
     width: 180px;
     background: white;
     border: 1px solid black;
-    height: 30px;
+    height: 20px;
 
 
 }
@@ -676,6 +676,10 @@ HOME
 }*/
 
 .fondo-img-top {
+    background-image: url(../imagenes/portada_home.jpg);
+    height: 610px;
+    background-repeat: no-repeat;
+    background-size: cover;
 	position: relative;
 }
 
@@ -692,6 +696,7 @@ HOME
 	width: 50%;
 	margin: 0 auto;
     float: left;
+    position: relative;
 }
 
 .texto-top-2 {
@@ -784,7 +789,7 @@ anuncio
 ----------*/
 
 .anuncio {
-    width: 29%;
+    width: 31%;
     border: 1px solid #404041;
     float: left;
     margin-right: 20px;
@@ -805,11 +810,11 @@ anuncio
 }
 .mas-info{
     padding-bottom: 60px;
-    margin-left: 10px;
+    margin: 0px 10px 0px 10px;
 }
 .total-icono{
     float: left;
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -829,20 +834,11 @@ anuncio
     padding-right:2px;
 }
 
-
 /*-----------
 ENCUENTRA TU CURSO
 ---------*/
-
-.muneco-busqueda-2 {
-    position: absolute;
-    left:-130px;
-    top:93px;
-
-}
-
 .total-img-curso{
-
+    cursor: pointer;
     margin:0 auto;
     position: relative;
    height: 213px;
@@ -858,16 +854,17 @@ ENCUENTRA TU CURSO
     left: 0;
     z-index: 1000;
 }
-.img-curso:hover{
-
+.total-img-curso:hover .img-curso {
     z-index: 0;
 }
 .texto-curso{
+
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
     background-color: white;
+
 }
 
 .contenido-curso{
@@ -875,17 +872,24 @@ ENCUENTRA TU CURSO
     margin: 7px;
 }
 
-.sub-contenido-curso{
 
-    margin-top: 10px;
-}
 
 .mail-cursos{
     width: 45px;
     top:0;
     left:35%;
     position: absolute;
+
 }
+
+
+.muneco-busqueda-2 {
+    position: absolute;
+    left:-130px;
+    top:93px;
+
+}
+
 
 /*----------
 
@@ -991,9 +995,9 @@ BUSCA TU ALUMNO
 
 .anuncios-horizontal {
     width: 100%;
-    margin-bottom: 50px;
-    margin-top: 40px;
+    margin: 40px 0px 40px 0px;
    float: left;
+
 
 
 }
@@ -1022,11 +1026,11 @@ aside
 
     margin-top: 20px;
 }
-.iconoscat {
+.iconos-cat {
 
 
 }
-img.icononaranja{
+img.icono-naranja{
     float:left;
     width: 10%;
     margin-top: 4px;
@@ -1375,7 +1379,7 @@ header{
 }
 
 .img-logo {
-    width: 12%;
+    width: 100%;
     margin-right: 4px;
 }
 
@@ -1386,7 +1390,7 @@ header{
     }
 
 .logo{
-    width: 100%;
+    width: 13%;
     float:left;
 }
 
@@ -1394,26 +1398,30 @@ header{
     text-align: center;
     line-height: rem(5px);
     float: right;
-    width: 85%;
+
 }
 
 .menu ul li{
     list-style: none;
     float: left;
+    margin-left: 20px;
 }
 
 .menu-izquierda {
     float: left;
     margin-left: 10px;
+
 }
 
 .menu-derecha {
     float: right;
 }
-
 .menu li a{
-    margin-right: 10px;
+
     color: #404041;
+}
+.menu-izquierda li a{
+    text-transform: uppercase;
 }
 
 .menu a:hover{
@@ -1422,6 +1430,9 @@ header{
 
 .buscar-top {
     display: inline;
-    width: 10%;
+
 }
 /* HEAEDER FIN */
+
+
+
