@@ -46,6 +46,7 @@ body {
 #container{
     max-width: 1024px;
     margin: 0 auto;
+    background-color: rgba(51, 51, 51, .15);
 
 }
 
@@ -197,9 +198,13 @@ buttons
 .container-button{
     padding-top: 20px;
     margin: 0 auto;
+    width: 25%;
 }
 .left{
     float: left;
+}
+.margin-left{
+    margin-left: 20px;
 }
 .general-button{
     border: none;
@@ -292,7 +297,6 @@ buttons
     left: 24px;
     top:-4px;
     position: absolute;
-
 }
 .container-unete{
     margin-left: 20px;
@@ -332,9 +336,9 @@ divs que contienen botones
 
 }
 .botones-perfil{
-
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
 }
 .boton{
 
@@ -664,6 +668,10 @@ HOME
 }*/
 
 .fondo-img-top {
+    background-image: url(../imagenes/portada_home.jpg);
+    height: 610px;
+    background-repeat: no-repeat;
+    background-size: cover;
 	position: relative;
 }
 
@@ -680,6 +688,7 @@ HOME
 	width: 50%;
 	margin: 0 auto;
     float: left;
+    position: relative;
 }
 
 .texto-top-2 {
@@ -879,59 +888,50 @@ ENCUENTRA TU CURSO
 BUSCA TU ALUMNO
 -----------*/
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1024px;
-  }
-}
-
-.row {
-
-}
-@media (min-width: 768px) {
-.col-xs-12 {
-  width: 100%;
-}
-}
-
-.col-xs-6 {
-  width: 100%;
+/*.row {
+    margin: 0 -10px;
+    margin-bottom: 20px;
 
 }
 
-@media (min-width: 992px) {
-
-.col-xs-12 {
-  width: 100%;
+.row:last-child {
+  margin-bottom: 0;
 }
 
-.col-xs-6 {
-  width: 100%;
-}
-}
-
-
-
-@media (min-width: 1200px) {
-.col-xs-12 {
-  width: 100%;
+[class*="col-"] {
+  float: left;
+  padding-right: 20px;
 }
 
-.col-xs-6 {
-  width: 100%;
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+*/
+
+@media screen and (max-width: 650px){
+
+.col-4{
+
+    width: 50%;
+    float: left;
+    margin-left: 60px;
+
+
 }
 
 }
+@media screen and (max-width: 420px){
+
+.col-4{
+
+    width: 100%;
+    float: none;
+    margin: 0;
+
+}
+
+}
+
 .foto{
 
     margin: 0 auto;
@@ -955,7 +955,6 @@ BUSCA TU ALUMNO
     clear: both;
     width: 100%;
     padding-bottom: 10px;
-    border-bottom: 1px solid #404041;
 }
 .contenido-titulo{
     position: relative;
@@ -967,8 +966,8 @@ BUSCA TU ALUMNO
 
 .muneco-busqueda {
     position: absolute;
-    left:480px;
-    top:93px;
+    margin-left: -150px;
+    top: 93px;
 
 }
 .todos-anuncios {
@@ -996,7 +995,7 @@ aside
 --------*/
 .filtros {
     float: left;
-    width: 15%;
+    width: 17%;
     margin-top: 40px;
     clear: both;
 
