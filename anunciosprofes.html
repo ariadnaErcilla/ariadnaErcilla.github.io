@@ -20,26 +20,33 @@
 </head>
 
 <body>
-    <header>
-        <div class="contenedorheader">
-            <div id="imglogo">
-                <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
-            </div>
-            <div id="menu">
-                <div class="menuizquierda">
+   <header>
+        <div class="logo">
+            <a href="index.html"><img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+        </div>
+        <div>
+            <nav class="menu">
+                <div class="menu-izquierda">
                     <ul>
-                        <li class="textomenu"><a href="anunciosprofes.html">ENCUENTRA TU CURSO</a></li>
-                        <li class="textomenu"><a href="anuncios.html">BUSCA TU ALUMNO</a></li>
-                        <li class="textomenu"><a href="funciona.html">¿CÓMO FUNCIONA?</a></li>
+                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html">Busca tu alumno</a></li>
+                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
-                <div class="menuderecha">
+                <div class="menu-derecha">
                     <ul>
-                        <li class="login"><a href="#login">Log in</a></li>
-                        <li class="login"><a href="#registro">Regístrate</a></li>
+                        <li><a href="#login">Log in</a></li>
+                        <li><a href="#registro">Regístrate</a></li>
+
+                        <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'>
+                            <input id='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
+                        </form></div>
+
                     </ul>
+
                 </div>
-            </div>
+            </nav>
+
         </div>
     </header>
     <div id="recuperar" class="masc">
@@ -481,6 +488,7 @@
             </div>
         </div>
     </div>
+<div id="container">
 <div class="titulo-encabezado cf">
         <div class="contenido-titulo">
         <h1 class="title type-color-1">ENCUENTRA TU CURSO</h1>
@@ -490,7 +498,6 @@
         </div>
         </div>
 </div>
-    <div id="container">
     <div class="row">
         <div class="col-3 col-xs-12">
             <div class="filtros">

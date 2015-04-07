@@ -887,59 +887,50 @@ ENCUENTRA TU CURSO
 BUSCA TU ALUMNO
 -----------*/
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1024px;
-  }
-}
-
-.row {
-
-}
-@media (min-width: 768px) {
-.col-xs-12 {
-  width: 100%;
-}
-}
-
-.col-xs-6 {
-  width: 100%;
+/*.row {
+    margin: 0 -10px;
+    margin-bottom: 20px;
 
 }
 
-@media (min-width: 992px) {
-
-.col-xs-12 {
-  width: 100%;
+.row:last-child {
+  margin-bottom: 0;
 }
 
-.col-xs-6 {
-  width: 100%;
-}
-}
-
-
-
-@media (min-width: 1200px) {
-.col-xs-12 {
-  width: 100%;
+[class*="col-"] {
+  float: left;
+  padding-right: 20px;
 }
 
-.col-xs-6 {
-  width: 100%;
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+*/
+
+@media screen and (max-width: 650px){
+
+.col-4{
+
+    width: 50%;
+    float: left;
+    margin-left: 60px;
+
+
 }
 
 }
+@media screen and (max-width: 420px){
+
+.col-4{
+
+    width: 100%;
+    float: none;
+    margin: 0;
+
+}
+
+}
+
 .foto{
 
     margin: 0 auto;
@@ -963,7 +954,7 @@ BUSCA TU ALUMNO
     clear: both;
     width: 100%;
     padding-bottom: 10px;
-    border-bottom: 1px solid #404041;
+ 
 }
 .contenido-titulo{
     position: relative;
