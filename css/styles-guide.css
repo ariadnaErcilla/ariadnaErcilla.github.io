@@ -24,19 +24,18 @@ body{
 
 .sg-main-title{
 	text-align: center;
-	font-family: "Lato", sans-serif;
-	font-size: 2rem;
-	color:#ddd;
-	padding-bottom: 20px;
+	font-family: "Dosis", sans-serif;
+	font-size: 3rem;
+	color:#00A6A5;
+	text-transform: uppercase;
 }
 
 .sg-title-style-guide{
 	font-family: "DOSIS", sans-serif;
 	font-size: 2rem;
-	color: black;
-	margin: 40px;
-	text-align: center;
+	color: #404041;
 	text-transform: uppercase;
+	text-align: center;
 }
 .sg-subtitle-style-guide{
 	font-family: "DOSIS", sans-serif;
@@ -60,8 +59,8 @@ body{
 }
 .sg-subtitle{
 	text-align: center;
-	margin: 30px;
-	margin-top: 10px;
+
+
 }
 
 .container-colores{

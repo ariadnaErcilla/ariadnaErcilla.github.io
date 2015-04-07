@@ -9,13 +9,23 @@
     margin: 0 auto;
 }
 
+.sg-codigo-color{
+    margin: 40px;
+    color: white;
+}
+
+.sg-codigo-color1{
+    margin: 40px;
+    color: #404041;
+}
+
 .sg-color-corporativo1{
     width:150px;
     height:150px;
     background-color:#00A6A5;
     float:left;
     color:white;
-    margin-left: 10px;
+    margin-left: 80px;
 }
 
 .sg-color-corporativo2{
@@ -50,19 +60,24 @@
     height:150px;
     border:5px solid #00A6A5;
     float:left;
-    margin-left: 10px;
+    margin-left: 150px;
 }
-.sg-border-fino2{
-    width:150px;
-    height:150px;
-    border:2px solid #00A6A5;
-    float:left;
-    margin-left: 10px;
-}
+
 .sg-border-fino3{
     width:150px;
     height:150px;
     border:2px solid #F15C22;
     float:left;
     margin-left: 10px;
+}
+.sg-background-1{
+    width:150px;
+    height:150px;
+    margin-left: 10px;
+    background-color: rgba(51, 51, 51, .15);
+    float: left;
+}
+
+.background-4 {
+    background-color: #E6E6E6;
 }
