@@ -17,7 +17,7 @@
 
 .modificar{
 
-   font-size: 0,875rem;
+   font-size: 0.875rem;
 
 }
 
@@ -48,7 +48,7 @@
 }
 
 .subtitle {
-    font-size: 1,5rem;
+    font-size: 1.5rem;
     margin: 0px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .secondary-subtitle{
-    font-size:0,875rem;
+    font-size:0.875rem;
     font-weight: 200;
     margin: 0;
     color:#404041;
@@ -89,13 +89,13 @@ p {
 }
 
 .tags {
-    font-size: 0,875rem;
+    font-size: 0.875rem;
     font-weight: lighter;
     font-style: italic;
 }
 
 .terms{
-    font-size: 0,75rem;
+    font-size: 0.75rem;
     clear: both;
 }
 
