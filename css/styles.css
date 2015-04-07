@@ -1070,6 +1070,9 @@ img.icono-naranja{
 /*----------
 PERFIL
 ----------*/
+.background-4 {
+    background-color: #E6E6E6;
+}
 
 .parte-izquierda {
     float: left;
@@ -1100,13 +1103,11 @@ PERFIL
     margin-right: 4%;
     margin-bottom: 50px;
     float: right;
-    background-color: red;
 }
 
 
 .box-perfil {
     background-color: white;
-    border: 2px solid #00A6A5;
      overflow: hidden;
 
 }
@@ -1303,7 +1304,7 @@ form.turnos {
 
 }
 
-.diashorizontal {
+.dias-horizontal {
     width: 350px;
 }
 
