@@ -21,6 +21,12 @@
 
 }
 
+.home-subtitle{
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
 .title{
      font-size: 3rem;
      font-family: "Dosis";

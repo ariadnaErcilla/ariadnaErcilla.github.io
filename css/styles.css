@@ -46,13 +46,16 @@ body {
 #container{
     max-width: 1024px;
     margin: 0 auto;
-    background-color: rgba(51, 51, 51, .15);
-
 }
 
 .modificar{
    font-size: 0,875rem;
    color:#F15C22;
+}
+.home-subtitle{
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
 .title{
@@ -760,12 +763,12 @@ p.textoveranuncios {
 	padding: 0px;
 }
 
-section.minibox {
+section.mini-box {
 	width: 30%;
 	float:left;
 	padding: 10px;
 	margin-top: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
     margin-left: 30px;
 }
 
@@ -781,6 +784,8 @@ section.minibox {
 .info {
 	margin: 0 auto;
 	max-width: 90%;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 /*----------

@@ -60,7 +60,7 @@
     height:150px;
     border:5px solid #00A6A5;
     float:left;
-    margin-left: 150px;
+    margin-left: 5px;
 }
 
 .sg-border-fino3{
@@ -70,14 +70,18 @@
     float:left;
     margin-left: 10px;
 }
-.sg-background-1{
+.sg-border-fino4{
+    width:150px;
+    height:150px;
+    border:2px solid #404041;
+    float:left;
+    margin-left: 10px;
+}
+
+.sg-background-4{
     width:150px;
     height:150px;
     margin-left: 10px;
     background-color: rgba(51, 51, 51, .15);
     float: left;
-}
-
-.background-4 {
-    background-color: #E6E6E6;
 }
