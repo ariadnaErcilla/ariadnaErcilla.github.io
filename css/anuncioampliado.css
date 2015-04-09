@@ -1,16 +1,27 @@
 /*---------
 Anuncio ampliado
 ---------*/
-.parte-a-izquierda {
-    width: 60%;
-    float: left;
+.clear{
+
+    clear: both;
 }
 
-.parte-a-derecha {
-    width: 35%;
-    border: 1px solid red;
-    float: right;
+.no-margin{
+
+    margin: 0;
+}
+.parte-izquierda-info {
+    width: 60%;
+    float: left;
+
+
+}
+
+.parte-derecha-info {
+    width: 30%;
+    float: left;
     margin-top: 50px;
+    margin-left:30px;
 }
 
 .imagen-curso {
@@ -19,55 +30,81 @@ Anuncio ampliado
     border: 1px solid black;
 }
 
-.botones-perfil {
-    margin: 0 auto;
-    margin-top: 40px;
-
-}
-
-.button-izquierda {
-    float: left;
-    margin-left: 100px;
-}
-
-.button-derecha {
-    float: right;
-    margin-right: 100px;
-}
-
-.iconoval {
-    float: left;
-    padding-right: 10px;
-}
 
 .valoraciones {
+    margin: 90px 0px 40px 0px;
+    clear: both;
+   
+
+}
+
+.valoracion{
+
+    border-bottom:1px solid black;
+}
+
+.valoracion:last-child{
+
+    border: none;
+}
+.foto-mini{
+
+    float: left;
+    width: 20%;
+    margin:20px 10px 0px 0px;
+     clear: both;
+
+    
+}
+.foto-val {
+   
+    
+    clear: both;
+
+}
+
+.texto-val {
+    float: left;
+    width: 70%;
+    
+}
+.stars-val{
+
+width: 39%;
+
+}
+.mini-box-info{
+
     margin-top: 40px;
     clear: both;
 }
+.info-name{
 
-.fotoval {
-    max-width: 60px;
+      margin-left: 10px;
+      float: left;
+}
+.sub-info-name{
+
+    clear: both;
+    padding-bottom: 20px;
 }
 
-.textoval {
-    float: right;
-    max-width: 400px;
-}
+.container-perfil{
 
+    margin:20px 20px 0px 0px;
+}
+.texto-perfil{
+
+    margin-left: 60px;
+}
 .titulos-apartados {
     margin-bottom: 20px;
 }
+.programa{
 
-h5.titulo-apartado {
-    padding-top: 5px;
+    clear: both;
+    margin-top: 10px;
 }
 
-p.textoveranuncios {
-    text-align: center;
-}
 
-p.textoveranuncios2 {
-    text-align: center;
-    color: #f15c22;
-    font-size: 18px;
-}
+

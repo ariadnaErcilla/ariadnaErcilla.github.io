@@ -19,6 +19,7 @@ GENERAL
 .cf:after {
     clear: both;
 }
+
 body {
 	 margin: 0;
 	 font-family: 'Lato', sans-serif;
@@ -64,6 +65,7 @@ body {
      margin: 0px 0px 10px 0px;
      text-transform: uppercase;
 }
+
 .title-form{
     font-size: 3rem;
     font-family: "Lato";
@@ -78,24 +80,28 @@ body {
 }
 
 .destacado{
-     font-size: 2,25rem;
+     font-size: 2.25rem;
      font-family: "Dosis";
      font-weight: 400;
      font-style: normal;
 }
 
 .subtitle {
-    font-size: 1,5rem;
+    font-size: 1.5rem;
     margin: 0px;
 }
 
 .secondary-title {
-     font-size: 1,125rem;
+     font-size: 1.125rem;
      font-weight: 500;
      margin: 0px;
 }
 
 .secondary-subtitle{
+    font-size:0,875rem;
+    font-weight: 200;
+    margin: 0;
+    color:#404041;
 }
 
 p {
@@ -113,7 +119,12 @@ p {
 .categorias-menu:hover {
     color:#f15c22;
 }
+.profile-name{
 
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 
 .light {
     font-weight: 200;
@@ -129,7 +140,7 @@ p {
 }
 
 .tags {
-    font-size: 0,875rem;
+    font-size: 0.875rem;
     font-weight: lighter;
     font-style: italic;
 }
@@ -141,7 +152,7 @@ p {
 }
 
 .terms{
-    font-size: 0,75rem;
+    font-size: 0.75rem;
     clear: both;
 }
 
@@ -168,6 +179,7 @@ p {
 
     line-height: 0.5;
 }
+
 .underline{
 
     text-decoration: underline;
@@ -180,7 +192,7 @@ permalinks
 a {
     text-decoration: none;
 }
-
+/*
 .type-color-5 a{
 
     text-decoration: none;
@@ -192,9 +204,10 @@ a {
 }
 
 .type-color-3 a{
-
     color:white;
 }
+*/
+
 /*--------
 buttons
 --------*/
@@ -205,6 +218,7 @@ buttons
 }
 .left{
     float: left;
+
 }
 .margin-left{
     margin-left: 20px;
@@ -233,34 +247,28 @@ buttons
 .button-3{
     background-color:white;
     border: 2px solid #f15c22;
-
-
 }
 
 .general-button:hover{
-
     background-color:#404041;
 }
+
 .button-1,
 .button-2,
 .button-3,
 .button-mail,
 .button-unete span{
-
     font-weight: 400;
     text-transform: uppercase;
-
 }
 
 .button-1,
 .button-2,
 .button-3 span{
-
     font-size: 18px;
 }
 
 .button-mail span{
-
     font-size: 16px;
     position: absolute;
     top: 15px;
@@ -271,7 +279,6 @@ buttons
 .button-2,
 .button-mail span{
     color:white;
-
 }
 
 .button-3 span{
@@ -291,11 +298,9 @@ buttons
     border-radius: 15px;
     width: 100%;
     padding: 13px 0px 13px 0px;
-
-
 }
-.button-mail:hover{
 
+.button-mail:hover{
     background-color:#404041;
 }
 
@@ -308,11 +313,9 @@ buttons
 .container-unete{
     margin-left: 20px;
     margin: 0 auto;
-
-
 }
-.button-unete{
 
+.button-unete{
     background-color: white;
     border:1px solid black;
     border-radius: 0;
@@ -323,12 +326,10 @@ buttons
 
 .button-unete span{
     color: #404041;
-
-
 }
+
 .button-unete:hover{
     background-color:#f15c22;
-
 }
 
 
@@ -462,15 +463,14 @@ popup login-registro
 
 }
 .img-facebook{
-
     padding-bottom: 20px;
     border-bottom: 1px solid #404041;
 }
 
 .img-proceso{
     margin: 0 auto;
-
 }
+
 .proceso{
     width: 100%;
 }
@@ -479,7 +479,6 @@ popup login-registro
     float: left;
     width: 50%;
     margin-left: 40px;
-
 }
 
 .consejos {
@@ -797,9 +796,9 @@ anuncio
     width: 31%;
     border: 1px solid #404041;
     float: left;
-    margin-right: 20px;
     position: relative;
     background-color: white;
+    margin: 40px 20px 20px 0px;
 
 }
 
@@ -877,8 +876,6 @@ ENCUENTRA TU CURSO
     margin: 7px;
 }
 
-
-
 .mail-cursos{
     width: 45px;
     top:0;
@@ -901,59 +898,54 @@ ENCUENTRA TU CURSO
 BUSCA TU ALUMNO
 -----------*/
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1024px;
-  }
-}
-
-.row {
-
-}
-@media (min-width: 768px) {
-.col-xs-12 {
-  width: 100%;
-}
-}
-
-.col-xs-6 {
-  width: 100%;
+/*.row {
+    margin: 0 -10px;
+    margin-bottom: 20px;
 
 }
 
-@media (min-width: 992px) {
-
-.col-xs-12 {
-  width: 100%;
+.row:last-child {
+  margin-bottom: 0;
 }
 
-.col-xs-6 {
-  width: 100%;
-}
-}
-
-
-
-@media (min-width: 1200px) {
-.col-xs-12 {
-  width: 100%;
+[class*="col-"] {
+  float: left;
+  padding-right: 20px;
 }
 
-.col-xs-6 {
-  width: 100%;
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+*/
+.row{
+
+    margin-left: -15px;
+    margin-right: -15px;
+}
+@media screen and (max-width: 650px){
+
+.col-4{
+
+    width: 50%;
+    float: left;
+    margin-left: 60px;
+
+
 }
 
 }
+@media screen and (max-width: 420px){
+
+.col-4{
+
+    width: 100%;
+    float: none;
+    margin: 0;
+
+}
+
+}
+
 .foto{
 
     margin: 0 auto;
@@ -995,17 +987,9 @@ BUSCA TU ALUMNO
 .todos-anuncios {
     float:right;
     width: 82%;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 40px 0px;
 }
 
-.anuncios-horizontal {
-    width: 100%;
-    margin: 40px 0px 40px 0px;
-   float: left;
-
-
-
-}
 
 .fondo-anuncio{
 
@@ -1076,14 +1060,19 @@ img.icono-naranja{
 PERFIL
 ----------*/
 .background-4 {
-    background-color: #E6E6E6;
+
+    width: 100%;
+    margin-top:20px;
+    background-color: rgba(51, 51, 51, .15);
+
 }
 
 .parte-izquierda {
     float: left;
-    width: 20%;
-    margin-left: 75px;
-    margin-top: 100px;
+    width: 30%;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: white;
 }
 
 .foto-perfil {
@@ -1110,9 +1099,8 @@ PERFIL
     float: right;
 }
 
-
 .box-perfil {
-    background-color: white;
+    background-color: red;
      overflow: hidden;
 
 }
@@ -1136,18 +1124,18 @@ PERFIL
 }
 
 li.pestanyas {
-    display: inline-block;
-    margin-right: 0px;
-    background-color: #00A6A5;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    float:left;
+
 }
 
 .pestanyas a{
     color:white;
     text-decoration: none;
+    background-color: #00A6A5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -1177,7 +1165,7 @@ li.pestanyas a:hover {
 .iconos-perfil{
     float: left;
     margin-right: 10px;
-    clear: both;
+    
 }
 
 .contenido{
@@ -1360,20 +1348,6 @@ footer {
 grid
 ---------*/
 
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col-xs-12 {
-  width: 100%;
-  background-color: #F0F0F0;
-}
-
-.col-xs-6 {
-  width: 100%;
-  background-color: #DCDCDB;
-}
 
 
 
@@ -1440,5 +1414,49 @@ header{
 }
 /* HEAEDER FIN */
 
+/*-----
 
+tablas
+-----*/
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th{
+
+    background-color: #DCDCDB;
+}
+
+td{
+
+    background-color: #F0F0F0;
+}
+.table-check{
+
+    border: 2px solid #00A6A5;
+}
+.second-td{
+
+    background-color: #DCDCDB;
+}
+.icono-tabla-off{
+
+    
+}
+.icono-tabla{
+    display: none;
+    margin: 0 auto;
+    
+
+}
+.title-table{
+
+    text-align: left;
+}
 
