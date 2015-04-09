@@ -38,7 +38,12 @@
     font-weight: 500;
     margin-top: 50px;
 }
+.profile-name{
 
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 .destacado{
      font-size: 2,25rem;
      font-family: "Dosis";
@@ -71,13 +76,13 @@ p {
 }
 
 
-.categoriasmenu {
+.categorias-menu {
     padding-right: 10px;
     line-height: 30px;
     margin: 0px;
 }
 
-.categoriasmenu:hover {
+.categorias-menu:hover {
     color:#f15c22;
 }
 
