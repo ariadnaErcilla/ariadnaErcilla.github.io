@@ -63,12 +63,13 @@ aside perfil
 .parte-izquierda {
     float: left;
     width: 30%;
-    margin: 20px 20px;
+    margin-right: 20px;
+    margin-top: 50px;
     padding: 10px;
     background-color: white;
 }
 
-.foto-perfil {
+.cien-por-cien {
   width: 100%;
 
 }
@@ -78,9 +79,10 @@ aside perfil
 }
 
 .informacion-persona{
-
- margin-top: 40px;
+ margin: 40px 0 0 0px;
 }
+
+
 .info-perfil {
     padding: 0px;
 }

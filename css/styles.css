@@ -574,7 +574,6 @@ select {
 
 .box-perfil {
   background-color: white;
-  border: 2px solid #00A6A5;
   overflow: hidden; }
 
 .menu-interior {
@@ -822,18 +821,19 @@ aside perfil
 .parte-izquierda {
   float: left;
   width: 30%;
-  margin: 20px 20px;
+  margin-right: 20px;
+  margin-top: 50px;
   padding: 10px;
   background-color: white; }
 
-.foto-perfil {
+.cien-por-cien {
   width: 100%; }
 
 .img-perfil {
   width: 60%; }
 
 .informacion-persona {
-  margin-top: 40px; }
+  margin: 40px 0 0 0px; }
 
 .info-perfil {
   padding: 0px; }
@@ -931,10 +931,9 @@ header {
   display: inline; }
 
 .parte-derecha {
-  margin-top: 80px;
-  margin-right: 4%;
-  margin-bottom: 50px;
-  float: right; }
+  margin: 50px 0 0 40px;
+  float: right;
+  background-color: red; }
 
 .iconos-perfil {
   float: left;
@@ -1040,6 +1039,9 @@ form.turnos {
 
 .dias-horizontal {
   width: 350px; }
+
+.inline {
+  display: inline-block; }
 
 .img-top {
   margin: 0 auto;

@@ -1,14 +1,13 @@
 .parte-derecha{
-    margin-top: 80px;
-    margin-right: 4%;
-    margin-bottom: 50px;
+    margin: 50px 0 0 40px;
     float: right;
+    background-color: red;
 }
 
 .iconos-perfil{
     float: left;
     margin-right: 10px;
-    
+
 }
 
 .contenido{
@@ -141,9 +140,12 @@ existe?
 form.turnos {
     float: right;
     margin-top: -15px;
-
 }
 
 .dias-horizontal {
     width: 350px;
+}
+
+.inline {
+    display: inline-block;
 }
