@@ -2,13 +2,13 @@
 
 .sg-style-guide{
 	margin: 0;
-	background: #ddd;
+	background: #fff;
 }
 
 .sg-wrapper{
 	max-width: 970px;
 	margin: 0 auto;
-	background: #fff;
+	background: #ddd;
 	padding:1rem;
 }
 
@@ -132,7 +132,7 @@
 grid
 --------*/
 .sg-row {
-  border: 2px solid  #DCDCDB;
+  border: 2px solid  white;
     margin: 0 -10px;
   margin-bottom: 20px;
   max-width: 1280px;
@@ -152,7 +152,7 @@ grid
 }
 .sg-col-3{
 
-    background-color: #DCDCDB;
+    background-color: white;
     margin: 20px;
     float: left;
     width: 30%;

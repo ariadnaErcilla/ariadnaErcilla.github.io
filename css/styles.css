@@ -21,8 +21,8 @@
   font-family: "Dosis";
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 600; }
 
 .title-form {
   font-size: 3rem;
@@ -255,7 +255,6 @@ body {
 
 .anuncio {
   width: 31%;
-  border: 1px solid #404041;
   float: left;
   margin: 0px 20px 20px 0px;
   position: relative;
@@ -365,9 +364,8 @@ Anuncio ampliado
 
 .general-button {
   border: none;
-  height: 50px;
   text-align: center;
-  padding: 10px 60px 10px 60px;
+  padding: 20px 60px 20px 60px;
   border-radius: 8px; }
 
 .medium-button {
@@ -419,7 +417,8 @@ Anuncio ampliado
 
 .full-button {
   display: block;
-  width: 100%; }
+  width: 100%;
+  padding: 20px 10px 20px 10px; }
 
 .container-mail {
   position: absolute;
@@ -745,7 +744,7 @@ td {
 .muneco-busqueda {
   position: absolute;
   margin-left: -150px;
-  top: 113px; }
+  top: 100px; }
 
 /*------
 aside ampliado
@@ -895,7 +894,8 @@ grid
     margin: 0; } }
 header {
   margin: 1.5rem 0 3rem 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: white; }
 
 .img-logo {
   width: 100%;
