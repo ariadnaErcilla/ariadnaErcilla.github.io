@@ -230,7 +230,7 @@ body {
   margin-top: 20px;
   background-color: rgba(51, 51, 51, 0.15); }
 
-#container {
+.container {
   max-width: 1024px;
   margin: 0 auto; }
 
@@ -245,6 +245,9 @@ body {
 
 .no-margin {
   margin: 0; }
+
+.padding-top {
+  padding-top: 50px; }
 
 .todos-anuncios {
   float: right;
@@ -822,7 +825,6 @@ aside perfil
   float: left;
   width: 30%;
   margin-right: 20px;
-  margin-top: 50px;
   padding: 10px;
   background-color: white; }
 
@@ -932,8 +934,7 @@ header {
 
 .parte-derecha {
   margin: 50px 0 0 40px;
-  float: right;
-  background-color: red; }
+  float: right; }
 
 .iconos-perfil {
   float: left;
