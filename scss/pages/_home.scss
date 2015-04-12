@@ -1,0 +1,65 @@
+.img-top {
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+.fondo-img-top {
+    background-image: url(../imagenes/portada_home.jpg);
+    height: 610px;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+}
+
+.contenido-top {
+	margin: 0 auto;
+	width: 100%;
+	top:100px;
+	position:absolute;
+}
+
+.texto-top-1 {
+	text-align: center;
+	padding-bottom: 90px;
+	width: 50%;
+	margin: 0 auto;
+    float: left;
+    position: relative;
+}
+
+.texto-top-2 {
+    text-align: center;
+    padding-bottom: 90px;
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+}
+
+
+.box2 {
+	clear: both;
+}
+
+section.minibox {
+	width: 30%;
+	float:left;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+    margin-left: 30px;
+}
+
+#img2 {
+	text-align: center;
+}
+
+.article2 {
+	margin-top: 100px;
+    width: 100%;
+}
+
+.info {
+	margin: 0 auto;
+	max-width: 90%;
+}

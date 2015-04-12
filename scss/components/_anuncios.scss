@@ -1,15 +1,17 @@
 .todos-anuncios {
     float:right;
     width: 82%;
-    margin: 0px 0px 40px 0px;
+    margin: 10px 0px 40px 0px;
 }
+
 .anuncio {
     width: 31%;
     border: 1px solid #404041;
     float: left;
-    margin-right: 20px;
+    margin: 0px 20px 20px 0px;
     position: relative;
     background-color: white;
+
 
 }
 
@@ -28,7 +30,7 @@
 }
 .mas-info{
     padding-bottom: 60px;
-    margin-left:10px;
+    margin:0px 10px 0px 10px;
 }
 .total-icono{
 
@@ -128,15 +130,7 @@ encuentra
 /*---------
 Anuncio ampliado
 ---------*/
-.clear{
 
-    clear: both;
-}
-
-.no-margin{
-
-    margin: 0;
-}
 .parte-izquierda-info {
     width: 60%;
     float: left;
@@ -147,14 +141,15 @@ Anuncio ampliado
 .parte-derecha-info {
     width: 30%;
     float: left;
-    margin-top: 50px;
     margin-left:30px;
+    background-color:white;
+    padding: 50px 20px 200px 20px;
 }
 
 .imagen-curso {
     margin-top: 20px;
     max-width: 100%;
-    border: 1px solid black;
+    
 }
 
 

@@ -13,15 +13,8 @@
 .type-color-5 {
   color: #404041; }
 
-.modificar{
-   font-size: 0,875rem;
-   color:#F15C22;
-}
-.home-subtitle{
-    font-family: 'Dosis', sans-serif;
-    font-weight: normal;
-    font-size: 1.5rem;
-}
+.modificar {
+  font-size: 0.875rem; }
 
 .title {
   font-size: 3rem;
@@ -45,7 +38,7 @@
   font-weight: 400; }
 
 .destacado {
-  font-size: 2,25rem;
+  font-size: 2.25rem;
   font-family: "Dosis";
   font-weight: 400;
   font-style: normal; }
@@ -72,7 +65,7 @@ p {
 .categorias-menu {
   padding-right: 10px;
   line-height: 30px;
-  margin: 0px; }
+  margin: 0; }
 
 .categorias-menu:hover {
   color: #f15c22; }
@@ -95,7 +88,7 @@ p {
   text-align: center;
   padding: 10px;
   color: white;
-  font-size: 0,625rem;
+  font-size: 0.625rem;
   margin: 0px; }
 
 .nofloat {
@@ -166,7 +159,7 @@ p {
   height: 150px;
   border: 5px solid #00A6A5;
   float: left;
-  margin-left: 150px; }
+  margin-left: 5px; }
 
 .sg-border-fino3 {
   width: 150px;
@@ -175,15 +168,19 @@ p {
   float: left;
   margin-left: 10px; }
 
-.sg-background-1 {
+.sg-border-fino4 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #404041;
+  float: left;
+  margin-left: 10px; }
+
+.sg-background-4 {
   width: 150px;
   height: 150px;
   margin-left: 10px;
   background-color: rgba(51, 51, 51, 0.15);
   float: left; }
-
-.background-4 {
-  background-color: rgba(51, 51, 51, 0.15); }
 
 a {
   text-decoration: none; }
@@ -237,16 +234,28 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
 
+.left {
+  float: left; }
+
+.margin-left {
+  margin-left: 10px; }
+
+.clear {
+  clear: both; }
+
+.no-margin {
+  margin: 0; }
+
 .todos-anuncios {
   float: right;
   width: 82%;
-  margin: 0px 0px 40px 0px; }
+  margin: 10px 0px 40px 0px; }
 
 .anuncio {
   width: 31%;
   border: 1px solid #404041;
   float: left;
-  margin-right: 20px;
+  margin: 0px 20px 20px 0px;
   position: relative;
   background-color: white; }
 
@@ -262,7 +271,7 @@ body {
 
 .mas-info {
   padding-bottom: 60px;
-  margin-left: 10px; }
+  margin: 0px 10px 0px 10px; }
 
 .total-icono {
   float: left;
@@ -338,12 +347,6 @@ encuentra
 /*---------
 Anuncio ampliado
 ---------*/
-.clear {
-  clear: both; }
-
-.no-margin {
-  margin: 0; }
-
 .parte-izquierda-info {
   width: 60%;
   float: left; }
@@ -351,13 +354,13 @@ Anuncio ampliado
 .parte-derecha-info {
   width: 30%;
   float: left;
-  margin-top: 50px;
-  margin-left: 30px; }
+  margin-left: 30px;
+  background-color: white;
+  padding: 50px 20px 200px 20px; }
 
 .imagen-curso {
   margin-top: 20px;
-  max-width: 100%;
-  border: 1px solid black; }
+  max-width: 100%; }
 
 .mini-box-info {
   margin-top: 40px;
@@ -384,16 +387,16 @@ Anuncio ampliado
   clear: both;
   margin-top: 10px; }
 
-.left {
-  float: left; }
+.botones-perfil {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto; }
 
 .general-button {
   border: none;
-  margin: 0 auto;
   height: 50px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px 10px 0px;
   border-radius: 8px; }
 
 .medium-button {
@@ -410,7 +413,6 @@ Anuncio ampliado
   background-color: #f15c22; }
 
 .button-3 {
-  background-color: white;
   border: 2px solid #f15c22; }
 
 .general-button:hover {
@@ -546,7 +548,7 @@ select {
   height: 35px; }
 
 .valoraciones {
-  margin: 90px 0px 40px 0px;
+  margin: 40px 0px 40px 0px;
   clear: both; }
 
 .valoracion {
@@ -557,7 +559,6 @@ select {
 
 .foto-mini {
   float: left;
-  width: 20%;
   margin: 20px 10px 0px 0px;
   clear: both; }
 
@@ -569,7 +570,7 @@ select {
   width: 70%; }
 
 .stars-val {
-  width: 39%; }
+  width: 17%; }
 
 .box-perfil {
   background-color: white;
@@ -773,12 +774,7 @@ td {
 .muneco-busqueda {
   position: absolute;
   margin-left: -150px;
-  top: 93px; }
-
-.muneco-busqueda-2 {
-  position: absolute;
-  left: -130px;
-  top: 93px; }
+  top: 113px; }
 
 /*-------
 
@@ -809,19 +805,8 @@ img.icono-naranja {
   margin-top: 20px;
   width: 60%; }
 
-<<<<<<< HEAD
 .disponibilidad {
   margin-top: 30px; }
-=======
-section.mini-box {
-	width: 30%;
-	float:left;
-	padding: 10px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-    margin-left: 30px;
-}
->>>>>>> a7af089cbcfccf88a3a38589bd133c94b2f4dd8b
 
 .metodo {
   margin-top: 30px; }
@@ -830,16 +815,7 @@ section.mini-box {
   padding: 0px;
   margin-top: 20px; }
 
-<<<<<<< HEAD
 /*--------
-=======
-.info {
-	margin: 0 auto;
-	max-width: 90%;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
->>>>>>> a7af089cbcfccf88a3a38589bd133c94b2f4dd8b
 
 aside perfil
 --------*/
@@ -896,52 +872,6 @@ footer {
 grid
 
 ---------*/
-.row {
-  border: 2px solid  #DCDCDB;
-  margin: 0 -10px;
-  margin-bottom: 20px;
-  max-width: 1280px; }
-
-.row:last-child {
-  margin-bottom: 0; }
-
-[class*="col-"] {
-  float: left;
-  padding-right: 20px; }
-
-[class*='col-']:last-of-type {
-  padding-right: 0; }
-
-.col-3 {
-  background-color: #DCDCDB;
-  margin: 20px;
-  float: left;
-  width: 30%; }
-
-.col-9 {
-  background-color: #F0F0F0;
-  float: left;
-  width: 60%; }
-
-.col-4 {
-  background-color: white;
-  border: 1px solid #DCDCDB; }
-
-@media screen and (max-width: 1280px) {
-  .col-4 {
-    width: 29%;
-    float: left;
-    margin-left: 20px; } }
-@media screen and (max-width: 650px) {
-  .col-4 {
-    width: 50%;
-    float: left;
-    margin-left: 60px; } }
-@media screen and (max-width: 320px) {
-  .col-4 {
-    width: 100%;
-    float: none;
-    margin: 0; } }
 .row {
   margin-left: -15px;
   margin-right: -15px; }
@@ -1016,11 +946,6 @@ header {
 
 .icono-perfil {
   float: left; }
-
-.botones-perfil {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0 auto; }
 
 /*-----
 
@@ -1115,5 +1040,59 @@ form.turnos {
 
 .dias-horizontal {
   width: 350px; }
+
+.img-top {
+  margin: 0 auto;
+  margin-top: 50px; }
+
+.fondo-img-top {
+  background-image: url(../imagenes/portada_home.jpg);
+  height: 610px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.contenido-top {
+  margin: 0 auto;
+  width: 100%;
+  top: 100px;
+  position: absolute; }
+
+.texto-top-1 {
+  text-align: center;
+  padding-bottom: 90px;
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  position: relative; }
+
+.texto-top-2 {
+  text-align: center;
+  padding-bottom: 90px;
+  width: 50%;
+  margin: 0 auto;
+  float: right; }
+
+.box2 {
+  clear: both; }
+
+section.minibox {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 30px; }
+
+#img2 {
+  text-align: center; }
+
+.article2 {
+  margin-top: 100px;
+  width: 100%; }
+
+.info {
+  margin: 0 auto;
+  max-width: 90%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,13 +1,3 @@
-/*----------
-NO SE GUÍEN EN LOS TEXTOS DE LOS TITULARES, despues vemos que le ponemos.
-Cada vez que pongo span la tipo no aparece no se si lo tendremos que cambiar a <p> o que!
-----------*/
-
-
-body{
-	color: #404041;
-
-}
 
 
 .sg-style-guide{
@@ -64,7 +54,7 @@ body{
 }
 
 .container-colores{
-	width:700px;
+	width:520px;
 	height:150px;
 	margin: 0 auto;
 }
@@ -137,4 +127,87 @@ body{
 	padding-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
+}
+/*-------
+grid
+--------*/
+.sg-row {
+  border: 2px solid  #DCDCDB;
+    margin: 0 -10px;
+  margin-bottom: 20px;
+  max-width: 1280px;
+}
+
+.sg-row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  float: left;
+    padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.sg-col-3{
+
+    background-color: #DCDCDB;
+    margin: 20px;
+    float: left;
+    width: 30%;
+
+
+}
+
+.sg-col-9{
+
+    background-color: #F0F0F0;
+    float: left;
+    width: 60%;
+
+ 
+}
+
+.sg-col-4{
+
+    background-color: white;
+    border: 1px solid #DCDCDB;
+  
+
+}
+@media screen and (max-width: 1280px){
+
+.sg-col-4{
+
+    width: 29%;
+    float: left;
+    margin-left: 20px;
+
+}
+
+}
+
+@media screen and (max-width: 650px){
+
+.sg-col-4{
+
+    width: 50%;
+    float: left;
+    margin-left: 60px;
+
+
+}
+
+}
+@media screen and (max-width: 320px){
+
+.sg-col-4{
+
+    width: 100%;
+    float: none;
+    margin: 0;
+
+}
+
 }

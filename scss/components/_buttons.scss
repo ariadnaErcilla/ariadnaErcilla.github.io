@@ -1,14 +1,13 @@
-.left{
-
-    float: left;
+.botones-perfil{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
 }
 .general-button{
     border: none;
-    margin: 0 auto;
     height: 50px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 0px;
     border-radius: 8px;
 }
 .medium-button{
@@ -32,7 +31,6 @@
 }
 
 .button-3{
-    background-color:white;
     border: 2px solid #f15c22;
 
 
@@ -93,6 +91,7 @@
 
 }
 .button-mail {
+
     border: 10px solid white;
     border-radius: 15px;
     width: 100%;
