@@ -13,8 +13,15 @@
 .type-color-5 {
   color: #404041; }
 
-.modificar {
-  font-size: 0.875rem; }
+.modificar{
+   font-size: 0,875rem;
+   color:#F15C22;
+}
+.home-subtitle{
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
 
 .title {
   font-size: 3rem;
@@ -802,8 +809,19 @@ img.icono-naranja {
   margin-top: 20px;
   width: 60%; }
 
+<<<<<<< HEAD
 .disponibilidad {
   margin-top: 30px; }
+=======
+section.mini-box {
+	width: 30%;
+	float:left;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+    margin-left: 30px;
+}
+>>>>>>> a7af089cbcfccf88a3a38589bd133c94b2f4dd8b
 
 .metodo {
   margin-top: 30px; }
@@ -812,7 +830,16 @@ img.icono-naranja {
   padding: 0px;
   margin-top: 20px; }
 
+<<<<<<< HEAD
 /*--------
+=======
+.info {
+	margin: 0 auto;
+	max-width: 90%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+>>>>>>> a7af089cbcfccf88a3a38589bd133c94b2f4dd8b
 
 aside perfil
 --------*/
