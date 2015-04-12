@@ -1,0 +1,42 @@
+.valoraciones {
+    margin: 90px 0px 40px 0px;
+    clear: both;
+   
+
+}
+
+.valoracion{
+
+    border-bottom:1px solid black;
+}
+
+.valoracion:last-child{
+
+    border: none;
+}
+.foto-mini{
+
+    float: left;
+    width: 20%;
+    margin:20px 10px 0px 0px;
+     clear: both;
+
+    
+}
+.foto-val {
+   
+    
+    clear: both;
+
+}
+
+.texto-val {
+    float: left;
+    width: 70%;
+    
+}
+.stars-val{
+
+width: 39%;
+
+}

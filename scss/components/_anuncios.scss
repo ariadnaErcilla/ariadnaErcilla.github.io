@@ -1,3 +1,8 @@
+.todos-anuncios {
+    float:right;
+    width: 82%;
+    margin: 0px 0px 40px 0px;
+}
 .anuncio {
     width: 31%;
     border: 1px solid #404041;
@@ -11,6 +16,10 @@
 .container-anuncio{
 
     padding: 8px 8px 8px 8px;
+}
+.fondo-anuncio{
+
+    background-color: #1BA8A6;
 }
 .texto-cuadrado {
     text-align: center;
@@ -115,5 +124,70 @@ encuentra
     left:35%;
     position: absolute;
 
+}
+/*---------
+Anuncio ampliado
+---------*/
+.clear{
+
+    clear: both;
+}
+
+.no-margin{
+
+    margin: 0;
+}
+.parte-izquierda-info {
+    width: 60%;
+    float: left;
+
+
+}
+
+.parte-derecha-info {
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+    margin-left:30px;
+}
+
+.imagen-curso {
+    margin-top: 20px;
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+
+.mini-box-info{
+
+    margin-top: 40px;
+    clear: both;
+}
+.info-name{
+
+      margin-left: 10px;
+      float: left;
+}
+.sub-info-name{
+
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.container-perfil{
+
+    margin:20px 20px 0px 0px;
+}
+.texto-perfil{
+
+    margin-left: 60px;
+}
+.titulos-apartados {
+    margin-bottom: 20px;
+}
+.programa{
+
+    clear: both;
+    margin-top: 10px;
 }
 

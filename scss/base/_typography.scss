@@ -1,173 +1,129 @@
-
-// Aplying Variables
-body{
-
-	color: $color-primary;
-	font-family:$font-family-primary;
-	font-weight:$font-weight-regular;
-	 margin: 0;
+.type-color-1{
+    color: #00A6A5;
+}
+.type-color-2{
+    color: #F15C22;
+}
+.type-color-3{
+    color: #FFFFFF;
+}
+.type-color-4{
+    color: #9F9E9E;
+}
+.type-color-5{
+    color: #404041;
 }
 
-h1 {
-    color: $color-third;
-    font-family:$font-family-secondary;
-    text-transform: $font-text-transform;
-    font-size:$font-size-xx-large;
+.modificar{
+
+   font-size: 0.875rem;
+
+}
+
+.title{
+     font-size: 3rem;
+     font-family: "Dosis";
      margin: 0px 0px 10px 0px;
-
+     text-transform: uppercase;
+}
+.title-form{
+    font-size: 3rem;
+    font-family: "Lato";
 }
 
-
-h2{
-
-	font-size:$font-size-xx-large;
-	font-weight:$font-weight-regular;
-		margin: 0;
-    
-
-}
-
-h3{
-
-	font-size:$font-size-x-large;
-	font-family:$font-size-x-large;
-	font-weight: $font-weight-regular;
-}
-
-h4{
-	
-	font-size: $font-size-large;
-		margin: 0;
-
-}
-
-h5{
-	font-size:$font-size-medium;
-	font-weight: $font-weight-bold;
-		margin: 0;
-
-}
-
-h6{
-	 font-size: $font-size-small;
-	 	margin: 0;
-
-}
-
-p{
-	font-size: $font-size-regular;
-	text-align: $font-text-align-primary;
-
-}
 .titulo-ampliar-curso {
-    color: $color-primary;
-    font-weight:$font-weight-bold;
-    	margin-top: 50px;
-    	max-width: 500px;
+    color: #404041;
+    max-width: 500px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.profile-name{
+
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.destacado{
+     font-size: 2,25rem;
+     font-family: "Dosis";
+     font-weight: 400;
+     font-style: normal;
 }
 
-.texto-curso{
-
-    text-align: $font-text-align-secondary;
-    color:$color-third;
-    text-transform: $font-text-transform;
-    	margin: 0;
-
+.subtitle {
+    font-size: 1.5rem;
+    margin: 0px;
 }
 
-.tamanomaximo {
-    font-weight: $font-weight-light;
-   		margin: 10px 10px 10px 0px;
-  
+
+.secondary-title {
+     font-size: 1.125rem;
+     font-weight: 600;
+     margin: 0px;
 }
 
-.categoriasmenu {
-
-    line-height: $font-line-height-small;
-    	float: left;
-    	padding-right: 10px;
-    	margin: 0;
-   
+.secondary-subtitle{
+    font-size:0.875rem;
+    font-weight: 200;
+    margin: 0;
+    color:#404041;
 }
 
-.categoriasmenu:hover {
-    color:$color-secondary;
+p {
+    font-size: 1rem;
+    text-align: left;
 }
 
+
+.categorias-menu {
+    padding-right: 10px;
+    line-height: 30px;
+    margin: 0px;
+}
+
+.categorias-menu:hover {
+    color:#f15c22;
+}
 
 .light {
-    font-weight: $font-weight-light;
-    color:$color-third;
-    	margin: 0;
-    
+    font-weight: 200;
+    color:#00A6A5;
+    margin: 0;
 }
 
-
-.ayudame {
-	font-weight: $font-weight-regular;
-		display: inline-block;
-    	margin-top: 5px;
-    	width: 30%;
-  
+.tags {
+    font-size: 0.875rem;
+    font-weight: lighter;
+    font-style: italic;
 }
 
-
-.textpopup{
-
-    font-size: $font-size-x-small;
-    	display: inline-block;
+.terms{
+    font-size: 0.75rem;
+    clear: both;
 }
 
-/*.terminos{
-
-    font-size: $font-size-x-small;
-}*/
-
-.textopie {
-    text-align: $font-text-align-secondary;
-    color: $color-fourth;
-    font-size: $font-size-xx-small;
-    	padding:10px;
-    	margin: 0;
-   
+.copyright{
+    text-align: center;
+    padding:10px;
+    color:white;
+    font-size: 0,625rem;
+    margin: 0px;
 }
 
-.derechos{
-    font-size: $font-size-xx-small;
-    color: $color-fourth;
-    	clear: both;
-    	width: 110px;
-    	float: right;
+.nofloat{
+    float: none;
+    margin: 0px;
 }
 
-.underline{
-
-    text-decoration: $font-text-decoration-primary;
-}
-
-.italic{
-
-    font-style: $font-style;
-}
-
-.white{
-    color:$color-fourth;
-    	padding: 0;
- 
-  
-
-}
-.rigth{
-    
-    text-align: $font-text-align-third;
-
-}
 .centrado{
-
-    text-align: $font-text-align-secondary;
+    text-align: center;
 }
 
 .line{
 
-    line-height: $font-line-height-small;
+    line-height: 0.5;
+}
+
+.underline{
+    text-decoration: underline;
 }

@@ -1,0 +1,151 @@
+.masc{
+    font-family:"Lato", sans-serif;
+    position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    z-index:99999;
+    opacity: 0;
+    -webkit-transition:opacity 400ms ease-in;
+    -moz-transition:opacity 400ms ease-in;
+    transition:opacity 400ms ease-in;
+    pointer-events:none;
+}
+.masc::before {
+    background:rgba(0,0,0,0.8);
+    content: '';
+    display: block;
+    position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
+
+.masc:target{
+    opacity:1;
+    pointer-events:auto;
+
+}
+
+
+.popup{
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.popup-image{
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninologin.png);
+    
+
+
+
+}
+.popup-image-2{
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninogracias.png);
+
+
+
+
+}
+.top{
+    top:200px;
+   
+}
+
+.close{
+    background: #f15c22;
+    color:#FFF;
+    line-height:25px;
+    position:absolute;
+    right:1px;
+    text-align:center;
+    top:1px;
+    width:24px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:3px;
+}
+
+.close:hover{
+    background:#333333;
+}
+
+.popup-box{
+    width:400px;
+    padding:5px 20px 13px 20px;
+    background:white;
+    border-radius:5px;
+    transition:all 500ms ease-in;
+    border: 5px solid #54c4c7;
+    margin:0 auto;
+    position:relative;
+}
+
+.container-popup{
+    width: 100%;
+    padding-top: 40px;
+    margin: 0 auto;
+
+}
+
+.link-facebook{
+    width: 100%;
+
+}
+.img-facebook{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #404041;
+}
+
+.img-proceso{
+    margin: 0 auto;
+}
+
+.proceso{
+    width: 100%;
+}
+.caja-consejos {
+    float: left;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.consejos {
+    background-color: #E6E6E5;
+    text-align: left;
+    width: 400px;
+    opacity: 0.7;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.consejo{
+
+    margin-top: 50px;
+}
+
+.boton-consejos {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    color: white;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+
+
+
+
