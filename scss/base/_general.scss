@@ -24,13 +24,14 @@ body {
 	 font-weight: 400;
 	 color: #404041;
 }
+
 .background-4 {
     width: 100%;
     margin-top:20px;
     background-color: rgba(51, 51, 51, .15);
 }
 
-#container{
+.container{
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -40,16 +41,17 @@ body {
 }
 
 .margin-left{
-
-  margin-left:15px;
+  margin-left:10px;
 }
 
 .clear{
-
     clear: both;
 }
 
 .no-margin{
-
     margin: 0;
+}
+
+.padding-top {
+  padding-top: 50px;
 }
