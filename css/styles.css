@@ -20,7 +20,9 @@
   font-size: 3rem;
   font-family: "Dosis";
   margin: 0px 0px 10px 0px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1; }
 
 .title-form {
   font-size: 3rem;
@@ -238,7 +240,7 @@ body {
   float: left; }
 
 .margin-left {
-  margin-left: 10px; }
+  margin-left: 15px; }
 
 .clear {
   clear: both; }
@@ -351,52 +353,21 @@ Anuncio ampliado
   width: 60%;
   float: left; }
 
-.parte-derecha-info {
-  width: 30%;
-  float: left;
-  margin-left: 30px;
-  background-color: white;
-  padding: 50px 20px 200px 20px; }
-
 .imagen-curso {
   margin-top: 20px;
   max-width: 100%; }
 
-.mini-box-info {
-  margin-top: 40px;
-  clear: both; }
-
-.info-name {
-  margin-left: 10px;
-  float: left; }
-
-.sub-info-name {
-  clear: both;
-  padding-bottom: 20px; }
-
-.container-perfil {
-  margin: 20px 20px 0px 0px; }
-
-.texto-perfil {
-  margin-left: 60px; }
-
-.titulos-apartados {
-  margin-bottom: 20px; }
-
-.programa {
-  clear: both;
-  margin-top: 10px; }
-
 .botones-perfil {
   padding-top: 40px;
   padding-bottom: 40px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 79%; }
 
 .general-button {
   border: none;
   height: 50px;
   text-align: center;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 60px 10px 60px;
   border-radius: 8px; }
 
 .medium-button {
@@ -413,7 +384,8 @@ Anuncio ampliado
   background-color: #f15c22; }
 
 .button-3 {
-  border: 2px solid #f15c22; }
+  border: 2px solid #f15c22;
+  background-color: transparent; }
 
 .general-button:hover {
   background-color: #404041; }
@@ -547,8 +519,8 @@ Checkboxes, selects
 select {
   height: 35px; }
 
-.valoraciones {
-  margin: 40px 0px 40px 0px;
+.apartado-ampliado {
+  padding: 40px 0px 40px 0px;
   clear: both; }
 
 .valoracion {
@@ -570,7 +542,7 @@ select {
   width: 70%; }
 
 .stars-val {
-  width: 17%; }
+  width: 21%; }
 
 .box-perfil {
   background-color: white;
@@ -775,6 +747,41 @@ td {
   position: absolute;
   margin-left: -150px;
   top: 113px; }
+
+/*------
+aside ampliado
+------*/
+.parte-derecha-info {
+  width: 33%;
+  float: left;
+  margin-left: 30px;
+  background-color: white;
+  padding: 50px 30px 300px 30px; }
+
+.mini-box-info {
+  margin-top: 40px;
+  clear: both; }
+
+.info-name {
+  margin-left: 10px;
+  float: left; }
+
+.sub-info-name {
+  clear: both;
+  padding-bottom: 20px; }
+
+.container-perfil {
+  margin: 20px 20px 0px 0px; }
+
+.texto-perfil {
+  margin-left: 60px; }
+
+.titulos-apartados {
+  margin-bottom: 20px; }
+
+.programa {
+  clear: both;
+  margin-top: 10px; }
 
 /*-------
 
