@@ -240,7 +240,7 @@ body {
   float: left; }
 
 .margin-left {
-  margin-left: 15px; }
+  margin-left: 10px; }
 
 .clear {
   clear: both; }
@@ -452,6 +452,9 @@ Anuncio ampliado
 
 .button-unete:hover {
   background-color: #f15c22; }
+
+.boton-margen {
+  margin-bottom: 10px; }
 
 /*--------
 Text inputs and text areas
@@ -839,7 +842,7 @@ aside perfil
   width: 100%; }
 
 .img-perfil {
-  width: 60%; }
+  width: 50%; }
 
 .informacion-persona {
   margin: 40px 0 0 0px; }
@@ -1034,13 +1037,6 @@ PERFIL-SOBRE MI
   float: left;
   width: 40%; }
 
-/*.parte-derecha-pro{
-    float: left;
-    width: 40%;
-    margin-left: 20px;
-}
-existe?
-*/
 form.turnos {
   float: right;
   margin-top: -15px; }
@@ -1050,6 +1046,9 @@ form.turnos {
 
 .inline {
   display: inline-block; }
+
+.centrado {
+  width: 0 auto; }
 
 .img-top {
   margin: 0 auto;
