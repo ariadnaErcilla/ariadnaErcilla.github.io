@@ -509,10 +509,6 @@ Checkboxes, selects
   color: #404041;
   margin-left: 3px; }
 
-.total-partes-dia {
-  float: left;
-  width: 30%; }
-
 .box-check {
   position: relative;
   background: url(../imagenes/box-dias.svg) no-repeat;
@@ -727,6 +723,9 @@ td {
 
 .second-td {
   background-color: #DCDCDB; }
+
+.white-table {
+  background-color: white; }
 
 .icono-tabla {
   display: none;
