@@ -13,12 +13,13 @@
 </head>
 <body class="sg-style-guide">
 	<div class="sg-wrapper">
+
 		<h1 class="sg-main-title">Guía de estilos</h1>
-		<p class="sg-subtitle"> Esta es la guia de estilos de Punto y Seguido</p>
-
-
- <section>
-		<h1 class="sg-title-style-guide">1 Tipografía</h1><hr>
+            <div class="sg-logo">
+            <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+        </div>
+ <section class="sg-fondo-blanco clear">
+		<h1 class="sg-title-style-guide">Tipografía</h1><hr>
 		<h1 class="title type-color-1">Titular</h1>
 		<hr>
 		<h1 class="title-form sg-text-left">Titular</h1>
@@ -36,8 +37,8 @@
 
 
 
-  <section>
-    <h1 class="sg-title-style-guide">2 Clases para la tipografía</h1>
+  <section class="sg-fondo-blanco">
+    <h1 class="sg-title-style-guide">Clases para la tipografía</h1>
     <p class="sg-subtitle"> Estas son las clases que utilizamos para las tipografías</p>
     <h1 class="title type-color-1">h1 class="title type-color-1"</h1>
         <hr>
@@ -59,15 +60,14 @@
 <section>
     <h1 class="sg-title-style-guide">Colores</h1>
     <p class="sg-subtitle">Estos son los colores corporativos</p>
-    <div class="container-colores">
+    <div class="sg-container-colores">
         <div class="sg-color-corporativo1"><p class="sg-codigo-color">#00A6A5</div>
         <div class="sg-color-corporativo2"><p class="sg-codigo-color">#F15C22</div>
         <div class="sg-color-corporativo3"><p class="sg-codigo-color">#404041</div>
     </div>
 
    <h2 class="sg-subtitle-style-guide clear">Borders y Backgrounds</h2>
-    <p class="sg-subtitle">Estos son los borders de punto y seguido</p>
-    <div class="container-borde">
+    <div class="sg-container-borde">
         <div class="sg-border-grueso"></div>
         <div class="sg-border-fino3"></div>
         <div class="sg-border-fino4"></div>
@@ -77,33 +77,34 @@
     </div>
 
 </section>
-<section>
-<div class="sg-float-none sg-margin-auto">
+<section class="sg-margin-bottom cf">
+<div class="sg-float-none">
 <h1 class="sg-title-style-guide">Botones</h1>
-        <button class="general-button button-1 left"><a class="type-color-3" href="#"><span>Botón</span></a></button>
-         <button class="general-button button-2 left margin-left"><a class="type-color-3" href="#"><span>Botón</span></a></button>
-         <button class="general-button button-3 left margin-left"><a class="type-color-3" href="#"><span>Botón</span></a></button>
-         <button class="button-unete small-button left margin-left"><a class="type-color-4" href="#"><span>Botón</span></a></button>
+<div class="sg-container-button">
+        <button class="general-button button-1 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+         <button class="general-button button-2 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+         <button class="general-button button-3 sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+         <button class="button-unete small-button sg-margin-auto"><a class="type-color-4" href="#"><span>Botón</span></a></button>
+</div>
 </section>
 
-<section>
-
+<section class="sg-fondo-blanco clear">
 <h1 class="sg-title-style-guide sg-float-none clear">Formularios</h1>
     <h2 class="sg-subtitle-style-guide">Text inputs and textareas</h2>
         <form class="pform">
             <div class="caja-formulario">
                 <label class="secondary-title">Label name</label>
-                <input type="text" required="">
+                <input class="margin-top-input" type="text" required="">
             </div>
                <hr>
              <div class="caja-formulario">
                     <label class="secondary-title">Label name</label>
-                    <textarea placeholder="Placeholder text"></textarea>
+                    <textarea  class="margin-top-input" placeholder="Placeholder text"></textarea>
             </div>
                <hr>
             <div class="caja-formulario">
                     <label class="secondary-title">Label name</label>
-                    <textarea class="big-textarea" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor euismod turpis, et malesuada nisl tincidunt at."></textarea>
+                    <textarea class="big-textarea margin-top-input" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor euismod turpis, et malesuada nisl tincidunt at."></textarea>
             </div>
             <hr>
             <div class="caja-formulario">
@@ -128,7 +129,7 @@
         </div>
        </form>
 </section>
-<section>
+<section class="sg-fondo-blanco">
 <h1 class="sg-title-style-guide">Tablas</h1>
 <table class="sg-margin-auto">
     <tr>
@@ -207,14 +208,13 @@
 
 </table>
 </div>
-
+</section>
 <section>
     <h1 class="sg-title-style-guide clear">Links</h1>
-     <p><span class="modificar centrado"><a class="type-color-2" href="#">Link 1</a></span></p>
-      <p><span class="secondary-title underline centrado"><a class="type-color-5" href="#">Link 2</a></span></p>
+     <p class="centrado"><span class="modificar"><a class="type-color-2" href="#">Link 1</a></span></p>
+      <p class="centrado"><span class="secondary-title underline"><a class="type-color-5" href="#">Link 2</a></span></p>
 </section>
-</section>
-<section>
+<section class="sg-border-blanco">
 <h1 class="sg-title-style-guide">Popups</h1>
 <p class="centrado"><a class="type-color-5" href="#"><u>Link al popup</a></u></p>
     <div class="popup popup-image">
@@ -237,7 +237,7 @@
 </div>
 
 </section>
-<section>
+<section class="cf">
      <div class="sg-float-none sg-margin-bottom sg-margin-auto">
      <h1 class="sg-title-style-guide">Anuncios</h1>
      <div class="sg-margin-auto">
@@ -348,7 +348,7 @@
             <p>Fusce vel felis nec ante ultricies bibendum nec eu quam. Suspendisse malesuada, metus ac euismod aliquet, quam libero volutpat sem, eget scelerisque sapien est eu turpis. Suspendisse et nisl accumsan, molestie mi id, ultrices enim. Nunc luctus tincidunt neque eget sodales. </p>
         </article>
 </section>
-<section>
+<section class="sg-border-blanco">
     <h1 class="sg-title-style-guide sg-float-none">Media</h1>
       <div class="apartado-ampliado cf">
                     <div class="valoracion cf">
@@ -397,7 +397,7 @@
 </section>
 </section>
 -->
-<section>
+<section class="sg-margin-bottom">
 <h1 class="sg-title-style-guide sg-float-none">Layout</h1>
 <h2 class="sg-subtitle-style-guide">Grid</h2>
 
@@ -428,8 +428,8 @@
                 </div>
             </div>
     </div>
-
-
+</section>
+<section class="sg-fondo-blanco">
 <h2 class="sg-subtitle-style-guide">Header</h2>
 
  <header>
@@ -448,19 +448,12 @@
                     <ul>
                         <li><a href="#login">Log in</a></li>
                         <li><a href="#registro">Regístrate</a></li>
-
-                        <div class='buscar-top'>
-                        <form action='/search' id='searchthis' method='get'>
-                            <input id='search-box' name='q' placeholder='BUSCAR' type='text'/>
-                        </form>
-                        </div>
-
                     </ul>
 
                 </div>
             </nav>
     </header>
-
+</section>
 <div class="sg-float-none sg-margin-bottom">
 <h2 class="sg-subtitle-style-guide">Footer</h2>
 <footer>
