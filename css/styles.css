@@ -1085,7 +1085,7 @@ form.turnos {
 .box2 {
   clear: both; }
 
-section.minibox {
+.minibox {
   width: 30%;
   float: left;
   padding: 10px;
