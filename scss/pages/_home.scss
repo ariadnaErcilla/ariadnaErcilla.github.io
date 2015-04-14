@@ -19,7 +19,7 @@
 	position:absolute;
 }
 
-.texto-top-1 {
+.texto-top{
 	text-align: center;
 	padding-bottom: 90px;
 	width: 50%;
@@ -27,13 +27,9 @@
     float: left;
     position: relative;
 }
+.container-button{
 
-.texto-top-2 {
-    text-align: center;
-    padding-bottom: 90px;
-    width: 50%;
-    margin: 0 auto;
-    float: right;
+	margin-top:20px;
 }
 
 
@@ -41,7 +37,7 @@
 	clear: both;
 }
 
-section.minibox {
+section.mini-box {
 	width: 30%;
 	float:left;
 	padding: 10px;

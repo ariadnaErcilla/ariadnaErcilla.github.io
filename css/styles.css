@@ -239,6 +239,9 @@ body {
 .left {
   float: left; }
 
+.right {
+  float: right; }
+
 .margin-left {
   margin-left: 10px; }
 
@@ -250,6 +253,9 @@ body {
 
 .padding-top {
   padding-top: 50px; }
+
+.margin-top {
+  margin-top: 10px; }
 
 .todos-anuncios {
   float: right;
@@ -465,9 +471,6 @@ Text inputs and text areas
 .caja-formulario {
   clear: both;
   margin-top: 20px; }
-
-.margin-top-input {
-  margin-top: 10px; }
 
 input[type="text"],
 input[type="password"],
@@ -1066,7 +1069,7 @@ form.turnos {
   top: 100px;
   position: absolute; }
 
-.texto-top-1 {
+.texto-top {
   text-align: center;
   padding-bottom: 90px;
   width: 50%;
@@ -1074,17 +1077,13 @@ form.turnos {
   float: left;
   position: relative; }
 
-.texto-top-2 {
-  text-align: center;
-  padding-bottom: 90px;
-  width: 50%;
-  margin: 0 auto;
-  float: right; }
+.container-button {
+  margin-top: 20px; }
 
 .box2 {
   clear: both; }
 
-section.minibox {
+section.mini-box {
   width: 30%;
   float: left;
   padding: 10px;
