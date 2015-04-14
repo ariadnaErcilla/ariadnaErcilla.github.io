@@ -1,5 +1,6 @@
 table {
   border-collapse: collapse;
+
 }
 
 td, th {
@@ -18,16 +19,18 @@ td{
 }
 .table-check{
 
-	border: 2px solid #00A6A5;
+	
 }
 .second-td{
 
 	background-color: #DCDCDB;
 }
-.icono-tabla-off{
+.white-table{
 
-	
+	background-color: white;
+
 }
+
 .icono-tabla{
 	display: none;
 	margin: 0 auto;

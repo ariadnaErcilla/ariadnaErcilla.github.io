@@ -24,6 +24,7 @@ body {
 	 font-weight: 400;
 	 color: #404041;
 }
+
 .background-4 {
     width: 100%;
     margin-top:20px;
@@ -38,18 +39,25 @@ body {
 .left{
     float: left;
 }
+.right{
 
+  float: right;
+}
 .margin-left{
-
-  margin-left:15px;
+  margin-left:10px;
 }
 
 .clear{
-
     clear: both;
 }
 
 .no-margin{
-
     margin: 0;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+.margin-top{
+    margin-top:10px;
 }

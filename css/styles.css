@@ -21,8 +21,8 @@
   font-family: "Dosis";
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 600; }
 
 .title-form {
   font-size: 3rem;
@@ -239,14 +239,23 @@ body {
 .left {
   float: left; }
 
+.right {
+  float: right; }
+
 .margin-left {
-  margin-left: 15px; }
+  margin-left: 10px; }
 
 .clear {
   clear: both; }
 
 .no-margin {
   margin: 0; }
+
+.padding-top {
+  padding-top: 50px; }
+
+.margin-top {
+  margin-top: 10px; }
 
 .todos-anuncios {
   float: right;
@@ -255,7 +264,6 @@ body {
 
 .anuncio {
   width: 31%;
-  border: 1px solid #404041;
   float: left;
   margin: 0px 20px 20px 0px;
   position: relative;
@@ -365,9 +373,8 @@ Anuncio ampliado
 
 .general-button {
   border: none;
-  height: 50px;
   text-align: center;
-  padding: 10px 60px 10px 60px;
+  padding: 20px 60px 20px 60px;
   border-radius: 8px; }
 
 .medium-button {
@@ -419,7 +426,8 @@ Anuncio ampliado
 
 .full-button {
   display: block;
-  width: 100%; }
+  width: 100%;
+  padding: 20px 10px 20px 10px; }
 
 .container-mail {
   position: absolute;
@@ -449,6 +457,9 @@ Anuncio ampliado
 
 .button-unete:hover {
   background-color: #f15c22; }
+
+.boton-margen {
+  margin-bottom: 10px; }
 
 /*--------
 Text inputs and text areas
@@ -503,10 +514,6 @@ Checkboxes, selects
 .form-check span {
   color: #404041;
   margin-left: 3px; }
-
-.total-partes-dia {
-  float: left;
-  width: 30%; }
 
 .box-check {
   position: relative;
@@ -717,11 +724,11 @@ th {
 td {
   background-color: #F0F0F0; }
 
-.table-check {
-  border: 2px solid #00A6A5; }
-
 .second-td {
   background-color: #DCDCDB; }
+
+.white-table {
+  background-color: white; }
 
 .icono-tabla {
   display: none;
@@ -745,7 +752,7 @@ td {
 .muneco-busqueda {
   position: absolute;
   margin-left: -150px;
-  top: 113px; }
+  top: 100px; }
 
 /*------
 aside ampliado
@@ -829,7 +836,6 @@ aside perfil
   float: left;
   width: 30%;
   margin-right: 20px;
-  margin-top: 50px;
   padding: 10px;
   background-color: white; }
 
@@ -837,7 +843,7 @@ aside perfil
   width: 100%; }
 
 .img-perfil {
-  width: 60%; }
+  width: 50%; }
 
 .informacion-persona {
   margin: 40px 0 0 0px; }
@@ -895,7 +901,8 @@ grid
     margin: 0; } }
 header {
   margin: 1.5rem 0 3rem 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: white; }
 
 .img-logo {
   width: 100%;
@@ -939,8 +946,7 @@ header {
 
 .parte-derecha {
   margin: 50px 0 0 40px;
-  float: right;
-  background-color: red; }
+  float: right; }
 
 .iconos-perfil {
   float: left;
@@ -1033,13 +1039,6 @@ PERFIL-SOBRE MI
   float: left;
   width: 40%; }
 
-/*.parte-derecha-pro{
-    float: left;
-    width: 40%;
-    margin-left: 20px;
-}
-existe?
-*/
 form.turnos {
   float: right;
   margin-top: -15px; }
@@ -1049,6 +1048,9 @@ form.turnos {
 
 .inline {
   display: inline-block; }
+
+.centrado {
+  width: 0 auto; }
 
 .img-top {
   margin: 0 auto;
@@ -1067,7 +1069,7 @@ form.turnos {
   top: 100px;
   position: absolute; }
 
-.texto-top-1 {
+.texto-top {
   text-align: center;
   padding-bottom: 90px;
   width: 50%;
@@ -1075,17 +1077,17 @@ form.turnos {
   float: left;
   position: relative; }
 
-.texto-top-2 {
-  text-align: center;
-  padding-bottom: 90px;
-  width: 50%;
-  margin: 0 auto;
-  float: right; }
+.container-button {
+  margin-top: 20px; }
 
 .box2 {
   clear: both; }
 
+<<<<<<< HEAD
 .minibox {
+=======
+section.mini-box {
+>>>>>>> a6bf675f8b37d3a30ad041785d8af99b569385fc
   width: 30%;
   float: left;
   padding: 10px;

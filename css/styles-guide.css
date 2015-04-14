@@ -1,14 +1,19 @@
 
-
+.sg-logo{
+	margin: 0 auto;
+	width: 20%;
+	padding-bottom:20px;
+}
 .sg-style-guide{
 	margin: 0;
+	background: #fff;
 	background: #ddd;
 }
 
 .sg-wrapper{
 	max-width: 970px;
 	margin: 0 auto;
-	background: #fff;
+	background: #ddd;
 	padding:1rem;
 }
 
@@ -18,6 +23,7 @@
 	font-size: 3rem;
 	color:#00A6A5;
 	text-transform: uppercase;
+	margin:0;
 }
 
 .sg-title-style-guide{
@@ -43,6 +49,7 @@
 .sg-padding-top{
 	padding-top: 15px;
 }
+
 .sg-text-left{
 	text-align: left;
 
@@ -53,12 +60,16 @@
 
 }
 
-.container-colores{
-	width:520px;
+.sg-container-colores{
+	width:500px;
 	height:150px;
 	margin: 0 auto;
 }
-
+.sg-container-borde{
+    width:650px;
+    height:150px;
+    margin: 0 auto;
+}
 .sg-color-corporativo1{
 	width:150px;
 	height:150px;
@@ -99,6 +110,13 @@
 	padding-left: 0px;
 }
 
+.sg-fondo-blanco{
+
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
 
 .sg-margin-auto{
 
@@ -118,12 +136,12 @@
 	clear: both;
 }
 
-.contenedor-header{
+.sg-contenedor-header{
 	width: 1500px;
 }
 .sg-container-button{
 
-	width: 25%;
+	width: 74%;
 	padding-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
@@ -132,7 +150,7 @@
 grid
 --------*/
 .sg-row {
-  border: 2px solid  #DCDCDB;
+  border: 2px solid  white;
     margin: 0 -10px;
   margin-bottom: 20px;
   max-width: 1280px;
@@ -152,7 +170,7 @@ grid
 }
 .sg-col-3{
 
-    background-color: #DCDCDB;
+    background-color: white;
     margin: 20px;
     float: left;
     width: 30%;
