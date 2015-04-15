@@ -38,18 +38,17 @@
 }
 
 section.mini-box {
-
-	width: 30%;
-	float:left;
-	padding: 10px;
+	display:inline-block;
+	width:30%;
 	margin-top: 20px;
 	margin-bottom: 100px;
     margin-left: 30px;
 }
+.img1{
 
-#img2 {
-	text-align: center;
+	width:58%;
 }
+
 
 .article2 {
 	margin-top: 100px;

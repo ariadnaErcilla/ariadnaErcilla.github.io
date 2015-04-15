@@ -155,8 +155,14 @@
 }
 .sg-pepe{
 
-	width: 30%;
+	width: 33%;
 	float: left;
+	margin:0px 0px 20px 0px;
+}
+.sg-pepe-2{
+
+	width: 18%;
+	margin-left: 20px;
 }
 /*-------
 grid

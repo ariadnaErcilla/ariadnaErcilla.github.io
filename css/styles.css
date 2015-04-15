@@ -1085,20 +1085,15 @@ form.turnos {
 .box2 {
   clear: both; }
 
-<<<<<<< HEAD
-.minibox {
-=======
 section.mini-box {
->>>>>>> a6bf675f8b37d3a30ad041785d8af99b569385fc
+  display: inline-block;
   width: 30%;
-  float: left;
-  padding: 10px;
   margin-top: 20px;
   margin-bottom: 100px;
   margin-left: 30px; }
 
-#img2 {
-  text-align: center; }
+.img1 {
+  width: 58%; }
 
 .article2 {
   margin-top: 100px;
