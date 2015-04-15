@@ -31,7 +31,6 @@
 
 
 .popup{
-    display: none;
     position: absolute;
     margin: 0 auto;
     width: 100%;
@@ -58,7 +57,7 @@
 
 }
 .top{
-    top:200px;
+    top:80px;
    
 }
 
@@ -97,7 +96,10 @@
     margin: 0 auto;
 
 }
+.movedown{
 
+    margin:10% auto;
+}
 .link-facebook{
     width: 100%;
 

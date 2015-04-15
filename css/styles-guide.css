@@ -124,7 +124,14 @@
 
 
 }
+.sg-margin-top{
 
+	margin-top: 10px;
+}
+.sg-display-block{
+
+	display: block;
+}
 .sg-float-left{
 
 	float: left;
@@ -145,6 +152,11 @@
 	padding-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
+}
+.sg-pepe{
+
+	width: 30%;
+	float: left;
 }
 /*-------
 grid

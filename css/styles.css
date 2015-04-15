@@ -622,7 +622,6 @@ select {
   pointer-events: auto; }
 
 .popup {
-  display: none;
   position: absolute;
   margin: 0 auto;
   width: 100%; }
@@ -638,7 +637,7 @@ select {
   background-image: url(../imagenes/ninogracias.png); }
 
 .top {
-  top: 200px; }
+  top: 80px; }
 
 .close {
   background: #f15c22;
@@ -670,6 +669,9 @@ select {
   width: 100%;
   padding-top: 40px;
   margin: 0 auto; }
+
+.movedown {
+  margin: 10% auto; }
 
 .link-facebook {
   width: 100%; }
@@ -1049,8 +1051,8 @@ form.turnos {
 .inline {
   display: inline-block; }
 
-.centrado {
-  width: 0 auto; }
+.center {
+  margin: 0 auto; }
 
 .img-top {
   margin: 0 auto;
