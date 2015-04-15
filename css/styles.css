@@ -1085,7 +1085,11 @@ form.turnos {
 .box2 {
   clear: both; }
 
+<<<<<<< HEAD
+.minibox {
+=======
 section.mini-box {
+>>>>>>> a6bf675f8b37d3a30ad041785d8af99b569385fc
   width: 30%;
   float: left;
   padding: 10px;
