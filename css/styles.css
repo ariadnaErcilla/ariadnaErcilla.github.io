@@ -21,8 +21,8 @@
   font-family: "Dosis";
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 600; }
 
 .title-form {
   font-size: 3rem;
@@ -232,12 +232,15 @@ body {
   margin-top: 20px;
   background-color: rgba(51, 51, 51, 0.15); }
 
-.container {
+#container {
   max-width: 1024px;
   margin: 0 auto; }
 
 .left {
   float: left; }
+
+.right {
+  float: right; }
 
 .margin-left {
   margin-left: 10px; }
@@ -251,6 +254,9 @@ body {
 .padding-top {
   padding-top: 50px; }
 
+.margin-top {
+  margin-top: 10px; }
+
 .todos-anuncios {
   float: right;
   width: 82%;
@@ -258,7 +264,6 @@ body {
 
 .anuncio {
   width: 31%;
-  border: 1px solid #404041;
   float: left;
   margin: 0px 20px 20px 0px;
   position: relative;
@@ -368,9 +373,8 @@ Anuncio ampliado
 
 .general-button {
   border: none;
-  height: 50px;
   text-align: center;
-  padding: 10px 60px 10px 60px;
+  padding: 20px 60px 20px 60px;
   border-radius: 8px; }
 
 .medium-button {
@@ -422,7 +426,8 @@ Anuncio ampliado
 
 .full-button {
   display: block;
-  width: 100%; }
+  width: 100%;
+  padding: 20px 10px 20px 10px; }
 
 .container-mail {
   position: absolute;
@@ -509,10 +514,6 @@ Checkboxes, selects
 .form-check span {
   color: #404041;
   margin-left: 3px; }
-
-.total-partes-dia {
-  float: left;
-  width: 30%; }
 
 .box-check {
   position: relative;
@@ -621,7 +622,6 @@ select {
   pointer-events: auto; }
 
 .popup {
-  display: none;
   position: absolute;
   margin: 0 auto;
   width: 100%; }
@@ -637,7 +637,7 @@ select {
   background-image: url(../imagenes/ninogracias.png); }
 
 .top {
-  top: 200px; }
+  top: 80px; }
 
 .close {
   background: #f15c22;
@@ -669,6 +669,9 @@ select {
   width: 100%;
   padding-top: 40px;
   margin: 0 auto; }
+
+.movedown {
+  margin: 10% auto; }
 
 .link-facebook {
   width: 100%; }
@@ -723,11 +726,11 @@ th {
 td {
   background-color: #F0F0F0; }
 
-.table-check {
-  border: 2px solid #00A6A5; }
-
 .second-td {
   background-color: #DCDCDB; }
+
+.white-table {
+  background-color: white; }
 
 .icono-tabla {
   display: none;
@@ -751,7 +754,7 @@ td {
 .muneco-busqueda {
   position: absolute;
   margin-left: -150px;
-  top: 113px; }
+  top: 100px; }
 
 /*------
 aside ampliado
@@ -900,7 +903,8 @@ grid
     margin: 0; } }
 header {
   margin: 1.5rem 0 3rem 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: white; }
 
 .img-logo {
   width: 100%;
@@ -1047,8 +1051,8 @@ form.turnos {
 .inline {
   display: inline-block; }
 
-.centrado {
-  width: 0 auto; }
+.center {
+  margin: 0 auto; }
 
 .img-top {
   margin: 0 auto;
@@ -1067,7 +1071,7 @@ form.turnos {
   top: 100px;
   position: absolute; }
 
-.texto-top-1 {
+.texto-top {
   text-align: center;
   padding-bottom: 90px;
   width: 50%;
@@ -1075,26 +1079,21 @@ form.turnos {
   float: left;
   position: relative; }
 
-.texto-top-2 {
-  text-align: center;
-  padding-bottom: 90px;
-  width: 50%;
-  margin: 0 auto;
-  float: right; }
+.container-button {
+  margin-top: 20px; }
 
 .box2 {
   clear: both; }
 
-section.minibox {
+section.mini-box {
+  display: inline-block;
   width: 30%;
-  float: left;
-  padding: 10px;
   margin-top: 20px;
   margin-bottom: 100px;
   margin-left: 30px; }
 
-#img2 {
-  text-align: center; }
+.img1 {
+  width: 58%; }
 
 .article2 {
   margin-top: 100px;
