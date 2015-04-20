@@ -718,6 +718,7 @@ table {
 
 td, th {
   padding: 0.8rem;
+  vertical-align: middle;
   text-align: center; }
 
 th {
