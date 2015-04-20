@@ -1,0 +1,120 @@
+.botones-perfil{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 79%;
+}
+
+.general-button{
+    border: none;
+    text-align: center;
+    padding: 20px 60px 20px 60px;
+    border-radius: 8px;
+}
+
+.medium-button{
+    width: 25%;
+}
+
+.small-button{
+    width: 8%;
+}
+
+.button-1{
+    background-color:#00A6A5;
+}
+
+.button-2,
+.button-mail{
+    background-color:#f15c22;
+
+}
+
+.button-3{
+    border: 2px solid #f15c22;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.general-button:hover{
+    background-color:#404041;
+}
+
+.button-1,
+.button-2,
+.button-3,
+.button-mail,
+.button-unete span{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button-1,
+.button-2,
+.button-3 span{
+    font-size: 18px;
+}
+
+.button-mail span{
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+}
+
+.button-1,
+.button-2,
+.button-mail span{
+    color:white;
+}
+
+.button-3 span{
+    color:#f15c22;
+}
+
+.full-button{
+    display:block;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+.container-mail{
+    position: absolute;
+    margin:36px auto;
+    left:0;
+    right:0;
+    width: 55%;
+}
+
+.button-mail {
+    border: 10px solid white;
+    border-radius: 15px;
+    width: 100%;
+    padding: 13px 0px 13px 0px;
+}
+
+.button-mail:hover{
+    background-color:#404041;
+}
+
+.button-unete{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0;
+    height: 20px;
+    text-align: center;
+}
+
+.button-unete span{
+    color: #404041;
+}
+
+.button-unete:hover{
+    background-color:#f15c22;
+}
+
+.boton-margen {
+    margin-bottom: 10px;
+}
+
+
+

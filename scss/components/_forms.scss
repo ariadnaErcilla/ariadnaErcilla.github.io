@@ -1,0 +1,91 @@
+/*--------
+Text inputs and text areas
+--------*/
+
+.pform{
+
+    padding-top: 20px;
+    margin: 0;
+}
+
+
+.caja-formulario{
+    clear: both;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    background: #E6E6E6;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    color:#A0A0A0;
+}
+
+.margin-none {
+    margin-top:0;
+}
+
+.big-textarea{
+	padding-bottom: 50px;
+
+}
+.mini-input{
+	width: 20%;
+    display: inline-block;
+}
+
+#input-footer{
+
+    width: 100%;
+    background: white;
+    border: 1px solid black;
+    height: 20px;
+}
+#search-box{
+
+
+}
+/*----------
+Checkboxes, selects
+----------*/
+
+.form-check{
+
+	display:inline-block;
+    padding-right: 10px;
+    margin: 0;
+    clear: both;
+}
+.form-check span{
+
+    color:#404041;
+    margin-left: 3px;
+
+}
+
+
+.box-check{
+     position: relative;
+     background: url(../imagenes/box-dias.svg) no-repeat;
+     background-size: contain;
+     height: 120px;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+select{
+
+    height: 35px;
+}
+
+
+
+

@@ -3,139 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <title>Perfil</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-    <link href="css/styles.css" rel="stylesheet" type="css/buttons">
-
-    <link href="css/styles.css" rel="stylesheet" type="css/forms">
-
-    <link href="css/styles.css" rel="stylesheet" type="css/lists">
-
-    <link href="css/styles.css" rel="stylesheet" type="text/normas">
-
-    <link href="css/styles.css" rel="stylesheet" type="text/popup">
-
-    <link href="css/styles.css" rel="stylesheet" type="text/styles">
+    <link rel="stylesheet" href="css/styles.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-<header>
-    <div class="contenedorheader">
-        <div id="imglogo">
+    <header>
+        <div class="img-logo">
             <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
-         </div>
-    <div id="menu">
-        <div class="menuizquierda">
-            <ul>
-                <li class="textomenu"><a href="anunciosprofes.html">ENCUENTRA TU CURSO</a></li>
-                <li class="textomenu"><a href="anuncios.html">BUSCA TU ALUMNO</a></li>
-                <li class="textomenu"><a href="funciona.html">¿CÓMO FUNCIONA?</a></li>
-            </ul>
+
         </div>
-        <div class="menuderecha">
-            <ul>
-                 <li class="login"><a href="perfil.html">Mi Perfil</a></li>
-            </ul>
+        <div>
+            <nav class="menu">
+                <div class="menu-izquierda">
+                    <ul>
+                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html">Busca tu alumno</a></li>
+                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
+                    </ul>
+                </div>
+                <div class="menu-derecha">
+                    <ul>
+                        <li><a class="a-menu" href="#login">Log in</a></li>
+                        <li><a class="a-menu" href="#registro">Regístrate</a></li>
+
+                        <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'>
+                            <input class='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
+                        </form></div>
+
+                    </ul>
+
+                </div>
+            </nav>
+
         </div>
-    </div>
-    </div>
-</header>
-   <div id="publicar" class="masc">
-    <div class="popupbox popupbox2 movedown movedown3">
-        <a href="#close" title="close" class="close">X</a>
-        <div class="contenidopublicar cf">
-            <div class="cajainstrucciones">
-                <div class="cajaformulario">
-                    <p class="titulospublicar">
-                        Título:
-                    </p>
-                    <p class="subtitulospublicar">
-                        *Máximo 30 caracteres
-                    </p>
-                    <form>
-                        <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
+    </header>
+
+    <!-- inicio pop-ups -->
+    <div id="publicar" class="masc">
+        <div class="popupbox popupbox2 movedown movedown3">
+            <a href="#close" title="close" class="close">X</a>
+            <div class="contenidopublicar cf">
+                <div class="cajainstrucciones">
+                    <div class="cajaformulario">
+                        <p class="titulospublicar">
+                            Título:
+                        </p>
+                        <p class="subtitulospublicar">
+                            *Máximo 30 caracteres
+                        </p>
+                        <form>
+                            <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
+                        </form>
+                    </div>
+                    <div class="cajaformulario">
+                        <p class="titulospublicar">
+                         Categoría:
+                     </p>
+                     <form>
+                        <select name="text" class="estiloinputs">
+                            <option value="Arquitectura">Arquitectura</option>
+                            <option value="Animación">Animación</option>
+                            <option value="Diseño Audiovisual">Diseño Audiovisual</option>
+                            <option value="Diseño Industrial">Diseño Industrial</option>
+                            <option value="Linux">Diseño Gráfico</option>
+                            <option value="Linux">Diseño de Moda</option>
+                            <option value="Linux">Diseño Web</option>
+                            <option value="Linux">Fotografía</option>
+                            <option value="Linux">Programación</option>
+                        </select>
                     </form>
                 </div>
                 <div class="cajaformulario">
                     <p class="titulospublicar">
-                       Categoría:
-                   </p>
-                   <form>
-                    <select name="text" class="estiloinputs">
-                        <option value="Arquitectura">Arquitectura</option>
-                        <option value="Animación">Animación</option>
-                        <option value="Diseño Audiovisual">Diseño Audiovisual</option>
-                        <option value="Diseño Industrial">Diseño Industrial</option>
-                        <option value="Linux">Diseño Gráfico</option>
-                        <option value="Linux">Diseño de Moda</option>
-                        <option value="Linux">Diseño Web</option>
-                        <option value="Linux">Fotografía</option>
-                        <option value="Linux">Programación</option>
-                    </select>
-                </form>
-            </div>
-            <div class="cajaformulario">
+                        Método de clase:
+                    </p>
+                    <form>
+                        <input type="checkbox"><p class="metodoclase">Presencial</p>
+                        <input type="checkbox"><p class="metodoclase">Skype</p>
+                        <input type="checkbox"><p class="metodoclase">Email</p>
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                        Descripción:
+                    </p>
+                    <p class="subtitulospublicar">
+                        *Máximo 200 caracteres
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                     Tags:
+                 </p>
+                 <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
+             </div>
+             <div class="cajaformulario">
                 <p class="titulospublicar">
-                    Método de clase:
-                </p>
-                <form>
-                    <input type="checkbox"><p class="metodoclase">Presencial</p>
-                    <input type="checkbox"><p class="metodoclase">Skype</p>
-                    <input type="checkbox"><p class="metodoclase">Email</p>
-                </form>
-            </div>
-            <div class="cajaformulario">
-                <p class="titulospublicar">
-                    Descripción:
+                    Sube una foto de tu trabajo:
                 </p>
                 <p class="subtitulospublicar">
-                    *Máximo 200 caracteres
+                    *Máximo 3,2 x 3,2 cm
                 </p>
                 <form>
-                    <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
+                    <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
                 </form>
             </div>
-            <div class="cajaformulario">
-                <p class="titulospublicar">
-                   Tags:
-               </p>
-               <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
-           </div>
-           <div class="cajaformulario">
-            <p class="titulospublicar">
-                Sube una foto de tu trabajo:
-            </p>
-            <p class="subtitulospublicar">
-                *Máximo 3,2 x 3,2 cm
-            </p>
-            <form>
-                <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
-            </form>
         </div>
-    </div>
-    <div class="cajaconsejos">
-        <div class="consejos">
-            <h3 class="tituloconsejos">¡Mira mis consejos!</h3>
-            <div class="botonconsejos">1</div>
-            <p class="consejo">Pon un título corto y directo a tu anuncio</p>
-            <div class="botonconsejos">2</div>
-            <p class="consejo">Selecciona una categoria para clasificar tu anuncio.</p>
-            <div class="botonconsejos">3</div>
-            <p class="consejo">Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
-            <div class="botonconsejos">4</div>
-            <p class="consejo">Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
-            <div class="botonconsejos">5</div>
-            <p class="consejo">Sube una buena foto y verás como funciona tu anuncio.<p>
-            </div>
-            <div class="publicaranuncios">
-                <a href="graciaspublicar.html" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
+        <div class="cajaconsejos">
+            <div class="consejos">
+                <h3 class="tituloconsejos">¡Mira mis consejos!</h3>
+                <div class="botonconsejos">1</div>
+                <p class="consejo">Pon un título corto y directo a tu anuncio</p>
+                <div class="botonconsejos">2</div>
+                <p class="consejo">Selecciona una categoria para clasificar tu anuncio.</p>
+                <div class="botonconsejos">3</div>
+                <p class="consejo">Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
+                <div class="botonconsejos">4</div>
+                <p class="consejo">Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
+                <div class="botonconsejos">5</div>
+                <p class="consejo">Sube una buena foto y verás como funciona tu anuncio.<p>
+                </div>
+                <div class="publicaranuncios">
+                    <a href="graciaspublicar.html" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </div>
 <div id="valorar" class="masc">
@@ -144,33 +145,33 @@
         <div class="contenidopublicar cf">
             <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
                 <h2 class="formulario">¡Valorale!</h2>
-                 <div class="cajaformulario">
+                <div class="cajaformulario">
                     <h5>
                         Puntuación
                     </h5>
                     <img src="imagenes/estrellasvalorar.svg">
-                    </div>
-                    <div class="cajaformulario">
+                </div>
+                <div class="cajaformulario">
                     <h5>
                         Comentario
                     </h5>
                     <form>
                         <textarea name="message" rows="10" cols="30"></textarea>
                     </form>
-                    </div>
+                </div>
                 <div class="cajaformulario">
                     <h5>
-                       ¿Qué rol ha cumplido?
-                   </h5>
-                   <form>
+                     ¿Qué rol ha cumplido?
+                 </h5>
+                 <form>
                     <p class="categoriasmenu"><input type="checkbox">profesor</p>
                     <p class="categoriasmenu"><input type="checkbox">alumno</p>
                 </form>
             </div>
-           <div class="subform">
+            <div class="subform">
                 <button class="publicaranuncios"><a href="#">VALORAR</a></button>
             </div>
-    </div>
+        </div>
     </div>
 </div>
 </div>
@@ -182,7 +183,7 @@
                 <h2 class="formulario">Contactar</h2>
                 <p class="centrado">en sólo 2 pasos</p>
                 <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso1.svg">
+                    <img class="proceso" src="imagenes/proceso1.svg">
                 </div>
                 <div class="cajaformulario">
                     <h5>
@@ -191,9 +192,9 @@
                 </div>
                 <div class="cajaformulario">
                     <h5>
-                       Categoría: Diseño gráfico
-                   </h5>
-                </div>
+                     Categoría: Diseño gráfico
+                 </h5>
+             </div>
              <div class="cajaformulario">
                 <h5>
                     Nombre: María Gómez
@@ -204,218 +205,215 @@
                     Número de horas:<input type="text">horas
                 </h5>
             </div>
-             <div class="cajaformulario">
+            <div class="cajaformulario">
                 <h5>
                     Mensaje
                 </h5>
                 <form>
-                   <textarea name="message" rows="10" cols="30"></textarea>
-                </form>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Método de clase
-                </h5>
-                <form>
-                    <p class="categoriasmenu"><input type="checkbox">Presencial</p>
-                    <p class="categoriasmenu"><input type="checkbox">Skype</p>
-                    <p class="categoriasmenu"><input type="checkbox">Email</p>
-                </form>
-            </div>
-           <div class="cajaformulario">
+                 <textarea name="message" rows="10" cols="30"></textarea>
+             </form>
+         </div>
+         <div class="cajaformulario">
+            <h5>
+                Método de clase
+            </h5>
+            <form>
+                <p class="categoriasmenu"><input type="checkbox">Presencial</p>
+                <p class="categoriasmenu"><input type="checkbox">Skype</p>
+                <p class="categoriasmenu"><input type="checkbox">Email</p>
+            </form>
+        </div>
+        <div class="cajaformulario">
             <h5>
                 Disponibilidad
             </h5>
             <div class="diassemana">
-            <p class="categoriasmenu-2">Lunes</p>
-            <p class="categoriasmenu-2">Martes</p>
-            <p class="categoriasmenu-2">Jueves</p>
-            <p class="categoriasmenu-2">Domingo</p>
+                <p class="categoriasmenu-2">Lunes</p>
+                <p class="categoriasmenu-2">Martes</p>
+                <p class="categoriasmenu-2">Jueves</p>
+                <p class="categoriasmenu-2">Domingo</p>
             </div>
             <div class="totalpartesdia">
-            <p class="categoriasmenu">mañana</p>
-            <p class="categoriasmenu">tarde</p>
-            <p class="categoriasmenu">noche</p>
-            <div class="boxdias">
-                <div class="miniboxdias">
-                    <input class="cuadrocheck1" type="checkbox">
-                    <input class="cuadrocheck2" type="checkbox">
+                <p class="categoriasmenu">mañana</p>
+                <p class="categoriasmenu">tarde</p>
+                <p class="categoriasmenu">noche</p>
+                <div class="boxdias">
+                    <div class="miniboxdias">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck2" type="checkbox">
+                    </div>
+                    <div class="miniboxdias2">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck2" type="checkbox">
+                        <input class="cuadrocheck3" type="checkbox">
+                    </div>
+                    <div class="miniboxdias">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck3" type="checkbox">
+                    </div>
+                    <div class="miniboxdias2">
+                        <input class="cuadrocheck2" type="checkbox">
+                    </div>
                 </div>
-                <div class="miniboxdias2">
-                    <input class="cuadrocheck1" type="checkbox">
-                    <input class="cuadrocheck2" type="checkbox">
-                    <input class="cuadrocheck3" type="checkbox">
-                </div>
-                <div class="miniboxdias">
-                    <input class="cuadrocheck1" type="checkbox">
-                    <input class="cuadrocheck3" type="checkbox">
-                </div>
-                <div class="miniboxdias2">
-                    <input class="cuadrocheck2" type="checkbox">
-                </div>
-            </div>
 
             </div>
-           </div>
-           <div class="subform">
-                <button class="publicaranuncios"><a href="#registro3">SIGUIENTE</a></button>
-            </div>
-            <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
         </div>
+        <div class="subform">
+            <button class="publicaranuncios"><a href="#registro3">SIGUIENTE</a></button>
+        </div>
+        <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
     </div>
 </div>
 </div>
-<div class="parteizquierda">
-        <div class="fotoperfil">
-            <img class="imgperfil" src="imagenes/fotoperfil.png">
-        </div>
-        <div class="totalinformacionpersona">
+</div>
+<!-- fin pop-ups -->
 
-            <h1 class="profile-name">
-                Marta Pérez
-            </h1>
-            <div class="infoperfil">
-            <!--
-                <p class="infopersona"><strong>Correo:</strong> mperez@gmail.com</p>
-            -->
-                <p><strong>Status:</strong> Estudiante</p>
-                <p><strong>Categoría:</strong> Diseñadora Gráfica</p>
-                <p><strong>Edad:</strong> 22 años</p>
+<div class="background-4">
+    <div id="container">
+        <div class="parte-izquierda">
+            <div class="centrado">
+                <img class="img-perfil" src="imagenes/fotoperfil.png">
             </div>
-        </div>
-        <div class="botonesperfil">
-        <div class="boton">
-            <button class="general-button button-2"><a href="#contactar">Contáctale</a></button>
-        </div>
-        <div class="boton">
+            <div class="informacion-persona">
+                <h1 class="profile-name inline">
+                    Marta Pérez
+                </h1>
+                <div class="info-perfil">
+                    <p><span class="type-color-1 light">Correo:</span> mperez@gmail.com</p>
+                    <p><span class="type-color-1 light">Status:</span> Estudiante</p>
+                    <p><span class="type-color-1 light">Categoría:</span> Diseñadora Gráfica</p>
+                    <p><span class="type-color-1 light">Edad:</span> 22 años</p>
+                </div>
+            </div>
+            <button class="general-button button-2 boton-margen"><span>Contáctale</span></button>
             <button class="general-button button-3"><a class="ayuda" href="#valorar">Valorále</a></button>
         </div>
-        </div>
-    </div>
-    <div class="partederecha">
-        <div class="menuinterior">
-            <ul>
-                <li class="pestanyas"><a href="perfil_sobremi.html">Sobre Mi</a></li>
-                <li class="pestanyas"><a href="perfil.html">Portafolio</a></li>
-                <li class="pestanyas"><a href="perfil_cursos.html">Cursos</a></li>
-                <li class="pestanyas"><a href="perfil_dudas.html">Dudas</a></li>
-                <li class="pestanyas"><a href="perfil_valor.html">Valoraciones</a></li>
+
+    <div class="box-perfil cf">
+        <div class="menu-interior">
+            <ul class="cf">
+                <li class="pestanyas"><a class="pestanya-1" href="#option-1">Sobre Mi</a></li>
+                <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
+                <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
+                <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
+                <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
             </ul>
         </div>
-        <article class="contenidoperfil">
-            <div class="sobremi cf">
-                <img class="iconosperfil" src="imagenes/iconoperfil.svg">
+        <article class="contenido-perfil">
+            <div class="sobre-mi cf">
+                <img class="iconos-perfil" src="imagenes/iconoperfil.svg">
                 <div class="contenido">
-                <div class="tituloperfil">
-                <h2 class="secondary-title">
-                Mi Perfil
-                </h2>
+                    <div class="titulo-perfil">
+                        <h2 class="secondary-title">
+                            Mi Perfil
+                        </h2>
+                    </div>
+                    <div class="descripcion-miperfil">
+                        <p>
+                            Soy una persona activa es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T) archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T)
+                        </p>
+                    </div>
                 </div>
-                <div class="descripcion-miperfil">
-                <p>
-                Soy una persona activa es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T) archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T)
-                </p>
             </div>
-        </div>
-    </div>
             <div class="disponibilidad cf">
-                <img class="iconosperfil" src="imagenes/iconodisponibilidad.svg">
+                <img class="iconos-perfil" src="imagenes/iconodisponibilidad.svg">
                 <div class="contenido">
-                <div class="tituloperfil">
-                <h2 class="secondary-title">
-                Disponibilidad
-                </h2>
-                 </div>
-            <div class="diassemana">
-            <p class="categoriasmenu-2">Lunes</p>
-            <p class="categoriasmenu-2">Martes</p>
-            <p class="categoriasmenu-2">Jueves</p>
-            <p class="categoriasmenu-2">Domingo</p>
-            </div>
-            <div class="totalpartesdia">
-            <p class="categoriasmenu">mañana</p>
-            <p class="categoriasmenu">tarde</p>
-            <p class="categoriasmenu">noche</p>
-            <div class="boxdias">
-                <div class="miniboxdias">
-                    <input class="cuadrocheck1" type="checkbox">
-                    <input class="cuadrocheck2" type="checkbox">
-                </div>
-                <div class="miniboxdias2">
-                    <input class="cuadrocheck1" type="checkbox">
-                    <input class="cuadrocheck2" type="checkbox">
-                    <input class="cuadrocheck3" type="checkbox">
-                </div>
-                <div class="miniboxdias">
-                    <input class="cuadrocheck1" type="checkbox">
-                    <input class="cuadrocheck3" type="checkbox">
-                </div>
-                <div class="miniboxdias2">
-                    <input class="cuadrocheck2" type="checkbox">
-                </div>
-            </div>
+                    <div class="tituloperfil">
+                        <h2 class="secondary-title">
+                            Disponibilidad
+                        </h2>
+                    </div>
+                    <div class="dias-semana">
+                        <p class="categoria-smenu-2">Lunes</p>
+                        <p class="categorias-menu-2">Martes</p>
+                        <p class="categorias-menu-2">Jueves</p>
+                        <p class="categorias-menu-2">Domingo</p>
+                    </div>
+                    <div class="total-partes-dia">
+                        <p class="categorias-menu">mañana</p>
+                        <p class="categorias-menu">tarde</p>
+                        <p class="categorias-menu">noche</p>
+                        <div class="box-dias">
+                            <div class="mini-box-dias">
+                                <input class="cuadro-check-1" type="checkbox">
+                                <input class="cuadro-check-2" type="checkbox">
+                            </div>
+                            <div class="mini-box-dias-2">
+                                <input class="cuadro-check-1" type="checkbox">
+                                <input class="cuadro-check-2" type="checkbox">
+                                <input class="cuadro-check-3" type="checkbox">
+                            </div>
+                            <div class="mini-box-dias">
+                                <input class="cuadro-check-1" type="checkbox">
+                                <input class="cuadro-check-3" type="checkbox">
+                            </div>
+                            <div class="mini-box-dias-2">
+                                <input class="cuadro-check-2" type="checkbox">
+                            </div>
+                        </div>
 
-            </div>
-           </div>
-       </div>
-             <div class="programasinfo cf">
-                <img class="iconosperfil" src="imagenes/iconoprogramas.svg">
-                <div class="contenido">
-                <div class="tituloperfil">
-                <h2 class="secondary-title">
-                Programas informáticos
-                </h2>
-                 </div>
-                <div class="totalprogramas">
-                    <div class="parteizquierdapro">
-                    <p>Programa</p>
-                    <input class="ladotitulo" type="text" placeholder="Ej: Photoshop">
-                    <p>Programa</p>
-                    <input class="ladotitulo" type="text" placeholder="Ej: Photoshop">
-                    </div>
-                    <div class="partederechapro">
-                    <p>Nivel</p>
-                    <img class="ladotitulo" src="imagenes/nivel1.svg">
-                    <p>Nivel</p>
-                    <img class="ladotitulo" src="imagenes/nivel2.svg">
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="programasinfo cf">
+                <img class="iconos-perfil" src="imagenes/iconoprogramas.svg">
+                <div class="contenido">
+                    <div class="tituloperfil">
+                        <h2 class="secondary-title">
+                            Programas informáticos
+                        </h2>
+                    </div>
+                    <div class="total-programas">
+                        <div class="parte-izquierda-pro">
+                            <p>Programa</p>
+                            <input class="ladotitulo" type="text" placeholder="Ej: Photoshop">
+                            <p>Programa</p>
+                            <input class="ladotitulo" type="text" placeholder="Ej: Photoshop">
+                        </div>
+                        <div class="partederechapro">
+                            <p>Nivel</p>
+                            <img class="ladotitulo" src="imagenes/nivel1.svg">
+                            <p>Nivel</p>
+                            <img class="ladotitulo" src="imagenes/nivel2.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </div>
-    </div>
 </div>
 </div>
-</div>
-        <article class="article3">
-        <div class="pie">
-        <section class="miniboxpie"><span>Contacto</span>
-            <p class="textoarticle3">holapuntoyseguido@gmail.com</p>
-            <p class="textoarticle3">(+34)722 563 505</p>
+<footer>
+    <div class="pie cf">
+        <section class="mini-box-pie">
+            <span class="type-color-3">Contacto</span>
+            <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
+            <p class="terms type-color-3">(+34)722 563 505</p>
         </section>
-        <section class="miniboxpie">
-            <div id="iconos">
-            <div class="twitter"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="iconopie" src="imagenes/twitter.svg" alt="twitter"></a></div>
-            <div class="facebook"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="iconopie" src="imagenes/facebook.svg" alt="facebook"></a></div>
-             <div class="instagram"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="iconopie" src="imagenes/instagram.svg" alt="instagram"></a></div>
-            </div>
-        </section>
-        <section class="miniboxpie"><span>Newsletter</span>
-            <div class="newsletter cf">
-            <div class="caja">
-                <input type="text" size="35" maxlength="70" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
-            <div class="botonunete"><a href="graciasnews.html">Únete</a>
-             <p class="derechos">Haciendo click aquí aceptas nuestras <a href="normasnews.html" target="_blank">bases y condiciones</a></p>
-             </div>
-            </div>
-        </section>
-    </div>
-        <footer>
-        <p class="textopie">©2015 puntoyseguido.All rights reserved.</p>
-    </footer>
+        <section class="mini-box-pie">
+            <div class="iconos">
+                <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
 
-    </article>
+                <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
+
+                <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
+            </div>
+        </section>
+        <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
+            <div class="newsletter cf">
+                <div class="caja-footer">
+                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
+                    <div class="container-unete left">
+                        <button class="button-unete"><a href="graciasnews.html"><span>Únete</span></button>
+                    </div>
+                </div>
+                <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span class="underline"> bases y condiciones</span></a></p>
+            </div>
+            <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+        </section>
+    </div>
+
+</footer>
 
 
 </body>

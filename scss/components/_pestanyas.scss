@@ -1,0 +1,56 @@
+.box-perfil {
+    background-color: white;
+    overflow: hidden;
+}
+
+.menu-interior {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    background-color: #00A6A5;
+}
+
+.menu-interior ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.pestanyas {
+    float: left;
+
+}
+
+.pestanyas a{
+    color:white;
+    text-decoration: none;
+    background-color: #00A6A5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display:block;
+
+}
+
+
+.pestanyas a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #00A6A5;
+}
+.contenido-perfil{
+
+    margin: 10px 10px 10px 30px;
+
+
+
+}
+
+.option-2,
+.option-3,
+.option-4,
+.option-5{
+
+    display: none;
+}

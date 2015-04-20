@@ -1,0 +1,146 @@
+.parte-derecha{
+    margin: 50px 0 0 40px;
+    float: right;
+}
+
+.iconos-perfil{
+    float: left;
+    margin-right: 10px;
+
+}
+
+.contenido{
+    width: 80%;
+    float: left;
+}
+
+.icono-perfil{
+    float: left;
+}
+
+/*-----
+
+sobre-mi
+-----*/
+.url{
+    float: left;
+}
+
+.redes-izquierda {
+    display: inline-block;
+    width: 30%;
+}
+
+.redes-derecha {
+    display: inline-block;
+    margin-left: 200px;
+    width: 30%;
+}
+
+.galeria{
+    margin-top: 20px;
+}
+
+.fotos-trabajos{
+    margin-bottom: 80px;
+    margin-top:20px;
+}
+
+.foto-izquierda {
+    float: left;
+    width: 30%;
+}
+
+.foto-medio {
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.foto-derecha{
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+}
+.foto-galeria-perfil{
+
+width: 90%;
+
+}
+
+/*-------
+
+PERFIL-CURSOS
+
+--------*/
+
+.no-cursos-cuadrado{
+
+    border: 1px solid #54c4c7;
+    width: 90%;
+    margin-bottom: 80px;
+    margin-top: 100px;
+
+}
+
+.contenido-no-cursos{
+
+    position: relative;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.personaje{
+
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:-155px;
+    width: 30%;
+}
+
+
+/*-------
+
+PERFIL-SOBRE MI
+
+--------*/
+.cuadrado-disponibilidad{
+
+
+}
+
+.programas-info{
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+}
+.total-programas{
+    margin-top: 10px;
+}
+.parte-izquierda-pro{
+
+    float: left;
+    width: 40%
+}
+
+.lado-titulo{
+
+}
+form.turnos {
+    float: right;
+    margin-top: -15px;
+}
+
+.dias-horizontal {
+    width: 350px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.center{
+    margin: 0 auto;
+}

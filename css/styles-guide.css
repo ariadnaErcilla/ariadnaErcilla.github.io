@@ -1,38 +1,42 @@
-/*----------
-NO SE GUÍEN EN LOS TEXTOS DE LOS TITULARES, despues vemos que le ponemos.
-Cada vez que pongo span la tipo no aparece no se si lo tendremos que cambiar a <p> o que!
-----------*/
 
-
-body{
-	color: #404041;
-
+.sg-logo{
+	margin: 0 auto;
+	width: 20%;
+	padding-bottom:20px;
 }
-
-
 .sg-style-guide{
 	margin: 0;
+	background: #fff;
 	background: #ddd;
 }
 
 .sg-wrapper{
 	max-width: 970px;
 	margin: 0 auto;
-	background: #fff;
+	background: #ddd;
 	padding:1rem;
 }
 
 .sg-main-title{
 	text-align: center;
-	font-family: "Lato", sans-serif;
-	font-size: 2rem;
-	color:#ddd;
-	padding-bottom: 20px;
+	font-family: "Dosis", sans-serif;
+	font-size: 3rem;
+	color:#00A6A5;
+	text-transform: uppercase;
+	margin:0;
 }
 
 .sg-title-style-guide{
 	font-family: "DOSIS", sans-serif;
 	font-size: 2rem;
+	color: #404041;
+	text-transform: uppercase;
+	text-align: center;
+}
+.sg-subtitle-style-guide{
+	font-family: "DOSIS", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
 	color: black;
 	margin: 40px;
 	text-align: center;
@@ -42,24 +46,30 @@ body{
 .sg-margin-bottom{
 	margin-bottom: 15px;
 }
+.sg-padding-top{
+	padding-top: 15px;
+}
+
 .sg-text-left{
 	text-align: left;
-	
+
 }
 .sg-subtitle{
-
 	text-align: center;
-	margin: 30px;
-	margin-top: 10px;
+
 
 }
 
-.container-colores{
-	width:480px;
+.sg-container-colores{
+	width:500px;
 	height:150px;
 	margin: 0 auto;
 }
-
+.sg-container-borde{
+    width:650px;
+    height:150px;
+    margin: 0 auto;
+}
 .sg-color-corporativo1{
 	width:150px;
 	height:150px;
@@ -100,14 +110,28 @@ body{
 	padding-left: 0px;
 }
 
+.sg-fondo-blanco{
+
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
 
 .sg-margin-auto{
 
 	margin: 0 auto;
-	width: 26%;
+
 
 }
+.sg-margin-top{
 
+	margin-top: 10px;
+}
+.sg-display-block{
+
+	display: block;
+}
 .sg-float-left{
 
 	float: left;
@@ -115,7 +139,111 @@ body{
 }
 
 .sg-float-none{
-
 	float: none;
 	clear: both;
+}
+
+.sg-contenedor-header{
+	width: 1500px;
+}
+.sg-container-button{
+
+	width: 74%;
+	padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+.sg-pepe{
+
+	width: 33%;
+	float: left;
+	margin:0px 0px 20px 0px;
+}
+.sg-pepe-2{
+
+	width: 18%;
+	margin-left: 20px;
+}
+/*-------
+grid
+--------*/
+.sg-row {
+  border: 2px solid  white;
+    margin: 0 -10px;
+  margin-bottom: 20px;
+  max-width: 1280px;
+}
+
+.sg-row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  float: left;
+    padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.sg-col-3{
+
+    background-color: white;
+    margin: 20px;
+    float: left;
+    width: 30%;
+
+
+}
+
+.sg-col-9{
+
+    background-color: #F0F0F0;
+    float: left;
+    width: 60%;
+
+ 
+}
+
+.sg-col-4{
+
+    background-color: white;
+    border: 1px solid #DCDCDB;
+  
+
+}
+@media screen and (max-width: 1280px){
+
+.sg-col-4{
+
+    width: 29%;
+    float: left;
+    margin-left: 20px;
+
+}
+
+}
+
+@media screen and (max-width: 650px){
+
+.sg-col-4{
+
+    width: 50%;
+    float: left;
+    margin-left: 60px;
+
+
+}
+
+}
+@media screen and (max-width: 320px){
+
+.sg-col-4{
+
+    width: 100%;
+    float: none;
+    margin: 0;
+
+}
+
 }
