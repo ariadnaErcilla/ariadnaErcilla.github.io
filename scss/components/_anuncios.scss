@@ -7,7 +7,7 @@
 .anuncio {
     width: 31%;
     float: left;
-    margin: 0px 20px 20px 0px;
+    margin: 0px 20px 50px 0px;
     position: relative;
     background-color: white;
 
@@ -29,17 +29,22 @@
 }
 .mas-info{
     padding-bottom: 60px;
+    width: 100%;
+}
+.mas-info-destacado{
     margin:0px 10px 0px 10px;
+    padding-bottom: 40px;
+
 }
 .total-icono{
 
     float: left;
-    width: 40%;
+    width: 50%;
 
 }
 .container-stars{
 
-    float: right;
+    float: left;
     width: 80%;
 
 

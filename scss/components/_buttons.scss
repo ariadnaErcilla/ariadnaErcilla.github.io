@@ -8,12 +8,13 @@
 .general-button{
     border: none;
     text-align: center;
-    padding: 20px 60px 20px 60px;
     border-radius: 8px;
+
 }
 
 .medium-button{
     width: 25%;
+
 }
 
 .small-button{
@@ -46,12 +47,13 @@
 .button-unete span{
     font-weight: 400;
     text-transform: uppercase;
-}
+
 
 .button-1,
 .button-2,
 .button-3 span{
     font-size: 18px;
+    padding: 20px 40px 20px 40px;
 }
 
 .button-mail span{
@@ -69,6 +71,8 @@
 
 .button-3 span{
     color:#f15c22;
+
+
 }
 
 .full-button{
