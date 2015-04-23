@@ -22,7 +22,7 @@
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
   line-height: 1;
-  font-weight: 600; }
+  font-weight: 700; }
 
 .title-form {
   font-size: 3rem;
@@ -265,7 +265,7 @@ body {
 .anuncio {
   width: 31%;
   float: left;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 20px 50px 0px;
   position: relative;
   background-color: white; }
 
@@ -281,14 +281,18 @@ body {
 
 .mas-info {
   padding-bottom: 60px;
-  margin: 0px 10px 0px 10px; }
+  width: 100%; }
+
+.mas-info-destacado {
+  margin: 0px 10px 0px 10px;
+  padding-bottom: 40px; }
 
 .total-icono {
   float: left;
-  width: 40%; }
+  width: 50%; }
 
 .container-stars {
-  float: right;
+  float: left;
   width: 80%; }
 
 .container-icon {
@@ -371,11 +375,19 @@ Anuncio ampliado
   margin: 0 auto;
   width: 79%; }
 
-.general-button {
+.general-button, .button-1 {
   border: none;
   text-align: center;
-  padding: 20px 60px 20px 60px;
+<<<<<<< HEAD
+  border-radius: 8px;
+  transition: all 0.3s ease; }
+
+.general-button span, .button-1 span {
+  padding: 20px 60px;
+  display: inline-block; }
+=======
   border-radius: 8px; }
+>>>>>>> 3db6f9b3e97040c953ed6cd89240e98b4db4a638
 
 .medium-button {
   width: 25%; }
@@ -394,7 +406,10 @@ Anuncio ampliado
   border: 2px solid #f15c22;
   background-color: transparent; }
 
-.general-button:hover {
+.boton-margen {
+  margin-bottom: 10px; }
+
+.general-button:hover, .button-1:hover {
   background-color: #404041; }
 
 .button-1,
@@ -408,7 +423,8 @@ Anuncio ampliado
 .button-1,
 .button-2,
 .button-3 span {
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 20px 40px 20px 40px; }
 
 .button-mail span {
   font-size: 16px;
@@ -427,7 +443,7 @@ Anuncio ampliado
 .full-button {
   display: block;
   width: 100%;
-  padding: 20px 10px 20px 10px; }
+  padding: 20px 10px; }
 
 .container-mail {
   position: absolute;
@@ -440,7 +456,7 @@ Anuncio ampliado
   border: 10px solid white;
   border-radius: 15px;
   width: 100%;
-  padding: 13px 0px 13px 0px; }
+  padding: 13px 0px; }
 
 .button-mail:hover {
   background-color: #404041; }
@@ -457,9 +473,6 @@ Anuncio ampliado
 
 .button-unete:hover {
   background-color: #f15c22; }
-
-.boton-margen {
-  margin-bottom: 10px; }
 
 /*--------
 Text inputs and text areas
@@ -741,21 +754,35 @@ td {
   text-align: left; }
 
 .titulo-encabezado {
-  clear: both;
   width: 100%;
   padding-bottom: 10px; }
 
 .contenido-titulo {
+  padding-top: 60px;
   position: relative;
-  float: left;
-  width: 40%;
-  padding-top: 80px;
-  margin-left: 400px; }
+  width: 76%;
+  right: 26%;
+  left: 26%; }
+
+.texto-titulo {
+  width: 50%;
+  float: left; }
 
 .muneco-busqueda {
   position: absolute;
-  margin-left: -150px;
-  top: 100px; }
+  left: -150px;
+  top: 45px; }
+
+.menu-ordenar li {
+  list-style: none;
+  float: left;
+  margin: 30px; }
+
+.menu-ordenar li {
+  text-transform: uppercase; }
+
+.menu-ordenar li a:hover {
+  color: #00A6A5; }
 
 /*------
 aside ampliado
