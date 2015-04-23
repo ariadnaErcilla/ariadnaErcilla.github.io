@@ -369,25 +369,20 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
-.botones-perfil {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0 auto;
-  width: 79%; }
-
-.general-button, .button-1 {
+/*.botones-perfil{
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 79%;
+}*/
+.general-button, .button-1, .button-2, .button-3 {
   border: none;
   text-align: center;
-<<<<<<< HEAD
   border-radius: 8px;
-  transition: all 0.3s ease; }
-
-.general-button span, .button-1 span {
-  padding: 20px 60px;
+  transition: all 0.3s ease;
   display: inline-block; }
-=======
-  border-radius: 8px; }
->>>>>>> 3db6f9b3e97040c953ed6cd89240e98b4db4a638
+
+.general-button span, .button-1 span, .button-2 span, .button-3 span {
+  display: inline-block; }
 
 .medium-button {
   width: 25%; }
@@ -398,9 +393,12 @@ Anuncio ampliado
 .button-1 {
   background-color: #00A6A5; }
 
-.button-2,
-.button-mail {
+.button-2 {
   background-color: #f15c22; }
+
+.button-mail {
+  background-color: #f15c22;
+  transition: all 0.3s ease; }
 
 .button-3 {
   border: 2px solid #f15c22;
@@ -409,7 +407,7 @@ Anuncio ampliado
 .boton-margen {
   margin-bottom: 10px; }
 
-.general-button:hover, .button-1:hover {
+.general-button:hover, .button-1:hover, .button-2:hover, .button-3:hover {
   background-color: #404041; }
 
 .button-1,
@@ -422,9 +420,9 @@ Anuncio ampliado
 
 .button-1,
 .button-2,
-.button-3 span {
+.button-3 {
   font-size: 18px;
-  padding: 20px 40px 20px 40px; }
+  padding: 15px 40px; }
 
 .button-mail span {
   font-size: 16px;
@@ -456,7 +454,8 @@ Anuncio ampliado
   border: 10px solid white;
   border-radius: 15px;
   width: 100%;
-  padding: 13px 0px; }
+  padding: 13px 0px;
+  transition: all 0.3s ease; }
 
 .button-mail:hover {
   background-color: #404041; }
@@ -466,7 +465,8 @@ Anuncio ampliado
   border: 1px solid black;
   border-radius: 0;
   height: 20px;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.3s ease; }
 
 .button-unete span {
   color: #404041; }
