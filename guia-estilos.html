@@ -280,28 +280,35 @@
 </section>
 <section class="sg-border-blanco">
 <h1 class="sg-title-style-guide">Popups</h1>
-<p class="centrado"><a class="sg-subtitle-style-guide" href="#popup1">Popup 1</a></p>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-popup1">Popup 1</a></p>
 <hr>
-<p class="centrado"><a class="sg-subtitle-style-guide" href="#popup2">Popup 2</a></p>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-popup2">Popup 2</a></p>
 <div id="popup1" class="masc">
     <div class="popup popup-image">
             <div class="popup-box top movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <div class="container-popup cf">
-                    <h2 class="title-form centrado">Title</h1>
+            <a title="close" class="close">X</a>
+            <h2 class="title-form centrado">Title</h1>
+            <div class="container-popup height-1 cf">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
+            </div>
+            <div class="margin-top">
+            <button class="general-button button-2 clear"><a class="type-color-3" href="#"><span>Botón</span></a></button>
             </div>
         </div>
     </div>
 </div>
 <div id="popup2" class="masc">
      <div class="popup">
-            <div class="popup-box movedown">
-                <a href="#close" title="close" class="close">X</a>
-                <div class="container-popup cf">
-                        <h2 class="title-form centrado">Title</h1>
+            <div class="popup-box movedown-2">
+                <a title="close" class="close">X</a>
+                <h2 class="title-form centrado">Title</h1>
+                <div class="container-popup height-2 cf">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
                 </div>
+                <div class="margin-top">
+            <button class="general-button button-2 clear"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+            </div>
             </div>
     </div>
 </div>
@@ -590,6 +597,20 @@
 
     //     return false;
     // });
+    $('#show-popup1').click(function(e){
+        e.preventDefault();
+        $($('#popup1')[0]).show();
+    });
+    $('.close').click(function(e){
+        $('.masc:visible').hide();
+    });
+    $('#show-popup2').click(function(e){
+        e.preventDefault();
+        $($('#popup2')[0]).show();
+    });
+    $('.close').click(function(e){
+        $('.masc:visible').hide();
+    });
 </script>
 </body>
 
