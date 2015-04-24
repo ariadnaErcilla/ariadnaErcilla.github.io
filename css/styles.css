@@ -426,10 +426,19 @@ test anuncio
   margin: 0 auto;
   width: 79%; }
 
-.general-button {
+.general-button, .button-1 {
   border: none;
   text-align: center;
+<<<<<<< HEAD
+  border-radius: 8px;
+  transition: all 0.3s ease; }
+
+.general-button span, .button-1 span {
+  padding: 20px 60px;
+  display: inline-block; }
+=======
   border-radius: 8px; }
+>>>>>>> 3db6f9b3e97040c953ed6cd89240e98b4db4a638
 
 .medium-button {
   width: 25%; }
@@ -448,7 +457,10 @@ test anuncio
   border: 2px solid #f15c22;
   background-color: transparent; }
 
-.general-button:hover {
+.boton-margen {
+  margin-bottom: 10px; }
+
+.general-button:hover, .button-1:hover {
   background-color: #404041; }
 
 .button-1,
@@ -482,7 +494,7 @@ test anuncio
 .full-button {
   display: block;
   width: 100%;
-  padding: 20px 10px 20px 10px; }
+  padding: 20px 10px; }
 
 .container-mail {
   position: absolute;
@@ -495,7 +507,7 @@ test anuncio
   border: 10px solid white;
   border-radius: 15px;
   width: 100%;
-  padding: 13px 0px 13px 0px; }
+  padding: 13px 0px; }
 
 .button-mail:hover {
   background-color: #404041; }
@@ -512,9 +524,6 @@ test anuncio
 
 .button-unete:hover {
   background-color: #f15c22; }
-
-.boton-margen {
-  margin-bottom: 10px; }
 
 /*--------
 Text inputs and text areas
