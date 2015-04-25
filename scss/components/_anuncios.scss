@@ -3,7 +3,6 @@
     width: 83%;
     margin: 10px 0px 40px 0px;
      li{
-        margin-right: 2%;
         list-style: none;
 
     }
@@ -14,14 +13,14 @@
     width:100%;
     background-color:white;
     position:relative;
-    margin-bottom: 10%;
-
-    &:hover{
+    margin-bottom: 20%;
+        &:hover{
 
         .hover-container{
             display: block;
         }
     }
+
 }
 
 .content-container{
@@ -31,10 +30,11 @@
 .fondo-anuncio{
 
     background-color: #1BA8A6;
+    height: 310px;
 }
 .texto-cuadrado {
     text-align: center;
-    padding: 20px 10px 30px 10px;
+    padding: 10px 10px 20px 10px;
 
 }
 .mas-info{
@@ -42,8 +42,8 @@
     width: 100%;
 }
 .mas-info-destacado{
-    margin:0px 10px 0px 10px;
-    padding-bottom: 40px;
+    margin:10px;
+    padding-bottom: 20px;
 
 }
 .total-icono{
@@ -87,14 +87,6 @@ ayuda
 }
 
 
-.mail-alumnos{
-    width: 40px;
-    left: 5px;
-    top:0;
-    position: absolute;
-
-}
-
 /*----------
 encuentra
 ---------*/
@@ -104,7 +96,7 @@ encuentra
     position:relative;
     overflow: hidden;
     padding-bottom: 62%;
-
+   
 }
 .img-curso{
 
@@ -115,10 +107,9 @@ encuentra
     left:0;
     margin:auto;
     width: 100%;
+
 }
-.total-img-curso:hover .img-curso {
-    z-index: 0;
-}
+
 .texto-curso{
 
     position: absolute;
@@ -134,23 +125,16 @@ encuentra
     display:none;
     position:absolute;
     top:0;
-    height: 250px;
     right:0;
     left:0;
     margin:auto;
     z-index:1;
     background-color:white;
-    padding:15px;
+    padding:0px 15px 15px 15px;
 }
 
 
-.mail-cursos{
-    width: 45px;
-    top:0;
-    left:35%;
-    position: absolute;
 
-}
 /*---------
 Anuncio ampliado
 ---------*/
