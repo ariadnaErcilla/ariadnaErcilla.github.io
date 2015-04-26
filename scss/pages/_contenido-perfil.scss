@@ -1,3 +1,6 @@
+/*-----
+general
+-----*/
 .parte-derecha{
     margin: 50px 0 0 40px;
     float: right;
@@ -6,7 +9,6 @@
 .iconos-perfil{
     float: left;
     margin-right: 10px;
-
 }
 
 .contenido{
@@ -17,7 +19,9 @@
 .icono-perfil{
     float: left;
 }
-
+.tabla {
+padding-top: 20px;
+}
 /*-----
 
 sobre-mi
@@ -75,7 +79,6 @@ PERFIL-CURSOS
 --------*/
 
 .no-cursos-cuadrado{
-
     border: 1px solid #54c4c7;
     width: 90%;
     margin-bottom: 80px;
@@ -84,14 +87,12 @@ PERFIL-CURSOS
 }
 
 .contenido-no-cursos{
-
     position: relative;
     margin-top:30px;
     margin-bottom: 30px;
 }
 
 .personaje{
-
     position: absolute;
     margin: 0 auto;
     left: 0;
@@ -107,27 +108,25 @@ PERFIL-SOBRE MI
 
 --------*/
 .cuadrado-disponibilidad{
-
-
 }
 
 .programas-info{
     margin-bottom: 40px;
     margin-top: 30px;
-
 }
+
 .total-programas{
     margin-top: 10px;
 }
-.parte-izquierda-pro{
 
+.parte-izquierda-pro{
     float: left;
     width: 40%
 }
 
 .lado-titulo{
-
 }
+
 form.turnos {
     float: right;
     margin-top: -15px;

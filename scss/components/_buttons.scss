@@ -1,15 +1,25 @@
-.botones-perfil{
-    padding-top: 40px;
-    padding-bottom: 40px;
+/*.botones-perfil{
+    padding: 40px 0;
     margin: 0 auto;
     width: 79%;
+}*/
+.boton-margen {
+    margin-bottom: 10px;
 }
-
 .general-button{
     border: none;
     text-align: center;
     border-radius: 8px;
     transition: all 0.3s ease;
+    display: inline-block;
+}
+.general-button:hover{
+    background-color:#404041;
+}
+.full-button{
+    display:block;
+    width: 100%;
+    padding: 20px 10px;
 }
 
 .medium-button{
@@ -21,27 +31,29 @@
 }
 
 .button-1{
-    @extend .general-button;
     background-color:#00A6A5;
 }
 
 .button-2,
 .button-mail{
+  
     background-color:#f15c22;
 }
+
 
 .button-3{
     border: 2px solid #f15c22;
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-.boton-margen {
-    margin-bottom: 10px;
+.button-1,
+.button-2,
+.button-3 {
+    font-size: 18px;
+    padding: 15px 40px;
+    @extend .general-button;
 }
 
-.general-button:hover{
-    background-color:#404041;
-}
 
 .button-1,
 .button-2,
@@ -54,32 +66,18 @@
 
 .button-1,
 .button-2,
-.button-3 span{
-    font-size: 18px;
-    padding: 20px 40px;
-    display: inline-block;
-}
-
-.button-1,
-.button-2,
 .button-mail span{
     color:white;
 }
 
 .button-3 span{
     color:#f15c22;
-
-
 }
+
 .button-mail span{
 
     font-size:1rem;
     margin-left:14px;
-}
-.full-button{
-    display:block;
-    width: 100%;
-    padding: 20px 10px;
 }
 
 .container-mail{
@@ -93,8 +91,11 @@
 .button-mail {
     border-radius: 7px;
     width: 100%;
+    transition: all 0.3s ease;
     height: 30px;
     border:none;
+    margin:0;
+
 }
 
 .button-mail:hover{
@@ -103,10 +104,11 @@
 
 .button-unete{
     background-color: white;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 0;
     height: 20px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .button-unete span{

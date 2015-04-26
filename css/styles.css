@@ -178,10 +178,18 @@ p {
   float: left;
   margin-left: 10px; }
 
+.sg-border-fino5 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(51, 51, 51, 0.15);
+  float: left;
+  margin-left: 10px; }
+
 .sg-background-4 {
   width: 150px;
   height: 150px;
   margin-left: 10px;
+  margin-top: 30px;
   background-color: rgba(51, 51, 51, 0.15);
   float: left; }
 
@@ -232,7 +240,7 @@ body {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.15); }
 
-#container {
+.container {
   max-width: 1024px;
   margin: 0 auto; }
 
@@ -306,6 +314,47 @@ body {
 .icono {
   width: 100%;
   padding-right: 2px; }
+
+/*--------
+Buscador
+-----------*/
+.titular-seccion-buscador {
+  width: 100%;
+  float: right;
+  margin-bottom: 40px;
+  position: relative; }
+
+.container-anuncios-buscador {
+  width: 50%;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 30px; }
+
+.container-imagen-button {
+  float: left;
+  width: 30%; }
+
+.imagen-anuncios-buscador {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.texto-anuncios-buscador {
+  float: right;
+  width: 65%;
+  margin-top: 10px; }
+
+.container-dudas-cursos {
+  width: 100%; }
+
+.container-cantidad {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  display: block; }
+
+.buscador {
+  margin-top: 10px; }
 
 /*-------
 ayuda
@@ -419,17 +468,32 @@ test anuncio
 .t-content-container {
   padding: 15px; }
 
-.botones-perfil {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0 auto;
-  width: 79%; }
+/*.botones-perfil{
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 79%;
+}*/
+.boton-margen {
+  margin-bottom: 10px; }
 
-.general-button, .button-1 {
+.general-button, .button-1,
+.button-2,
+.button-3 {
   border: none;
   text-align: center;
   border-radius: 8px;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  display: inline-block; }
+
+.general-button:hover, .button-1:hover,
+.button-2:hover,
+.button-3:hover {
+  background-color: #404041; }
+
+.full-button {
+  display: block;
+  width: 100%;
+  padding: 20px 10px; }
 
 .medium-button {
   width: 25%; }
@@ -448,11 +512,11 @@ test anuncio
   border: 2px solid #f15c22;
   background-color: transparent; }
 
-.boton-margen {
-  margin-bottom: 10px; }
-
-.general-button:hover, .button-1:hover {
-  background-color: #404041; }
+.button-1,
+.button-2,
+.button-3 {
+  font-size: 18px;
+  padding: 15px 40px; }
 
 .button-1,
 .button-2,
@@ -461,13 +525,6 @@ test anuncio
 .button-unete span {
   font-weight: 400;
   text-transform: uppercase; }
-
-.button-1,
-.button-2,
-.button-3 span {
-  font-size: 18px;
-  padding: 20px 40px;
-  display: inline-block; }
 
 .button-1,
 .button-2,
@@ -481,11 +538,6 @@ test anuncio
   font-size: 1rem;
   margin-left: 14px; }
 
-.full-button {
-  display: block;
-  width: 100%;
-  padding: 20px 10px; }
-
 .container-mail {
   position: absolute;
   margin: 60px auto;
@@ -496,8 +548,10 @@ test anuncio
 .button-mail {
   border-radius: 7px;
   width: 100%;
+  transition: all 0.3s ease;
   height: 30px;
-  border: none; }
+  border: none;
+  margin: 0; }
 
 .button-mail:hover {
   background-color: #404041; }
@@ -507,7 +561,8 @@ test anuncio
   border: 1px solid black;
   border-radius: 0;
   height: 20px;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.3s ease; }
 
 .button-unete span {
   color: #404041; }
@@ -619,7 +674,8 @@ select {
 
 .box-perfil {
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 30px 20px 0 0; }
 
 .menu-interior {
   width: 100%;
@@ -814,6 +870,14 @@ td {
 .title-table {
   text-align: left; }
 
+.border-table {
+  width: 100%;
+  border: 0; }
+
+.border-blue {
+  border: 2px solid #00A6A5;
+  padding: 0; }
+
 .cabecera-cursos {
   padding-top: 50px;
   width: 86%;
@@ -934,7 +998,7 @@ aside perfil
 .parte-izquierda {
   float: left;
   width: 30%;
-  margin-right: 20px;
+  margin: 30px 20px 0 0;
   padding: 10px;
   background-color: white; }
 
@@ -1043,6 +1107,9 @@ header {
 .buscar-top {
   display: inline; }
 
+/*-----
+general
+-----*/
 .parte-derecha {
   margin: 50px 0 0 40px;
   float: right; }
@@ -1057,6 +1124,9 @@ header {
 
 .icono-perfil {
   float: left; }
+
+.tabla {
+  padding-top: 20px; }
 
 /*-----
 
