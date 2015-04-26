@@ -10,9 +10,8 @@
     margin: 0px 20px 50px 0px;
     position: relative;
     background-color: white;
-
-
 }
+
 
 .container-anuncio{
 
@@ -47,7 +46,6 @@
     float: left;
     width: 80%;
 
-
 }
 .container-icon{
     width: 20%;
@@ -61,6 +59,56 @@
     padding-right:2px;
 
 }
+
+/*--------
+Buscador
+-----------*/
+
+.titular-seccion-buscador{
+    width: 100%;
+    float: right;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.container-anuncios-buscador{
+    width: 50%;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.container-imagen-button{
+    float: left;
+    width: 30%;
+}
+.imagen-anuncios-buscador{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.texto-anuncios-buscador{
+    float: right;
+    width: 65%;
+    margin-top: 10px;
+
+}
+.container-dudas-cursos{
+    width:100%;
+}
+.container-cantidad{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: -10px;
+    display: block;
+}
+
+.buscador{
+    margin-top: 10px;
+}
+
+
 
 /*-------
 ayuda
@@ -146,6 +194,6 @@ Anuncio ampliado
 .imagen-curso {
     margin-top: 20px;
     max-width: 100%;
-    
+
 }
 
