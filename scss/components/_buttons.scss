@@ -74,6 +74,8 @@
     position: absolute;
     top: 15px;
     right: 14px;
+    padding: 20px 40px;
+    display: inline-block;
 }
 
 .button-1,
@@ -85,7 +87,11 @@
 .button-3 span{
     color:#f15c22;
 }
+.button-mail span{
 
+    font-size:1rem;
+    margin-left:14px;
+}
 .full-button{
     display:block;
     width: 100%;
@@ -94,18 +100,19 @@
 
 .container-mail{
     position: absolute;
-    margin:36px auto;
+    margin:60px auto;
     left:0;
     right:0;
-    width: 55%;
+    width: 50%;
 }
 
 .button-mail {
-    border: 10px solid white;
-    border-radius: 15px;
+    border-radius: 7px;
     width: 100%;
     padding: 13px 0px;
     transition: all 0.3s ease;
+    height: 30px;
+    border:none;
 }
 
 .button-mail:hover{
@@ -129,7 +136,20 @@
     background-color:#f15c22;
 }
 
+.mail-alumnos{
 
+    background-image:url(../imagenes/mail-b.svg);
+    background-position: left;
+    background-size:contain;
+    background-repeat:no-repeat;
 
+}
 
+.mail-cursos{
+    background-image:url(../imagenes/mail-b.svg);
+    background-position: center;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
 
