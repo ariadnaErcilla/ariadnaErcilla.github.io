@@ -3,9 +3,11 @@
     margin: 0 auto;
     width: 79%;
 }*/
+
 .boton-margen {
     margin-bottom: 10px;
 }
+
 .general-button{
     border: none;
     text-align: center;
@@ -13,6 +15,7 @@
     transition: all 0.3s ease;
     display: inline-block;
 }
+
 .general-button:hover{
     background-color:#404041;
 }
@@ -34,14 +37,20 @@
     background-color:#00A6A5;
 }
 
-.button-2,
+.button-2,{
+    @extend .general-button;
+    background-color:#f15c22;
+}
+
 .button-mail{
   
     background-color:#f15c22;
+    transition: all 0.3s ease;
 }
 
 
 .button-3{
+    @extend .general-button;
     border: 2px solid #f15c22;
     background-color: rgba(0, 0, 0, 0.0);
 }

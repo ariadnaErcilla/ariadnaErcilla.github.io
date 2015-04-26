@@ -10,12 +10,11 @@
 
 .anuncio {
 
-    width:100%;
-    background-color:white;
-    position:relative;
-    margin-bottom: 20%;
-
-    &:hover{
+    float: left;
+    margin-bottom:20%;
+    position: relative;
+    background-color: white;
+      &:hover{
 
         .hover-container{
             display: block;

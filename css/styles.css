@@ -273,10 +273,10 @@ body {
     list-style: none; }
 
 .anuncio {
-  width: 100%;
-  background-color: white;
+  float: left;
+  margin-bottom: 20%;
   position: relative;
-  margin-bottom: 20%; }
+  background-color: white; }
   .anuncio:hover .hover-container {
     display: block; }
 
@@ -476,18 +476,14 @@ test anuncio
 .boton-margen {
   margin-bottom: 10px; }
 
-.general-button, .button-1,
-.button-2,
-.button-3 {
+.general-button, .button-2, .button-3, .button-1 {
   border: none;
   text-align: center;
   border-radius: 8px;
   transition: all 0.3s ease;
   display: inline-block; }
 
-.general-button:hover, .button-1:hover,
-.button-2:hover,
-.button-3:hover {
+.general-button:hover, .button-2:hover, .button-3:hover, .button-1:hover {
   background-color: #404041; }
 
 .full-button {
@@ -504,9 +500,12 @@ test anuncio
 .button-1 {
   background-color: #00A6A5; }
 
-.button-2,
-.button-mail {
+.button-2 {
   background-color: #f15c22; }
+
+.button-mail {
+  background-color: #f15c22;
+  transition: all 0.3s ease; }
 
 .button-3 {
   border: 2px solid #f15c22;
