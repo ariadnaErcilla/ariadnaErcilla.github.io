@@ -81,43 +81,52 @@ Buscador
     position: relative;
 }
 
+
 .container-anuncios-buscador{
-    width: 50%;
     background-color: white;
     overflow: hidden;
+
     margin-bottom: 30px;
 }
 
 .container-imagen-button{
     float: left;
-    width: 30%;
+    width: 25%;
+    margin: 10px;
 }
 .imagen-anuncios-buscador{
     width: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-bottom: 10px;
+
 }
 
 .texto-anuncios-buscador{
     float: right;
     width: 65%;
-    margin-top: 10px;
+    margin: 10px;
 
 }
 .container-dudas-cursos{
     width:100%;
+
 }
 .container-cantidad{
     float: left;
     margin-right: 10px;
-    margin-bottom: -10px;
-    display: block;
-}
-
-.buscador{
     margin-top: 10px;
+
 }
 
+.especial{
+    margin-top: 5px;
+    width: 30%;
+
+}
+.total-icono-buscador{
+    float: left;
+    width: 65%;
+
+}
 
 
 /*-------

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,yBAAyB;EACrB,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,KAAK;;AAGhB,4BAA4B;EACxB,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,KAAK;;AAI3B,yBAAyB;EACrB,KAAK,EAAE,GAAG",
-"sources": ["../../scss/components/buscador.scss"],
-"names": [],
-"file": "buscador.css"
-}
