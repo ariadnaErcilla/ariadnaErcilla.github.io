@@ -10,17 +10,16 @@
 
 .anuncio {
 
-    width:100%;
-    background-color:white;
-    position:relative;
-    margin-bottom: 20%;
-        &:hover{
+    float: left;
+    margin-bottom:20%;
+    position: relative;
+    background-color: white;
+      &:hover{
 
         .hover-container{
             display: block;
         }
     }
-
 }
 
 .content-container{
@@ -57,7 +56,6 @@
     float: left;
     width: 80%;
 
-
 }
 .container-icon{
     width: 20%;
@@ -71,6 +69,64 @@
     padding-right:2px;
 
 }
+
+/*--------
+Buscador
+-----------*/
+
+.titular-seccion-buscador{
+    width: 100%;
+    float: right;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.container-anuncios-buscador{
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container-imagen-button{
+    float: left;
+    width: 25%;
+    margin: 10px;
+}
+.imagen-anuncios-buscador{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.texto-anuncios-buscador{
+    float: right;
+    width: 65%;
+    margin: 10px;
+
+}
+.container-dudas-cursos{
+    width:100%;
+
+}
+.container-cantidad{
+    float: left;
+    margin-right: 10px;
+
+}
+
+.buscador{
+    margin-top: 5px;
+    width: 30%;
+
+}
+.total-icono-buscador{
+    float: left;
+    width: 65%;
+
+}
+
 
 /*-------
 ayuda
@@ -96,7 +152,7 @@ encuentra
     position:relative;
     overflow: hidden;
     padding-bottom: 62%;
-   
+
 }
 .img-curso{
 
@@ -150,7 +206,7 @@ Anuncio ampliado
 .imagen-curso {
     margin-top: 20px;
     max-width: 100%;
-    
+
 }
 
 /*---------
@@ -215,7 +271,7 @@ test anuncio
     z-index:1;
     background-color:white;
     padding:15px;
-  
+
 }
 .t-content-container{
 

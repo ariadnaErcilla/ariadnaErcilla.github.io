@@ -4,6 +4,10 @@
     width: 79%;
 }*/
 
+.boton-margen {
+    margin-bottom: 10px;
+}
+
 .general-button{
     border: none;
     text-align: center;
@@ -12,8 +16,13 @@
     display: inline-block;
 }
 
-.general-button span{
-    display: inline-block;
+.general-button:hover{
+    background-color:#404041;
+}
+.full-button{
+    display:block;
+    width: 100%;
+    padding: 20px 10px;
 }
 
 .medium-button{
@@ -25,7 +34,6 @@
 }
 
 .button-1{
-    @extend .general-button;
     background-color:#00A6A5;
 }
 
@@ -35,9 +43,11 @@
 }
 
 .button-mail{
+  
     background-color:#f15c22;
     transition: all 0.3s ease;
 }
+
 
 .button-3{
     @extend .general-button;
@@ -45,13 +55,14 @@
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-.boton-margen {
-    margin-bottom: 10px;
+.button-1,
+.button-2,
+.button-3 {
+    font-size: 18px;
+    padding: 15px 40px;
+    @extend .general-button;
 }
 
-.general-button:hover{
-    background-color:#404041;
-}
 
 .button-1,
 .button-2,
@@ -64,22 +75,6 @@
 
 .button-1,
 .button-2,
-.button-3 {
-    font-size: 18px;
-    padding: 15px 40px;
-}
-
-.button-mail span{
-    font-size: 16px;
-    position: absolute;
-    top: 15px;
-    right: 14px;
-    padding: 20px 40px;
-    display: inline-block;
-}
-
-.button-1,
-.button-2,
 .button-mail span{
     color:white;
 }
@@ -87,15 +82,11 @@
 .button-3 span{
     color:#f15c22;
 }
+
 .button-mail span{
 
     font-size:1rem;
     margin-left:14px;
-}
-.full-button{
-    display:block;
-    width: 100%;
-    padding: 20px 10px;
 }
 
 .container-mail{
@@ -109,10 +100,11 @@
 .button-mail {
     border-radius: 7px;
     width: 100%;
-    padding: 13px 0px;
     transition: all 0.3s ease;
     height: 30px;
     border:none;
+    margin:0;
+
 }
 
 .button-mail:hover{
