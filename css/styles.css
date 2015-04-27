@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .type-color-1 {
   color: #00A6A5; }
 
@@ -489,6 +490,10 @@ test anuncio
   transition: all 0.3s ease;
   display: inline-block; }
 
+<<<<<<< HEAD
+.general-button span, .button-1 span, .button-2 span, .button-3 span {
+  display: inline-block; }
+=======
 .general-button:hover, .button-2:hover, .button-3:hover, .button-1:hover {
   background-color: #404041; }
 
@@ -496,6 +501,7 @@ test anuncio
   display: block;
   width: 100%;
   padding: 20px 10px; }
+>>>>>>> ed58b3c76e8ece1df1432837da7b8922bb506d21
 
 .medium-button {
   width: 25%; }
@@ -533,6 +539,23 @@ test anuncio
 
 .button-1,
 .button-2,
+<<<<<<< HEAD
+.button-3 {
+  font-size: 18px;
+  padding: 15px 40px; }
+
+.button-mail span {
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  padding: 20px 40px;
+  display: inline-block; }
+
+.button-1,
+.button-2,
+=======
+>>>>>>> ed58b3c76e8ece1df1432837da7b8922bb506d21
 .button-mail span {
   color: white; }
 
@@ -553,10 +576,17 @@ test anuncio
 .button-mail {
   border-radius: 7px;
   width: 100%;
+<<<<<<< HEAD
+  padding: 13px 0px;
+  transition: all 0.3s ease;
+  height: 30px;
+  border: none; }
+=======
   transition: all 0.3s ease;
   height: 30px;
   border: none;
   margin: 0; }
+>>>>>>> ed58b3c76e8ece1df1432837da7b8922bb506d21
 
 .button-mail:hover {
   background-color: #404041; }
@@ -679,8 +709,7 @@ select {
 
 .box-perfil {
   background-color: white;
-  overflow: hidden;
-  margin: 30px 20px 0 0; }
+  overflow: hidden; }
 
 .menu-interior {
   width: 100%;
@@ -700,10 +729,7 @@ select {
   color: white;
   text-decoration: none;
   background-color: #00A6A5;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 20px 15px;
   display: block; }
 
 .pestanyas a:hover {
@@ -982,12 +1008,9 @@ img.icono-naranja {
 .programas {
   margin-top: 30px; }
 
-.cuadroprogram {
+.cuadro-program {
   margin-top: 20px;
   width: 60%; }
-
-.disponibilidad {
-  margin-top: 30px; }
 
 .metodo {
   margin-top: 30px; }
@@ -1003,22 +1026,22 @@ aside perfil
 .parte-izquierda {
   float: left;
   width: 30%;
-  margin: 30px 20px 0 0;
-  padding: 10px;
+  margin-right: 45px;
+  padding: 30px 40px;
   background-color: white; }
 
 .cien-por-cien {
   width: 100%; }
 
 .img-perfil {
-  width: 50%; }
+  width: 70%; }
 
 .informacion-persona {
-  margin: 40px 0 0 0px; }
+  margin: 30px 0; }
 
-.info-perfil {
-  padding: 0px; }
-
+/*.info-perfil {
+    padding: 0px;
+}*/
 footer {
   background-color: #231F20;
   clear: both;
@@ -1194,16 +1217,23 @@ general
   width: 80%;
   float: left; }
 
-.icono-perfil {
-  float: left; }
-
+/*.icono-perfil{
+    float: left;
+}*/
 .tabla {
-  padding-top: 20px; }
+  padding-top: 45px;
+  display: table; }
 
+/*.cell-tabla{
+    display: table-cell;
+    vertical-align: bottom;
+}*/
 /*-----
-
-sobre-mi
+Perfil - sobre mi - OTROS
 -----*/
+.bloque-perfil {
+  margin-top: 30px; }
+
 .url {
   float: left; }
 
@@ -1216,29 +1246,41 @@ sobre-mi
   margin-left: 200px;
   width: 30%; }
 
+.lista-programas {
+  padding-left: 0px; }
+
+.celdas-programas, .celdas-programas-final {
+  list-style: none;
+  float: left;
+  margin-right: 20px; }
+
+.celdas-programas-final {
+  padding-right: 20px;
+  width: 20%; }
+
+.celda-ultima {
+  float: none; }
+
+/* SE PODRÍA DIVIDIR ASÍ, para que pagina sirven?
+.redes {
+    display: inline-block;
+    width: 30%;
+}
+.redes-derecha {
+    width: 30%;
+}
+
+*/
 .galeria {
   margin-top: 20px; }
 
 .fotos-trabajos {
-  margin-bottom: 80px;
-  margin-top: 20px; }
+  margin: 20px 0 80px 0; }
 
-.foto-izquierda {
-  float: left;
-  width: 30%; }
-
-.foto-medio {
+.foto-trabajo {
   float: left;
   width: 30%;
-  margin-left: 10px; }
-
-.foto-derecha {
-  float: left;
-  width: 30%;
-  margin-left: 10px; }
-
-.foto-galeria-perfil {
-  width: 90%; }
+  margin: 0 10px 10px 0; }
 
 /*-------
 
@@ -1269,17 +1311,11 @@ PERFIL-CURSOS
 PERFIL-SOBRE MI
 
 --------*/
-.programas-info {
-  margin-bottom: 40px;
-  margin-top: 30px; }
-
-.total-programas {
-  margin-top: 10px; }
-
-.parte-izquierda-pro {
-  float: left;
-  width: 40%; }
-
+/*
+.parte-izquierda-pro{
+    float: left;
+    width: 40%
+}*/
 form.turnos {
   float: right;
   margin-top: -15px; }
