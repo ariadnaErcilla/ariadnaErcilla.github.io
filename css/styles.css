@@ -273,18 +273,11 @@ body {
     list-style: none; }
 
 .anuncio {
-  width: 31%;
   float: left;
-  margin: 0px 20px 50px 0px;
+  margin-bottom: 20%;
   position: relative;
   background-color: white; }
-
-.container-anuncio {
-  width: 100%;
-  background-color: white;
-  position: relative;
-  margin-bottom: 20%; }
-  .container-anuncio:hover .hover-container {
+  .anuncio:hover .hover-container {
     display: block; }
 
 .content-container {
@@ -483,15 +476,23 @@ test anuncio
     margin: 0 auto;
     width: 79%;
 }*/
-.general-button, .button-1, .button-2, .button-3 {
+.boton-margen {
+  margin-bottom: 10px; }
+
+.general-button, .button-2, .button-3, .button-1 {
   border: none;
   text-align: center;
   border-radius: 8px;
   transition: all 0.3s ease;
   display: inline-block; }
 
-.general-button span, .button-1 span, .button-2 span, .button-3 span {
-  display: inline-block; }
+.general-button:hover, .button-2:hover, .button-3:hover, .button-1:hover {
+  background-color: #404041; }
+
+.full-button {
+  display: block;
+  width: 100%;
+  padding: 20px 10px; }
 
 .medium-button {
   width: 25%; }
@@ -513,11 +514,11 @@ test anuncio
   border: 2px solid #f15c22;
   background-color: transparent; }
 
-.boton-margen {
-  margin-bottom: 10px; }
-
-.general-button:hover, .button-1:hover, .button-2:hover, .button-3:hover {
-  background-color: #404041; }
+.button-1,
+.button-2,
+.button-3 {
+  font-size: 18px;
+  padding: 15px 40px; }
 
 .button-1,
 .button-2,
@@ -526,20 +527,6 @@ test anuncio
 .button-unete span {
   font-weight: 400;
   text-transform: uppercase; }
-
-.button-1,
-.button-2,
-.button-3 {
-  font-size: 18px;
-  padding: 15px 40px; }
-
-.button-mail span {
-  font-size: 16px;
-  position: absolute;
-  top: 15px;
-  right: 14px;
-  padding: 20px 40px;
-  display: inline-block; }
 
 .button-1,
 .button-2,
@@ -553,11 +540,6 @@ test anuncio
   font-size: 1rem;
   margin-left: 14px; }
 
-.full-button {
-  display: block;
-  width: 100%;
-  padding: 20px 10px; }
-
 .container-mail {
   position: absolute;
   margin: 60px auto;
@@ -568,10 +550,10 @@ test anuncio
 .button-mail {
   border-radius: 7px;
   width: 100%;
-  padding: 13px 0px;
   transition: all 0.3s ease;
   height: 30px;
-  border: none; }
+  border: none;
+  margin: 0; }
 
 .button-mail:hover {
   background-color: #404041; }
@@ -889,6 +871,14 @@ td {
 
 .title-table {
   text-align: left; }
+
+.border-table {
+  width: 100%;
+  border: 0; }
+
+.border-blue {
+  border: 2px solid #00A6A5;
+  padding: 0; }
 
 .cabecera-cursos {
   padding-top: 50px;
