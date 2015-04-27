@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .type-color-1 {
   color: #00A6A5; }
 
@@ -533,21 +534,12 @@ test anuncio
 
 .button-1,
 .button-2,
-<<<<<<< HEAD
 .button-3 span {
   font-size: 18px;
   padding: 20px 40px 20px 40px; }
 
-.button-mail span {
-  font-size: 16px;
-  position: absolute;
-  top: 15px;
-  right: 14px; }
-
 .button-1,
 .button-2,
-=======
->>>>>>> 85d5d3480a19e5752a23e94bed9218abe702648f
 .button-mail span {
   color: white; }
 
