@@ -6,31 +6,46 @@ footer {
     width: 100%;
 }
 
-.pie{
+.pie {
     margin: 0 auto;
 }
 
-.mini-box-pie{
+.mini-box-pie {
     float: left;
     width: 33%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.icono-pie{
+.icono-pie {
     width: 100%;
 }
 
-.red-social{
+.red-social {
     float:left;
     padding: 0 10px 0 0;
 }
 
-.newsletter{
+.newsletter {
     margin: 0 auto;
     padding-top: 10px;
 }
-.caja-footer{
 
+.caja-footer {
     float: left;
 }
+
+@media screen and (max-width: 750px){
+            .mini-box-pie {
+                width: 100%;
+                text-align: center;
+            }
+            .terms {
+                text-align: center;
+            }
+            .newsletter {
+                margin: 0 auto;
+            }
+            .iconos {
+            }
+    }

@@ -480,26 +480,46 @@
 <section class="sg-fondo-blanco">
 <h2 class="sg-subtitle-style-guide">Header</h2>
 
- <header>
+    <header>
         <div class="logo">
-            <a href="index.html"><img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+            <a href="index.html">
+                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
         </div>
             <nav class="menu cf">
-                <div class="menu-izquierda">
+                <div class="float-menu">
                     <ul>
-                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html">Busca tu alumno</a></li>
-                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
+                        <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
-                <div class="menu-derecha">
+                <div class="registro">
                     <ul>
                         <li><a href="#login">Log in</a></li>
                         <li><a href="#registro">Regístrate</a></li>
                     </ul>
-
+                </div>
+                <div class="lupa-buscador">
+                    <a href="#">
+                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                    </a>
+                    <a href="#">
+                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
+                    </a>
                 </div>
             </nav>
+            <div class="buscador cf">
+                <input type="text" class="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+                <div class="buscador-container-derecha cf">
+                    <button class="general-button button-2 clear sg-margin auto" style="padding: 12px 40px 12px 40px; font-size: 16px">
+                        <a class="type-color-3" href="#">
+                            <span>Buscar</span>
+                    </button>
+                    <a href="#">
+                        <img class="imagen-cerrar-buscador" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
+                    </a>
+                </div>
+            </div>
     </header>
 </section>
 <div class="sg-float-none sg-margin-bottom">

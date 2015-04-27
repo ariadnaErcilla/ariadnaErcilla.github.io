@@ -1,60 +1,126 @@
-header{
-        margin: 1.5rem 0 3rem 0;
+header {
+        margin: 1.5rem 0 1.5rem 0;
         overflow: hidden;
         background-color: white;
 }
 
 .img-logo {
     width: 100%;
-    margin-right: 4px;
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 800px){
+ul {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 966px){
             .logo {
                 min-width: 100px;
+            }
+            .float-menu {
+                display: none;
+            }
+            .registro {
+                display: none;
+            }
+    }
+
+    @media screen and (min-width: 967px) {
+        .imagen-desplegable {
+                display: none;
+            }
+    }
+
+    @media screen and (max-width: 815px){
+        .imagen-cerrar-buscador {
+            margin-left: 20px;
+        }
+        .input-buscador {
+            margin-left: 10px;
+        }
+        .buscador {
+            background-color: black;
         }
     }
 
-.logo{
+.logo {
     width: 13%;
     float:left;
 }
 
-.menu{
+.menu {
     text-align: center;
     line-height: rem(5px);
     float: right;
-    
 }
 
-.menu ul li{
+.menu ul li {
     list-style: none;
     float: left;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
-.menu-izquierda {
+.float-menu {
     float: left;
-    margin-left: 10px;
-
 }
 
-.menu-derecha {
-    float: right;
+.registro {
+    float:left;
+    margin-left: 15px;
 }
-.menu li a{
 
+.menu li a {
     color: #404041;
 }
-.menu-izquierda li a{
-    text-transform: uppercase;
-}
 
-.menu a:hover{
+.menu a:hover {
     color:#f15c22;
 }
 
 .buscar-top {
     display: inline;
-   
+}
+
+.buscador {
+    clear: both;
+    background-color: rgba(51, 51, 51, 0.15);
+}
+
+.imagen-lupa {
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 35px;
+}
+
+.imagen-desplegable {
+    margin-left: 8px;
+    margin-top: 8px;
+    max-width: 35px;
+}
+
+.lupa-buscador {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.input-buscador {
+    //no funciona el background: white;
+    margin: 15px 0px 15px 50px;
+    max-width: 60%;
+    float: left;
+    border-radius: 5px;
+}
+
+.buscador-container-derecha {
+    float: left;
+    max-width: 40%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.imagen-cerrar-buscador {
+    margin-left: 40px;
+    padding-top: 5px;
+    float: right;
+    max-width: 35px;
 }
