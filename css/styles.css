@@ -244,7 +244,7 @@ body {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.15); }
 
-#container {
+.container {
   max-width: 1024px;
   margin: 0 auto; }
 
@@ -331,7 +331,6 @@ Buscador
 .container-anuncios-buscador {
   background-color: white;
   overflow: hidden;
-  position: relative;
   margin-bottom: 30px; }
 
 .container-imagen-button {
@@ -353,9 +352,10 @@ Buscador
 
 .container-cantidad {
   float: left;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-top: 10px; }
 
-.buscador {
+.especial {
   margin-top: 5px;
   width: 30%; }
 
@@ -534,6 +534,25 @@ test anuncio
 
 .button-1,
 .button-2,
+<<<<<<< HEAD
+=======
+.button-3 span {
+  font-size: 18px;
+<<<<<<< HEAD
+  padding: 20px 40px; }
+
+.button-mail span {
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+  right: 14px; }
+=======
+  padding: 20px 40px 20px 40px; }
+>>>>>>> e351fff187b3ad726f7831e01788ff5faab7c474
+
+.button-1,
+.button-2,
+>>>>>>> f650307d77456bc30c2499fa010ac7a45a517b01
 .button-mail span {
   color: white; }
 
@@ -575,6 +594,9 @@ test anuncio
 
 .button-unete:hover {
   background-color: #f15c22; }
+
+.boton-margen {
+  margin-bottom: 10px; }
 
 .mail-alumnos {
   background-image: url(../imagenes/mail-b.svg);
@@ -1139,7 +1161,11 @@ ul {
 .buscar-top {
   display: inline; }
 
+<<<<<<< HEAD
 .buscador-desplegado {
+=======
+.buscador {
+>>>>>>> f650307d77456bc30c2499fa010ac7a45a517b01
   clear: both;
   background-color: rgba(51, 51, 51, 0.15); }
 
@@ -1244,9 +1270,6 @@ Perfil - sobre mi - OTROS
 }
 
 */
-.galeria {
-  margin-top: 20px; }
-
 .fotos-trabajos {
   margin: 20px 0 80px 0; }
 

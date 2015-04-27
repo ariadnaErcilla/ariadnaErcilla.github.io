@@ -85,7 +85,7 @@ Buscador
 .container-anuncios-buscador{
     background-color: white;
     overflow: hidden;
-    position: relative;
+
     margin-bottom: 30px;
 }
 
@@ -113,10 +113,11 @@ Buscador
 .container-cantidad{
     float: left;
     margin-right: 10px;
+    margin-top: 10px;
 
 }
 
-.buscador{
+.especial{
     margin-top: 5px;
     width: 30%;
 
