@@ -47,6 +47,7 @@
         <div class="sg-border-grueso"></div>
         <div class="sg-border-fino3"></div>
         <div class="sg-border-fino4"></div>
+        <div class="sg-border-fino5"></div>
         <div class="sg-background-4"></div>
         <div class="sg-background-5"></div>
 
@@ -57,9 +58,9 @@
 <div class="sg-float-none">
 <h1 class="sg-title-style-guide">Botones</h1>
 <div class="sg-container-button">
-        <button class="general-button button-1 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
-         <button class="general-button button-2 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
-         <button class="general-button button-3 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+        <button class="button-1 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+         <button class="button-2 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+         <button class="button-3 clear sg-margin-auto"><a class="type-color-3" href="#"><span>Botón</span></a></button>
          <button class="button-unete small-button sg-margin-auto"><a class="type-color-4" href="#"><span>Botón</span></a></button>
 </div>
 </section>
@@ -246,32 +247,101 @@
         <th class="white-table">tarde</th>
         <th class="white-table">noche</th>
     </tr>
-    <td class="white-table">lunes</td>
-    <td></td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
+    <tr>
+        <td class="white-table">lunes</td>
+        <td class="border-blue" colspan="3" rowspan="4">
+            <table class="border-table">
+            <tr>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+            <td class="second-td"><input type="checkbox"></td>
+            <td class="second-td"></td>
+            <td class="second-td"><input type="checkbox"></td>
+            </tr>
+            <tr>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="second-td"></td>
+            <td class="second-td"><input type="checkbox"></td>
+            <td class="second-td"></td>
+            </tr>
+            </table>
+    </td>
     </tr>
     <tr>
     <td class="white-table">martes</td>
-    <td class="second-td"><input type="checkbox"></td>
-    <td class="second-td"></td>
-    <td class="second-td"><input type="checkbox"></td>
     </tr>
     <tr>
     <td class="white-table">jueves</td>
-    <td><input type="checkbox"></td>
-    <td><input type="checkbox"></td>
-    <td></td>
     </tr>
     <tr>
     <td class="white-table">viernes</td>
-    <td class="second-td"></td>
-      <td class="second-td"><input type="checkbox"></td>
-      <td class="second-td"></td>
     </tr>
 
 </table>
 </div>
+<table>
+  <thead>
+            <tr>
+                <th></th>
+                <th>Mañana</th>
+                <th>Tarde</th>
+                <th>Noche</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th class="title-table">Lunes</th>
+                <td class="second-td"><img class="icono-tabla" src="imagenes/icono-circulo-azul.svg"></td>
+                <td class="second-td"><img class="icono-tabla" src="imagenes/icono-circulo-azul.svg"></td>
+                <td class="second-td"><img class="icono-tabla" src="imagenes/icono-circulo-azul.svg"></td>
+            </tr>
+             <tr>
+                <th class="title-table">Martes</th>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+            </tr>
+            <tr>
+                <th class="title-table">Jueves</th>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+               <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+            </tr>
+            <tr>
+                <th class="title-table">Domingo</th>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+                <td class="second-td">
+                    <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
+                </td>
+            </tr>
+        </tbody>
+        </table>
+
 </section>
 <section>
     <h1 class="sg-title-style-guide clear">Links</h1>
@@ -280,28 +350,35 @@
 </section>
 <section class="sg-border-blanco">
 <h1 class="sg-title-style-guide">Popups</h1>
-<p class="centrado"><a class="sg-subtitle-style-guide" href="#popup1">Popup 1</a></p>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-popup1">Popup 1</a></p>
 <hr>
-<p class="centrado"><a class="sg-subtitle-style-guide" href="#popup2">Popup 2</a></p>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-popup2">Popup 2</a></p>
 <div id="popup1" class="masc">
     <div class="popup popup-image">
             <div class="popup-box top movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <div class="container-popup cf">
-                    <h2 class="title-form centrado">Title</h1>
+            <a title="close" class="close">X</a>
+            <h2 class="title-form centrado">Title</h1>
+            <div class="container-popup height-1 cf">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
+            </div>
+            <div class="margin-top">
+            <button class="general-button button-2 clear"><a class="type-color-3" href="#"><span>Botón</span></a></button>
             </div>
         </div>
     </div>
 </div>
 <div id="popup2" class="masc">
      <div class="popup">
-            <div class="popup-box movedown">
-                <a href="#close" title="close" class="close">X</a>
-                <div class="container-popup cf">
-                        <h2 class="title-form centrado">Title</h1>
+            <div class="popup-box movedown-2">
+                <a title="close" class="close">X</a>
+                <h2 class="title-form centrado">Title</h1>
+                <div class="container-popup height-2 cf">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. Mauris mattis a tellus nec semper. Nullam dui risus, aliquam et condimentum in, accumsan ac mauris. Curabitur quis mollis metus. Nunc id fringilla diam. Ut a aliquet dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer elementum ullamcorper felis, at sollicitudin justo. Suspendisse aliquam diam id blandit volutpat. Vivamus feugiat lorem vel libero lobortis hendrerit. Morbi at molestie metus, nec mollis neque.</p>
                 </div>
+                <div class="margin-top">
+            <button class="general-button button-2 clear"><a class="type-color-3" href="#"><span>Botón</span></a></button>
+            </div>
             </div>
     </div>
 </div>
@@ -310,82 +387,85 @@
      <div class="sg-float-none sg-margin-bottom sg-margin-auto">
      <h1 class="sg-title-style-guide">Anuncios</h1>
      <div class="sg-margin-auto">
+    <ul class="sg-todos-anuncios cf">
+     <li class="large-4 small-6 columns">
      <article class="anuncio">
-        <div class="container-anuncio cf">
-                <div class="foto">
-                    <img class="foto-alumno" src="imagenes/fotohelena.jpg">
-                </div>
-                <div class="texto-cuadrado">
-                    <h2 class="secondary-title">Necesito clases de Joomla</h2>
-                    <p class="centrado">Necesito hacer una web en Joomla para un cliente. Me manejo en Wordpress pero casi no he tocado Joomla. Necesito alguien con disponibilidad para hacer un intensivo durante 15 días.
-                    </p>
-                </div>
-                <div class="mas-info">
-                    <div class="total-icono">
-                        <div class="container-icon">
-                        <img class="icono" src="imagenes/animacion_c.svg">
-                    </div>
-                        <div class="container-icon">
-                            <span class="secondary-subtitle">Animación</span>
+                        <div class="foto">
+                            <img class="foto-alumno" src="imagenes/fotohelena.jpg">
+                        </div>
+                        <div class="content-container cf">
+                        <div class="texto-cuadrado">
+                            <h2 class="secondary-title">Necesito clases de Joomla</h2>
+                            <p class="centrado">Necesito hacer una web en Joomla para un cliente. Me manejo en Wordpress pero casi no he tocado Joomla. Necesito alguien con disponibilidad para hacer un intensivo durante 15 días.
+                            </p>
+                        </div>
+                        <div class="mas-info">
+                            <div class="total-icono">
+                                <div class="container-icon">
+                                    <img class="icono" src="imagenes/animacion_c.svg">
+                                </div>
+                                <div class="container-icon">
+                                    <span class="secondary-subtitle">Animación</span>
+                                </div>
+                            </div>
+                            <div class="total-icono">
+                                <div class="container-stars">
+                                    <img class="icono" src="imagenes/estrellasanuncios.svg">
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(5)</span>
+                                </div>
+                            </div>
+                            <div class="container-mail">
+                                <button class="button-mail mail-alumnos" href="#contactar"><span>Enséñale</span></button>
+                            </div>
                         </div>
                     </div>
-                     <div class="total-icono">
-                            <div class="container-stars">
-                            <img class="icono" src="imagenes/estrellasanuncios.svg">
+                </article>
+            </li>
+            <li class="large-4 small-6 columns">
+                <article class="anuncio">
+                        <div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-1.png">
                         </div>
-                        <div class="container-icon">
-                            <span class="modificar type-color-2">(5)</span>
+                            <div class="hover-container">
+                                    <p>Te puedo enseñar a animar tus propios personajes. Trabajaremos con Unity y estoy a tu disposición para resolver las dudas que tengas. </p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">Marta Pérez</span></p>
+                                        <p class="tags type-color-1">#retoque fotográfico #photoshop #ojos</p>
+                                    </div>
+                            </div>
+                        <div class="content-container cf">
+                            <div class="texto-cuadrado">
+                                <h2 class="secondary-title">Aprende a retocar imágenes</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                    <img class="icono"src="imagenes/animacion_c.svg">
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Animación</span>
+                                    </div>
+                                </div>
+                            <div class="total-icono">
+                                <div class="container-stars">
+                                    <img class="icono" src="imagenes/estrellasvalorar.svg">
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(5)</span>
+                                </div>
+                            </div>
+                            <div class="container-mail">
+                                <button class="button-mail mail-cursos" href="#contactar"></button>
+                                </div>
+                            </div>
                         </div>
-                </div>
-                        <div class="container-mail">
-                            <img class="mail-alumnos" src="imagenes/mail-b.svg">
-                            <button class="button-mail"><a href="#contactar"><span>Enséñale</span></a></button>
-                        </div>
-                </div>
-            </article>
-            <article class="anuncio">
-            <div class="total-img-curso cf">
-                <img class="img-curso" src="imagenes/foto_videojuego.jpg">
-                <div class="texto-curso">
-                    <div class="contenido-curso">
-                        <p>Te puedo enseñar a animar tus propios personajes. Trabajaremos con Unity y estoy a tu disposición para resolver las dudas que tengas. </p>
-                        <div class="sub-contenido-curso">
-                            <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                            <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
-                            <p class="light">Nombre:<span class="type-color-5">Marta Pérez</span></p>
-                            <p class="tags type-color-1">#retoque fotográfico #photoshop #ojos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="container-anuncio cf">
-        <div class="texto-cuadrado">
-            <h2 class="secondary-title">Animar videojuegos en Unity</h2>
-        </div>
-        <div class="mas-info">
-            <div class="total-icono">
-                 <div class="container-icon">
-                <img class="icono"src="imagenes/animacion_c.svg">
-                </div>
-                <div class="container-icon">
-                    <span class="secondary-subtitle">Animación</span>
-                </div>
-            </div>
-            <div class="total-icono">
-                <div class="container-stars">
-                    <img class="icono" src="imagenes/estrellasanuncios.svg">
-                </div>
-                <div class="container-icon">
-                    <span class="modificar type-color-2">(5)</span>
-                </div>
-            </div>
-            <div class="container-mail">
-            <button class="button-mail"><a href="#contactar">
-                    <img class="mail-cursos" src="imagenes/mail-b.svg"></a></button>
-            </div>
-        </div>
-    </div>
-    </article>
+                    </article>
+                    <Li>
+                </ul>
  </div>
 </div>
 </section>
@@ -456,22 +536,22 @@
             </div>
             <div class="sg-col-9 col-xs-12">
                 <p class="centrado">col-9</p>
-                <div class="sg-col-4 col-xs-6">
+                <div class="sg-col-4 large-4 medium-5 small-12 columns">
                     <p  class="centrado">col-4</p>
                 </div>
-                <div class="sg-col-4 col-xs-6">
+                <div class="sg-col-4 large-4 medium-5 small-12 columns">
                      <p class="centrado">col-4</p>
                 </div>
-                 <div class="sg-col-4 col-xs-6">
+                 <div class="sg-col-4 large-4 medium-5 small-12 columns">
                      <p class="centrado">col-4</p>
                 </div>
-                 <div class="sg-col-4 col-xs-6">
+                 <div class="sg-col-4 large-4 medium-5 small-12 columns">
                     <p  class="centrado">col-4</p>
                 </div>
-                <div class="sg-col-4 col-xs-6">
+                <div class="sg-col-4 large-4 medium-5 small-12 columns">
                      <p class="centrado">col-4</p>
                 </div>
-                 <div class="sg-col-4 col-xs-6">
+                 <div class="sg-col-4 large-4 medium-5 small-12 columns">
                      <p class="centrado">col-4</p>
                 </div>
             </div>
@@ -610,6 +690,20 @@
 
     //     return false;
     // });
+    $('#show-popup1').click(function(e){
+        e.preventDefault();
+        $($('#popup1')[0]).show();
+    });
+    $('.close').click(function(e){
+        $('.masc:visible').hide();
+    });
+    $('#show-popup2').click(function(e){
+        e.preventDefault();
+        $($('#popup2')[0]).show();
+    });
+    $('.close').click(function(e){
+        $('.masc:visible').hide();
+    });
 </script>
 </body>
 

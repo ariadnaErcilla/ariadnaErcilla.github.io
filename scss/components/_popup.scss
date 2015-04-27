@@ -1,16 +1,16 @@
 .masc{
     font-family:"Lato", sans-serif;
-    position: absolute;
+    position: fixed;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
     z-index:99999;
-    opacity: 0;
+    display: none;
     -webkit-transition:opacity 400ms ease-in;
     -moz-transition:opacity 400ms ease-in;
     transition:opacity 400ms ease-in;
-    pointer-events:none;
+    // pointer-events:none;
 }
 .masc::before {
     background:rgba(0,0,0,0.8);
@@ -92,13 +92,25 @@
 
 .container-popup{
     width: 100%;
-    padding-top: 40px;
     margin: 0 auto;
+    overflow: scroll;
+
+}
+.height-1{
+     max-height: 200px;
+}
+.height-2{
+
+    max-height: 400px;
+
 
 }
 .movedown{
 
     margin:10% auto;
+}
+.movedown-2{
+    margin:3% auto;
 }
 .link-facebook{
     width: 100%;
