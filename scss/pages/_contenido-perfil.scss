@@ -16,16 +16,28 @@ general
     float: left;
 }
 
-.icono-perfil{
+/*.icono-perfil{
     float: left;
-}
-.tabla {
-padding-top: 20px;
-}
-/*-----
+}*/
 
-sobre-mi
+.tabla {
+    padding-top: 45px;
+    display: table;
+}
+
+/*.cell-tabla{
+    display: table-cell;
+    vertical-align: bottom;
+}*/
+
+/*-----
+Perfil - sobre mi - OTROS
 -----*/
+
+.bloque-perfil{
+    margin-top: 30px;
+}
+
 .url{
     float: left;
 }
@@ -41,36 +53,51 @@ sobre-mi
     width: 30%;
 }
 
+.lista-programas {
+    padding-left: 0px;
+}
+
+.celdas-programas {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+.celdas-programas-final{
+    @extend .celdas-programas;
+    padding-right: 20px;
+    width: 20%;
+}
+
+.celda-ultima {
+    float:none;
+}
+/* SE PODRÍA DIVIDIR ASÍ, para que pagina sirven?
+.redes {
+    display: inline-block;
+    width: 30%;
+}
+.redes-derecha {
+    width: 30%;
+}
+
+*/
+
+
 .galeria{
     margin-top: 20px;
 }
 
 .fotos-trabajos{
-    margin-bottom: 80px;
-    margin-top:20px;
+    margin: 20px 0 80px 0;
 }
 
-.foto-izquierda {
+.foto-trabajo {
     float: left;
     width: 30%;
+    margin: 0 10px 10px 0;
 }
 
-.foto-medio {
-    float: left;
-    width: 30%;
-    margin-left: 10px;
-}
-
-.foto-derecha{
-    float: left;
-    width: 30%;
-    margin-left: 10px;
-}
-.foto-galeria-perfil{
-
-width: 90%;
-
-}
 
 /*-------
 
@@ -83,7 +110,6 @@ PERFIL-CURSOS
     width: 90%;
     margin-bottom: 80px;
     margin-top: 100px;
-
 }
 
 .contenido-no-cursos{
@@ -101,7 +127,6 @@ PERFIL-CURSOS
     width: 30%;
 }
 
-
 /*-------
 
 PERFIL-SOBRE MI
@@ -110,22 +135,11 @@ PERFIL-SOBRE MI
 .cuadrado-disponibilidad{
 }
 
-.programas-info{
-    margin-bottom: 40px;
-    margin-top: 30px;
-}
-
-.total-programas{
-    margin-top: 10px;
-}
-
+/*
 .parte-izquierda-pro{
     float: left;
     width: 40%
-}
-
-.lado-titulo{
-}
+}*/
 
 form.turnos {
     float: right;
