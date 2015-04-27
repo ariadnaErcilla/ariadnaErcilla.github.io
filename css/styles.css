@@ -1207,10 +1207,10 @@ general
   padding-top: 45px;
   display: table; }
 
-/*.cell-tabla{
-    display: table-cell;
-    vertical-align: bottom;
-}*/
+.cell-tabla {
+  display: table-cell;
+  vertical-align: bottom; }
+
 /*-----
 Perfil - sobre mi - OTROS
 -----*/
