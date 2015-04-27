@@ -533,6 +533,7 @@ test anuncio
 
 .button-1,
 .button-2,
+<<<<<<< HEAD
 .button-3 span {
   font-size: 18px;
   padding: 20px 40px 20px 40px; }
@@ -545,6 +546,8 @@ test anuncio
 
 .button-1,
 .button-2,
+=======
+>>>>>>> 85d5d3480a19e5752a23e94bed9218abe702648f
 .button-mail span {
   color: white; }
 
