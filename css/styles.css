@@ -241,7 +241,7 @@ body {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.15); }
 
-#container {
+.container {
   max-width: 1024px;
   margin: 0 auto; }
 
@@ -487,10 +487,6 @@ test anuncio
   transition: all 0.3s ease;
   display: inline-block; }
 
-<<<<<<< HEAD
-.general-button span, .button-1 span, .button-2 span, .button-3 span {
-  display: inline-block; }
-=======
 .general-button:hover, .button-2:hover, .button-3:hover, .button-1:hover {
   background-color: #404041; }
 
@@ -498,7 +494,6 @@ test anuncio
   display: block;
   width: 100%;
   padding: 20px 10px; }
->>>>>>> ed58b3c76e8ece1df1432837da7b8922bb506d21
 
 .medium-button {
   width: 25%; }
@@ -536,23 +531,6 @@ test anuncio
 
 .button-1,
 .button-2,
-<<<<<<< HEAD
-.button-3 {
-  font-size: 18px;
-  padding: 15px 40px; }
-
-.button-mail span {
-  font-size: 16px;
-  position: absolute;
-  top: 15px;
-  right: 14px;
-  padding: 20px 40px;
-  display: inline-block; }
-
-.button-1,
-.button-2,
-=======
->>>>>>> ed58b3c76e8ece1df1432837da7b8922bb506d21
 .button-mail span {
   color: white; }
 
@@ -573,17 +551,10 @@ test anuncio
 .button-mail {
   border-radius: 7px;
   width: 100%;
-<<<<<<< HEAD
-  padding: 13px 0px;
-  transition: all 0.3s ease;
-  height: 30px;
-  border: none; }
-=======
   transition: all 0.3s ease;
   height: 30px;
   border: none;
   margin: 0; }
->>>>>>> ed58b3c76e8ece1df1432837da7b8922bb506d21
 
 .button-mail:hover {
   background-color: #404041; }
