@@ -45,7 +45,17 @@ footer {
             }
             .newsletter {
                 margin: 0 auto;
+                width: 50%;
             }
-            .iconos {
+            .iconos{
+                margin: 0 auto;
+                width: 28%;
             }
     }
+
+@media screen and (max-width: 685px){
+            .iconos {
+                width: 40%;
+                margin: 0 auto;
+            }
+}
