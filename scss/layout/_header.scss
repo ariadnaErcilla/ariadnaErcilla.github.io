@@ -81,7 +81,7 @@ ul {
     display: inline;
 }
 
-.buscador {
+.buscador-desplegado {
     clear: both;
     background-color: rgba(51, 51, 51, 0.15);
 }
@@ -103,7 +103,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.input-buscador {
+#input-buscador {
     //no funciona el background: white;
     margin: 15px 0px 15px 50px;
     max-width: 60%;
