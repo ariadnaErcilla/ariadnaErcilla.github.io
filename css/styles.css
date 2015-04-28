@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 @charset "UTF-8";
 .type-color-1 {
   color: #00A6A5; }
@@ -285,15 +287,14 @@ body {
     display: block; }
 
 .content-container {
-  padding: 15px; }
+  padding: 10px 20px 20px 20px; }
 
 .fondo-anuncio {
-  background-color: #1BA8A6;
-  height: 310px; }
+  background-color: #1BA8A6; }
 
 .texto-cuadrado {
   text-align: center;
-  padding: 10px 10px 20px 10px; }
+  padding-bottom: 20px; }
 
 .mas-info {
   padding-bottom: 60px;
@@ -375,9 +376,23 @@ ayuda
 .foto-alumno {
   width: 100%; }
 
+.fa-large {
+  height: 380px; }
+
+.texto-cuadrado-large {
+  text-align: center;
+  padding: 70px 20px 50px 20px; }
+
 /*----------
 encuentra
 ---------*/
+.fa-small {
+  height: 310px; }
+
+.texto-cuadrado-small {
+  text-align: center;
+  padding: 20px 20px 0px 20px; }
+
 .image-container {
   width: 100%;
   height: 0;
@@ -410,7 +425,7 @@ encuentra
   margin: auto;
   z-index: 1;
   background-color: white;
-  padding: 0px 15px 15px 15px; }
+  padding: 0px 15px 25px 15px; }
 
 /*---------
 Anuncio ampliado
@@ -522,24 +537,23 @@ test anuncio
 .button-2,
 .button-3 {
   font-size: 18px;
-  padding: 15px 40px; }
+  padding: 15px 0px; }
 
 .button-1,
 .button-2,
 .button-3,
 .button-mail,
-.button-unete span {
+.button-unete {
   font-weight: 400;
   text-transform: uppercase; }
 
-.button-1,
-.button-2,
+.button-1 span,
+.button-2 span,
 .button-3 span {
-  font-size: 18px;
-  padding: 20px 40px; }
+  padding: 0px 40px; }
 
-.button-1,
-.button-2,
+.button-1 span,
+.button-2 span,
 .button-mail span {
   color: white; }
 
@@ -989,7 +1003,7 @@ img.icono-naranja {
   margin-top: 20px;
   width: 60%; }
 
-.metodo {
+.categorias-2 {
   margin-top: 30px; }
 
 .checkbox {
@@ -6002,125 +6016,83 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+>>>>>>> 515ca36ffd499f80908e38716fd6fe4786153b3c
 /*
- * Print styles.
- *
- * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
- * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+Error: It's not clear which file to import for '@import "components/iconos"'.
+       Candidates:
+         components/_iconos.scss
+         components/iconos.scss
+       Please delete or rename all but one of these files.
+        on line 21 of scss/styles.scss
+
+16: @import "layout/grid";
+17: @import "layout/header";
+18: @import "pages/contenido-perfil";
+19: @import "pages/home";
+20: @import "foundation";
+21: @import "components/iconos";
+
+Backtrace:
+scss/styles.scss:21
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/import_node.rb:66:in `import'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:328:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `initialize_adapter'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `start_poller'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `initialize'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `new'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `start_poller'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:101:in `start'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:109:in `start!'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:66:in `start!'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:405:in `listen_to'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin/compiler.rb:338:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin.rb:108:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/plugin.rb:108:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/../lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/1.8/gems/sass-3.4.13/bin/sass:13
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
 */
-.print-only {
-  display: none !important; }
-
-@media print {
-  * {
-    background: transparent !important;
-    color: #000000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-
-  .show-for-print {
-    display: block; }
-
-  .hide-for-print {
-    display: none; }
-
-  table.show-for-print {
-    display: table !important; }
-
-  thead.show-for-print {
-    display: table-header-group !important; }
-
-  tbody.show-for-print {
-    display: table-row-group !important; }
-
-  tr.show-for-print {
-    display: table-row !important; }
-
-  td.show-for-print {
-    display: table-cell !important; }
-
-  th.show-for-print {
-    display: table-cell !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; }
-
-  .hide-on-print {
-    display: none !important; }
-
-  .print-only {
-    display: block !important; }
-
-  .hide-for-print {
-    display: none !important; }
-
-  .show-for-print {
-    display: inherit !important; } }
-/* Print visibility */
-@media print {
-  .show-for-print {
-    display: block; }
-
-  .hide-for-print {
-    display: none; }
-
-  table.show-for-print {
-    display: table !important; }
-
-  thead.show-for-print {
-    display: table-header-group !important; }
-
-  tbody.show-for-print {
-    display: table-row-group !important; }
-
-  tr.show-for-print {
-    display: table-row !important; }
-
-  td.show-for-print {
-    display: table-cell !important; }
-
-  th.show-for-print {
-    display: table-cell !important; } }
-
-/*# sourceMappingURL=styles.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: It's not clear which file to import for '@import \"components/iconos\"'.\A        Candidates:\A          components/_iconos.scss\A          components/iconos.scss\A        Please delete or rename all but one of these files.\A         on line 21 of scss/styles.scss\A \A 16: @import \"layout/grid\";\A 17: @import \"layout/header\";\A 18: @import \"pages/contenido-perfil\";\A 19: @import \"pages/home\";\A 20: @import \"foundation\";\A 21: @import \"components/iconos\";"; }

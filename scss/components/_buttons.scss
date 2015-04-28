@@ -59,7 +59,7 @@
 .button-2,
 .button-3 {
     font-size: 18px;
-    padding: 15px 40px;
+     padding: 15px 0px;
     @extend .general-button;
 }
 
@@ -68,22 +68,22 @@
 .button-2,
 .button-3,
 .button-mail,
-.button-unete span{
+.button-unete{
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.button-1,
-.button-2,
+.button-1 span,
+.button-2 span,
 .button-3 span{
-    font-size: 18px;
-    padding: 20px 40px;
+    
+    padding: 0px 40px;
 }
 
 
 
-.button-1,
-.button-2,
+.button-1 span,
+.button-2 span,
 .button-mail span{
     color:white;
 }
