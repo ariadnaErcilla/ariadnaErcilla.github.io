@@ -285,15 +285,14 @@ body {
     display: block; }
 
 .content-container {
-  padding: 15px; }
+  padding: 10px 20px 20px 20px; }
 
 .fondo-anuncio {
-  background-color: #1BA8A6;
-  height: 310px; }
+  background-color: #1BA8A6; }
 
 .texto-cuadrado {
   text-align: center;
-  padding: 10px 10px 20px 10px; }
+  padding-bottom: 20px; }
 
 .mas-info {
   padding-bottom: 60px;
@@ -375,9 +374,23 @@ ayuda
 .foto-alumno {
   width: 100%; }
 
+.fa-large {
+  height: 380px; }
+
+.texto-cuadrado-large {
+  text-align: center;
+  padding: 70px 20px 50px 20px; }
+
 /*----------
 encuentra
 ---------*/
+.fa-small {
+  height: 310px; }
+
+.texto-cuadrado-small {
+  text-align: center;
+  padding: 20px 20px 0px 20px; }
+
 .image-container {
   width: 100%;
   height: 0;
@@ -410,7 +423,7 @@ encuentra
   margin: auto;
   z-index: 1;
   background-color: white;
-  padding: 0px 15px 15px 15px; }
+  padding: 0px 15px 25px 15px; }
 
 /*---------
 Anuncio ampliado
@@ -522,24 +535,23 @@ test anuncio
 .button-2,
 .button-3 {
   font-size: 18px;
-  padding: 15px 40px; }
+  padding: 15px 0px; }
 
 .button-1,
 .button-2,
 .button-3,
 .button-mail,
-.button-unete span {
+.button-unete {
   font-weight: 400;
   text-transform: uppercase; }
 
-.button-1,
-.button-2,
+.button-1 span,
+.button-2 span,
 .button-3 span {
-  font-size: 18px;
-  padding: 20px 40px; }
+  padding: 0px 40px; }
 
-.button-1,
-.button-2,
+.button-1 span,
+.button-2 span,
 .button-mail span {
   color: white; }
 
@@ -989,7 +1001,7 @@ img.icono-naranja {
   margin-top: 20px;
   width: 60%; }
 
-.metodo {
+.categorias-2 {
   margin-top: 30px; }
 
 .checkbox {
