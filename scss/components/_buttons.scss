@@ -37,8 +37,8 @@
     background-color:#00A6A5;
 }
 
-.button-2,{
-    @extend .general-button;
+.button-2{
+   
     background-color:#f15c22;
 }
 
@@ -50,7 +50,6 @@
 
 
 .button-3{
-    @extend .general-button;
     border: 2px solid #f15c22;
     background-color: rgba(0, 0, 0, 0.0);
 }
@@ -107,7 +106,7 @@
 }
 
 .button-mail {
-    border-radius: 7px;
+    border-radius: 5px;
     width: 100%;
     transition: all 0.3s ease;
     height: 30px;
