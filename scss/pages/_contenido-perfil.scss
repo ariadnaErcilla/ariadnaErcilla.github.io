@@ -16,26 +16,12 @@ general
     float: left;
 }
 
-/*.icono-perfil{
-    float: left;
-}*/
-
-.tabla {
-    padding-top: 45px;
-    display: table;
-}
-
-.cell-tabla{
-    display: table-cell;
-    vertical-align: bottom;
-}
-
 /*-----
 Perfil - sobre mi - OTROS
 -----*/
 
 .bloque-perfil{
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .url{
@@ -93,7 +79,8 @@ Perfil - sobre mi - OTROS
     margin: 0 10px 10px 0;
 }
 
-
+.descripcion-mi-perfil {
+}
 /*-------
 
 PERFIL-CURSOS
@@ -127,14 +114,6 @@ PERFIL-CURSOS
 PERFIL-SOBRE MI
 
 --------*/
-.cuadrado-disponibilidad{
-}
-
-/*
-.parte-izquierda-pro{
-    float: left;
-    width: 40%
-}*/
 
 form.turnos {
     float: right;

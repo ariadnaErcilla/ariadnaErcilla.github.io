@@ -1,6 +1,7 @@
 .box-perfil {
     background-color: white;
     overflow: hidden;
+    padding-bottom: 80px;
 }
 
 .menu-interior {
@@ -18,7 +19,6 @@
 
 .pestanyas {
     float: left;
-
 }
 
 .pestanyas a{
@@ -36,13 +36,12 @@
 }
 
 .contenido-perfil{
-    margin: 10px 10px 10px 30px;
+    margin: 5px 5px 1px 14px;
 }
 
 .option-2,
 .option-3,
 .option-4,
-.option-5{
-
+.option-5 {
     display: none;
 }

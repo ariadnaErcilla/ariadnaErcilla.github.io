@@ -24,18 +24,20 @@
 
 .content-container{
 
-    padding:15px;
+    padding:10px 20px 20px 20px;
 }
 .fondo-anuncio{
 
     background-color: #1BA8A6;
-    height: 310px;
+    
 }
 .texto-cuadrado {
     text-align: center;
-    padding: 10px 10px 20px 10px;
+    padding-bottom: 20px;
 
 }
+
+
 .mas-info{
     padding-bottom: 60px;
     width: 100%;
@@ -43,30 +45,6 @@
 .mas-info-destacado{
     margin:10px;
     padding-bottom: 20px;
-
-}
-.total-icono{
-
-    float: left;
-    width: 50%;
-
-}
-.container-stars{
-
-    float: left;
-    width: 80%;
-
-}
-.container-icon{
-    width: 20%;
-    float: left;
-
-}
-
-.icono{
-
-    width: 100%;
-    padding-right:2px;
 
 }
 
@@ -136,17 +114,36 @@ ayuda
 .foto{
 
     margin: 0 auto;
-    width: 30%;
+    width: 36%;
     padding-top: 20px;
 }
 .foto-alumno {
     width: 100%;
 }
 
+.fa-large{
 
+    height: 380px;
+
+}
+.texto-cuadrado-large {
+    text-align: center;
+    padding: 70px 20px 50px 20px;
+
+}
 /*----------
 encuentra
 ---------*/
+
+.fa-small{
+
+    height: 310px;
+}
+.texto-cuadrado-small{
+
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
 .image-container{
     width: 100%;
     height: 0;
@@ -187,7 +184,7 @@ encuentra
     margin:auto;
     z-index:1;
     background-color:white;
-    padding:0px 15px 15px 15px;
+    padding:0px 15px 25px 15px;
 }
 
 
