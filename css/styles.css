@@ -698,7 +698,8 @@ select {
 
 .box-perfil {
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 80px; }
 
 .menu-interior {
   width: 100%;
@@ -1216,7 +1217,7 @@ general
 Perfil - sobre mi - OTROS
 -----*/
 .bloque-perfil {
-  margin-top: 30px; }
+  margin-top: 80px; }
 
 .url {
   float: left; }
