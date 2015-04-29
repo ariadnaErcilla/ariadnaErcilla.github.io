@@ -37,7 +37,7 @@
     background-color:#00A6A5;
 }
 
-.button-2,{
+.button-2{
     @extend .general-button;
     background-color:#f15c22;
 }
@@ -76,7 +76,7 @@
 .button-1 span,
 .button-2 span,
 .button-3 span{
-    
+
     padding: 0px 40px;
 }
 

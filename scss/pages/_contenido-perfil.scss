@@ -16,18 +16,15 @@ general
     float: left;
 }
 
-/*.icono-perfil{
-    float: left;
-}*/
-
 .tabla {
-    padding-top: 45px;
     display: table;
 }
 
 .cell-tabla{
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: top;
+    border-top: rgba(51, 51, 51, 0.15) 20px solid;
+    border-right: rgba(51, 51, 51, 0.15) 20px solid;
 }
 
 /*-----
@@ -127,14 +124,6 @@ PERFIL-CURSOS
 PERFIL-SOBRE MI
 
 --------*/
-.cuadrado-disponibilidad{
-}
-
-/*
-.parte-izquierda-pro{
-    float: left;
-    width: 40%
-}*/
 
 form.turnos {
     float: right;
