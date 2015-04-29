@@ -480,14 +480,18 @@ test anuncio
 .boton-margen {
   margin-bottom: 10px; }
 
-.general-button, .button-2, .button-3, .button-1 {
+.general-button, .button-1,
+.button-2,
+.button-3 {
   border: none;
   text-align: center;
   border-radius: 8px;
   transition: all 0.3s ease;
   display: inline-block; }
 
-.general-button:hover, .button-2:hover, .button-3:hover, .button-1:hover {
+.general-button:hover, .button-1:hover,
+.button-2:hover,
+.button-3:hover {
   background-color: #404041; }
 
 .full-button {
@@ -682,7 +686,8 @@ select {
 
 .box-perfil {
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 80px; }
 
 .menu-interior {
   width: 100%;
@@ -711,7 +716,7 @@ select {
   color: #00A6A5; }
 
 .contenido-perfil {
-  margin: 10px 10px 10px 30px; }
+  margin: 5px 5px 1px 14px; }
 
 .option-2,
 .option-3,
@@ -851,7 +856,7 @@ table {
   border-collapse: collapse; }
 
 td, th {
-  padding: 0.8rem;
+  padding: 0.7rem;
   vertical-align: middle;
   text-align: center; }
 
@@ -881,6 +886,15 @@ td {
 .border-blue {
   border: 2px solid #00A6A5;
   padding: 0; }
+
+.tabla {
+  display: table; }
+
+.cell-tabla {
+  display: table-cell;
+  vertical-align: top;
+  border-top: rgba(51, 51, 51, 0.15) 20px solid;
+  border-right: rgba(51, 51, 51, 0.15) 20px solid; }
 
 .cabecera-cursos {
   padding-top: 50px;
@@ -991,9 +1005,7 @@ aside categorias
 aside perfil
 --------*/
 .parte-izquierda {
-  float: left;
   width: 30%;
-  margin-right: 45px;
   padding: 30px 40px;
   background-color: white; }
 
@@ -1006,9 +1018,6 @@ aside perfil
 .informacion-persona {
   margin: 30px 0; }
 
-/*.info-perfil {
-    padding: 0px;
-}*/
 footer {
   background-color: #231F20;
   clear: both;
@@ -1186,22 +1195,11 @@ general
   width: 80%;
   float: left; }
 
-/*.icono-perfil{
-    float: left;
-}*/
-.tabla {
-  padding-top: 45px;
-  display: table; }
-
-.cell-tabla {
-  display: table-cell;
-  vertical-align: bottom; }
-
 /*-----
 Perfil - sobre mi - OTROS
 -----*/
 .bloque-perfil {
-  margin-top: 30px; }
+  margin-top: 80px; }
 
 .url {
   float: left; }
@@ -1277,11 +1275,6 @@ PERFIL-CURSOS
 PERFIL-SOBRE MI
 
 --------*/
-/*
-.parte-izquierda-pro{
-    float: left;
-    width: 40%
-}*/
 form.turnos {
   float: right;
   margin-top: -15px; }
