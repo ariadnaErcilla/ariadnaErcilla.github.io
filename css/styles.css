@@ -899,6 +899,15 @@ td {
   border: 2px solid #00A6A5;
   padding: 0; }
 
+.tabla {
+  display: table; }
+
+.cell-tabla {
+  display: table-cell;
+  vertical-align: top;
+  border-top: rgba(51, 51, 51, 0.15) 20px solid;
+  border-right: rgba(51, 51, 51, 0.15) 20px solid; }
+
 .cabecera-cursos {
   padding-top: 50px;
   width: 86%;
@@ -1203,15 +1212,6 @@ general
 .contenido {
   width: 80%;
   float: left; }
-
-.tabla {
-  display: table; }
-
-.cell-tabla {
-  display: table-cell;
-  vertical-align: top;
-  border-top: rgba(51, 51, 51, 0.15) 20px solid;
-  border-right: rgba(51, 51, 51, 0.15) 20px solid; }
 
 /*-----
 Perfil - sobre mi - OTROS
