@@ -286,9 +286,17 @@ contenedores anuncios
     float: left;
 }
 
-.icono{
+.icono {
     width: 20px;
     height: 20px;
+}
+
+.icono-rectangular{
+    background-size: contain;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
 }
 
 .icono-stars{
