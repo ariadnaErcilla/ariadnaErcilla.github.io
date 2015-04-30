@@ -13,37 +13,49 @@
 </head>
 
 <body>
-    <header>
+      <header>
         <div class="logo">
-            <a href="index.html"><img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+            <a href="index.html">
+                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
         </div>
-        <div>
-            <nav class="menu">
-                <div class="menu-izquierda">
+            <nav class="menu cf">
+                <div class="float-menu">
                     <ul>
-                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html">Busca tu alumno</a></li>
-                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
+                        <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
-                <div class="menu-derecha">
+                <div class="registro">
                     <ul>
                         <li><a href="#login">Log in</a></li>
                         <li><a href="#registro">Regístrate</a></li>
-
-                        <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'></form></div></li>
-                        <input id='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
-                        </form></div>
-
                     </ul>
-
+                </div>
+                <div class="lupa-buscador">
+                    <a href="#">
+                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                    </a>
+                    <a href="#">
+                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
+                    </a>
                 </div>
             </nav>
+            <div class="buscador-desplegado cf">
+                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+                <div class="buscador-container-derecha cf">
+                    <div>
 
-        </div>
+                    </div>
+                    <a href="#">
+                        <img class="imagen-cerrar-buscador" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
+                    </a>
+                </div>
+            </div>
     </header>
     <div class="cabecera-alumnos cf">
-<div class="titulo-encabezado muneco-2 cf">
+<div class="titulo-encabezado cf">
+<div class="muneco-busqueda left"></div>
     <div class="contenido-titulo cf">
             <h1 class="title type-color-1">SE HAN ENCONTRADO...</h1>
             <p class="subtitle">4 cursos, 6 creativos, 6 dudas </p>
@@ -60,11 +72,12 @@
             <ul class="menu-ordenar cf">
                 <li><a class="type-color-5" href="anunciosprofes.html">Todos</a></li>
                 <li><a title="" id="scroll-to-cursos" class="type-color-5" href="#">Cursos</a></li>
-                <li><a title="" id="scroll-creativos" class="type-color-5" href="#">Creativos</a></li>
+                <li><a title="" id="scroll-to-creativos" class="type-color-5" href="#">Creativos</a></li>
                 <li><a title="" id="scroll-to-dudas" class="type-color-5" href="#">Dudas</a></li>
             </ul>
                 </div>
             </ul>
+            <section>
             <div class="titular-seccion-buscador">
                 <h2 class="secondary-title" id="cursos">Cursos</h2>
                 <hr>
@@ -73,7 +86,7 @@
             <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/anuncio-6.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/anuncio-6.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -86,7 +99,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <span class="icono grafico-c"></span>
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -94,7 +107,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar.svg">
+                               <span class="icono-stars left estrellas-valorar-2"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(5)</span>
@@ -120,7 +133,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -128,7 +141,8 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-5.svg">
+                            <span class="icono-stars left estrellas-valorar-2 icono-padding"></span>
+                                 <span cclass="icono-stars left estrellasvalorar-5 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(7)</span>
@@ -141,7 +155,7 @@
             <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/anuncio-28.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/anuncio-28.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -154,7 +168,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -162,7 +176,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-2.svg">
+                                <span class="icono-stars left estrellas-valorar-2 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(4)</span>
@@ -175,7 +189,7 @@
                  <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/anuncio-29.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/anuncio-29.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -188,7 +202,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -196,7 +210,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-4.svg">
+                                <span class="icono-stars left estrellas-valorar-4 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(9)</span>
@@ -205,17 +219,18 @@
                     </div>
                     </article>
                 </div>
+            </section>
 
-
+            <section>
             <div class="titular-seccion-buscador">
-                <h2 class="secondary-title">Creativos</h2>
+                <h2 class="secondary-title" id="creativos">Creativos</h2>
                 <hr>
             </div>
 
             <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-1-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-1-buscador.jpg">
                         <div class="container-button-buscador">
                             <button class="button-mail type-color-3">
                                 <a href="#contactar"></a>Contáctale</button>
@@ -231,10 +246,10 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/foto_c.svg">
+                                         <span class="icono left foto_c"></span>
                                     </div>
                                 </div>
                             </div>
@@ -244,16 +259,16 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/animacion_c.svg">
+                                        <span class="icono left animacion-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/programacion_c.svg">
+                                        <span class="icono left programacion-c"></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="total-icono-buscador especial">
+                            <div class="total-icono-buscador">
                                 <div class="container-stars">
-                                    <img class="icono" src="imagenes/estrellasvalorar-4.svg">
+                                    <span class="icono-stars left estrellas-valorar-4 icono-padding"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(6)</span>
@@ -265,7 +280,7 @@
         <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-2-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-2-buscador.jpg">
                         <div class="container-button-buscador">
                             <button class="button-mail type-color-3">
                                 <a href="#contactar"></a>Contáctale</button>
@@ -281,13 +296,13 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/foto_c.svg">
+                                        <span class="icono left foto-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/programacion_c.svg">
+                                        <span class="icono left programacion-c"></span>
                                     </div>
                                 </div>
                             </div>
@@ -297,14 +312,14 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/animacion_c.svg">
+                                        <span class="icono left animacion-c"></span>
                                     </div>
 
                                 </div>
                             </div>
                             <div class="total-icono-buscador especial">
                                 <div class="container-stars">
-                                    <img class="icono" src="imagenes/estrellasvalorar-5.svg">
+                                    <span class="icono-stars left estrellas-valorar-5 icono-padding"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(3)</span>
@@ -316,7 +331,7 @@
         <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-3-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-3-buscador.jpg">
                         <div class="container-button-buscador">
                             <button class="button-mail type-color-3">
                                 <a href="#contactar"></a>Contáctale</button>
@@ -332,13 +347,13 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/moda_c.svg">
+                                        <span class="icono left moda-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/foto_c.svg">
+                                        <span class="icono left foto-c"></span>
                                     </div>
 
                                 </div>
@@ -349,16 +364,16 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/foto_c.svg">
+                                        <span class="icono left foto-c"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="total-icono-buscador especial">
                                 <div class="container-stars">
-                                    <img class="icono" src="imagenes/estrellasvalorar-2.svg">
+                                    <span class="icono-stars left estrellas-valorar-2 icono-padding"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(4)</span>
@@ -370,7 +385,7 @@
         <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-4-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-4-buscador.jpg">
                         <div class="container-button-buscador">
                             <button class="button-mail type-color-3">
                                 <a href="#contactar"></a>Contáctale</button>
@@ -386,7 +401,7 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                 </div>
 
@@ -397,16 +412,16 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/animacion_c.svg">
+                                        <span class="icono left animacion-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/animacion_c.svg">
+                                        <span class="icono left animacion-c"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="total-icono-buscador especial">
                                 <div class="container-stars">
-                                    <img class="icono" src="imagenes/estrellasvalorar.svg">
+                                    <span class="icono-stars left estrellas-valorar icon-padding"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(5)</span>
@@ -418,7 +433,7 @@
         <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-5-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-5-buscador.jpg">
                         <div class="container-button-buscador">
                             <button class="button-mail type-color-3">
                                 <a href="#contactar"></a>Contáctale</button>
@@ -434,10 +449,10 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/audiovisual_c.svg">
+                                        <span class="icono left audiovisual-c"></span>
                                     </div>
                                 </div>
                             </div>
@@ -447,16 +462,16 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/foto_c.svg">
+                                        <span class="icono left foto-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/animacion_c.svg">
+                                        <span class="icono left animacion-c"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="total-icono-buscador especial">
                                 <div class="container-stars">
-                                    <img class="icono" src="imagenes/estrellasvalorar.svg">
+                                    <span class="icono-stars left estrellas-valorar icono-padding">
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(5)</span>
@@ -468,7 +483,7 @@
         <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-6-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-6-buscador.jpg">
                         <div class="container-button-buscador">
                             <button class="button-mail type-color-3">
                                 <a href="#contactar"></a>Contáctale</button>
@@ -484,10 +499,10 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/grafico_c.svg">
+                                        <span class="icono left grafico-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/foto_c.svg">
+                                        <span class="icono left foto-c"></span>
                                     </div>
                                 </div>
                             </div>
@@ -497,16 +512,16 @@
                                 </div>
                                 <div class="total-icono especial">
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/audiovisual_c.svg">
+                                        <span class="icono left audiovisual-c"></span>
                                     </div>
                                     <div class="container-icon especial">
-                                        <img class="icono"src="imagenes/programacion_c.svg">
+                                        <span class="icono left programacion-c"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="total-icono-buscador especial">
                                 <div class="container-stars">
-                                    <img class="icono" src="imagenes/estrellasvalorar.svg">
+                                    <span class="icono-stars left estrellas-valorar icono-padding"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(8)</span>
@@ -516,13 +531,13 @@
         </div>
 
             <div class="titular-seccion-buscador">
-                <h2 class="secondary-title">Dudas</h2>
+                <h2 class="secondary-title" id="dudas">Dudas</h2>
                 <hr>
             </div>
             <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-11-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-11-buscador.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -535,7 +550,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -543,7 +558,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar.svg">
+                                <span class="icono-stars left estrellas-valorar icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(6)</span>
@@ -555,7 +570,7 @@
             <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-2-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-2-buscador.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -568,7 +583,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -576,7 +591,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-5.svg">
+                                <span class="icono-stars left estrellas-valorar-5 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(1)</span>
@@ -589,7 +604,7 @@
                  <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-7-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-7-buscador.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -602,7 +617,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -610,7 +625,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-2.svg">
+                                <span class="icono-stars left estrellas-valorar-2 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(2)</span>
@@ -623,7 +638,7 @@
             <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-8-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-8-buscador.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -636,7 +651,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/foto_c.svg">
+                                <span class="icono left foto-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Fotografía</span>
@@ -644,7 +659,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-4.svg">
+                                <span class="icono-stars left estrellas-valorar-4 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(3)</span>
@@ -657,7 +672,7 @@
                  <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-9-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-9-buscador.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -670,7 +685,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -678,7 +693,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-4.svg">
+                                <span class="icono-stars left estrellas-valorar-4 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(8)</span>
@@ -691,7 +706,7 @@
                 <div class="large-6 small-12 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-10-buscador.png">
+                        <img class="imagen-anuncios-buscador" src="imagenes/alumno-10-buscador.jpg">
 
                         <button class="button-mail type-color-3">
                             <a href="#contactar"></a>Contáctale</button>
@@ -704,7 +719,7 @@
 
                             <div class="total-icono">
                              <div class="container-icon">
-                                <img class="icono"src="imagenes/grafico_c.svg">
+                                <span class="icono left grafico-c"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="secondary-subtitle">Gráfico</span>
@@ -712,7 +727,7 @@
                         </div>
                         <div class="total-icono">
                             <div class="container-stars">
-                                <img class="icono" src="imagenes/estrellasvalorar-5.svg">
+                                <span class="icono-stars left estrellas-valorar-5 icono-padding"></span>
                             </div>
                             <div class="container-icon">
                                 <span class="modificar type-color-2">(3)</span>
@@ -724,15 +739,45 @@
         </div>
     </div>
 
+    <footer>
+    <div class="pie cf">
+            <section class="mini-box-pie">
+                <span class="type-color-3">Contacto</span>
+                <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
+                <p class="terms type-color-3">(+34)722 563 505</p>
+            </section>
+            <section class="mini-box-pie">
+                <div class="iconos cf">
+                <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
+
+                <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
+
+                 <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
+                </div>
+            </section>
+            <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
+                <div class="newsletter cf">
+                <div class="caja-footer">
+                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
+                <button class="button-unete medium-button left"><a class="type-color-3" href="graciasnews.html"><span>Únete</span></a></button>
+                  </div>
+                 <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+                </div>
+                 <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+            </section>
+    </div>
+
+    </footer>
+
                 <script>
                     $('#scroll-to-cursos').click(function(e) {
                         e.preventDefault();
                         $(window).scrollTo($('#cursos'), 800);
-                    })
-                    $('#scroll-creativos').click(function(e) {
+                    });
+                    $('#scroll-to-creativos').click(function(e) {
                         e.preventDefault();
                         $(window).scrollTo($('#creativos'), 800);
-                    })
+                    });
                     $('#scroll-to-dudas').click(function(e) {
                         e.preventDefault();
                         $(window).scrollTo($('#dudas'), 800);
