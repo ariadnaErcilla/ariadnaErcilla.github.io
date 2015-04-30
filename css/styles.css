@@ -895,7 +895,8 @@ td {
   display: table-cell;
   vertical-align: top;
   border-top: rgba(51, 51, 51, 0.15) 20px solid;
-  border-right: rgba(51, 51, 51, 0.15) 20px solid; }
+  border-right: rgba(51, 51, 51, 0.15) 20px solid;
+  /*border: rgba(51, 51, 51, 0.15) 20px 20px 0 0 solid;*/ }
 
 .cabecera-cursos {
   padding-top: 50px;
@@ -1011,14 +1012,14 @@ aside perfil
 --------*/
 .parte-izquierda {
   width: 30%;
-  padding: 30px 40px;
+  padding: 30px 30px;
   background-color: white; }
 
 .cien-por-cien {
   width: 100%; }
 
 .img-perfil {
-  width: 70%; }
+  width: 60%; }
 
 .informacion-persona {
   margin: 30px 0; }
@@ -1204,7 +1205,7 @@ general
 Perfil - sobre mi - OTROS
 -----*/
 .bloque-perfil {
-  margin-top: 80px; }
+  margin-top: 40px; }
 
 .url {
   float: left; }
@@ -1243,13 +1244,17 @@ Perfil - sobre mi - OTROS
 }
 
 */
-.fotos-trabajos {
-  margin: 20px 0 80px 0; }
-
+/*
+.fotos-trabajos{
+    margin: 20px 0 80px 0;
+}*/
 .foto-trabajo {
   float: left;
   width: 30%;
   margin: 0 10px 10px 0; }
+
+.descripcion-mi-perfil {
+  padding-top: 20px; }
 
 /*-------
 
