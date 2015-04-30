@@ -898,28 +898,40 @@ td {
 
 .cabecera-cursos {
   padding-top: 50px;
-  width: 86%;
+  width: 68%;
   margin: 0 auto; }
 
 .cabecera-alumnos {
-  padding-top: 50px;
+  padding-top: 60px;
   width: 50%;
   margin: 0 auto; }
 
+.titulo-encabezado-1 {
+  width: 68%;
+  margin: 0 auto; }
+
 .titulo-encabezado {
+  width: 100%; }
+
+.muneco-busqueda {
   background-image: url(../imagenes/muneco-busqueda.svg);
   background-repeat: no-repeat;
-  background-size: contain; }
-  .titulo-encabezado .muneco-1 {
-    background-position: left bottom; }
-  .titulo-encabezado .muneco-2 {
-    background-position: right bottom; }
+  background-size: 100% auto;
+  width: 133px;
+  height: 162px; }
+
+.muneco-1 {
+  background-position: left bottom;
+  margin-right: 5px; }
+
+.muneco-2 {
+  background-position: right bottom; }
 
 .contenido-titulo {
-  padding: 10px 20px 20px 0px;
-  margin: 0 auto;
-  width: 78%;
-  float: right; }
+  width: 100%; }
+
+.contenido-titulo-2 {
+  width: 78%; }
 
 .menu-ordenar ul {
   padding: 0; }
