@@ -8,16 +8,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-61202468-1', 'auto');
-      ga('send', 'pageview');
-
-  </script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
 </head>
 
 <body>
@@ -50,14 +42,15 @@
 
         </div>
     </header>
-    <div class="cabecera-cursos cf">
-    <div class="titulo-encabezado muneco-1 left cf">
-        <div class="contenido-titulo cf">
+    <div class="cabecera-alumnos cf">
+<div class="titulo-encabezado muneco-2 cf">
+    <div class="contenido-titulo cf">
             <h1 class="title type-color-1">SE HAN ENCONTRADO...</h1>
             <p class="subtitle">4 cursos, 6 creativos, 6 dudas </p>
         </div>
     </div>
     </div>
+
 
 
     <div class="background-4 cf clear">
@@ -66,14 +59,14 @@
                  <div class="container-ordenar">
             <ul class="menu-ordenar cf">
                 <li><a class="type-color-5" href="anunciosprofes.html">Todos</a></li>
-                <li><a class="type-color-5" href="anunciosprofes.html">Cursos</a></li>
-                <li><a class="type-color-5" href="anunciosprofes.html">Creativos</a></li>
-                <li><a class="type-color-5" href="anunciosprofes.html">Dudas</a></li>
+                <li><a title="" id="scroll-to-cursos" class="type-color-5" href="#">Cursos</a></li>
+                <li><a title="" id="scroll-creativos" class="type-color-5" href="#">Creativos</a></li>
+                <li><a title="" id="scroll-to-dudas" class="type-color-5" href="#">Dudas</a></li>
             </ul>
                 </div>
             </ul>
             <div class="titular-seccion-buscador">
-                <h2 class="secondary-title">Cursos</h2>
+                <h2 class="secondary-title" id="cursos">Cursos</h2>
                 <hr>
             </div>
 
@@ -728,15 +721,23 @@
                     </div>
                     </article>
                 </div>
-
-
-
-
-
-
-
         </div>
     </div>
+
+                <script>
+                    $('#scroll-to-cursos').click(function(e) {
+                        e.preventDefault();
+                        $(window).scrollTo($('#cursos'), 800);
+                    })
+                    $('#scroll-creativos').click(function(e) {
+                        e.preventDefault();
+                        $(window).scrollTo($('#creativos'), 800);
+                    })
+                    $('#scroll-to-dudas').click(function(e) {
+                        e.preventDefault();
+                        $(window).scrollTo($('#dudas'), 800);
+                    })
+                </script>
 
 
 
