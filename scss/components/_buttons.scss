@@ -90,28 +90,62 @@
     color:#f15c22;
 }
 
-.button-mail span{
-
-    font-size:1rem;
-    margin-left:14px;
-}
-
-.container-mail{
-    position: absolute;
-    margin:60px auto;
-    left:0;
-    right:0;
-    width: 50%;
-}
 
 .button-mail {
+    position: absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:-15px;
+    width: 50%;
     border-radius: 5px;
-    width: 100%;
     transition: all 0.3s ease;
     height: 30px;
     border:none;
-    margin:0;
+    text-align: center;
+  
+    span{
+        background-image:url(../imagenes/mail-b.svg);
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size: contain;
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 
+
+    &.mail-alumnos {
+        text-align: center;
+
+        span {
+            width: 120px;
+            text-align: right;
+            background-position: left center;
+            height: 20px;
+
+            strong {
+                line-height: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+}
+.padding-button-anuncios{
+
+    padding:7px 0px;
+}
+
+.padding-button-cursos{
+
+      padding:5px 40px;
 }
 
 .button-mail:hover{
@@ -136,14 +170,6 @@
 }
 
 
-.mail-alumnos{
-
-    background-image:url(../imagenes/mail-b.svg);
-    background-position: left;
-    background-size:contain;
-    background-repeat:no-repeat;
-
-}
 
 .mail-cursos{
     background-image:url(../imagenes/mail-b.svg);
