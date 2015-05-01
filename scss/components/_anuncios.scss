@@ -5,7 +5,7 @@
 
      li{
         list-style: none;
-
+        text-align: center;
 
     }
 }
@@ -24,39 +24,44 @@
     }
 
 }
-.anuncio-destacado{
-    background-color: #1BA8A6;
-    height: 350px;
-}
 .content-container{
 
     padding:10px 20px 0px 20px;
-    
+   
 }
 .content-container-cursos{
 
-    padding:30px 20px 0px 20px;
+    padding:20px 20px 0px 20px;
 
 }
 
 .texto-cuadrado {
     text-align: center;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
 
 }
 .texto-cuadrado-cursos{
 
+    padding-bottom: 20px;
     text-align: center;
-    padding-bottom: 15px;
 }
 
 .mas-info{
     padding-bottom: 60px;
     width: 100%;
 }
+.anuncio-destacado{
+
+    background-color: #1BA8A6;
+    height: 350px;
+}
+.texto-cuadrado-destacado{
+    padding:40px 20px 60px 20px;
+
+}
 .mas-info-destacado{
     margin:10px;
-   
+    padding-bottom: 20px;
 
 }
 
@@ -71,7 +76,6 @@ Buscador
     position: relative;
     padding: 15px;
 }
-
 
 .container-anuncios-buscador{
     background-color: white;
@@ -106,23 +110,11 @@ Buscador
     margin-right: 10px;
     margin-top: 10px;
 }
-
-.especial{
-    margin-top: 5px;
-    width: 30%;
-}
 .total-icono-buscador{
     float: left;
     width: 50%;
     margin-top: 15px;
 }
-
-.stars-grande{
-    height: 40px;
-    width: 120px;
-
-}
-
 /*-------
 ayuda
 
@@ -138,22 +130,27 @@ ayuda
 }
 
 
-.texto-cuadrado-destacado {
+.texto-cuadrado-large {
     text-align: center;
-    padding: 40px 20px 73px 20px;
+    padding: 70px 20px 78px 20px;
 
 }
 /*----------
 encuentra
 ---------*/
 
+
+.texto-cuadrado-small{
+
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
 .image-container{
     width: 100%;
     height: 0;
     position:relative;
     overflow: hidden;
-     padding-bottom:73%;
-    
+    padding-bottom: 73%;
 
 }
 .img-curso{
@@ -188,15 +185,13 @@ encuentra
     margin:auto;
     z-index:1;
     background-color:white;
-    padding:0px 15px 5px 15px;
-
-
+    padding:0px 15px 0px 15px;
 }
+
 .hover-container p{
 
     font-size: 14px;
 }
-
 
 /*---------
 Anuncio ampliado
@@ -215,7 +210,4 @@ Anuncio ampliado
     max-width: 100%;
 
 }
-
-
-
 
