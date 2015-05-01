@@ -17,6 +17,8 @@
       ga('send', 'pageview');
 
   </script>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="js/buscador.js"></script>
 </head>
 
 <body>
@@ -44,7 +46,7 @@
                     <a href="#">
                         <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
                     </a>
-                     <a class="abrir" href="#">
+                     <a id="abrir" href="">
                         <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
                   </a>
                 </div>
@@ -53,7 +55,7 @@
             <div class="buscador-desplegado cf">
                 <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
                 <div class="buscador-container-derecha cf">
-                     <a class="cerrar" href="#">
+                     <a id="cerrar" href="">
                         <img class="imagen-cerrar-buscador left" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
                   </a>
                     <div class="container-button-buscador right">
@@ -476,39 +478,39 @@
                     <div class="lista-categorias">
                         <div class="iconos-cat cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href="arquitecturaalumnos.html"><p class="categorias-menu">Arquitectura</p></a>
+                            <a class="cat-1 type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <p class="categorias-menu">Animación</p>
+                            <a class="cat-2 type-color-5" href=""><p class="categorias-menu">Animación</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <p class="categorias-menu">Audiovisual</p>
+                            <a class="cat-3 type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
-                            <p class="categorias-menu">Industrial</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left grafico-b icono-margin"></span>
-                            <p class="categorias-menu">Gráfico</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left moda-b icono-margin"></span>
-                            <p class="categorias-menu">Moda</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
-                            <p class="categorias-menu">Web</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left foto-b icono-margin"></span>
-                            <p class="categorias-menu">Fotografía</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left programacion-b icono-margin"></span>
-                            <p class="categorias-menu">Programación</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
                         </div>
                     </div>
                 </div>
@@ -517,13 +519,16 @@
                    <div class="lista-categorias">
                     <div class="iconos-cat cf">
                         <span class="icono left manana icono-margin"></span>
-                        <p class="categorias-menu">Mañana</p>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
                     </div>
                     <div class="iconos-cat cf">
-                        <span class="icono left tarde icono-margin"></span><p class="categorias-menu">Tarde</p>
+                        <span class="icono left tarde icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
                     </div>
                     <div class="iconos-cat cf">
-                        <span class="icono left noche icono-margin"></span><p class="categorias-menu">Noche</p>
+                        <span class="icono left noche icono-margin"></span>
+                        <a class="type-color-5" href="">
+                            <p class="categorias-menu">Noche</p></a>
                     </div>
                 </div>
             </div>
@@ -586,8 +591,8 @@
                 </article>
                 </li>
                 <li class="large-4 medium-6 small-12 columns">
-                    <article class="anuncio fondo-anuncio">
-                            <div class="texto-cuadrado-large">
+                    <article class="anuncio-destacado">
+                            <div class="texto-cuadrado-destacado">
                                 <h3 class="destacado type-color-3">¿Quieres que alguien te enseñe?</h3>
                             </div>
                             <div class="mas-info-destacado">
@@ -596,7 +601,7 @@
                 </article>
             </li>
               <li class="large-4 medium-6 small-12 columns">
-                 <article class="anuncio">
+                 <article class="anuncio height-anuncios">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-2-buscador.jpg">
                         </div>
@@ -660,7 +665,9 @@
                                 </div>
                             </div></a>
                              <div class="container-mail">
-                              <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -695,7 +702,9 @@
                                 </div>
                             </div></a>
                             <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                  <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -709,7 +718,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Necesito clases de Flash intensivas</h2>
-                            <p class="centrado">Necesito hacer una animación en Flash. Me manejo en otros programas pero casi no he tocado Flash. Necesito a alguien con disponiblidad.
+                            <p class="centrado">Necesito hacer una animación en Flash. Me manejo en otros programas pero casi no he tocado Flash. Necesito a alguien libre.
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -730,7 +739,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                               <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -744,7 +755,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">¡No consigo renderizar mi proyecto!</h2>
-                            <p class="centrado">Estoy usando el programa 3D Studio Max, tengo un edificio con texturas y iluminación pero no se me renderizar correctamente. ¿Alguien puede ayudarme? 
+                            <p class="centrado">Estoy usando el programa 3D Studio Max, tengo un edificio con texturas pero no se me renderizar correctamente. ¿Alguien puede ayudarme? 
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -765,7 +776,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                              <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                               <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -779,7 +792,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Necesito clases de Flash intensivas</h2>
-                            <p class="centrado">Necesito hacer una animación en Flash para un cliente. Me manejo en otros programas pero casi no he tocado Flash. Necesito a alguien con disponiblidad.
+                            <p class="centrado">Necesito hacer una animación en Flash para un cliente. Me manejo en otros programas pero casi no he tocado Flash. Necesito a alguien libre.
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -800,7 +813,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -835,7 +850,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -870,7 +887,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -883,8 +902,8 @@
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
-                            <h2 class="secondary-title">Quiero aprender Javascript</h2>
-                            <p class="centrado">Me gustaría aprender clases básicas de Javascript. Tengo conocimientos de HTML y CSS y quiero entender el código Javascript. Clases presenciales.
+                            <h2 class="secondary-title">Quiero aprender Javascript rápido</h2>
+                            <p class="centrado">Me gustaría aprender con clases básicas de Javascript. Tengo conocimientos de HTML y CSS y quiero entender el código Javascript.
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -905,7 +924,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -919,7 +940,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Quiero programar formularios con PHP</h2>
-                            <p class="centrado">Soy diseñador web y control HTML, CSS y Javascript. Me gustaría aprender conceptos de PHP sobre todo para conseguir incorporar a mi web un formulario. 
+                            <p class="centrado">Soy diseñadora web y controlo HTML, CSS y Javascript. Me gustaría aprender conceptos de PHP para conseguir incorporar a mi web un formulario. 
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -940,7 +961,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                              <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                               <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -954,7 +977,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Necesito clases de Joomla intensivas</h2>
-                            <p class="centrado">Necesito hacer una web en Joomla para un cliente. Me manejo en Wordpress pero casi no he tocado Joomla. Necesito a alguien para hacer un intensivo de 15 días.
+                            <p class="centrado">Necesito hacer una web en Joomla. Me manejo en Wordpress pero casi no he tocado Joomla. Necesito a alguien para hacer un intensivo.
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -975,7 +998,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                             <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                             <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1010,7 +1035,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1045,7 +1072,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                 <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                  <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1060,7 +1089,7 @@
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Distancias focales en fotografía.</h2>
                             <p class="centrado">No entiendo las distancias focales.
-                             Me lio con los diafragmas, obturación, etc… Si simplemente me respondes algunos correos sería genial! ¡Saludos!
+                             Me lio con los diafragmas,etc… Si me respondes algunos correos sería genial! ¡Saludos!
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -1081,7 +1110,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1095,7 +1126,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Vista explosionada en Autocad</h2>
-                            <p class="centrado">Tengo una entrega de diferentes planos de una silla, necesitaría ayuda con la vista explosionada de la silla en autocad. Por favor y ¡gracias por la atención!
+                            <p class="centrado">Tengo una entrega de diferentes planos de una silla, necesitaría ayuda con la vista explosionada de la silla en autocad. 
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -1116,7 +1147,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                 <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                  <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1151,7 +1184,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                               <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1165,7 +1200,7 @@
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Aprender a hacer revistas electrónicas</h2>
-                            <p class="centrado">En clase me comentaron que inDesign permite hacer revistas electrónicas y me gustarían algunas clases presenciales para aprender más herramientas.
+                            <p class="centrado">En clase me comentaron que inDesign permite hacer revistas electrónicas y me gustarían algunas clases para aprender más herramientas.
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -1186,7 +1221,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                 <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                  <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1221,7 +1258,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                               <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1256,7 +1295,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1269,8 +1310,8 @@
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
-                            <h2 class="secondary-title">Cómo pasar los patrones a mano a Ilustrator.</h2>
-                            <p class="centrado">Tengo confeccionado el patrón de un vestido de baño y necesito pasar las diferentes medidas a Ilustrator pero no controlo demasiado el programa. 
+                            <h2 class="secondary-title">Cómo pasar los patrones a mano a Ilustrator</h2>
+                            <p class="centrado">Tengo confeccionado el patrón de un vestido de baño y necesito pasar las diferentes medidas a Ilustrator pero no controlo demasiado. 
                             </p>
                         </div></a>
                         <div class="mas-info">
@@ -1291,7 +1332,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1326,7 +1369,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1361,7 +1406,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1396,7 +1443,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1431,7 +1480,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                               <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1466,7 +1517,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                 <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                  <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1501,7 +1554,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1536,7 +1591,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                 <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                  <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1571,7 +1628,9 @@
                                 </div>
                             </div></a>
                            <div class="container-mail">
-                                <a class="button-mail mail-alumnos padding-button-anuncios" href="#contactar"><span>Enséñale</span></a>
+                                 <a class="button-mail mail-alumnos" href="#contactar">
+                                <span><strong>Enséñale</strong></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1611,18 +1670,6 @@
     </div>
 
     </footer>
-<script>
-   
-    $('.abrir').click(function(e){
-        e.preventDefault();
-        $($('.buscador-desplegado')[0]).show();
-    });
-    $('.cerrar').click(function(e){
-        e.preventDefault();
-        $('buscador-desplegado').hide();
-
-</script>
-
 
 </body>
 </html>
