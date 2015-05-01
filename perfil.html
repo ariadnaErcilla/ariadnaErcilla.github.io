@@ -10,21 +10,10 @@
 
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61202468-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="img-logo">
             <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
@@ -47,12 +36,9 @@
                         <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'>
                             <input class='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
                         </form></div>
-
                     </ul>
-
                 </div>
             </nav>
-
         </div>
     </header>
 
@@ -60,24 +46,24 @@
     <div id="publicar" class="masc">
         <div class="popupbox popupbox2 movedown movedown3">
             <a href="#close" title="close" class="close">X</a>
-            <div class="contenido-publicar cf">
-                <div class="caja-instrucciones">
-                    <div class="caja-formulario">
-                        <h5>
+            <div class="contenidopublicar cf">
+                <div class="cajainstrucciones">
+                    <div class="cajaformulario">
+                        <p class="titulospublicar">
                             Título:
-                        </h5>
-                        <p>
+                        </p>
+                        <p class="subtitulospublicar">
                             *Máximo 30 caracteres
                         </p>
                         <form>
                             <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
                         </form>
                     </div>
-                    <div class="caja-formulario">
-                        <h5>
-                           Categoría:
-                       </h5>
-                       <form>
+                    <div class="cajaformulario">
+                        <p class="titulospublicar">
+                         Categoría:
+                     </p>
+                     <form>
                         <select name="text" class="estiloinputs">
                             <option value="Arquitectura">Arquitectura</option>
                             <option value="Animación">Animación</option>
@@ -91,261 +77,546 @@
                         </select>
                     </form>
                 </div>
-                <div class="caja-formulario">
-                    <h5>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
                         Método de clase:
-                    </h5>
+                    </p>
                     <form>
-                        <input type="checkbox"><p>Presencial</p>
-                        <input type="checkbox"><p>Skype</p>
-                        <input type="checkbox"><p>Email</p>
+                        <input type="checkbox"><p class="metodoclase">Presencial</p>
+                        <input type="checkbox"><p class="metodoclase">Skype</p>
+                        <input type="checkbox"><p class="metodoclase">Email</p>
                     </form>
                 </div>
-                <div class="caja-formulario">
-                    <h5>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
                         Descripción:
-                    </h5>
-                    <p>
+                    </p>
+                    <p class="subtitulospublicar">
                         *Máximo 200 caracteres
                     </p>
                     <form>
-                        <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estilo-inputs">
+                        <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
                     </form>
                 </div>
-                <div class="caja-formulario">
-                    <h5>
-                       Tags:
-                   </h5>
-                   <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estilo-inputs">
-               </div>
-               <div class="caja-formulario">
-                <h5>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                     Tags:
+                 </p>
+                 <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
+             </div>
+             <div class="cajaformulario">
+                <p class="titulospublicar">
                     Sube una foto de tu trabajo:
-                </h5>
-                <p>
+                </p>
+                <p class="subtitulospublicar">
                     *Máximo 3,2 x 3,2 cm
                 </p>
                 <form>
-                    <p class="input-imagen"><input type="file" name="imagen" accept="image/*"></p>
+                    <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
                 </form>
             </div>
         </div>
-        <div class="caja-consejos">
+        <div class="cajaconsejos">
             <div class="consejos">
-                <h4>¡Mira mis consejos!</h4>
-                <div class="boton-consejos">1</div>
-                <p>Pon un título corto y directo a tu anuncio</p>
-                <div class="boton-consejos">2</div>
-                <p>Selecciona una categoria para clasificar tu anuncio.</p>
-                <div class="boton-consejos">3</div>
-                <p>Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
-                <div class="boton-consejos">4</div>
-                <p>Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
-                <div class="boton-consejos">5</div>
-                <p>Sube una buena foto y verás como funciona tu anuncio.<p>
+                <h3 class="tituloconsejos">¡Mira mis consejos!</h3>
+                <div class="botonconsejos">1</div>
+                <p class="consejo">Pon un título corto y directo a tu anuncio</p>
+                <div class="botonconsejos">2</div>
+                <p class="consejo">Selecciona una categoria para clasificar tu anuncio.</p>
+                <div class="botonconsejos">3</div>
+                <p class="consejo">Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
+                <div class="botonconsejos">4</div>
+                <p class="consejo">Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
+                <div class="botonconsejos">5</div>
+                <p class="consejo">Sube una buena foto y verás como funciona tu anuncio.<p>
                 </div>
-                <div class="publicar-anuncios">
-                    <a href="gracias-publicar.html">PUBLICA TUS DUDAS</a>
+                <div class="publicaranuncios">
+                    <a href="graciaspublicar.html" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- fin pop-ups -->
-<div class="background-4 cf">
-<div id="container">
-    <aside class="parte-izquierda">
-        <div class="foto-perfil">
-            <img class="img-perfil" src="imagenes/circuloperfil.svg">
-            <span class="modificar">
-                <a href="#">
-                    Sube tu foto
-                </a>
-            </span>
-        </div>
-        <div class="informacion-persona">
-            <span class="modificar underline centrado">
-               <a class="type-color-2" href="#">
-                <u>modificar</u>
-                </a>
-            </span>
-        <h1 class="profile-name">
-            Marta Perez
-        </h1>
-        <div class="info-perfil">
-            <p><span class="type-color-1 light">Correo:</span> mperez@gmail.com</p>
-            <p><span class="type-color-1 light">Status:</span> Estudiante</p>
-            <p><span class="type-color-1 light">Categoría:
-            </span> Diseñadora Gráfica</p>
-            <p><span class="type-color-1 light">Edad:</span> 22 años</p>
+<div id="valorar" class="masc">
+    <div class="popupbox popupbox3 movedown movedown3">
+        <a href="#close" title="close" class="close">X</a>
+        <div class="contenidopublicar cf">
+            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
+                <h2 class="formulario">¡Valorale!</h2>
+                <div class="cajaformulario">
+                    <h5>
+                        Puntuación
+                    </h5>
+                    <img src="imagenes/estrellasvalorar.svg">
+                </div>
+                <div class="cajaformulario">
+                    <h5>
+                        Comentario
+                    </h5>
+                    <form>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <h5>
+                     ¿Qué rol ha cumplido?
+                 </h5>
+                 <form>
+                    <p class="categoriasmenu"><input type="checkbox">profesor</p>
+                    <p class="categoriasmenu"><input type="checkbox">alumno</p>
+                </form>
+            </div>
+            <div class="subform">
+                <button class="publicaranuncios"><a href="#">VALORAR</a></button>
+            </div>
         </div>
     </div>
-    <div class="botones-perfil">
-    <div class="container-button">
-     <button class="general-button button-2"><span>Publicar curso</span></button>
- </div>
- <p class="centrado">
-    ¡Aquí podrás publicar la clase que necesitas!
-</p>
-
-<div class="container-button">
-   <button class="general-button button-3"><span>Publicar duda</span></button>
 </div>
 </div>
-</aside>
-
-<section>
-    <div class="box-perfil cf">
-        <div class="menu-interior">
-            <ul>
-                <li class="pestanyas"><a class="pestanya-1" href="#">Sobre Mi</a></li>
-                <li class="pestanyas"><a class="pestanya-2" href="#">Portafolio</a></li>
-                <li class="pestanyas"><a class="pestanya-3" href="#">Cursos</a></li>
-                <li class="pestanyas"><a class="pestanya-4" href="#">Dudas</a></li>
-                <li class="pestanyas"><a class="pestanya-5" href="#">Valoraciones</a></li>
-            </ul>
+<div id="contactar" class="masc">
+    <div class="popupbox popupbox3 movedown movedown3">
+        <a href="#close" title="close" class="close">X</a>
+        <div class="contenidopublicar cf">
+            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
+                <h2 class="formulario">Contactar</h2>
+                <p class="centrado">en sólo 2 pasos</p>
+                <div class="imgproceso">
+                    <img class="proceso" src="imagenes/proceso1.svg">
+                </div>
+                <div class="caja-formulario">
+                    <h5>
+                        Título: Aprende a crear tu propia tipografía
+                    </h5>
+                </div>
+                <div class="cajaformulario">
+                    <h5>
+                     Categoría: Diseño gráfico
+                 </h5>
+             </div>
+             <div class="cajaformulario">
+                <h5>
+                    Nombre: María Gómez
+                </h5>
+            </div>
+            <div class="cajaformulario">
+                <h5>
+                    Número de horas:<input type="text">horas
+                </h5>
+            </div>
+            <div class="cajaformulario">
+                <h5>
+                    Mensaje
+                </h5>
+                <form>
+                 <textarea name="message" rows="10" cols="30"></textarea>
+             </form>
+         </div>
+         <div class="cajaformulario">
+            <h5>
+                Método de clase
+            </h5>
+            <form>
+                <p class="categoriasmenu"><input type="checkbox">Presencial</p>
+                <p class="categoriasmenu"><input type="checkbox">Skype</p>
+                <p class="categoriasmenu"><input type="checkbox">Email</p>
+            </form>
         </div>
-        <article class="contenido-perfil option-1">
-            <article class="contenido-perfil">
-                <div class="portafolio">
-                    <img class="iconos-perfil" src="imagenes/iconoportafolio.svg">
-                    <div class="contenido">
-                        <div class="titulo-perfil">
-                            <h2 class="secondary-title"> Portafolio
-                            </h2>
-                        </div>
-                        <p class="secundary-subtitle">
-                            Añade las diferentes plataformas en las que se puedan ver tus trabajos. !Ayudará a que sepan más de ti y dará visibilidad a tus proyectos!
-                        </p>
-                        <span class="modificar">
-                            <a href="#">
-                                modificar
-                            </a>
-                        </span>
-                        <div class="redes">
-                            <div class="redes-horizontal">
-                                <div>
-                                    <img class="icono-perfil" src="imagenes/iconolinkedin.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                                <div class="redes-derecha">
-                                    <img class="icono-perfil" src="imagenes/iconotwitter.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                            </div>
-                            <div class="redes-horizontal">
-                                <div>
-                                    <img class="icono-perfil" src="imagenes/iconolinkedin.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                                <div class="redes-derecha">
-                                    <img class="icono-perfil" src="imagenes/iconotwitter.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                            </div>
-                            <div class="redes-horizontal">
-                                <div class="redes-izquierda">
-                                    <img class="icono-perfil" src="imagenes/iconoinstagram.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                                <div class="redes-derecha">
-                                    <img class="icono-perfil" src="imagenes/iconobehance.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                            </div>
-                            <div class="redes-horizontal">
-                                <div class="redes-izquierda">
-                                    <img class="icono-perfil" src="imagenes/iconopinterest.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                                <div class="redes-derecha">
-                                    <img class="icono-perfil" src="imagenes/iconodomestika.svg">
-                                    <p><input class="left" type="text"></p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="cajaformulario">
+            <h5>
+                Disponibilidad
+            </h5>
+            <div class="diassemana">
+                <p class="categoriasmenu-2">Lunes</p>
+                <p class="categoriasmenu-2">Martes</p>
+                <p class="categoriasmenu-2">Jueves</p>
+                <p class="categoriasmenu-2">Domingo</p>
+            </div>
+            <div class="totalpartesdia">
+                <p class="categoriasmenu">mañana</p>
+                <p class="categoriasmenu">tarde</p>
+                <p class="categoriasmenu">noche</p>
+                <div class="boxdias">
+                    <div class="miniboxdias">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck2" type="checkbox">
+                    </div>
+                    <div class="miniboxdias2">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck2" type="checkbox">
+                        <input class="cuadrocheck3" type="checkbox">
+                    </div>
+                    <div class="miniboxdias">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck3" type="checkbox">
+                    </div>
+                    <div class="miniboxdias2">
+                        <input class="cuadrocheck2" type="checkbox">
                     </div>
                 </div>
-                <div class="galeria">
-                    <img class="iconos-perfil" src="imagenes/iconoimagenes.svg">
+
+            </div>
+        </div>
+        <div class="subform">
+            <button class="publicaranuncios"><a href="#registro3">SIGUIENTE</a></button>
+        </div>
+        <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- fin pop-ups
+    fin pop-ups
+    fin pop-ups -->
+
+<div class="background-4">
+    <div class="container tabla margin-top">
+        <div class="parte-izquierda cell-tabla">
+                <div class="centrado">
+                    <img class="img-perfil" src="imagenes/alumno-12-buscador.jpg" alt="imagen del usuario">
+                </div>
+                <div class="informacion-persona">
+                    <h1 class="profile-name">
+                        Marta Pérez
+                    </h1>
+                    <div class="info-perfil">
+                        <p><span class="type-color-1 light">Correo:</span> mperez@gmail.com</p>
+                        <p><span class="type-color-1 light">Status:</span> Estudiante</p>
+                        <p><span class="type-color-1 light">Categoría:</span> Diseñadora Gráfica</p>
+                        <p><span class="type-color-1 light">Edad:</span> 22 años</p>
+                    </div>
+                </div>
+                <a class="button-2 boton-margen full-button type-color-3" href="#contactar">Contáctale</a>
+                <a class="button-3 type-color-2 full-button" href="#valorar">Valórale</a>
+        </div>
+
+        <div class="box-perfil cell-tabla cf">
+            <nav class="menu-interior">
+                <ul class="cf">
+                        <li class="pestanyas"><a class="pestanya-1" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
+                        <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
+                        <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
+                        <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
+                </ul>
+            </nav>
+            <section id="option-1" class="contenido-perfil option-1">
+                <article class="bloque-perfil cf">
+                    <span class="icono-rectangular icono-perfil"</span>
+                    <div class="contenido">
+                            <div>
+                                <h2 class="secondary-title">
+                                    Mi Perfil
+                                </h2>
+                            </div>
+                            <div class="descripcion-mi-perfil">
+                                <p class="no-margin">
+                                 Soy Marta y soy una persona apasionada del diseño. Estoy estudiando Diseño gráfico en Elissava y quiero aprender diseño audiovisual. Si te gusta conocer gente y compartir tus inquietudes, nos podremos llevar bien!
+                                </p>
+                            </div>
+                     </div>
+                </article>
+                <article class="bloque-perfil cf">
+                    <img class="iconos-perfil" src="imagenes/iconodisponibilidad.svg" alt="icono de disponibilidad">
+                    <div class="contenido">
+                        <div>
+                            <h2 class="secondary-title">
+                                Disponibilidad
+                            </h2>
+                        </div>
+                        <div class="descripcion-mi-perfil">
+                            <table class="sg-margin-auto">
+                                <tr>
+                                    <th></th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                    <th>Domingo</th>
+                                </tr>
+                                <tr>
+                                  <td class="title-table">Mañana</td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                </tr>
+                                <tr>
+                                    <td class="second-td title-table">Tarde</td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                </tr>
+                                <tr>
+                            <td class="title-table">Noche</td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+                <article class="bloque-perfil cf">
+                    <img class="iconos-perfil" src="imagenes/iconoprogramas.svg" alt="icono de programas informáticos">
                     <div class="contenido">
                         <div class="titulo-perfil">
+                            <h2 class="secondary-title">
+                            Programas informáticos
+                            </h2>
+                        </div>
+                        <div class="descripcion-mi-perfil">
+                            <ul class="lista-programas no-margin">
+                                <li class="celdas-programas"> Programa </li>
+                                <li class="celdas-programas-final type-color-1"> Photoshop</li>
+                                <li class="celdas-programas"> Nivel</li>
+                                <li class="celdas-programas no-float"> <img src="imagenes/nivel3-b.svg" alt="conocimiento de 10/10"> </li>
+                            </ul>
+
+                            <ul class="lista-programas">
+                                <li class="celdas-programas"> Programa </li>
+                                <li class="celdas-programas-final type-color-1"> Ilustrator </li>
+                                <li class="celdas-programas"> Nivel</li>
+                                <li class="celdas-programas"> <img src="imagenes/nivel1-b.svg" alt="conocimiento de 6/10"> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="option-2" class="contenido-perfil option-2">
+                <article class="bloque-perfil cf">
+                    <img class="iconos-perfil" src="imagenes/iconoportafolio.svg" alt="icono de portafolio">
+                    <div class="contenido">
+                        <div>
+                            <h2 class="secondary-title">
+                                Portafolio
+                            </h2>
+                        </div>
+                        <div class="descripcion-mi-perfil">
+                            <a class="icono-rectangular portafolio-behance-b" href="https://www.behance.net/" target="_blank">
+                            <p class="visuallyhidden"> enlace a behance </p>
+                            </a>
+                            <a class="icono-rectangular portafolio-domestika-b" href="http://www.domestika.org/" target="_blank">
+                            <p class="visuallyhidden"> enlace a domestika </p>
+                            </a>
+                            <span class="icono-rectangular portafolio-linkedin-d" href="https://www.linkedin.com/" target="_blank">
+                            <p class="visuallyhidden"> enlace a linkedin </p>
+                            </span>
+                            <a class="icono-rectangular portafolio-tumblert-b" href="https://www.tumblr.com/" target="_blank">
+                            <p class="visuallyhidden"> enlace a tumblert </p>
+                            </a>
+                            <span class="icono-rectangular portafolio-instagram-d" href="https://instagram.com/" target="_blank">
+                            <p class="visuallyhidden"> enlace a instagram </p>
+                            </span>
+                            <a class="icono-rectangular portafolio-pinterest-b" href="https://es.pinterest.com/" target="_blank">
+                            <p class="visuallyhidden"> enlace a pinterest </p>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bloque-perfil cf">
+                    <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="icono del perfil">
+                    <div class="contenido">
+                        <div>
                             <h2 class="secondary-title">
                                 Galería de imágenes
                             </h2>
                         </div>
-                        <p class="secundary-subtitle">
-                            Añade diferentes imágenes de tus trabajos, así otros usuarios podrán ver tus habilidades.
-                        </p>
-                        <span class="modificar">
-                            <a href="#">
-                                <u>modificar</u>
-                            </a>
-                        </span>
-                        <div class="fotos-trabajos cf">
-                            <div class="fotos-portfolio">
-                                <div class="foto-izquierda">
-                                    <img class="foto-galeria-perfil"src="imagenes/ejemplogaleria.svg">
-                                </div>
-                                <div class="foto-medio">
-                                    <img class="foto-galeria-perfil" src="imagenes/ejemplogaleria2.svg">
-                                </div>
-                                <div class="foto-derecha">
-                                    <img class="foto-galeria-perfil" src="imagenes/ejemplogaleria3.svg">
-                                </div>
+                        <div class="descripcion-mi-perfil">
+                            <div class="foto-trabajo">
+                                <img src="imagenes/anuncio-19.jpg" alt="paisaje con arboles">
+                            </div>
+                            <div class="foto-trabajo">
+                                <img src="imagenes/anuncio-20.jpg" alt="fotografia que capta el movimiento">
+                            </div>
+                            <div class="foto-trabajo">
+                                <img src="imagenes/anuncio-7.jpg" alt="paleta de colores">
+                            </div>
+                            <div class="foto-trabajo">
+                                <img src="imagenes/anuncio-13.jpg" alt="paisaje con arboles">
+                            </div>
+                            <div class="foto-trabajo">
+                                <img class="imagenes/anuncio-14.jpg" src="imagenes/anuncio-12.jpg" alt="paisaje con arboles">
                             </div>
                         </div>
                     </div>
-                </div>
-            </article>
-        <!--
-        <article class="contenido-perfil option-2">
-            <p>PPP</p>
-        </article>
-        <article class="contenido-perfil option-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
-        </article>
-        <article class="contenido-perfil option-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
-        </article>
-        <article class="contenido-perfil option-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, sem in tincidunt congue, magna nisi sollicitudin tortor, a mollis sem purus ac metus. </p>
-        </article>
-    -->
-</section>
-</div>
-</div>
-<footer>
-        <div class="pie cf">
-            <section class="mini-box-pie">
-                <span class="type-color-3">Contacto</span>
-                <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
-                <p class="terms type-color-3">(+34)722 563 505</p>
+                </article>
             </section>
-            <section class="mini-box-pie">
-                <div class="iconos">
-                    <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
 
-                    <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
+            <section id="option-3" class="contenido-perfil option-3">
+                <article class="bloque-perfil cf">
+                    <span class="iconos-perfil" src="imagenes/iconoperfil.svg" </span>
+                        <div class="contenido">
+                            <div>
+                                <h2 class="secondary-title">
+                                    Cursos
+                                </h2>
+                            </div>
+                            <div class="descripcion-mi-perfil">
+                                <p class="no-margin">
+                                   vienen sus cursos
+                               </p>
+                           </div>
+                       </div>
+                   </article>
+               </section>
+    <section id="option-4" class="contenido-perfil option-4">
+        <article class="bloque-perfil cf">
+                    <span class="iconos-perfil" src="imagenes/iconoperfil.svg" </span>
+                        <div class="contenido">
+                            <div>
+                                <h2 class="secondary-title">
+                                    Dudas
+                                </h2>
+                            </div>
+                            <div class="descripcion-mi-perfil">
+                                <p class="no-margin">
+                                   vienen sus dudas
+                               </p>
+                           </div>
+                       </div>
+                   </article>
+    </section>
+    <section id="option-5" class="contenido-perfil option-5">
+        <article class="bloque-perfil cf">
+            <span class="iconos-perfil" src="imagenes/iconoperfil.svg"> </span>
+                <div class="contenido">
+                    <div>
+                        <h2 class="secondary-title">
+                            Valoraciones
+                        </h2>
+                    </div>
+                    <div class="descripcion-mi-perfil">
+                        <div class="imagen-valoraciones">
+                            <img class="imagen-anuncios-buscador" src="imagenes/alumno-6-buscador.jpg" alt="imagen usuario">
+                        </div>
+                        <div class="texto-valoraciones">
+                            <p>Recomiendo a Marta, llegó muy puntual y fue muy paciente con las dudas que yo tenía. En cuánto pueda volveré a repetir.</p>
+                            <p>Gracias Marta!!</p>
+                            <div class="icono-stars estrellas-anuncios-4"> </div>
+                            <hr class="linia"/>
+                        </div>
 
-                    <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
-                </div>
-            </section>
-            <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
-                <div class="newsletter cf">
-                    <div class="caja-footer">
-                        <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
-                        <div class="container-unete left">
-                            <button class="button-unete"><a href="graciasnews.html"><span>Únete</span></button>
+                        <div class="imagen-valoraciones">
+                            <img class="imagen-anuncios-buscador" src="imagenes/alumno-4-buscador.jpg" alt="imagen usuario">
+                        </div>
+                        <div class="texto-valoraciones">
+                            <p>A pesar de que Marta no me pudo ayudar con mis dudas fue muy agradable toda la clase y con aquello con lo que no me pudo ayudar me lo buscó por internet y me lo envió a mi correo.</p>
+                            <div class="icono-stars estrellas-anuncios-3"> </div>
+                            <hr class="linia"/>
+                        </div>
+                        <div class="imagen-valoraciones">
+                            <img class="imagen-anuncios-buscador" src="imagenes/alumno-8-buscador.jpg" alt="imagen usuario">
+                        </div>
+                        <div class="texto-valoraciones">
+                            <p>Marta me resolvió diferentes dudas de In-Design y gracias a ella pude entregar un proyecto de la Universidad. Se adaptó a mis horarios para que pudiera llegar a la entrega, muchas gracias!</p>
+                            <div class="icono-stars estrellas-anuncios-5"> </div>
                         </div>
                     </div>
-                    <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span class="underline"> bases y condiciones</span></a></p>
                 </div>
-                <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
-            </section>
-        </div>
+
+        </article>
+    </section>
+
+</div>
+</div>
+</div>
+
+<!--footer -->
+<footer>
+    <div class="pie cf">
+        <section class="mini-box-pie">
+            <span class="type-color-3">Contacto</span>
+            <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
+            <p class="terms type-color-3">(+34)722 563 505</p>
+        </section>
+        <section class="mini-box-pie">
+            <div class="iconos">
+                <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
+
+                <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
+
+                <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
+            </div>
+        </section>
+        <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
+            <div class="newsletter cf">
+                <div class="caja-footer">
+                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
+                    <div class="container-unete left">
+                        <button class="button-unete"><a href="graciasnews.html"><span>Únete</span></button>
+                    </div>
+                </div>
+                <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span class="underline"> bases y condiciones</span></a></p>
+            </div>
+            <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+        </section>
+    </div>
 
 </footer>
 
+<script>
+$('td .icono-tabla-off').click(function() {
+    $(this).hide();
+    $(this).siblings('.icono-tabla').show();
+});
+$('td .icono-tabla').click(function() {
+    $(this).hide();
+    $(this).siblings('.icono-tabla-off').show();
+}); <!--tabla -->
+$('.pestanya-2').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-2').show();
+    return false;
+});
+$('.pestanya-3').click(function() {
+    $('.option-1').hide();
+    $('.option-2').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-3').show();
+    return false;
+});
+$('.pestanya-4').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-2').hide();
+    $('.option-5').hide();
+    $('.option-4').show();
+    return false;
+});
+$('.pestanya-5').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-2').hide();
+    $('.option-5').show();
+    return false;
+});
+$('.pestanya-1').click(function() {
+    $('.option-2').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-1').show();
+    return false;
+});
+</script>
 </body>
 </html>
