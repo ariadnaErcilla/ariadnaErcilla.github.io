@@ -1,10 +1,10 @@
-.img-top {
-	margin: 0 auto;
-	margin-top: 50px;
+.article1{
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .fondo-img-top {
     background-image: url(../imagenes/portada-home.png);
-    height: 400px;
+    height: 65%;
     background-repeat: no-repeat;
     background-size: cover;
 	position: relative;
@@ -12,46 +12,46 @@
 
 .contenido-top {
     margin: 0 auto;
-	width: 100%;
+	width: 80%;
 	top:100px;
 }
 
 .texto-top{
 	text-align: center;
-	padding-bottom: 90px;
 	width: 30%;
-	margin: 40px 30px 0px 30px;
+	margin:80px;
     position: relative;
 }
 .container-button{
-
-	margin-top:20px;
-}
-
-
-.box2 {
-	clear: both;
-}
-
-section.mini-box {
-	display:inline-block;
-	width:30%;
-	margin-top: 20px;
-	margin-bottom: 100px;
-    margin-left: 30px;
-}
-.img1{
-
-	width:58%;
+	margin-top: 30px;
 }
 
 
 .article2 {
-	margin-top: 100px;
+    margin-top: 70px;
     width: 100%;
 }
 
-.info {
-	margin: 0 auto;
-	max-width: 90%;
+.box2 {
+	clear: both;
 }
+.info {
+    width: 80%;
+    height: 60%
+}
+
+section.mini-box {
+	display:inline-block;
+	width:25%;
+	margin-top: 20px;
+	margin-bottom: 100px;
+    margin-left: 40px;
+}
+.img1{
+	width:70%;
+}
+
+
+
+
+

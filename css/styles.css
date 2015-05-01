@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .type-color-1 {
   color: #00A6A5; }
 
@@ -328,6 +327,11 @@ Buscador
   position: relative;
   padding: 15px; }
 
+.especial {
+  float: left;
+  width: 100%;
+  margin-top: 5px; }
+
 .container-anuncios-buscador {
   background-color: white;
   overflow: hidden;
@@ -336,7 +340,7 @@ Buscador
 .container-imagen-button {
   float: left;
   width: 25%;
-  margin: 10px; }
+  margin: 15px; }
 
 .imagen-anuncios-buscador {
   width: 100%;
@@ -345,7 +349,8 @@ Buscador
 .texto-anuncios-buscador {
   float: right;
   width: 65%;
-  margin: 10px; }
+  margin-top: 25px;
+  margin-left: 5px; }
 
 .container-dudas-cursos {
   width: 100%;
@@ -353,6 +358,7 @@ Buscador
 
 .container-cantidad {
   float: left;
+  width: 100%;
   margin-right: 10px;
   margin-top: 10px; }
 
@@ -1290,52 +1296,51 @@ form.turnos {
   opacity: .6;
   transition: all 0.3s ease; }
 
-.img-top {
+.article1 {
   margin: 0 auto;
   margin-top: 50px; }
 
 .fondo-img-top {
   background-image: url(../imagenes/portada-home.png);
-  height: 400px;
+  height: 65%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
 
 .contenido-top {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   top: 100px; }
 
 .texto-top {
   text-align: center;
-  padding-bottom: 90px;
   width: 30%;
-  margin: 40px 30px 0px 30px;
+  margin: 80px;
   position: relative; }
 
 .container-button {
-  margin-top: 20px; }
+  margin-top: 30px; }
+
+.article2 {
+  margin-top: 70px;
+  width: 100%; }
 
 .box2 {
   clear: both; }
 
+.info {
+  width: 80%;
+  height: 60%; }
+
 section.mini-box {
   display: inline-block;
-  width: 30%;
+  width: 25%;
   margin-top: 20px;
   margin-bottom: 100px;
-  margin-left: 30px; }
+  margin-left: 40px; }
 
 .img1 {
-  width: 58%; }
-
-.article2 {
-  margin-top: 100px;
-  width: 100%; }
-
-.info {
-  margin: 0 auto;
-  max-width: 90%; }
+  width: 70%; }
 
 meta.foundation-version {
   font-family: "/5.5.1/"; }
