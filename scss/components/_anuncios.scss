@@ -12,16 +12,9 @@
 
 .anuncio {
 
-    float: left;
     margin-bottom:20%;
     position: relative;
     background-color: white;
-    height: 380px;
-
-    &.height-2{
-         height: 295px;
-
-    }
 
       &:hover{
 
@@ -31,22 +24,31 @@
     }
 
 }
+.anuncio-destacado{
+    background-color: #1BA8A6;
+    height: 350px;
+}
 .content-container{
 
     padding:10px 20px 0px 20px;
-    position: relative;
+    
 }
-.fondo-anuncio{
+.content-container-cursos{
 
-    background-color: #1BA8A6;
+    padding:30px 20px 0px 20px;
 
 }
+
 .texto-cuadrado {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 7px;
 
 }
+.texto-cuadrado-cursos{
 
+    text-align: center;
+    padding-bottom: 15px;
+}
 
 .mas-info{
     padding-bottom: 60px;
@@ -54,7 +56,7 @@
 }
 .mas-info-destacado{
     margin:10px;
-    padding-bottom: 20px;
+   
 
 }
 
@@ -133,27 +135,22 @@ ayuda
 }
 
 
-.texto-cuadrado-large {
+.texto-cuadrado-destacado {
     text-align: center;
-    padding: 70px 20px 78px 20px;
+    padding: 40px 20px 73px 20px;
 
 }
 /*----------
 encuentra
 ---------*/
 
-
-.texto-cuadrado-small{
-
-    text-align: center;
-    padding: 20px 20px 0px 20px;
-}
 .image-container{
     width: 100%;
     height: 0;
     position:relative;
     overflow: hidden;
-    padding-bottom: 62%;
+     padding-bottom:73%;
+    
 
 }
 .img-curso{
@@ -188,9 +185,14 @@ encuentra
     margin:auto;
     z-index:1;
     background-color:white;
-    padding:0px 15px 25px 15px;
-}
+    padding:0px 15px 5px 15px;
 
+
+}
+.hover-container p{
+
+    font-size: 14px;
+}
 
 
 /*---------
@@ -211,72 +213,6 @@ Anuncio ampliado
 
 }
 
-/*---------
-test anuncio
----------*/
-.t-body{
-    background-color:gray;
-}
-.t-container{
 
-    width:30%;
-    margin:20px auto;
 
-    li{
-        margin-right: 2%;
-    }
-}
-.t-anuncio{
 
-    width:100%;
-    background-color:white;
-    position:relative;
-
-    &:hover{
-
-        .t-hover-container{
-            display: block;
-        }
-    }
-
-}
-.t-image-container{
-
-    width: 100%;
-    height: 0;
-    position:relative;
-    outline:1px solid green;
-    overflow: hidden;
-    padding-bottom: 56%;
-}
-.t-img-curso{
-
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    margin:auto;
-     width: 100%;
-
-}
-.t-hover-container{
-
-    outline:1px solid pink;
-    display:none;
-    position:absolute;
-    top:0;
-    height: 215px;
-    right:0;
-    left:0;
-    margin:auto;
-    z-index:1;
-    background-color:white;
-    padding:15px;
-
-}
-.t-content-container{
-
-    padding:15px;
-
-}
