@@ -285,33 +285,40 @@ body {
   width: 83%;
   margin: 10px 0px 40px 0px; }
   .todos-anuncios li {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
 
 .anuncio {
-  float: left;
   margin-bottom: 20%;
   position: relative;
-  background-color: white;
-  height: 380px; }
-  .anuncio.height-2 {
-    height: 295px; }
+  background-color: white; }
   .anuncio:hover .hover-container {
     display: block; }
 
 .content-container {
-  padding: 10px 20px 0px 20px;
-  position: relative; }
+  padding: 10px 20px 0px 20px; }
 
-.fondo-anuncio {
-  background-color: #1BA8A6; }
+.content-container-cursos {
+  padding: 20px 20px 0px 20px; }
 
 .texto-cuadrado {
   text-align: center;
-  padding-bottom: 20px; }
+  padding-bottom: 5px; }
+
+.texto-cuadrado-cursos {
+  padding-bottom: 20px;
+  text-align: center; }
 
 .mas-info {
   padding-bottom: 60px;
   width: 100%; }
+
+.anuncio-destacado {
+  background-color: #1BA8A6;
+  height: 350px; }
+
+.texto-cuadrado-destacado {
+  padding: 40px 20px 60px 20px; }
 
 .mas-info-destacado {
   margin: 10px;
@@ -355,19 +362,10 @@ Buscador
   margin-right: 10px;
   margin-top: 10px; }
 
-.especial {
-  width: 30%; }
-
 .total-icono-buscador {
   float: left;
   width: 50%;
   margin-top: 15px; }
-
-.stars-grande {
-  height: 50px;
-  width: 100px;
-  margin-right: 10px;
-  margin-top: 2px; }
 
 /*-------
 ayuda
@@ -397,7 +395,7 @@ encuentra
   height: 0;
   position: relative;
   overflow: hidden;
-  padding-bottom: 62%; }
+  padding-bottom: 73%; }
 
 .img-curso {
   position: absolute;
@@ -424,7 +422,10 @@ encuentra
   margin: auto;
   z-index: 1;
   background-color: white;
-  padding: 0px 15px 25px 15px; }
+  padding: 0px 15px 0px 15px; }
+
+.hover-container p {
+  font-size: 14px; }
 
 /*---------
 Anuncio ampliado
@@ -436,58 +437,6 @@ Anuncio ampliado
 .imagen-curso {
   margin-top: 20px;
   max-width: 100%; }
-
-/*---------
-test anuncio
----------*/
-.t-body {
-  background-color: gray; }
-
-.t-container {
-  width: 30%;
-  margin: 20px auto; }
-  .t-container li {
-    margin-right: 2%; }
-
-.t-anuncio {
-  width: 100%;
-  background-color: white;
-  position: relative; }
-  .t-anuncio:hover .t-hover-container {
-    display: block; }
-
-.t-image-container {
-  width: 100%;
-  height: 0;
-  position: relative;
-  outline: 1px solid green;
-  overflow: hidden;
-  padding-bottom: 56%; }
-
-.t-img-curso {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 100%; }
-
-.t-hover-container {
-  outline: 1px solid pink;
-  display: none;
-  position: absolute;
-  top: 0;
-  height: 215px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  z-index: 1;
-  background-color: white;
-  padding: 15px; }
-
-.t-content-container {
-  padding: 15px; }
 
 /*.botones-perfil{
     padding: 40px 0;
@@ -711,11 +660,13 @@ select {
   clear: both; }
 
 .foto-val {
-  clear: both; }
+  clear: both;
+  width: 80px; }
 
 .texto-val {
   float: left;
-  width: 70%; }
+  width: 70%;
+  padding-bottom: 20px; }
 
 .stars-val {
   width: 21%; }
@@ -933,7 +884,7 @@ td {
   border-width: 20px 20px 20px 0; }
 
 .cabecera-cursos {
-  padding-top: 50px;
+  padding-top: 60px;
   width: 70%;
   margin: 0 auto; }
 
@@ -1351,8 +1302,8 @@ form.turnos {
   margin-top: 50px; }
 
 .fondo-img-top {
-  background-image: url(../imagenes/portada_home.jpg);
-  height: 610px;
+  background-image: url(../imagenes/portada-home.png);
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
@@ -1360,15 +1311,13 @@ form.turnos {
 .contenido-top {
   margin: 0 auto;
   width: 100%;
-  top: 100px;
-  position: absolute; }
+  top: 100px; }
 
 .texto-top {
   text-align: center;
   padding-bottom: 90px;
-  width: 50%;
-  margin: 0 auto;
-  float: left;
+  width: 30%;
+  margin: 40px 30px 0px 30px;
   position: relative; }
 
 .container-button {
@@ -6424,17 +6373,17 @@ contenedores anuncios
 
 -------*/
 .total-icono {
-  float: left;
-  width: 50%; }
+  float: left; }
+
+.padding-icono-stars {
+  padding-left: 20px; }
 
 .container-stars {
-  float: left;
-  width: 80%;
-  padding-top: 5px; }
+  float: left; }
 
 .container-icon {
-  width: 20%;
-  float: left; }
+  float: left;
+  padding-right: 2px; }
 
 .icono, .icono-tabla {
   width: 20px;
@@ -6455,11 +6404,20 @@ contenedores anuncios
   background-size: contain; }
 
 .icono-stars {
-  width: 86px;
-  height: 10px; }
+  width: 75px;
+  height: 12px;
+  padding-right: 2px;
+  margin-top: 5px; }
 
-.icono-padding {
-  padding-right: 2px; }
+.especial {
+  width: 50%;
+  float: left; }
+
+.stars-grande {
+  height: 18px;
+  width: 100px;
+  margin-right: 10px;
+  margin-top: 2px; }
 
 .icono-margin {
   margin: 5px 4px 5px 0px; }

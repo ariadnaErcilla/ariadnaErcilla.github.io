@@ -293,18 +293,19 @@ contenedores anuncios
 -------*/
 .total-icono{
     float: left;
-    width: 50%;
 }
+.padding-icono-stars{
 
+    padding-left:20px;
+}
 .container-stars{
     float: left;
-    width: 80%;
-    padding-top:5px;
+
 }
 
 .container-icon{
-    width: 20%;
     float: left;
+    padding-right: 2px;
 }
 
 .icono {
@@ -330,12 +331,23 @@ contenedores anuncios
 }
 
 .icono-stars{
-    width: 86px;
-    height: 10px;
+    width: 75px;
+    height: 12px;
+    padding-right:2px;
+    margin-top:5px;
 }
 
-.icono-padding{
-    padding-right:2px;
+.especial{
+    width: 50%;
+    float: left;
+}
+
+.stars-grande{
+    height: 18px;
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 2px;
+
 }
 
 .icono-margin{
