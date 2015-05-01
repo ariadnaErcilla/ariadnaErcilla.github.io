@@ -2,8 +2,10 @@
     float:right;
     width: 83%;
     margin: 10px 0px 40px 0px;
+
      li{
         list-style: none;
+
 
     }
 }
@@ -14,17 +16,25 @@
     margin-bottom:20%;
     position: relative;
     background-color: white;
+    height: 380px;
+
+    &.height-2{
+         height: 295px;
+
+    }
+
       &:hover{
 
         .hover-container{
             display: block;
         }
     }
-}
 
+}
 .content-container{
 
-    padding:10px 20px 20px 20px;
+    padding:10px 20px 0px 20px;
+    position: relative;
 }
 .fondo-anuncio{
 
@@ -64,7 +74,6 @@ Buscador
 .container-anuncios-buscador{
     background-color: white;
     overflow: hidden;
-
     margin-bottom: 30px;
 }
 
@@ -123,24 +132,17 @@ ayuda
     width: 100%;
 }
 
-.fa-large{
 
-    height: 380px;
-
-}
 .texto-cuadrado-large {
     text-align: center;
-    padding: 70px 20px 50px 20px;
+    padding: 70px 20px 78px 20px;
 
 }
 /*----------
 encuentra
 ---------*/
 
-.fa-small{
 
-    height: 310px;
-}
 .texto-cuadrado-small{
 
     text-align: center;

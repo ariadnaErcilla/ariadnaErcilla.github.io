@@ -285,12 +285,16 @@ body {
   float: left;
   margin-bottom: 20%;
   position: relative;
-  background-color: white; }
+  background-color: white;
+  height: 380px; }
+  .anuncio.height-2 {
+    height: 295px; }
   .anuncio:hover .hover-container {
     display: block; }
 
 .content-container {
-  padding: 10px 20px 20px 20px; }
+  padding: 10px 20px 0px 20px;
+  position: relative; }
 
 .fondo-anuncio {
   background-color: #1BA8A6; }
@@ -365,19 +369,13 @@ ayuda
 .foto-alumno {
   width: 100%; }
 
-.fa-large {
-  height: 380px; }
-
 .texto-cuadrado-large {
   text-align: center;
-  padding: 70px 20px 50px 20px; }
+  padding: 70px 20px 78px 20px; }
 
 /*----------
 encuentra
 ---------*/
-.fa-small {
-  height: 310px; }
-
 .texto-cuadrado-small {
   text-align: center;
   padding: 20px 20px 0px 20px; }
@@ -555,24 +553,48 @@ test anuncio
 .button-3 span {
   color: #f15c22; }
 
-.button-mail span {
-  font-size: 1rem;
-  margin-left: 14px; }
-
-.container-mail {
+.button-mail {
   position: absolute;
-  margin: 60px auto;
+  margin: auto;
   left: 0;
   right: 0;
-  width: 50%; }
-
-.button-mail {
+  bottom: -15px;
+  width: 50%;
   border-radius: 5px;
-  width: 100%;
   transition: all 0.3s ease;
   height: 30px;
   border: none;
-  margin: 0; }
+  text-align: center; }
+  .button-mail span {
+    background-image: url(../imagenes/mail-b.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .button-mail.mail-alumnos {
+    text-align: center; }
+    .button-mail.mail-alumnos span {
+      width: 120px;
+      text-align: right;
+      background-position: left center;
+      height: 20px; }
+      .button-mail.mail-alumnos span strong {
+        line-height: 20px;
+        font-weight: normal; }
+
+.padding-button-anuncios {
+  padding: 7px 0px; }
+
+.padding-button-cursos {
+  padding: 5px 40px; }
 
 .button-mail:hover {
   background-color: #404041; }
@@ -590,12 +612,6 @@ test anuncio
 
 .button-unete:hover {
   background-color: #f15c22; }
-
-.mail-alumnos {
-  background-image: url(../imagenes/mail-b.svg);
-  background-position: left;
-  background-size: contain;
-  background-repeat: no-repeat; }
 
 .mail-cursos {
   background-image: url(../imagenes/mail-b.svg);
@@ -911,7 +927,7 @@ td {
 
 .cabecera-cursos {
   padding-top: 50px;
-  width: 68%;
+  width: 70%;
   margin: 0 auto; }
 
 .cabecera-alumnos {
@@ -920,7 +936,7 @@ td {
   margin: 0 auto; }
 
 .titulo-encabezado-1 {
-  width: 68%;
+  width: 70%;
   margin: 0 auto; }
 
 .titulo-encabezado {
@@ -1105,7 +1121,7 @@ header {
 
 .img-logo {
   width: 100%;
-  margin-top: 10px; }
+  margin: 10px; }
 
 ul {
   padding-left: 10px; }
@@ -1132,21 +1148,19 @@ ul {
   .buscador {
     background-color: black; } }
 .logo {
-  width: 13%;
   float: left; }
 
 .menu {
   text-align: center;
   line-height: rem(5px);
-  float: right; }
+  float: right;
+  margin-right: 20px;
+  width: 70%; }
 
 .menu ul li {
   list-style: none;
   float: left;
   margin-left: 15px; }
-
-.float-menu {
-  float: left; }
 
 .registro {
   float: left;
@@ -1163,7 +1177,8 @@ ul {
 
 .buscador-desplegado {
   clear: both;
-  background-color: rgba(51, 51, 51, 0.15); }
+  background-color: rgba(51, 51, 51, 0.15);
+  display: none; }
 
 .imagen-lupa {
   margin-left: 10px;
@@ -1187,15 +1202,16 @@ ul {
 
 .buscador-container-derecha {
   float: left;
-  max-width: 40%;
-  margin-left: 30px;
-  margin-top: 10px; }
+  width: 30%;
+  margin: 10px 0px 10px 0px; }
 
 .imagen-cerrar-buscador {
   margin-left: 40px;
   padding-top: 5px;
-  float: right;
   max-width: 35px; }
+
+.container-button-buscador {
+  width: 40%; }
 
 /*-----
 general
