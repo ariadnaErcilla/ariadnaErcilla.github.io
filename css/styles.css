@@ -455,9 +455,8 @@ Anuncio ampliado
 
 .full-button {
   display: block;
-  width: 80%;
+  width: 100%;
   padding: 20px 10px;
-  margin: 0 auto 8px;
   /*he añadido margin 0 auto y cambiado width a 80%. Si fastidia a alguien, avisar y pongo una clase solo para mi */ }
 
 .medium-button {
@@ -872,14 +871,10 @@ td {
   display: table-cell;
   vertical-align: top;
   border: rgba(51, 51, 51, 0.15) 0 solid;
-<<<<<<< HEAD
-  border-width: 20px 20px 0 0; }
-=======
   border-width: 20px 20px 20px 0; }
->>>>>>> d7023699d62e3d476aae5373d2e361948a66ab09
 
 .cabecera-cursos {
-  padding-top: 50px;
+  padding-top: 60px;
   width: 70%;
   margin: 0 auto; }
 
@@ -6359,17 +6354,18 @@ contenedores anuncios
 
 -------*/
 .total-icono {
-  float: left;
-  width: 50%; }
+  float: left; }
+
+.padding-icono-stars {
+  padding-left: 20px; }
 
 .container-stars {
   float: left;
-  width: 80%;
   padding-top: 5px; }
 
 .container-icon {
-  width: 20%;
-  float: left; }
+  float: left;
+  padding-right: 2px; }
 
 .icono {
   width: 20px;
@@ -6383,7 +6379,7 @@ contenedores anuncios
   margin-right: 6px; }
 
 .icono-stars {
-  width: 86px;
+  width: 63px;
   height: 10px; }
 
 .icono-padding {

@@ -1,8 +1,7 @@
 /*--------
 buscador
 ----------*/
-<script>
-   
+
     $('#abrir').click(function(e){
         $('.buscador-desplegado').show();
         return false;
@@ -12,6 +11,3 @@ buscador
         $('.buscador-desplegado').hide();
         return false;
     });
-
-
-</script>
