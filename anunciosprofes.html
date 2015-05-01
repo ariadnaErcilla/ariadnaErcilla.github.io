@@ -23,34 +23,47 @@
 
 <body>
  <header>
-    <div class="logo">
-        <a href="index.html"><img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
-    </div>
-    <div>
-        <nav class="menu">
-            <div class="menu-izquierda">
-                <ul>
-                    <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
-                    <li><a href="anuncios.html">Busca tu alumno</a></li>
-                    <li><a href="funciona.html">¿Cómo funciona?</a></li>
-                </ul>
+        <div class="logo">
+            <a href="index.html">
+                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+        </div>
+            <nav class="menu cf">
+                <div class="left">
+                    <ul>
+                        <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                        <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                <div class="registro">
+                    <ul>
+                        <li><a href="#login">Log in</a></li>
+                        <li><a href="#registro">Regístrate</a></li>
+                    </ul>
+                </div>
+                <div class="lupa-buscador">
+                    <a href="#">
+                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                    </a>
+                     <a id="abrir" href="">
+                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
+                  </a>
+                </div>
             </div>
-            <div class="menu-derecha">
-                <ul>
-                    <li><a href="#login">Log in</a></li>
-                    <li><a href="#registro">Regístrate</a></li>
-
-                    <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'>
-                        <input id='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
-                    </form></div>
-
-                </ul>
-
+            </nav>
+            <div class="buscador-desplegado cf">
+                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+                <div class="buscador-container-derecha cf">
+                     <a id="cerrar" href="">
+                        <img class="imagen-cerrar-buscador left" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
+                  </a>
+                    <div class="container-button-buscador right">
+                        <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                    </div>
+                </div>
             </div>
-        </nav>
-
-    </div>
-</header>
+    </header>
 <div id="recuperar" class="masc">
     <div class="todopopup todopopup-image">
         <div class="popupbox movedown">
@@ -502,45 +515,46 @@
 </div>
 <div class="background-4 cf clear">
 <div class="container">
-           <div class="filtros">
+    <div class="row">
+            <div class="filtros">
                 <div class="categorias">
                     <h2 class="secondary-title">Categorías</h2>
                     <div class="lista-categorias">
                         <div class="iconos-cat cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href="arquitecturaalumnos.html"><p class="categorias-menu">Arquitectura</p></a>
+                            <a class="cat-1 type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <p class="categorias-menu">Animación</p>
+                            <a class="cat-2 type-color-5" href=""><p class="categorias-menu">Animación</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <p class="categorias-menu">Audiovisual</p>
+                            <a class="cat-3 type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
-                            <p class="categorias-menu">Industrial</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left grafico-b icono-margin"></span>
-                            <p class="categorias-menu">Gráfico</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left moda-b icono-margin"></span>
-                            <p class="categorias-menu">Moda</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
-                            <p class="categorias-menu">Web</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left foto-b icono-margin"></span>
-                            <p class="categorias-menu">Fotografía</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left programacion-b icono-margin"></span>
-                            <p class="categorias-menu">Programación</p>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
                         </div>
                     </div>
                 </div>
@@ -549,13 +563,16 @@
                    <div class="lista-categorias">
                     <div class="iconos-cat cf">
                         <span class="icono left manana icono-margin"></span>
-                        <p class="categorias-menu">Mañana</p>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
                     </div>
                     <div class="iconos-cat cf">
-                        <span class="icono left tarde icono-margin"></span><p class="categorias-menu">Tarde</p>
+                        <span class="icono left tarde icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
                     </div>
                     <div class="iconos-cat cf">
-                        <span class="icono left noche icono-margin"></span><p class="categorias-menu">Noche</p>
+                        <span class="icono left noche icono-margin"></span>
+                        <a class="type-color-5" href="">
+                            <p class="categorias-menu">Noche</p></a>
                     </div>
                 </div>
             </div>
@@ -580,7 +597,7 @@
                 </div>
                 <ul class="row">
                 <li class="large-4 medium-6 small-12 columns">
-                    <article class="anuncio height-2">
+                    <article class="anuncio">
                         <a class="type-color-5" href="#">
                             <div class="image-container cf">
                                 <img class="img-curso" src="imagenes/anuncio-12.jpg">
@@ -595,8 +612,8 @@
                                     </div>
                             </div> 
                             </a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Haz un chroma con After Effect</h2>
                             </div>
                             <div class="mas-info">
@@ -608,20 +625,18 @@
                                     <span class="secondary-subtitle">Audiovisual</span>
                                     </div>
                                 </div>
-                            <div class="total-icono">
+                            <a href=""><div class="total-icono">
                                    <div class="container-stars">
                                     <span class="icono-stars left estrellas-valorar-1 icono-padding"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(5)</span>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
-                        <!-- <div class="container-mail"> -->
                            <a class="button-mail" href="#contactar">
                                 <span></span>
                             </a>
-                            <!-- </div> -->
                         </div>
                     </article>
                 </li>
@@ -639,8 +654,8 @@
                                         <p class="tags type-color-1">#cinema 4d</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Grandes vídeos con Cinema 4D</h2>
                             </div>
                             <div class="mas-info">
@@ -660,9 +675,9 @@
                                     <span class="modificar type-color-2">(8)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                             <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                          <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -682,8 +697,8 @@
                                         <p class="tags type-color-1">#Unity</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Animar videojuego en Unity</h2>
                             </div>
                             <div class="mas-info">
@@ -703,9 +718,9 @@
                                     <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div>
-                          <div class="container-mail">
-                              <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                        <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -724,8 +739,8 @@
                                         <p class="tags type-color-1">#flash</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Anima tu personaje en Flash</h2>
                             </div>
                             <div class="mas-info">
@@ -745,27 +760,25 @@
                                     <span class="modificar type-color-2">(10)</span>
                                 </div>
                             </div>
-                         <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                          <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
                 </li>
                 <li class="large-4 medium-6 small-12 columns">
-                   <article class="anuncio">
-                    <div class="fondo-anuncio fa-small">
-                            <div class="texto-cuadrado-small">
+                   <article class="anuncio-destacado">
+                            <div class="texto-cuadrado-destacado">
                                 <h3 class="destacado type-color-3">¿No encuentras el curso que quieres?</h3>
                             </div>
                             <div class="mas-info-destacado">
                                 <a class="general-button button-2 full-button type-color-3" href="#publicarduda">publica tus dudas</a>
                             </div>
-                      </div>
                 </article>
             </li>
             <li class="large-4 medium-6 small-12 columns">
-                    <article class="anuncio">
+                    <article class="anuncio height-cursos">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-5.jpg">
                         </div>
@@ -778,8 +791,8 @@
                                         <p class="tags type-color-1">#3D Studio Max</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Anima objetos en 3D Studio Max</h2>
                             </div>
                             <div class="mas-info">
@@ -799,9 +812,9 @@
                                     <span class="modificar type-color-2">(5)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -820,8 +833,8 @@
                                         <p class="tags type-color-1">#autocad</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Exporta tu Autocad a PDF rápidamente</h2>
                             </div>
                             <div class="mas-info">
@@ -841,9 +854,9 @@
                                     <span class="modificar type-color-2">(7)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                  <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                          <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -862,8 +875,8 @@
                                         <p class="tags type-color-1">#rsketchup</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Renders del Sketchup con V-RAY en 3 horas</h2>
                             </div>
                             <div class="mas-info">
@@ -883,9 +896,9 @@
                                     <span class="modificar type-color-2">(16)</span>
                                 </div>
                             </div>
-                             <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                             <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -904,8 +917,8 @@
                                         <p class="tags type-color-1">#3D Studio</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Modela tu objeto en 3D Studio</h2>
                             </div>
                             <div class="mas-info">
@@ -925,9 +938,9 @@
                                     <span class="modificar type-color-2">(11)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                    <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                          <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -946,8 +959,8 @@
                                         <p class="tags type-color-1">#impresora 3D</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Aprende a calibrar una impresora 3D</h2>
                             </div>
                             <div class="mas-info">
@@ -967,9 +980,9 @@
                                     <span class="modificar type-color-2">(3)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                  <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -988,8 +1001,8 @@
                                         <p class="tags type-color-1">#InDesign</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Maqueta tus folletos en Indesign</h2>
                             </div>
                             <div class="mas-info">
@@ -1009,9 +1022,9 @@
                                     <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                    <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                           <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1030,8 +1043,8 @@
                                         <p class="tags type-color-1">#extensiones</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Guarda los documentos de Photoshop</h2>
                             </div>
                             <div class="mas-info">
@@ -1051,9 +1064,9 @@
                                     <span class="modificar type-color-2">(11)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                    <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1072,8 +1085,8 @@
                                         <p class="tags type-color-1">#imprenta</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Clases de post-producción gráfica</h2>
                             </div>
                             <div class="mas-info">
@@ -1093,9 +1106,9 @@
                                     <span class="modificar type-color-2">(20)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                <button class="button-mail mail-cursos" href="#contactar"></button>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1114,8 +1127,8 @@
                                         <p class="tags type-color-1">#tipografia</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Aprende a crear tu propia tipografía</h2>
                             </div>
                             <div class="mas-info">
@@ -1135,9 +1148,9 @@
                                     <span class="modificar type-color-2">(20)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1156,8 +1169,8 @@
                                         <p class="tags type-color-1">#illustrator</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">¿Quieres iniciarte en Illustrator?</h2>
                             </div>
                             <div class="mas-info">
@@ -1177,9 +1190,9 @@
                                     <span class="modificar type-color-2">(20)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                           <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1198,8 +1211,8 @@
                                         <p class="tags type-color-1">#inDesign</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Aprende a usar la página maestra en Indesign</h2>
                             </div>
                             <div class="mas-info">
@@ -1219,9 +1232,9 @@
                                     <span class="modificar type-color-2">(2)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                  <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1240,9 +1253,9 @@
                                         <p class="tags type-color-1">#InDesign</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
-                                <h2 class="secondary-title">Retoque de fotos en 1 hora</h2>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Retoque de fotos en 1 hora con Photoshop</h2>
                             </div>
                             <div class="mas-info">
                                 <div class="total-icono">
@@ -1261,9 +1274,9 @@
                                     <span class="modificar type-color-2">(13)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1282,8 +1295,8 @@
                                         <p class="tags type-color-1">#fotográfia #movimiento</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Fotografía el movimiento de los objetos</h2>
                             </div>
                             <div class="mas-info">
@@ -1303,9 +1316,9 @@
                                     <span class="modificar type-color-2">(8)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1324,8 +1337,8 @@
                                         <p class="tags type-color-1">#formulario</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Maquetar formularios en 1 hora</h2>
                             </div>
                             <div class="mas-info">
@@ -1345,9 +1358,9 @@
                                     <span class="modificar type-color-2">(21)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1366,8 +1379,8 @@
                                         <p class="tags type-color-1">#tejidos #moda</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Aprende los diferentes tejidos</h2>
                             </div>
                             <div class="mas-info">
@@ -1387,9 +1400,9 @@
                                     <span class="modificar type-color-2">(5)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                   <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>
@@ -1408,8 +1421,8 @@
                                         <p class="tags type-color-1">#programacion #mysql</p>
                                     </div>
                             </div></a>
-                        <div class="content-container cf">
-                            <div class="texto-cuadrado">
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
                                 <h2 class="secondary-title">Aprende base de datos con MYSQL</h2>
                             </div>
                             <div class="mas-info">
@@ -1429,9 +1442,9 @@
                                     <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div>
-                           <div class="container-mail">
-                                <a class="button-mail mail-cursos padding-button-cursos" href="#contactar"><span></span></a>
-                                </div>
+                            <a class="button-mail" href="#contactar">
+                                <span></span>
+                            </a>
                             </div>
                         </div>
                     </article>

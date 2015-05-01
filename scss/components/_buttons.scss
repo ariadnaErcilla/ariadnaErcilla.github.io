@@ -123,10 +123,11 @@
         text-align: center;
 
         span {
-            width: 120px;
+            width: 105px;
             text-align: right;
             background-position: left center;
             height: 20px;
+            background-size: 16% auto;
 
             strong {
                 line-height: 20px;
@@ -136,15 +137,7 @@
     }
 
 }
-.padding-button-anuncios{
 
-    padding:7px 0px;
-}
-
-.padding-button-cursos{
-
-      padding:5px 40px; 
-}
 
 .button-mail:hover{
     background-color:#404041;
