@@ -55,9 +55,9 @@ Buscador
 .titular-seccion-buscador{
     width: 100%;
     float: right;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     position: relative;
-    padding: 0, 15, 0, 15;
+    padding: 15px;
 }
 
 
@@ -87,27 +87,30 @@ Buscador
 }
 .container-dudas-cursos{
     width:100%;
+    margin-top: 5px;
 
 }
 .container-cantidad{
     float: left;
     margin-right: 10px;
     margin-top: 10px;
-
 }
 
 .especial{
     margin-top: 5px;
     width: 30%;
-
 }
 .total-icono-buscador{
     float: left;
     width: 50%;
     margin-top: 15px;
-
 }
 
+.stars-grande{
+    height: 40px;
+    width: 120px;
+
+}
 
 /*-------
 ayuda
