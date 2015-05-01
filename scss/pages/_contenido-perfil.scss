@@ -21,7 +21,7 @@ Perfil - sobre mi - OTROS
 -----*/
 
 .bloque-perfil{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .url{
@@ -55,7 +55,7 @@ Perfil - sobre mi - OTROS
     width: 20%;
 }
 
-.celda-ultima {
+.no-float {
     float:none;
 }
 /* SE PODRÍA DIVIDIR ASÍ, para que pagina sirven?
@@ -68,10 +68,10 @@ Perfil - sobre mi - OTROS
 }
 
 */
-
+/*
 .fotos-trabajos{
     margin: 20px 0 80px 0;
-}
+}*/
 
 .foto-trabajo {
     float: left;
@@ -80,6 +80,7 @@ Perfil - sobre mi - OTROS
 }
 
 .descripcion-mi-perfil {
+    padding-top: 20px;
 }
 /*-------
 

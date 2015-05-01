@@ -273,7 +273,7 @@
     <div class="container tabla margin-top">
         <div class="parte-izquierda cell-tabla">
                 <div class="centrado">
-                    <img class="img-perfil" src="imagenes/fotoperfil.png" alt="imagen del usuario">
+                    <img class="img-perfil" src="imagenes/alumno-12-buscador.jpg" alt="imagen del usuario">
                 </div>
                 <div class="informacion-persona">
                     <h1 class="profile-name">
@@ -300,10 +300,9 @@
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
                 </ul>
             </nav>
-            <article id="option-1" class="contenido-perfil option-1">
-                <section class="bloque-perfil cf">
-                    <img class="iconos-perfil" src="imagenes/iconoperfil.svg" onerror="this.onerror=null; this.src='image.png" alt="icono del perfil">
-                        <!--afegit el png per si falla -->
+            <section id="option-1" class="contenido-perfil option-1">
+                <article class="bloque-perfil cf">
+                    <span class="iconos-perfil" src="imagenes/iconoperfil.svg" </span>
                     <div class="contenido">
                             <div>
                                 <h2 class="secondary-title">
@@ -311,13 +310,13 @@
                                 </h2>
                             </div>
                             <div class="descripcion-mi-perfil">
-                                <p>
+                                <p class="no-margin">
                                  Soy Marta y soy una persona apasionada del diseño. Estoy estudiando Diseño gráfico en Elissava y quiero aprender diseño audiovisual. Si te gusta conocer gente y compartir tus inquietudes, nos podremos llevar bien!
                                 </p>
                             </div>
                      </div>
-                </section>
-                <section class="bloque-perfil cf">
+                </article>
+                <article class="bloque-perfil cf">
                     <img class="iconos-perfil" src="imagenes/iconodisponibilidad.svg" alt="icono de disponibilidad">
                     <div class="contenido">
                         <div>
@@ -370,8 +369,8 @@
                             </table>
                         </div>
                     </div>
-                </section>
-                <section class="bloque-perfil cf">
+                </article>
+                <article class="bloque-perfil cf">
                     <img class="iconos-perfil" src="imagenes/iconoprogramas.svg" alt="icono de programas informáticos">
                     <div class="contenido">
                         <div class="titulo-perfil">
@@ -379,14 +378,14 @@
                             Programas informáticos
                             </h2>
                         </div>
-                        <div>
-                            <ul class="lista-programas">
+                        <div class="descripcion-mi-perfil">
+                            <ul class="lista-programas no-margin">
                                 <li class="celdas-programas"> Programa </li>
                                 <li class="celdas-programas-final type-color-1"> Photoshop</li>
                                 <li class="celdas-programas"> Nivel</li>
-                                <li class="celdas-programas celda-ultima"> <img src="imagenes/nivel3-b.svg" alt="conocimiento de 10/10"> </li>
+                                <li class="celdas-programas no-float"> <img src="imagenes/nivel3-b.svg" alt="conocimiento de 10/10"> </li>
                             </ul>
-                        <!-- a la ultima li para que el siguiente programa no me flotara le he puesto un float-none -->
+
                             <ul class="lista-programas">
                                 <li class="celdas-programas"> Programa </li>
                                 <li class="celdas-programas-final type-color-1"> Ilustrator </li>
@@ -395,10 +394,10 @@
                             </ul>
                         </div>
                     </div>
-                </section>
-            </article>
-            <article id="option-2" class="contenido-perfil option-2">
-                <section class="bloque-perfil cf">
+                </article>
+            </section>
+            <section id="option-2" class="contenido-perfil option-2">
+                <article class="bloque-perfil cf">
                     <img class="iconos-perfil" src="imagenes/iconoportafolio.svg" alt="icono de portafolio">
                     <div class="contenido">
                         <div>
@@ -406,18 +405,29 @@
                                 Portafolio
                             </h2>
                         </div>
-                        <div>
-                            <img class="iconos-perfil" src="imagenes/iconobehance.svg" alt="enlace al Behance del usuario">
-                            <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="enlace al Domestika del usuario">
-                            <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="enlace al Pinterest del usuario">
-                            <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="enlace al Linkedin del usuario">
-                            <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="enlace al Facebook del usuario">
-                            <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="enlace al Twitter del usuario">
-                            <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="enlace al Instagram del usuario">
+                        <div class="descripcion-mi-perfil">
+                            <a class="icono-rectangular portafolio-behance-b">
+                            <p class="visuallyhidden"> enlace a behance </p>
+                            </a>
+                            <a class="icono-rectangular portafolio-domestika-b">
+                            <!--<p class="visuallyhidden"> enlace a domestika </p>-->
+                            </a>
+                            <span class="icono-rectangular portafolio-linkedin-d">
+                            <!--<p class="visuallyhidden"> enlace a linkedin </p>-->
+                            </span>
+                            <a class="icono-rectangular portafolio-tumblert-b">
+                            <!--<p class="visuallyhidden"> enlace a tumblert </p>-->
+                            </a>
+                            <span class="icono-rectangular portafolio-instagram-d">
+                            <!--<p class="visuallyhidden"> enlace a binstagram </p>-->
+                            </span>
+                            <a class="icono-rectangular portafolio-pinterest-b">
+                            <!--<p class="visuallyhidden"> enlace a pinterest </p>-->
+                            </a>
                         </div>
                     </div>
-                </section>
-                <section class="bloque-perfil cf">
+                </article>
+                <article class="bloque-perfil cf">
                     <img class="iconos-perfil" src="imagenes/iconoimagenes.svg" alt="icono del perfil">
                     <div class="contenido">
                         <div>
@@ -425,7 +435,7 @@
                                 Galería de imágenes
                             </h2>
                         </div>
-                        <div class="fotos-trabajos cf">
+                        <div class="descripcion-mi-perfil">
                             <div class="foto-trabajo">
                                 <img src="imagenes/anuncio-19.jpg" alt="paisaje con arboles">
                             </div>
@@ -443,18 +453,18 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </article>
+                </article>
+            </section>
 
-    <article  id="option-3" class="contenido-perfil option-3">
+    <section id="option-3" class="contenido-perfil option-3">
         <p>contenido 3 </p>
-    </article>
-    <article  id="option-4" class="contenido-perfil option-4">
+    </section>
+    <section id="option-4" class="contenido-perfil option-4">
         <p>contenido4</p>
-    </article>
-    <article  id="option-5" class="contenido-perfil option-5">
+    </section>
+    <section id="option-5" class="contenido-perfil option-5">
         <p>contenido 5 </p>
-    </article>
+    </section>
 
 </div>
 </div>

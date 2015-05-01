@@ -19,10 +19,13 @@
 .general-button:hover{
     background-color:#404041;
 }
+
 .full-button{
     display:block;
-    width: 100%;
+    width: 80%;
     padding: 20px 10px;
+    margin: 0 auto 8px;
+    /*he añadido margin 0 auto y cambiado width a 80%. Si fastidia a alguien, avisar y pongo una clase solo para mi */
 }
 
 .medium-button{
@@ -42,11 +45,9 @@
 }
 
 .button-mail{
-
     background-color:#f15c22;
     transition: all 0.3s ease;
 }
-
 
 .button-3{
     border: 2px solid #f15c22;
@@ -56,9 +57,9 @@
 .button-1,
 .button-2,
 .button-3 {
-    font-size: 18px;
-     padding: 15px 0px;
     @extend .general-button;
+    font-size: 16px;
+    padding: 10px 0px;
 }
 
 
@@ -74,11 +75,8 @@
 .button-1 span,
 .button-2 span,
 .button-3 span{
-
     padding: 0px 40px;
 }
-
-
 
 .button-1 span,
 .button-2 span,
@@ -145,7 +143,7 @@
 
 .padding-button-cursos{
 
-      padding:5px 40px;
+      padding:5px 40px; 
 }
 
 .button-mail:hover{
@@ -170,13 +168,15 @@
 }
 
 
-
 .mail-cursos{
     background-image:url(../imagenes/mail-b.svg);
     background-position: center;
     background-size:contain;
     background-repeat:no-repeat;
+}
 
-
+a.icono-rectangular:hover{
+    opacity: .6;
+    transition: all 0.3s ease;
 }
 
