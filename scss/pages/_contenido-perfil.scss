@@ -55,7 +55,7 @@ Perfil - sobre mi - OTROS
     width: 20%;
 }
 
-.celda-ultima {
+.no-float {
     float:none;
 }
 /* SE PODRÍA DIVIDIR ASÍ, para que pagina sirven?
@@ -131,4 +131,16 @@ form.turnos {
 
 .center{
     margin: 0 auto;
+}
+
+.texto-valoraciones{
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.imagen-valoraciones{
+    display: inline-block;
+    width: 15%;
+    margin-right: 20px;
 }

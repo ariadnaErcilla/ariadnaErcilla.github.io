@@ -19,10 +19,13 @@
 .general-button:hover{
     background-color:#404041;
 }
+
 .full-button{
     display:block;
-    width: 100%;
+    width: 80%;
     padding: 20px 10px;
+    margin: 0 auto 8px;
+    /*he añadido margin 0 auto y cambiado width a 80%. Si fastidia a alguien, avisar y pongo una clase solo para mi */
 }
 
 .medium-button{
@@ -42,11 +45,9 @@
 }
 
 .button-mail{
-
     background-color:#f15c22;
     transition: all 0.3s ease;
 }
-
 
 .button-3{
     border: 2px solid #f15c22;
@@ -56,9 +57,9 @@
 .button-1,
 .button-2,
 .button-3 {
-    font-size: 18px;
-     padding: 15px 0px;
     @extend .general-button;
+    font-size: 16px;
+    padding: 10px 0px;
 }
 
 
@@ -74,11 +75,8 @@
 .button-1 span,
 .button-2 span,
 .button-3 span{
-
     padding: 0px 40px;
 }
-
-
 
 .button-1 span,
 .button-2 span,
@@ -90,28 +88,62 @@
     color:#f15c22;
 }
 
-.button-mail span{
-
-    font-size:1rem;
-    margin-left:14px;
-}
-
-.container-mail{
-    position: absolute;
-    margin:60px auto;
-    left:0;
-    right:0;
-    width: 50%;
-}
 
 .button-mail {
+    position: absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:-15px;
+    width: 50%;
     border-radius: 5px;
-    width: 100%;
     transition: all 0.3s ease;
     height: 30px;
     border:none;
-    margin:0;
+    text-align: center;
+  
+    span{
+        background-image:url(../imagenes/mail-b.svg);
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size: contain;
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 
+
+    &.mail-alumnos {
+        text-align: center;
+
+        span {
+            width: 120px;
+            text-align: right;
+            background-position: left center;
+            height: 20px;
+
+            strong {
+                line-height: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+}
+.padding-button-anuncios{
+
+    padding:7px 0px;
+}
+
+.padding-button-cursos{
+
+      padding:5px 40px; 
 }
 
 .button-mail:hover{
@@ -136,21 +168,15 @@
 }
 
 
-.mail-alumnos{
-
-    background-image:url(../imagenes/mail-b.svg);
-    background-position: left;
-    background-size:contain;
-    background-repeat:no-repeat;
-
-}
-
 .mail-cursos{
     background-image:url(../imagenes/mail-b.svg);
     background-position: center;
     background-size:contain;
     background-repeat:no-repeat;
+}
 
-
+a.icono-rectangular:hover{
+    opacity: .6;
+    transition: all 0.3s ease;
 }
 

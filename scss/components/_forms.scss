@@ -3,11 +3,9 @@ Text inputs and text areas
 --------*/
 
 .pform{
-
     padding-top: 20px;
     margin: 0;
 }
-
 
 .caja-formulario{
     clear: both;
@@ -43,16 +41,15 @@ select {
 }
 
 #input-footer{
-
     width: 100%;
     background: white;
     border: 1px solid black;
     height: 20px;
 }
+
 #search-box{
-
-
 }
+
 /*----------
 Checkboxes, selects
 ----------*/
@@ -65,12 +62,9 @@ Checkboxes, selects
     clear: both;
 }
 .form-check span{
-
     color:#404041;
     margin-left: 3px;
-
 }
-
 
 .box-check{
      position: relative;

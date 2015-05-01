@@ -558,22 +558,24 @@
             </div>
     </div>
 </section>
-<section class="sg-fondo-blanco">
+</div>
+<section class="sg-fondo-blanco sg-container-full">
 <h2 class="sg-subtitle-style-guide">Header</h2>
 
-    <header>
+   <header>
         <div class="logo">
             <a href="index.html">
                 <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
         </div>
             <nav class="menu cf">
-                <div class="float-menu">
+                <div class="left">
                     <ul>
                         <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
                         <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
                         <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
+                <div class="right">
                 <div class="registro">
                     <ul>
                         <li><a href="#login">Log in</a></li>
@@ -588,20 +590,20 @@
                         <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
                     </a>
                 </div>
+            </div>
             </nav>
             <div class="buscador-desplegado cf">
                 <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
                 <div class="buscador-container-derecha cf">
-                    <div>
-
-                    </div>
                     <a href="#">
-                        <img class="imagen-cerrar-buscador" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
+                        <img class="imagen-cerrar-buscador left" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
                     </a>
+                    <div class="container-button-buscador right">
+                        <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                    </div>
                 </div>
             </div>
     </header>
-</section>
 <div class="sg-float-none sg-margin-bottom">
 <h2 class="sg-subtitle-style-guide">Footer</h2>
 <footer>
@@ -635,7 +637,6 @@
     </footer>
 </div>
 </section>
-</div>
 <script>
     $('td .icono-tabla-off').click(function() {
         $(this).hide();
