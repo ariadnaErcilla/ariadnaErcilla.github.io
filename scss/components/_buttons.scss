@@ -57,9 +57,9 @@
 .button-1,
 .button-2,
 .button-3 {
-    font-size: 16px;
-     padding: 15px 0px;
     @extend .general-button;
+    font-size: 16px;
+    padding: 10px 0px;
 }
 
 
@@ -131,13 +131,11 @@
     background-color:#f15c22;
 }
 
-
 .mail-alumnos{
     background-image:url(../imagenes/mail-b.svg);
     background-position: left;
     background-size:contain;
     background-repeat:no-repeat;
-
 }
 
 .mail-cursos{
@@ -145,7 +143,10 @@
     background-position: center;
     background-size:contain;
     background-repeat:no-repeat;
+}
 
-
+a.icono-rectangular:hover{
+    opacity: .6;
+    transition: all 0.3s ease;
 }
 

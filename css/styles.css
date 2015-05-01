@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .type-color-1 {
   color: #00A6A5; }
 
@@ -57,7 +58,7 @@
 
 .secondary-subtitle {
   font-size: 0.875rem;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0;
   color: #404041; }
 
@@ -526,7 +527,7 @@ test anuncio
 .button-2,
 .button-3 {
   font-size: 16px;
-  padding: 15px 0px; }
+  padding: 10px 0px; }
 
 .button-1,
 .button-2,
@@ -596,6 +597,10 @@ test anuncio
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
+
+a.icono-rectangular:hover {
+  opacity: .6;
+  transition: all 0.3s ease; }
 
 /*--------
 Text inputs and text areas
@@ -897,7 +902,7 @@ td {
   display: table-cell;
   vertical-align: top;
   border: rgba(51, 51, 51, 0.15) 0 solid;
-  border-width: 20px 20px 0 0; }
+  border-width: 20px 20px 20px 0; }
 
 .cabecera-cursos {
   padding-top: 50px;
@@ -1232,7 +1237,7 @@ Perfil - sobre mi - OTROS
   padding-right: 20px;
   width: 20%; }
 
-.celda-ultima {
+.no-float {
   float: none; }
 
 /* SE PODRÍA DIVIDIR ASÍ, para que pagina sirven?
@@ -6380,8 +6385,8 @@ contenedores anuncios
 .icono-rectangular {
   background-size: contain;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-right: 6px; }
 
 .icono-stars {
