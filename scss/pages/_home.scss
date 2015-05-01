@@ -2,29 +2,25 @@
 	margin: 0 auto;
 	margin-top: 50px;
 }
-
-
 .fondo-img-top {
-    background-image: url(../imagenes/portada_home.jpg);
-    height: 610px;
+    background-image: url(../imagenes/portada-home.png);
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
 	position: relative;
 }
 
 .contenido-top {
-	margin: 0 auto;
+    margin: 0 auto;
 	width: 100%;
 	top:100px;
-	position:absolute;
 }
 
 .texto-top{
 	text-align: center;
 	padding-bottom: 90px;
-	width: 50%;
-	margin: 0 auto;
-    float: left;
+	width: 30%;
+	margin: 40px 30px 0px 30px;
     position: relative;
 }
 .container-button{
