@@ -5,6 +5,9 @@
 .type-color-2 {
   color: #F15C22; }
 
+.type-color-2.hover {
+  opacity: 0.8; }
+
 .type-color-3 {
   color: #FFFFFF; }
 
@@ -274,6 +277,9 @@ body {
   border-top: 1px solid #999;
   margin-top: 20px; }
 
+.block {
+  display: block; }
+
 .todos-anuncios {
   float: right;
   width: 83%;
@@ -514,7 +520,7 @@ test anuncio
   display: block;
   width: 80%;
   padding: 20px 10px;
-  margin: 0 auto 8px; }
+  margin-bottom: 10px; }
 
 .medium-button {
   width: 25%; }
@@ -1338,7 +1344,7 @@ form.turnos {
 
 .imagen-hover:hover {
   opacity: .6;
-  transition: all 0.3s ease; }
+  transition: all 0.1s ease; }
 
 .img-top {
   margin: 0 auto;
@@ -6442,6 +6448,12 @@ contenedores anuncios
   height: 35px;
   margin-right: 6px; }
 
+.icono-tabla {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain; }
+
 .icono-stars {
   width: 86px;
   height: 10px; }
@@ -6465,11 +6477,5 @@ contenedores anuncios
 a.icono-rectangular:hover {
   opacity: .6;
   transition: all 0.3s ease; }
-
-.icono-tabla {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  background-size: contain; }
 
 /*# sourceMappingURL=styles.css.map */

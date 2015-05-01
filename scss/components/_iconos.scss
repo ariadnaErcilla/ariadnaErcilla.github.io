@@ -210,7 +210,7 @@
 
 .lapiz {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxNC41OTRweCIgaGVpZ2h0PSIxNC40NjRweCIgdmlld0JveD0iMCAwIDE0LjU5NCAxNC40NjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0LjU5NCAxNC40NjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxnPjxwYXRoIGZpbGw9IiNGMTVEMjIiIGQ9Ik05LjA2MiwyLjUwNWwyLjkzNCwyLjkzNGwtNy40MjcsNy40MjhMMS42MzYsOS45MzJMOS4wNjIsMi41MDV6IE0xNC4yMjMsMS43OThsLTEuMzA5LTEuMzFjLTAuNTA2LTAuNTA1LTEuMzI2LTAuNTA1LTEuODM0LDBMOS44MjgsMS43NDRsMi45MzQsMi45MzNsMS40NjEtMS40NjFDMTQuNjE1LDIuODIyLDE0LjYxNSwyLjE5LDE0LjIyMywxLjc5OHogTTAuMTAyLDE0LjA1OWMtMC4wNTUsMC4yNCwwLjE2MywwLjQ1NSwwLjQwMywwLjM5NmwzLjI2OS0wLjc5NWwtMi45MzItMi45MzJMMC4xMDIsMTQuMDU5eiIvPjwvZz48L2c+PC9zdmc+);
-     background-size:contain;
+    background-size:contain;
 }
 
 .estrellas-anuncios-1 {
@@ -321,6 +321,14 @@ contenedores anuncios
     margin-right: 6px;
 }
 
+.icono-tabla{
+    @extend .icono;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+}
+
 .icono-stars{
     width: 86px;
     height: 10px;
@@ -348,11 +356,4 @@ contenedores anuncios
 a.icono-rectangular:hover{
     opacity: .6;
     transition: all 0.3s ease;
-}
-.icono-tabla{
-    @extend .icono;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-size: contain;
 }
