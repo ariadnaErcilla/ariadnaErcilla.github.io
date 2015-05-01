@@ -22,10 +22,18 @@
 
 .full-button{
     display:block;
+    width: 100%;
+    padding: 20px 10px;
+    
+
+}
+
+.large-button{
+    display:block;
     width: 80%;
     padding: 20px 10px;
     margin: 0 auto 8px;
-    /*he añadido margin 0 auto y cambiado width a 80%. Si fastidia a alguien, avisar y pongo una clase solo para mi */
+
 }
 
 .medium-button{
@@ -101,7 +109,7 @@
     height: 30px;
     border:none;
     text-align: center;
-  
+
     span{
         background-image:url(../imagenes/mail-b.svg);
         background-position: center center;
@@ -168,8 +176,5 @@
     background-repeat:no-repeat;
 }
 
-a.icono-rectangular:hover{
-    opacity: .6;
-    transition: all 0.3s ease;
-}
+
 
