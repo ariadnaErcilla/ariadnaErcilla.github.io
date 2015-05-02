@@ -70,5 +70,14 @@ body {
 }
 
 .block{
-  display: block;
+    display: block;
+}
+
+.in-line{
+    display: inline-block;
+}
+
+.opacity-hover:hover{
+    opacity: .6;
+    transition: all 0.1s ease;
 }
