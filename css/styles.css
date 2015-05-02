@@ -432,6 +432,59 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
+/*-------
+grid
+---------*/
+@media screen and (max-width: 1100px) {
+  .cabecera-cursos {
+    padding-top: 60px;
+    width: 90%;
+    margin: 0 auto; }
+
+  .cabecera-alumnos {
+    padding-top: 60px;
+    width: 50%;
+    margin: 0 auto; } }
+@media screen and (min-width: 1101px) {
+  .cabecera-cursos {
+    width: 70%; }
+
+  .cabecera-alumnos {
+    width: 50%; } }
+@media screen and (max-width: 966px) {
+  .filtros {
+    display: none; }
+
+  .todos-anuncios {
+    width: 100%;
+    float: none; }
+
+  .filtros-hide-tablet {
+    display: block; }
+
+  .anuncio:hover .hover-container {
+    display: none; } }
+@media screen and (min-width: 967px) {
+  .filtros-hide-tablet {
+    display: none; } }
+@media screen and (max-width: 850px) {
+  .cabecera-cursos {
+    width: 100%; } }
+@media screen and (max-width: 780px) {
+  .muneco-busqueda {
+    display: none; }
+
+  .hide-sub {
+    display: none; }
+
+  .container-ordenar {
+    display: none; }
+
+  .ordenar-title {
+    display: block; } }
+@media screen and (min-width: 780px) {
+  .ordenar-title {
+    display: none; } }
 /*.botones-perfil{
     padding: 40px 0;
     margin: 0 auto;
@@ -879,7 +932,6 @@ td {
 
 .cabecera-cursos {
   padding-top: 60px;
-  width: 70%;
   margin: 0 auto; }
 
 .cabecera-alumnos {
@@ -984,6 +1036,47 @@ aside categorias
 .checkbox {
   padding: 0px;
   margin-top: 20px; }
+
+.filtros-hide-tablet {
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 30px; }
+
+.filtros-2 {
+  display: none; }
+
+.filtros-3 {
+  display: none; }
+
+.grupo-iconos {
+  width: 33%; }
+
+.categorias-hide {
+  padding-top: 30px; }
+
+.categorias-hide-2 {
+  padding-top: 25px; }
+
+.flecha-abrir {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #404041;
+  margin: 23px 0px 0px 10px;
+  cursor: pointer; }
+
+.flecha-cerrar {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #404041;
+  margin: 23px 0px 0px 10px;
+  cursor: pointer;
+  display: none; }
+
+.container-ordenar-mobile {
+  display: none; }
 
 /*--------
 
@@ -1164,6 +1257,9 @@ ul {
 
 .container-button-buscador {
   width: 40%; }
+
+.float-menu {
+  float: left; }
 
 /*-----
 general
@@ -1884,7 +1980,7 @@ img {
 
   .medium-6 {
     width: 50%;
-    height: 450px; }
+    height: 495px; }
 
   .medium-7 {
     width: 58.33333%; }

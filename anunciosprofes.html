@@ -19,6 +19,8 @@
   ga('send', 'pageview');
 
   </script>
+   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
         </div>
             <nav class="menu cf">
-                <div class="left">
+                <div class="float-menu">
                     <ul>
                         <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
                         <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
@@ -64,6 +66,7 @@
                 </div>
             </div>
     </header>
+
 <div id="recuperar" class="masc">
     <div class="todopopup todopopup-image">
         <div class="popupbox movedown">
@@ -508,10 +511,185 @@
          <div class="muneco-busqueda left"></div>
         <div class="contenido-titulo cf">
             <h1 class="title type-color-1">Encuentra tu curso</h1>
-            <p class="subtitle">Busca el curso que te interesa según tu área creativa y contacta con el profesor </p>
+            <p class="subtitle hide-sub">Busca el curso que te interesa según tu área creativa y contacta con el profesor </p>
         </div>
     </div>
     <a class="button-2 right margin-top type-color-3" href="#"><span>Publica tu curso</span></a></button>
+</div>
+<div class="filtros-hide-tablet background-4 cf">
+    <div class="left">
+    <p class="uppercase left"><strong>Filtrar por</strong></p>
+        <div id="abrir-filtros" class="flecha-abrir left"><a id="abrir-cerrar-filtros" href=""></a></div>
+        <div id="cerrar-filtros" class="flecha-cerrar left"><a id="abrir-cerrar-filtros" href=""></a></div>
+    </div>
+    <div class="ordenar-title right">
+        <p class="uppercase left"><strong>Ordenar por</strong></p>
+        <div id="abrir-ordenar" class="flecha-abrir left"><a id="abrir-cerrar-filtros" href=""></a></div>
+        <div id="cerrar-ordenar" class="flecha-cerrar left"><a id="abrir-cerrar-filtros" href=""></a></div>
+    </div>
+    <div class="filtros-2 clear">
+             <div class="categorias-hide cf">
+             <h2 class="secondary-title">Categorías</h2>
+             <hr>
+                <div class="lista-categorias">
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-c cf">
+                            <span class="icono left arquitectura-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left animacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left audiovisual-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left industrial-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left grafico-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left moda-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left web-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left foto-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left programacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="categorias-hide-2 cf clear">
+                   <h2 class="secondary-title">Disponibilidad</h2>
+                   <hr>
+                   <div class="lista-categorias">
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left manana icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left tarde icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left noche icono-margin"></span>
+                        <a class="type-color-5" href="">
+                            <p class="categorias-menu">Noche</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias-hide-2 cf clear">
+                <h2 class="secondary-title">Método de clase</h2>
+                <hr>
+                <form class="checkbox">
+                    <p class="grupo-iconos left"><input type="checkbox">Presencial</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">Videollamada</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">E-mail</p>
+                </form>
+            </div>
+        </div>
+    <div class="filtros-3 clear">
+             <div class="categorias-hide cf">
+             <h2 class="secondary-title">Categorías</h2>
+             <hr>
+                <div class="lista-categorias">
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-c cf">
+                            <span class="icono left arquitectura-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left animacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left audiovisual-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left industrial-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left grafico-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left moda-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left web-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left foto-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left programacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="categorias-hide-2 cf clear">
+                   <h2 class="secondary-title">Disponibilidad</h2>
+                   <hr>
+                   <div class="lista-categorias">
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left manana icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left tarde icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left noche icono-margin"></span>
+                        <a class="type-color-5" href="">
+                            <p class="categorias-menu">Noche</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias-hide-2 cf clear">
+                <h2 class="secondary-title">Método de clase</h2>
+                <hr>
+                <form class="checkbox">
+                    <p class="grupo-iconos left"><input type="checkbox">Presencial</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">Videollamada</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">E-mail</p>
+                </form>
+            </div>
+        </div>
+    <div class="container-ordenar-mobile clear">
+            <ul class="menu-ordenar cf">
+                    <li><a class="type-color-5 reciente" href="">Más recientes</a></li>
+                    <li><a class="type-color-5 popular" href="">Más populares</a></li>
+                    <li><a class="type-color-5 puntuado" href="">Mejor puntuados</a></li>
+            </ul>
+    </div>
 </div>
 <div class="background-4 cf clear">
 <div class="container">
@@ -522,15 +700,15 @@
                     <div class="lista-categorias">
                         <div class="iconos-cat cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="cat-1 type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <a class="cat-2 type-color-5" href=""><p class="categorias-menu">Animación</p></a>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="cat-3 type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
@@ -1489,7 +1667,7 @@
 </footer>
    <script type="text/javascript">
 
-        $('#abrir').click(function(e){
+    $('#abrir').click(function(e){
         $('.buscador-desplegado').show();
         return false;
     });
@@ -1498,6 +1676,34 @@
         $('.buscador-desplegado').hide();
         return false;
     });
+
+     $('#abrir-filtros').click(function(e){
+        $(this).hide();
+        $('#cerrar-filtros').show();
+        $('.filtros-2').show();
+        return false;
+    });
+
+      $('#cerrar-filtros').click(function(e){
+        $(this).hide();
+        $('#abrir-filtros').show();
+        $('.filtros-2').hide();
+        return false;
+    });
+     $('#abrir-ordenar').click(function(e){
+        $(this).hide();
+        $('#cerrar-ordenar').show();
+        $('.container-ordenar-mobile').show();
+        return false;
+    });
+
+      $('#cerrar-ordenar').click(function(e){
+        $(this).hide();
+        $('#abrir-ordenar').show();
+        $('.container-ordenar-mobile').hide();
+        return false;
+    });
+   
     </script>
 </body>
 </html>

@@ -211,3 +211,100 @@ Anuncio ampliado
 
 }
 
+/*-------
+grid
+---------*/
+
+@media screen and (max-width: 1100px){
+         
+            .cabecera-cursos{
+                padding-top:60px;
+                width: 90%;
+                margin:0 auto;
+            }
+            .cabecera-alumnos{
+
+                padding-top:60px;
+                width: 50%;
+                margin:0 auto;
+            }
+           
+    }
+
+    @media screen and (min-width: 1101px) {
+        
+        .cabecera-cursos{
+                    width: 70%;
+                   
+                }
+        .cabecera-alumnos{
+                    width: 50%;
+                  
+                }
+}
+@media screen and (max-width: 966px){
+
+            .filtros {
+                display: none;
+            }
+            .todos-anuncios{
+                width: 100%;
+                float: none;
+            }
+            .filtros-hide-tablet {
+                display: block;
+            }
+            .anuncio:hover{
+                .hover-container{
+                     display: none;
+                }
+               
+            }
+}
+
+@media screen and (min-width: 967px){
+
+    .filtros-hide-tablet {
+                display: none;
+        }
+
+}
+
+
+@media screen and (max-width: 850px){
+    
+        .cabecera-cursos{
+                    width: 100%;
+                   
+        }
+    }
+
+@media screen and (max-width: 780px){
+    
+        .muneco-busqueda{
+                display:none;
+                   
+                }
+        .hide-sub{
+
+            display: none;
+        }
+        .container-ordenar{
+
+            display:none;
+        }
+        .ordenar-title{
+
+            display: block;
+        }
+       
+}
+
+@media screen and (min-width: 780px){
+
+    .ordenar-title {
+                display: none;
+        }
+          
+}
+
