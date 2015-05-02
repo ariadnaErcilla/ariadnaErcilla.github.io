@@ -1087,33 +1087,42 @@ header {
   background-color: white; }
 
 .img-logo {
-  width: 100%;
+  width: 80%;
   margin: 10px; }
 
 ul {
   padding-left: 10px; }
 
-@media screen and (max-width: 966px) {
-  .logo {
-    min-width: 100px; }
-
-  .float-menu {
+@media screen and (max-width: 1090px) {
+  li {
+    max-width: 100px; } }
+@media screen and (max-width: 900px) {
+  ul {
     display: none; }
 
   .registro {
     display: none; } }
-@media screen and (min-width: 967px) {
+@media screen and (min-width: 899px) {
   .imagen-desplegable {
     display: none; } }
 @media screen and (max-width: 815px) {
-  .imagen-cerrar-buscador {
-    margin-left: 20px; }
-
   .input-buscador {
     margin-left: 10px; }
 
   .buscador {
-    background-color: black; } }
+    background-color: black; }
+
+  .menu {
+    max-width: 30%; }
+
+  .logo {
+    max-width: 162px; }
+
+  #input-buscador {
+    width: 50%; }
+
+  .container-button-buscador {
+    min-width: 70px; } }
 .logo {
   float: left; }
 
@@ -1158,7 +1167,7 @@ ul {
   max-width: 35px; }
 
 .lupa-buscador {
-  float: left;
+  float: right;
   margin-bottom: 10px; }
 
 #input-buscador {
@@ -1173,7 +1182,7 @@ ul {
   margin: 10px 0px 10px 0px; }
 
 .imagen-cerrar-buscador {
-  margin-left: 40px;
+  margin-left: 5px;
   padding-top: 5px;
   max-width: 35px; }
 
