@@ -27,7 +27,7 @@
 .content-container{
 
     padding:10px 20px 0px 20px;
-   
+
 }
 .content-container-cursos{
 
@@ -76,6 +76,11 @@ Buscador
     position: relative;
     padding: 15px;
 }
+.especial{
+    float: left;
+    width:100%;
+    margin-top: 5px;
+}
 
 .container-anuncios-buscador{
     background-color: white;
@@ -86,7 +91,7 @@ Buscador
 .container-imagen-button{
     float: left;
     width: 25%;
-    margin: 10px;
+    margin: 15px;
 }
 .imagen-anuncios-buscador{
     width: 100%;
@@ -97,7 +102,8 @@ Buscador
 .texto-anuncios-buscador{
     float: right;
     width: 65%;
-    margin: 10px;
+    margin-top: 25px;
+    margin-left: 5px;
 
 }
 .container-dudas-cursos{
@@ -107,6 +113,7 @@ Buscador
 }
 .container-cantidad{
     float: left;
+    width: 100%;
     margin-right: 10px;
     margin-top: 10px;
 }
