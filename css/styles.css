@@ -452,7 +452,6 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
-<<<<<<< HEAD
 /*-------
 grid
 ---------*/
@@ -506,13 +505,6 @@ grid
 @media screen and (min-width: 780px) {
   .ordenar-title {
     display: none; } }
-/*.botones-perfil{
-    padding: 40px 0;
-    margin: 0 auto;
-    width: 79%;
-}*/
-=======
->>>>>>> bbb4592458641daf99f552d52ded2cc6ba966e8e
 .boton-margen {
   margin-bottom: 10px; }
 
@@ -1138,18 +1130,26 @@ footer {
 .icono-pie {
   width: 100%; }
 
+.iconos {
+  width: 160px;
+  margin: 0 auto; }
+
 .red-social {
   float: left;
   padding: 0 10px 0 0; }
 
-.newsletter {
-  margin: 0 auto;
+.newsletter-input {
+  width: 205px;
   padding-top: 10px; }
+
+.newsletter {
+  width: 280px;
+  margin: 0 auto; }
 
 .caja-footer {
   float: left; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .mini-box-pie {
     width: 100%;
     text-align: center; }
@@ -1157,7 +1157,7 @@ footer {
   .terms {
     text-align: center; }
 
-  .newsletter {
+  .newsletter-input {
     margin: 0 auto;
     width: 280px; }
 
@@ -1188,33 +1188,42 @@ header {
   background-color: white; }
 
 .img-logo {
-  width: 100%;
+  width: 80%;
   margin: 10px; }
 
 ul {
   padding-left: 10px; }
 
-@media screen and (max-width: 966px) {
-  .logo {
-    min-width: 100px; }
-
-  .float-menu {
+@media screen and (max-width: 1090px) {
+  li {
+    max-width: 100px; } }
+@media screen and (max-width: 900px) {
+  ul {
     display: none; }
 
   .registro {
     display: none; } }
-@media screen and (min-width: 967px) {
+@media screen and (min-width: 899px) {
   .imagen-desplegable {
     display: none; } }
 @media screen and (max-width: 815px) {
-  .imagen-cerrar-buscador {
-    margin-left: 20px; }
-
   .input-buscador {
     margin-left: 10px; }
 
   .buscador {
-    background-color: black; } }
+    background-color: black; }
+
+  .menu {
+    max-width: 30%; }
+
+  .logo {
+    max-width: 162px; }
+
+  #input-buscador {
+    width: 50%; }
+
+  .container-button-buscador {
+    min-width: 70px; } }
 .logo {
   float: left; }
 
@@ -1259,7 +1268,7 @@ ul {
   max-width: 35px; }
 
 .lupa-buscador {
-  float: left;
+  float: right;
   margin-bottom: 10px; }
 
 #input-buscador {
@@ -1274,7 +1283,7 @@ ul {
   margin: 10px 0px 10px 0px; }
 
 .imagen-cerrar-buscador {
-  margin-left: 40px;
+  margin-left: 5px;
   padding-top: 5px;
   max-width: 35px; }
 

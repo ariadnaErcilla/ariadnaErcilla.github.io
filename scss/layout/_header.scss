@@ -5,7 +5,7 @@ header {
 }
 
 .img-logo {
-    width: 100%;
+    width: 80%;
     margin: 10px;
 }
 
@@ -13,33 +13,45 @@ ul {
     padding-left: 10px;
 }
 
-@media screen and (max-width: 966px){
-            .logo {
-                min-width: 100px;
-            }
-            .float-menu {
-                display: none;
-            }
-            .registro {
-                display: none;
-            }
+@media screen and (max-width: 1090px){
+        li {
+                max-width: 100px;
+        }
     }
 
-    @media screen and (min-width: 967px) {
+    @media screen and (max-width: 900px) {
+        ul {
+            display: none;
+        }
+        .registro {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 899px) {
         .imagen-desplegable {
                 display: none;
-            }
+        }
     }
 
     @media screen and (max-width: 815px){
-        .imagen-cerrar-buscador {
-            margin-left: 20px;
-        }
         .input-buscador {
             margin-left: 10px;
         }
         .buscador {
             background-color: black;
+        }
+        .menu {
+            max-width: 30%;
+        }
+        .logo {
+            max-width: 162px;
+        }
+        #input-buscador {
+            width: 50%;
+        }
+        .container-button-buscador {
+            min-width: 70px;
         }
     }
 
@@ -53,7 +65,6 @@ ul {
     float: right;
     margin-right: 20px;
     width: 70%;
-  
 }
 
 .menu ul li {
@@ -98,12 +109,11 @@ ul {
 }
 
 .lupa-buscador {
-    float: left;
+    float: right;
     margin-bottom: 10px;
 }
 
 #input-buscador {
-    //no funciona el background: white;
     margin: 15px 0px 15px 50px;
     max-width: 60%;
     float: left;
@@ -117,16 +127,18 @@ ul {
 }
 
 .imagen-cerrar-buscador {
-    margin-left: 40px;
+    margin-left: 5px;
     padding-top: 5px;
     max-width: 35px;
 }
-.container-button-buscador{
 
+.container-button-buscador {
     width: 40%;
+
     
 }
 .float-menu{
 
     float:left;
+
 }
