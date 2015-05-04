@@ -21,21 +21,31 @@ footer {
     width: 100%;
 }
 
+.iconos {
+    width: 160px;
+    margin: 0 auto;
+}
+
 .red-social {
     float:left;
     padding: 0 10px 0 0;
 }
 
-.newsletter {
-    margin: 0 auto;
+.newsletter-input {
+    width: 205px;
     padding-top: 10px;
+}
+
+.newsletter {
+    width: 280px;
+    margin: 0 auto;
 }
 
 .caja-footer {
     float: left;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
             .mini-box-pie {
                 width: 100%;
                 text-align: center;
@@ -43,7 +53,7 @@ footer {
             .terms {
                 text-align: center;
             }
-            .newsletter {
+            .newsletter-input {
                 margin: 0 auto;
                 width: 280px;
             }

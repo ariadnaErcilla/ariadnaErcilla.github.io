@@ -19,6 +19,8 @@
   ga('send', 'pageview');
 
   </script>
+   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
         </div>
             <nav class="menu cf">
-                <div class="left">
+                <div class="float-menu">
                     <ul>
                         <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
                         <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
@@ -64,6 +66,7 @@
                 </div>
             </div>
     </header>
+
 <div id="recuperar" class="masc">
     <div class="todopopup todopopup-image">
         <div class="popupbox movedown">
@@ -503,18 +506,197 @@
         </div>
     </div>
 </div>
+
 <div class="cabecera-cursos cf">
     <div class="titulo-encabezado-1 left cf">
          <div class="muneco-busqueda left"></div>
         <div class="contenido-titulo cf">
-            <h1 class="title type-color-1">Encuentra tu curso</h1>
-            <p class="subtitle">Busca el curso que te interesa según tu área creativa y contacta con el profesor </p>
+            <h1 class="title type-color-1 title-margin">Encuentra tu curso</h1>
+            <p class="subtitle hide-sub">Busca el curso que te interesa según tu área creativa y contacta con el profesor </p>
         </div>
     </div>
-    <a class="button-2 right margin-top type-color-3" href="#"><span>Publica tu curso</span></a></button>
+    <div class="container-button-title">
+    <a class="button-2 margin-top type-color-3" href="#"><span>Publica tu curso</span></a></button>
 </div>
+</div>
+<div class="filtros-hide-tablet background-4 cf">
+    <div class="left">
+    <p class="uppercase left"><strong>Filtrar por</strong></p>
+        <div id="abrir-filtros" class="flecha-abrir left"><a id="abrir-cerrar-filtros" href=""></a></div>
+        <div id="cerrar-filtros" class="flecha-cerrar left"><a id="abrir-cerrar-filtros" href=""></a></div>
+    </div>
+    <div class="ordenar-title right">
+        <p class="uppercase left"><strong>Ordenar por</strong></p>
+        <div id="abrir-ordenar" class="flecha-abrir left"><a id="abrir-cerrar-filtros" href=""></a></div>
+        <div id="cerrar-ordenar" class="flecha-cerrar left"><a id="abrir-cerrar-filtros" href=""></a></div>
+    </div>
+    <div class="filtros-2 clear">
+             <div class="categorias-hide cf">
+             <h2 class="secondary-title">Categorías</h2>
+             <hr>
+                <div class="lista-categorias">
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-c cf">
+                            <span class="icono left arquitectura-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left animacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left audiovisual-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left industrial-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left grafico-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left moda-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left web-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left foto-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left programacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="categorias-hide-2 cf clear">
+                   <h2 class="secondary-title">Disponibilidad</h2>
+                   <hr>
+                   <div class="lista-categorias">
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left manana icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left tarde icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left noche icono-margin"></span>
+                        <a class="type-color-5" href="">
+                            <p class="categorias-menu">Noche</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias-hide-2 cf clear">
+                <h2 class="secondary-title">Método de clase</h2>
+                <hr>
+                <form class="checkbox">
+                    <p class="grupo-iconos left"><input type="checkbox">Presencial</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">Videollamada</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">E-mail</p>
+                </form>
+            </div>
+        </div>
+    <div class="filtros-3 clear">
+             <div class="categorias-hide cf">
+             <h2 class="secondary-title">Categorías</h2>
+             <hr>
+                <div class="lista-categorias">
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-c cf">
+                            <span class="icono left arquitectura-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left animacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left audiovisual-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left industrial-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left grafico-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left moda-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
+                        </div>
+                    </div>
+                    <div class="left grupo-iconos cf">
+                        <div class="iconos-cat cf">
+                            <span class="icono left web-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left foto-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
+                        </div>
+                        <div class="iconos-cat cf">
+                            <span class="icono left programacion-b icono-margin"></span>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="categorias-hide-2 cf clear">
+                   <h2 class="secondary-title">Disponibilidad</h2>
+                   <hr>
+                   <div class="lista-categorias">
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left manana icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left tarde icono-margin"></span>
+                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
+                    </div>
+                    <div class="grupo-iconos left cf">
+                        <span class="icono left noche icono-margin"></span>
+                        <a class="type-color-5" href="">
+                            <p class="categorias-menu">Noche</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="categorias-hide-2 cf clear">
+                <h2 class="secondary-title">Método de clase</h2>
+                <hr>
+                <form class="checkbox">
+                    <p class="grupo-iconos left"><input type="checkbox">Presencial</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">Videollamada</p>
+                    <p class=" grupo-iconos left"><input type="checkbox">E-mail</p>
+                </form>
+            </div>
+        </div>
+    <div class="container-ordenar-mobile clear">
+            <ul class="menu-ordenar cf">
+                    <li><a class="type-color-5 reciente" href="">Más recientes</a></li>
+                    <li><a class="type-color-5 popular" href="">Más populares</a></li>
+                    <li><a class="type-color-5 puntuado" href="">Mejor puntuados</a></li>
+            </ul>
+    </div>
+</div>
+
 <div class="background-4 cf clear">
-<div class="container">
+<div class="container cf">
     <div class="row">
             <div class="filtros">
                 <div class="categorias">
@@ -522,15 +704,15 @@
                     <div class="lista-categorias">
                         <div class="iconos-cat cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="cat-1 type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <a class="cat-2 type-color-5" href=""><p class="categorias-menu">Animación</p></a>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="cat-3 type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
+                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
                         </div>
                         <div class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
@@ -585,7 +767,7 @@
                 </form>
             </div>
         </div>
-        <div class="todos-anuncios">
+        <div class="todos-anuncios cf">
                  <div class="container-ordenar">
                     <ul class="menu-ordenar cf">
                         <li><strong>Ordenar por:</strong></li>
@@ -603,7 +785,7 @@
                                 <img class="img-curso" src="imagenes/anuncio-12.jpg">
                             </div>
                             <div class="hover-container">
-                                    <p>Te puedo enseñar a hacer un chroma bien compuesto con After Effects. Trabajaremos con las mejores herramientas y estoy a tu disposición para resolver las dudas que tengas. </p>
+                                    <p>Te puedo enseñar a hacer un chroma bien compuesto con After Effects. Trabajaremos con las herramientas y estoy a tu disposición para resolver las dudas. </p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -634,7 +816,7 @@
                                 </div>
                             </div></a>
                         </div>
-                           <a class="button-mail" href="#contactar">
+                           <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                         </div>
@@ -646,7 +828,7 @@
                             <img class="img-curso" src="imagenes/anuncio-20.jpg">
                         </div>
                            <div class="hover-container">
-                                    <p>Aprenderás cómo mejorar tus vídeos añadiendo efectos, animaciones, renderizar con alta resolución, etc. con Cinema 4D. Explícame tu caso y miramos como organizarnos. </p>
+                                    <p>Aprenderás cómo mejorar tus vídeos añadiendo efectos, renderizar con alta resolución, etc. con Cinema 4D. Explícame tu caso y miramos como organizarnos. </p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -675,7 +857,7 @@
                                     <span class="modificar type-color-2">(8)</span>
                                 </div>
                             </div></a>
-                          <a class="button-mail" href="#contactar">
+                          <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -699,7 +881,7 @@
                             </div></a>
                         <div class="content-container-cursos cf">
                             <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Animar videojuego en Unity</h2>
+                                <h2 class="secondary-title">Animación videojuego en Unity</h2>
                             </div>
                             <div class="mas-info">
                                 <div class="total-icono">
@@ -718,7 +900,7 @@
                                     <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div></a>
-                        <a class="button-mail" href="#contactar">
+                        <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -760,7 +942,7 @@
                                     <span class="modificar type-color-2">(10)</span>
                                 </div>
                             </div></a>
-                          <a class="button-mail" href="#contactar">
+                          <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -812,7 +994,7 @@
                                     <span class="modificar type-color-2">(5)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -825,7 +1007,7 @@
                             <img class="img-curso" src="imagenes/anuncio-14.jpg">
                         </div>
                             <div class="hover-container">
-                                    <p>No consigues exportar tu Autocad como te gustaría? El grosor de línea, la escala no es la correcta? En sólo 1 hora te enseñaré los pasos a seguir para sacar el mayor rendimiento a tu proyecto.</p>
+                                    <p>No consigues exportar tu Autocad como te gustaría? En sólo 1 hora te enseñaré los pasos a seguir para sacar el mayor rendimiento a tu proyecto.</p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -854,7 +1036,7 @@
                                     <span class="modificar type-color-2">(7)</span>
                                 </div>
                             </div></a>
-                          <a class="button-mail" href="#contactar">
+                          <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -867,7 +1049,7 @@
                             <img class="img-curso" src="imagenes/anuncio-7.jpg">
                         </div>
                             <div class="hover-container">
-                                    <p>En mis clases te enseñaré a usar el V-Ray como motor para renderizar para mejorar la calidad de los proyectos en Sketchup. Traete tu proyecto y lo mejoraremos en sólo 1 hora.</p>
+                                    <p>En mis clases te enseñaré a usar el V-Ray como motor para renderizar para mejorar la calidad de los proyectos en Sketchup. Traete tu proyecto y lo mejoraremos.</p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -896,7 +1078,7 @@
                                     <span class="modificar type-color-2">(16)</span>
                                 </div>
                             </div></a>
-                             <a class="button-mail" href="#contactar">
+                             <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -938,7 +1120,7 @@
                                     <span class="modificar type-color-2">(11)</span>
                                 </div>
                             </div></a>
-                          <a class="button-mail" href="#contactar">
+                          <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -951,7 +1133,7 @@
                             <img class="img-curso" src="imagenes/anuncio-17.jpg">
                         </div>
                            <div class="hover-container">
-                                    <p>Si te apetece entender cómo funciona el mundo de las impresoras 3D, cómo puedes preparar los archivos para imprimirlos con una impresora 3D o otras muchas cosas, contacta conmigo!</p>
+                                    <p>Si te apetece entender cómo funciona el mundo de las impresoras 3D, cómo puedes preparar los archivos para imprimirlos, contacta!</p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -980,7 +1162,7 @@
                                     <span class="modificar type-color-2">(3)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1022,7 +1204,7 @@
                                     <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div></a>
-                           <a class="button-mail" href="#contactar">
+                           <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1035,7 +1217,7 @@
                             <img class="img-curso" src="imagenes/anuncio-23.jpg">
                         </div>
                             <div class="hover-container">
-                                    <p>Si aún no controlas  cuando se tiene que exportar una imagen en .png .jpg .pdf y otras extensiones, en una sesión de una hora te explicaré los pros y los contras de cada extensión y cuando se usan. </p>
+                                    <p>Si aún no controlas  cuando se tiene que exportar una imagen en .png .jpg .pdf, en una sesión de una hora te explicaré los pros y los contras de cada extensión y cuando se usan. </p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -1064,7 +1246,7 @@
                                     <span class="modificar type-color-2">(11)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1077,7 +1259,7 @@
                             <img class="img-curso" src="imagenes/anuncio-22.jpg">
                         </div>
                             <div class="hover-container">
-                                    <p>Si tienes diseños con colores Pantone, cuatricomía pero no sabes como prepararlos para impremta, este es tu curso! Te enseñaré las bases para que haya una buena comunicación entre tu y el impresor!. </p>
+                                    <p>Si tienes diseños con colores Pantone, cuatricomía pero no sabes como prepararlos para impremta, este es tu curso! Te enseñaré las bases. Apúntate! </p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -1106,7 +1288,7 @@
                                     <span class="modificar type-color-2">(20)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1148,7 +1330,7 @@
                                     <span class="modificar type-color-2">(20)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1161,7 +1343,7 @@
                             <img class="img-curso" src="imagenes/anuncio-6.jpg">
                         </div>
                           <div class="hover-container">
-                                    <p>Si aún no conoces el potencial del Ilustrator, puedo enseñarte en pocas sesiones, las distintas herramientas que dispone el programa, desde diseños de logos, tipografías…</p>
+                                    <p>Si aún no conoces el potencial del Ilustrator, puedo enseñarte las distintas herramientas que dispone el programa, desde diseños de logos, tipografías…</p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -1190,7 +1372,7 @@
                                     <span class="modificar type-color-2">(20)</span>
                                 </div>
                             </div></a>
-                           <a class="button-mail" href="#contactar">
+                           <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1203,7 +1385,7 @@
                             <img class="img-curso" src="imagenes/anuncio-11.jpg">
                         </div>
                             <div class="hover-container">
-                                    <p>En sólo 1 hora te puedo enseñar a usar una de las herramientas más importantes de Indesign. Te permitirá agilizar mucho tus proyectos de maquetación de revistas. </p>
+                                    <p>Te puedo enseñar a usar una de las herramientas más importantes de Indesign. Te permitirá agilizar mucho tus proyectos de maquetación de revistas. </p>
                                     <div class="sub-contenido-curso">
                                         <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
                                         <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
@@ -1232,7 +1414,7 @@
                                     <span class="modificar type-color-2">(2)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1274,7 +1456,7 @@
                                     <span class="modificar type-color-2">(13)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1316,7 +1498,7 @@
                                     <span class="modificar type-color-2">(8)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1358,7 +1540,7 @@
                                     <span class="modificar type-color-2">(21)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1400,7 +1582,7 @@
                                     <span class="modificar type-color-2">(5)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1442,7 +1624,7 @@
                                     <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div></a>
-                            <a class="button-mail" href="#contactar">
+                            <a class="button-mail no-display" href="#contactar">
                                 <span></span>
                             </a>
                             </div>
@@ -1489,7 +1671,7 @@
 </footer>
    <script type="text/javascript">
 
-        $('#abrir').click(function(e){
+    $('#abrir').click(function(e){
         $('.buscador-desplegado').show();
         return false;
     });
@@ -1498,6 +1680,34 @@
         $('.buscador-desplegado').hide();
         return false;
     });
+
+     $('#abrir-filtros').click(function(e){
+        $(this).hide();
+        $('#cerrar-filtros').show();
+        $('.filtros-2').show();
+        return false;
+    });
+
+      $('#cerrar-filtros').click(function(e){
+        $(this).hide();
+        $('#abrir-filtros').show();
+        $('.filtros-2').hide();
+        return false;
+    });
+     $('#abrir-ordenar').click(function(e){
+        $(this).hide();
+        $('#cerrar-ordenar').show();
+        $('.container-ordenar-mobile').show();
+        return false;
+    });
+
+      $('#cerrar-ordenar').click(function(e){
+        $(this).hide();
+        $('#abrir-ordenar').show();
+        $('.container-ordenar-mobile').hide();
+        return false;
+    });
+   
     </script>
 </body>
 </html>
