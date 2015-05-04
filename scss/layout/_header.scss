@@ -9,18 +9,18 @@ header {
     margin: 10px;
 }
 
-ul {
+.menu ul{
     padding-left: 10px;
 }
 
 @media screen and (max-width: 1090px){
-        li {
+        .menu li{
                 max-width: 100px;
         }
     }
 
     @media screen and (max-width: 900px) {
-        ul {
+        .menu ul {
             display: none;
         }
         .registro {

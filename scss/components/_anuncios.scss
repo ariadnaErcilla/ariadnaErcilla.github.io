@@ -53,10 +53,10 @@
 .anuncio-destacado{
 
     background-color: #1BA8A6;
-    height: 350px;
+    height: 340px;
 }
 .texto-cuadrado-destacado{
-    padding:40px 20px 60px 20px;
+    padding:35px 20px 35px 20px;
 
 }
 .mas-info-destacado{
@@ -157,7 +157,7 @@ encuentra
     height: 0;
     position:relative;
     overflow: hidden;
-    padding-bottom: 73%;
+    padding-bottom: 77%;
 
 }
 .img-curso{
@@ -224,44 +224,50 @@ grid
 
 @media screen and (max-width: 1100px){
          
-            .cabecera-cursos{
+    .cabecera-cursos{
                 padding-top:60px;
                 width: 90%;
                 margin:0 auto;
             }
-            .cabecera-alumnos{
+    .cabecera-alumnos{
 
                 padding-top:60px;
-                width: 50%;
+                width: 70%;
                 margin:0 auto;
             }
            
     }
 
-    @media screen and (min-width: 1101px) {
+@media screen and (min-width: 1101px) {
         
-        .cabecera-cursos{
+    .cabecera-cursos{
+                    padding-top:60px;
                     width: 70%;
                    
                 }
-        .cabecera-alumnos{
+    .cabecera-alumnos{
+                    padding-top:60px;
                     width: 50%;
                   
                 }
 }
 @media screen and (max-width: 966px){
 
-            .filtros {
+    .filtros {
                 display: none;
             }
-            .todos-anuncios{
+    .todos-anuncios{
                 width: 100%;
                 float: none;
             }
-            .filtros-hide-tablet {
+    .row ul{
+                width: 100%;
+                
+            }
+    .filtros-hide-tablet {
                 display: block;
             }
-            .anuncio:hover{
+    .anuncio:hover{
                 .hover-container{
                      display: none;
                 }
@@ -274,44 +280,92 @@ grid
     .filtros-hide-tablet {
                 display: none;
         }
+    .container-button-title{
+
+            float: right;
+        }
 
 }
 
 
 @media screen and (max-width: 850px){
     
-        .cabecera-cursos{
+    .cabecera-cursos{
                     width: 100%;
+                   
+        }
+    .cabecera-alumnos{
+                    width: 90%;
                    
         }
     }
 
 @media screen and (max-width: 780px){
     
-        .muneco-busqueda{
+    .muneco-busqueda{
                 display:none;
                    
-                }
-        .hide-sub{
+        }
+    .hide-sub{
 
             display: none;
         }
-        .container-ordenar{
+    .container-ordenar{
 
             display:none;
         }
-        .ordenar-title{
+    .ordenar-title{
 
             display: block;
         }
-       
+    .container-button-title{
+
+            float: none;
+            margin:0px 0px 20px 20px;
+        }
+     .title-margin{
+
+            margin-left:20px;
+        }
+    .cabecera-cursos{
+                padding-top:0;
+                
+            }
+    .cabecera-alumnos{
+                padding-top:0;
+                
+            }
+
+
 }
 
-@media screen and (min-width: 780px){
+@media screen and (min-width: 781px){
 
     .ordenar-title {
                 display: none;
         }
           
 }
+@media screen and (max-width: 641px){
 
+    
+    .image-container{
+
+            display: none;
+        }
+    .img-curso{
+
+        display: none;
+    }
+    .no-display{
+        display: none;
+    }
+    .foto{
+
+        display:none;
+    }
+    .foto-alumno{
+        display: none;
+    }
+
+}
