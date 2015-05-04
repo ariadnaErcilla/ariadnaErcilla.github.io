@@ -61,12 +61,12 @@ Checkboxes, selects
     margin: 0;
     clear: both;
 }
-.form-check span{
+.form-check span {
     color:#404041;
     margin-left: 3px;
 }
 
-.box-check{
+.box-check {
      position: relative;
      background: url(../imagenes/box-dias.svg) no-repeat;
      background-size: contain;
@@ -75,11 +75,17 @@ Checkboxes, selects
     margin-bottom: 10px;
 }
 
-select{
-
+select {
     height: 35px;
 }
 
+#input-portafolio {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
+    width: 50%;
+    margin-left: 10px;
+}
 
 
 
