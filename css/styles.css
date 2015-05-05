@@ -322,10 +322,10 @@ body {
 
 .anuncio-destacado {
   background-color: #1BA8A6;
-  height: 350px; }
+  height: 340px; }
 
 .texto-cuadrado-destacado {
-  padding: 40px 20px 60px 20px; }
+  padding: 35px 20px 35px 20px; }
 
 .mas-info-destacado {
   margin: 10px;
@@ -358,7 +358,13 @@ Buscador
 
 .imagen-anuncios-buscador {
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: 5px; }
+
+.imagen-anuncios-creativos {
+  width: 90%;
+  margin-bottom: 10px;
+  margin-left: 5px; }
 
 .texto-anuncios-buscador {
   float: right;
@@ -409,7 +415,7 @@ encuentra
   height: 0;
   position: relative;
   overflow: hidden;
-  padding-bottom: 73%; }
+  padding-bottom: 77%; }
 
 .img-curso {
   position: absolute;
@@ -463,13 +469,15 @@ grid
 
   .cabecera-alumnos {
     padding-top: 60px;
-    width: 50%;
+    width: 70%;
     margin: 0 auto; } }
 @media screen and (min-width: 1101px) {
   .cabecera-cursos {
+    padding-top: 60px;
     width: 70%; }
 
   .cabecera-alumnos {
+    padding-top: 60px;
     width: 50%; } }
 @media screen and (max-width: 966px) {
   .filtros {
@@ -479,6 +487,9 @@ grid
     width: 100%;
     float: none; }
 
+  .row ul {
+    width: 100%; }
+
   .filtros-hide-tablet {
     display: block; }
 
@@ -486,10 +497,16 @@ grid
     display: none; } }
 @media screen and (min-width: 967px) {
   .filtros-hide-tablet {
-    display: none; } }
+    display: none; }
+
+  .container-button-title {
+    float: right; } }
 @media screen and (max-width: 850px) {
   .cabecera-cursos {
-    width: 100%; } }
+    width: 100%; }
+
+  .cabecera-alumnos {
+    width: 90%; } }
 @media screen and (max-width: 780px) {
   .muneco-busqueda {
     display: none; }
@@ -501,9 +518,37 @@ grid
     display: none; }
 
   .ordenar-title {
-    display: block; } }
-@media screen and (min-width: 780px) {
+    display: block; }
+
+  .container-button-title {
+    float: none;
+    margin: 0px 0px 20px 20px; }
+
+  .title-margin {
+    margin-left: 20px; }
+
+  .cabecera-cursos {
+    padding-top: 0; }
+
+  .cabecera-alumnos {
+    padding-top: 0; } }
+@media screen and (min-width: 781px) {
   .ordenar-title {
+    display: none; } }
+@media screen and (max-width: 641px) {
+  .image-container {
+    display: none; }
+
+  .img-curso {
+    display: none; }
+
+  .no-display {
+    display: none; }
+
+  .foto {
+    display: none; }
+
+  .foto-alumno {
     display: none; } }
 .boton-margen {
   margin-bottom: 10px; }
@@ -531,7 +576,11 @@ grid
   display: block;
   width: 80%;
   padding: 20px 10px;
+<<<<<<< HEAD
+  margin: 0 auto 10px; }
+=======
   margin: 0 0 10px; }
+>>>>>>> ade3bc74d8e23b755fa999615857f9c206793ca7
 
 .medium-button {
   width: 25%; }
@@ -953,12 +1002,9 @@ td {
   border-width: 20px 20px 20px 0; }
 
 .cabecera-cursos {
-  padding-top: 60px;
   margin: 0 auto; }
 
 .cabecera-alumnos {
-  padding-top: 60px;
-  width: 50%;
   margin: 0 auto; }
 
 .titulo-encabezado-1 {
@@ -1198,14 +1244,14 @@ header {
   width: 80%;
   margin: 10px; }
 
-ul {
+.menu ul {
   padding-left: 10px; }
 
 @media screen and (max-width: 1090px) {
-  li {
+  .menu li {
     max-width: 100px; } }
 @media screen and (max-width: 900px) {
-  ul {
+  .menu ul {
     display: none; }
 
   .registro {
@@ -1427,16 +1473,16 @@ form.turnos {
 .enviado {
   background-color: orange; }
 
-.article1 {
-  margin: 0 auto;
-  margin-top: 50px; }
-
 .fondo-img-top {
   background-image: url(../imagenes/portada-home.png);
-  height: 65%;
+  min-height: 67%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden; }
 
 .contenido-top {
   margin: 0 auto;
@@ -1452,9 +1498,14 @@ form.turnos {
 .container-button {
   margin-top: 30px; }
 
+.container-titulo {
+  margin-bottom: 40px; }
+
 .article2 {
-  margin-top: 70px;
-  width: 100%; }
+  margin-top: 60px;
+  margin-bottom: 70px;
+  width: 100%;
+  height: 85%; }
 
 .box2 {
   clear: both; }
@@ -1463,15 +1514,44 @@ form.turnos {
   width: 80%;
   height: 60%; }
 
-section.mini-box {
+section.mini-box-1,
+section.mini-box-2,
+section.mini-box-3 {
   display: inline-block;
-  width: 25%;
-  margin-top: 20px;
-  margin-bottom: 100px;
-  margin-left: 40px; }
+  position: relative;
+  width: 30%;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  margin-left: 20px; }
 
 .img1 {
-  width: 70%; }
+  width: 90%;
+  margin-bottom: 30px; }
+
+@media all and (max-width: 800px) {
+  .fondo-img-top {
+    background-image: url(../imagenes/portada-home-tablet-vertical.png);
+    height: 100%; } }
+@media all and (max-width: 700px) {
+  section.mini-box-2,
+  section.mini-box-1 {
+    width: 40%; } }
+@media all and (max-width: 700px) {
+  section.mini-box-3 {
+    width: 40%; } }
+@media all and (max-width: 400px) {
+  section.mini-box-3,
+  section.mini-box-2,
+  section.mini-box-1,
+  .img1 {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 3%; }
+
+  .container-texto {
+    width: 50%; } }
+.container-texto {
+  width: 100%; }
 
 meta.foundation-version {
   font-family: "/5.5.1/"; }
@@ -1790,8 +1870,7 @@ img {
     width: 91.66667%; }
 
   .small-12 {
-    width: 100%;
-    height: 550px; }
+    width: 100%; }
 
   .small-offset-0 {
     margin-left: 0% !important; }

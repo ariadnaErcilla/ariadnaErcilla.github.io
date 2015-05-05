@@ -1,13 +1,14 @@
-.article1{
-    margin: 0 auto;
-    margin-top: 50px;
-}
+
 .fondo-img-top {
     background-image: url(../imagenes/portada-home.png);
-    height: 65%;
+    min-height: 67%;
     background-repeat: no-repeat;
     background-size: cover;
 	position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .contenido-top {
@@ -26,10 +27,15 @@
 	margin-top: 30px;
 }
 
+.container-titulo{
+    margin-bottom: 40px;
+}
 
 .article2 {
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-bottom: 70px;
     width: 100%;
+    height: 85%;
 }
 
 .box2 {
@@ -40,18 +46,59 @@
     height: 60%
 }
 
-section.mini-box {
-	display:inline-block;
-	width:25%;
-	margin-top: 20px;
-	margin-bottom: 100px;
-    margin-left: 40px;
+section.mini-box-1,
+section.mini-box-2,
+section.mini-box-3{
+    display: inline-block;
+    position: relative;
+	width:30%;
+	margin-top: 40px;
+    margin-bottom: 90px;
+    margin-left: 20px;
 }
+
+
 .img1{
-	width:70%;
+	width:90%;
+    margin-bottom: 30px;
 }
 
+@media all and (max-width: 800px) {
+    .fondo-img-top {
+        background-image: url(../imagenes/portada-home-tablet-vertical.png);
+        height: 100%;
+    }
+}
+@media all and (max-width: 700px) {
+    section.mini-box-2,
+    section.mini-box-1 {
+        width: 40%;
 
+    }
+}
 
+@media all and (max-width: 700px) {
+    section.mini-box-3{
+        width: 40%;
 
+    }
+}
 
+@media all and (max-width: 400px) {
+    section.mini-box-3,
+    section.mini-box-2,
+    section.mini-box-1,
+    .img1{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 3%;
+    }
+    .container-texto{
+        width: 50%;
+    }
+
+}
+
+.container-texto{
+    width: 100%;
+}
