@@ -29,7 +29,8 @@
     display:block;
 }
 
-.pestanyas a:hover {
+.pestanyas a:hover,
+.pestanyas a.seleccionado {
     background-color: white;
     text-decoration: none;
     color: #00A6A5;
@@ -42,6 +43,7 @@
 .option-2,
 .option-3,
 .option-4,
-.option-5 {
+.option-5,
+.option-6, {
     display: none;
 }
