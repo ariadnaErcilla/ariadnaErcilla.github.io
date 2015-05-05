@@ -384,7 +384,7 @@ Buscador
 
 .total-icono-buscador {
   float: left;
-  width: 50%;
+  width: 100%;
   margin-top: 15px; }
 
 /*-------
@@ -1471,10 +1471,9 @@ form.turnos {
 
 .fondo-img-top {
   background-image: url(../imagenes/portada-home.png);
-  min-height: 67%;
+  min-height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: contain;
   margin: 0 auto;
   margin-top: 50px;
   width: 100%;
@@ -1488,8 +1487,7 @@ form.turnos {
 .texto-top {
   text-align: center;
   width: 30%;
-  margin: 80px;
-  position: relative; }
+  margin: 80px; }
 
 .container-button {
   margin-top: 30px; }
@@ -1500,22 +1498,17 @@ form.turnos {
 .article2 {
   margin-top: 60px;
   margin-bottom: 70px;
-  width: 100%;
-  height: 85%; }
+  width: 100%; }
 
 .box2 {
   clear: both; }
-
-.info {
-  width: 80%;
-  height: 60%; }
 
 section.mini-box-1,
 section.mini-box-2,
 section.mini-box-3 {
   display: inline-block;
   position: relative;
-  width: 30%;
+  width: 50%;
   margin-top: 40px;
   margin-bottom: 90px;
   margin-left: 20px; }
@@ -1524,31 +1517,33 @@ section.mini-box-3 {
   width: 90%;
   margin-bottom: 30px; }
 
+.container-texto {
+  width: 100%; }
+
 @media all and (max-width: 800px) {
   .fondo-img-top {
-    background-image: url(../imagenes/portada-home-tablet-vertical.png);
     height: 100%; } }
 @media all and (max-width: 700px) {
   section.mini-box-2,
-  section.mini-box-1 {
-    width: 40%; } }
-@media all and (max-width: 700px) {
+  section.mini-box-1
   section.mini-box-3 {
     width: 40%; } }
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
   section.mini-box-3,
   section.mini-box-2,
   section.mini-box-1,
   .img1 {
-    width: 70%;
     margin-left: 15%;
-    margin-bottom: 3%; }
+    margin-bottom: 3%; } }
+@media all and (max-width: 400px) {
+  section.mini-box-1
+  section.mini-box-2
+  section.mini-box-3
+  .img1 {
+    float: left; }
 
   .container-texto {
-    width: 50%; } }
-.container-texto {
-  width: 100%; }
-
+    float: right; } }
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
