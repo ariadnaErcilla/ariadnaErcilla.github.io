@@ -3,13 +3,13 @@ Text inputs and text areas
 --------*/
 
 .pform{
-    padding-top: 20px;
+    padding-top: 8px;
     margin: 0;
 }
 
 .caja-formulario{
     clear: both;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 input[type="text"],
@@ -21,7 +21,7 @@ select {
     display: block;
     font-size: 1rem;
     line-height: 1rem;
-    padding: .5rem;
+    padding: .6rem;
     width: 100%;
     border: none;
     color:#A0A0A0;
@@ -35,9 +35,12 @@ select {
 	padding-bottom: 50px;
 
 }
-.mini-input{
-	width: 20%;
+#mini-input{
+	width: 8%;
     display: inline-block;
+    background-color:white;
+    border-bottom:1px solid black;
+    padding:.2rem;
 }
 
 #input-footer{
@@ -47,8 +50,7 @@ select {
     height: 20px;
 }
 
-#search-box{
-}
+
 
 /*----------
 Checkboxes, selects
@@ -56,10 +58,10 @@ Checkboxes, selects
 
 .form-check{
 
-	display:inline-block;
+	float:left;
     padding-right: 10px;
     margin: 0;
-    clear: both;
+    
 }
 .form-check span {
     color:#404041;
