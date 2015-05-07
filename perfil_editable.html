@@ -272,12 +272,14 @@
 <div class="background-4">
     <div class="container tabla margin-top">
         <div class="parte-izquierda cell-tabla">
-                <div class="centrado">
+                <div class="centrado opacity-hover">
                     <div>
-                        <a class="opacity-hover"><img class="img-perfil" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario"></a>
+                        <img class="img-perfil" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
                     </div>
-                    <a class="type-color-2 opacity-hover margin-top" href="#">Sube tu foto</a>
-                    <span class="secondary-subtitle block margin-top">280px x 280px. Máximo 30 Kb</span>
+                    <span class="type-color-2 margin-top" href="#">Sube tu foto</span>
+                </div>
+                <div>
+                    <span class="secondary-subtitle block margin-top centrado">280px x 280px. Máximo 30 Kb</span>
                 </div>
 
                <div class="informacion-persona">
@@ -285,7 +287,7 @@
                         <h1 class="profile-name left">
                             Marta Pérez
                         </h1>
-                        <a class="lapiz icono-editar-margen opacity-hover left"></a>
+                        <span class="lapiz icono-editar-margen opacity-hover left"></span>
                     </div>
                     <div class="clear">
                         <p><span class="type-color-1 light">Correo:</span> mperez@gmail.com</p>
@@ -303,7 +305,7 @@
         <div class="box-perfil cell-tabla cf">
             <nav class="menu-interior">
                 <ul class="cf">
-                        <li class="pestanyas"><a class="pestanya-1" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
                         <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
                         <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
@@ -319,7 +321,7 @@
                                 <h2 class="secondary-title left">
                                     Mi Perfil
                                 </h2>
-                                <a class="lapiz icono-editar opacity-hover left"></a>
+                                <span class="lapiz icono-editar opacity-hover left"></span>
                                 <p class="secondary-subtitle margin-top clear  clear">Añade una descripción que te defina y que muestre tus habilidades.</p>
                             </div>
                             <div class="descripcion-mi-perfil">
@@ -336,7 +338,7 @@
                             <h2 class="secondary-title left">
                                 Disponibilidad
                             </h2>
-                            <a class="lapiz icono-editar opacity-hover left"></a>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
                             <p class="secondary-subtitle margin-top clear">Indica tu disponibilidad a lo largo de la semana</p>
                         </div>
                         <div class="descripcion-mi-perfil">
@@ -353,34 +355,109 @@
                                 </tr>
                                 <tr>
                                   <td class="title-table">Mañana</td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
-                                  <td><img class="icono-tabla-off" src="imagenes/manana-off.svg"><img class="icono-tabla" src="imagenes/manana.svg"></td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                   <td>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                       <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                </tr>
+                                <tr class="second-td">
+                                    <td class="title-table second-td">Tarde</td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                   <td class="second-td">
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                       <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="second-td title-table">Tarde</td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
-                                    <td class="second-td"><img class="icono-tabla-off" src="imagenes/tarde-off.svg"><img class="icono-tabla" src="imagenes/tarde.svg"></td>
+                                    <td class="title-table">Noche</td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                   <td>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                       <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
                                 </tr>
+                                <!--
                                 <tr>
-                            <td class="title-table">Noche</td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
-                              <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla" src="imagenes/noche.svg"></td>
+                                    <td class="title-table">Noche</td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
+                                    <td><img class="icono-tabla-off" src="imagenes/noche-off.svg"><img class="icono-tabla-on" src="imagenes/noche.svg"></td>
                                 </tr>
+                                -->
                             </table>
                         </div>
                     </div>
@@ -392,7 +469,7 @@
                             <h2 class="secondary-title left">
                             Programas informáticos
                             </h2>
-                            <a class="lapiz icono-editar opacity-hover left"></a>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
                            <p class="secondary-subtitle margin-top clear"> Añade tus programas y indica en que grado los controlas</p>
                         </div>
                         <div class="descripcion-mi-perfil">
@@ -409,7 +486,7 @@
                                 <li class="celdas-programas"> Nivel</li>
                                 <li class="celdas-programas no-float"><span class="icono-portafolio icono-rectangular nivel1-a"> </span> </li>
                             </ul>
-                            <a class="type-color-2 opacity-hover margin-top" href="#">Añadir programa</a>
+                            <span class="type-color-2 opacity-hover margin-top" href="#">Añadir programa</span>
                         </div>
                     </div>
                 </article>
@@ -422,7 +499,7 @@
                             <h2 class="secondary-title left">
                                 Portafolio
                             </h2>
-                            <a class="lapiz icono-editar opacity-hover left"></a>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
                             <p class="secondary-subtitle margin-top clear">Añade las diferentes plataormas en las que se puedan ver tus trabajos.</p>
                             <p class="secondary-subtitle">¡Ayudará a que conozcan mas de ti y dará visibildad a tus proyectos!</p>
                         </div>
@@ -444,7 +521,7 @@
                             <h2 class="secondary-title left">
                                 Galería de imágenes
                             </h2>
-                            <a class="lapiz icono-editar opacity-hover left"></a>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
                         </div>
                         <div class="descripcion-mi-perfil clear">
                             <div class="foto-trabajo">
@@ -522,8 +599,10 @@
                             <div>
                                 <div class="icono-stars estrellas-anuncios-4 left"> </div>
                                 <div class="right">
-                                    <div class="iconocomparte-b icono-rectangular left"></div>
                                     <div class="left">Comparte</div>
+                                    <div class="iconocomparte-b icono-rectangular left opacity-hover"></div>
+                                    <div class="iconocomparte-b icono-rectangular left opacity-hover"></div>
+                                    <div class="iconocomparte-b icono-rectangular left opacity-hover"></div>
                                 </div>
                                 <hr class="linia clear"/>
                             </div>
@@ -572,31 +651,24 @@
                     <p class="secondary-subtitle margin-top">Aquí podrás visualizar tus mensajes y contactar con otros creativos.</p>
                 </div>
                 <div class="descripcion-mi-perfil">
-                    <div class="mensaje cf">
-                        <div class="">
-                            <p> 5 mensajes recibidos </p>
-                        </div>
-                        <div class="no-leido cf">
-                            <p> 3 mensajes no leídos </p>
-                        </div>
-                        <div class="enviado cf">
-                            <p> 5 mensajes enviados </p>
-                        </div>
-                    </div>
-                    <div class="mensaje-contenido cf">
-                        <div>
-                            <div class="left">
-                                <img src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario" width="50px">
-                            </div>
-                            <div class="left">
-                                <p class="in-line"><span class="type-color-1 light">De:</span>Jose Luis</p>
-                                <p class="in-line"><span class="type-color-1 light">Curso:</span>Quiero aprender Wordpress
-                                </p>
-                            </div>
+
+                    <nav class="menu-mensajes left">
+                        <ul class="ul-mensajes cf">
+                            <li class="contenido-mensaje"><a>5 mensajes recibidos</a></li>
+                            <li class="contenido-mensaje"><a>3 mensajes no leídos</a></li>
+                            <li class="contenido-mensaje">4 mensajes envíados</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mensaje-contenido cf left">
+                        <img class="imagen-mensaje" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
+                        <div class="texto-mensaje">
+                            <p class="in-line"><span class="type-color-1 light">De: </span>Jose Luis</p>
+                            <p class="in-line"><span class="type-color-1 light">Curso: </span>Quiero aprender Wordpress
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </article>
     </section>
 </div>
@@ -639,13 +711,13 @@
 <script>
 $('td .icono-tabla-off').click(function() {
     $(this).hide();
-    $(this).siblings('.icono-tabla').show();
+    $(this).siblings('.icono-tabla-on').show();
 });
-$('td .icono-tabla').click(function() {
+$('td .icono-tabla-on').click(function() {
     $(this).hide();
     $(this).siblings('.icono-tabla-off').show();
 });
-<!--tabla -->
+<!--tabla menu -->
 $('.pestanya-2').click(function() {
     $('.option-1').hide();
     $('.option-3').hide();
@@ -710,6 +782,40 @@ $('.pestanya-1').click(function() {
     $('.option-1').show();
     $('.seleccionado').removeClass('seleccionado');
     $('.pestanya-1').addClass('seleccionado');
+    return false;
+});
+<!--tabla mensajes -->
+$('.pestanya-2').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-2').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-2').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-3').click(function() {
+    $('.option-1').hide();
+    $('.option-2').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-3').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-3').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-4').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-2').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-4').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-4').addClass('seleccionado');
     return false;
 });
 </script>
