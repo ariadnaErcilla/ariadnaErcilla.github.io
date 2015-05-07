@@ -93,9 +93,19 @@ Buscador
     width: 25%;
     margin: 15px;
 }
-.imagen-anuncios-buscador{
+
+.imagen-anuncios-buscador
+{
     width: 100%;
     margin-bottom: 10px;
+    margin-left: 5px;
+
+}
+.imagen-anuncios-creativos
+{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 5px;
 
 }
 
@@ -119,7 +129,7 @@ Buscador
 }
 .total-icono-buscador{
     float: left;
-    width: 50%;
+    width: 100%;
     margin-top: 15px;
 }
 /*-------
@@ -217,5 +227,4 @@ Anuncio ampliado
     max-width: 100%;
 
 }
-
 

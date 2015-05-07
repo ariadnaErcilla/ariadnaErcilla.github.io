@@ -132,26 +132,37 @@ form.turnos {
     margin-right: 20px;
 }
 
+.contenido-mensaje{
+    padding: 10px;
+    border: 2px solid rgba(51, 51, 51, 0.15);
+}
+
+
+
+/*
 .mensaje{
     background-color: red;
     width: 30%;
     display: inline-block;
-}
+}*/
 
 .mensaje-contenido{
     background-color: yellow;
-    width: 50%;
+    width: 68%;
     display: inline-block;
 }
 
-.recibido{
-    background-color: blue;
+.contenido-mensaje:hover{
+    background-color: white;
 }
 
-.no-leido{
-    background-color: green;
+.imagen-mensaje{
+    width: 24%;
+    float: left;
+    padding: 10px;
 }
 
-.enviado{
-    background-color: orange;
+.texto-mensaje{
+    width: 70%;
+    float: left;
 }
