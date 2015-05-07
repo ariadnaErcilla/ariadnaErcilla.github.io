@@ -282,7 +282,8 @@
                     <label class="secondary-title">
                         Sube una foto/video de tu trabajo
                     </label>
-                    <input class="margin-top" type="file" name="imagen" accept="image/*" required="">
+                     <p class="tags no-margin">Formato jpg. o mov.</p>
+                    <input type="file" class="custom-file-input margin-top" name="imagen" accept="image/*" required="">
                 </div>
                 <div class="caja-formulario">
                     <label class="secondary-title">
@@ -658,43 +659,25 @@
         e.preventDefault();
         $($('#registro')[0]).show();
     });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
-    });
        $('#show-contactar').click(function(e){
         e.preventDefault();
         $($('#contactar')[0]).show();
-    });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
     });
     $('#show-publicar-curso').click(function(e){
         e.preventDefault();
         $($('#publicar-curso')[0]).show();
     });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
-    });
     $('#show-publicar-duda').click(function(e){
         e.preventDefault();
         $($('#publicar-duda')[0]).show();
-    });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
     });
     $('#show-modificar-curso').click(function(e){
         e.preventDefault();
         $($('#modificar-curso')[0]).show();
     });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
-    });
     $('#show-valorar').click(function(e){
         e.preventDefault();
         $($('#valorar')[0]).show();
-    });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
     });
 </script>
 </body>

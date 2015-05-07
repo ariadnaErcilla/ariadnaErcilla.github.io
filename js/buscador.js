@@ -1,7 +1,8 @@
 /*--------
 buscador
 ----------*/
-
+$(document).ready(function(){
+	
     $('#abrir').click(function(e){
         $('.buscador-desplegado').show();
         return false;
@@ -11,3 +12,5 @@ buscador
         $('.buscador-desplegado').hide();
         return false;
     });
+})
+

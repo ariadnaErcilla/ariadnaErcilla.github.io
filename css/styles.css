@@ -631,15 +631,34 @@ textarea,
 select {
   background: #E6E6E6;
   display: block;
-  font-size: 1rem;
+  font-size: 0.876rem;
   line-height: 1rem;
   padding: .6rem;
   width: 100%;
   border: none;
-  color: #A0A0A0; }
+  color: #A0A0A0;
+  font-weight: 400; }
 
-.margin-none {
-  margin-top: 0; }
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden; }
+
+.custom-file-input::before {
+  content: 'SELECCIONAR';
+  display: inline-block;
+  background: #E6E6E6;
+  border: 1px solid #F15C22;
+  color: #F15C22;
+  border-radius: 0;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 11pt; }
+
+.custom-file-input:active::before {
+  background: white; }
 
 .big-textarea {
   padding-bottom: 50px; }
