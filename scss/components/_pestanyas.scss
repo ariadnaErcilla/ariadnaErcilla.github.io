@@ -29,7 +29,8 @@
     display:block;
 }
 
-.pestanyas a:hover {
+.pestanyas a:hover,
+.pestanyas a.seleccionado {
     background-color: white;
     text-decoration: none;
     color: #00A6A5;
@@ -42,6 +43,20 @@
 .option-2,
 .option-3,
 .option-4,
-.option-5 {
+.option-5,
+.option-6, {
     display: none;
+}
+
+.menu-mensajes{
+}
+
+.contenido-mensaje{
+    list-style: none;
+    text-decoration: none;
+}
+
+.ul-mensajes{
+    background-color: rgba(51, 51, 51, 0.15);
+    padding: 0;
 }

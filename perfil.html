@@ -293,14 +293,14 @@
         <div class="box-perfil cell-tabla cf">
             <nav class="menu-interior">
                 <ul class="cf">
-                        <li class="pestanyas"><a class="pestanya-1" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
                         <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
                         <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
                 </ul>
             </nav>
-            <section id="option-1" class="contenido-perfil option-1">
+            <section id="option-1" class="contenido-perfil option-1 seleccionado">
                 <article class="bloque-perfil cf">
                     <span class="icono-perfil icono-rectangular-grande left"> </span>
                     <div class="contenido">
@@ -574,21 +574,16 @@
 </footer>
 
 <script>
-$('td .icono-tabla-off').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla').show();
-});
-$('td .icono-tabla').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-off').show();
-});
 <!--tabla -->
 $('.pestanya-2').click(function() {
     $('.option-1').hide();
     $('.option-3').hide();
     $('.option-4').hide();
     $('.option-5').hide();
+    $('.option-6').hide();
     $('.option-2').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-2').addClass('seleccionado');
     return false;
 });
 $('.pestanya-3').click(function() {
@@ -596,7 +591,10 @@ $('.pestanya-3').click(function() {
     $('.option-2').hide();
     $('.option-4').hide();
     $('.option-5').hide();
+    $('.option-6').hide();
     $('.option-3').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-3').addClass('seleccionado');
     return false;
 });
 $('.pestanya-4').click(function() {
@@ -604,7 +602,10 @@ $('.pestanya-4').click(function() {
     $('.option-3').hide();
     $('.option-2').hide();
     $('.option-5').hide();
+    $('.option-6').hide();
     $('.option-4').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-4').addClass('seleccionado');
     return false;
 });
 $('.pestanya-5').click(function() {
@@ -612,7 +613,10 @@ $('.pestanya-5').click(function() {
     $('.option-3').hide();
     $('.option-4').hide();
     $('.option-2').hide();
+    $('.option-6').hide();
     $('.option-5').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-5').addClass('seleccionado');
     return false;
 });
 $('.pestanya-1').click(function() {
@@ -620,7 +624,10 @@ $('.pestanya-1').click(function() {
     $('.option-3').hide();
     $('.option-4').hide();
     $('.option-5').hide();
+    $('.option-6').hide();
     $('.option-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-1').addClass('seleccionado');
     return false;
 });
 </script>
