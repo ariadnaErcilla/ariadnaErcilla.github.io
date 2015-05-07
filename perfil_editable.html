@@ -504,13 +504,30 @@
                             <p class="secondary-subtitle">¡Ayudará a que conozcan mas de ti y dará visibildad a tus proyectos!</p>
                         </div>
                         <div class="descripcion-mi-perfil">
-                            <div class="icono-rectangular portafolio-behance-c left"> </div>
+                            <div>
+                                <div class="icono-rectangular portafolio-behance-c left"> </div>
+                                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-domestika-c left"> </div>
                             <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            <div class="icono-rectangular portafolio-domestika-c"> </div>
-                            <div class="icono-rectangular portafolio-linkedin-c"> </div>
-                            <div class="icono-rectangular portafolio-tumblert-c"> </div>
-                            <div class="icono-rectangular portafolio-instagram-c"> </div>
-                            <div class="icono-rectangular portafolio-pinterest-c"> </div>
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-linkedin-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-tumblert-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-instagram-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-pinterest-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -659,12 +676,30 @@
                             <li class="contenido-mensaje">4 mensajes envíados</a></li>
                         </ul>
                     </nav>
-                    <div class="mensaje-contenido cf left">
-                        <img class="imagen-mensaje" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
-                        <div class="texto-mensaje">
-                            <p class="in-line"><span class="type-color-1 light">De: </span>Jose Luis</p>
-                            <p class="in-line"><span class="type-color-1 light">Curso: </span>Quiero aprender Wordpress
-                            </p>
+                    <div class="mensaje-contenido left">
+                        <div class="mensaje-no-leido opacity:hover cf">
+                            <img class="imagen-mensaje" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p class="in-line"><span class="type-color-1 light">De: </span>Jose Luis</p>
+                                <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender Wordpress
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mensaje-leido opacity:hover cf">
+                            <img class="imagen-mensaje" src="imagenes/alumno-7-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p class="in-line"><span class="type-color-1 light">De: </span>Silvia Etzhir</p>
+                                <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Me enseñas wordpress?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mensaje-leido opacity:hover cf">
+                            <img class="imagen-mensaje" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p class="in-line"><span class="type-color-1 light">De: </span>Zaida Trevil</p>
+                                <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Te enseño HTML el miércoles
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -711,11 +746,15 @@
 <script>
 $('td .icono-tabla-off').click(function() {
     $(this).hide();
-    $(this).siblings('.icono-tabla-on').show();
+    $(this).siblings('.icono-tabla-on').css({
+        'display': 'block'
+    });
 });
 $('td .icono-tabla-on').click(function() {
     $(this).hide();
-    $(this).siblings('.icono-tabla-off').show();
+    $(this).siblings('.icono-tabla-off').css({
+        'display': 'block'
+    });
 });
 <!--tabla menu -->
 $('.pestanya-2').click(function() {
