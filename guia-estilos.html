@@ -572,26 +572,42 @@
         </div>
             <nav class="menu cf">
                 <div class="float-menu">
-                    <ul>
-                        <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <ul class="esconder">
+                        <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                        <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                        <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
                 <div class="right">
                 <div class="registro">
-                    <ul>
+                    <ul class="esconder">
                         <li><a href="#login">Log in</a></li>
                         <li><a href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <a href="#">
-                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
-                    </a>
-                     <a id="abrir" href="">
+                    <div class="dropdown__wrap">
+                        <a href="#">
+                            <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                        </a>
+                            <ul class="dropdown">
+                                <li class="alineacion_vertical">
+                                    <a href="#">Encuentra tu curso</a>
+                                </li>
+                                <li class="alineacion_vertical">
+                                    <a href="#">Busca tu alumno</a>
+                                </li>
+                                <li class="alineacion_vertical">
+                                    <a href="#">¿Cómo funciona?</a>
+                                </li>
+                                <li class="alineacion_vertical">
+                                    <a href="#">Mi perfil</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <a id="abrir" href="">
                         <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
-                  </a>
+                    </a>
                 </div>
             </div>
             </nav>
