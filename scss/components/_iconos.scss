@@ -428,6 +428,11 @@ contenedores anuncios
     margin-right: 6px;
 }
 
+.icono-redes-an-ampliado {
+    @extend .icono-rectangular-grande;
+    width: 105px;
+}
+
 .icono-caracteristicas-icono{
     display: inline-block;
     width: 18px;

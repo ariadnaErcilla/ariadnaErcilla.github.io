@@ -21,45 +21,61 @@
 </head>
 
 <body>
-    <header>
+    <header class="cf">
         <div class="logo">
             <a href="index.html">
                 <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo">
             </a>
         </div>
             <nav class="menu cf">
-                <div class="left">
-                    <ul>
-                        <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                <div class="float-menu">
+                    <ul class="esconder">
+                        <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                        <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                        <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
                 <div class="right">
                 <div class="registro">
-                    <ul>
+                    <ul class="esconder">
                         <li><a href="#login">Log in</a></li>
                         <li><a href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <a href="#">
-                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
-                    </a>
-                     <a id="abrir" href="">
+                    <div class="dropdown__wrap">
+                        <a href="#">
+                            <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                        </a>
+                            <ul class="dropdown">
+                                <li class="alineacion_vertical">
+                                    <a href="#">Encuentra tu curso</a>
+                                </li>
+                                <li class="alineacion_vertical">
+                                    <a href="#">Busca tu alumno</a>
+                                </li>
+                                <li class="alineacion_vertical">
+                                    <a href="#">¿Cómo funciona?</a>
+                                </li>
+                                <li class="alineacion_vertical">
+                                    <a href="#">Mi perfil</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <a id="abrir" href="">
                         <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
-                  </a>
+                    </a>
                 </div>
             </div>
             </nav>
             <div class="buscador-desplegado cf">
                 <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
                 <div class="buscador-container-derecha cf">
-                    <div class="container-button-buscador right">
+                    <div class="container-button-buscador left">
                         <a class="button-2 full-button type-color-3" href="#">Buscar</a>
                     </div>
                     <a id="cerrar" href="">
-                        <img class="imagen-cerrar-buscador left" src="imagenes/buscador-cerrar.svg" alt="Cerrar-buscador">
+                        <img class="imagen-cerrar-buscador right" src="imagenes/buscador-cerrar.svg" alt="Cerrar-buscador">
                     </a>
                 </div>
             </div>
@@ -85,9 +101,9 @@
                       <div class="texto-perfil">
                         <h3 class="secondary-title">Comparte este curso</h3>
                         <div class="container-perfil">
-                        <img class="iconos-perfil opacity-hover" src="imagenes/icono-fb-large.svg">
-                        <img class="iconos-perfil opacity-hover" src="imagenes/icono-tw-large.svg">
-                        <img class="iconos-perfil opacity-hover" src="imagenes/icono-link-large.svg">
+                            <span class="icono-redes-an-ampliado icono-fb-large opacity-hover cf"></span>
+                            <span class="icono-redes-an-ampliado icono-tw-large opacity-hover"></span>
+                            <span class="icono-redes-an-ampliado icono-link-large opacity-hover"></span>
                         </div>
                     </div>
                 </div>
@@ -156,9 +172,11 @@
                                 <h3 class="secondary-title">Intercambio</h3>
                                 <div class="container-perfil">
                                     <p class="secondary-subtitle">Mira lo que te ofrecen los profesores a cambio de una clase</p>
-                                <img class="icono-intercambio" src="imagenes/icono-intercambio.svg">
-                                <span class="left">=</span>
-                                <p class="left"> Sorpréndele</p>
+                                    <div class="intercambio-foto-info">
+                                        <img class="left" src="imagenes/icono-intercambio.svg">
+                                        <span class="">=</span>
+                                        <p class="secondary-subtitle"> Sorpréndele, te dará una clase a cambio de una comida</p>
+                                    </div>
                                 </div>
                             </div>
                             </div>

@@ -1,7 +1,7 @@
 header {
         margin: 1.5rem 0 1.5rem 0;
-        overflow: hidden;
         background-color: white;
+        padding-bottom: 0px;
 }
 
 .img-logo {
@@ -13,14 +13,18 @@ header {
     padding-left: 10px;
 }
 
+li.alineacion_vertical {
+
+}
+
 @media screen and (max-width: 1090px){
-        .menu li{
+        .menu li.tamano_fijo {
                 max-width: 100px;
         }
     }
 
     @media screen and (max-width: 900px) {
-        .menu ul {
+        .menu ul.esconder {
             display: none;
         }
         .registro {
@@ -31,6 +35,12 @@ header {
     @media screen and (min-width: 899px) {
         .imagen-desplegable {
                 display: none;
+        }
+        .dropdown {
+            display: none;
+        }
+        .dropdown__wrap {
+            display: none;
         }
     }
 
@@ -114,7 +124,7 @@ header {
 }
 
 #input-buscador {
-    margin: 15px 0px 15px 50px;
+    margin: 15px 0px 15px 40px;
     max-width: 60%;
     float: left;
     border-radius: 5px;
@@ -123,22 +133,114 @@ header {
 .buscador-container-derecha {
     float: left;
     width: 30%;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .imagen-cerrar-buscador {
-    margin-left: 5px;
+    margin-left: 0px;
     padding-top: 5px;
-    max-width: 35px;
+    max-width: 30px;
 }
 
 .container-button-buscador {
     width: 40%;
-
-    
+    margin-left: 10px;
 }
+
 .float-menu{
-
     float:left;
+}
 
+
+/*---
+dropdown
+---*/
+
+.dropdown__wrap {
+    position: relative;
+    padding-bottom: 5px;
+    overflow: visible;
+    float: left;
+}
+
+.dropdown__wrap a {
+    color: rgb(144, 197, 219);
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none;
+    padding: 0;
+    position: absolute;
+        top: 50%;
+        right: -20%;
+}
+
+.menu .dropdown li {
+    background: #404041;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    float: none;
+}
+
+.menu .dropdown a {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: .5rem 1rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 20rem;
+}
+
+.dropdown__wrap:hover .dropdown {
+    display: block;
+}
+
+.menu .dropdown li:last-child {
+    border-bottom: 0;
+}
+
+.dropdown li:hover a::before {
+    background: #F15C22;
+    content: '';
+    display: block;
+    position: absolute;
+        top: 0;
+        left: -.5rem;
+    width: .5rem;
+    height: 100%;
+}
+
+.dropdown li:hover a {
+    color: #fff;
+}
+
+.dropdown:hover li:not(:hover) a {
+    background-color: #000;
+    color: #A4A4A4;
+    opacity: .4;
+}
+
+.dropdown li:first-child {
+    border-top: .75rem solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.dropdown li:first-child::before {
+    border-color: transparent transparent #404041 transparent;
+    border-style: solid;
+    border-width: 0 .75rem .75rem .75rem;
+    content: '';
+    display: block;
+    position: absolute;
+        top: -.70rem;
+        right: 1rem;
+    height: 0;
+    width: 1rem;
+}
+
+.menu li.alineacion_vertical a {
+    color: #fff;
 }
