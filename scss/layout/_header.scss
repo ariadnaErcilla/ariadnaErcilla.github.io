@@ -125,7 +125,7 @@ li.alineacion_vertical {
 }
 
 #input-buscador {
-    margin: 15px 0px 15px 50px;
+    margin: 15px 0px 15px 40px;
     max-width: 60%;
     float: left;
     border-radius: 5px;
@@ -134,17 +134,18 @@ li.alineacion_vertical {
 .buscador-container-derecha {
     float: left;
     width: 30%;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .imagen-cerrar-buscador {
-    margin-left: 5px;
+    margin-left: 0px;
     padding-top: 5px;
-    max-width: 35px;
+    max-width: 30px;
 }
 
 .container-button-buscador {
     width: 40%;
+    margin-left: 10px;
 }
 
 .float-menu{
