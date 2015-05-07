@@ -1260,9 +1260,8 @@ grid
     margin: 0; } }
 header {
   margin: 1.5rem 0 1.5rem 0;
-  overflow: hidden;
   background-color: white;
-  padding-bottom: 150px; }
+  padding-bottom: 0px; }
 
 .img-logo {
   width: 80%;
@@ -6714,11 +6713,14 @@ contenedores anuncios
   width: 25px;
   height: 25px; }
 
-.icono-rectangular-grande {
+.icono-rectangular-grande, .icono-redes-an-ampliado {
   display: inline-block;
   width: 35px;
   height: 35px;
   margin-right: 6px; }
+
+.icono-redes-an-ampliado {
+  width: 105px; }
 
 .icono-caracteristicas-icono, .icono-editar-margen, .icono-editar {
   display: inline-block;
