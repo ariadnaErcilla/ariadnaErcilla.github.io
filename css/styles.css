@@ -767,7 +767,9 @@ select {
   border-radius: 5px;
   border: 1px solid #C2C2C2;
   width: 50%;
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-size: 0.8rem;
+  /*height: 12px;*/ }
 
 .apartado-ampliado {
   padding: 40px 0px 40px 0px;
@@ -837,6 +839,14 @@ select {
 .option-5,
 .option-6 {
   display: none; }
+
+.contenido-mensaje {
+  list-style: none;
+  text-decoration: none; }
+
+.ul-mensajes {
+  background-color: rgba(51, 51, 51, 0.15);
+  padding: 0; }
 
 .masc {
   font-family: "Lato", sans-serif;
@@ -986,7 +996,11 @@ td {
 .white-table {
   background-color: white; }
 
-.icono-tabla {
+.icono-tabla-on {
+  display: none;
+  margin: 0 auto; }
+
+.icono-tabla-off {
   display: none;
   margin: 0 auto; }
 
@@ -1463,24 +1477,32 @@ form.turnos {
   width: 15%;
   margin-right: 20px; }
 
-.mensaje {
-  background-color: red;
-  width: 30%;
-  display: inline-block; }
+.contenido-mensaje {
+  padding: 10px;
+  border: 2px solid rgba(51, 51, 51, 0.15); }
 
+/*
+.mensaje{
+    background-color: red;
+    width: 30%;
+    display: inline-block;
+}*/
 .mensaje-contenido {
   background-color: yellow;
-  width: 50%;
+  width: 68%;
   display: inline-block; }
 
-.recibido {
-  background-color: blue; }
+.contenido-mensaje:hover {
+  background-color: white; }
 
-.no-leido {
-  background-color: green; }
+.imagen-mensaje {
+  width: 24%;
+  float: left;
+  padding: 10px; }
 
-.enviado {
-  background-color: orange; }
+.texto-mensaje {
+  width: 70%;
+  float: left; }
 
 .fondo-img-top {
   background-image: url(../imagenes/portada-home.png);
