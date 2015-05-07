@@ -3,8 +3,8 @@
 general
 -----*/
 .parte-derecha{
-    margin: 50px 0 0 40px;
     float: right;
+    margin: 50px 0 0 40px;
 }
 
 .iconos-perfil{
@@ -13,8 +13,8 @@ general
 }
 
 .contenido{
-    width: 80%;
     float: left;
+    width: 80%;
 }
 
 /*-----
@@ -45,8 +45,8 @@ Perfil - sobre mi - OTROS
 }
 
 .celdas-programas {
-    list-style: none;
     float: left;
+    list-style: none;
     margin-right: 20px;
 }
 
@@ -62,8 +62,8 @@ Perfil - sobre mi - OTROS
 
 .foto-trabajo {
     float: left;
-    width: 30%;
     margin: 0 10px 10px 0;
+    width: 30%;
 }
 
 .descripcion-mi-perfil {
@@ -77,25 +77,25 @@ PERFIL-CURSOS
 
 .no-cursos-cuadrado{
     border: 1px solid #54c4c7;
-    width: 90%;
-    margin-bottom: 80px;
     margin-top: 100px;
+    margin-bottom: 80px;
+    width: 90%;
 }
 
 .contenido-no-cursos{
-    position: relative;
     margin-top:30px;
     margin-bottom: 30px;
+    position: relative;
 }
 
-.personaje{
+/*.personaje{
     position: absolute;
     margin: 0 auto;
     left: 0;
     right: 0;
     top:-155px;
     width: 30%;
-}
+}*/
 
 /*-------
 
@@ -132,13 +132,6 @@ form.turnos {
     margin-right: 20px;
 }
 
-.contenido-mensaje{
-    padding: 10px;
-    border: 2px solid rgba(51, 51, 51, 0.15);
-}
-
-
-
 /*
 .mensaje{
     background-color: red;
@@ -147,7 +140,6 @@ form.turnos {
 }*/
 
 .mensaje-contenido{
-    background-color: yellow;
     width: 68%;
     display: inline-block;
 }
@@ -165,4 +157,16 @@ form.turnos {
 .texto-mensaje{
     width: 70%;
     float: left;
+}
+
+.mensaje-no-leido {
+    background-color: rgba(51, 51, 51, 0.15);
+    clear:both;
+}
+
+.mensaje-leido {
+    border-right: 1px solid rgba(51, 51, 51, 0.15);
+    border-left: 1px solid rgba(51, 51, 51, 0.15);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+    clear:both;
 }
