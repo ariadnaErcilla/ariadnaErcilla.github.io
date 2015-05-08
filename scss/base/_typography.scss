@@ -13,6 +13,7 @@
 
 .type-color-3{
     color: #FFFFFF;
+    
 }
 
 .type-color-4{
@@ -39,6 +40,8 @@
 .title-form{
     font-size: 3rem;
     font-family: "Lato";
+    margin:14px;
+    font-weight: 400;
 }
 
 .titulo-ampliar-curso {
@@ -100,9 +103,13 @@ p {
     color:#00A6A5;
     margin: 0;
 }
+.title-contactar{
+
+    font-size: 1.125rem;
+}
 
 .tags {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: lighter;
     font-style: italic;
 }

@@ -41,6 +41,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(../imagenes/ninologin.png);
+    background-size:20% auto;
     
 
 
@@ -53,11 +54,9 @@
     background-image: url(../imagenes/ninogracias.png);
 
 
-
-
 }
 .top{
-    top:80px;
+    top:52px;
    
 }
 
@@ -66,13 +65,12 @@
     color:#FFF;
     line-height:25px;
     position:absolute;
-    right:1px;
+    right:-12px;
     text-align:center;
-    top:1px;
+    top:-12px;
     width:24px;
     text-decoration:none;
-    font-weight:bold;
-    border-radius:3px;
+    border-radius:12px;
 }
 
 .close:hover{
@@ -80,7 +78,7 @@
 }
 
 .popup-box{
-    width:400px;
+    width:500px;
     padding:5px 20px 13px 20px;
     background:white;
     border-radius:5px;
@@ -91,17 +89,15 @@
 }
 
 .container-popup{
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
+   
+
+}
+.height-scroll{
+
+    max-height: 350px;
     overflow: scroll;
-
-}
-.height-1{
-     max-height: 200px;
-}
-.height-2{
-
-    max-height: 400px;
 
 
 }
@@ -110,19 +106,32 @@
     margin:10% auto;
 }
 .movedown-2{
-    margin:3% auto;
+    margin:1% auto;
 }
+
 .link-facebook{
     width: 100%;
 
 }
+.margin-auto-popup{
+
+  margin:0 auto;
+  width: 45%;
+  padding:20px 0px 10px 0px;
+}
+.padding-button-popup{
+
+    padding:23px 10px 43px 0px;
+}
+
 .img-facebook{
-    padding-bottom: 20px;
+    padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #404041;
 }
 
 .img-proceso{
     margin: 0 auto;
+    width: 70%;
 }
 
 .proceso{

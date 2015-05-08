@@ -46,6 +46,11 @@ body {
 .margin-left{
   margin-left:10px;
 }
+.margin-right{
+  
+  margin-right:5px;
+
+}
 
 .clear{
     clear: both;
@@ -60,7 +65,7 @@ body {
 }
 
 .margin-top{
-    margin-top:10px;
+    margin-top:5px;
 }
 
 .linia{
@@ -83,3 +88,6 @@ body {
     cursor: pointer;
 }
 
+.imagen-redondo{
+    border-radius: 50%;
+}

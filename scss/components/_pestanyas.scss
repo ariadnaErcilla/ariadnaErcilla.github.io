@@ -51,12 +51,20 @@
 .menu-mensajes{
 }
 
-.contenido-mensaje{
-    list-style: none;
-    text-decoration: none;
-}
-
 .ul-mensajes{
     background-color: rgba(51, 51, 51, 0.15);
     padding: 0;
+    border: 1px solid rgba(51, 51, 51, 0.15);
 }
+
+.contenido-mensaje{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
