@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Anuncios</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/filtros-responsive.js"></script>
+    <script src="js/links-popups.js"></script>
+    <script src="js/ordenar.js"></script>
+     <script src="js/filtros.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -18,11 +25,11 @@
 
   </script>
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-   <script type="text/javascript" src="/js/buscador.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
 </head>
 
 <body>
- <header>
+ <header class="cf">
         <div class="logo">
             <a href="index.html">
                 <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
@@ -38,8 +45,8 @@
                 <div class="right">
                 <div class="registro">
                     <ul>
-                        <li><a href="#login">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li><a class="login" href="#">Log in</a></li>
+                        <li><a class="registro" href="#">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
@@ -64,402 +71,6 @@
                 </div>
             </div>
     </header>
-   <div id="recuperar" class="masc">
-    <div class="todopopup">
-        <div class="popupbox movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">Recupera tu contraseña</h2>
-            <div class="formulario">
-                <form>
-                    <h5>Email</h5>
-                    <p><input class="estiloinputs" type="email"></p>
-                    <div class="subform">
-                        <button class="publicaranuncios"><a class="white" href="anunciosprofes2.html">RECUPERAR</a></button>
-                        <p class="textpopup"><a href="#login"><u>Cancelar</u></a></p>
-                    </div>
-                </form>
-                <p class="terminos">Recibirás un mensaje en tu correo para recuperar la contraseña. Si no lo recibes, comprueba que no esté en la carpeta SPAM.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="login" class="masc">
-    <div class="todopopup">
-        <div class="popupbox movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">Log in</h2>
-            <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
-            </div>
-            <div class="formulario">
-                <form>
-                    <h5>Email</h5>
-                    <p><input class="estiloinputs" type="email"></p>
-                    <h5>Contraseña</h5>
-                    <p><input class="estiloinputs" type="password"></p>
-                    <p class="textpopup"><a class="gris" href="#recuperar"><u>¿Has olvidado tu contraseña?</u></a></p>
-                    <div class="subform">
-                        <button class="publicaranuncios"><a class="white" href="perfil_sobremi.html">LOG IN</a></button>
-                        <p class="textpopup"><a class="gris" href="#registro"><u>¿Todavía no estás registrado?</u></a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="login2" class="masc">
-    <div class="todopopup todopopup-todopopup2">
-        <div class="popupbox movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">Log in</h2>
-            <h5 class="centrado">Regístrate y ya podrás publicar tu curso</p>
-                <div class="imgproceso">
-                    <img class="proceso" src="imagenes/proceso2.svg">
-                </div>
-                <h5><a class="gris" href="#login2"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></h5>
-                <div class="imgfacebook">
-                    <img class="linkfacebook" src="imagenes/facebooklink.png">
-                </div>
-                <div class="formulario">
-                    <form>
-                        <h5>Email</h5>
-                        <p><input class="estiloinputs" type="email"></p>
-                        <h5>Contraseña</h5>
-                        <p><input class="estiloinputs" type="password"></p>
-                        <div class="subform">
-                            <button class="publicaranuncios"><a href="#gracias">PUBLICAR DUDA</a></button>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="login3" class="masc">
-    <div class="todopopup todopopup-todopopup2">
-        <div class="popupbox movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">Log in</h2>
-            <p class="centrado">en sólo 2 pasos</p>
-            <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
-            </div>
-            <div class="formulario">
-                <form>
-                    <h5>Email</h5>
-                    <p><input class="estiloinputs" type="email"></p>
-                    <h5>Contraseña</h5>
-                    <p><input class="estiloinputs" type="password"></p>
-                    <div class="subform">
-                        <button class="publicaranuncios"><a href="#graciascon">CONTACTAR</a></button>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="registro" class="masc">
-    <div class="todopopup">
-        <div class="popupbox popupbox3 movedown movedown2">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">Registro</h2>
-            <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
-            </div>
-            <div class="formulario">
-                <form>
-                    <h5>Nombre y apellido</h5>
-                    <p><input class="estiloinputs" type="text"></p>
-                    <h5>Email</h5>
-                    <p><input class="estiloinputs" type="email"></p>
-                    <h5>Contraseña</h5>
-                    <p><input class="estiloinputs" type="password"></p>
-                    <div class="subform">
-                        <button class="publicaranuncios"><a href="perfil.html">REGISTRARSE</a></button>
-                        <p class="textpopup"><a href="#login"><u>¿Ya estás registrado?</u></a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="registro2" class="masc">
-    <div class="todopopup todopopup-todopopup2">
-        <div class="popupbox popupbox3 movedown movedown2">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">¡Ya queda poco!</h2>
-            <h5 class="centrado">Regístrate y ya podrás publicar tu curso</h5>
-            <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
-            </div>
-            <h5><a class="gris" href="#login2"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></h5>
-            <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
-            </div>
-            <div class="formulario">
-                <form>
-                    <h5>Nombre y apellido</h5>
-                    <p><input class="estiloinputs" type="text"></p>
-                    <h5>Email</h5>
-                    <p><input class="estiloinputs" type="email"></p>
-                    <h5>Contraseña</h5>
-                    <p><input class="estiloinputs" type="password"></p>
-                    <div class="subform">
-                        <button class="publicaranuncios"><a href="#gracias">PUBLICAR DUDA</a></button>
-                    </div>
-                    <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="registro3" class="masc">
-    <div class="todopopup todopopup-todopopup2">
-        <div class="popupbox popupbox3 movedown movedown2">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">¡Ya queda poco!</h2>
-            <p class="centrado">en sólo 2 pasos</p>
-            <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
-            </div>
-            <h5><a class="gris" href="#login3"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></h5>
-            <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
-            </div>
-            <div class="formulario">
-                <form>
-                    <h5>Nombre y apellido</h5>
-                    <p><input class="estiloinputs" type="text"></p>
-                    <h5>Email</h5>
-                    <p><input class="estiloinputs" type="email"></p>
-                    <h5>Contraseña</h5>
-                    <p><input class="estiloinputs" type="password"></p>
-                    <div class="subform">
-                        <button class="publicaranuncios"><a href="#graciascon">CONTACTAR</a></button>
-                    </div>
-                    <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="contactar" class="masc">
-    <div class="popupbox popupbox3 movedown movedown3">
-        <a href="#close" title="close" class="close">X</a>
-        <div class="contenidopublicar cf">
-            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
-                <h2 class="centrado">Contactar</h2>
-                <p class="centrado">en sólo 2 pasos</p>
-                <div class="imgproceso">
-                    <img class="proceso" src="imagenes/proceso1.svg">
-                </div>
-                <div class="cajaformulario">
-                    <h5>
-                        Título: Aprende a crear tu propia tipografía
-                    </h5>
-                </div>
-                <div class="cajaformulario">
-                    <h5>
-                     Categoría: Diseño gráfico
-                 </h5>
-             </div>
-             <div class="cajaformulario">
-                <h5>
-                    Nombre: María Gómez
-                </h5>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Número de horas:<input type="text">horas
-                </h5>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Mensaje
-                </h5>
-                <form>
-                 <textarea name="message" rows="10" cols="30"></textarea>
-             </form>
-         </div>
-         <div class="cajaformulario">
-            <h5>
-                Método de clase
-            </h5>
-            <form>
-                <p class="categoriasmenu"><input type="checkbox">Presencial</p>
-                <p class="categoriasmenu"><input type="checkbox">Skype</p>
-                <p class="categoriasmenu"><input type="checkbox">Email</p>
-            </form>
-        </div>
-        <div class="cajaformulario">
-            <h5>
-                Disponibilidad
-            </h5>
-            <div class="diassemana">
-                <p class="nofloat">Lunes</p>
-                <p class="nofloat">Martes</p>
-                <p class="nofloat">Jueves</p>
-                <p class="nofloat">Domingo</p>
-            </div>
-            <div class="totalpartesdia">
-                <p class="categoriasmenu">mañana</p>
-                <p class="categoriasmenu">tarde</p>
-                <p class="categoriasmenu">noche</p>
-                <div class="boxdias">
-                    <div class="miniboxdias">
-                        <input class="cuadrocheck1" type="checkbox">
-                        <input class="cuadrocheck2" type="checkbox">
-                    </div>
-                    <div class="miniboxdias2">
-                        <input class="cuadrocheck1" type="checkbox">
-                        <input class="cuadrocheck2" type="checkbox">
-                        <input class="cuadrocheck3" type="checkbox">
-                    </div>
-                    <div class="miniboxdias">
-                        <input class="cuadrocheck1" type="checkbox">
-                        <input class="cuadrocheck3" type="checkbox">
-                    </div>
-                    <div class="miniboxdias2">
-                        <input class="cuadrocheck2" type="checkbox">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="subform">
-            <button class="publicaranuncios"><a href="#registro3">SIGUIENTE</a></button>
-        </div>
-        <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
-    </div>
-</div>
-</div>
-</div>
-<div id="publicarduda" class="masc">
-    <div class="popupbox popupbox3 movedown movedown3">
-        <a href="#close" title="close" class="close">X</a>
-        <div class="contenidopublicar cf">
-            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
-                <h2 class="centrado">Publica tu curso</h2>
-                <p class="centrado">en sólo 2 pasos</p>
-                <div class="imgproceso">
-                    <img class="proceso" src="imagenes/proceso1.svg">
-                </div>
-                <h5><a class= "gris" href="consejos.html"><strong><u>Lee algunos consejos para mejorar tu curso</u></strong></a></h5>
-                <div class="cajaformulario">
-                    <h5>
-                        Título
-                    </h5>
-                    <p class="nofloat">
-                        Máximo 32 caracteres.
-                    </p>
-                    <form>
-                        <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
-                    </form>
-                </div>
-                <div class="cajaformulario">
-                    <h5>
-                     Categoría
-                 </h5>
-                 <form>
-                    <select name="text" class="estiloinputs">
-                        <option value="Arquitectura">Arquitectura</option>
-                        <option value="Animación">Animación</option>
-                        <option value="Diseño Audiovisual">Audiovisual</option>
-                        <option value="Diseño Industrial">Industrial</option>
-                        <option value="Linux">Gráfico</option>
-                        <option value="Linux">Moda</option>
-                        <option value="Linux">Web</option>
-                        <option value="Linux">Fotografía</option>
-                        <option value="Linux">Programación</option>
-                    </select>
-                </form>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Descripción
-                </h5>
-                <form>
-                    <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
-                </form>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Método de clase
-                </h5>
-
-                <form>
-                    <p class="categoriasmenu"><input type="checkbox">Presencial</p>
-                    <p class="categoriasmenu"><input type="checkbox">Skype</p>
-                    <p class="categoriasmenu"><input type="checkbox">Email</p>
-                </form>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Programa informático (opcional)
-                </h5>
-                <form>
-                 <input type="text" placeholder="Ej:Photoshop" required="" class="estiloinputs">
-             </form>
-         </div>
-         <div class="cajaformulario">
-            <h5>
-             Tags (opcional)
-         </h5>
-         <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
-     </div>
-     <div class="subform">
-        <button class="publicaranuncios"><a href="#registro2">SIGUIENTE</a></button>
-    </div>
-
-</div>
-</div>
-</div>
-</div>
-<div id="gracias" class="masc">
-    <div class="todopopup">
-        <div class="popupbox movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">¡Gracias</h2>
-            <h5 class="centrado">por publicar tus dudas!</h5>
-            <div class="formulario">
-                <p>
-                    En menos de 24 horas tendrás tu duda publicada en el apartado busca un alumno. </p>
-
-                    <p>Este formulario se enviará a nuestro sistema y si se adapta a nuestra política, será publicado. </p>
-
-                    <p>Disculpa las molestias.</p>
-                </p>
-            </div>
-            <div class="subform">
-                <button class="publicaranuncios"><a href="anunciosprofes.html">VER CURSOS</a></button>
-            </div>
-            <div class="subform">
-                <button class="publicaranuncios"><a href="perfil_sobremi.html">VER PERFIL</a></button>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="graciascon" class="masc">
-    <div class="todopopup">
-        <div class="popupbox movedown">
-            <a href="#close" title="close" class="close">X</a>
-            <h2 class="centrado">¡Gracias!</h2>
-            <h5 class="centrado"></h5>
-            <div class="formulario">
-                <p>Pronto recibirás respuesta.</p>
-            </div>
-            <div class="subform">
-                <button class="publicaranuncios"><a href="anunciosprofes.html">VER CURSOS</a></button>
-            </div>
-            <div class="subform">
-                <button class="publicaranuncios"><a href="perfil_sobremi.html">VER PERFIL</a></button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="cabecera-alumnos cf">
 <div class="titulo-encabezado cf">
@@ -470,6 +81,7 @@
     </div>
 </div>
 </div>
+<!--filtros y ordenar de tablet y mobil-->
 <div class="filtros-hide-tablet background-4 cf">
     <div class="left">
     <p class="uppercase left"><strong>Filtrar por</strong></p>
@@ -485,147 +97,69 @@
              <div class="categorias-hide cf">
              <h2 class="secondary-title">Categorías</h2>
              <hr>
-                <div class="lista-categorias">
+               <ul class="lista-categorias">
                     <div class="left grupo-iconos cf">
-                        <div class="iconos-c cf">
+                        <li class="iconos-c cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-animacion" href="#">Animación</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
-                        </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
+                        </li>
                     </div>
                     <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
+                        <li class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left grafico-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-grafico" href="#">Gráfico</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left moda-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
-                        </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
+                        </li>
                     </div>
                     <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
+                        <li class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left foto-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-fotografia" href="#">Fotografía</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left programacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
-                        </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
+                        </li>
                     </div>
-                </div>
+                </ul>
             </div>
                 <div class="categorias-hide-2 cf clear">
                    <h2 class="secondary-title">Disponibilidad</h2>
                    <hr>
-                   <div class="lista-categorias">
-                    <div class="grupo-iconos left cf">
+                   <ul class="lista-categorias">
+                    <li class="grupo-iconos left cf">
                         <span class="icono left manana icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
+                    </li>
+                    <li class="grupo-iconos left cf">
                         <span class="icono left tarde icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
+                    </li>
+                    <li class="grupo-iconos left cf">
                         <span class="icono left noche icono-margin"></span>
                         <a class="type-color-5" href="">
                             <p class="categorias-menu">Noche</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="categorias-hide-2 cf clear">
-                <h2 class="secondary-title">Método de clase</h2>
-                <hr>
-                <form class="checkbox">
-                    <p class="grupo-iconos left"><input type="checkbox">Presencial</p>
-                    <p class=" grupo-iconos left"><input type="checkbox">Videollamada</p>
-                    <p class=" grupo-iconos left"><input type="checkbox">E-mail</p>
-                </form>
-            </div>
-        </div>
-    <div class="filtros-3 clear">
-             <div class="categorias-hide cf">
-             <h2 class="secondary-title">Categorías</h2>
-             <hr>
-                <div class="lista-categorias">
-                    <div class="left grupo-iconos cf">
-                        <div class="iconos-c cf">
-                            <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left animacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
-                        </div>
-                    </div>
-                    <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
-                            <span class="icono left industrial-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left grafico-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left moda-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
-                        </div>
-                    </div>
-                    <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
-                            <span class="icono left web-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left foto-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left programacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div class="categorias-hide-2 cf clear">
-                   <h2 class="secondary-title">Disponibilidad</h2>
-                   <hr>
-                   <div class="lista-categorias">
-                    <div class="grupo-iconos left cf">
-                        <span class="icono left manana icono-margin"></span>
-                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
-                        <span class="icono left tarde icono-margin"></span>
-                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
-                        <span class="icono left noche icono-margin"></span>
-                        <a class="type-color-5" href="">
-                            <p class="categorias-menu">Noche</p></a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="categorias-hide-2 cf clear">
                 <h2 class="secondary-title">Método de clase</h2>
@@ -645,68 +179,69 @@
             </ul>
     </div>
 </div>
+<!--filtros desktop-->
 <div class="background-4 cf">
 <div class="container cf">
     <div class="row">
             <div class="filtros">
                 <div class="categorias">
                     <h2 class="secondary-title">Categorías</h2>
-                    <div class="lista-categorias">
-                        <div class="iconos-cat cf">
+                    <ul class="lista-categorias">
+                        <li class="iconos-cat cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="cat-1 type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <a class="cat-2 type-color-5" href=""><p class="categorias-menu">Animación</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-animacion" href="#">Animación</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="cat-3 type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left grafico-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-grafico" href="#">Gráfico</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left moda-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left foto-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-fotografia" href="#">Fotografía</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left programacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
-                        </div>
-                    </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="categorias-2">
                    <h2 class="secondary-title">Disponibilidad</h2>
-                   <div class="lista-categorias">
-                    <div class="iconos-cat cf">
+                   <ul class="lista-categorias">
+                    <li class="iconos-cat cf">
                         <span class="icono left manana icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </div>
-                    <div class="iconos-cat cf">
+                    </li>
+                    <li class="iconos-cat cf">
                         <span class="icono left tarde icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </div>
-                    <div class="iconos-cat cf">
+                    </li>
+                    <li class="iconos-cat cf">
                         <span class="icono left noche icono-margin"></span>
                         <a class="type-color-5" href="">
                             <p class="categorias-menu">Noche</p></a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="categorias-2">
                 <h2 class="secondary-title">Método de clase</h2>
@@ -721,14 +256,14 @@
             <div class="container-ordenar cf">
             <ul class="menu-ordenar">
                 <li><strong>Ordenar por:</strong></li>
-                <li><a class="type-color-5" href="anunciosprofes.html">Más recientes</a></li>
-                <li><a class="type-color-5" href="anunciosprofes.html">Más populares</a></li>
-                <li><a class="type-color-5" href="anunciosprofes.html">Mejor puntuados</a></li>
+                <li><a class="type-color-5 reciente" href="anunciosprofes.html">Más recientes</a></li>
+                <li><a class="type-color-5 popular" href="anunciosprofes.html">Más populares</a></li>
+                <li><a class="type-color-5 puntuado" href="anunciosprofes.html">Mejor puntuados</a></li>
 
             </ul>
             </div>
-            <ul class="row">
-                <li class="large-4 medium-6 small-12 columns">
+            <ul class="row anuncios">
+                <li data-reciente="1" data-popularidad="1" data-puntuacion="1" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-1-buscador.jpg" alt="imagen del usuario">
@@ -772,11 +307,11 @@
                                 <h3 class="destacado type-color-3">¿Quieres que alguien te enseñe?</h3>
                             </div>
                             <div class="mas-info-destacado">
-                                <a class="button-2 full-button type-color-3" href="#publicarduda">publica tus dudas</a>
+                                <a class="button-2 full-button type-color-3 publicar-duda" href="#">publica tus dudas</a>
                             </div>
                 </article>
             </li>
-              <li class="large-4 medium-6 small-12 columns">
+              <li data-reciente="2" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
@@ -812,7 +347,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="3" data-popularidad="5" data-puntuacion="3" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-3-buscador.jpg"alt="imagen del usuario">
@@ -849,7 +384,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="4" data-popularidad="8" data-puntuacion="5" class="large-4 medium-6 small-12 columns animacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
@@ -886,7 +421,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="5" data-popularidad="5" data-puntuacion="4" class="large-4 medium-6 small-12 columns animacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-5-buscador.jpg" alt="imagen del usuario">
@@ -923,7 +458,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="6" data-popularidad="20" data-puntuacion="4" class="large-4 medium-6 small-12 columns arquitectura">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-6-buscador.jpg" alt="imagen del usuario">
@@ -960,7 +495,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="7" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns arquitectura">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-7-buscador.jpg" alt="imagen del usuario">
@@ -997,7 +532,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="8" data-popularidad="30" data-puntuacion="5" class="large-4 medium-6 small-12 columns industrial">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-8-buscador.jpg" alt="imagen del usuario">
@@ -1034,7 +569,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="9" data-popularidad="6" data-puntuacion="3" class="large-4 medium-6 small-12 columns programacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
@@ -1071,7 +606,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="10" data-popularidad="3" data-puntuacion="1" class="large-4 medium-6 small-12 columns programacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-10-buscador.jpg" alt="imagen del usuario">
@@ -1108,7 +643,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="11" data-popularidad="25" data-puntuacion="3" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
@@ -1145,7 +680,7 @@
                     </div>
                 </article>
                 </li>
-                   <li class="large-4 medium-6 small-12 columns">
+                   <li data-reciente="12" data-popularidad="15" data-puntuacion="4" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-12-buscador.jpg" alt="imagen del usuario">
@@ -1182,7 +717,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="13" data-popularidad="3" data-puntuacion="1" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-13-buscador.jpg" alt="imagen del usuario">
@@ -1219,7 +754,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="14" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-26-buscador.jpg" alt="imagen del usuario">
@@ -1256,7 +791,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="15" data-popularidad="7" data-puntuacion="5" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-14-buscador.jpg" alt="imagen del usuario">
@@ -1294,7 +829,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="16" data-popularidad="14" data-puntuacion="1" class="large-4 medium-6 small-12 columns industrial">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-15-buscador.jpg" alt="imagen del usuario">
@@ -1331,7 +866,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="17" data-popularidad="1" data-puntuacion="4" class="large-4 medium-6 small-12 columns industrial">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-27-buscador.jpg" alt="imagen del usuario">
@@ -1368,7 +903,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="18" data-popularidad="10" data-puntuacion="3" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-16-buscador.jpg" alt="imagen del usuario">
@@ -1405,7 +940,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="19" data-popularidad="18" data-puntuacion="2" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-17-buscador.jpg" alt="imagen del usuario">
@@ -1442,7 +977,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="20" data-popularidad="6" data-puntuacion="1" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-18-buscador.jpg" alt="imagen del usuario">
@@ -1467,7 +1002,7 @@
                                     <span class="icono-stars left estrellas-valorar-1"></span>
                                 </div>
                                 <div class="container-icon">
-                                    <span class="modificar type-color-2">(5)</span>
+                                    <span class="modificar type-color-2">(6)</span>
                                 </div>
                             </div></a>
                            <div class="container-mail">
@@ -1479,7 +1014,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="21" data-popularidad="4" data-puntuacion="3" class="large-4 medium-6 small-12 columns moda">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
@@ -1516,7 +1051,7 @@
                     </div>
                 </article>
                 </li>
-                <li class="large-4 medium-6 small-12 columns">
+                <li data-reciente="22" data-popularidad="8" data-puntuacion="2" class="large-4 medium-6 small-12 columns moda">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-19-buscador.jpg" alt="imagen del usuario">
@@ -1553,7 +1088,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="23" data-popularidad="10" data-puntuacion="1" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-20-buscador.jpg" alt="imagen del usuario">
@@ -1590,7 +1125,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="24" data-popularidad="9" data-puntuacion="4" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-21-buscador.jpg" alt="imagen del usuario">
@@ -1615,7 +1150,7 @@
                                     <span class="icono-stars left estrellas-valorar-4"></span>
                                 </div>
                                 <div class="container-icon">
-                                    <span class="modificar type-color-2">(5)</span>
+                                    <span class="modificar type-color-2">(9)</span>
                                 </div>
                             </div></a>
                            <div class="container-mail">
@@ -1627,7 +1162,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="25" data-popularidad="2" data-puntuacion="1" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
@@ -1664,7 +1199,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="26" data-popularidad="13" data-puntuacion="4" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-22-buscador.jpg" alt="imagen del usuario">
@@ -1701,7 +1236,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="27" data-popularidad="4" data-puntuacion="3" class="large-4 medium-6 small-12 columns programacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-23-buscador.jpg" alt="imagen del usuario">
@@ -1726,7 +1261,7 @@
                                     <span class="icono-stars left estrellas-valorar"></span>
                                 </div>
                                 <div class="container-icon">
-                                    <span class="modificar type-color-2">(8)</span>
+                                    <span class="modificar type-color-2">(4)</span>
                                 </div>
                             </div></a>
                            <div class="container-mail">
@@ -1738,7 +1273,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="28" data-popularidad="10" data-puntuacion="2" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
@@ -1763,7 +1298,7 @@
                                     <span class="icono-stars left estrellas-valorar-2"></span>
                                 </div>
                                 <div class="container-icon">
-                                    <span class="modificar type-color-2">(8)</span>
+                                    <span class="modificar type-color-2">(10)</span>
                                 </div>
                             </div></a>
                            <div class="container-mail">
@@ -1775,7 +1310,7 @@
                     </div>
                 </article>
                 </li>
-                 <li class="large-4 medium-6 small-12 columns">
+                 <li data-reciente="29" data-popularidad="8" data-puntuacion="2" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
                             <img class="foto-alumno" src="imagenes/alumno-25-buscador.jpg" alt="imagen del usuario">
@@ -1789,15 +1324,15 @@
                         <div class="mas-info">
                             <div class="total-icono">
                                  <div class="container-icon">
-                                    <span class="icono left animacion-c"></span>
+                                    <span class="icono left foto-c"></span>
                                 </div>
                                 <div class="container-icon">
-                                    <span class="secondary-subtitle">Moda</span>
+                                    <span class="secondary-subtitle">Fotografía</span>
                                 </div>
                             </div>
                             <a class="type-color-5" href="#"><div class="total-icono right">
                                  <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar-4"></span>
+                                    <span class="icono-stars left estrellas-valorar-2"></span>
                                 </div>
                                 <div class="container-icon">
                                     <span class="modificar type-color-2">(8)</span>
@@ -1846,18 +1381,5 @@
     </div>
 
     </footer>
-    <script type="text/javascript">
-
-        $('#abrir').click(function(e){
-        $('.buscador-desplegado').show();
-        return false;
-    });
-
-    $('#cerrar').click(function(e){
-        $('.buscador-desplegado').hide();
-        return false;
-    });
-    </script>
-
 </body>
 </html>

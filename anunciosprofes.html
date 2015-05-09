@@ -7,6 +7,10 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/buscador.js"></script>
+    <script src="js/filtros-responsive.js"></script>
+    <script src="js/links-popups.js"></script>
+    <script src="js/ordenar.js"></script>
+     <script src="js/filtros.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -21,12 +25,8 @@
 
   </script>
    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<<<<<<< HEAD
-
-=======
    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
    
->>>>>>> 2206b1b9e64b3be2525a4a4ba9080fa640eebab1
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                 <div class="registro">
                     <ul>
                         <li><a class="login" href="#">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li><a class="registro" href="#">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
@@ -82,9 +82,10 @@
         </div>
     </div>
     <div class="container-button-title">
-    <a class="button-2 margin-top type-color-3" href="#"><span>Publica tu curso</span></a></button>
+    <a class="button-2 margin-top type-color-3 publicar-curso" href="#"><span>Publica tu curso</span></a></button>
 </div>
 </div>
+<!--filtros y ordenar de tablet y mobil-->
 <div class="filtros-hide-tablet background-4 cf">
     <div class="left">
     <p class="uppercase left"><strong>Filtrar por</strong></p>
@@ -100,147 +101,69 @@
              <div class="categorias-hide cf">
              <h2 class="secondary-title">Categorías</h2>
              <hr>
-                <div class="lista-categorias">
+                <ul class="lista-categorias">
                     <div class="left grupo-iconos cf">
-                        <div class="iconos-c cf">
+                        <li class="iconos-c cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-animacion" href="#">Animación</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
-                        </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
+                        </li>
                     </div>
                     <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
+                        <li class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left grafico-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-grafico" href="#">Gráfico</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left moda-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
-                        </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
+                        </li>
                     </div>
                     <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
+                        <li class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left foto-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-fotografia" href="#">Fotografía</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left programacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
-                        </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
+                        </li>
                     </div>
-                </div>
+                </ul>
             </div>
                 <div class="categorias-hide-2 cf clear">
                    <h2 class="secondary-title">Disponibilidad</h2>
                    <hr>
-                   <div class="lista-categorias">
-                    <div class="grupo-iconos left cf">
+                   <ul class="lista-categorias">
+                    <li class="grupo-iconos left cf">
                         <span class="icono left manana icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
+                    </li>
+                    <li class="grupo-iconos left cf">
                         <span class="icono left tarde icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
+                    </li>
+                    <li class="grupo-iconos left cf">
                         <span class="icono left noche icono-margin"></span>
                         <a class="type-color-5" href="">
                             <p class="categorias-menu">Noche</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="categorias-hide-2 cf clear">
-                <h2 class="secondary-title">Método de clase</h2>
-                <hr>
-                <form class="checkbox">
-                    <p class="grupo-iconos left"><input type="checkbox">Presencial</p>
-                    <p class=" grupo-iconos left"><input type="checkbox">Videollamada</p>
-                    <p class=" grupo-iconos left"><input type="checkbox">E-mail</p>
-                </form>
-            </div>
-        </div>
-    <div class="filtros-3 clear">
-             <div class="categorias-hide cf">
-             <h2 class="secondary-title">Categorías</h2>
-             <hr>
-                <div class="lista-categorias">
-                    <div class="left grupo-iconos cf">
-                        <div class="iconos-c cf">
-                            <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Arquitectura</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left animacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Animación</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Audiovisual</p></a>
-                        </div>
-                    </div>
-                    <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
-                            <span class="icono left industrial-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Industrial</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left grafico-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Gráfico</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left moda-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Moda</p></a>
-                        </div>
-                    </div>
-                    <div class="left grupo-iconos cf">
-                        <div class="iconos-cat cf">
-                            <span class="icono left web-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Web</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left foto-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Fotografía</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
-                            <span class="icono left programacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu">Programación</p></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div class="categorias-hide-2 cf clear">
-                   <h2 class="secondary-title">Disponibilidad</h2>
-                   <hr>
-                   <div class="lista-categorias">
-                    <div class="grupo-iconos left cf">
-                        <span class="icono left manana icono-margin"></span>
-                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
-                        <span class="icono left tarde icono-margin"></span>
-                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </div>
-                    <div class="grupo-iconos left cf">
-                        <span class="icono left noche icono-margin"></span>
-                        <a class="type-color-5" href="">
-                            <p class="categorias-menu">Noche</p></a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="categorias-hide-2 cf clear">
                 <h2 class="secondary-title">Método de clase</h2>
@@ -260,69 +183,69 @@
             </ul>
     </div>
 </div>
-
+<!--filtros desktop-->
 <div class="background-4 cf clear">
 <div class="container cf">
     <div class="row">
             <div class="filtros">
                 <div class="categorias">
                     <h2 class="secondary-title">Categorías</h2>
-                    <div class="lista-categorias">
-                        <div class="iconos-cat cf">
+                    <ul class="lista-categorias">
+                        <li class="iconos-cat cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-arquitectura">Arquitectura</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left animacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-animacion">Animación</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                             <p class="categorias-menu"><a class="type-color-5 categoria-animacion" href="#">Animación</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left audiovisual-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-audiovisual">Audiovisual</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-industrial">Industrial</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left grafico-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-grafico">Gráfico</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-grafico" href="#">Gráfico</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left moda-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-moda">Moda</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-web">Web</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left foto-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-fotografia">Fotografía</p></a>
-                        </div>
-                        <div class="iconos-cat cf">
+                            <p class="categorias-menu"><a class="type-color-5 categoria-fotografia" href="#">Fotografía</a></p>
+                        </li>
+                        <li class="iconos-cat cf">
                             <span class="icono left programacion-b icono-margin"></span>
-                            <a class="type-color-5" href=""><p class="categorias-menu categoria-programacion">Programación</p></a>
-                        </div>
-                    </div>
+                             <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="categorias-2">
                    <h2 class="secondary-title">Disponibilidad</h2>
-                   <div class="lista-categorias">
-                    <div class="iconos-cat cf">
+                   <ul class="lista-categorias">
+                    <li class="iconos-cat cf">
                         <span class="icono left manana icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </div>
-                    <div class="iconos-cat cf">
+                    </li>
+                    <li class="iconos-cat cf">
                         <span class="icono left tarde icono-margin"></span>
                         <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </div>
-                    <div class="iconos-cat cf">
+                    </li>
+                    <li class="iconos-cat cf">
                         <span class="icono left noche icono-margin"></span>
                         <a class="type-color-5" href="">
                             <p class="categorias-menu">Noche</p></a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="categorias-2">
                 <h2 class="secondary-title">Método de clase</h2>
@@ -344,7 +267,7 @@
                     </ul>
                 </div>
                 <ul class="row anuncios">
-                <li data-popularidad="1" class="large-4 medium-6 small-12 columns audiovisual">
+                <li data-reciente="1" data-popularidad="5" data-puntuacion="1" class="large-4 medium-6 small-12 columns audiovisual">
                     <article class="anuncio">
                         <a class="type-color-5" href="#">
                             <div class="image-container cf">
@@ -388,7 +311,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="3" class="large-4 medium-6 small-12 columns audiovisual">
+                <li data-reciente="2" data-popularidad="5" data-puntuacion="3" class="large-4 medium-6 small-12 columns audiovisual">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-20.jpg" alt="Imagen fotografía del movimiento">
@@ -431,7 +354,7 @@
                     </article>
                 </li>
 
-                <li data-popularidad="2" class="large-4 medium-6 small-12 columns audiovisual">
+                <li data-reciente="4" data-popularidad="9" data-puntuacion="2" class="large-4 medium-6 small-12 columns audiovisual">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-2.jpg" alt="Imagen modelar monstruo en 3D">
@@ -473,7 +396,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="7" class="large-4 medium-6 small-12 columns animacion">
+                <li data-reciente="5" data-popularidad="10" data-puntuacion="4" class="large-4 medium-6 small-12 columns animacion">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-21.jpg" alt="Imagen muestra de formatos imagen">
@@ -521,11 +444,11 @@
                                 <h3 class="destacado type-color-3">¿No encuentras el curso que quieres?</h3>
                             </div>
                             <div class="mas-info-destacado">
-                                <a class="general-button button-2 full-button type-color-3" href="#publicarduda">publica tus dudas</a>
+                                <a class="general-button button-2 full-button type-color-3" href="#">publica tus dudas</a>
                             </div>
                 </article>
             </li>
-            <li data-popularidad="15" class="large-4 medium-6 small-12 columns animacion">
+            <li data-reciente="6" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns animacion">
                     <article class="anuncio height-cursos">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-5.jpg" alt="Imagen modelar coche 3D">
@@ -567,7 +490,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="10" class="large-4 medium-6 small-12 columns arquitectura">
+                <li data-reciente="7" data-popularidad="7" data-puntuacion="1" class="large-4 medium-6 small-12 columns arquitectura">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-14.jpg" alt="Imagen programa Autocad">
@@ -609,7 +532,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="9" class="large-4 medium-6 small-12 columns arquitectura">
+                <li data-reciente="8" data-popularidad="16" data-puntuacion="3" class="large-4 medium-6 small-12 columns arquitectura">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-7.jpg" alt="Imagen modelar parque infantil">
@@ -651,7 +574,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="13" class="large-4 medium-6 small-12 columns industrial">
+                <li data-reciente="9" data-popularidad="11" data-puntuacion="5" class="large-4 medium-6 small-12 columns industrial">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-27.jpg" alt="Imagen diseño de interiores">
@@ -693,7 +616,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="4" class="large-4 medium-6 small-12 columns industrial">
+                <li data-reciente="10" data-popularidad="3" data-puntuacion="2" class="large-4 medium-6 small-12 columns industrial">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-17.jpg" alt="Personaje hecho en impresora 3D">
@@ -735,7 +658,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="18" class="large-4 medium-6 small-12 columns grafico">
+                <li data-reciente="11" data-popularidad="9" data-puntuacion="3" class="large-4 medium-6 small-12 columns grafico">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-13.jpg" alt="Imagen maquetar cartel">
@@ -777,7 +700,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="20" class="large-4 medium-6 small-12 columns grafico">
+                <li data-reciente="12" data-popularidad="11" data-puntuacion="4" class="large-4 medium-6 small-12 columns grafico">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-23.jpg" alt="Imagen de formatos de imagen">
@@ -819,7 +742,7 @@
                         </div>
                     </article>
                 </li>
-                <li data-popularidad="14" class="large-4 medium-6 small-12 columns grafico">
+                <li data-reciente="13" data-popularidad="20" data-puntuacion="1" class="large-4 medium-6 small-12 columns grafico">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-22.jpg" alt="Ilustración formatos imágenes">
@@ -861,306 +784,17 @@
                         </div>
                     </article>
                 </li>
-<<<<<<< HEAD
                 <li class="large-4 medium-6 small-12 columns">
                    <article class="anuncio-destacado">
                             <div class="texto-cuadrado-destacado">
                                 <h3 class="destacado type-color-3">¿No encuentras el curso que quieres?</h3>
-=======
-                <li data-popularidad="23" class="large-4 medium-6 small-12 columns grafico">
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-10.jpg">
-                        </div>
-                            <div class="hover-container">
-                                    <p> Si te interesa la tipografía puedo enseñarte los diferentes pasos a seguir para conseguir realizar tu propia tipografía y subirla a la red. Estoy a tu disposición!</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Carlos López</span></p>
-                                        <p class="tags type-color-1">#tipografia</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Aprende a crear tu propia tipografía</h2>
->>>>>>> 2206b1b9e64b3be2525a4a4ba9080fa640eebab1
                             </div>
                             <div class="mas-info-destacado">
-                                <a class="general-button button-2 full-button type-color-3" href="#publicarduda">publica tus dudas</a>
+                                <a class="general-button button-2 full-button type-color-3" href="#">publica tus dudas</a>
                             </div>
-<<<<<<< HEAD
                 </article>
-            </li>
-
-                <li class="large-4 medium-6 small-12 columns">
-=======
-                        </div>
-                    </article>
                 </li>
-                <li data-popularidad="25" class="large-4 medium-6 small-12 columns grafico">
->>>>>>> 2206b1b9e64b3be2525a4a4ba9080fa640eebab1
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-6.jpg" alt="Imagen maquetación revista">
-                        </div>
-                          <div class="hover-container">
-                                    <p>Si aún no conoces el potencial del Ilustrator, puedo enseñarte las distintas herramientas que dispone el programa, desde diseños de logos, tipografías…</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Tardes</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">David Rodriguez</span></p>
-                                        <p class="tags type-color-1">#illustrator</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">¿Quieres iniciarte en Illustrator?</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                    <span class="icono left grafico-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Gráfico</span>
-                                    </div>
-                                </div>
-                            <a href=""><div class="total-icono right">
-                                   <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar-4"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(20)</span>
-                                </div>
-                            </div></a>
-                           <a class="button-mail no-display" href="#contactar">
-                                <span></span>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li data-popularidad="22" class="large-4 medium-6 small-12 columns grafico">
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-11.jpg" alt="Imagen de una tipo en retícula">
-                        </div>
-                            <div class="hover-container">
-                                    <p>Te puedo enseñar a usar una de las herramientas más importantes de Indesign. Te permitirá agilizar mucho tus proyectos de maquetación de revistas. </p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Ariadna Ercilla</span></p>
-                                        <p class="tags type-color-1">#inDesign</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Aprende a usar la página maestra en Indesign</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                     <span class="icono left grafico-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Gráfico</span>
-                                    </div>
-                                </div>
-                             <a href=""><div class="total-icono right">
-                                   <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar-2"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(2)</span>
-                                </div>
-                            </div></a>
-                            <a class="button-mail no-display" href="#contactar">
-                                <span></span>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li data-popularidad="26" class="large-4 medium-6 small-12 columns fotografia">
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-10.jpg" alt="Imagen de dispositivos web">
-                        </div>
-                            <div class="hover-container">
-<<<<<<< HEAD
-                                    <p> Si te interesa la tipografía puedo enseñarte los diferentes pasos a seguir para conseguir realizar tu propia tipografía y subirla a la red. Estoy a tu disposición!</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Carlos López</span></p>
-                                        <p class="tags type-color-1">#tipografia</p>
-=======
-                                    <p>Aprenderemos a realizar un Lightpainting bien retocado en Photoshop y tendremos la oportunidad de probarlo en direto con mi cámara.</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Noches</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Isabela Razzeti</span></p>
-                                        <p class="tags type-color-1">#lightpainting</p>
->>>>>>> 2206b1b9e64b3be2525a4a4ba9080fa640eebab1
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Aprende a crear tu propia tipografía</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                    <span class="icono left grafico-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Gráfico</span>
-                                    </div>
-                                </div>
-                             <a href=""><div class="total-icono right">
-                                  <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(20)</span>
-                                </div>
-                            </div></a>
-                            <a class="button-mail no-display" href="#contactar">
-                                <span></span>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li data-popularidad="30" class="large-4 medium-6 small-12 columns fotografia">
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-20.jpg" alt="Fotografia del movimiento">
-                        </div>
-                           <div class="hover-container">
-                                    <p>En este curso, te enseñaré a preparar tu cámara digital manual para poder captar nítidamente objetos en movimiento como los coches o otros elementos.</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Roser Pastor</span></p>
-                                        <p class="tags type-color-1">#fotográfia #movimiento</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Fotografía el movimiento de los objetos</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                     <span class="icono left foto-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Fotografía</span>
-                                    </div>
-                                </div>
-                             <a href=""><div class="total-icono right">
-                                   <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(8)</span>
-                                </div>
-                            </div></a>
-                            <a class="button-mail no-display" href="#contactar">
-                                <span></span>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li data-popularidad="12" class="large-4 medium-6 small-12 columns web">
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
-                        </div>
-                           <div class="hover-container">
-                                    <p>En este curso puedo enseñarte a maquetar formularios para tu web de la forma más sencilla, con HTML y CSS. No perderás el tiempo, ¡te enseñaré en 1 hora!</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Jordi Martín</span></p>
-                                        <p class="tags type-color-1">#formulario</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Maquetar formularios en 1 hora</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                    <span class="icono left web-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Web</span>
-                                    </div>
-                                </div>
-                             <a href=""><div class="total-icono right">
-                                  <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar-2"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(21)</span>
-                                </div>
-                            </div></a>
-                            <a class="button-mail no-display" href="#contactar">
-                                <span></span>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li data-popularidad="21" class="large-4 medium-6 small-12 columns moda">
-                    <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-25.jpg" alt="Imagen muestra de tejidos">
-                        </div>
-                            <div class="hover-container">
-                                    <p>Quieres saber las características físicas de distintos materiales? Desde algodón, lana,...Envíame tus dudas por correo y estaré encantado de ayudarte.</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Laura Boscá</span></p>
-                                        <p class="tags type-color-1">#tejidos #moda</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Aprende los diferentes tejidos</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                     <span class="icono left moda-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Moda</span>
-                                    </div>
-                                </div>
-                             <a href=""><div class="total-icono right">
-                                   <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(5)</span>
-                                </div>
-                            </div></a>
-                            <a class="button-mail no-display" href="#contactar">
-                                <span></span>
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li data-popularidad="27" class="large-4 medium-6 small-12 columns programacion">
+                 <li data-reciente="15" data-popularidad="9" data-puntuacion="1" class="large-4 medium-6 small-12 columns programacion">
                     <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-15.jpg" alt="Imagen de MYSQL">
@@ -1202,6 +836,259 @@
                         </div>
                     </article>
                 </li>
+                <li data-reciente="16" data-popularidad="20" data-puntuacion="4" class="large-4 medium-6 small-12 columns grafico">
+                    <article class="anuncio">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-6.jpg" alt="Imagen maquetación revista">
+                        </div>
+                          <div class="hover-container">
+                                    <p>Si aún no conoces el potencial del Ilustrator, puedo enseñarte las distintas herramientas que dispone el programa, desde diseños de logos, tipografías…</p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Tardes</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">David Rodriguez</span></p>
+                                        <p class="tags type-color-1">#illustrator</p>
+                                    </div>
+                            </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">¿Quieres iniciarte en Illustrator?</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                    <span class="icono left grafico-c"></span>
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Gráfico</span>
+                                    </div>
+                                </div>
+                            <a href=""><div class="total-icono right">
+                                   <div class="container-stars">
+                                    <span class="icono-stars left estrellas-valorar-4"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(20)</span>
+                                </div>
+                            </div></a>
+                           <a class="button-mail no-display" href="#contactar">
+                                <span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li data-reciente="17" data-popularidad="2" data-puntuacion="2" class="large-4 medium-6 small-12 columns grafico">
+                    <article class="anuncio">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-11.jpg" alt="Imagen de una tipo en retícula">
+                        </div>
+                            <div class="hover-container">
+                                    <p>Te puedo enseñar a usar una de las herramientas más importantes de Indesign. Te permitirá agilizar mucho tus proyectos de maquetación de revistas. </p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">Ariadna Ercilla</span></p>
+                                        <p class="tags type-color-1">#inDesign</p>
+                                    </div>
+                            </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Aprende a usar la página maestra en Indesign</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                     <span class="icono left grafico-c"></span>
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Gráfico</span>
+                                    </div>
+                                </div>
+                             <a href=""><div class="total-icono right">
+                                   <div class="container-stars">
+                                    <span class="icono-stars left estrellas-valorar-2"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(2)</span>
+                                </div>
+                            </div></a>
+                            <a class="button-mail no-display" href="#contactar">
+                                <span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li data-reciente="23" data-popularidad="25" data-puntuacion="3" class="large-4 medium-6 small-12 columns grafico">
+                    <article class="anuncio">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-10.jpg" alt="Imagen de dispositivos web">
+                        </div>
+                            <div class="hover-container">
+                                    <p>Aprenderemos a realizar un Lightpainting bien retocado en Photoshop y tendremos la oportunidad de probarlo en direto con mi cámara.</p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Noches</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">Isabela Razzeti</span></p>
+                                        <p class="tags type-color-1">#lightpainting</p>
+                                    </div>
+                            </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Aprende a crear tu propia tipografía</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                    <span class="icono left grafico-c"></span>
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Gráfico</span>
+                                    </div>
+                                </div>
+                             <a href=""><div class="total-icono right">
+                                  <div class="container-stars">
+                                    <span class="icono-stars left estrellas-valorar"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(25)</span>
+                                </div>
+                            </div></a>
+                            <a class="button-mail no-display" href="#contactar">
+                                <span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li data-reciente="24" data-popularidad="8" data-puntuacion="3" class="large-4 medium-6 small-12 columns fotografia">
+                    <article class="anuncio">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-20.jpg" alt="Fotografia del movimiento">
+                        </div>
+                           <div class="hover-container">
+                                    <p>En este curso, te enseñaré a preparar tu cámara digital manual para poder captar nítidamente objetos en movimiento como los coches o otros elementos.</p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">Roser Pastor</span></p>
+                                        <p class="tags type-color-1">#fotográfia #movimiento</p>
+                                    </div>
+                            </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Fotografía el movimiento de los objetos</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                     <span class="icono left foto-c"></span>
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Fotografía</span>
+                                    </div>
+                                </div>
+                             <a href=""><div class="total-icono right">
+                                   <div class="container-stars">
+                                    <span class="icono-stars left estrellas-valorar"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(8)</span>
+                                </div>
+                            </div></a>
+                            <a class="button-mail no-display" href="#contactar">
+                                <span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li data-reciente="25" data-popularidad="21" data-puntuacion="2" class="large-4 medium-6 small-12 columns web">
+                    <article class="anuncio">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
+                        </div>
+                           <div class="hover-container">
+                                    <p>En este curso puedo enseñarte a maquetar formularios para tu web de la forma más sencilla, con HTML y CSS. No perderás el tiempo, ¡te enseñaré en 1 hora!</p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">Jordi Martín</span></p>
+                                        <p class="tags type-color-1">#formulario</p>
+                                    </div>
+                            </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Maquetar formularios en 1 hora</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                    <span class="icono left web-c"></span>
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Web</span>
+                                    </div>
+                                </div>
+                             <a href=""><div class="total-icono right">
+                                  <div class="container-stars">
+                                    <span class="icono-stars left estrellas-valorar-2"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(21)</span>
+                                </div>
+                            </div></a>
+                            <a class="button-mail no-display" href="#contactar">
+                                <span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li data-reciente="26" data-popularidad="5" data-puntuacion="3" class="large-4 medium-6 small-12 columns moda">
+                    <article class="anuncio">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-25.jpg" alt="Imagen muestra de tejidos">
+                        </div>
+                            <div class="hover-container">
+                                    <p>Quieres saber las características físicas de distintos materiales? Desde algodón, lana,...Envíame tus dudas por correo y estaré encantado de ayudarte.</p>
+                                    <div class="sub-contenido-curso">
+                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
+                                        <p class="light">Nombre:<span class="type-color-5">Laura Boscá</span></p>
+                                        <p class="tags type-color-1">#tejidos #moda</p>
+                                    </div>
+                            </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Aprende los diferentes tejidos</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                   <div class="container-icon">
+                                     <span class="icono left moda-c"></span>
+                                    </div>
+                                     <div class="container-icon">
+                                    <span class="secondary-subtitle">Moda</span>
+                                    </div>
+                                </div>
+                             <a href=""><div class="total-icono right">
+                                   <div class="container-stars">
+                                    <span class="icono-stars left estrellas-valorar"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="modificar type-color-2">(5)</span>
+                                </div>
+                            </div></a>
+                            <a class="button-mail no-display" href="#contactar">
+                                <span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+               
                 </ul>
             </div>
         </div>
@@ -1241,111 +1128,5 @@
     </div>
 
 </footer>
-   <script type="text/javascript">
-
-     $('#abrir-filtros').click(function(e){
-        $(this).hide();
-        $('#cerrar-filtros').show();
-        $('.filtros-2').show();
-        return false;
-    });
-
-      $('#cerrar-filtros').click(function(e){
-        $(this).hide();
-        $('#abrir-filtros').show();
-        $('.filtros-2').hide();
-        return false;
-    });
-     $('#abrir-ordenar').click(function(e){
-        $(this).hide();
-        $('#cerrar-ordenar').show();
-        $('.container-ordenar-mobile').show();
-        return false;
-    });
-
-      $('#cerrar-ordenar').click(function(e){
-        $(this).hide();
-        $('#abrir-ordenar').show();
-        $('.container-ordenar-mobile').hide();
-        return false;
-    });
-
-<<<<<<< HEAD
-=======
-      $('.categoria-arquitectura').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.arquitectura)').hide();
-        $('.anuncios li.arquitectura').show();
-      });
-      $('.categoria-animacion').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.animacion)').hide();
-        $('.anuncios li.animacion').show();
-      });
-      $('.categoria-audiovisual').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.audiovisual)').hide();
-        $('.anuncios li.audiovisual').show();
-      });
-      $('.categoria-industrial').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.industrial)').hide();
-        $('.anuncios li.industrial').show();
-      });
-      $('.categoria-grafico').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.grafico)').hide();
-        $('.anuncios li.grafico').show();
-      });
-      $('.categoria-moda').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.moda)').hide();
-        $('.anuncios li.moda').show();
-      });
-      $('.categoria-web').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.web)').hide();
-        $('.anuncios li.web').show();
-      });
-      $('.categoria-fotografia').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.fotografia)').hide();
-        $('.anuncios li.fotografia').show();
-      });
-      $('.categoria-programacion').click(function(e){
-        e.preventDefault();
-        $('.anuncios li:not(.programacion)').hide();
-        $('.anuncios li.programacion').show();
-      });
-
-
-      $('.login').click(function(e){
-        e.preventDefault();
-        $('#popup').load('popups.html #login', function() {
-            $('#login').show();
-            $('.close').click(function(e){
-                $('.masc:visible').hide();
-            });
-        });
-        
-      });
-      $('.registro').click(function(e){
-        e.preventDefault();
-        $('#popup').load('popups.html #registro', function() {
-            $('#registro').show();
-            $('.close').click(function(e){
-                $('.masc:visible').hide();
-            });
-        });
-        
-      });
-
-      $('a.popular').click(function(e) {
-        e.preventDefault();
-        tinysort('ul.anuncios>li',{data:'popularidad', order:'desc'});
-      })
-    
->>>>>>> 2206b1b9e64b3be2525a4a4ba9080fa640eebab1
-    </script>
 </body>
 </html>

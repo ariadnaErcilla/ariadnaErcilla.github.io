@@ -71,14 +71,6 @@ p {
   font-size: 1rem;
   text-align: left; }
 
-.categorias-menu {
-  padding-right: 10px;
-  line-height: 30px;
-  margin: 0; }
-
-.categorias-menu:hover {
-  color: #f15c22; }
-
 .light {
   font-weight: 300;
   color: #00A6A5;
@@ -1030,6 +1022,12 @@ contenedores anuncios
   margin-right: 10px;
   margin-top: 2px; }
 
+.stars-valorale {
+  height: 35px;
+  width: 175px;
+  margin-right: 10px;
+  margin-top: 2px; }
+
 .icono-margin {
   margin: 5px 4px 5px 0px; }
 
@@ -1181,7 +1179,7 @@ contenedores anuncios
 
 .popup-box {
   width: 500px;
-  padding: 5px 20px 13px 20px;
+  padding: 5px 20px 23px 20px;
   background: white;
   border-radius: 5px;
   transition: all 500ms ease-in;
@@ -1190,27 +1188,25 @@ contenedores anuncios
   position: relative; }
 
 .container-popup {
-<<<<<<< HEAD
-  width: 100%;
-  margin: 0 auto;
-  overflow: scroll; }
-
-.height-1 {
-  max-height: 200px; }
-=======
   width: 75%;
   margin: 0 auto; }
->>>>>>> 2206b1b9e64b3be2525a4a4ba9080fa640eebab1
 
 .height-scroll {
-  max-height: 350px;
+  max-height: 370px;
   overflow: scroll; }
+
+.border {
+  border: 1px solid #404041;
+  padding: 0px 5px 0px 5px; }
 
 .movedown {
   margin: 10% auto; }
 
 .movedown-2 {
   margin: 1% auto; }
+
+.movedown-3 {
+  margin: 5% auto; }
 
 .link-facebook {
   width: 100%; }
@@ -1221,7 +1217,7 @@ contenedores anuncios
   padding: 20px 0px 10px 0px; }
 
 .padding-button-popup {
-  padding: 23px 10px 43px 0px; }
+  padding: 23px 10px 24px 0px; }
 
 .img-facebook {
   padding: 15px 0px 15px 0px;
@@ -1346,7 +1342,8 @@ td {
 .menu-ordenar li {
   text-transform: uppercase; }
 
-.menu-ordenar li a:hover {
+.menu-ordenar li a:hover,
+.menu-ordenar li a.selection {
   color: #00A6A5; }
 
 /*------
@@ -1391,14 +1388,27 @@ aside categorias
 .filtros {
   float: left;
   width: 17%;
-  margin-top: 40px;
+  margin-top: 66px;
   clear: both; }
 
 .categorias {
   margin-top: 50px; }
 
+.categorias-menu {
+  padding-right: 10px;
+  line-height: 30px;
+  margin: 0; }
+
+.categorias-menu a:hover,
+.categorias-menu a.select {
+  color: #f15c22; }
+
+ul {
+  padding-left: 0; }
+
 .lista-categorias {
-  margin-top: 20px; }
+  margin-top: 20px;
+  list-style: none; }
 
 .programas {
   margin-top: 30px; }
@@ -1419,9 +1429,6 @@ aside categorias
   margin-bottom: 30px; }
 
 .filtros-2 {
-  display: none; }
-
-.filtros-3 {
   display: none; }
 
 .grupo-iconos {
