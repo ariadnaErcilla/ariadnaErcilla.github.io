@@ -14,266 +14,73 @@
 </head>
 
 <body>
-    <header>
-        <div class="img-logo">
-            <a href="index.html"><img class="logo" src="imagenes/logoytexto.png" alt="Logo"></a>
-
+    <header class="cf">
+        <div class="logo">
+            <a href="index.html">
+                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo">
+            </a>
         </div>
-        <div>
-            <nav class="menu">
-                <div class="menu-izquierda">
-                    <ul>
-                        <li><a href="anunciosprofes.html">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html">Busca tu alumno</a></li>
-                        <li><a href="funciona.html">¿Cómo funciona?</a></li>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="registro">
+                    <ul class="esconder">
+                        <li><a href="#login">Log in</a></li>
+                        <li><a href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
-                <div class="menu-derecha">
-                    <ul>
-                        <li><a class="a-menu" href="#login">Log in</a></li>
-                        <li><a class="a-menu" href="#registro">Regístrate</a></li>
-
-                        <li><div class='buscar-top'><form action='/search' id='searchthis' method='get'>
-                            <input class='search-box' name='q' placeholder='BUSCAR' type='text'/> </li>
-                        </form></div>
-                    </ul>
+                <div class="lupa-buscador">
+                    <div class="dropdown__wrap">
+                        <a href="#">
+                            <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion_vertical">
+                                <a href="#">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">¿Cómo funciona?</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Mi perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="abrir" href="">
+                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
+                    </a>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <div class="buscador-desplegado cf">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <div class="buscador-container-derecha cf">
+                <div class="container-button-buscador left">
+                    <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                </div>
+                <a id="cerrar" href="">
+                    <img class="imagen-cerrar-buscador right" src="imagenes/buscador-cerrar.svg" alt="Cerrar-buscador">
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- inicio pop-ups -->
-    <div id="publicar" class="masc">
-        <div class="popupbox popupbox2 movedown movedown3">
-            <a href="#close" title="close" class="close">X</a>
-            <div class="contenidopublicar cf">
-                <div class="cajainstrucciones">
-                    <div class="cajaformulario">
-                        <p class="titulospublicar">
-                            Título:
-                        </p>
-                        <p class="subtitulospublicar">
-                            *Máximo 30 caracteres
-                        </p>
-                        <form>
-                            <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
-                        </form>
-                    </div>
-                    <div class="cajaformulario">
-                        <p class="titulospublicar">
-                         Categoría:
-                     </p>
-                     <form>
-                        <select name="text" class="estiloinputs">
-                            <option value="Arquitectura">Arquitectura</option>
-                            <option value="Animación">Animación</option>
-                            <option value="Diseño Audiovisual">Diseño Audiovisual</option>
-                            <option value="Diseño Industrial">Diseño Industrial</option>
-                            <option value="Linux">Diseño Gráfico</option>
-                            <option value="Linux">Diseño de Moda</option>
-                            <option value="Linux">Diseño Web</option>
-                            <option value="Linux">Fotografía</option>
-                            <option value="Linux">Programación</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="cajaformulario">
-                    <p class="titulospublicar">
-                        Método de clase:
-                    </p>
-                    <form>
-                        <input type="checkbox"><p class="metodoclase">Presencial</p>
-                        <input type="checkbox"><p class="metodoclase">Skype</p>
-                        <input type="checkbox"><p class="metodoclase">Email</p>
-                    </form>
-                </div>
-                <div class="cajaformulario">
-                    <p class="titulospublicar">
-                        Descripción:
-                    </p>
-                    <p class="subtitulospublicar">
-                        *Máximo 200 caracteres
-                    </p>
-                    <form>
-                        <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
-                    </form>
-                </div>
-                <div class="cajaformulario">
-                    <p class="titulospublicar">
-                     Tags:
-                 </p>
-                 <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
-             </div>
-             <div class="cajaformulario">
-                <p class="titulospublicar">
-                    Sube una foto de tu trabajo:
-                </p>
-                <p class="subtitulospublicar">
-                    *Máximo 3,2 x 3,2 cm
-                </p>
-                <form>
-                    <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
-                </form>
-            </div>
-        </div>
-        <div class="cajaconsejos">
-            <div class="consejos">
-                <h3 class="tituloconsejos">¡Mira mis consejos!</h3>
-                <div class="botonconsejos">1</div>
-                <p class="consejo">Pon un título corto y directo a tu anuncio</p>
-                <div class="botonconsejos">2</div>
-                <p class="consejo">Selecciona una categoria para clasificar tu anuncio.</p>
-                <div class="botonconsejos">3</div>
-                <p class="consejo">Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
-                <div class="botonconsejos">4</div>
-                <p class="consejo">Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
-                <div class="botonconsejos">5</div>
-                <p class="consejo">Sube una buena foto y verás como funciona tu anuncio.<p>
-                </div>
-                <div class="publicaranuncios">
-                    <a href="graciaspublicar.html" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="valorar" class="masc">
-    <div class="popupbox popupbox3 movedown movedown3">
-        <a href="#close" title="close" class="close">X</a>
-        <div class="contenidopublicar cf">
-            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
-                <h2 class="formulario">¡Valorale!</h2>
-                <div class="cajaformulario">
-                    <h5>
-                        Puntuación
-                    </h5>
-                    <img src="imagenes/estrellasvalorar.svg">
-                </div>
-                <div class="cajaformulario">
-                    <h5>
-                        Comentario
-                    </h5>
-                    <form>
-                        <textarea name="message" rows="10" cols="30"></textarea>
-                    </form>
-                </div>
-                <div class="cajaformulario">
-                    <h5>
-                     ¿Qué rol ha cumplido?
-                 </h5>
-                 <form>
-                    <p class="categoriasmenu"><input type="checkbox">profesor</p>
-                    <p class="categoriasmenu"><input type="checkbox">alumno</p>
-                </form>
-            </div>
-            <div class="subform">
-                <button class="publicaranuncios"><a href="#">VALORAR</a></button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="contactar" class="masc">
-    <div class="popupbox popupbox3 movedown movedown3">
-        <a href="#close" title="close" class="close">X</a>
-        <div class="contenidopublicar cf">
-            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
-                <h2 class="formulario">Contactar</h2>
-                <p class="centrado">en sólo 2 pasos</p>
-                <div class="imgproceso">
-                    <img class="proceso" src="imagenes/proceso1.svg">
-                </div>
-                <div class="caja-formulario">
-                    <h5>
-                        Título: Aprende a crear tu propia tipografía
-                    </h5>
-                </div>
-                <div class="cajaformulario">
-                    <h5>
-                     Categoría: Diseño gráfico
-                 </h5>
-             </div>
-             <div class="cajaformulario">
-                <h5>
-                    Nombre: María Gómez
-                </h5>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Número de horas:<input type="text">horas
-                </h5>
-            </div>
-            <div class="cajaformulario">
-                <h5>
-                    Mensaje
-                </h5>
-                <form>
-                 <textarea name="message" rows="10" cols="30"></textarea>
-             </form>
-         </div>
-         <div class="cajaformulario">
-            <h5>
-                Método de clase
-            </h5>
-            <form>
-                <p class="categoriasmenu"><input type="checkbox">Presencial</p>
-                <p class="categoriasmenu"><input type="checkbox">Skype</p>
-                <p class="categoriasmenu"><input type="checkbox">Email</p>
-            </form>
-        </div>
-        <div class="cajaformulario">
-            <h5>
-                Disponibilidad
-            </h5>
-            <div class="diassemana">
-                <p class="categoriasmenu-2">Lunes</p>
-                <p class="categoriasmenu-2">Martes</p>
-                <p class="categoriasmenu-2">Jueves</p>
-                <p class="categoriasmenu-2">Domingo</p>
-            </div>
-            <div class="totalpartesdia">
-                <p class="categoriasmenu">mañana</p>
-                <p class="categoriasmenu">tarde</p>
-                <p class="categoriasmenu">noche</p>
-                <div class="boxdias">
-                    <div class="miniboxdias">
-                        <input class="cuadrocheck1" type="checkbox">
-                        <input class="cuadrocheck2" type="checkbox">
-                    </div>
-                    <div class="miniboxdias2">
-                        <input class="cuadrocheck1" type="checkbox">
-                        <input class="cuadrocheck2" type="checkbox">
-                        <input class="cuadrocheck3" type="checkbox">
-                    </div>
-                    <div class="miniboxdias">
-                        <input class="cuadrocheck1" type="checkbox">
-                        <input class="cuadrocheck3" type="checkbox">
-                    </div>
-                    <div class="miniboxdias2">
-                        <input class="cuadrocheck2" type="checkbox">
-                    </div>
-                </div>
+    <!-- fin pop-ups -->
 
-            </div>
-        </div>
-        <div class="subform">
-            <button class="publicaranuncios"><a href="#registro3">SIGUIENTE</a></button>
-        </div>
-        <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
-    </div>
-</div>
-</div>
-</div>
-
-<!-- fin pop-ups
-    fin pop-ups
-    fin pop-ups -->
-
-<div class="background-4">
-    <div class="container tabla margin-top">
-        <div class="parte-izquierda cell-tabla">
+    <div class="background-4">
+        <div class="container tabla margin-top">
+            <div class="parte-izquierda cell-tabla">
                 <div class="centrado">
-                    <img class="img-perfil" src="imagenes/alumno-12-buscador.jpg" alt="imagen del usuario">
+                    <img class="img-perfil imagen-redondo" src="imagenes/alumno-23-buscador.jpg" alt="imagen del usuario">
                 </div>
                 <div class="informacion-persona">
                     <h1 class="profile-name">
@@ -288,22 +95,22 @@
                 </div>
                 <a class="button-2 boton-margen large-button type-color-3" href="#contactar">Contáctale</a>
                 <a class="button-3 type-color-2 large-button" href="#valorar">Valórale</a>
-        </div>
+            </div>
 
-        <div class="box-perfil cell-tabla cf">
-            <nav class="menu-interior">
-                <ul class="cf">
+            <div class="box-perfil cell-tabla cf">
+                <nav class="menu-interior">
+                    <ul class="cf">
                         <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
                         <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
                         <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
-                </ul>
-            </nav>
-            <section id="option-1" class="contenido-perfil option-1 seleccionado">
-                <article class="bloque-perfil cf">
-                    <span class="icono-perfil icono-rectangular-grande left"> </span>
-                    <div class="contenido">
+                    </ul>
+                </nav>
+                <section id="option-1" class="contenido-perfil option-1 seleccionado">
+                    <article class="bloque-perfil cf">
+                        <span class="icono-perfil icono-rectangular-grande left"> </span>
+                        <div class="contenido">
                             <div>
                                 <h2 class="secondary-title">
                                     Mi Perfil
@@ -311,12 +118,12 @@
                             </div>
                             <div class="descripcion-mi-perfil">
                                 <p class="no-margin">
-                                 Soy Marta y soy una persona apasionada del diseño. Estoy estudiando Diseño gráfico en Elissava y quiero aprender diseño audiovisual. Si te gusta conocer gente y compartir tus inquietudes, nos podremos llevar bien!
-                                </p>
-                            </div>
-                     </div>
-                </article>
-                <article class="bloque-perfil cf">
+                                   Soy Marta y soy una persona apasionada del diseño. Estoy estudiando Diseño gráfico en Elissava y quiero aprender diseño audiovisual. Si te gusta conocer gente y compartir tus inquietudes, nos podremos llevar bien!
+                               </p>
+                           </div>
+                       </div>
+                   </article>
+                   <article class="bloque-perfil cf">
                     <span class="icono-disponibilidad icono-rectangular-grande left"> </span>
                     <div class="contenido">
                         <div>
@@ -338,203 +145,245 @@
                                 </tr>
                                 <tr>
                                   <td class="title-table">Mañana</td>
-                                  <td> <span class="icono-tabla manana-b"</span> </td>
+                                  <td> <span class="icono-tabla manana-b"></span> </td>
                                   <td></td>
-                                  <td> <span class="icono-tabla manana-b"</span> </td>
-                                  <td> <span class="icono-tabla manana-b"</span> </td>
+                                  <td> <span class="icono-tabla manana-b"></span> </td>
+                                  <td> <span class="icono-tabla manana-b"></span> </td>
                                   <td></td>
                                   <td></td>
                                   <td></td>
-                                </tr>
-                                <tr>
-                                    <td class="second-td title-table">Tarde</td>
-                                    <td class="second-td"> <span class="icono-tabla tarde-b"</span> </td>
-                                    <td class="second-td"> <span class="icono-tabla tarde-b"</span> </td>
-                                    <td class="second-td"> <span class="icono-tabla tarde-b"</span> </td>
-                                    <td class="second-td"> <span class="icono-tabla tarde-b"</span> </td>
-                                    <td class="second-td"> <span class="icono-tabla tarde-b"</span> </td>
-                                    <td class="second-td"></td>
-                                    <td class="second-td"> <span class="icono-tabla tarde-b"</span> </td>
-                                </tr>
-                                <tr>
-                            <td class="title-table">Noche</td>
-                              <td><span class="icono-tabla noche-b"</span> </td>
-                              <td></td>
-                              <td><span class="icono-tabla noche-b"</span> </td>
-                              <td>
-                              <td><span class="icono-tabla noche-b"</span> </td>
-                              <td></td>
-                              <td></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </article>
-                <article class="bloque-perfil cf">
-                    <span class="icono-programas icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div class="titulo-perfil">
-                            <h2 class="secondary-title">
-                            Programas informáticos
-                            </h2>
-                        </div>
-                        <div class="descripcion-mi-perfil">
-                            <ul class="lista-programas no-margin">
-                                <li class="celdas-programas"> Programa </li>
-                                <li class="celdas-programas-final type-color-1"> Photoshop</li>
-                                <li class="celdas-programas"> Nivel</li>
-                                <li class="celdas-programas no-float nivel3-b icono-rectangular">
-                                    <p class="visuallyhidden"> conocimiento de 6/10 </p>
-                                </li>
-                            </ul>
-
-                            <ul class="lista-programas">
-                                <li class="celdas-programas"> Programa </li>
-                                <li class="celdas-programas-final type-color-1"> Ilustrator </li>
-                                <li class="celdas-programas"> Nivel</li>
-                                <li class="celdas-programas no-float nivel5-b icono-rectangular">
-                                    <p class="visuallyhidden"> Conocimiento de 10/10 </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <section id="option-2" class="contenido-perfil option-2">
-                <article class="bloque-perfil cf">
-                   <span class="icono-portafolio icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div>
-                            <h2 class="secondary-title">
-                                Portafolio
-                            </h2>
-                        </div>
-                        <div class="descripcion-mi-perfil">
-                            <a class="icono-rectangular-grande portafolio-behance-b opacity-hover" href="https://www.behance.net/" target="_blank">
-                            <p class="visuallyhidden"> enlace a behance </p>
-                            </a>
-                            <a class="icono-rectangular-grande portafolio-domestika-b opacity-hover" href="http://www.domestika.org/" target="_blank">
-                            <p class="visuallyhidden"> enlace a domestika </p>
-                            </a>
-                            <span class="icono-rectangular-grande portafolio-linkedin-d" href="https://www.linkedin.com/" target="_blank">
-                            <p class="visuallyhidden"> enlace a linkedin </p>
-                            </span>
-                            <a class="icono-rectangular-grande portafolio-tumblert-b opacity-hover" href="https://www.tumblr.com/" target="_blank">
-                            <p class="visuallyhidden"> enlace a tumblert </p>
-                            </a>
-                            <span class="icono-rectangular-grande portafolio-instagram-d" href="https://instagram.com/" target="_blank">
-                            <p class="visuallyhidden"> enlace a instagram </p>
-                            </span>
-                            <a class="icono-rectangular-grande portafolio-pinterest-b opacity-hover" href="https://es.pinterest.com/" target="_blank">
-                            <p class="visuallyhidden"> enlace a pinterest </p>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="bloque-perfil cf">
-                    <span class="icono-imagenes icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div>
-                            <h2 class="secondary-title">
-                                Galería de imágenes
-                            </h2>
-                        </div>
-                        <div class="descripcion-mi-perfil">
-                            <div class="foto-trabajo">
-                                <img src="imagenes/anuncio-19.jpg" alt="paisaje con arboles">
-                            </div>
-                            <div class="foto-trabajo">
-                                <img src="imagenes/anuncio-20.jpg" alt="fotografia que capta el movimiento">
-                            </div>
-                            <div class="foto-trabajo">
-                                <img src="imagenes/anuncio-7.jpg" alt="paleta de colores">
-                            </div>
-                            <div class="foto-trabajo">
-                                <img src="imagenes/anuncio-13.jpg" alt="paisaje con arboles">
-                            </div>
-                            <div class="foto-trabajo">
-                                <img class="imagenes/anuncio-14.jpg" src="imagenes/anuncio-12.jpg" alt="paisaje con arboles">
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section id="option-3" class="contenido-perfil option-3">
-                <article class="bloque-perfil cf">
-                    <span class="icono-perfil icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div class="titulo-perfil">
-                            <h2 class="secondary-title">
-                            Cursos
-                            </h2>
-                        </div>
-
-                            <div class="descripcion-mi-perfil">
-                                <p class="no-margin">
-                                   vienen sus cursos, vienen sus cursos, vienen sus cursos,vienen sus cursos, vienen sus cursos, vienen sus cursos,vienen sus cursos, vienen sus cursos
-                               </p>
-                           </div>
-                       </div>
-                   </article>
-               </section>
-    <section id="option-4" class="contenido-perfil option-4">
-        <article class="bloque-perfil cf">
-                    <span class="icono-dudas icono-rectangular-grande left"> </span>
-                        <div class="contenido">
-                            <div>
-                                <h2 class="secondary-title">
-                                    Dudas
-                                </h2>
-                            </div>
-                            <div class="descripcion-mi-perfil">
-                                <p class="no-margin">
-                                   vienen sus dudas
-                               </p>
-                           </div>
-                       </div>
-                   </article>
-    </section>
-    <section id="option-5" class="contenido-perfil option-5">
-        <article class="bloque-perfil cf">
-            <span class="icono-valoraciones icono-rectangular-grande left"> </span>
+                              </tr>
+                              <tr>
+                                <td class="second-td title-table">Tarde</td>
+                                <td class="second-td"> <span class="icono-tabla tarde-b"></span> </td>
+                                <td class="second-td"> <span class="icono-tabla tarde-b"></span> </td>
+                                <td class="second-td"> <span class="icono-tabla tarde-b"></span> </td>
+                                <td class="second-td"> <span class="icono-tabla tarde-b"></span> </td>
+                                <td class="second-td"> <span class="icono-tabla tarde-b"></span> </td>
+                                <td class="second-td"></td>
+                                <td class="second-td"> <span class="icono-tabla tarde-b"></span> </td>
+                            </tr>
+                            <tr>
+                                <td class="title-table">Noche</td>
+                                <td><span class="icono-tabla noche-b"></span> </td>
+                                <td></td>
+                                <td><span class="icono-tabla noche-b"></span> </td>
+                                <td></td>
+                                <td><span class="icono-tabla noche-b"></span> </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                          </table>
+                      </div>
+                  </div>
+              </article>
+              <article class="bloque-perfil cf">
+                <span class="icono-programas icono-rectangular-grande left"> </span>
                 <div class="contenido">
-                    <div>
+                    <div class="titulo-perfil">
                         <h2 class="secondary-title">
-                            Valoraciones
+                            Programas informáticos
                         </h2>
                     </div>
                     <div class="descripcion-mi-perfil">
-                        <div class="imagen-valoraciones imagen-hover">
-                            <img class="imagen-anuncios-buscador" href="#" src="imagenes/alumno-6-buscador.jpg" alt="imagen usuario">
-                        </div>
-                        <div class="texto-valoraciones">
-                            <p>Recomiendo a Marta, llegó muy puntual y fue muy paciente con las dudas que yo tenía. En cuánto pueda volveré a repetir.</p>
-                            <p>Gracias Marta!!</p>
-                            <div class="icono-stars estrellas-anuncios-4"> </div>
-                            <hr class="linia"/>
-                        </div>
+                        <ul class="lista-programas no-margin">
+                            <li class="celdas-programas"> Programa </li>
+                            <li class="celdas-programas-final type-color-1"> Photoshop</li>
+                            <li class="celdas-programas"> Nivel</li>
+                            <li class="celdas-programas nivel3-b icono-conocimientos">
+                                <p class="visuallyhidden"> conocimiento de 6/10 </p>
+                            </li>
+                        </ul>
 
-                        <div class="imagen-valoraciones">
-                            <img class="imagen-anuncios-buscador" src="imagenes/alumno-4-buscador.jpg" alt="imagen usuario">
-                        </div>
-                        <div class="texto-valoraciones">
-                            <p>A pesar de que Marta no me pudo ayudar con mis dudas fue muy agradable toda la clase y con aquello con lo que no me pudo ayudar me lo buscó por internet y me lo envió a mi correo.</p>
-                            <div class="icono-stars estrellas-anuncios-3"> </div>
-                            <hr class="linia"/>
-                        </div>
-                        <div class="imagen-valoraciones">
-                            <img class="imagen-anuncios-buscador" src="imagenes/alumno-8-buscador.jpg" alt="imagen usuario">
-                        </div>
-                        <div class="texto-valoraciones">
-                            <p>Marta me resolvió diferentes dudas de In-Design y gracias a ella pude entregar un proyecto de la Universidad. Se adaptó a mis horarios para que pudiera llegar a la entrega, muchas gracias!</p>
-                            <div class="icono-stars estrellas-anuncios-5"> </div>
-                        </div>
+                        <ul class="lista-programas">
+                            <li class="celdas-programas"> Programa </li>
+                            <li class="celdas-programas-final type-color-1"> Ilustrator </li>
+                            <li class="celdas-programas"> Nivel</li>
+                            <li class="celdas-programas nivel5-b icono-conocimientos">
+                                <p class="visuallyhidden"> Conocimiento de 10/10 </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
+            </article>
+        </section>
+        <section id="option-2" class="contenido-perfil option-2">
+            <article class="bloque-perfil cf">
+             <span class="icono-portafolio icono-rectangular-grande left"> </span>
+             <div class="contenido">
+                <div>
+                    <h2 class="secondary-title">
+                        Portafolio
+                    </h2>
+                </div>
+                <div class="descripcion-mi-perfil">
+                    <a class="icono-rectangular-grande portafolio-behance-b opacity-hover" href="https://www.behance.net/" target="_blank">
+                        <p class="visuallyhidden"> enlace a behance </p>
+                    </a>
+                    <a class="icono-rectangular-grande portafolio-domestika-b opacity-hover" href="http://www.domestika.org/" target="_blank">
+                        <p class="visuallyhidden"> enlace a domestika </p>
+                    </a>
+                    <span class="icono-rectangular-grande portafolio-linkedin-d">
+                        <p class="visuallyhidden"> enlace a linkedin </p>
+                    </span>
+                    <a class="icono-rectangular-grande portafolio-tumblert-b opacity-hover" href="https://www.tumblr.com/" target="_blank">
+                        <p class="visuallyhidden"> enlace a tumblert </p>
+                    </a>
+                    <span class="icono-rectangular-grande portafolio-instagram-d">
+                        <p class="visuallyhidden"> enlace a instagram </p>
+                    </span>
+                    <a class="icono-rectangular-grande portafolio-pinterest-b opacity-hover" href="https://es.pinterest.com/" target="_blank">
+                        <p class="visuallyhidden"> enlace a pinterest </p>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="bloque-perfil cf">
+            <span class="icono-imagenes icono-rectangular-grande left"> </span>
+            <div class="contenido">
+                <div>
+                    <h2 class="secondary-title">
+                        Galería de imágenes
+                    </h2>
+                </div>
+                <div class="descripcion-mi-perfil">
+                    <div class="foto-trabajo">
+                        <img src="imagenes/anuncio-19.jpg" alt="paisaje con arboles">
+                    </div>
+                    <div class="foto-trabajo">
+                        <img src="imagenes/anuncio-20.jpg" alt="fotografia que capta el movimiento">
+                    </div>
+                    <div class="foto-trabajo">
+                        <img src="imagenes/anuncio-7.jpg" alt="paleta de colores">
+                    </div>
+                    <div class="foto-trabajo">
+                        <img src="imagenes/anuncio-13.jpg" alt="paisaje con arboles">
+                    </div>
+                    <div class="foto-trabajo">
+                        <img class="imagenes/anuncio-14.jpg" src="imagenes/anuncio-12.jpg" alt="paisaje con arboles">
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
+
+    <section id="option-3" class="contenido-perfil option-3">
+        <article class="bloque-perfil cf">
+            <span class="icono-perfil icono-rectangular-grande left"> </span>
+            <div class="contenido">
+                <div class="titulo-perfil">
+                    <h2 class="secondary-title">
+                        Cursos
+                    </h2>
+                </div>
+
+                <div class="descripcion-mi-perfil">
+                    <p class="no-margin">
+                     vienen sus cursos, vienen sus cursos, vienen sus cursos,vienen sus cursos, vienen sus cursos, vienen sus cursos,vienen sus cursos, vienen sus cursos
+                 </p>
+                 <li data-popularidad="15" class="large-4 medium-6 small-12 columns animacion">
+                    <article class="anuncio height-cursos">
+                        <a class="type-color-5" href="#"><div class="image-container cf">
+                            <img class="img-curso" src="imagenes/anuncio-5.jpg" alt="Imagen modelar coche 3D">
+                        </div>
+                        <div class="hover-container">
+                            <p>Aprenderemos a animar con 3D Studio Max, personajes, objetos, armar distintas cámaras,  renderizar con gran calidad e incluso hacer un corto.</p>
+                            <div class="sub-contenido-curso">
+                                <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                <p class="light">Disponibilidad:<span class="type-color-5">Mañanas y tardes</span></p>
+                                <p class="light">Nombre:<span class="type-color-5">Quique Boronat</span></p>
+                                <p class="tags type-color-1">#3D Studio Max</p>
+                            </div>
+                        </div></a>
+                        <div class="content-container-cursos cf">
+                            <div class="texto-cuadrado-cursos">
+                                <h2 class="secondary-title">Anima objetos en 3D Studio Max</h2>
+                            </div>
+                            <div class="mas-info">
+                                <div class="total-icono">
+                                 <div class="container-icon">
+                                    <span class="icono left animacion-c"></span>
+                                </div>
+                                <div class="container-icon">
+                                    <span class="secondary-subtitle">Animación</span>
+                                </div>
+                            </div>
+                            <a href=""><div class="total-icono right">
+                              <div class="container-stars">
+                                <span class="icono-stars left estrellas-valorar-2 "></span>
+                            </div>
+                            <div class="container-icon">
+                                <span class="modificar type-color-2">(5)</span>
+                            </div>
+                        </div></a>
+                        <a class="button-mail no-display" href="#contactar">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </li>
+    </div>
+</div>
+</article>
+</section>
+<section id="option-4" class="contenido-perfil option-4">
+    <article class="bloque-perfil cf">
+        <span class="icono-dudas icono-rectangular-grande left"> </span>
+        <div class="contenido">
+            <div>
+                <h2 class="secondary-title">
+                    Dudas
+                </h2>
+            </div>
+            <div class="descripcion-mi-perfil">
+                <p class="no-margin">
+                 vienen sus dudas
+             </p>
+         </div>
+     </div>
+ </article>
+</section>
+<section id="option-5" class="contenido-perfil option-5">
+    <article class="bloque-perfil cf">
+        <span class="icono-valoraciones icono-rectangular-grande left"> </span>
+        <div class="contenido">
+            <div>
+                <h2 class="secondary-title">
+                    Valoraciones
+                </h2>
+            </div>
+            <div class="descripcion-mi-perfil">
+                <div class="imagen-valoraciones imagen-hover">
+                    <img class="imagen-anuncios-buscador imagen-redondo" href="#" src="imagenes/alumno-1-buscador.jpg" alt="imagen usuario">
+                </div>
+                <div class="texto-valoraciones">
+                    <p>Recomiendo a Marta, llegó muy puntual y fue muy paciente con las dudas que yo tenía. En cuánto pueda volveré a repetir.</p>
+                    <p>Gracias Marta!!</p>
+                    <div class="stars-grande estrellas-anuncios-4"> </div>
+                    <hr class="linia"/>
+                </div>
+
+                <div class="imagen-valoraciones">
+                    <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-2-buscador.jpg" alt="imagen usuario">
+                </div>
+                <div class="texto-valoraciones">
+                    <p>A pesar de que Marta no me pudo ayudar con mis dudas fue muy agradable toda la clase y con aquello con lo que no me pudo ayudar me lo buscó por internet y me lo envió a mi correo.</p>
+                    <div class="stars-grande estrellas-anuncios-3"> </div>
+                    <hr class="linia"/>
+                </div>
+                <div class="imagen-valoraciones">
+                    <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-8-buscador.jpg" alt="imagen usuario">
+                </div>
+                <div class="texto-valoraciones">
+                    <p>Marta me resolvió diferentes dudas de In-Design y gracias a ella pude entregar un proyecto de la Universidad. Se adaptó a mis horarios para que pudiera llegar a la entrega, muchas gracias!</p>
+                    <div class="stars-grande estrellas-anuncios-5"> </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</section>
 
 </div>
 </div>
