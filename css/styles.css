@@ -307,10 +307,8 @@ body {
   transition: all 0.1s ease;
   cursor: pointer; }
 
-.imagen-redondo, .imagen-borde {
-  border-radius: 50%; }
-
-.imagen-borde {
+.imagen-redondo {
+  border-radius: 50%;
   border: 1px solid rgba(51, 51, 51, 0.15); }
 
 .padding-top-pequeno {

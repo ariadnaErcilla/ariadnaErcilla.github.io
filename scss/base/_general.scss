@@ -89,11 +89,7 @@ body {
 
 .imagen-redondo{
     border-radius: 50%;
-}
-
-.imagen-borde{
-  @extend .imagen-redondo;
-  border: 1px solid rgba(51, 51, 51, 0.15);
+    border: 1px solid rgba(51, 51, 51, 0.15);
 }
 
 .padding-top-pequeno {
