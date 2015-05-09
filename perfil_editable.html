@@ -697,7 +697,7 @@
                 <div class="descripcion-mi-perfil">
                     <nav class="menu-mensajes left">
                         <ul class="ul-mensajes cf">
-                            <li class="contenido-mensaje"><a class="pestanya-m-recibido seleccionado" href="#option-recibido">5 mensajes recibidos</a></li>
+                            <li class="contenido-mensaje seleccionado-m"><a class="pestanya-m-recibido " href="#option-recibido">7 mensajes recibidos</a></li>
                             <li class="contenido-mensaje"><a class="pestanya-m-no-leido" href="#option-no-leido">3 mensajes no leídos</a></li>
                             <li class="contenido-mensaje"><a class="pestanya-m-enviado" href="#option-enviado">4 mensajes enviados</a></li>
                         </ul>
@@ -735,6 +735,33 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="mensaje-leido opacity:hover cf">
+                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                                </div>
+                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-10-buscador.jpg" alt="imagen del usuario">
+                                <div class="texto-mensaje">
+                                    <p class="in-line"><span class="type-color-1 light">De: </span>Sandrita Monero</p>
+                                    <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Te puedo resolver tus dudas de Photoshop
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mensaje-leido opacity:hover cf">
+                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                                </div>
+                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
+                                <div class="texto-mensaje">
+                                    <p class="in-line"><span class="type-color-1 light">De: </span>Silvia Vertarmin</p>
+                                    <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Te enseño a mejorar tus conocimientos de Photoshop
+                                    </p>
+                                    <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, te escribo porque e visto el anuncio y me interesó mucho podríamos coordinar para algún día? Estaría encantado en darte una buena merienda a cambio</p>
+                                    <hr class="linia clear">
+                                    <p class="secondary-title padding-bottom">Respóndele el mensaje</p>
+                                    <p class="secondary-subtitle padding-bottom">Trata de  responder, tanto si te interesa como si no, para que el interesado sepa que has leído su mensaje</p>
+                                    <textarea id="input-mensaje" class="padding-bottom" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                </div>
+                            </div>
+
                         </section>
                         <section id="option-no-leido" class="option-no-leido">
                             <div class="mensaje-no-leido opacity:hover cf">
@@ -779,7 +806,6 @@
                                     <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender Wordpress
                                     </p>
                                 </div>
-
                             </div>
                             <div class="mensaje-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
@@ -930,24 +956,24 @@ $('.pestanya-m-no-leido').click(function() {
     $('.option-recibido').hide();
     $('.option-no-leido').show();
     $('.option-enviado').hide();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-m-no-leido').addClass('seleccionado');
+    $('.seleccionado-m').removeClass('seleccionado-m');
+    $('.pestanya-m-no-leido').addClass('seleccionado-m');
     return false;
 });
-$('.pestanya-enviado').click(function() {
+$('.pestanya-m-enviado').click(function() {
     $('.option-recibido').hide();
     $('.option-no-leido').hide();
     $('.option-enviado').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-enviado').addClass('seleccionado');
+    $('.seleccionado-m').removeClass('seleccionado-m');
+    $('.pestanya-m-enviado').addClass('seleccionadom');
     return false;
 });
 $('.pestanya-m-recibido').click(function() {
-    $('.option-recibido').hide();
+    $('.option-recibido').show();
     $('.option-no-leido').hide();
-    $('.option-enviado').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-m-recibido').addClass('seleccionado');
+    $('.option-enviado').hide();
+    $('.seleccionado-m').removeClass('seleccionado-m');
+    $('.pestanya-m-recibido').addClass('seleccionado-m');
     return false;
 });
 </script>

@@ -46,7 +46,7 @@ select {
   font-size: 11pt;
 }
 .custom-file-input:hover::before {
-  
+
 }
 .custom-file-input:active::before {
   background: white;
@@ -83,7 +83,7 @@ Checkboxes, selects
 	float:left;
     padding-right: 10px;
     margin: 0;
-    
+
 }
 .form-check span {
     color:#404041;
@@ -113,5 +113,9 @@ select {
     margin-bottom: 10px;
 }
 
-
+#input-mensaje {
+    border: 1px solid #f15c22;
+    background-color: white;
+    margin-bottom: 20px;
+}
 

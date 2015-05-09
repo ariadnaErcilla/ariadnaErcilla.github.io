@@ -293,6 +293,9 @@ body {
 .margin-top {
   margin-top: 5px; }
 
+.padding-bottom {
+  padding-bottom: 10px; }
+
 .linia {
   border: 0;
   border-top: 1px solid #999;
@@ -313,10 +316,6 @@ body {
 .imagen-redondo {
   border-radius: 50%;
   border: 1px solid rgba(51, 51, 51, 0.15); }
-
-.padding-top-pequeno {
-  padding-top: 5px;
-  background-color: red; }
 
 .todos-anuncios {
   float: right;
@@ -722,6 +721,11 @@ select {
   margin-left: 10px;
   font-size: 0.8rem;
   margin-bottom: 10px; }
+
+#input-mensaje {
+  border: 1px solid #f15c22;
+  background-color: white;
+  margin-bottom: 20px; }
 
 .icono-caracteristicas, .animacion-b, .animacion-c, .arquitectura-b, .arquitectura-c, .audiovisual-b, .audiovisual-c, .foto-b, .foto-c, .grafico-b, .grafico-c, .industrial-b, .industrial-c, .moda-b, .moda-c, .programacion-b, .programacion-c, .web-b, .web-c, .estrellas-valorar-1, .estrellas-valorar-2, .estrellas-valorar-4, .estrellas-valorar-5, .estrellas-valorar, .icono-comparte, .icono-disponibilidad, .icono-dudas, .icono-imagenes, .icono-intercambio, .icono-perfil, .iconocomparte-b, .icono-portafolio, .icono-programas, .icono-valoraciones, .mail-b, .manana-off, .manana, .manana-b, .noche-off, .noche, .noche-b, .tarde-off, .tarde, .tarde-b, .buscador-cerrar, .buscador, .icono-fb-large, .icono-link-large, .icono-mensaje-no, .icono-mensaje-si, .icono-mensaje, .icono-tw-large, .lapiz, .estrellas-anuncios-1, .estrellas-anuncios-2, .estrellas-anuncios-4, .estrellas-anuncios-5, .estrellas-anuncios-3, .portafolio-linkedin-b, .portafolio-linkedin-d, .portafolio-linkedin-c, .portafolio-instagram-b, .portafolio-instagram-d, .portafolio-instagram-c, .portafolio-pinterest-b, .portafolio-pinterest-d, .portafolio-pinterest-c, .portafolio-tumblert-b, .portafolio-tumblert-d, .portafolio-tumblert-c, .portafolio-behance-b, .portafolio-behance-d, .portafolio-behance-c, .portafolio-domestika-b, .portafolio-domestika-d, .portafolio-domestika-c, .nivel0, .nivel1-b, .nivel1, .nivel3-b, .nivel3, .nivel5-b, .nivel5, .icono-linkedin, .icono-facebook, .icono-twitter {
   background-size: contain;
@@ -1153,9 +1157,8 @@ contenedores anuncios
     border-bottom: none; }
 
 .contenido-mensaje:hover,
-.contenido-mensaje.a.seleccionado {
-  background-color: #f0f0f0;
-  color: white; }
+.seleccionado-m {
+  background-color: #f0f0f0; }
 
 .masc {
   font-family: "Lato", sans-serif;
