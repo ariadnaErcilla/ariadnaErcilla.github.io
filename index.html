@@ -1,3 +1,4 @@
+
 <html>
 <head>
 	<title>Home</title>
@@ -10,6 +11,8 @@
      <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="/js/buscador.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                     <ul class="esconder">
                         <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
                         <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                        <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                        <li class="tamano_fijo"><a title="" id="scroll-to-como-funciona" class="uppercase" href="#">¿Como Funciona?</a></li>
                     </ul>
                 </div>
                 <div class="right">
@@ -115,7 +118,7 @@
 
 	<article>
         <div class="fondo-img-top">
-            <div class="contenido-top-1 left">
+            <div class="box-top-1 left">
 
               <div class="texto-top right">
                <h1 class="title type-color-3">aprende</h1>
@@ -129,10 +132,10 @@
             </div>
         </div>
 
-        <div class="container-ampersand-top left">
+        <div class="box-ampersand-top left">
       </div>
 
-      <div class="contenido-top-2 right">
+      <div class="box-top-2 right">
 
       <div class="texto-top left">
        <h1 class="title type-color-3">enseña</h1>
@@ -147,13 +150,13 @@
 </article>
 
 <article class="article2">
-<div class="container-titulo">
-   <h2 class="title centrado">¿Cómo funciona?</h2>
+<div class="container-titulo-home">
+   <h2 class="title centrado" id="como-funciona">¿Como funciona?</h2>
 </div>
-   <div class="height-backgorund background-4">
+   <div class="background-4">
     <div class= "container">
         <section class="mini-box-1">
-            <img class="img1" src="imagenes/ilustracion-1-home.png" alt="Home">
+            <img class="imagen-ilustraciones" src="imagenes/ilustracion-1-home.png" alt="Home">
             <div class="container-texto">
             <h3 class="subtitle destacado texto centrado">¡Encuentra un curso o <br> busca a tu alumno perfecto!</h3>
             </div>
@@ -162,14 +165,14 @@
 
 
         <section class="mini-box-2">
-            <img class="img1" src="imagenes/ilustracion-2-home.png">
+            <img class="imagen-ilustraciones" src="imagenes/ilustracion-2-home.png">
             <div class="container-texto">
             <h3 class="subtitle destacado  centrado">Intercambia una clase por una comida</h3>
             </div>
         </section>
 
         <section class="mini-box-3">
-            <img class="img1" src="imagenes/ilustracion-3-home.png">
+            <img class="imagen-ilustraciones" src="imagenes/ilustracion-3-home.png">
             <div class="container-texto">
             <h3 class="subtitle destacado centrado">
             ¡Valora a tu alumno o a tu profesor!</h3>
@@ -224,6 +227,14 @@
         return false;
     });
     </script>
+
+    <script>
+    $('#scroll-to-como-funciona').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#como-funciona'), 800);
+    });
+    </script>
+
 
 
 
