@@ -49,15 +49,21 @@
 }
 .popup-image-2{
 
-    background-position: top center;
+    background-position: top 0px right 260px;
     background-repeat: no-repeat;
-    background-image: url(../imagenes/ninogracias.png);
+    background-image: url(../imagenes/muneco-gracias.png);
+    background-size:13% auto;
+  
 
 
 }
 .top{
     top:52px;
    
+}
+.top-gracias{
+
+    top:43px;
 }
 
 .close{
@@ -86,6 +92,7 @@
     border: 5px solid #54c4c7;
     margin:0 auto;
     position:relative;
+
 }
 
 .container-popup{
@@ -128,6 +135,13 @@
   margin:0 auto;
   width: 45%;
   padding:20px 0px 10px 0px;
+}
+
+.margin-auto-gracias{
+
+    width: 78%;
+    margin:0 auto;
+    padding:20px 0px 10px 0px;
 }
 .padding-button-popup{
 

@@ -42,6 +42,7 @@
     font-family: "Lato";
     margin:14px;
     font-weight: 400;
+    line-height: 1;
 }
 
 .titulo-ampliar-curso {
@@ -76,6 +77,7 @@
      margin: 0px;
 }
 
+
 .secondary-subtitle{
     font-size:0.875rem;
     font-weight: 300;
@@ -87,7 +89,9 @@ p {
     font-size: 1rem;
     text-align: left;
 }
-
+.regular{
+    font-weight: 400;
+}
 .light {
     font-weight: 300;
     color:#00A6A5;

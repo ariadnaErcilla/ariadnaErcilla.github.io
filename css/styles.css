@@ -32,7 +32,8 @@
   font-size: 3rem;
   font-family: "Lato";
   margin: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1; }
 
 .titulo-ampliar-curso {
   color: #404041;
@@ -70,6 +71,9 @@
 p {
   font-size: 1rem;
   text-align: left; }
+
+.regular {
+  font-weight: 400; }
 
 .light {
   font-weight: 300;
@@ -1155,12 +1159,16 @@ contenedores anuncios
   background-size: 20% auto; }
 
 .popup-image-2 {
-  background-position: top center;
+  background-position: top 0px right 260px;
   background-repeat: no-repeat;
-  background-image: url(../imagenes/ninogracias.png); }
+  background-image: url(../imagenes/muneco-gracias.png);
+  background-size: 13% auto; }
 
 .top {
   top: 52px; }
+
+.top-gracias {
+  top: 43px; }
 
 .close {
   background: #f15c22;
@@ -1214,6 +1222,11 @@ contenedores anuncios
 .margin-auto-popup {
   margin: 0 auto;
   width: 45%;
+  padding: 20px 0px 10px 0px; }
+
+.margin-auto-gracias {
+  width: 78%;
+  margin: 0 auto;
   padding: 20px 0px 10px 0px; }
 
 .padding-button-popup {
