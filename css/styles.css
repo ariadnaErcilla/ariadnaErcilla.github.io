@@ -236,6 +236,9 @@ a {
 .type-color-3 a:hover {
   color: #f15c22; }
 
+.pestanya-mensaje {
+  color: #404041; }
+
 *,
 *:before,
 *:after {
@@ -999,7 +1002,6 @@ contenedores anuncios
 
 .icono-rectangular {
   margin: 5px 10px 10px 0;
-  /*si peta 0px el primero*/
   width: 25px;
   height: 25px; }
 
@@ -1129,18 +1131,28 @@ contenedores anuncios
 .option-6 {
   display: none; }
 
+.option-no-leido,
+.option-enviado {
+  display: none; }
+
 .ul-mensajes {
-  background-color: rgba(51, 51, 51, 0.15);
+  background-color: #f0f0f0;
   padding: 0;
-  border: 1px solid rgba(51, 51, 51, 0.15); }
+  border: 1px solid #f0f0f0; }
 
 .contenido-mensaje {
   list-style: none;
   text-decoration: none;
-  padding: 10px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.15); }
+  background-color: white;
+  padding: 16px 10px;
+  border-bottom: 1px solid #f0f0f0; }
   .contenido-mensaje:last-child {
     border-bottom: none; }
+
+.contenido-mensaje:hover,
+.contenido-mensaje.a.seleccionado {
+  background-color: #f0f0f0;
+  color: white; }
 
 .masc {
   font-family: "Lato", sans-serif;
@@ -1839,9 +1851,6 @@ dropdown
 .menu li.alineacion_vertical a {
   color: #fff; }
 
-/*-----
-general
------*/
 .parte-derecha {
   float: right;
   margin: 50px 0 0 40px; }
@@ -1852,25 +1861,10 @@ general
 
 .contenido {
   float: left;
-  width: 80%; }
+  width: 86%; }
 
-/*-----
-Perfil - sobre mi - OTROS
------*/
 .bloque-perfil {
   margin-top: 40px; }
-
-.url {
-  float: left; }
-
-.redes-izquierda {
-  display: inline-block;
-  width: 30%; }
-
-.redes-derecha {
-  display: inline-block;
-  margin-left: 200px;
-  width: 30%; }
 
 .lista-programas {
   padding-left: 0px; }
@@ -1895,11 +1889,6 @@ Perfil - sobre mi - OTROS
 .descripcion-mi-perfil {
   padding-top: 20px; }
 
-/*-------
-
-PERFIL-CURSOS
-
---------*/
 .no-cursos-cuadrado {
   border: 1px solid #54c4c7;
   margin-top: 100px;
@@ -1910,26 +1899,6 @@ PERFIL-CURSOS
   margin-top: 30px;
   margin-bottom: 30px;
   position: relative; }
-
-/*.personaje{
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top:-155px;
-    width: 30%;
-}*/
-/*-------
-
-PERFIL-SOBRE MI
-
---------*/
-form.turnos {
-  float: right;
-  margin-top: -15px; }
-
-.dias-horizontal {
-  width: 350px; }
 
 .inline {
   display: inline-block; }
@@ -1947,37 +1916,36 @@ form.turnos {
   width: 15%;
   margin-right: 20px; }
 
-/*
-.mensaje{
-    background-color: red;
-    width: 30%;
-    display: inline-block;
-}*/
 .mensaje-contenido {
   width: 68%;
   display: inline-block; }
 
-.contenido-mensaje:hover {
-  background-color: white; }
-
 .imagen-mensaje {
-  width: 24%;
+  width: 18%;
   float: left;
-  padding: 10px; }
+  margin: 10px; }
 
 .texto-mensaje {
   width: 70%;
-  float: left; }
+  float: left;
+  margin-bottom: 20px; }
+
+.mensaje, .mensaje-no-leido, .mensaje-leido {
+  clear: both;
+  position: relative; }
 
 .mensaje-no-leido {
-  background-color: rgba(51, 51, 51, 0.15);
-  clear: both; }
+  background-color: #f0f0f0; }
 
 .mensaje-leido {
-  border-right: 1px solid rgba(51, 51, 51, 0.15);
-  border-left: 1px solid rgba(51, 51, 51, 0.15);
-  border-bottom: 1px solid rgba(51, 51, 51, 0.15);
-  clear: both; }
+  border-right: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0; }
+
+.cruz-cerrar {
+  position: absolute;
+  top: 4px;
+  right: 4px; }
 
 .fondo-img-top {
   background-image: linear-gradient(90deg, #08A6A6, #007978);
