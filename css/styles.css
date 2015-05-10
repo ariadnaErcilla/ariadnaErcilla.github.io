@@ -67,6 +67,13 @@
   margin: 0;
   color: #404041; }
 
+.secondary-subtitle-ampliado {
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin: 0;
+  color: #404041;
+  max-width: 80px; }
+
 p {
   font-size: 1rem;
   text-align: left; }
@@ -293,6 +300,9 @@ body {
 .margin-top {
   margin-top: 5px; }
 
+.margin-top-aampliado {
+  margin-top: 20px; }
+
 .padding-bottom {
   padding-bottom: 10px; }
 
@@ -314,12 +324,14 @@ body {
   cursor: pointer; }
 
 .imagen-redondo {
-<<<<<<< HEAD
-  border-radius: 50%; }
-=======
   border-radius: 50%;
   border: 1px solid rgba(51, 51, 51, 0.15); }
->>>>>>> af9e46c16627047035d6dc1c768b28b3060c6788
+
+.espacio-inferior-ampliado {
+  padding-bottom: 40px; }
+
+.imagen-perfil-aampliado {
+  max-width: 40%; }
 
 .todos-anuncios {
   float: right;
@@ -717,7 +729,7 @@ Checkboxes, selects
 select {
   height: 35px; }
 
-#input-portafolio {
+.input-portafolio {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #C2C2C2;
@@ -1016,14 +1028,11 @@ contenedores anuncios
   width: 25px;
   height: 25px; }
 
-<<<<<<< HEAD
-=======
 .icono-conocimientos {
   width: 70px;
   height: 25px;
   margin-top: 4px; }
 
->>>>>>> af9e46c16627047035d6dc1c768b28b3060c6788
 .icono-rectangular-grande, .icono-redes-an-ampliado {
   display: inline-block;
   width: 35px;
@@ -1239,17 +1248,8 @@ contenedores anuncios
   position: relative; }
 
 .container-popup {
-<<<<<<< HEAD
-  width: 100%;
-  margin: 0 auto;
-  overflow: scroll; }
-
-.height-1 {
-  max-height: 200px; }
-=======
   width: 75%;
   margin: 0 auto; }
->>>>>>> af9e46c16627047035d6dc1c768b28b3060c6788
 
 .height-scroll {
   max-height: 350px;
@@ -1431,7 +1431,7 @@ aside ampliado
 
 .programa {
   clear: both;
-  margin-top: 10px; }
+  /*--margin-top: 10px;--*/ }
 
 /*-------
 
@@ -1873,12 +1873,6 @@ dropdown
 .menu li.alineacion_vertical a {
   color: #fff; }
 
-<<<<<<< HEAD
-/*-----
-general
------*/
-=======
->>>>>>> af9e46c16627047035d6dc1c768b28b3060c6788
 .parte-derecha {
   float: right;
   margin: 50px 0 0 40px; }

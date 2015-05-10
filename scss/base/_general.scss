@@ -67,6 +67,10 @@ body {
     margin-top:5px;
 }
 
+.margin-top-aampliado{
+    margin-top: 20px;
+}
+
 .padding-bottom {
     padding-bottom: 10px;
 }
@@ -94,4 +98,12 @@ body {
 .imagen-redondo{
     border-radius: 50%;
     border: 1px solid rgba(51, 51, 51, 0.15);
+}
+
+.espacio-inferior-ampliado {
+    padding-bottom: 40px;
+}
+
+.imagen-perfil-aampliado {
+    max-width: 40%;
 }
