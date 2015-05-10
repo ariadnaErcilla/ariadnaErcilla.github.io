@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900'>
 
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -74,6 +74,229 @@
             </div>
     </header>
 
+    <!-- inicio pop-ups -->
+    <div id="publicar" class="masc">
+        <div class="popupbox popupbox2 movedown movedown3">
+            <a href="#close" title="close" class="close">X</a>
+            <div class="contenidopublicar cf">
+                <div class="cajainstrucciones">
+                    <div class="cajaformulario">
+                        <p class="titulospublicar">
+                            Título:
+                        </p>
+                        <p class="subtitulospublicar">
+                            *Máximo 30 caracteres
+                        </p>
+                        <form>
+                            <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="" class="estiloinputs">
+                        </form>
+                    </div>
+                    <div class="cajaformulario">
+                        <p class="titulospublicar">
+                         Categoría:
+                     </p>
+                     <form>
+                        <select name="text" class="estiloinputs">
+                            <option value="Arquitectura">Arquitectura</option>
+                            <option value="Animación">Animación</option>
+                            <option value="Diseño Audiovisual">Diseño Audiovisual</option>
+                            <option value="Diseño Industrial">Diseño Industrial</option>
+                            <option value="Linux">Diseño Gráfico</option>
+                            <option value="Linux">Diseño de Moda</option>
+                            <option value="Linux">Diseño Web</option>
+                            <option value="Linux">Fotografía</option>
+                            <option value="Linux">Programación</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                        Método de clase:
+                    </p>
+                    <form>
+                        <input type="checkbox"><p class="metodoclase">Presencial</p>
+                        <input type="checkbox"><p class="metodoclase">Skype</p>
+                        <input type="checkbox"><p class="metodoclase">Email</p>
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                        Descripción:
+                    </p>
+                    <p class="subtitulospublicar">
+                        *Máximo 200 caracteres
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="" class="estiloinputs">
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <p class="titulospublicar">
+                     Tags:
+                 </p>
+                 <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="" class="estiloinputs">
+             </div>
+             <div class="cajaformulario">
+                <p class="titulospublicar">
+                    Sube una foto de tu trabajo:
+                </p>
+                <p class="subtitulospublicar">
+                    *Máximo 3,2 x 3,2 cm
+                </p>
+                <form>
+                    <p class="inputimagen"><input type="file" name="imagen" accept="image/*"></p>
+                </form>
+            </div>
+        </div>
+        <div class="cajaconsejos">
+            <div class="consejos">
+                <h3 class="tituloconsejos">¡Mira mis consejos!</h3>
+                <div class="botonconsejos">1</div>
+                <p class="consejo">Pon un título corto y directo a tu anuncio</p>
+                <div class="botonconsejos">2</div>
+                <p class="consejo">Selecciona una categoria para clasificar tu anuncio.</p>
+                <div class="botonconsejos">3</div>
+                <p class="consejo">Se original, pon una descripción sencilla, en la que explique que ofreces.</p>
+                <div class="botonconsejos">4</div>
+                <p class="consejo">Para que te puedan encontrar rápidamente utiliza tags que especifiquen de que trata tu anuncio.</p>
+                <div class="botonconsejos">5</div>
+                <p class="consejo">Sube una buena foto y verás como funciona tu anuncio.<p>
+                </div>
+                <div class="publicaranuncios">
+                    <a href="graciaspublicar.html" style="text-decoration:none; color:white">PUBLICA TU CURSO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="valorar" class="masc">
+    <div class="popupbox popupbox3 movedown movedown3">
+        <a href="#close" title="close" class="close">X</a>
+        <div class="contenidopublicar cf">
+            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
+                <h2 class="formulario">¡Valorale!</h2>
+                <div class="cajaformulario">
+                    <h5>
+                        Puntuación
+                    </h5>
+                    <img src="imagenes/estrellasvalorar.svg">
+                </div>
+                <div class="cajaformulario">
+                    <h5>
+                        Comentario
+                    </h5>
+                    <form>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                    </form>
+                </div>
+                <div class="cajaformulario">
+                    <h5>
+                     ¿Qué rol ha cumplido?
+                 </h5>
+                 <form>
+                    <p class="categoriasmenu"><input type="checkbox">profesor</p>
+                    <p class="categoriasmenu"><input type="checkbox">alumno</p>
+                </form>
+            </div>
+            <div class="subform">
+                <button class="publicaranuncios"><a href="#">VALORAR</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="contactar" class="masc">
+    <div class="popupbox popupbox3 movedown movedown3">
+        <a href="#close" title="close" class="close">X</a>
+        <div class="contenidopublicar cf">
+            <div class="cajainstrucciones cajainstrucciones-cajainstrucciones2">
+                <h2 class="formulario">Contactar</h2>
+                <p class="centrado">en sólo 2 pasos</p>
+                <div class="imgproceso">
+                    <img class="proceso" src="imagenes/proceso1.svg">
+                </div>
+                <div class="caja-formulario">
+                    <h5>
+                        Título: Aprende a crear tu propia tipografía
+                    </h5>
+                </div>
+                <div class="cajaformulario">
+                    <h5>
+                     Categoría: Diseño gráfico
+                 </h5>
+             </div>
+             <div class="cajaformulario">
+                <h5>
+                    Nombre: María Gómez
+                </h5>
+            </div>
+            <div class="cajaformulario">
+                <h5>
+                    Número de horas:<input type="text">horas
+                </h5>
+            </div>
+            <div class="cajaformulario">
+                <h5>
+                    Mensaje
+                </h5>
+                <form>
+                 <textarea name="message" rows="10" cols="30"></textarea>
+             </form>
+         </div>
+         <div class="cajaformulario">
+            <h5>
+                Método de clase
+            </h5>
+            <form>
+                <p class="categoriasmenu"><input type="checkbox">Presencial</p>
+                <p class="categoriasmenu"><input type="checkbox">Skype</p>
+                <p class="categoriasmenu"><input type="checkbox">Email</p>
+            </form>
+        </div>
+        <div class="cajaformulario">
+            <h5>
+                Disponibilidad
+            </h5>
+            <div class="diassemana">
+                <p class="categoriasmenu-2">Lunes</p>
+                <p class="categoriasmenu-2">Martes</p>
+                <p class="categoriasmenu-2">Jueves</p>
+                <p class="categoriasmenu-2">Domingo</p>
+            </div>
+            <div class="totalpartesdia">
+                <p class="categoriasmenu">mañana</p>
+                <p class="categoriasmenu">tarde</p>
+                <p class="categoriasmenu">noche</p>
+                <div class="boxdias">
+                    <div class="miniboxdias">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck2" type="checkbox">
+                    </div>
+                    <div class="miniboxdias2">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck2" type="checkbox">
+                        <input class="cuadrocheck3" type="checkbox">
+                    </div>
+                    <div class="miniboxdias">
+                        <input class="cuadrocheck1" type="checkbox">
+                        <input class="cuadrocheck3" type="checkbox">
+                    </div>
+                    <div class="miniboxdias2">
+                        <input class="cuadrocheck2" type="checkbox">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="subform">
+            <button class="publicaranuncios"><a href="#registro3">SIGUIENTE</a></button>
+        </div>
+        <p class="terminos">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
+    </div>
+</div>
+</div>
+</div>
+
 <!-- fin pop-ups
     fin pop-ups
     fin pop-ups -->
@@ -85,7 +308,7 @@
                     <div>
                         <img class="img-perfil imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
                     </div>
-                    <span class="type-color-2 margin-top">Sube tu foto</span>
+                    <span class="type-color-2 margin-top" href="#">Sube tu foto</span>
                 </div>
                 <div>
                     <span class="secondary-subtitle block margin-top centrado">280px x 280px. Máximo 30 Kb</span>
@@ -274,10 +497,9 @@
                                 <li class="celdas-programas"> Programa </li>
                                 <li class="celdas-programas-final type-color-2 opacity-hover"> Photoshop</li>
                                 <li class="celdas-programas"> Nivel</li>
-                                <li class="celdas-programas nivel3 icono-conocimientos">
-                                    <p class="visuallyhidden"> conocimiento de 6/10 </p>
-                                </li>
-                            </ul>
+                               <li class="celdas-programas nivel3 icono-conocimientos">
+                                <p class="visuallyhidden"> conocimiento de 6/10 </p>
+                            </li>
 
                             <ul class="lista-programas">
                                 <li class="celdas-programas"> Programa </li>
@@ -287,7 +509,7 @@
                                     <p class="visuallyhidden"> conocimiento de 6/10 </p>
                                 </li>
                             </ul>
-                            <span class="type-color-2 opacity-hover margin-top clear">Añadir programa</span>
+                            <span class="type-color-2 opacity-hover margin-top clear" href="#">Añadir programa</span>
                         </div>
                     </div>
                 </article>
@@ -307,27 +529,27 @@
                         <div class="descripcion-mi-perfil">
                             <div>
                                 <div class="icono-rectangular portafolio-behance-c left"> </div>
-                                <input type="text" class="input-portafolio" placeholder="http://..." name="buscador">
+                                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-domestika-c left"> </div>
-                            <input type="text" class="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-linkedin-c left"> </div>
-                            <input type="text" class="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-tumblert-c left"> </div>
-                            <input type="text" class="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-instagram-c left"> </div>
-                            <input type="text" class="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-pinterest-c left"> </div>
-                            <input type="text" class="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
                             </div>
                         </div>
                     </div>
@@ -400,66 +622,66 @@
     <section id="option-5" class="contenido-perfil option-5">
         <article class="bloque-perfil cf">
             <span class="icono-valoraciones icono-rectangular-grande left"> </span>
-            <div class="contenido">
-                <div>
-                    <h2 class="secondary-title">
-                        Valoraciones
-                    </h2>
-                    <p class="secondary-subtitle margin-top">Visualiza tus valoraciones, y compártelas con tus redes sociales.</p>
-                </div>
-                <div class="descripcion-mi-perfil">
-                    <div class="imagen-valoraciones imagen-hover">
-                        <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-6-buscador.jpg" alt="imagen usuario">
+                <div class="contenido">
+                    <div>
+                        <h2 class="secondary-title">
+                            Valoraciones
+                        </h2>
+                        <p class="secondary-subtitle margin-top">Visualiza tus valoraciones, y compártelas con tus redes sociales.</p>
                     </div>
-                    <div class="texto-valoraciones">
-                        <p>Recomiendo a Marta, llegó muy puntual y fue muy paciente con las dudas que yo tenía. En cuánto pueda volveré a repetir.</p>
-                        <p>Gracias Marta!!</p>
-                        <div>
-                            <div class="stars-grande estrellas-anuncios-4 left"> </div>
-                            <div class="right">
-                                <div class="left">Comparte</div>
-                                <div class="icono-facebook icono-compartir left opacity-hover"></div>
-                                <div class="icono-twitter icono-compartir left opacity-hover"></div>
-                                <div class="icono-linkedin icono-compartir left opacity-hover"></div>
-                            </div>
-                            <hr class="linia clear"/>
+                    <div class="descripcion-mi-perfil">
+                        <div class="imagen-valoraciones imagen-hover">
+                            <img class="imagen-anuncios-buscador imagen-redondo" href="#" src="imagenes/alumno-6-buscador.jpg" alt="imagen usuario">
                         </div>
-                    </div>
+                        <div class="texto-valoraciones">
+                            <p>Recomiendo a Marta, llegó muy puntual y fue muy paciente con las dudas que yo tenía. En cuánto pueda volveré a repetir.</p>
+                            <p>Gracias Marta!!</p>
+                            <div>
+                                <div class="stars-grande estrellas-anuncios-4 left"> </div>
+                                <div class="right">
+                                    <div class="left">Comparte</div>
+                                    <div class="icono-facebook icono-compartir left opacity-hover"></div>
+                                    <div class="icono-twitter icono-compartir left opacity-hover"></div>
+                                    <div class="icono-linkedin icono-compartir left opacity-hover"></div>
+                                </div>
+                                <hr class="linia clear"/>
+                            </div>
+                        </div>
 
-                    <div class="imagen-valoraciones">
-                        <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen usuario">
-                    </div>
-                    <div class="texto-valoraciones">
-                        <p>A pesar de que Marta no me pudo ayudar con mis dudas fue muy agradable toda la clase y con aquello con lo que no me pudo ayudar me lo buscó por internet y me lo envió a mi correo.</p>
-                        <div>
-                            <div class="stars-grande estrellas-anuncios-4 left"> </div>
-                            <div class="right">
-                                <div class="left">Comparte</div>
-                                <div class="icono-facebook icono-compartir left opacity-hover"></div>
-                                <div class="icono-twitter icono-compartir left opacity-hover"></div>
-                                <div class="icono-linkedin icono-compartir left opacity-hover"></div>
-                            </div>
-                            <hr class="linia clear"/>
+                        <div class="imagen-valoraciones">
+                            <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen usuario">
                         </div>
-                    </div>
-                    <div class="imagen-valoraciones">
-                        <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-8-buscador.jpg" alt="imagen usuario">
-                    </div>
-                    <div class="texto-valoraciones">
-                        <p>Marta me resolvió diferentes dudas de In-Design y gracias a ella pude entregar un proyecto de la Universidad. Se adaptó a mis horarios para que pudiera llegar a la entrega, muchas gracias!</p>
-                        <div>
-                            <div class="stars-grande estrellas-anuncios-4 left"> </div>
-                            <div class="right">
-                                <div class="left">Comparte</div>
-                                <div class="icono-facebook icono-compartir left opacity-hover"></div>
-                                <div class="icono-twitter icono-compartir left opacity-hover"></div>
-                                <div class="icono-linkedin icono-compartir left opacity-hover"></div>
+                        <div class="texto-valoraciones">
+                            <p>A pesar de que Marta no me pudo ayudar con mis dudas fue muy agradable toda la clase y con aquello con lo que no me pudo ayudar me lo buscó por internet y me lo envió a mi correo.</p>
+                            <div>
+                                <div class="stars-grande estrellas-anuncios-4 left"> </div>
+                                <div class="right">
+                                    <div class="left">Comparte</div>
+                                    <div class="icono-facebook icono-compartir left opacity-hover"></div>
+                                    <div class="icono-twitter icono-compartir left opacity-hover"></div>
+                                    <div class="icono-linkedin icono-compartir left opacity-hover"></div>
+                                </div>
+                                <hr class="linia clear"/>
                             </div>
-                            <hr class="linia clear"/>
+                        </div>
+                        <div class="imagen-valoraciones">
+                            <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-8-buscador.jpg" alt="imagen usuario">
+                        </div>
+                        <div class="texto-valoraciones">
+                            <p>Marta me resolvió diferentes dudas de In-Design y gracias a ella pude entregar un proyecto de la Universidad. Se adaptó a mis horarios para que pudiera llegar a la entrega, muchas gracias!</p>
+                            <div>
+                                <div class="stars-grande estrellas-anuncios-4 left"> </div>
+                                <div class="right">
+                                    <div class="left">Comparte</div>
+                                    <div class="icono-facebook icono-compartir left opacity-hover"></div>
+                                    <div class="icono-twitter icono-compartir left opacity-hover"></div>
+                                    <div class="icono-linkedin icono-compartir left opacity-hover"></div>
+                                </div>
+                                <hr class="linia clear"/>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </article>
     </section>
     <section id="option-6" class="contenido-perfil option-6">
