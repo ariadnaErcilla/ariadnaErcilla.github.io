@@ -57,12 +57,14 @@
                 </div>
                     <form class="pform">
                         <div class="caja-formulario">
-                        <label class="secondary-title">Email</label>
-                        <input class="margin-top" type="email" required="">
+                        <span class="secondary-title">Email</span>
+                        <label class="error">Este campo es obligatorio</label>
+                        <input class="margin-top" name="email" type="email" required="">
                         </div>
                         <div class="caja-formulario">
-                        <label class="secondary-title">Contraseña</label>
-                        <input class="margin-top" type="password" required="">
+                        <p class="secondary-title">Contraseña</p>
+                        <label class="error">Este campo es obligatorio</label>
+                        <input class="margin-top" name="password" type="password" required="">
                         </div>
                      </form>
             <p class="secondary-subtitle"><a class="type-color-5"><u>¿Has olvidado tu contraseña?</u></a></p>
@@ -219,15 +221,42 @@
 </div>
   <div id="publicar-curso" class="masc">
     <div class="popup">
-    <div class="popup-box movedown-2">
+    <div class="popup-box movedown-3">
         <a href="#close" title="close" class="close">X</a>
          <h1 class="title-form centrado">Publica tu curso</h1>
+         <div class="hide-consejos">
                 <p class="centrado no-margin">en sólo 2 pasos</p>
                 <div class="img-proceso">
                 <img class="proceso" src="imagenes/proceso1.png">
                 </div>
+        </div>
         <div class="container-popup height-scroll cf">
-             <p class="secondary-title centrado margin-top"><a class= "type-color-5" href="consejos.html"><strong><u>Lee algunos consejos para mejorar la visibilidad tu curso</u></strong></a></p>
+             <p class="secondary-title centrado margin-top hide-consejos"><a class= "type-color-5" id="abrir-consejos" href=""><strong><u>Lee algunos consejos para mejorar la visibilidad tu curso</u></strong></a></p>
+             <div class="show-consejos">
+                <div class="consejos-muneco" id="cerrar-consejos"></div>
+                <div class="background-4 container-consejos">
+                    <p class="subtitle centrado">¡Mira mis consejos!</p>
+                    <ul class="lista-consejos">
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-1"></span>
+                            <p class="no-margin texto-consejo">Pon un título corto y desciptivo</p>
+                        </li>
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-2"></span>
+                            <p class="no-margin texto-consejo">¡Indica el número de horas, aumentarás los alumnos!</p>
+                        </li>
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-3"></span>
+                            <p class="no-margin texto-consejo">Dinos qué puedes aportar a los alumno y en qué les podrás ayudar.</p>
+                        </li>
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-4"></span>
+                            <p class="no-margin texto-consejo">Cómo más información rellenes, habrá más posibilidades de que contacten contigo!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <form class="pform">
                 <div class="caja-formulario">
                     <label class="secondary-title">
@@ -307,7 +336,7 @@
 </div>
  <div id="publicar-duda" class="masc">
     <div class="popup">
-    <div class="popup-box movedown-2">
+    <div class="popup-box movedown-3">
         <a href="#close" title="close" class="close">X</a>
         <h1 class="title-form centrado">Publica tus dudas</h1>
                 <p class="centrado no-margin">en sólo 2 pasos</p>
@@ -1038,6 +1067,44 @@
         e.preventDefault();
         $($('#login-contactar')[0]).show();
     });
+        $('#abrir-consejos').click(function(e){
+        $('.show-consejos').show();
+        $('.hide-consejos').hide();
+        return false;
+    });
+
+    $('#cerrar-consejos').click(function(e){
+        $('.show-consejos').hide();
+        $('.hide-consejos').show();
+        return false;
+    });
+
+    $('pform').submit(function(e) {
+            e.preventDefault();
+            var name = $('input[name="email"]');
+            var label = name.siblings();
+            var email = $.trim(name.val());
+            if(email =="@") {
+              name.removeClass('error');
+              label.hide();
+            } else {
+              name.addClass('error');
+              label.show();
+            }
+           
+          });
+    $('input[name="email"]').focusout(function() {
+            var name = $('input[name="email"]');
+            var label = name.siblings();
+            var email = $.trim(name.val());
+            if(email =="@") {
+              name.removeClass('error');
+              label.hide();
+            } else {
+              name.addClass('error');
+              label.show();
+            }
+          });
 </script>
 </body>
 </html>

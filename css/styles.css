@@ -675,6 +675,15 @@ select {
   border: 1px solid black;
   height: 20px; }
 
+label.error {
+  background-color: #F15C22;
+  font-size: 12px;
+  width: 170px;
+  display: none; }
+
+label {
+  display: block; }
+
 /*----------
 Checkboxes, selects
 ----------*/
@@ -707,7 +716,7 @@ select {
   font-size: 0.8rem;
   margin-bottom: 10px; }
 
-.icono-caracteristicas, .animacion-b, .animacion-c, .arquitectura-b, .arquitectura-c, .audiovisual-b, .audiovisual-c, .foto-b, .foto-c, .grafico-b, .grafico-c, .industrial-b, .industrial-c, .moda-b, .moda-c, .programacion-b, .programacion-c, .web-b, .web-c, .estrellas-valorar-1, .estrellas-valorar-2, .estrellas-valorar-4, .estrellas-valorar-5, .estrellas-valorar, .icono-comparte, .icono-disponibilidad, .icono-dudas, .icono-imagenes, .icono-intercambio, .icono-perfil, .iconocomparte-b, .icono-portafolio, .icono-programas, .icono-valoraciones, .mail-b, .manana-off, .manana, .manana-b, .noche-off, .noche, .noche-b, .tarde-off, .tarde, .tarde-b, .buscador-cerrar, .buscador, .icono-fb-large, .icono-link-large, .icono-mensaje-no, .icono-mensaje-si, .icono-mensaje, .icono-tw-large, .lapiz, .estrellas-anuncios-1, .estrellas-anuncios-2, .estrellas-anuncios-4, .estrellas-anuncios-5, .estrellas-anuncios-3, .portafolio-linkedin-b, .portafolio-linkedin-d, .portafolio-linkedin-c, .portafolio-instagram-b, .portafolio-instagram-d, .portafolio-instagram-c, .portafolio-pinterest-b, .portafolio-pinterest-d, .portafolio-pinterest-c, .portafolio-tumblert-b, .portafolio-tumblert-d, .portafolio-tumblert-c, .portafolio-behance-b, .portafolio-behance-d, .portafolio-behance-c, .portafolio-domestika-b, .portafolio-domestika-d, .portafolio-domestika-c, .nivel0, .nivel1-b, .nivel1, .nivel3-b, .nivel3, .nivel5-b, .nivel5 {
+.icono-caracteristicas, .animacion-b, .animacion-c, .arquitectura-b, .arquitectura-c, .audiovisual-b, .audiovisual-c, .foto-b, .foto-c, .grafico-b, .grafico-c, .industrial-b, .industrial-c, .moda-b, .moda-c, .programacion-b, .programacion-c, .web-b, .web-c, .estrellas-valorar-1, .estrellas-valorar-2, .estrellas-valorar-4, .estrellas-valorar-5, .estrellas-valorar, .icono-comparte, .icono-disponibilidad, .icono-dudas, .icono-imagenes, .icono-intercambio, .icono-perfil, .iconocomparte-b, .icono-portafolio, .icono-programas, .icono-valoraciones, .mail-b, .manana-off, .manana, .manana-b, .noche-off, .noche, .noche-b, .tarde-off, .tarde, .tarde-b, .buscador-cerrar, .buscador, .icono-fb-large, .icono-link-large, .icono-mensaje-no, .icono-mensaje-si, .icono-mensaje, .icono-tw-large, .lapiz, .estrellas-anuncios-1, .estrellas-anuncios-2, .estrellas-anuncios-4, .estrellas-anuncios-5, .estrellas-anuncios-3, .portafolio-linkedin-b, .portafolio-linkedin-d, .portafolio-linkedin-c, .portafolio-instagram-b, .portafolio-instagram-d, .portafolio-instagram-c, .portafolio-pinterest-b, .portafolio-pinterest-d, .portafolio-pinterest-c, .portafolio-tumblert-b, .portafolio-tumblert-d, .portafolio-tumblert-c, .portafolio-behance-b, .portafolio-behance-d, .portafolio-behance-c, .portafolio-domestika-b, .portafolio-domestika-d, .portafolio-domestika-c, .nivel0, .nivel1-b, .nivel1, .nivel3-b, .nivel3, .nivel5-b, .nivel5, .consejo-1, .consejo-2, .consejo-3, .consejo-4 {
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -957,6 +966,18 @@ select {
 .nivel5 {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI3My4yNTdweCIgaGVpZ2h0PSIxNS41cHgiIHZpZXdCb3g9IjAgMCA3My4yNTcgMTUuNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNzMuMjU3IDE1LjUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IGZpbGw9IiNGMTVEMjIiIHdpZHRoPSI0Ljg0NSIgaGVpZ2h0PSIxNS41Ii8+PHJlY3QgeD0iNy42MDIiIGZpbGw9IiNGMTVEMjIiIHdpZHRoPSI0Ljg0NSIgaGVpZ2h0PSIxNS41Ii8+PHJlY3QgeD0iMTUuMjAzIiBmaWxsPSIjRjE1RDIyIiB3aWR0aD0iNC44NDUiIGhlaWdodD0iMTUuNSIvPjxyZWN0IHg9IjIyLjgwNCIgZmlsbD0iI0YxNUQyMiIgd2lkdGg9IjQuODQ1IiBoZWlnaHQ9IjE1LjUiLz48cmVjdCB4PSIzMC40MDUiIGZpbGw9IiNGMTVEMjIiIHdpZHRoPSI0Ljg0NiIgaGVpZ2h0PSIxNS41Ii8+PHJlY3QgeD0iMzguMDA3IiBmaWxsPSIjRjE1RDIyIiB3aWR0aD0iNC44NDQiIGhlaWdodD0iMTUuNSIvPjxyZWN0IHg9IjQ1LjYwOCIgZmlsbD0iI0YxNUQyMiIgd2lkdGg9IjQuODQ1IiBoZWlnaHQ9IjE1LjUiLz48cmVjdCB4PSI1My4yMSIgZmlsbD0iI0YxNUQyMiIgd2lkdGg9IjQuODQ0IiBoZWlnaHQ9IjE1LjUiLz48cmVjdCB4PSI2MC44MTEiIGZpbGw9IiNGMTVEMjIiIHdpZHRoPSI0Ljg0NSIgaGVpZ2h0PSIxNS41Ii8+PHJlY3QgeD0iNjguNDEyIiBmaWxsPSIjRjE1RDIyIiB3aWR0aD0iNC44NDYiIGhlaWdodD0iMTUuNSIvPjwvc3ZnPg==); }
 
+.consejo-1 {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNi40OTNweCIgaGVpZ2h0PSIyNS44NTVweCIgdmlld0JveD0iMCAwIDI2LjQ5MyAyNS44NTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI2LjQ5MyAyNS44NTUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxlbGxpcHNlIGZpbGw9IiM0MTQwNDIiIGN4PSIxMy4yNDciIGN5PSIxMi45MjgiIHJ4PSIxMy4yNDciIHJ5PSIxMi45MjgiLz48dGV4dCB0cmFuc2Zvcm09Im1hdHJpeCgxLjAyNDYgMCAwIDEgNy40MjI5IDE5LjU1MDgpIiBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0iJ0xhdG8tUmVndWxhciciIGZvbnQtc2l6ZT0iMTkuNjAxMSI+MTwvdGV4dD48L2c+PC9zdmc+); }
+
+.consejo-2 {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNi40OTNweCIgaGVpZ2h0PSIyNS44NTVweCIgdmlld0JveD0iMCAwIDI2LjQ5MyAyNS44NTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI2LjQ5MyAyNS44NTUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxlbGxpcHNlIGZpbGw9IiM0MTQwNDIiIGN4PSIxMy4yNDciIGN5PSIxMi45MjgiIHJ4PSIxMy4yNDciIHJ5PSIxMi45MjgiLz48dGV4dCB0cmFuc2Zvcm09Im1hdHJpeCgxLjAyNDYgMCAwIDEgNy40MjI5IDE5LjU0OTgpIiBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0iJ0xhdG8tUmVndWxhciciIGZvbnQtc2l6ZT0iMTkuNjAxMSI+MjwvdGV4dD48L2c+PC9zdmc+); }
+
+.consejo-3 {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNi40OTNweCIgaGVpZ2h0PSIyNS44NTVweCIgdmlld0JveD0iMCAwIDI2LjQ5MyAyNS44NTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI2LjQ5MyAyNS44NTUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxlbGxpcHNlIGZpbGw9IiM0MTQwNDIiIGN4PSIxMy4yNDciIGN5PSIxMi45MjciIHJ4PSIxMy4yNDciIHJ5PSIxMi45MjkiLz48dGV4dCB0cmFuc2Zvcm09Im1hdHJpeCgxLjAyNDYgMCAwIDEgNy40MjI5IDE5LjU0NzkpIiBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0iJ0xhdG8tUmVndWxhciciIGZvbnQtc2l6ZT0iMTkuNjAxMSI+MzwvdGV4dD48L2c+PC9zdmc+); }
+
+.consejo-4 {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNi40OTNweCIgaGVpZ2h0PSIyNS44NTVweCIgdmlld0JveD0iMCAwIDI2LjQ5MyAyNS44NTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI2LjQ5MyAyNS44NTUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxlbGxpcHNlIGZpbGw9IiM0MTQwNDIiIGN4PSIxMy4yNDciIGN5PSIxMi45MjgiIHJ4PSIxMy4yNDciIHJ5PSIxMi45MjkiLz48dGV4dCB0cmFuc2Zvcm09Im1hdHJpeCgxLjAyNDYgMCAwIDEgNy40MjI5IDE5LjU0NzQpIiBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0iJ0xhdG8tUmVndWxhciciIGZvbnQtc2l6ZT0iMTkuNjAxMSI+NDwvdGV4dD48L2c+PC9zdmc+); }
+
 /*--------
 contenedores anuncios
 
@@ -1037,6 +1058,10 @@ contenedores anuncios
 
 .editar-elementos {
   width: 10px; }
+
+.consejos-icono {
+  height: 27px;
+  width: 26px; }
 
 .apartado-ampliado {
   padding: 40px 0px 40px 0px;
@@ -1243,32 +1268,28 @@ contenedores anuncios
 .proceso {
   width: 100%; }
 
-.caja-consejos {
-  float: left;
-  width: 50%;
-  margin-left: 40px; }
+.show-consejos {
+  display: none; }
 
-.consejos {
-  background-color: #E6E6E5;
-  text-align: left;
-  width: 400px;
-  opacity: 0.7;
-  margin: 0 auto;
-  padding-top: 10px; }
+.container-consejos {
+  padding: 35px 20px 20px 20px; }
+
+.lista-consejos {
+  padding-top: 1px; }
 
 .consejo {
-  margin-top: 50px; }
+  list-style: none;
+  padding: 20px 0px 20px 0px; }
 
-.boton-consejos {
-  background-color: black;
-  width: 30px;
-  height: 30px;
-  border-radius: 60px;
-  color: white;
-  text-align: center;
-  float: left;
-  margin-left: 30px;
-  margin-right: 10px; }
+.texto-consejo {
+  padding-left: 40px; }
+
+.consejos-muneco {
+  background-image: url(../imagenes/muneco-consejos.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 72px;
+  cursor: pointer; }
 
 table {
   border-collapse: collapse; }
