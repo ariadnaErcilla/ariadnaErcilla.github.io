@@ -91,7 +91,9 @@ li.alineacion_vertical {
 .menu li a {
     color: #404041;
 }
-
+.menu li a.active {
+    color: #f15c22;
+}
 .menu a:hover {
     color:#f15c22;
 }
