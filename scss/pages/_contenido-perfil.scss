@@ -1,7 +1,3 @@
-
-/*-----
-general
------*/
 .parte-derecha{
     float: right;
     margin: 50px 0 0 40px;
@@ -14,30 +10,11 @@ general
 
 .contenido{
     float: left;
-    width: 80%;
+    width: 86%;
 }
-
-/*-----
-Perfil - sobre mi - OTROS
------*/
 
 .bloque-perfil{
     margin-top: 40px;
-}
-
-.url{
-    float: left;
-}
-
-.redes-izquierda {
-    display: inline-block;
-    width: 30%;
-}
-
-.redes-derecha {
-    display: inline-block;
-    margin-left: 200px;
-    width: 30%;
 }
 
 .lista-programas {
@@ -69,11 +46,6 @@ Perfil - sobre mi - OTROS
 .descripcion-mi-perfil {
     padding-top: 20px;
 }
-/*-------
-
-PERFIL-CURSOS
-
---------*/
 
 .no-cursos-cuadrado{
     border: 1px solid #54c4c7;
@@ -86,30 +58,6 @@ PERFIL-CURSOS
     margin-top:30px;
     margin-bottom: 30px;
     position: relative;
-}
-
-/*.personaje{
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top:-155px;
-    width: 30%;
-}*/
-
-/*-------
-
-PERFIL-SOBRE MI
-
---------*/
-
-form.turnos {
-    float: right;
-    margin-top: -15px;
-}
-
-.dias-horizontal {
-    width: 350px;
 }
 
 .inline {
@@ -132,41 +80,47 @@ form.turnos {
     margin-right: 20px;
 }
 
-/*
-.mensaje{
-    background-color: red;
-    width: 30%;
-    display: inline-block;
-}*/
-
 .mensaje-contenido{
     width: 68%;
     display: inline-block;
 }
 
-.contenido-mensaje:hover{
-    background-color: white;
-}
-
 .imagen-mensaje{
-    width: 24%;
+    width: 18%;
     float: left;
-    padding: 10px;
+    margin: 10px;
 }
 
 .texto-mensaje{
     width: 70%;
     float: left;
+    margin-bottom: 20px;
+}
+
+.mensaje{
+    clear:both;
+    position: relative;
 }
 
 .mensaje-no-leido {
-    background-color: rgba(51, 51, 51, 0.15);
-    clear:both;
+    @extend .mensaje;
+    background-color: rgb(240, 240, 240);
 }
 
 .mensaje-leido {
-    border-right: 1px solid rgba(51, 51, 51, 0.15);
-    border-left: 1px solid rgba(51, 51, 51, 0.15);
-    border-bottom: 1px solid rgba(51, 51, 51, 0.15);
-    clear:both;
+    @extend .mensaje;
+    border-right: 1px solid rgb(240, 240, 240);
+    border-left: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(240, 240, 240);
 }
+
+.cruz-cerrar {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.mensaje-desplegado {
+    display:none;
+}
+
