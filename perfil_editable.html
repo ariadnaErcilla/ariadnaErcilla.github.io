@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Perfil</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -745,20 +745,22 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                            <div class="mensaje-leido opacity-hover cf">
+                                <div class="buscador-cerrar icono cruz-cerrar">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
                                 <div class="texto-mensaje">
                                     <p class="in-line"><span class="type-color-1 light">De: </span>Silvia Vertarmin</p>
                                     <p class="in-line no-margin"><span class="type-color-1 light">Curso: </span>Te enseño a mejorar tus conocimientos de Photoshop
                                     </p>
-                                    <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, te escribo porque e visto el anuncio y me interesó mucho podríamos coordinar para algún día? Estaría encantado en darte una buena merienda a cambio</p>
-                                    <hr class="linia clear">
-                                    <p class="secondary-title padding-bottom">Respóndele el mensaje</p>
-                                    <p class="secondary-subtitle padding-bottom">Trata de  responder, tanto si te interesa como si no, para que el interesado sepa que has leído su mensaje</p>
-                                    <textarea id="input-mensaje" class="padding-bottom" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
-                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    <div class="mensaje-desplegado">
+                                        <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, te escribo porque e visto el anuncio y me interesó mucho podríamos coordinar para algún día? Estaría encantado en darte una buena merienda a cambio</p>
+                                        <hr class="linia clear">
+                                        <p class="secondary-title padding-bottom">Respóndele el mensaje</p>
+                                        <p class="secondary-subtitle padding-bottom">Trata de  responder, tanto si te interesa como si no, para que el interesado sepa que has leído su mensaje</p>
+                                        <textarea id="input-mensaje" class="padding-bottom" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -976,6 +978,16 @@ $('.pestanya-m-recibido').click(function() {
     $('.pestanya-m-recibido').addClass('seleccionado-m');
     return false;
 });
+<!--abrir y cerrar mensaje -->
+$('#abrir').click(function(e){
+        $('.mensaje-desplegado').show();
+        return false;
+    });
+
+    $('#cerrar').click(function(e){
+        $('.mensaje-desplegado').hide();
+        return false;
+    });
 </script>
 </body>
 </html>
