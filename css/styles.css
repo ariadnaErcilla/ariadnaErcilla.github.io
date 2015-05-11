@@ -1147,7 +1147,6 @@ contenedores anuncios
 
 .masc {
   font-family: "Lato", sans-serif;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -1159,10 +1158,10 @@ contenedores anuncios
   transition: opacity 400ms ease-in; }
 
 .masc::before {
-  background: rgba(0, 0, 0, 0.8);
-  content: '';
   display: block;
   position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  content: '';
   top: 0;
   bottom: 0;
   left: 0;
@@ -1176,12 +1175,6 @@ contenedores anuncios
   position: absolute;
   margin: 0 auto;
   width: 100%; }
-
-.popup-image {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-image: url(../imagenes/ninologin.png);
-  background-size: 20% auto; }
 
 .popup-image-2 {
   background-position: top 0px right 260px;
@@ -1200,9 +1193,7 @@ contenedores anuncios
   color: #FFF;
   line-height: 25px;
   position: absolute;
-  right: -12px;
   text-align: center;
-  top: -12px;
   width: 24px;
   text-decoration: none;
   border-radius: 12px; }
@@ -1211,8 +1202,7 @@ contenedores anuncios
   background: #333333; }
 
 .popup-box {
-  width: 500px;
-  padding: 5px 20px 23px 20px;
+  padding: 5px 20px 40px 20px;
   background: white;
   border-radius: 5px;
   transition: all 500ms ease-in;
@@ -1223,10 +1213,6 @@ contenedores anuncios
 .container-popup {
   width: 75%;
   margin: 0 auto; }
-
-.height-scroll {
-  max-height: 370px;
-  overflow: scroll; }
 
 .border {
   border: 1px solid #404041;
@@ -1291,6 +1277,52 @@ contenedores anuncios
   height: 72px;
   cursor: pointer; }
 
+.height-scroll {
+  max-height: 370px;
+  overflow: scroll; }
+
+/*responsive*/
+@media screen and (max-width: 500px) {
+  .popup-box {
+    width: 100%;
+    border: none; }
+
+  .close {
+    top: 0;
+    right: 0; }
+
+  .height-scroll {
+    max-height: 100%; }
+
+  .masc {
+    position: absolute;
+    top: 0; }
+
+  .popup-image {
+    background-image: none; }
+
+  .img-facebook {
+    display: none; } }
+@media screen and (min-width: 501px) {
+  .popup-box {
+    width: 500px; }
+
+  .close {
+    top: -12px;
+    right: -12px; }
+
+  .masc {
+    position: fixed; }
+
+  .popup-image {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninologin.png);
+    background-size: 20% auto; }
+
+  .img-facebook {
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #404041; } }
 table {
   border-collapse: collapse; }
 
