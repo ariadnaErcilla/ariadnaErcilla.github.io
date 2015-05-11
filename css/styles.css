@@ -739,7 +739,7 @@ select {
   font-size: 0.8rem;
   margin-bottom: 10px; }
 
-#input-mensaje {
+.input-mensaje {
   border: 1px solid #f15c22;
   background-color: white;
   margin-bottom: 20px; }
