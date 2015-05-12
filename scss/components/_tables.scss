@@ -9,6 +9,12 @@ td, th {
     font-weight: 400;
 }
 
+.reducir-tamano {
+    @extend td, th;
+    padding: 0.3rem;
+    background-color: #F0F0F0;
+}
+
 th{
 	background-color: #DCDCDB;
 }
