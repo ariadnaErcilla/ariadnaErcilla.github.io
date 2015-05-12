@@ -1,27 +1,27 @@
-.masc{
-    font-family:"Lato", sans-serif;
-    position: fixed;
+
+ .masc{
+
+        font-family:"Lato", sans-serif;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
-    z-index:99999;
-    display: none;
-    -webkit-transition:opacity 400ms ease-in;
-    -moz-transition:opacity 400ms ease-in;
-    transition:opacity 400ms ease-in;
-    // pointer-events:none;
-}
-.masc::before {
-    background:rgba(0,0,0,0.8);
-    content: '';
-    display: block;
-    position: fixed;
+        z-index:99999;
+        display: none;
+        -webkit-transition:opacity 400ms ease-in;
+        -moz-transition:opacity 400ms ease-in;
+        transition:opacity 400ms ease-in;
+    }
+    .masc::before{
+        display: block;
+        position:fixed;
+        background:rgba(0,0,0,0.8);
+        content: '';
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-}
+    }
 
 .masc:target{
     opacity:1;
@@ -36,22 +36,14 @@
     width: 100%;
 
 }
-.popup-image{
 
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-image: url(../imagenes/ninologin.png);
-    background-size:20% auto;
-    
-
-
-
-}
 .popup-image-2{
 
-    background-position: top center;
+    background-position: top 0px right 260px;
     background-repeat: no-repeat;
-    background-image: url(../imagenes/ninogracias.png);
+    background-image: url(../imagenes/muneco-gracias.png);
+    background-size:13% auto;
+  
 
 
 }
@@ -59,15 +51,17 @@
     top:52px;
    
 }
+.top-gracias{
+
+    top:43px;
+}
 
 .close{
     background: #f15c22;
     color:#FFF;
     line-height:25px;
     position:absolute;
-    right:-12px;
     text-align:center;
-    top:-12px;
     width:24px;
     text-decoration:none;
     border-radius:12px;
@@ -78,14 +72,15 @@
 }
 
 .popup-box{
-    width:500px;
-    padding:5px 20px 13px 20px;
+
+    padding:5px 20px 40px 20px;
     background:white;
     border-radius:5px;
     transition:all 500ms ease-in;
     border: 5px solid #54c4c7;
     margin:0 auto;
     position:relative;
+
 }
 
 .container-popup{
@@ -94,12 +89,11 @@
    
 
 }
-.height-scroll{
 
-    max-height: 350px;
-    overflow: scroll;
+.border{
 
-
+    border:1px solid #404041;
+    padding:0px 5px 0px 5px;
 }
 .movedown{
 
@@ -107,6 +101,11 @@
 }
 .movedown-2{
     margin:1% auto;
+}
+
+.movedown-3{
+
+    margin:5% auto;
 }
 
 .link-facebook{
@@ -119,9 +118,16 @@
   width: 45%;
   padding:20px 0px 10px 0px;
 }
+
+.margin-auto-gracias{
+
+    width: 78%;
+    margin:0 auto;
+    padding:20px 0px 10px 0px;
+}
 .padding-button-popup{
 
-    padding:23px 10px 43px 0px;
+    padding:23px 10px 24px 0px;
 }
 
 .img-facebook{
@@ -137,38 +143,111 @@
 .proceso{
     width: 100%;
 }
-.caja-consejos {
-    float: left;
-    width: 50%;
-    margin-left: 40px;
+.show-consejos{
+
+    display:none;
+    
 }
 
-.consejos {
-    background-color: #E6E6E5;
-    text-align: left;
-    width: 400px;
-    opacity: 0.7;
-    margin: 0 auto;
-    padding-top: 10px;
+.container-consejos{
+
+    padding:35px 20px 20px 20px;
+    
+}
+.lista-consejos{
+
+    padding-top:1px;
 }
 .consejo{
 
-    margin-top: 50px;
-}
-
-.boton-consejos {
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    border-radius: 60px;
-    color: white;
-    text-align: center;
-    float: left;
-    margin-left: 30px;
-    margin-right: 10px;
+    list-style: none;
+    padding:20px 0px 20px 0px;
 
 }
+.texto-consejo{
+
+    padding-left:40px;
+}
+
+.consejos-muneco{
+
+    background-image: url(../imagenes/muneco-consejos.png);
+    background-repeat:no-repeat;
+    background-position:top center;
+    height:72px;
+    cursor:pointer;
+
+}
+.height-scroll{
+
+    max-height: 370px;
+    overflow: scroll;
 
 
+}
 
+/*responsive*/
 
+@media screen and (max-width:500px){
+
+    .popup-box{
+        width: 100%;
+        border:none;
+      
+
+    }
+
+    .close{
+
+        top:0;
+        right:0;
+    }
+
+    .height-scroll{
+
+    max-height: 100%;
+    }
+    
+    .masc{
+
+        position:absolute;
+        top:0;
+
+    }
+    .popup-image{
+        background-image:none;
+    }
+    .img-facebook{
+    display: none;
+}
+  
+}
+@media screen and (min-width:501px){
+
+    .popup-box{
+        width: 500px;
+
+    }
+    .close{
+
+        top:-12px;
+        right:-12px;
+    }
+
+    .masc{
+        position:fixed;
+    }
+    .popup-image{
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/ninologin.png);
+    background-size:20% auto;
+
+}
+    .img-facebook{
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #404041;
+}
+       
+}

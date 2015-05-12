@@ -1,35 +1,34 @@
 <html>
 <head>
-	<title>Home</title>
-	<meta charset="UTF-8">
-	 <link href="css/styles.css" rel="stylesheet" type="text/css">
-	 <link href="css/popup.css" rel="stylesheet" type="text/css">
-	 <link href="css/header.css" rel="stylesheet" type="text/css">
-	 <link rel="stylesheet" href="css/pie.css">
-	 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="/js/buscador.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
 </head>
 
 <body>
-  <header class="cf">
+ <header class="cf">
         <div class="logo">
             <a href="index.html">
-                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
             </a>
         </div>
-            <nav class="menu cf">
-                <div class="float-menu">
-                    <ul class="esconder">
-                        <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                        <li class="tamano_fijo"><a title="" id="scroll-to-como-funciona" class="uppercase" href="#">¿Como Funciona?</a></li>
-                    </ul>
-                </div>
-                <div class="right">
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
+            </div>
+            <div class="right">
                 <div class="registro">
                     <ul class="esconder">
                         <li><a href="#login">Log in</a></li>
@@ -39,120 +38,77 @@
                 <div class="lupa-buscador">
                     <div class="dropdown__wrap">
                         <a href="#">
-                            <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
                         </a>
-                            <ul class="dropdown">
-                                <li class="alineacion_vertical">
-                                    <a href="#">Encuentra tu curso</a>
-                                </li>
-                                <li class="alineacion_vertical">
-                                    <a href="#">Busca tu alumno</a>
-                                </li>
-                                <li class="alineacion_vertical">
-                                    <a href="#">¿Cómo funciona?</a>
-                                </li>
-                                <li class="alineacion_vertical">
-                                    <a href="#">Mi perfil</a>
-                                </li>
-                            </ul>
+                        <ul class="dropdown">
+                            <li class="alineacion_vertical">
+                                <a href="#">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">¿Cómo funciona?</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Mi perfil</a>
+                            </li>
+                        </ul>
                     </div>
                     <a id="abrir" href="">
-                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
+                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
                     </a>
                 </div>
             </div>
-            </nav>
-            <div class="buscador-desplegado cf">
-                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
-                <div class="buscador-container-derecha cf">
-                    <div class="container-button-buscador left">
-                        <a class="button-2 full-button type-color-3" href="#">Buscar</a>
-                    </div>
-                    <a id="cerrar" href="">
-                        <img class="imagen-cerrar-buscador right" src="imagenes/buscador-cerrar.svg" alt="Cerrar-buscador">
-                    </a>
+        </nav>
+        <div class="buscador-desplegado cf">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <div class="buscador-container-derecha cf">
+                <div class="container-button-buscador left">
+                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
                 </div>
+                <a id="cerrar" href="">
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                </a>
             </div>
+        </div>
     </header>
-<div id="login" class="masc">
-<div class="todopopup">
-	<div class="popupbox movedown">
-		<a href="#close" title="close" class="close">X</a>
-			<h2>LOG IN</h2>
-			<form>
-				<h4>Email:</h4>
-				<p><input class="popupinput" type="email"></p>
-				<h4>Contraseña:</h4>
-				<p><input class="popupinput" type="password"></p>
-				<div class="subform">
-					<button class="botonpopup"><a href="index2.html" style="text-decoration:none;color:white">LOG IN</a></button>
-					<p class="textpopup"><a href="#registro" style="text-decoration:none; color:#333333"><u>¿Todavía no estás registrado?</u></a></p>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-	<div id="registro" class="masc">
-	<div class="todopopup">
-	<div class="popupbox popupbox3 movedown movedown2">
-		<a href="#close" title="close" class="close">X</a>
-			<h2>REGISTRO</h2>
-			<form>
-				<h4>Nombre:</h4>
-				<p><input class="popupinput" type="text"></p>
-				<h4>Apellidos:</h4>
-				<p><input class="popupinput" type="text"></p>
-				<h4>Email:</h4>
-				<p><input class="popupinput" type="email"></p>
-				<h4>Contraseña:</h4>
-				<p><input class="popupinput" type="password"></p>
-				<div class="subform">
-					<button class="botonpopup"><a href="perfil.html" style="text-decoration:none;color:white">ENVIAR</a></button>
-					<p class="textpopup"><a href="#login" style="text-decoration:none; color:#333333"><u>¿Ya estás registrado?</u></a></p>
-				</div>
-			</form>
-		</div>
-	</div>
-	</div>
-
-	<article>
+    	<article>
         <div class="fondo-img-top">
             <div class="box-top-1 left">
 
               <div class="texto-top right">
-               <h1 class="title type-color-3">aprende</h1>
-               <p class="subtitle type-color-3 centrado">De otro creativo con clases
-                particulares  gratuitas</p>
+                 <h1 class="title type-color-3">aprende</h1>
+                 <p class="subtitle type-color-3 centrado">De otro creativo con clases
+                    particulares  gratuitas</p>
 
-                <div class="container-button">
-                    <button class="general-button button-2"><a class="type-color-2" href="anuncios.html"><span>busca tu alumno</span></a>
+                    <div class="container-button">
+                        <button class="full-button button-2"><a class="type-color-3" href="anuncios.html">busca tu alumno</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-ampersand-top left"></div>
+            <div class="box-top-2 right">
+
+              <div class="texto-top left">
+                 <h1 class="title type-color-3">enseña</h1>
+                 <p class="subtitle type-color-3 centrado">A otro creativo que necesita una clase urgente y gratuita </p>
+
+                 <div class="container-button">
+                    <button class="full-button button-2"><a class="type-color-3" href="anuncios.html">encuentra tu curso</a>
                     </button>
                 </div>
             </div>
         </div>
-
-        <div class="box-ampersand-top left">
-      </div>
-
-      <div class="box-top-2 right">
-
-      <div class="texto-top left">
-       <h1 class="title type-color-3">enseña</h1>
-       <p class="subtitle type-color-3 centrado">A otro creativo que necesita una clase urgente y gratuita </p>
-
-       <div class="container-button">
-        <button class="general-button button-2"><a class="type-color-3" href="anuncios.html"><span>encuentra tu curso</span></a>
-        </button>
     </div>
-</div>
-</div>
 </article>
 
 <article class="article2">
 <div class="container-titulo-home">
    <h2 class="title centrado" id="como-funciona">¿Como funciona?</h2>
 </div>
-   <div class="background-4">
+   <div class="background-4 cf">
     <div class= "container">
         <section class="mini-box-1">
             <img class="imagen-ilustraciones" src="imagenes/ilustracion-1-home.png" alt="Home">
@@ -164,14 +120,14 @@
 
 
         <section class="mini-box-2">
-            <img class="imagen-ilustraciones" src="imagenes/ilustracion-2-home.png">
+            <img class="imagen-ilustraciones" alt="intercambia-una-comida" src="imagenes/ilustracion-2-home.png">
             <div class="container-texto">
             <h3 class="subtitle destacado  centrado">Intercambia una clase por una comida</h3>
             </div>
         </section>
 
         <section class="mini-box-3">
-            <img class="imagen-ilustraciones" src="imagenes/ilustracion-3-home.png">
+            <img class="imagen-ilustraciones" alt="valorale" src="imagenes/ilustracion-3-home.png">
             <div class="container-texto">
             <h3 class="subtitle destacado centrado">
             ¡Valora a tu alumno o a tu profesor!</h3>
@@ -200,16 +156,18 @@
             </section>
             <section class="mini-box-pie">
                 <div class="newsletter">
-                <span class="type-color-3">Newsletter</span>
-                <div class="newsletter-input cf">
-                <div class="caja-footer">
-                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
-                <button class="button-unete medium-button left"><a class="type-color-3" href="graciasnews.html"><span>Únete</span></a></button>
-                  </div>
-                 <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+                    <span class="type-color-3">Newsletter</span>
+                    <div class="newsletter-input cf">
+                        <div class="caja-footer">
+                            <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
+                            <button class="button-unete medium-button left"><a class="type-color-3" href="graciasnews.html"><span>Únete</span></a></button>
+                        </div>
+                        <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+                    </div>
                 </div>
-                </div>
-                 <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+
+
+                <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
             </section>
     </div>
 

@@ -37,6 +37,7 @@
     font-family: "Lato";
     margin:14px;
     font-weight: 400;
+    line-height: 1;
 }
 
 .titulo-ampliar-curso {
@@ -71,6 +72,7 @@
      margin: 0px;
 }
 
+
 .secondary-subtitle{
     font-size:0.875rem;
     font-weight: 300;
@@ -78,21 +80,21 @@
     color:#404041;
 }
 
+.secondary-subtitle-ampliado {
+    font-size:0.875rem;
+    font-weight: 300;
+    margin: 0;
+    color:#404041;
+    max-width: 80px;
+}
+
 p {
     font-size: 1rem;
     text-align: left;
 }
-
-.categorias-menu {
-    padding-right: 10px;
-    line-height: 30px;
-    margin: 0;
+.regular{
+    font-weight: 400;
 }
-
-.categorias-menu:hover {
-    color:#f15c22;
-}
-
 .light {
     font-weight: 300;
     color:#00A6A5;

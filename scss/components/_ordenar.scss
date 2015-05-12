@@ -9,13 +9,17 @@
     margin:30px;
 
 }
+
 .menu-ordenar li{
 
 	text-transform:uppercase;
 
 }
 
-.menu-ordenar li a:hover{
+.menu-ordenar li a:hover,
+.menu-ordenar li a.selection{
 
 	color:#00A6A5;
 }
+
+
