@@ -39,7 +39,7 @@ aside ampliado
 
 .programa{
     clear: both;
-    margin-top: 10px;
+    /*--margin-top: 10px;--*/
 }
 
 /*-------
@@ -49,16 +49,32 @@ aside categorias
 .filtros {
     float: left;
     width: 17%;
-    margin-top: 40px;
+    margin-top: 66px;
     clear: both;
+   
 }
 
 .categorias{
     margin-top:50px;
 }
+.categorias-menu {
+    padding-right: 10px;
+    line-height: 30px;
+    margin: 0;
+}
 
+.categorias-menu a:hover,
+.categorias-menu a.select {
+    color:#f15c22;
+}
+
+ul{
+
+  padding-left:0;
+}
 .lista-categorias{
     margin-top: 20px;
+    list-style: none;
 }
 
 
@@ -85,17 +101,14 @@ aside categorias
 
     padding:10px 30px 10px 30px;
     margin-bottom: 30px;
-  
+
 }
 .filtros-2{
 
     display: none;
 }
 
-.filtros-3{
 
-    display:none;
-}
 .grupo-iconos{
 
     width: 33%;

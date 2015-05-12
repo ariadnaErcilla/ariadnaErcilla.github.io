@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 <p class="centrado"><a class="sg-subtitle-style-guide" id="show-login">Log In</a></p>
 <hr>
 <p class="centrado"><a class="sg-subtitle-style-guide" id="show-registro">Registro</a></p>
@@ -25,50 +26,51 @@
 <hr>
 <p class="centrado"><a class="sg-subtitle-style-guide" id="show-valorar">Valorar</a></p>
 <hr>
-<p class="centrado"><a class="sg-subtitle-style-guide" id="show-newsletter">Newsletter</a></p>
+<p class="centrado"><a class="sg-subtitle-style-guide" href="normas-publicar.html" target="blank">Normas publicar curso</a></p>
 <hr>
-<div id="recuperar" class="masc">
-    <div class="popup popup-image">
-        <div class="popup-box top movedown">
-            <h2 class="title-form centrado">Recupera tu contraseña</h1>
-            <a title="close" class="close">X</a>
-            <div class="container-popup height-1 cf" id="recuperar">
-                <form class="pform">
-                    <div class="caja-formulario">
-                    <label class="secondary-title">Email</label>
-                    <input class="margin-top" type="email" required="">
-                </div>
-            </form> 
-            </div>
-            <div class="margin-auto-popup">
-            <button class="button-2 full-button"><a class="type-color-3" href="#login"><span>Log in</span></a></button>
-            </div>
-             <p class="terms">Recibirás un mensaje en tu correo para recuperar la contraseña. Si no lo recibes, comprueba que no esté en la carpeta SPAM.</p>
-        </div>
-    </div>
-</div>
+<p class="centrado"><a class="sg-subtitle-style-guide" href="normas-newsletter.html" target="blank">Normas newsletter</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-gracias-curso">Gracias curso</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-gracias-duda">Gracias duda</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-gracias-contactar">Gracias contactar</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-recuperar">Recuperar contraseña</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-registro-publicar">Registro publicar</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-registro-contactar">Registro contactar</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-login-publicar">Login publicar</a></p>
+<hr>
+<p class="centrado"><a class="sg-subtitle-style-guide" id="show-login-contactar">Login contactar</a></p>
+<hr>
+
 <div id="login" class="masc">
     <div class="popup popup-image">
         <div class="popup-box top movedown">
             <a title="close" class="close">X</a>
-            <h2 class="title-form centrado">Log in</h1>
+            <h1 class="title-form centrado">Log in</h1>
             <div class="container-popup cf">
                 <div class="img-facebook">
-                <img class="link-facebook" src="imagenes/facebooklink.png">
+                <img class="link-facebook" src="imagenes/facebooklink.png" alt="link facebook">
                 </div>
                     <form class="pform">
                         <div class="caja-formulario">
-                        <label class="secondary-title">Email</label>
-                        <input class="margin-top" type="email" required="">
+                        <span class="secondary-title">Email</span>
+                        <label class="error">Este campo es obligatorio</label>
+                        <input class="margin-top" name="email" type="email" required="">
                         </div>
                         <div class="caja-formulario">
-                        <label class="secondary-title">Contraseña</label>
-                        <input class="margin-top" type="password" required="">
+                        <p class="secondary-title">Contraseña</p>
+                        <label class="error">Este campo es obligatorio</label>
+                        <input class="margin-top" name="password" type="password" required="">
                         </div>
                      </form>
-            <p class="secondary-subtitle"><a class="type-color-5" href="#recuperar"><u>¿Has olvidado tu contraseña?</u></a></p>
+            <p class="secondary-subtitle"><a class="type-color-5"><u>¿Has olvidado tu contraseña?</u></a></p>
              <div class="margin-auto-popup cf">
-            <button class="button-2 full-button"><a class="type-color-3" href="#gracias"><span>Log in</span></a></button>
+            <button class="button-2 full-button type-color-3">Log in</button>
             </div>
             </div>
            
@@ -82,7 +84,7 @@
         <h1 class="title-form centrado">Registro</h1>
         <div class="container-popup cf">
             <div class="img-facebook">
-                <img class="link-facebook" src="imagenes/facebooklink.png">
+                <img class="link-facebook" src="imagenes/facebooklink.png" alt="link facebook">
             </div>
             <form class="pform">
                 <div class="caja-formulario">
@@ -99,7 +101,7 @@
                  </div>
             </form>
                <div class="padding-button-popup cf">
-            <button class="button-2 left"><a class="type-color-3" href="#login"><span>Registrarse</span></a></button>
+            <button class="button-2 left" onClick="window.location.href ='perfil.html'"><span>Registrarse</span></button>
              <p class="secondary-subtitle margin-left left"><a class="type-color-5" href="#login"><u>¿Ya estás registrado?</u></a></p>
             </div>
             </div>
@@ -110,11 +112,11 @@
 <div id="contactar" class="masc">
     <div class="popup">
     <div class="popup-box movedown-2">
-        <a href="#close" title="close" class="close">x</a>
+        <a href="#close" title="close" class="close">X</a>
          <h1 class="title-form centrado">Contáctale</h1>
           <p class="centrado no-margin">en sólo 2 pasos</p>
           <div class="img-proceso">
-                <img class="proceso" src="imagenes/proceso1.png">
+                <img class="proceso" src="imagenes/proceso1.png" alt="paso 1 del proceso">
                 </div>
         <div class="container-popup height-scroll cf">
             <form class="pform">
@@ -142,7 +144,7 @@
                     <label>
                     <span class="light title-contactar margin-right">Mensaje</span>
                     </label>
-                    <textarea class="big-textarea margin-top" type="text" placeholder="" required=""></textarea>
+                    <textarea class="big-textarea margin-top" type="text" placeholder=""></textarea>
                 </div>
                 <div class="caja-formulario cf">
                     <label>
@@ -210,7 +212,7 @@
                 </div>
             </form>
             <div class="margin-auto-popup cf">
-            <button class="button-2 full-button"><a class="type-color-3" href="#registro-contactar"><span>Siguiente</span></a></button>
+            <button class="button-2 full-button type-color-3" onClick="window.location.href ='#show-registro-contactar'">Contactar</button>
             </div>
             <p class="terms centrado container-popup">Al publicar tu curso estás aceptando los <a class="type-color-5" href="normaspublicar.html"><u>términos y condiciones</u></a> de nuestra política de privacidad</p>
         </div>
@@ -220,14 +222,42 @@
 </div>
   <div id="publicar-curso" class="masc">
     <div class="popup">
-    <div class="popup-box movedown-2">
+    <div class="popup-box movedown-3">
         <a href="#close" title="close" class="close">X</a>
          <h1 class="title-form centrado">Publica tu curso</h1>
+         <div class="hide-consejos">
                 <p class="centrado no-margin">en sólo 2 pasos</p>
                 <div class="img-proceso">
-                <img class="proceso" src="imagenes/proceso1.png">
+                <img class="proceso" src="imagenes/proceso1.png" alt="paso 1 del proceso">
                 </div>
+        </div>
         <div class="container-popup height-scroll cf">
+             <p class="secondary-title centrado margin-top hide-consejos"><a class= "type-color-5" id="abrir-consejos" href=""><strong><u>Lee algunos consejos para mejorar la visibilidad tu curso</u></strong></a></p>
+             <div class="show-consejos">
+                <div class="consejos-muneco" id="cerrar-consejos"></div>
+                <div class="background-4 container-consejos">
+                    <p class="subtitle centrado">¡Mira mis consejos!</p>
+                    <ul class="lista-consejos">
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-1"></span>
+                            <p class="no-margin texto-consejo">Pon un título corto y desciptivo</p>
+                        </li>
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-2"></span>
+                            <p class="no-margin texto-consejo">¡Indica el número de horas, aumentarás los alumnos!</p>
+                        </li>
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-3"></span>
+                            <p class="no-margin texto-consejo">Dinos qué puedes aportar a los alumno y en qué les podrás ayudar.</p>
+                        </li>
+                        <li class="consejo">
+                            <span class="left consejos-icono consejo-4"></span>
+                            <p class="no-margin texto-consejo">Cómo más información rellenes, habrá más posibilidades de que contacten contigo!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <form class="pform">
                 <div class="caja-formulario">
                     <label class="secondary-title">
@@ -256,7 +286,7 @@
                     <label class="secondary-title">
                         Descripción
                     </label>
-                    <textarea class="margin-top" type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required=""></textarea>
+                    <textarea class="margin-top" type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..."></textarea>
                 </div>
                 <div class="caja-formulario cf">
                     <label class="secondary-title left">
@@ -300,35 +330,34 @@
             </form>
         </div>
          <div class="margin-auto-popup cf">
-                <button class="button-2 full-button"><a class="type-color-3" href="#registro-publicar-curso">Publicar curso</a></button>
+                <button class="button-2 full-button"><a class="type-color-3" id="show-gracias">Publicar curso</a></button>
             </div>
     </div>
 </div>
 </div>
  <div id="publicar-duda" class="masc">
     <div class="popup">
-    <div class="popup-box movedown">
+    <div class="popup-box movedown-3">
         <a href="#close" title="close" class="close">X</a>
-        <div class="container-popup cf">
-                <h1 class="title-form">Publica tu curso</h1>
-                <p class="centrado">en sólo 2 pasos</p>
-                <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso1.svg">
+        <h1 class="title-form centrado">Publica tus dudas</h1>
+                <p class="centrado no-margin">en sólo 2 pasos</p>
+                <div class="img-proceso">
+                <img class="proceso" src="imagenes/proceso1.png" alt="paso 1 del proceso">
                 </div>
-                <p class="secondary-title centrado"><a class= "gris" href="consejos.html"><strong><u>Lee algunos consejos para mejorar tu curso</u></strong></a></p>
+        <div class="container-popup height-scroll cf">
             <form class="pform">
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Título
                     </label>
-                    <input type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="">
+                     <p class="tags no-margin">Máximo 32 caracteres.</p>
+                    <input class="margin-top" type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="">
                 </div>
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                        Categoría
                    </label>
-                    <select name="text" rquired="">
-                        <select name="text" required="">
+                   <select class="margin-top" name="text" required="">
                         <option value="Arquitectura">Arquitectura</option>
                         <option value="Animación">Animación</option>
                         <option value="Audiovisual">Audiovisual</option>
@@ -339,60 +368,72 @@
                         <option value="Fotografía">Fotografía</option>
                         <option value="Programación">Programación</option>
                     </select>
-                    </select>
                 </div>
                 <div class="caja-formulario">
                     <label class="secondary-title">
                         Descripción
                     </label>
-                    <input type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="">
+                    <input class="margin-top" type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="">
                 </div>
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Método de clase
                     </label>
+                    <div class="clear margin-top">
                     <label class="form-check"><input type="checkbox"><span>Presencial</span></label>
                     <label class="form-check"><input type="checkbox"><span>Skype</span></label>
                     <label class="form-check"><input type="checkbox"><span>Email</span></label>
                 </div>
+                </div>
                 <div class="caja-formulario">
+                    <label class="secondary-title">
+                       Elige la recompensa que más te apetezca
+                   </label>
+                    <select class="margin-top" name="text" required="">
+                        <option value="Desayuno">Desayuno</option>
+                        <option value="Merienda">Merienda</option>
+                        <option value="Cena">Cena</option>  
+                    </select>
+                </div>
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Programa informático (opcional)
                     </label>
-                    <input type="text" placeholder="Ej:Photoshop" required="">
+                    <input class="margin-top" type="text" placeholder="Ej:Photoshop" required="">
                 </div>
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Tags (opcional)
                     </label>
-                    <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="">
+                    <input class="margin-top" type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="">
                 </div>
             </form>
-           <div class="container-button">
-                <button class="general-button button-2"><a href="#registro2">Siguiente</a></button>
-            </div>     
-        </div>
+            </div>
+           <div class="margin-auto-popup cf">
+                <button class="button-2 full-button"><a class="type-color-3" href="#registro-publicar-curso">Publicar duda</a></button>
+            </div>   
     </div>
 </div>
 </div>
 <div id="modificar-curso" class="masc">
     <div class="popup">
-    <div class="popup-box movedown">
+    <div class="popup-box movedown-3">
         <a href="#close" title="close" class="close">X</a>
-        <div class="container-popup cf">
-                <h1 class="title-form">Modificar curso</h1>
+        <h1 class="title-form centrado">Modificar curso</h1>
+        <div class="container-popup height-scroll cf">
             <form class="pform">
-                 <div class="cajaformulario">
+                 <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Título
                     </label>
-                    <input type="text" placeholder="Aprende a usar la página maestra en Indesign" required="">
+                     <p class="tags no-margin">Máximo 32 caracteres.</p>
+                    <input class="margin-top" type="text" placeholder="Aprende a usar la página maestra en Indesign" required="">
                 </div>
-                <div class="cajaformulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                        Categoría
                    </label>
-                    <select name="text" required="">
+                    <select class="margin-top" name="text" required="">
                         <option value="Arquitectura">Arquitectura</option>
                         <option value="Animación">Animación</option>
                         <option value="Diseño Audiovisual">Audiovisual</option>
@@ -404,37 +445,48 @@
                         <option value="Linux">Programación</option>
                     </select>
                 </div>
-                <div class="cajaformulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Descripción
                     </label>
-                    <textarea class="big-textarea" type="text" placeholder="En sólo 1 hora te puedo enseñar a usar una de las herramientas más importantes de Indesign, la página maestra. Te permitirá agilizar mucho tus proyectos de maquetación de revistas." required="">
+                    <textarea class="big-textarea margin-top" type="text" placeholder="En sólo 1 hora te puedo enseñar a usar una de las herramientas más importantes de Indesign, la página maestra. Te permitirá agilizar mucho tus proyectos de maquetación de revistas."></textarea>
                 </div>
-                <div class="cajaformulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Método de clase
                     </label>
+                    <div class="clear margin-top">
                     <label class="form-check"><input type="checkbox"><span>Presencial</span></label>
                     <label class="form-check"><input type="checkbox"><span>Skype</span></label>
                     <label class="form-check"><input type="checkbox"><span>Email</span></label>
                 </div>
-                <div class="cajaformulario">
+                </div>
+                 <div class="caja-formulario">
+                    <label class="secondary-title">
+                       Elige la recompensa que más te apetezca
+                   </label>
+                    <select class="margin-top" name="text" required="">
+                        <option value="Desayuno">Desayuno</option>
+                        <option value="Merienda">Merienda</option>
+                        <option value="Cena">Cena</option>  
+                    </select>
+                </div>
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Programa informático (opcional)
                     </label>
-                    <input type="text" placeholder="Ej:Photoshop" required="">
+                    <input class="margin-top" type="text" placeholder="Ej:Photoshop" required="">
                 </div>
-                <div class="cajaformulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Tags (opcional)
                     </label>
-                    <input type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="">
+                    <input class="margin-top" type="text" placeholder="#photoshop, #retoquefotográfico, ..." required="">
                 </div>
             </form>
-                <div class="container-button">
-                    <button class="general-button button-2"><a href="perfil.html">Modificar</a></button>
-                </div>
-                <p class="terms">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
+            </div>
+            <div class="margin-auto-popup cf">
+                <button class="button-2 full-button"><a class="type-color-3" href="#"><span>Modificar</span></a></button>
             </div>
         </div>
     </div>
@@ -443,169 +495,150 @@
     <div class="popup">
     <div class="popup-box movedown">
         <a href="#close" title="close" class="close">X</a>
+        <h1 class="title-form centrado">¡Valórale!</h1>
         <div class="container-popup cf">
-                <h1 class="title-form">¡Valorale!</h1>
             <form class="pform">
-                 <div class="cajaformulario">
-                        <label class="secondary-title">
+                 <div class="caja-formulario cf">
+                        <label class="secondary-title left">
                             Puntuación
                         </label>
-                        <img src="imagenes/estrellasvalorar.svg">
-                </div>
-                <div class="cajaformulario">
+                        <div class="clear margin-top">
+                               <span class="stars-valorale estrellas-valorar-2 left"></span>
+                        </div>
+                    </div>
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Comentario
                     </label>
-                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <textarea class="big-textarea margin-top" name="message"></textarea>
                 </div>
-                <div class="cajaformulario">
+                <div class="caja-formulario cf">
                     <label class="secondary-title">
                        ¿Qué rol ha cumplido?
                    </label>
-                    <p class="categoriasmenu"><input type="checkbox">profesor</p>
-                    <p class="categoriasmenu"><input type="checkbox">alumno</p>
+                   <div class="clear margin-top">
+                    <p class="categorias-menu left"><input type="checkbox">profesor</p>
+                    <p class="categorias-menu left"><input type="checkbox">alumno</p>
+                </div>
                 </div>
             </form>
-            <div class="container-button">
-                <button class="general-button button-2"><a href="#">Valorar</a></button>
             </div>
-        </div>
+            <div class="margin-auto-popup cf">
+                <button class="button-2 full-button"><a class="type-color-3" href="#"><span>Valorar</span></a></button>
+            </div>
+        
     </div>
     </div>
 </div>
-<div id="gracias" class="masc">
+
+<div id="gracias-curso" class="masc">
 <div class="popup popup-image-2">
-    <div class="popup-box movedown-2">
+    <div class="popup-box top-gracias movedown">
         <a href="#close" title="close" class="close">X</a>
+        <h1 class="title-form centrado">¡Gracias</h1>
+        <p class="subtitle centrado">por publicar tu curso!</p>
         <div class="container-popup cf">
-            <h1 class="title-form">¡Gracias!</h1>
-            <h2 class="subtitle">Ya has enviado tu curso.</h2>
-             <div class="pform">
+            <div class="pform">
                 <p>En menos de 24 horas tendrás tu curso publicado.</p> 
                 <p>Este formulario se enviará a nuestro sistema y si se adapta a nuestra política, será publicado. </p>
                 <p>Disculpa las molestias.</p>
             </div>
-            <div class="container-button">
-                <button class="general-button button-2"><a href="anunciosprofes.html">Ver cursos</a></button>
-            </div>
-            <div class="container-button left">
-                <button class="general-button button-2"><a href="perfil_sobremi.html">Ver perfil</a></button>
-            </div>
         </div>
+        <div class="margin-auto-gracias cf">
+                <button class="button-2 left"><a class="type-color-3" href=""><span>Ver cursos</span></a></button>
+                <button class="button-2 left margin-left"><a class="type-color-3" href=""><span>Ver perfil</span></a></button>
+            </div>
         </div>
     </div>
 </div>
-<div id="gracias-con" class="masc">
+<div id="gracias-duda" class="masc">
 <div class="popup popup-image-2">
-    <div class="popup-box movedown-2">
+    <div class="popup-box top-gracias movedown">
         <a href="#close" title="close" class="close">X</a>
+        <h1 class="title-form centrado">¡Gracias</h1>
+        <p class="subtitle centrado">por publicar tu duda!</p>
         <div class="container-popup cf">
-            <h1 class="title-form">¡Gracias!</h1>
-            <h2 class="subtitle"></h2>
-             <div class="pform">
-                <p>Pronto recibirás respuesta.</p> 
-            </div>
-            <div class="container-button">
-                <button class="general-button button-2"><a href="anunciosprofes.html">Ver cursos</a></button>
-            </div>
-            <div class="container-button left">
-                <button class="general-button button-2"><a href="perfil_sobremi.html">Ver perfil</a></button>
+            <div class="pform">
+                <p>En menos de 24 horas tendrás tu duda publicada en el apartado Busca tu alumno.</p> 
+                <p>Este formulario se enviará a nuestro sistema y si se adapta a nuestra política, será publicado. </p>
+                <p>Disculpa las molestias.</p>
             </div>
         </div>
+        <div class="margin-auto-gracias cf">
+                <button class="button-2 left"><a class="type-color-3" href=""><span>Ver cursos</span></a></button>
+                <button class="button-2 left margin-left"><a class="type-color-3" href=""><span>Ver perfil</span></a></button>
+            </div>
         </div>
     </div>
 </div>
-<div id="login-publicar-curso" class="masc">
-    <div class="popup">
-        <div class="popup-box movedown-2">
-            <a title="close" class="close">X</a>
-            <h2 class="title-form centrado">Log in</h1>
-            <div class="container-popup height-2 cf">
-                <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
-                </div>
-                <p class="secondary-title center"><a href="#login2"><strong><u>Si no estás registrado, clica aquí</u></strong></a></p>
-                <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
-                </div>
-                <form class="pform">
-                    <div class="cajaformulario">
-                    <label class="secondary-title">Email</label>
-                    <input type="email" required="">
-                    </div>
-                    <div class="cajaformulario">
-                    <label class="secondary-title">Contraseña</label>
-                    <input  type="password" required="">
-                    </div>
-                </form>
-            <div class="margin-top">
-            <button class="general-button button-2 clear"><a class="type-color-3" href="#gracias"><span>Publicar curso</span></a></button>
+<div id="gracias-contactar" class="masc">
+<div class="popup popup-image-2">
+    <div class="popup-box top-gracias movedown">
+        <a href="#close" title="close" class="close">X</a>
+        <h1 class="title-form centrado">¡Perfecto</h1>
+        <p class="subtitle centrado">Tu mensaje ha sido enviado!</p>
+            <div class="margin-auto-gracias cf">
+                <button class="button-2 left"><a class="type-color-3" href=""><span>Ver cursos</span></a></button>
+                <button class="button-2 left margin-left"><a class="type-color-3" href=""><span>Ver perfil</span></a></button>
             </div>
         </div>
     </div>
 </div>
 
-<div id="login-contactar" class="masc">
-<div class="popup">
-    <div class="popup-box movedown-2">
-        <a href="#close" title="close" class="close">X</a>
-          <h1 class="title-form">Log in</h1>
-        <div class="container-popup height-2 cf">
-                <p class="centrado">en sólo 2 pasos</p>
-                <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
-                </div>
+<div id="recuperar" class="masc">
+    <div class="popup popup-image">
+        <div class="popup-box top movedown">
+            <a title="close" class="close">X</a>
+            <h1 class="title-form centrado">Recupera tu contraseña</h1>
+            <div class="container-popup cf">
                 <form class="pform">
-                    <div class="cajaformulario">
+                    <div class="caja-formulario">
                     <label class="secondary-title">Email</label>
-                    </div>
-                    <input type="email" required="">
-                    <div class="cajaformulario">
-                    <label class="secondary-title">Contraseña</label>
-                    <input type="password" required="">
-                    </div>
-                </form>
-                <div class="margin-top">
-                <button class="general-button button-2 clear"><a class="type-color-3" href="#gracias"><span>Publicar curso</span></a></button>
+                    <input class="margin-top" type="email" required="">
                 </div>
+            </form> 
+            <div class="padding-button-popup cf">
+            <button class="button-2 left"><a class="type-color-3" href="#login"><span>Recuperar</span></a></button>
+             <p class="secondary-subtitle margin-left left"><a class="type-color-5" href="#login"><u>Cancelar</u></a></p>
             </div>
+             <p class="terms centrado">Recibirás un mensaje en tu correo para recuperar la contraseña. Si no lo recibes, comprueba que no esté en la carpeta SPAM.</p>
         </div>
     </div>
 </div>
-<div id="registro-publicar-curso" class="masc">
+</div>
+<div id="registro-publicar" class="masc">
     <div class="popup">
     <div class="popup-box movedown-2">
         <a href="#close" title="close" class="close">X</a>
-        <h1 class="title-form">¡Ya queda poco!</h1>
-        <div class="container-popup height-2 cf">
-            <p class="secondary-title">Regístrate y ya podrás publicar tu curso</p>
-             <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
+        <h1 class="title-form centrado">¡Ya queda poco!</h1>
+        <p class="secondary-title regular centrado">Regístrate y ya podrás publicar tu curso</p>
+             <div class="img-proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
             </div>
-            <p class="secondary-title centrado"><a href="#login-publicar"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></p>
-                <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
+        <div class="container-popup cf">
+            <p class="secondary-title centrado margin-top"><a class="type-color-5" href="#login-publicar"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></p>
+            <div class="img-facebook">
+                <img class="link-facebook margin-top" src="imagenes/facebooklink.png" alt="link facebook">
                 </div>
             <form class="pform">
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                 <label class="secondary-title">Nombre y apellido</label>
-                <input type="text" required="">
+                <input class="margin-top" type="text" required="">
                 </div>
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                 <label class="secondary-title">Email</label>
-                <input type="email" required="">
+                <input class="margin-top" type="email" required="">
                 </div>
-                <div class="caja-formulario">
+                <div class="caja-formulario cf">
                 <label class="secondary-title">Contraseña</label>
-                <input type="password" required="">
+                <input class="margin-top" type="password" required="">
                 </div>
             </form>
-           <div class="margin-top">
-                <button class="general-button button-2 clear"><a class="type-color-3" href="#gracias"><span>Publicar curso</span></a></button>
             </div>
-            <p class="terms">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
-        </div>
-        </div>
+           <div class="margin-auto-popup cf">
+            <button class="button-2 full-button"><a class="type-color-3" href="#registro-contactar">Publicar curso</a></button>
+            </div>
+            <p class="terms centrado container-popup">Al publicar tu curso estás aceptando los <a class="type-color-5" href="normaspublicar.html"><u>términos y condiciones</u></a> de nuestra política de privacidad</p>
         </div>
     </div>
 </div>
@@ -613,36 +646,93 @@
     <div class="popup">
     <div class="popup-box movedown-2">
         <a href="#close" title="close" class="close">X</a>
-        <h1 class="title-form">¡Ya queda poco!</h1>
-        <div class="container-popup height-2 cf">
-                <p class="centrado">en sólo 2 pasos</p>
-                <div class="imgproceso">
-                <img class="proceso" src="imagenes/proceso2.svg">
+        <h1 class="title-form centrado">Registro</h1>
+        <p class="centrado no-margin">en sólo 2 pasos</p>
+        <div class="img-proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
                 </div>
-                <p class="secondary-title centrado"><a href="#login3"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></p>
-                 <div class="imgfacebook">
-                <img class="linkfacebook" src="imagenes/facebooklink.png">
+        <div class="container-popup cf">
+            <p class="secondary-title centrado margin-top"><a class="type-color-5" href="#login3"><strong><u>Si ya estás registrado, clica aquí</u></strong></a></p>
+                 <div class="img-facebook">
+                <img class="link-facebook margin-top" src="imagenes/facebooklink.png" alt="link facebook">
                 </div>
             <form class="pform">
                 <div class="caja-formulario">
                 <label class="secondary-title">Nombre y apellido</label>
-                <input type="text" required="">
+                <input class="margin-top" type="text" required="">
                 </div>
                 <div class="caja-formulario">
                 <label class="secondary-title">Email</label>
-                <input type="email" required="">
+                <input class="margin-top" type="email" required="">
                 </div>
                 <div class="caja-formulario">
                 <label class="secondary-title">Contraseña</label>
-                <input type="password" required="">
+                <input class="margin-top" type="password" required="">
                 </div>
             </form>
-                <div class="container-button">
-                    <button class="general-button button-2"><a href="#graciascon"><span>Contactar</span></a></button>
-                </div>
-                <p class="terms">Al publicar tu curso estás aceptando los <a href="normaspublicar.html">términos y condiciones</a> de nuestra política de privacidad</p>
+            </div>
+            <div class="margin-auto-popup cf">
+            <button class="button-2 full-button"><a class="type-color-3" href="#registro-contactar"><span>Contactar</span></a></button>
             </div>
         </div>
+        </div>
+    </div>
+    <div id="login-publicar" class="masc">
+    <div class="popup">
+        <div class="popup-box movedown">
+            <a href="#close" title="close" class="close">X</a>
+            <h1 class="title-form centrado">Log in</h1>
+                <div class="img-proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                </div>
+            <div class="container-popup cf">
+                <p class="secondary-title centrado"><a class="type-color-5" href="#login2"><strong><u>Si no estás registrado, clica aquí</u></strong></a></p>
+                <div class="img-facebook">
+                <img class="link-facebook" src="imagenes/facebooklink.png" alt="link facebook">
+                </div>
+                <form class="pform">
+                    <div class="cajaformulario">
+                    <label class="secondary-title">Email</label>
+                    <input class="margin-top" type="email" required="">
+                    </div>
+                    <div class="cajaformulario">
+                    <label class="secondary-title">Contraseña</label>
+                    <input class="margin-top" type="password" required="">
+                    </div>
+                </form>
+            </div>
+            <div class="margin-auto-popup cf">
+            <button class="button-2 full-button"><a class="type-color-3" href="#registro-contactar">Publicar curso</a></button>
+            </div>
+            <p class="terms centrado container-popup">Al publicar tu curso estás aceptando los <a class="type-color-5" href="normaspublicar.html"><u>términos y condiciones</u></a> de nuestra política de privacidad</p>
+        </div>
+    </div>
+</div>
+
+<div id="login-contactar" class="masc">
+<div class="popup">
+    <div class="popup-box movedown">
+        <a href="#close" title="close" class="close">X</a>
+          <h1 class="title-form centrado">Log in</h1>
+          <p class="centrado no-margin">en sólo 2 pasos</p>
+                <div class="img-proceso">
+                <img class="proceso" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                </div>
+                <div class="container-popup cf">
+                <form class="pform">
+                    <div class="caja-formulario">
+                    <label class="secondary-title">Email</label>
+                    <input class="margin-top" type="email" required="">
+                    </div>
+                    <div class="caja-formulario">
+                    <label class="secondary-title">Contraseña</label>
+                    <input class="margin-top" type="password" required="">
+                    </div>
+                </form>
+                </div>
+                <div class="margin-auto-popup cf">
+            <button class="button-2 full-button"><a class="type-color-3" href="#registro-contactar"><span>Contactar</span></a></button>
+            </div>
         </div>
     </div>
 </div>
@@ -679,6 +769,76 @@
         e.preventDefault();
         $($('#valorar')[0]).show();
     });
+     $('#show-gracias-curso').click(function(e){
+        e.preventDefault();
+        $($('#gracias-curso')[0]).show();
+    });
+    $('#show-gracias-duda').click(function(e){
+        e.preventDefault();
+        $($('#gracias-duda')[0]).show();
+    });
+     $('#show-gracias-contactar').click(function(e){
+        e.preventDefault();
+        $($('#gracias-contactar')[0]).show();
+    });
+       $('#show-recuperar').click(function(e){
+        e.preventDefault();
+        $($('#recuperar')[0]).show();
+    });
+     $('#show-registro-publicar').click(function(e){
+        e.preventDefault();
+        $($('#registro-publicar')[0]).show();
+    });
+      $('#show-registro-contactar').click(function(e){
+        e.preventDefault();
+        $($('#registro-contactar')[0]).show();
+    });
+      $('#show-login-publicar').click(function(e){
+        e.preventDefault();
+        $($('#login-publicar')[0]).show();
+    });
+      $('#show-login-contactar').click(function(e){
+        e.preventDefault();
+        $($('#login-contactar')[0]).show();
+    });
+        $('#abrir-consejos').click(function(e){
+        $('.show-consejos').show();
+        $('.hide-consejos').hide();
+        return false;
+    });
+
+    $('#cerrar-consejos').click(function(e){
+        $('.show-consejos').hide();
+        $('.hide-consejos').show();
+        return false;
+    });
+
+    $('pform').submit(function(e) {
+            e.preventDefault();
+            var name = $('input[name="email"]');
+            var label = name.siblings();
+            var email = $.trim(name.val());
+            if(email =="@") {
+              name.removeClass('error');
+              label.hide();
+            } else {
+              name.addClass('error');
+              label.show();
+            }
+           
+          });
+    $('input[name="email"]').focusout(function() {
+            var name = $('input[name="email"]');
+            var label = name.siblings();
+            var email = $.trim(name.val());
+            if(email =="@") {
+              name.removeClass('error');
+              label.hide();
+            } else {
+              name.addClass('error');
+              label.show();
+            }
+          });
 </script>
 </body>
 </html>

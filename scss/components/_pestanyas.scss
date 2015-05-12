@@ -65,14 +65,12 @@
     background-color: white;
     padding: 16px 10px;
     border-bottom: 1px solid rgb(240, 240, 240);
-
     &:last-child{
         border-bottom: none;
     }
 }
 
 .contenido-mensaje:hover,
-.contenido-mensaje.a.seleccionado{
+.seleccionado-m {
     background-color: rgb(240, 240, 240);
-    color:white;
 }
