@@ -5,7 +5,7 @@ header {
 }
 
 .img-logo {
-    width: 80%;
+    width: 100px;
     margin: 10px;
 }
 
@@ -47,9 +47,6 @@ li.alineacion_vertical {
     @media screen and (max-width: 815px){
         .input-buscador {
             margin-left: 10px;
-        }
-        .buscador {
-            background-color: black;
         }
         .menu {
             max-width: 30%;
@@ -109,14 +106,14 @@ li.alineacion_vertical {
 }
 
 .imagen-lupa {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 10px;
     max-width: 35px;
 }
 
 .imagen-desplegable {
-    margin-left: 8px;
-    margin-top: 8px;
+    margin-left: 5px;
+    margin-top: 10px;
     max-width: 35px;
 }
 
@@ -126,7 +123,7 @@ li.alineacion_vertical {
 }
 
 #input-buscador {
-    margin: 15px 0px 15px 40px;
+    margin: 15px 0px 15px 30px;
     max-width: 60%;
     float: left;
     border-radius: 5px;
@@ -134,13 +131,13 @@ li.alineacion_vertical {
 
 .buscador-container-derecha {
     float: left;
-    width: 30%;
+    width: 37%;
     margin: 10px 0px 0px 0px;
 }
 
 .imagen-cerrar-buscador {
     margin-left: 0px;
-    padding-top: 5px;
+    margin-top: 5px;
     max-width: 30px;
 }
 

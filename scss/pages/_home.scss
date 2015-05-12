@@ -1,99 +1,188 @@
-
 .fondo-img-top {
-    background-image: url(../imagenes/portada-home.png);
-    min-height: 100%;
+    background-image: linear-gradient(90deg, #08A6A6, #007978);
     background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0 auto;
+    background-size: cover;
     margin-top: 50px;
     width: 100%;
-    overflow: hidden;
-}
-
-.contenido-top {
-    margin: 0 auto;
-	width: 80%;
-	top:100px;
 }
 
 .texto-top{
-	text-align: center;
-	width: 30%;
-	margin:80px;
+    text-align: center;
+    width: 45%;
+    margin-left: 90px;
 }
-.container-button{
-	margin-top: 30px;
+.box-ampersand-top{
+    background-image: url(../imagenes/imagen-ampersand-home.svg);
+    height: 100%;
+    // width: 10%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
 }
 
-.container-titulo{
-    margin-bottom: 40px;
+
+.container-button{
+    margin-top: 30px;
+}
+
+.container-titulo-home{
+    margin: 30px;
 }
 
 .article2 {
-    margin-top: 60px;
-    margin-bottom: 70px;
+    padding: 20px 0px 70px 0px;
+    margin: 0 auto;
     width: 100%;
 }
 
-.box2 {
-	clear: both;
+
+.container-texto{
+    width: 80%;
+    text-align: center;
 }
 
+/* Media Querys Top*/
+
+@media all {
+   .fondo-img-top {
+        height: 100%;
+}
+    .box-top-1,
+    .box-top-2{
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    margin: 0 auto;
+}
+  .box-ampersand-top{
+    height: 20%;
+    width: 100%;
+    background-position: 50% 50%;
+  }
+  .texto-top{
+    width: 100%;
+    margin: 0;
+
+  }
+}
+
+@media all and (min-width: 600px){
+    .fondo-img-top{
+        height: 135%;
+        width: 100%;
+    }
+    .box-top-1{
+    background-image: url(../imagenes/imagen-pepe-home.svg);
+    background-position: left bottom;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    .box-top-2{
+    background-image: url(../imagenes/imagen-helena-home.svg);
+    background-position: right bottom;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    .texto-top{
+        width: 45%;
+    }
+
+}
+
+@media all and (min-width:1024px){
+    .fondo-img-top {
+        height: 70%;
+    }
+    .box-top-1,
+    .box-top-2{
+    width: 46%;
+    float: left;
+    height: 100%;
+    padding-top: 50px;
+
+    }
+    .box-top-1{
+    padding-right: 50px;
+    }
+    .box-top-2{
+    padding-left: 40px;
+    }
+  .box-ampersand-top{
+    width: 8%;
+    height: 100%;
+    background-position: 50% 50%;
+    float: left;
+  }
+
+}
+
+/* Media Querys Bottom*/
+
+@media all{
+    section.mini-box-2,
+    section.mini-box-1,
+    section.mini-box-3,
+    .container-texto{
+    text-align: center;
+    padding: 30px 10px 5px 10px;
+    margin: 0 auto;
+}
+  .imagen-ilustraciones{
+    height: 35%;
+  }
+}
+
+@media all and (min-width: 600px) {
+
+    section.mini-box-1,
+    section.mini-box-2,
+    section.mini-box-3{
+    text-align: center;
+    padding: 30px 10px 5px 10px;
+    margin: 0 auto;
+    width: 50%;
+    float: left;
+}
+}
+
+@media all and (min-width:1024px){
+
+    section.mini-box-1,
+    section.mini-box-2,
+    section.mini-box-3{
+    width: 33%;
+    float: left;
+    padding-top: 50px;
+    }
+
+  }
+
+/*
+.contenido-top-2,
+.contenido-top-1{
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 100%;
+    padding: 30px 30px 30px 30px;
+}
+*/
+
+/*
 section.mini-box-1,
 section.mini-box-2,
 section.mini-box-3{
+    width:33%;
+    //padding: 40px 0px 90px 0px;
+    margin: 0 auto;
     display: inline-block;
-    position: relative;
-	width:50%;
-	margin-top: 40px;
-    margin-bottom: 90px;
-    margin-left: 20px;
+    text-align: center;
 }
+*/
 
-
+/*
 .img1{
-	width:90%;
+    width:60%;
     margin-bottom: 30px;
 }
-
-.container-texto{
-    width: 100%;
-}
-
-@media all and (max-width: 800px) {
-    .fondo-img-top {
-        height: 100%;
-    }
-}
-@media all and (max-width: 700px) {
-    section.mini-box-2,
-    section.mini-box-1
-    section.mini-box-3{
-        width: 40%;
-
-    }
-}
-
-@media all and (max-width: 500px) {
-    section.mini-box-3,
-    section.mini-box-2,
-    section.mini-box-1,
-    .img1{
-        margin-left: 15%;
-        margin-bottom: 3%;
-    }
-
-}
-
-@media all and (max-width: 400px) {
-    section.mini-box-1
-    section.mini-box-2
-    section.mini-box-3
-    .img1{
-        float: left;
-
-    }
-    .container-texto{
-        float: right;
-    }
-}
+*/

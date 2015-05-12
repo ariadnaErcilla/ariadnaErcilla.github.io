@@ -44,12 +44,11 @@ body {
 }
 
 .margin-left{
-  margin-left:10px;
+    margin-left:10px;
 }
-.margin-right{
-  
-  margin-right:5px;
 
+.margin-right{
+    margin-right:5px;
 }
 
 .clear{
@@ -68,15 +67,23 @@ body {
     margin-top:5px;
 }
 
+.margin-top-aampliado{
+    margin-top: 20px;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
 .linia{
     border: 0;
     border-top: 1px solid #999;
     margin-top:20px;
 }
-
+/*
 .block{
     display: block;
-}
+}*/
 
 .in-line{
     display: inline-block;
@@ -90,4 +97,13 @@ body {
 
 .imagen-redondo{
     border-radius: 50%;
+    border: 1px solid rgba(51, 51, 51, 0.15);
+}
+
+.espacio-inferior-ampliado {
+    padding-bottom: 40px;
+}
+
+.imagen-perfil-aampliado {
+    max-width: 40%;
 }
