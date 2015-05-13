@@ -66,7 +66,7 @@
             <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
-                    <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
                 </div>
                 <a id="cerrar" href="">
                     <img class="imagen-cerrar-buscador right" src="imagenes/buscador-cerrar.svg" alt="Cerrar-buscador">
@@ -480,6 +480,30 @@ $('.pestanya-1').click(function() {
     $('.option-1').show();
     $('.seleccionado').removeClass('seleccionado');
     $('.pestanya-1').addClass('seleccionado');
+    return false;
+});
+$('#show-popup1').click(function(e){
+    e.preventDefault();
+    $($('#popup1')[0]).show();
+});
+$('.close').click(function(e){
+    $('.masc:visible').hide();
+});
+$('#show-popup2').click(function(e){
+    e.preventDefault();
+    $($('#popup2')[0]).show();
+});
+$('.close').click(function(e){
+    $('.masc:visible').hide();
+});
+
+$('#abrir').click(function(e){
+    $('.buscador-desplegado').show();
+    return false;
+});
+
+$('#cerrar').click(function(e){
+    $('.buscador-desplegado').hide();
     return false;
 });
 </script>
