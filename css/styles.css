@@ -69,7 +69,8 @@
   font-weight: 300;
   margin: 0;
   color: #404041;
-  max-width: 80px; }
+  max-width: 110px;
+  margin-top: 10px; }
 
 p {
   font-size: 1rem;
@@ -293,7 +294,8 @@ body {
   margin-top: 5px; }
 
 .margin-top-aampliado {
-  margin-top: 20px; }
+  margin-top: 30px;
+  margin-left: 5px; }
 
 .padding-bottom {
   padding-bottom: 10px; }
@@ -1398,14 +1400,16 @@ td, .reducir-tamano, th, .reducir-tamano {
   font-weight: 400; }
 
 .reducir-tamano {
-  padding: 0.3rem;
-  background-color: #F0F0F0; }
+  padding: 0.3rem; }
 
 th, .reducir-tamano {
   background-color: #DCDCDB; }
 
 td, .reducir-tamano {
   background-color: #F0F0F0; }
+
+td.cambio-color, .cambio-color.reducir-tamano {
+  background-color: #DCDCDB; }
 
 .second-td {
   background-color: #DCDCDB; }

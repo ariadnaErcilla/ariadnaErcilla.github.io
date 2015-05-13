@@ -12,15 +12,18 @@ td, th {
 .reducir-tamano {
     @extend td, th;
     padding: 0.3rem;
-    background-color: #F0F0F0;
 }
 
-th{
+th {
 	background-color: #DCDCDB;
 }
 
-td{
+td {
 	background-color: #F0F0F0;
+}
+
+td.cambio-color {
+    background-color: #DCDCDB;
 }
 
 
