@@ -7148,13 +7148,12 @@ th.hide-for-touch {
   margin: 0 auto; }
 
 .sg-pepe {
-  width: 33%;
+  width: 20%;
   float: left;
-  margin: 0px 0px 20px 0px; }
+  margin-right: 20px; }
 
-.sg-pepe-2 {
-  width: 18%;
-  margin-left: 20px; }
+.sg-pepe-imagen {
+  width: 100%; }
 
 .sg-todos-anuncios {
   width: 100%;
@@ -7181,5 +7180,9 @@ th.hide-for-touch {
 .sg-col-4 {
   background-color: white;
   border: 1px solid #DCDCDB; }
+
+.sg-contenido-valoraciones {
+  width: 70%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
