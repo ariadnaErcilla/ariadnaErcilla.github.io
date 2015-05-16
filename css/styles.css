@@ -430,9 +430,6 @@ Buscador
   width: 100%;
   margin-top: 15px; }
 
-@media all and (min-width: 500px) {
-  .button-2 .type-color-3 .full-button {
-    font-size: 12px; } }
 /*-------
 ayuda
 
@@ -2033,7 +2030,8 @@ dropdown
 .imagen-valoraciones {
   display: inline-block;
   width: 15%;
-  margin-right: 20px; }
+  margin-right: 20px;
+  vertical-align: top; }
 
 .mensaje-contenido {
   width: 68%;
@@ -2211,6 +2209,11 @@ dropdown
     width: 33%;
     float: left;
     padding-top: 50px; } }
+/*Como funciona */
+.margen {
+  margin-bottom: 40px;
+  margin-top: 20px; }
+
 /*
 .contenido-top-2,
 .contenido-top-1{
