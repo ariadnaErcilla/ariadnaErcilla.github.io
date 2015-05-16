@@ -129,6 +129,9 @@ p {
   position: absolute;
   width: 1px; }
 
+.button {
+  font-family: 'Lato', sans-serif; }
+
 .container-colores {
   width: 800px;
   height: 150px;
@@ -1386,7 +1389,7 @@ contenedores anuncios
 table {
   border-collapse: collapse; }
 
-td, .reducir-tamano, th, .reducir-tamano {
+td, th {
   padding: 0.7rem;
   vertical-align: middle;
   text-align: center;
@@ -1395,11 +1398,17 @@ td, .reducir-tamano, th, .reducir-tamano {
 .reducir-tamano {
   padding: 0.3rem; }
 
-th, .reducir-tamano, td.cambio-color, .cambio-color.reducir-tamano, .second-td {
+th {
   background-color: #DCDCDB; }
 
-td, .reducir-tamano {
+.second-th {
   background-color: #F0F0F0; }
+
+td {
+  background-color: #F0F0F0; }
+
+.second-td {
+  background-color: #DCDCDB; }
 
 .white-table {
   background-color: white; }
@@ -2202,6 +2211,11 @@ dropdown
     width: 33%;
     float: left;
     padding-top: 50px; } }
+/*Como funciona */
+.margen {
+  margin-bottom: 40px;
+  margin-top: 20px; }
+
 /*
 .contenido-top-2,
 .contenido-top-1{
@@ -6605,7 +6619,7 @@ ul.off-canvas-list li a:hover {
   tr.show-for-small-only, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
 
-  th.show-for-small-only, .show-for-small-only.reducir-tamano, td.show-for-small-only, .show-for-small-only.reducir-tamano, th.show-for-small-up, .show-for-small-up.reducir-tamano, td.show-for-small-up, .show-for-small-up.reducir-tamano, th.show-for-small, .show-for-small.reducir-tamano, td.show-for-small, .show-for-small.reducir-tamano, th.show-for-small-down, .show-for-small-down.reducir-tamano, td.show-for-small-down, .show-for-small-down.reducir-tamano, th.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, td.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, th.hide-for-medium-up, .hide-for-medium-up.reducir-tamano, td.hide-for-medium-up, .hide-for-medium-up.reducir-tamano, th.hide-for-medium, .hide-for-medium.reducir-tamano, td.hide-for-medium, .hide-for-medium.reducir-tamano, th.show-for-medium-down, .show-for-medium-down.reducir-tamano, td.show-for-medium-down, .show-for-medium-down.reducir-tamano, th.hide-for-large-only, .hide-for-large-only.reducir-tamano, td.hide-for-large-only, .hide-for-large-only.reducir-tamano, th.hide-for-large-up, .hide-for-large-up.reducir-tamano, td.hide-for-large-up, .hide-for-large-up.reducir-tamano, th.hide-for-large, .hide-for-large.reducir-tamano, td.hide-for-large, .hide-for-large.reducir-tamano, th.show-for-large-down, .show-for-large-down.reducir-tamano, td.show-for-large-down, .show-for-large-down.reducir-tamano, th.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, td.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, th.hide-for-xlarge-up, .hide-for-xlarge-up.reducir-tamano, td.hide-for-xlarge-up, .hide-for-xlarge-up.reducir-tamano, th.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, td.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, th.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, td.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, th.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, td.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, th.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, td.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, th.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, td.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, th.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano, td.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano {
+  th.show-for-small-only, td.show-for-small-only, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 /* medium displays */
 @media only screen and (min-width: 40.063em) {
@@ -6641,7 +6655,7 @@ ul.off-canvas-list li a:hover {
   tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
 
-  th.hide-for-small-only, .hide-for-small-only.reducir-tamano, td.hide-for-small-only, .hide-for-small-only.reducir-tamano, th.show-for-small-up, .show-for-small-up.reducir-tamano, td.show-for-small-up, .show-for-small-up.reducir-tamano, th.hide-for-small, .hide-for-small.reducir-tamano, td.hide-for-small, .hide-for-small.reducir-tamano, th.hide-for-small-down, .hide-for-small-down.reducir-tamano, td.hide-for-small-down, .hide-for-small-down.reducir-tamano, th.show-for-medium-only, .show-for-medium-only.reducir-tamano, td.show-for-medium-only, .show-for-medium-only.reducir-tamano, th.show-for-medium-up, .show-for-medium-up.reducir-tamano, td.show-for-medium-up, .show-for-medium-up.reducir-tamano, th.show-for-medium, .show-for-medium.reducir-tamano, td.show-for-medium, .show-for-medium.reducir-tamano, th.show-for-medium-down, .show-for-medium-down.reducir-tamano, td.show-for-medium-down, .show-for-medium-down.reducir-tamano, th.hide-for-large-only, .hide-for-large-only.reducir-tamano, td.hide-for-large-only, .hide-for-large-only.reducir-tamano, th.hide-for-large-up, .hide-for-large-up.reducir-tamano, td.hide-for-large-up, .hide-for-large-up.reducir-tamano, th.hide-for-large, .hide-for-large.reducir-tamano, td.hide-for-large, .hide-for-large.reducir-tamano, th.show-for-large-down, .show-for-large-down.reducir-tamano, td.show-for-large-down, .show-for-large-down.reducir-tamano, th.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, td.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, th.hide-for-xlarge-up, .hide-for-xlarge-up.reducir-tamano, td.hide-for-xlarge-up, .hide-for-xlarge-up.reducir-tamano, th.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, td.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, th.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, td.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, th.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, td.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, th.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, td.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, th.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, td.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, th.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano, td.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 /* large displays */
 @media only screen and (min-width: 64.063em) {
@@ -6677,7 +6691,7 @@ ul.off-canvas-list li a:hover {
   tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.show-for-large-only, tr.show-for-large-up, tr.show-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
 
-  th.hide-for-small-only, .hide-for-small-only.reducir-tamano, td.hide-for-small-only, .hide-for-small-only.reducir-tamano, th.show-for-small-up, .show-for-small-up.reducir-tamano, td.show-for-small-up, .show-for-small-up.reducir-tamano, th.hide-for-small, .hide-for-small.reducir-tamano, td.hide-for-small, .hide-for-small.reducir-tamano, th.hide-for-small-down, .hide-for-small-down.reducir-tamano, td.hide-for-small-down, .hide-for-small-down.reducir-tamano, th.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, td.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, th.show-for-medium-up, .show-for-medium-up.reducir-tamano, td.show-for-medium-up, .show-for-medium-up.reducir-tamano, th.hide-for-medium, .hide-for-medium.reducir-tamano, td.hide-for-medium, .hide-for-medium.reducir-tamano, th.hide-for-medium-down, .hide-for-medium-down.reducir-tamano, td.hide-for-medium-down, .hide-for-medium-down.reducir-tamano, th.show-for-large-only, .show-for-large-only.reducir-tamano, td.show-for-large-only, .show-for-large-only.reducir-tamano, th.show-for-large-up, .show-for-large-up.reducir-tamano, td.show-for-large-up, .show-for-large-up.reducir-tamano, th.show-for-large, .show-for-large.reducir-tamano, td.show-for-large, .show-for-large.reducir-tamano, th.show-for-large-down, .show-for-large-down.reducir-tamano, td.show-for-large-down, .show-for-large-down.reducir-tamano, th.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, td.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, th.hide-for-xlarge-up, .hide-for-xlarge-up.reducir-tamano, td.hide-for-xlarge-up, .hide-for-xlarge-up.reducir-tamano, th.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, td.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, th.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, td.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, th.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, td.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, th.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, td.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, th.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, td.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, th.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano, td.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.show-for-large-only, td.show-for-large-only, th.show-for-large-up, td.show-for-large-up, th.show-for-large, td.show-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 /* xlarge displays */
 @media only screen and (min-width: 90.063em) {
@@ -6713,7 +6727,7 @@ ul.off-canvas-list li a:hover {
   tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.show-for-xlarge-only, tr.show-for-xlarge-up, tr.show-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
 
-  th.hide-for-small-only, .hide-for-small-only.reducir-tamano, td.hide-for-small-only, .hide-for-small-only.reducir-tamano, th.show-for-small-up, .show-for-small-up.reducir-tamano, td.show-for-small-up, .show-for-small-up.reducir-tamano, th.hide-for-small, .hide-for-small.reducir-tamano, td.hide-for-small, .hide-for-small.reducir-tamano, th.hide-for-small-down, .hide-for-small-down.reducir-tamano, td.hide-for-small-down, .hide-for-small-down.reducir-tamano, th.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, td.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, th.show-for-medium-up, .show-for-medium-up.reducir-tamano, td.show-for-medium-up, .show-for-medium-up.reducir-tamano, th.hide-for-medium, .hide-for-medium.reducir-tamano, td.hide-for-medium, .hide-for-medium.reducir-tamano, th.hide-for-medium-down, .hide-for-medium-down.reducir-tamano, td.hide-for-medium-down, .hide-for-medium-down.reducir-tamano, th.hide-for-large-only, .hide-for-large-only.reducir-tamano, td.hide-for-large-only, .hide-for-large-only.reducir-tamano, th.show-for-large-up, .show-for-large-up.reducir-tamano, td.show-for-large-up, .show-for-large-up.reducir-tamano, th.hide-for-large, .hide-for-large.reducir-tamano, td.hide-for-large, .hide-for-large.reducir-tamano, th.hide-for-large-down, .hide-for-large-down.reducir-tamano, td.hide-for-large-down, .hide-for-large-down.reducir-tamano, th.show-for-xlarge-only, .show-for-xlarge-only.reducir-tamano, td.show-for-xlarge-only, .show-for-xlarge-only.reducir-tamano, th.show-for-xlarge-up, .show-for-xlarge-up.reducir-tamano, td.show-for-xlarge-up, .show-for-xlarge-up.reducir-tamano, th.show-for-xlarge, .show-for-xlarge.reducir-tamano, td.show-for-xlarge, .show-for-xlarge.reducir-tamano, th.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, td.show-for-xlarge-down, .show-for-xlarge-down.reducir-tamano, th.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, td.hide-for-xxlarge-only, .hide-for-xxlarge-only.reducir-tamano, th.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, td.hide-for-xxlarge-up, .hide-for-xxlarge-up.reducir-tamano, th.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, td.hide-for-xxlarge, .hide-for-xxlarge.reducir-tamano, th.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano, td.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.show-for-xlarge-only, td.show-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.show-for-xlarge, td.show-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 /* xxlarge displays */
 @media only screen and (min-width: 120.063em) {
@@ -6749,7 +6763,7 @@ ul.off-canvas-list li a:hover {
   tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.hide-for-xlarge-only, tr.show-for-xlarge-up, tr.hide-for-xlarge, tr.hide-for-xlarge-down, tr.show-for-xxlarge-only, tr.show-for-xxlarge-up, tr.show-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
 
-  th.hide-for-small-only, .hide-for-small-only.reducir-tamano, td.hide-for-small-only, .hide-for-small-only.reducir-tamano, th.show-for-small-up, .show-for-small-up.reducir-tamano, td.show-for-small-up, .show-for-small-up.reducir-tamano, th.hide-for-small, .hide-for-small.reducir-tamano, td.hide-for-small, .hide-for-small.reducir-tamano, th.hide-for-small-down, .hide-for-small-down.reducir-tamano, td.hide-for-small-down, .hide-for-small-down.reducir-tamano, th.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, td.hide-for-medium-only, .hide-for-medium-only.reducir-tamano, th.show-for-medium-up, .show-for-medium-up.reducir-tamano, td.show-for-medium-up, .show-for-medium-up.reducir-tamano, th.hide-for-medium, .hide-for-medium.reducir-tamano, td.hide-for-medium, .hide-for-medium.reducir-tamano, th.hide-for-medium-down, .hide-for-medium-down.reducir-tamano, td.hide-for-medium-down, .hide-for-medium-down.reducir-tamano, th.hide-for-large-only, .hide-for-large-only.reducir-tamano, td.hide-for-large-only, .hide-for-large-only.reducir-tamano, th.show-for-large-up, .show-for-large-up.reducir-tamano, td.show-for-large-up, .show-for-large-up.reducir-tamano, th.hide-for-large, .hide-for-large.reducir-tamano, td.hide-for-large, .hide-for-large.reducir-tamano, th.hide-for-large-down, .hide-for-large-down.reducir-tamano, td.hide-for-large-down, .hide-for-large-down.reducir-tamano, th.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, td.hide-for-xlarge-only, .hide-for-xlarge-only.reducir-tamano, th.show-for-xlarge-up, .show-for-xlarge-up.reducir-tamano, td.show-for-xlarge-up, .show-for-xlarge-up.reducir-tamano, th.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, td.hide-for-xlarge, .hide-for-xlarge.reducir-tamano, th.hide-for-xlarge-down, .hide-for-xlarge-down.reducir-tamano, td.hide-for-xlarge-down, .hide-for-xlarge-down.reducir-tamano, th.show-for-xxlarge-only, .show-for-xxlarge-only.reducir-tamano, td.show-for-xxlarge-only, .show-for-xxlarge-only.reducir-tamano, th.show-for-xxlarge-up, .show-for-xxlarge-up.reducir-tamano, td.show-for-xxlarge-up, .show-for-xxlarge-up.reducir-tamano, th.show-for-xxlarge, .show-for-xxlarge.reducir-tamano, td.show-for-xxlarge, .show-for-xxlarge.reducir-tamano, th.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano, td.show-for-xxlarge-down, .show-for-xxlarge-down.reducir-tamano {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.hide-for-xlarge-down, td.hide-for-xlarge-down, th.show-for-xxlarge-only, td.show-for-xxlarge-only, th.show-for-xxlarge-up, td.show-for-xxlarge-up, th.show-for-xxlarge, td.show-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 /* Orientation targeting */
 .show-for-landscape,
@@ -6773,11 +6787,9 @@ tbody.hide-for-landscape, tbody.show-for-portrait {
 tr.hide-for-landscape, tr.show-for-portrait {
   display: table-row !important; }
 
-td.hide-for-landscape, .hide-for-landscape.reducir-tamano, td.show-for-portrait, .show-for-portrait.reducir-tamano,
+td.hide-for-landscape, td.show-for-portrait,
 th.hide-for-landscape,
-.hide-for-landscape.reducir-tamano,
-th.show-for-portrait,
-.show-for-portrait.reducir-tamano {
+th.show-for-portrait {
   display: table-cell !important; }
 
 @media only screen and (orientation: landscape) {
@@ -6802,11 +6814,9 @@ th.show-for-portrait,
   tr.show-for-landscape, tr.hide-for-portrait {
     display: table-row !important; }
 
-  td.show-for-landscape, .show-for-landscape.reducir-tamano, td.hide-for-portrait, .hide-for-portrait.reducir-tamano,
+  td.show-for-landscape, td.hide-for-portrait,
   th.show-for-landscape,
-  .show-for-landscape.reducir-tamano,
-  th.hide-for-portrait,
-  .hide-for-portrait.reducir-tamano {
+  th.hide-for-portrait {
     display: table-cell !important; } }
 @media only screen and (orientation: portrait) {
   .show-for-portrait,
@@ -6830,11 +6840,9 @@ th.show-for-portrait,
   tr.show-for-portrait, tr.hide-for-landscape {
     display: table-row !important; }
 
-  td.show-for-portrait, .show-for-portrait.reducir-tamano, td.hide-for-landscape, .hide-for-landscape.reducir-tamano,
+  td.show-for-portrait, td.hide-for-landscape,
   th.show-for-portrait,
-  .show-for-portrait.reducir-tamano,
-  th.hide-for-landscape,
-  .hide-for-landscape.reducir-tamano {
+  th.hide-for-landscape {
     display: table-cell !important; } }
 /* Touch-enabled device targeting */
 .show-for-touch {
@@ -6874,16 +6882,16 @@ tr.hide-for-touch {
 .touch tr.show-for-touch {
   display: table-row !important; }
 
-td.hide-for-touch, .hide-for-touch.reducir-tamano {
+td.hide-for-touch {
   display: table-cell !important; }
 
-.touch td.show-for-touch, .touch .show-for-touch.reducir-tamano {
+.touch td.show-for-touch {
   display: table-cell !important; }
 
-th.hide-for-touch, .hide-for-touch.reducir-tamano {
+th.hide-for-touch {
   display: table-cell !important; }
 
-.touch th.show-for-touch, .touch .show-for-touch.reducir-tamano {
+.touch th.show-for-touch {
   display: table-cell !important; }
 
 /*
@@ -6921,10 +6929,10 @@ th.hide-for-touch, .hide-for-touch.reducir-tamano {
   tr.show-for-print {
     display: table-row !important; }
 
-  td.show-for-print, .show-for-print.reducir-tamano {
+  td.show-for-print {
     display: table-cell !important; }
 
-  th.show-for-print, .show-for-print.reducir-tamano {
+  th.show-for-print {
     display: table-cell !important; }
 
   a,
@@ -7001,10 +7009,10 @@ th.hide-for-touch, .hide-for-touch.reducir-tamano {
   tr.show-for-print {
     display: table-row !important; }
 
-  td.show-for-print, .show-for-print.reducir-tamano {
+  td.show-for-print {
     display: table-cell !important; }
 
-  th.show-for-print, .show-for-print.reducir-tamano {
+  th.show-for-print {
     display: table-cell !important; } }
 
 /*# sourceMappingURL=styles.css.map */

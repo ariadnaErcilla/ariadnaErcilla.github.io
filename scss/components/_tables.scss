@@ -10,16 +10,23 @@ td, th {
 }
 
 .reducir-tamano {
-    @extend td, th;
     padding: 0.3rem;
 }
 
-th, td.cambio-color, .second-td,  {
+th {
 	background-color: #DCDCDB;
+}
+
+.second-th {
+    background-color: #F0F0F0
 }
 
 td {
 	background-color: #F0F0F0;
+}
+
+.second-td {
+    background-color: #DCDCDB;
 }
 
 .white-table{
