@@ -519,7 +519,7 @@ Anuncio ampliado
 .general-button:hover, .button-1:hover,
 .button-2:hover,
 .button-3:hover {
-  background-color: #404041; }
+  opacity: 0.8; }
 
 .full-button {
   display: block;
@@ -2033,7 +2033,8 @@ dropdown
 .imagen-valoraciones {
   display: inline-block;
   width: 15%;
-  margin-right: 20px; }
+  margin-right: 20px;
+  vertical-align: top; }
 
 .mensaje-contenido {
   width: 68%;
