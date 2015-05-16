@@ -28,7 +28,7 @@
 }
 
 .article2 {
-    padding: 20px 0px 70px 0px;
+    padding: 20px 0 70px 0;
     margin: 0 auto;
     width: 100%;
 }
@@ -43,13 +43,13 @@
 
 @media all {
    .fondo-img-top {
-        height: 100%;
+    height: 100%;
 }
     .box-top-1,
     .box-top-2{
     background-repeat: no-repeat;
     text-align: center;
-    padding: 30px 10px 30px 10px;
+    padding: 30px 10px;
     margin: 0 auto;
 }
   .box-ampersand-top{

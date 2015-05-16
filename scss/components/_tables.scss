@@ -14,21 +14,12 @@ td, th {
     padding: 0.3rem;
 }
 
-th {
+th, td.cambio-color, .second-td,  {
 	background-color: #DCDCDB;
 }
 
 td {
 	background-color: #F0F0F0;
-}
-
-td.cambio-color {
-    background-color: #DCDCDB;
-}
-
-
-.second-td{
-	background-color: #DCDCDB;
 }
 
 .white-table{
@@ -50,13 +41,13 @@ td.cambio-color {
 }
 
 .border-table{
-	width:100%;
-	border:0;
+	width: 100%;
+	border: 0;
 }
 
 .border-blue{
-	border:2px solid #00A6A5;
-	padding:0;
+	border: 2px solid #00A6A5;
+	padding: 0;
 }
 
 .tabla {

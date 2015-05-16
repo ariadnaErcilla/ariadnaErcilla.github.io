@@ -1,7 +1,7 @@
 .todos-anuncios {
     float:right;
     width: 83%;
-    margin: 10px 0px 40px 0px;
+    margin: 10px 0 40px 0;
 
      li{
         list-style: none;
@@ -26,22 +26,21 @@
 }
 .content-container{
 
-    padding:10px 20px 0px 20px;
+    padding:10px 20px 0 20px;
 
 }
 .content-container-cursos{
 
-    padding:20px 20px 0px 20px;
+    padding:20px 20px 0 20px;
 
 }
 
 .texto-cuadrado {
     text-align: center;
     padding-bottom: 5px;
-
 }
-.texto-cuadrado-cursos{
 
+.texto-cuadrado-cursos{
     padding-bottom: 20px;
     text-align: center;
 }
@@ -50,19 +49,19 @@
     padding-bottom: 60px;
     width: 100%;
 }
-.anuncio-destacado{
 
+.anuncio-destacado{
     background-color: #1BA8A6;
     height: 340px;
 }
-.texto-cuadrado-destacado{
-    padding:35px 20px 35px 20px;
 
+.texto-cuadrado-destacado{
+    padding:35px 20px;
 }
+
 .mas-info-destacado{
     margin:10px;
     padding-bottom: 20px;
-
 }
 
 /*--------
@@ -78,7 +77,7 @@ Buscador
 }
 .especial{
     float: left;
-    width:100%;
+    width: 100%;
     margin-top: 5px;
 }
 
@@ -94,39 +93,32 @@ Buscador
     margin: 15px;
 }
 
-.imagen-anuncios-buscador
-{
+.imagen-anuncios-buscador{
     width: 100%;
-    margin-bottom: 10px;
-    margin-left: 5px;
-
+    margin: 0 0 10px 5px;
 }
-.imagen-anuncios-creativos
-{
-    width: 90%;
-    margin-bottom: 10px;
-    margin-left: 5px;
 
+.imagen-anuncios-creativos{
+    width: 90%;
+    margin: 0 0 10px 5px;
 }
 
 .texto-anuncios-buscador{
     float: right;
     width: 65%;
-    margin-top: 25px;
-    margin-left: 5px;
-
+    margin: 25px 0 0 5px;
 }
 .container-dudas-cursos{
     width:100%;
     margin-top: 5px;
-
 }
+
 .container-cantidad{
     float: left;
     width: 100%;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 10px 10px 0 0;
 }
+
 .total-icono-buscador{
     float: left;
     width: 100%;
@@ -136,12 +128,8 @@ Buscador
 @media all and (min-width: 500px) {
     .button-2 .type-color-3 .full-button{
         font-size: 12px;
-
     }
 }
-
-
-
 
 
 /*-------
@@ -149,41 +137,39 @@ ayuda
 
 -------*/
 .foto{
-
     margin: 0 auto;
     width: 36%;
     padding-top: 20px;
 }
+
 .foto-alumno {
     width: 100%;
 }
 
-
 .texto-cuadrado-large {
     text-align: center;
     padding: 70px 20px 78px 20px;
-
 }
+
 /*----------
 encuentra
 ---------*/
 
 
 .texto-cuadrado-small{
-
     text-align: center;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 0 20px;
 }
+
 .image-container{
     width: 100%;
     height: 0;
     position:relative;
     overflow: hidden;
     padding-bottom: 77%;
-
 }
-.img-curso{
 
+.img-curso{
     position:absolute;
     top:0;
     bottom:0;
@@ -195,17 +181,14 @@ encuentra
 }
 
 .texto-curso{
-
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
     background-color: white;
-
 }
 
 .hover-container{
-
     display:none;
     position:absolute;
     top:0;
@@ -214,11 +197,10 @@ encuentra
     margin:auto;
     z-index:1;
     background-color:white;
-    padding:0px 15px 0px 15px;
+    padding:0 15px;
 }
 
 .hover-container p{
-
     font-size: 14px;
 }
 
@@ -229,14 +211,11 @@ Anuncio ampliado
 .parte-izquierda-info {
     width: 60%;
     float: left;
-
-
 }
 
 
 .imagen-curso {
     margin-top: 20px;
     max-width: 100%;
-
 }
 

@@ -26,7 +26,7 @@ aside ampliado
 }
 
 .container-perfil{
-    margin:20px 20px 0px 0px;
+    margin: 20px 20px 0 0;
 }
 
 .texto-perfil{
@@ -51,7 +51,7 @@ aside categorias
     width: 17%;
     margin-top: 66px;
     clear: both;
-   
+
 }
 
 .categorias{
@@ -98,13 +98,11 @@ ul{
 }
 
 .filtros-hide-tablet{
-
-    padding:10px 30px 10px 30px;
+    padding:10px 30px;
     margin-bottom: 30px;
-
 }
-.filtros-2{
 
+.filtros-2{
     display: none;
 }
 
@@ -123,28 +121,26 @@ ul{
     padding-top:25px;
 }
 .flecha-abrir {
-
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #404041;
-  margin:23px 0px 0px 10px;
+  margin:23px 0 0 10px;
   cursor:pointer;
-
 }
-.flecha-cerrar{
 
+.flecha-cerrar{
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid #404041;
-  margin:23px 0px 0px 10px;
+  margin:23px 0 0 10px;
   cursor:pointer;
   display:none;
-
 }
+
 .container-ordenar-mobile{
 
   display: none;
