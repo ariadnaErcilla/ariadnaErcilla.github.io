@@ -2033,7 +2033,8 @@ dropdown
 .imagen-valoraciones {
   display: inline-block;
   width: 15%;
-  margin-right: 20px; }
+  margin-right: 20px;
+  vertical-align: top; }
 
 .mensaje-contenido {
   width: 68%;
