@@ -2088,12 +2088,16 @@ dropdown
 .container-button {
   margin-top: 30px; }
 
+.botton {
+  margin: 0 auto;
+  width: 20%;
+  padding-bottom: 80px; }
+
 .container-titulo-home {
   margin: 30px; }
 
 .article2 {
-  padding: 20px 0px 70px 0px;
-  margin: 0 auto;
+  margin: 20px 0px 60px 0px;
   width: 100%; }
 
 .container-texto {
