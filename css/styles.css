@@ -2112,6 +2112,10 @@ dropdown
 .imagen-munyeco {
   width: 100px; }
 
+.aun-no-publicado {
+  margin-left: 25%;
+  margin-top: 25px; }
+
 .fondo-img-top {
   background-image: linear-gradient(90deg, #08A6A6, #007978);
   background-repeat: no-repeat;
@@ -2135,19 +2139,14 @@ dropdown
 
 .botton {
   margin: 0 auto;
-  width: 20%;
-  padding-bottom: 80px; }
+  padding-bottom: 70px; }
 
 .container-titulo-home {
   margin: 30px; }
 
 .article2 {
-<<<<<<< HEAD
   margin: 20px 0px 60px 0px;
-=======
   padding: 20px 0 70px 0;
-  margin: 0 auto;
->>>>>>> cb6a2aa8b9ed7b13383f0feeff19ed0af7b03d08
   width: 100%; }
 
 .container-texto {
@@ -2204,7 +2203,7 @@ dropdown
     margin: 0 auto; } }
 @media all and (min-width: 1024px) {
   .fondo-img-top {
-    height: 70%; }
+    height: 66%; }
 
   .box-top-1,
   .box-top-2 {
@@ -2234,6 +2233,10 @@ dropdown
 
   .full-button {
     width: 100%;
+    margin: 0 auto; }
+
+  .container-home {
+    width: 1250px;
     margin: 0 auto; } }
 /* Media Querys Bottom*/
 @media all {
@@ -2246,7 +2249,10 @@ dropdown
     margin: 0 auto; }
 
   .imagen-ilustraciones {
-    height: 35%; } }
+    height: 35%; }
+
+  .botton {
+    width: 90%; } }
 @media all and (min-width: 600px) {
   section.mini-box-1,
   section.mini-box-2,
@@ -2255,14 +2261,20 @@ dropdown
     padding: 30px 10px 5px 10px;
     margin: 0 auto;
     width: 50%;
-    float: left; } }
+    float: left; }
+
+  .botton {
+    width: 30%; } }
 @media all and (min-width: 1024px) {
   section.mini-box-1,
   section.mini-box-2,
   section.mini-box-3 {
     width: 33%;
     float: left;
-    padding-top: 50px; } }
+    padding-top: 50px; }
+
+  .botton {
+    width: 20%; } }
 /*Como funciona */
 .margen {
   margin-bottom: 50px;
@@ -2271,6 +2283,15 @@ dropdown
 .container-como-funciona {
   overflow: hidden;
   margin-bottom: 40px; }
+
+.container-botones-funciona {
+  margin-left: 20%;
+  margin-bottom: 5%; }
+
+.container-botones {
+  margin: 50px;
+  display: inline-block;
+  width: 25%; }
 
 /*
 .contenido-top-2,
