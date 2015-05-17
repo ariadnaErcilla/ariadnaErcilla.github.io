@@ -686,7 +686,7 @@
             <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
-                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
+                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
                 </div>
                 <a id="cerrar" href="">
                     <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
@@ -713,8 +713,11 @@
             <div class="right">
                 <div class="registro">
                     <ul class="esconder">
-                        <li><a href="#login">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li><a href="#login">
+                                <span class="icono-rectangular-grande header-mensajeria" alt="Menu-navegador-desplegable"></span>
+                            </a>
+                        </li>
+                        <li><a href="#registro">Mi perfil</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
@@ -737,7 +740,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a id="abrir" href="">
+                    <a id="abrir-registrado" href="">
                         <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
                     </a>
                 </div>
@@ -747,9 +750,9 @@
             <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
-                    <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                    <a class="button-2 full-button-header type-color-3" href="#">Buscar</a>
                 </div>
-                <a id="cerrar" href="">
+                <a id="cerrar-registrado" href="">
                     <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
                 </a>
             </div>
@@ -766,13 +769,22 @@
                 </section>
                 <section class="mini-box-pie">
                     <div class="iconos cf">
-                        <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a>
+                        <div class="red-social">
+                            <a target="blank" href="https://twitter.com/puntoyseguidoo">
+                                <span class="icono-rectangular-footer footer-blanco-tw" alt="twitter"></span>
+                            </a>
                         </div>
 
-                        <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a>
+                        <div class="red-social">
+                            <a target="blank" href="https://www.facebook.com/puntoyseguidoo">
+                                <span class="icono-rectangular-footer footer-blanco-fb" alt="facebook"></span>
+                            </a>
                         </div>
 
-                        <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a>
+                        <div class="red-social">
+                            <a target="blank" href="https://www.instagram.com/puntoyseguidoo">
+                                <span class="icono-rectangular-footer footer-blanco-insta" alt="instagram"></span>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -887,6 +899,21 @@ $('#abrir').click(function(e){
 });
 
 $('#cerrar').click(function(e){
+    $('.buscador-desplegado').hide();
+    return false;
+});
+
+$('#cerrar-lupa').click(function(e){
+    $('.buscador-desplegado').hide();
+    return false;
+});
+
+$('#abrir-registrado').click(function(e){
+    $('.buscador-desplegado').show();
+    return false;
+});
+
+$('#cerrar-registrado').click(function(e){
     $('.buscador-desplegado').hide();
     return false;
 });
