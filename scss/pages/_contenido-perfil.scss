@@ -107,12 +107,17 @@
 .mensaje-no-leido {
     @extend .mensaje;
     background-color: rgb(240, 240, 240);
+    border-bottom: white 2px solid;
 }
 
 .mensaje-leido {
     @extend .mensaje;
     border: rgb(240, 240, 240) 1px solid;
     border-width: 0 1px 1px 1px;
+}
+.mensaje-leido-primero {
+    @extend .mensaje-leido;
+    border-width: 1px;
 }
 
 .mensaje-desplegado {
@@ -138,4 +143,23 @@
 
 .programas-mas{
     padding-top: 20px;
+}
+
+.aviso-nuevo-usuario{
+    border: 2px solid #00A6A5;
+    border-radius: 5px;
+    width: 90%;
+    margin: 100px 40px 40px 40px;
+    padding: 50px;
+    position: relative;
+}
+
+.munyeco-nuevo-usuario {
+    position: absolute;
+    top: -87px;
+    left: 40%;
+}
+
+.imagen-munyeco {
+    width: 100px;
 }
