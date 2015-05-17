@@ -7,7 +7,7 @@
 .menu-interior {
     width: 100%;
     text-align: left;
-    padding: 0px;
+    padding: 0;
     background-color: #00A6A5;
 }
 
@@ -44,18 +44,16 @@
 .option-3,
 .option-4,
 .option-5,
-.option-6, {
-    display: none;
-}
-
+.option-6,
 .option-no-leido,
-.option-enviado, {
+.option-enviado,
+ {
     display: none;
 }
 
 .ul-mensajes{
     background-color: rgb(240, 240, 240);
-    padding: 0;
+    margin: 0;
     border: 1px solid rgb(240, 240, 240);
 }
 

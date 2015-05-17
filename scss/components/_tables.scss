@@ -10,7 +10,6 @@ td, th {
 }
 
 .reducir-tamano {
-    @extend td, th;
     padding: 0.3rem;
 }
 
@@ -18,17 +17,16 @@ th {
 	background-color: #DCDCDB;
 }
 
+.second-th {
+    background-color: #F0F0F0
+}
+
 td {
 	background-color: #F0F0F0;
 }
 
-td.cambio-color {
+.second-td {
     background-color: #DCDCDB;
-}
-
-
-.second-td{
-	background-color: #DCDCDB;
 }
 
 .white-table{
@@ -50,13 +48,13 @@ td.cambio-color {
 }
 
 .border-table{
-	width:100%;
-	border:0;
+	width: 100%;
+	border: 0;
 }
 
 .border-blue{
-	border:2px solid #00A6A5;
-	padding:0;
+	border: 2px solid #00A6A5;
+	padding: 0;
 }
 
 .tabla {

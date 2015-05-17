@@ -26,7 +26,7 @@
 .title{
      font-size: 3rem;
      font-family: "Dosis";
-     margin: 0px 0px 10px 0px;
+     margin: 0 0 10px 0;
      text-transform: uppercase;
      line-height: 1;
      font-weight: 700;
@@ -35,7 +35,7 @@
 .title-form{
     font-size: 3rem;
     font-family: "Lato";
-    margin:14px;
+    margin: 14px;
     font-weight: 400;
     line-height: 1;
 }
@@ -48,7 +48,7 @@
 }
 
 .profile-name{
-    font-size: 24px;
+    font-size: 24px;/*lo pongo en rem 2rem y se me mucho mas grande */
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -57,21 +57,27 @@
      font-size: 2.25rem;
      font-family: "Dosis";
      font-weight: 400;
-     font-style: normal;
+     /*font-style: normal; si se elimina no pasa nada*/
      margin:0;
 }
 
+.titulo-nuevo-usuario{
+    font-size: 2.25rem;
+     font-family: "Dosis";
+     font-weight: 400;
+     text-transform: uppercase;
+  }
+
 .subtitle {
     font-size: 1.5rem;
-    margin: 0px;
+    margin: 0;
 }
 
 .secondary-title {
      font-size: 1.125rem;
      font-weight: 600;
-     margin: 0px;
+     margin: 0;
 }
-
 
 .secondary-subtitle{
     font-size:0.875rem;
@@ -93,16 +99,18 @@ p {
     font-size: 1rem;
     text-align: left;
 }
+
 .regular{
     font-weight: 400;
 }
+
 .light {
     font-weight: 300;
     color:#00A6A5;
     margin: 0;
 }
-.title-contactar{
 
+.title-contactar{
     font-size: 1.125rem;
 }
 
@@ -122,12 +130,12 @@ p {
     padding:10px;
     color:white;
     font-size: 0.625rem;
-    margin: 0px;
+    margin: 0;
 }
 
 .nofloat{
     float: none;
-    margin: 0px;
+    margin: 0;
 }
 
 .centrado{
@@ -146,7 +154,6 @@ p {
     text-transform: uppercase;
 }
 
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -156,4 +163,8 @@ p {
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+.button {
+    font-family: 'Lato', sans-serif;
 }
