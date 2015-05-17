@@ -70,32 +70,33 @@
 
 .texto-valoraciones{
     display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top;
     width: 70%;
-    margin-bottom: 10px;
 }
 
 .imagen-valoraciones{
     display: inline-block;
-    width: 15%;
     margin-right: 20px;
     vertical-align: top;
+    width: 15%;
 }
 
 .mensaje-contenido{
-    width: 68%;
     display: inline-block;
+    width: 68%;
 }
 
 .imagen-mensaje{
-    width: 18%;
     float: left;
     margin: 10px;
+    width: 18%;
 }
 
 .texto-mensaje{
-    width: 70%;
     float: left;
     margin-bottom: 20px;
+    width: 70%;
 }
 
 .mensaje{
@@ -106,22 +107,59 @@
 .mensaje-no-leido {
     @extend .mensaje;
     background-color: rgb(240, 240, 240);
+    border-bottom: white 2px solid;
 }
 
 .mensaje-leido {
     @extend .mensaje;
-    border-right: 1px solid rgb(240, 240, 240);
-    border-left: 1px solid rgb(240, 240, 240);
-    border-bottom: 1px solid rgb(240, 240, 240);
+    border: rgb(240, 240, 240) 1px solid;
+    border-width: 0 1px 1px 1px;
 }
-
-.cruz-cerrar {
-    position: absolute;
-    top: 4px;
-    right: 4px;
+.mensaje-leido-primero {
+    @extend .mensaje-leido;
+    border-width: 1px;
 }
 
 .mensaje-desplegado {
     display:none;
 }
 
+.margenes-valoraciones {
+    margin-top: 0;
+}
+
+.anuncio-perfil{
+    border: 2px solid rgba(51, 51, 51, 0.15);
+    float: left;
+    margin: 0 20px 30px 0;
+    position: relative;
+    width: 45%;
+}
+
+.anuncio-perfil-propio{
+    @extend .anuncio-perfil;
+    position: relative;
+}
+
+.programas-mas{
+    padding-top: 20px;
+}
+
+.aviso-nuevo-usuario{
+    border: 2px solid #00A6A5;
+    border-radius: 5px;
+    width: 90%;
+    margin: 100px 40px 40px 40px;
+    padding: 50px;
+    position: relative;
+}
+
+.munyeco-nuevo-usuario {
+    position: absolute;
+    top: -87px;
+    left: 40%;
+}
+
+.imagen-munyeco {
+    width: 100px;
+}

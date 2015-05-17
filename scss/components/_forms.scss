@@ -24,7 +24,8 @@ select {
     padding: .6rem;
     width: 100%;
     border: none;
-    color:#A0A0A0;
+    /*color:#A0A0A0;lo he cambiado, va bien? Ari*/
+    color:black;
     font-weight: 400;
 }
 .custom-file-input::-webkit-file-upload-button {
@@ -114,14 +115,29 @@ select {
     height: 35px;
 }
 
+#input-generales{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #C2C2C2;
+}
+
 #input-portafolio {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #C2C2C2;
+    @extend #input-generales;
     width: 50%;
     margin-left: 10px;
     font-size: 0.8rem;
     margin-bottom: 10px;
+}
+
+#input-sobre-mi {
+    @extend #input-generales;
+}
+
+#input-programas {
+  @extend #input-generales;
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 10px;
 }
 
 .input-mensaje {
@@ -129,4 +145,3 @@ select {
     background-color: white;
     margin-bottom: 20px;
 }
-
