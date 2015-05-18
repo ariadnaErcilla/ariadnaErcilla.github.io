@@ -9,17 +9,24 @@ td, th {
     font-weight: 400;
 }
 
-th{
+.reducir-tamano {
+    padding: 0.3rem;
+}
+
+th {
 	background-color: #DCDCDB;
 }
 
-td{
+.second-th {
+    background-color: #F0F0F0
+}
+
+td {
 	background-color: #F0F0F0;
 }
 
-
-.second-td{
-	background-color: #DCDCDB;
+.second-td {
+    background-color: #DCDCDB;
 }
 
 .white-table{
@@ -41,13 +48,13 @@ td{
 }
 
 .border-table{
-	width:100%;
-	border:0;
+	width: 100%;
+	border: 0;
 }
 
 .border-blue{
-	border:2px solid #00A6A5;
-	padding:0;
+	border: 2px solid #00A6A5;
+	padding: 0;
 }
 
 .tabla {

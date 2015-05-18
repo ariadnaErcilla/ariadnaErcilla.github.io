@@ -12,10 +12,16 @@
 }
 
 .general-button:hover{
-    background-color:#404041;
+    opacity: 0.8;
 }
 
 .full-button{
+    display:block;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.full-button-header {
     display:block;
     width: 100%;
     padding: 20px 10px;
@@ -59,9 +65,8 @@
 .button-3 {
     @extend .general-button;
     font-size: 16px;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
-
 
 .button-1,
 .button-2,
@@ -75,7 +80,7 @@
 .button-1 span,
 .button-2 span,
 .button-3 span{
-    padding: 0px 40px;
+    padding: 0 40px;
 }
 
 .button-1 span,

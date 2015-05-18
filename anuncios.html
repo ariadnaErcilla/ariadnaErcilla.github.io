@@ -32,44 +32,64 @@
  <header class="cf">
         <div class="logo">
             <a href="index.html">
-                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
+            </a>
         </div>
-            <nav class="menu cf">
-                <div class="float-menu">
-                    <ul>
-                        <li><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html" class="uppercase active">Busca tu alumno</a></li>
-                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
-                    </ul>
-                </div>
-                <div class="right">
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
+            </div>
+            <div class="right">
                 <div class="registro">
-                    <ul>
-                        <li><a class="login" href="#">Log in</a></li>
-                        <li><a class="registro" href="#">Regístrate</a></li>
+                    <ul class="esconder">
+                        <li><a href="#login">
+                                <span class="icono-rectangular-grande header-mensajeria" alt="Menu-navegador-desplegable"></span>
+                            </a>
+                        </li>
+                        <li><a href="#registro">Mi perfil</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <a href="#">
-                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
-                    </a>
-                     <a id="abrir" href="">
-                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
-                  </a>
-                </div>
-            </div>
-            </nav>
-            <div class="buscador-desplegado cf">
-                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
-                <div class="buscador-container-derecha cf">
-                     <a id="cerrar" href="">
-                        <img class="imagen-cerrar-buscador left" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
-                  </a>
-                    <div class="container-button-buscador right">
-                        <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                    <div class="dropdown__wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion_vertical">
+                                <a href="#">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">¿Cómo funciona?</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Mi perfil</a>
+                            </li>
+                        </ul>
                     </div>
+                    <a id="abrir-registrado" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                    </a>
                 </div>
             </div>
+        </nav>
+        <div class="buscador-desplegado cf">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <div class="buscador-container-derecha cf">
+                <div class="container-button-buscador left">
+                    <a class="button-2 full-button-header type-color-3" href="#">Buscar</a>
+                </div>
+                <a id="cerrar-registrado" href="">
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                </a>
+            </div>
+        </div>
     </header>
 
 <div class="cabecera-alumnos cf">
@@ -265,8 +285,8 @@
             <ul class="row anuncios">
                 <li data-reciente="1" data-popularidad="1" data-puntuacion="1" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-1-buscador.jpg" alt="imagen del usuario">
+                        <a class="type-color-5" href="perfil.html"><div class="foto">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-1-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -313,8 +333,8 @@
             </li>
               <li data-reciente="2" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
-                        <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
+                        <a class="type-color-5" href="perfil.html"><div class="foto">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -350,7 +370,7 @@
                 <li data-reciente="3" data-popularidad="5" data-puntuacion="3" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-3-buscador.jpg"alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-3-buscador.jpg"alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -387,7 +407,7 @@
                 <li data-reciente="4" data-popularidad="8" data-puntuacion="5" class="large-4 medium-6 small-12 columns animacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -424,7 +444,7 @@
                 <li data-reciente="5" data-popularidad="5" data-puntuacion="4" class="large-4 medium-6 small-12 columns animacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-5-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-5-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -461,7 +481,7 @@
                    <li data-reciente="6" data-popularidad="20" data-puntuacion="4" class="large-4 medium-6 small-12 columns arquitectura">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-6-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-6-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -498,7 +518,7 @@
                    <li data-reciente="7" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns arquitectura">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-7-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-7-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -535,7 +555,7 @@
                    <li data-reciente="8" data-popularidad="30" data-puntuacion="5" class="large-4 medium-6 small-12 columns industrial">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-8-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-8-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -572,7 +592,7 @@
                    <li data-reciente="9" data-popularidad="6" data-puntuacion="3" class="large-4 medium-6 small-12 columns programacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -609,7 +629,7 @@
                    <li data-reciente="10" data-popularidad="3" data-puntuacion="1" class="large-4 medium-6 small-12 columns programacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-10-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-10-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -646,7 +666,7 @@
                    <li data-reciente="11" data-popularidad="25" data-puntuacion="3" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -683,7 +703,7 @@
                    <li data-reciente="12" data-popularidad="15" data-puntuacion="4" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-12-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-12-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -720,7 +740,7 @@
                 <li data-reciente="13" data-popularidad="3" data-puntuacion="1" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-13-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-13-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -757,7 +777,7 @@
                 <li data-reciente="14" data-popularidad="5" data-puntuacion="2" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-26-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-26-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -794,7 +814,7 @@
                 <li data-reciente="15" data-popularidad="7" data-puntuacion="5" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-14-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-14-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -832,7 +852,7 @@
                 <li data-reciente="16" data-popularidad="14" data-puntuacion="1" class="large-4 medium-6 small-12 columns industrial">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-15-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-15-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -869,7 +889,7 @@
                 <li data-reciente="17" data-popularidad="1" data-puntuacion="4" class="large-4 medium-6 small-12 columns industrial">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-27-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-27-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -906,7 +926,7 @@
                 <li data-reciente="18" data-popularidad="10" data-puntuacion="3" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-16-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-16-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -943,7 +963,7 @@
                 <li data-reciente="19" data-popularidad="18" data-puntuacion="2" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-17-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-17-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -980,7 +1000,7 @@
                 <li data-reciente="20" data-popularidad="6" data-puntuacion="1" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-18-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-18-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1017,7 +1037,7 @@
                 <li data-reciente="21" data-popularidad="4" data-puntuacion="3" class="large-4 medium-6 small-12 columns moda">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1054,7 +1074,7 @@
                 <li data-reciente="22" data-popularidad="8" data-puntuacion="2" class="large-4 medium-6 small-12 columns moda">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-19-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-19-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1091,7 +1111,7 @@
                  <li data-reciente="23" data-popularidad="10" data-puntuacion="1" class="large-4 medium-6 small-12 columns web">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-20-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-20-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1128,7 +1148,7 @@
                  <li data-reciente="24" data-popularidad="9" data-puntuacion="4" class="large-4 medium-6 small-12 columns audiovisual">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-21-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-21-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1165,7 +1185,7 @@
                  <li data-reciente="25" data-popularidad="2" data-puntuacion="1" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1202,7 +1222,7 @@
                  <li data-reciente="26" data-popularidad="13" data-puntuacion="4" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-22-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-22-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1239,7 +1259,7 @@
                  <li data-reciente="27" data-popularidad="4" data-puntuacion="3" class="large-4 medium-6 small-12 columns programacion">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-23-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-23-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1276,7 +1296,7 @@
                  <li data-reciente="28" data-popularidad="10" data-puntuacion="2" class="large-4 medium-6 small-12 columns grafico">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
@@ -1313,7 +1333,7 @@
                  <li data-reciente="29" data-popularidad="8" data-puntuacion="2" class="large-4 medium-6 small-12 columns fotografia">
                  <article class="anuncio">
                         <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno" src="imagenes/alumno-25-buscador.jpg" alt="imagen del usuario">
+                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-25-buscador.jpg" alt="imagen del usuario">
                         </div>
                         <div class="content-container cf">
                         <div class="texto-cuadrado">
