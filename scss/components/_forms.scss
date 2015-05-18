@@ -17,13 +17,14 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-    background: #E6E6E6;
+    background:white;
     display: block;
     font-size: 0.876rem;
     line-height: 1rem;
-    padding: .6rem;
+    padding: .4rem;
     width: 100%;
-    border: none;
+    border: 1px solid #A0A0A0;
+    border-radius:7px;
     color:#A0A0A0;
     font-weight: 400;
 }
@@ -45,9 +46,7 @@ select {
   font-weight: 400;
   font-size: 11pt;
 }
-.custom-file-input:hover::before {
 
-}
 .custom-file-input:active::before {
   background: white;
 }
