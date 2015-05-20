@@ -7118,12 +7118,12 @@ th.hide-for-touch {
 .sg-style-guide {
   margin: 0;
   background: #fff;
-  background: #ddd; }
+  background: #00A6A5; }
 
 .sg-wrapper {
   max-width: 970px;
   margin: 0 auto;
-  background: #ddd;
+  background: white;
   padding: 1rem; }
 
 .sg-main-title {
@@ -7150,11 +7150,20 @@ th.hide-for-touch {
   text-align: center;
   text-transform: uppercase; }
 
+.sg-subtitle-style-guide-2 {
+  font-family: "DOSIS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+  margin: 40px;
+  text-align: center;
+  text-transform: uppercase; }
+
 .sg-margin-bottom {
-  margin-bottom: 15px; }
+  margin-bottom: 55px; }
 
 .sg-padding-top {
-  padding-top: 15px; }
+  padding-top: 20px; }
 
 .sg-text-left {
   text-align: left; }
@@ -7163,7 +7172,7 @@ th.hide-for-touch {
   text-align: center; }
 
 .sg-container-colores {
-  width: 500px;
+  width: 650px;
   height: 150px;
   margin: 0 auto; }
 
@@ -7178,7 +7187,7 @@ th.hide-for-touch {
   background-color: #00A6A5;
   float: left;
   color: white;
-  margin-left: 10px; }
+  margin-left: 5px; }
 
 .sg-color-corporativo2 {
   width: 150px;
@@ -7196,6 +7205,14 @@ th.hide-for-touch {
   float: left;
   margin-left: 10px; }
 
+.sg-color-corporativo4 {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(51, 51, 51, 0.15);
+  color: white;
+  float: left;
+  margin-left: 10px; }
+
 .sg-color-tipografia {
   background-color: #808284;
   margin-left: 20px;
@@ -7204,9 +7221,15 @@ th.hide-for-touch {
 .sg-izquierda {
   padding-left: 0px; }
 
+.sg-fondo-header {
+  background-color: #00A6A5;
+  border-radius: 0px;
+  padding: 10px;
+  margin-top: 20px; }
+
 .sg-fondo-blanco {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 10px;
   margin-bottom: 20px; }
 
@@ -7216,12 +7239,29 @@ th.hide-for-touch {
 .sg-margin-top {
   margin-top: 10px; }
 
+.sg-margin-top-logo {
+  margin-top: 25px; }
+
+.sg-margin-top-texto {
+  margin-top: 60px; }
+
 .sg-display-block {
   display: block; }
 
 .sg-float-left {
   float: left;
   margin-left: 20px; }
+
+.sg-ancho-estrellas {
+  width: 120px;
+  margin-top: 20px; }
+
+.sg-ancho-conocimientos {
+  width: 120px;
+  margin-top: 20px; }
+
+.sg-ancho-caja {
+  width: 30%; }
 
 .sg-float-none {
   float: none;
@@ -7231,7 +7271,7 @@ th.hide-for-touch {
   width: 1500px; }
 
 .sg-container-button {
-  width: 74%;
+  width: 500px;
   padding-top: 20px;
   padding-bottom: 40px;
   margin: 0 auto; }
@@ -7246,6 +7286,7 @@ th.hide-for-touch {
 
 .sg-todos-anuncios {
   width: 100%;
+  padding-top: 20px;
   margin: 10px 0px 40px 0px; }
 
 .sg-todos-anuncios li {
@@ -7273,5 +7314,40 @@ th.hide-for-touch {
 .sg-contenido-valoraciones {
   width: 70%;
   margin: 0 auto; }
+
+.sg-iconos-lateral {
+  width: 320px;
+  margin: 0 auto; }
+
+.sg-iconos-lateral-azules {
+  width: 220px;
+  margin: 0 auto; }
+
+.sg-iconos-header {
+  width: 180px;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+.sg-ilustraciones-margin {
+  width: 750px;
+  padding-top: 20px;
+  margin: 0 auto; }
+
+.sg-color-anuncios {
+  background-color: rgba(51, 51, 51, 0.15); }
+
+.sg-iconos-negros {
+  width: 370px;
+  margin: 0 auto;
+  padding-top: 25px;
+  clear: both; }
+
+.sg-centrar-tabla {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.sg-text-align {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
