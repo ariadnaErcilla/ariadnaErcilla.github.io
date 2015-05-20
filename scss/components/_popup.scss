@@ -1,6 +1,6 @@
 
- .masc{
-
+.masc{
+        position:absolute;
         font-family:"Lato", sans-serif;
         top: 0;
         right: 0;
@@ -12,9 +12,9 @@
         -moz-transition:opacity 400ms ease-in;
         transition:opacity 400ms ease-in;
     }
-    .masc::before{
+.masc::before{
         display: block;
-        position:fixed;
+        position:absolute;
         background:rgba(0,0,0,0.8);
         content: '';
         top: 0;
@@ -39,7 +39,7 @@
 
 .popup-image-2{
 
-    background-position: top 0px right 260px;
+    background-position: top 0px right 380px;
     background-repeat: no-repeat;
     background-image: url(../imagenes/muneco-gracias.png);
     background-size:13% auto;
@@ -178,13 +178,7 @@
     cursor:pointer;
 
 }
-.height-scroll{
 
-    max-height: 370px;
-    overflow: scroll;
-
-
-}
 
 /*responsive*/
 
@@ -208,17 +202,11 @@
     max-height: 100%;
     }
 
-    .masc{
-
-        position:absolute;
-        top:0;
-
-    }
     .popup-image{
         background-image:none;
     }
     .img-facebook{
-    display: none;
+        display: none;
 }
 
 }
@@ -234,9 +222,6 @@
         right:-12px;
     }
 
-    .masc{
-        position:fixed;
-    }
     .popup-image{
 
     background-position: top center;

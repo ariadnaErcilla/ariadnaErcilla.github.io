@@ -33,44 +33,64 @@
  <header class="cf">
         <div class="logo">
             <a href="index.html">
-                <img class="img-logo" src="imagenes/logoytexto.png" alt="Logo"></a>
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
+            </a>
         </div>
-            <nav class="menu cf">
-                <div class="float-menu">
-                    <ul>
-                        <li><a href="anunciosprofes.html" class="uppercase active">Encuentra tu curso</a></li>
-                        <li><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                        <li><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
-                    </ul>
-                </div>
-                <div class="right">
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
+            </div>
+            <div class="right">
                 <div class="registro">
-                    <ul>
-                        <li><a class="login" href="#">Log in</a></li>
-                        <li><a class="registro" href="#">Regístrate</a></li>
+                    <ul class="esconder">
+                        <li><a href="#login">
+                                <span class="icono-rectangular-grande header-mensajeria" alt="Menu-navegador-desplegable"></span>
+                            </a>
+                        </li>
+                        <li><a href="#registro">Mi perfil</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <a href="#">
-                        <img class="imagen-desplegable" src="imagenes/buscador-2.svg" alt="Menu-navegador-desplegable">
-                    </a>
-                     <a id="abrir" href="">
-                        <img class="imagen-lupa" src="imagenes/buscador.svg" alt="Lupa-buscador">
-                  </a>
-                </div>
-            </div>
-            </nav>
-            <div class="buscador-desplegado cf">
-                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
-                <div class="buscador-container-derecha cf">
-                     <a id="cerrar" href="">
-                        <img class="imagen-cerrar-buscador left" src="imagenes/buscador-cerrar.svg" alt="Lupa-buscador">
-                  </a>
-                    <div class="container-button-buscador right">
-                        <a class="button-2 full-button type-color-3" href="#">Buscar</a>
+                    <div class="dropdown__wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion_vertical">
+                                <a href="#">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">¿Cómo funciona?</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Mi perfil</a>
+                            </li>
+                        </ul>
                     </div>
+                    <a id="abrir-registrado" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                    </a>
                 </div>
             </div>
+        </nav>
+        <div class="buscador-desplegado cf">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <div class="buscador-container-derecha cf">
+                <div class="container-button-buscador left">
+                    <a class="button-2 full-button-header type-color-3" href="#">Buscar</a>
+                </div>
+                <a id="cerrar-registrado" href="">
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                </a>
+            </div>
+        </div>
     </header>
 
 <div class="cabecera-cursos cf">
@@ -101,8 +121,8 @@
             <div class="categorias-hide cf">
              <h2 class="secondary-title">Categorías</h2>
              <hr>
-                <ul class="lista-categorias">
-                    <li class="left grupo-iconos cf">
+                <nav class="lista-categorias">
+                    <ul class="left grupo-iconos cf">
                         <li class="iconos-c cf">
                             <span class="icono left arquitectura-b icono-margin"></span>
                              <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
@@ -115,8 +135,8 @@
                             <span class="icono left audiovisual-b icono-margin"></span>
                              <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
                         </li>
-                    </li>
-                    <li class="left grupo-iconos cf">
+                    </ul>
+                    <ul class="left grupo-iconos cf">
                         <li class="iconos-cat cf">
                             <span class="icono left industrial-b icono-margin"></span>
                             <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
@@ -129,8 +149,8 @@
                             <span class="icono left moda-b icono-margin"></span>
                              <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
                         </li>
-                    </li>
-                    <li class="left grupo-iconos cf">
+                    </ul>
+                    <ul class="left grupo-iconos cf">
                         <li class="iconos-cat cf">
                             <span class="icono left web-b icono-margin"></span>
                              <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
@@ -143,8 +163,8 @@
                             <span class="icono left programacion-b icono-margin"></span>
                              <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
                         </li>
-                    </li>
-                </ul>
+                    </ul>
+                </nav>
             </div>
                 <div class="categorias-hide-2 cf clear">
                    <h2 class="secondary-title">Disponibilidad</h2>

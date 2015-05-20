@@ -28,7 +28,7 @@
 }
 
 .article2 {
-    padding: 20px 0 70px 0;
+    padding-top: 20px;
     margin: 0 auto;
     width: 100%;
 }
@@ -37,6 +37,9 @@
 .container-texto{
     width: 80%;
     text-align: center;
+}
+.container-home{
+    width: 1250px;
 }
 
 /* Media Querys Top*/
@@ -152,6 +155,10 @@
   .imagen-ilustraciones{
     height: 35%;
   }
+  .botton{
+    width: 90%;
+    margin: 40px 0px 40px 0px;
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -161,10 +168,13 @@
     section.mini-box-3{
     text-align: center;
     padding: 30px 10px 5px 10px;
-    margin: 0 auto;
     width: 50%;
     float: left;
 }
+    .botton{
+    width: 30%;
+     margin: 20px 0px 40px 0px;
+  }
 }
 
 @media all and (min-width:1024px){
@@ -173,15 +183,20 @@
     section.mini-box-3{
     width: 33%;
     float: left;
-    padding-top: 50px;
+    margin: 50px 0px 50px 0px;
     }
+    .botton{
+    width: 35%;
+    margin: 0 auto;
+    padding: 30px 0px 40px 0px;
+  }
 
   }
 
 /*Como funciona */
 
  .margen{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 50px;
 
  }
@@ -189,6 +204,17 @@
     overflow: hidden;
     margin-bottom: 40px;
 }
+.container-botones-como-funciona{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-botones{
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+}
+
 
 /*
 .contenido-top-2,
