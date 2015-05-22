@@ -2,15 +2,15 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="340.26px" height="51.948px" viewBox="0 0 340.26 51.948" enable-background="new 0 0 340.26 51.948" xml:space="preserve">
+	 width="323.355px" height="39.919px" viewBox="8.452 6.014 323.355 39.919" enable-background="new 8.452 6.014 323.355 39.919"
+	 xml:space="preserve">
 <g>
-	
-		<line fill="#FFFFFF" stroke="#00A6A5" stroke-width="5" stroke-miterlimit="10" x1="32.204" y1="25.495" x2="300.063" y2="25.495"/>
+	<line fill="none" stroke="#00A6A5" stroke-width="5" stroke-miterlimit="10" x1="32.204" y1="25.495" x2="300.063" y2="25.495"/>
 	<circle fill="#C8C8C8" cx="27.439" cy="26.001" r="18.987"/>
 	<circle fill="#00A6A5" cx="312.821" cy="25.001" r="18.987"/>
 	<rect x="20.915" y="17.406" fill="none" width="22.578" height="28.527"/>
-	<text transform="matrix(1 0 0 1 20.915 30.6733)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="18">1</text>
-	<rect x="307.041" y="17.406" fill="none" width="17.561" height="20.219"/>
-	<text transform="matrix(1 0 0 1 307.041 30.6733)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="18">2</text>
+	<text transform="matrix(1 0 0 1 20.9148 30.6724)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="18">1</text>
+	<rect x="307.04" y="17.406" fill="none" width="17.562" height="20.218"/>
+	<text transform="matrix(1 0 0 1 307.0403 30.6724)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="18">2</text>
 </g>
 </svg>
