@@ -7118,7 +7118,7 @@ th.hide-for-touch {
 .sg-style-guide {
   margin: 0;
   background: #fff;
-  background: #00A6A5; }
+  background: white; }
 
 .sg-wrapper {
   max-width: 970px;
@@ -7132,14 +7132,14 @@ th.hide-for-touch {
   font-size: 3rem;
   color: #00A6A5;
   text-transform: uppercase;
-  margin: 0; }
+  margin: 0;
+  margin-top: 80px; }
 
 .sg-title-style-guide {
   font-family: "DOSIS", sans-serif;
   font-size: 2rem;
   color: #404041;
-  text-transform: uppercase;
-  text-align: center; }
+  margin: 0; }
 
 .sg-subtitle-style-guide {
   font-family: "DOSIS", sans-serif;
@@ -7171,10 +7171,21 @@ th.hide-for-touch {
 .sg-subtitle {
   text-align: center; }
 
+.sg-border-grueso {
+  width: 200px; }
+
+.sg-border-fino3 {
+  width: 200px; }
+
+.sg-border-fino4 {
+  width: 200px; }
+
+.sg-border-fino5 {
+  width: 200px; }
+
 .sg-container-colores {
-  width: 650px;
-  height: 150px;
-  margin: 0 auto; }
+  width: 900px;
+  height: 200px; }
 
 .sg-container-borde {
   width: 650px;
@@ -7182,7 +7193,7 @@ th.hide-for-touch {
   margin: 0 auto; }
 
 .sg-color-corporativo1 {
-  width: 150px;
+  width: 200px;
   height: 150px;
   background-color: #00A6A5;
   float: left;
@@ -7190,7 +7201,7 @@ th.hide-for-touch {
   margin-left: 5px; }
 
 .sg-color-corporativo2 {
-  width: 150px;
+  width: 200px;
   height: 150px;
   background-color: #F15C22;
   color: white;
@@ -7198,7 +7209,7 @@ th.hide-for-touch {
   margin-left: 10px; }
 
 .sg-color-corporativo3 {
-  width: 150px;
+  width: 200px;
   height: 150px;
   background-color: #404041;
   color: white;
@@ -7206,7 +7217,7 @@ th.hide-for-touch {
   margin-left: 10px; }
 
 .sg-color-corporativo4 {
-  width: 150px;
+  width: 200px;
   height: 150px;
   background-color: rgba(51, 51, 51, 0.15);
   color: white;
@@ -7222,7 +7233,7 @@ th.hide-for-touch {
   padding-left: 0px; }
 
 .sg-fondo-header {
-  background-color: #00A6A5;
+  background-color: white;
   border-radius: 0px;
   padding: 10px;
   margin-top: 20px; }
@@ -7239,6 +7250,9 @@ th.hide-for-touch {
 .sg-margin-top {
   margin-top: 10px; }
 
+.sg-margin-top-iconos {
+  margin-top: 10px; }
+
 .sg-margin-top-logo {
   margin-top: 25px; }
 
@@ -7248,17 +7262,11 @@ th.hide-for-touch {
 .sg-display-block {
   display: block; }
 
-.sg-float-left {
-  float: left;
-  margin-left: 20px; }
-
 .sg-ancho-estrellas {
-  width: 120px;
-  margin-top: 20px; }
+  width: 120px; }
 
 .sg-ancho-conocimientos {
-  width: 120px;
-  margin-top: 20px; }
+  width: 120px; }
 
 .sg-ancho-caja {
   width: 30%; }
@@ -7298,7 +7306,7 @@ th.hide-for-touch {
   max-width: 1280px; }
 
 .sg-col-3 {
-  background-color: white;
+  background-color: rgba(51, 51, 51, 0.15);
   float: left;
   width: 30%; }
 
@@ -7312,8 +7320,7 @@ th.hide-for-touch {
   border: 1px solid #DCDCDB; }
 
 .sg-contenido-valoraciones {
-  width: 70%;
-  margin: 0 auto; }
+  width: 70%; }
 
 .sg-iconos-lateral {
   width: 320px;
@@ -7334,7 +7341,7 @@ th.hide-for-touch {
   margin: 0 auto; }
 
 .sg-color-anuncios {
-  background-color: rgba(51, 51, 51, 0.15); }
+  background-color: white; }
 
 .sg-iconos-negros {
   width: 370px;
@@ -7349,5 +7356,92 @@ th.hide-for-touch {
 
 .sg-text-align {
   text-align: center; }
+
+.sg-centrar-munecos {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+.sg-imagen-munecos {
+  width: 400px; }
+
+.sg-max-width {
+  max-width: 600px; }
+
+.sg-margin-centro {
+  margin: 0 auto; }
+
+.sg-margin-bottom-title {
+  margin-bottom: 100px; }
+
+.sg-no-margin {
+  margin-top: 5px;
+  margin-bottom: 30px; }
+
+.sg-float-left {
+  float: left;
+  width: 45%; }
+
+.sg-float-right {
+  float: right;
+  width: 45%; }
+
+.sg-letterspacing {
+  letter-spacing: 3px; }
+
+.sg-font-weight {
+  font-weight: 300; }
+
+.lato-1 {
+  font-family: 'Lato';
+  font-weight: 100; }
+
+.lato-2 {
+  font-family: 'Lato';
+  font-weight: 300; }
+
+.lato-3 {
+  font-family: 'Lato';
+  font-weight: 700; }
+
+.dosis-1 {
+  font-family: 'Dosis';
+  font-weight: 200; }
+
+.dosis-2 {
+  font-family: 'Dosis';
+  font-weight: 500; }
+
+.dosis-3 {
+  font-family: 'Dosis';
+  font-weight: 700; }
+
+.sg-clear {
+  clear: both; }
+
+.sg-margin-top-text {
+  padding-top: 80px; }
+
+.sg-p-colores {
+  margin-top: 160px;
+  color: black; }
+
+.sg-margin-buttons {
+  margin-right: 20px; }
+
+.sg-float-iconos {
+  float: left; }
+
+.sg-margin-bottom-links {
+  margin-bottom: 20px; }
+
+.sg-sombra {
+  box-shadow: 1px 1px 2px #999; }
+
+.sg-margin-top-texto {
+  margin-top: 180px; }
+
+.sg-margin-iconos {
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
