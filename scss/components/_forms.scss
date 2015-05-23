@@ -144,3 +144,10 @@ select {
     background-color: white;
     margin-bottom: 20px;
 }
+
+#input-perfil {
+  @extend #input-generales;
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 10px;
+}

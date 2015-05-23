@@ -291,11 +291,10 @@ body {
 .margin-top {
   margin-top: 5px; }
 
-/* peta algo?
-.margin-top-aampliado{
-    margin-top: 30px;
-    margin-left: 5px;
-}*/
+.margin-top-ampliado {
+  margin-top: 30px;
+  margin-left: 5px; }
+
 .padding-bottom {
   padding-bottom: 10px; }
 
@@ -748,7 +747,7 @@ Checkboxes, selects
 select {
   height: 35px; }
 
-#input-generales, #input-portafolio, #input-sobre-mi, #input-programas {
+#input-generales, #input-portafolio, #input-sobre-mi, #input-programas, #input-perfil {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #C2C2C2; }
@@ -768,6 +767,11 @@ select {
   border: 1px solid #f15c22;
   background-color: white;
   margin-bottom: 20px; }
+
+#input-perfil {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 10px; }
 
 .icono-caracteristicas, .animacion-b, .animacion-c, .arquitectura-b, .arquitectura-c, .audiovisual-b, .audiovisual-c, .foto-b, .foto-c, .grafico-b, .grafico-c, .industrial-b, .industrial-c, .moda-b, .moda-c, .programacion-b, .programacion-c, .web-b, .web-c, .estrellas-valorar-1, .estrellas-valorar-2, .estrellas-valorar-4, .estrellas-valorar-5, .estrellas-valorar, .icono-comparte, .icono-disponibilidad, .icono-dudas, .icono-imagenes, .icono-intercambio, .icono-perfil, .iconocomparte-b, .icono-portafolio, .icono-programas, .icono-valoraciones, .mail-b, .manana-off, .manana, .manana-b, .noche-off, .noche, .noche-b, .tarde-off, .tarde, .tarde-b, .buscador-cerrar, .buscador, .icono-fb-large, .icono-link-large, .icono-mensaje-no, .icono-mensaje-si, .icono-mensaje, .icono-tw-large, .lapiz, .lapiz-redonda, .estrellas-anuncios-1, .estrellas-anuncios-2, .estrellas-anuncios-4, .estrellas-anuncios-5, .estrellas-anuncios-3, .portafolio-linkedin-b, .portafolio-linkedin-d, .portafolio-linkedin-c, .portafolio-instagram-b, .portafolio-instagram-d, .portafolio-instagram-c, .portafolio-pinterest-b, .portafolio-pinterest-d, .portafolio-pinterest-c, .portafolio-tumblert-b, .portafolio-tumblert-d, .portafolio-tumblert-c, .portafolio-behance-b, .portafolio-behance-d, .portafolio-behance-c, .portafolio-domestika-b, .portafolio-domestika-d, .portafolio-domestika-c, .nivel0, .nivel1-b, .nivel1, .nivel3-b, .nivel3, .nivel5-b, .nivel5, .consejo-1, .consejo-2, .consejo-3, .consejo-4, .icono-linkedin, .icono-facebook, .icono-twitter, .estrella-activa, .estrella-inactiva, .menu-desplegable, .logotipo-pys, .footer-blanco-fb, .footer-blanco-insta, .footer-blanco-tw, .header-mensajeria {
   background-size: contain;
@@ -2100,7 +2104,8 @@ dropdown
 
 .mensaje, .mensaje-no-leido, .mensaje-leido, .mensaje-leido-primero {
   clear: both;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .mensaje-no-leido {
   background-color: #f0f0f0;
@@ -2151,6 +2156,15 @@ dropdown
 .aun-no-publicado {
   margin-left: 25%;
   margin-top: 25px; }
+
+.celdas-perfil {
+  list-style: none;
+  width: 60%;
+  display: inline-block; }
+
+.celdas-perfil-corta {
+  width: 32%;
+  display: inline-block; }
 
 .fondo-img-top {
   background-image: linear-gradient(90deg, #08A6A6, #007978);
@@ -2235,7 +2249,8 @@ dropdown
     margin: 0 auto; }
 
   .container-home {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    width: 1250px; } }
 @media all and (min-width: 1024px) {
   .fondo-img-top {
     height: 70%; }
@@ -7155,7 +7170,7 @@ th.hide-for-touch {
   color: #00A6A5;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 80px; }
+  margin-top: 10px; }
 
 .sg-title-style-guide {
   font-family: "DOSIS", sans-serif;
@@ -7442,7 +7457,7 @@ th.hide-for-touch {
   clear: both; }
 
 .sg-margin-top-text {
-  padding-top: 80px; }
+  padding-top: 20px; }
 
 .sg-p-colores {
   margin-top: 160px;
