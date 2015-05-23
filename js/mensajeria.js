@@ -1,3 +1,4 @@
+/*mensajeria*/
 $(document).ready(function(){
 $('.pestanya-m-no-leido').click(function() {
     $('.option-recibido').hide();
