@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>Popup</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/styles-guide.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+     <script src="js/forms-errors.js"></script>
+     <script src="js/consejos-publicar.js"></script>
+     <script src="js/show-popups.js"></script>
+     <script src="js/stars-valorar.js"></script>
 </head>
 
 <body>
@@ -124,7 +127,7 @@
           <div class="img-proceso">
                 <img class="proceso" src="imagenes/proceso1.png" alt="paso 1 del proceso">
                 </div>
-        <div class="container-popup height-scroll cf">
+        <div class="container-popup cf">
             <form class="pform">
                     <div class="caja-formulario cf">
                         <label>
@@ -237,7 +240,7 @@
                 <img class="proceso" src="imagenes/proceso1.png" alt="paso 1 del proceso">
                 </div>
         </div>
-        <div class="container-popup height-scroll cf">
+        <div class="container-popup cf">
              <p class="light centrado margin-top hide-consejos"><a class= "type-color-1" id="abrir-consejos" href=""><em>Lee algunos consejos para mejorar la visibilidad tu curso</em></a></p>
              <div class="show-consejos">
                 <div class="consejos-muneco" id="cerrar-consejos"></div>
@@ -337,7 +340,7 @@
                 <div class="img-proceso">
                 <img class="proceso" src="imagenes/proceso1.png" alt="paso 1 del proceso">
                 </div>
-        <div class="container-popup height-scroll cf">
+        <div class="container-popup cf">
             <form class="pform">
                 <div class="caja-formulario cf">
                     <label class="secondary-title">
@@ -400,7 +403,7 @@
     <div class="popup-box movedown-3">
         <a href="#close" title="close" class="close">X</a>
         <h1 class="title-form centrado">Modificar curso</h1>
-        <div class="container-popup height-scroll cf">
+        <div class="container-popup cf">
             <form class="pform">
                  <div class="caja-formulario cf">
                     <label class="secondary-title">
@@ -466,10 +469,14 @@
                         <label class="secondary-title left">
                             Puntuación
                         </label>
-                        <div class="clear margin-top">
-                               <span class="stars-valorale estrellas-valorar-2 left"></span>
-                        </div>
-                    </div>
+                        <ul class="clear margin-top cf">
+                            <li class="primera-estrella stars-popup estrella-inactiva left"></li>
+                            <li class="segunda-estrella stars-popup  estrella-inactiva left"></li>
+                            <li class="tercera-estrella stars-popup  estrella-inactiva left"></li>
+                            <li class="cuarta-estrella stars-popup  estrella-inactiva left"></li>
+                            <li class="quinta-estrella stars-popup estrella-inactiva left"></li>
+                        </ul>
+                </div>
                 <div class="caja-formulario cf">
                     <label class="secondary-title">
                         Comentario
@@ -494,9 +501,6 @@
     </div>
     </div>
 </div>
-
-
-
 <div id="recuperar" class="masc">
     <div class="popup popup-image">
         <div class="popup-box top movedown">
@@ -525,7 +529,7 @@
         <h1 class="title-form centrado">¡Ya queda poco!</h1>
         <p class="centrado">Regístrate y ya podrás publicar tu curso</p>
              <div class="img-proceso">
-                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.png" alt="paso 2 del proceso">
             </div>
         <div class="container-popup cf">
             <p class="light centrado margin-top"><a class="type-color-1 show-login-curso" href="#"><em>Si ya estás registrado, clica aquí</em></a></p>
@@ -561,7 +565,7 @@
         <h1 class="title-form centrado">¡Ya queda poco!</h1>
         <p class="centrado">Regístrate y ya podrás publicar tu curso</p>
              <div class="img-proceso">
-                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.png" alt="paso 2 del proceso">
             </div>
         <div class="container-popup cf">
             <p class="light centrado margin-top"><a class="type-color-1 show-login-duda" href="#"><em>Si ya estás registrado, clica aquí</em></a></p>
@@ -597,7 +601,7 @@
         <h1 class="title-form centrado">Registro</h1>
         <p class="centrado no-margin">en sólo 2 pasos</p>
         <div class="img-proceso">
-                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.png" alt="paso 2 del proceso">
                 </div>
         <div class="container-popup cf">
             <p class="light centrado margin-top"><a class="type-color-1 show-login-contactar" href="#"><em>Si ya estás registrado, clica aquí</em></a></p>
@@ -631,7 +635,7 @@
             <a href="#close" title="close" class="close">X</a>
             <h1 class="title-form centrado">Log in</h1>
                 <div class="img-proceso">
-                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.png" alt="paso 2 del proceso">
                 </div>
             <div class="container-popup cf">
                 <p class="light centrado"><a class="type-color-1 show-registro-curso" href="#"><em>Si no estás registrado, clica aquí</em></a></p>
@@ -662,7 +666,7 @@
             <a href="#close" title="close" class="close">X</a>
             <h1 class="title-form centrado">Log in</h1>
                 <div class="img-proceso">
-                <img class="proceso margin-top" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                <img class="proceso margin-top" src="imagenes/proceso2.png" alt="paso 2 del proceso">
                 </div>
             <div class="container-popup cf">
                 <p class="light centrado"><a class="type-color-1 show-registro-duda" href="#"><em>Si no estás registrado, clica aquí</em></a></p>
@@ -694,7 +698,7 @@
           <h1 class="title-form centrado">Log in</h1>
           <p class="centrado no-margin">en sólo 2 pasos</p>
                 <div class="img-proceso">
-                <img class="proceso" src="imagenes/proceso2.svg" alt="paso 2 del proceso">
+                <img class="proceso" src="imagenes/proceso2.png" alt="paso 2 del proceso">
                 </div>
                 <div class="container-popup cf">
                 <form class="pform">
@@ -767,133 +771,6 @@
         </div>
     </div>
 </div>
-<script>
-
-   $('.show-login').click(function(e){
-        e.preventDefault();
-        $($('#login')[0]).show();
-    });
-    $('.close').click(function(e){
-        $('.masc:visible').hide();
-    });
-    $('#show-registro').click(function(e){
-        e.preventDefault();
-        $($('#registro')[0]).show();
-    });
-       $('#show-contactar').click(function(e){
-        e.preventDefault();
-        $($('#contactar')[0]).show();
-    });
-    $('#show-publicar-curso').click(function(e){
-        e.preventDefault();
-        $($('#publicar-curso')[0]).show();
-    });
-    $('#show-publicar-duda').click(function(e){
-        e.preventDefault();
-        $($('#publicar-duda')[0]).show();
-    });
-    $('#show-modificar-curso').click(function(e){
-        e.preventDefault();
-        $($('#modificar-curso')[0]).show();
-    });
-    $('#show-valorar').click(function(e){
-        e.preventDefault();
-        $($('#valorar')[0]).show();
-    });
-     $('.show-gracias-curso').click(function(e){
-        e.preventDefault();
-        $($('#gracias-curso')[0]).show();
-    });
-    $('.show-gracias-duda').click(function(e){
-        e.preventDefault();
-        $($('#gracias-duda')[0]).show();
-    });
-     $('.show-gracias-contactar').click(function(e){
-        e.preventDefault();
-        $($('#gracias-contactar')[0]).show();
-    });
-       $('.show-recuperar').click(function(e){
-        e.preventDefault();
-        $($('#recuperar')[0]).show();
-    });
-     $('.show-registro-curso').click(function(e){
-        e.preventDefault();
-        $($('#registro-curso')[0]).show();
-    });
-     $('.show-registro-duda').click(function(e){
-        e.preventDefault();
-        $($('#registro-duda')[0]).show();
-    });
-      $('.show-registro-contactar').click(function(e){
-        e.preventDefault();
-        $($('#registro-contactar')[0]).show();
-    });
-      $('.show-login-curso').click(function(e){
-        e.preventDefault();
-        $($('#login-curso')[0]).show();
-    });
-      $('.show-login-duda').click(function(e){
-        e.preventDefault();
-        $($('#login-duda')[0]).show();
-    });
-      $('.show-login-contactar').click(function(e){
-        e.preventDefault();
-        $($('#login-contactar')[0]).show();
-    });
-        $('#abrir-consejos').click(function(e){
-        $('.show-consejos').show();
-        $('.hide-consejos').hide();
-        return false;
-    });
-
-    $('#cerrar-consejos').click(function(e){
-        $('.show-consejos').hide();
-        $('.hide-consejos').show();
-        return false;
-    });
-function validateEmail(sEmail) {
-              var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-              if (filter.test(sEmail))
-                  return true;
-              else
-                  return false;
-          }
-
-    $('pform').submit(function(e) {
-            e.preventDefault();
-            var email = $('input[name="email"]');
-            var label = email.siblings('label');
-            var passwordname = $('input[name="password"]');
-            var labelpass = passwordname.siblings('label');
-            var password = $.trim(passwordname.val());
-            var name = $('input[name="personal"]');
-            var labelname = name.siblings('label');
-            var personalname = $.trim(name.val());
-            if(personalname.length >= 4 && personalname.length <= 15) {
-              name.removeClass('error');
-              labelname.hide();
-            } else {
-              name.addClass('error');
-              labelname.show();
-            }
-            if(validateEmail(email.val())) {
-              email.removeClass('error');
-              label.hide();
-            } else {
-              email.addClass('error');
-              label.show();
-            }
-            if(password.length >= 4 && password.length <= 15) {
-              passwordname.removeClass('error');
-              labelpass.hide();
-            } else {
-              passwordname.addClass('error');
-              labelpass.show();
-            }
-           
-          });
-
-</script>
 </body>
 </html>
    
