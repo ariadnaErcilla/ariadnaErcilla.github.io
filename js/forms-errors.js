@@ -8,7 +8,31 @@ function validateEmail(sEmail) {
                   return false;
           }
 
-    $('pform').submit(function(e) {
+    $('#login button').click(function(e) {
+            e.preventDefault();
+            var email = $('input[name="email"]');
+            var label = email.siblings('label');
+            var passwordname = $('input[name="password"]');
+            var labelpass = passwordname.siblings('label');
+            var password = $.trim(passwordname.val());
+            if(validateEmail(email.val())) {
+              email.removeClass('error');
+              label.hide();
+            } else {
+              email.addClass('error');
+              label.show();
+            }
+            if(password.length >= 4 && password.length <= 15) {
+              passwordname.removeClass('error');
+              labelpass.hide();
+            } else {
+              passwordname.addClass('error');
+              labelpass.show();
+            }
+           
+          });
+
+$('#registro button').click(function(e) {
             e.preventDefault();
             var email = $('input[name="email"]');
             var label = email.siblings('label');
@@ -41,4 +65,6 @@ function validateEmail(sEmail) {
             }
            
           });
+
+
  })
