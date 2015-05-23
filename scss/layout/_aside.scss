@@ -3,12 +3,11 @@ aside ampliado
 ------*/
 
 .parte-derecha-info {
-    width: 30%;
+    background-color:white;
     float: left;
     margin-left:30px;
-    background-color:white;
-    /*padding: 50px 30px 300px 30px;*/
     padding: 10px 30px 80px 30px;
+    width: 30%;
 }
 
 .mini-box-info{
@@ -23,7 +22,6 @@ aside ampliado
 
 .sub-info-name{
     clear: both;
-    /*padding-bottom: 20px;*/
 }
 
 .container-perfil{
@@ -40,28 +38,27 @@ aside ampliado
 
 .programa{
     clear: both;
-    /*--margin-top: 10px;--*/
 }
 
 /*-------
-
 aside categorias
 ------*/
-.filtros {
-    float: left;
-    width: 17%;
-    margin-top: 66px;
-    clear: both;
 
+.filtros {
+    clear: both;
+    float: left;
+    margin-top: 66px;
+    width: 17%;
 }
 
 .categorias{
     margin-top:50px;
 }
+
 .categorias-menu {
-    padding-right: 10px;
     line-height: 30px;
     margin: 0;
+    padding-right: 10px;
 }
 
 .categorias-menu a:hover,
@@ -70,84 +67,75 @@ aside categorias
 }
 
 .menu-ordenar ul{
-
   padding-left:0;
 }
+
 .lista-categorias{
-    margin-top: 20px;
     list-style: none;
+    margin-top: 20px;
 }
 
-
-.programas{
+.programas, .categorias-2{
     margin-top: 30px;
 }
 
 .cuadro-program{
-
     margin-top: 20px;
     width: 60%;
 }
 
-.categorias-2{
-    margin-top: 30px;
-}
-
 .checkbox{
-    padding: 0px;
+    padding: 0;
     margin-top: 20px;
 }
 
 .filtros-hide-tablet{
-    padding:10px 30px;
     margin-bottom: 30px;
+    padding:10px 30px;
 }
 
 .filtros-2{
     display: none;
 }
 
-
 .grupo-iconos{
-
     width: 33%;
-
 }
+
 .categorias-hide{
-
-    padding-top:30px;
+    padding-top: 30px;
 }
+
 .categorias-hide-2{
-
-    padding-top:25px;
+    padding-top: 25px;
 }
+
 .flecha-abrir {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #404041;
-  margin:23px 0 0 10px;
-  cursor:pointer;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #404041;
+    cursor:pointer;
+    height: 0;
+    margin:23px 0 0 10px;
+    width: 0;
 }
 
 .flecha-cerrar{
-  width: 0;
-  height: 0;
+  border-bottom: 8px solid #404041;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #404041;
-  margin:23px 0 0 10px;
   cursor:pointer;
   display:none;
+  height: 0;
+  margin:23px 0 0 10px;
+  width: 0;
 }
 
 .container-ordenar-mobile{
-
   display: none;
 }
-/*--------
 
+/*--------
 aside perfil
 --------*/
 
@@ -158,11 +146,11 @@ aside perfil
 }
 
 .cien-por-cien {
-  width: 100%;
+    width: 100%;
 }
 
 .img-perfil{
-    width:60%;
+    width: 60%;
 }
 
 .informacion-persona{
