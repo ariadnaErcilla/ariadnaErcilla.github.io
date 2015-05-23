@@ -2235,7 +2235,8 @@ dropdown
     margin: 0 auto; }
 
   .container-home {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    width: 1250px; } }
 @media all and (min-width: 1024px) {
   .fondo-img-top {
     height: 70%; }
@@ -7155,7 +7156,7 @@ th.hide-for-touch {
   color: #00A6A5;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 80px; }
+  margin-top: 10px; }
 
 .sg-title-style-guide {
   font-family: "DOSIS", sans-serif;
@@ -7442,7 +7443,7 @@ th.hide-for-touch {
   clear: both; }
 
 .sg-margin-top-text {
-  padding-top: 80px; }
+  padding-top: 20px; }
 
 .sg-p-colores {
   margin-top: 160px;
