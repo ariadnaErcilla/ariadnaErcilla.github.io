@@ -1,8 +1,7 @@
 .apartado-ampliado {
-    padding-top: 40px;
     clear: both;
+    padding-top: 40px;
 }
-/*el pading solo lo he puesto en top y no en bottom tambien*/
 
 .valoracion{
     border-bottom:1px solid black;
@@ -13,9 +12,9 @@
 }
 
 .foto-mini{
+    clear: both;
     float: left;
     margin:20px 10px 0 0;
-    clear: both;
 }
 
 .foto-val {
@@ -25,8 +24,8 @@
 
 .texto-val {
     float: left;
-    width: 70%;
     padding-bottom: 20px;
+    width: 70%;
 }
 
 .stars-val{

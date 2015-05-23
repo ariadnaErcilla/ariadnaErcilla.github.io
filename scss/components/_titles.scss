@@ -1,36 +1,26 @@
-.cabecera-cursos{
-
-    margin:0 auto;
-}
+.cabecera-cursos,
 .cabecera-alumnos{
-
     margin:0 auto;
 }
+
 .titulo-encabezado-1 {
    width: 70%;
    margin: 0 auto;
 }
-.titulo-encabezado{
 
+.titulo-encabezado,
+.contenido-titulo{
     width: 100%;
 }
-.muneco-busqueda{
 
+.muneco-busqueda{
     background-image: url(../imagenes/muneco-busqueda.svg);
     background-repeat: no-repeat;
-    background-size:100% auto;
-    width: 133px;
+    background-position: left bottom;
+    background-size: 100% auto;
     height: 162px;
-    background-position:left bottom;
-    margin-right:5px;
-    
-   
-}
-
-.contenido-titulo{
-    width:100%;
-    
-
+    margin-right: 5px;
+    width: 133px;
 }
 
 
