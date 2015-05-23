@@ -805,9 +805,9 @@
         <nav class="menu cf">
             <div class="float-menu">
                 <ul class="esconder">
-                    <li class="tamano_fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
@@ -818,18 +818,18 @@
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <div class="dropdown__wrap">
+                    <div class="dropdown-wrap">
                         <a href="#">
                             <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
                         </a>
                         <ul class="dropdown">
-                            <li class="alineacion_vertical">
-                                <a href="encuentra_tu-curso.html">Encuentra tu curso</a>
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
                             </li>
-                            <li class="alineacion_vertical">
+                            <li class="alineacion-vertical">
                                 <a href="busca_tu_alumno.html">Busca tu alumno</a>
                             </li>
-                            <li class="alineacion_vertical">
+                            <li class="alineacion-vertical">
                                 <a href="como_funciona.html">¿Cómo funciona?</a>
                             </li>
                         </ul>
@@ -865,9 +865,9 @@
         <nav class="menu cf">
             <div class="float-menu">
                 <ul class="esconder">
-                    <li class="tamano_fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
@@ -881,21 +881,21 @@
                 </ul>
             </div>
             <div class="lupa-buscador">
-                <div class="dropdown__wrap">
+                <div class="dropdown-wrap">
                     <a href="#">
                         <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
                     </a>
                     <ul class="dropdown">
-                        <li class="alineacion_vertical">
+                        <li class="alineacion-vertical">
                             <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
                         </li>
-                        <li class="alineacion_vertical">
+                        <li class="alineacion-vertical">
                             <a href="busca_tu_alumno.html">Busca tu alumno</a>
                         </li>
-                        <li class="alineacion_vertical">
+                        <li class="alineacion-vertical">
                             <a href="como_funciona.html">¿Cómo funciona?</a>
                         </li>
-                        <li class="alineacion_vertical">
+                        <li class="alineacion-vertical">
                             <a href="perfil_nuevo_usuario.html">Mi perfil</a>
                         </li>
                     </ul>
@@ -971,7 +971,12 @@
 </div>
 </section>
 <script>
-
+$('.mensajes').click(function(e){
+        e.preventDefault();
+        $('this').load('perfil_editable.html');
+        });
+        
+ });
 </script>
 </body>
 
