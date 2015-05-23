@@ -1,4 +1,4 @@
- /*scroll-funciona*/
+ /*scroll*/
  $(document).ready(function(){
  $('#scroll-to-cursos').click(function(e) {
                         e.preventDefault();
@@ -12,4 +12,8 @@
                         e.preventDefault();
                         $(window).scrollTo($('#dudas'), 800);
                     })
+     $('#scroll-to-como-funciona').click(function(e) {
+                    e.preventDefault();
+                    $(window).scrollTo($('#como-funciona'), 800);
+                });
 })
