@@ -1,50 +1,40 @@
 header {
-        margin: 1.5rem 0;
         background-color: white;
-        padding-bottom: 0px;
+        margin: 1.5rem 0;
+        padding-bottom: 0;
 }
 
 .img-logo {
-    width: 200px;
     margin: 10px;
+    width: 200px;
 }
 
 .menu ul{
     padding-left: 10px;
 }
 
-li.alineacion_vertical {
-
+@media screen and (max-width: 1090px){
+        .menu li.tamano-fijo {
+            max-width: 100px;
+        }
 }
 
-@media screen and (max-width: 1090px){
-        .menu li.tamano_fijo {
-                max-width: 100px;
-        }
-    }
-
-    @media screen and (max-width: 900px) {
-        .menu ul.esconder {
-            display: none;
-        }
+@media screen and (max-width: 900px) {
+        .menu ul.esconder,
         .registro {
             display: none;
         }
-    }
+}
 
-    @media screen and (min-width: 899px) {
-        .imagen-desplegable {
+@media screen and (min-width: 899px) {
+        .imagen-desplegable,
+        .dropdown
+        .dropdown-wrap {
             display: none;
         }
-        .dropdown {
-            display: none;
-        }
-        .dropdown__wrap {
-            display: none;
-        }
-    }
+}
 
-    @media screen and (max-width: 815px){
+@media screen and (max-width: 815px){
         .input-buscador {
             margin-left: 10px;
         }
@@ -60,23 +50,23 @@ li.alineacion_vertical {
         .container-button-buscador {
             min-width: 70px;
         }
-    }
+}
 
 .logo {
     float:left;
 }
 
 .menu {
-    text-align: center;
-    line-height: rem(5px);
     float: right;
+    line-height: rem(5px);
     margin-right: 20px;
+    text-align: center;
     width: 70%;
 }
 
 .menu ul li {
-    list-style: none;
     float: left;
+    list-style: none;
     margin-left: 15px;
 }
 
@@ -88,7 +78,9 @@ li.alineacion_vertical {
 .menu li a {
     color: #404041;
 }
-.menu li a.active, .menu a:hover {
+
+.menu li a.active,
+.menu a:hover {
     color: #f15c22;
 }
 
@@ -102,9 +94,9 @@ li.alineacion_vertical {
     display:none;
 }
 
-.imagen-lupa, .imagen-desplegable {
-    margin-left: 5px;
-    margin-top: 10px;
+.imagen-lupa,
+.imagen-desplegable {
+    margin: 10px 0 0 5px;
     max-width: 35px;
 }
 
@@ -133,8 +125,8 @@ li.alineacion_vertical {
 }
 
 .container-button-buscador {
-    width: 40%;
     margin-left: 10px;
+    width: 40%;
 }
 
 .float-menu{
@@ -145,19 +137,18 @@ li.alineacion_vertical {
     margin-top: -10px;
 }
 
-
 /*---
 dropdown
 ---*/
 
-.dropdown__wrap {
-    position: relative;
-    padding-bottom: 5px;
-    overflow: visible;
+.dropdown-wrap {
     float: left;
+    overflow: visible;
+    padding-bottom: 5px;
+    position: relative;
 }
 
-.dropdown__wrap a {
+.dropdown-wrap a {
     color: rgb(144, 197, 219);
     text-decoration: none;
 }
@@ -173,8 +164,8 @@ dropdown
 .menu .dropdown li {
     background: #404041;
     border-bottom: 1px solid #fff;
-    padding: 0;
     float: none;
+    padding: 0;
 }
 
 .menu .dropdown a {
@@ -187,7 +178,7 @@ dropdown
     width: 20rem;
 }
 
-.dropdown__wrap:hover .dropdown {
+.dropdown-wrap:hover .dropdown {
     display: block;
 }
 
@@ -199,11 +190,11 @@ dropdown
     background: #F15C22;
     content: '';
     display: block;
+    height: 100%;
     position: absolute;
         top: 0;
         left: -.5rem;
     width: .5rem;
-    height: 100%;
 }
 
 .dropdown li:hover a {
@@ -217,8 +208,8 @@ dropdown
 }
 
 .dropdown li:first-child {
-    border-top: .75rem solid transparent;
     background-clip: padding-box;
+    border-top: .75rem solid transparent;
     position: relative;
 }
 
@@ -228,13 +219,13 @@ dropdown
     border-width: 0 .75rem .75rem .75rem;
     content: '';
     display: block;
+    height: 0;
     position: absolute;
         top: -.70rem;
         right: 1rem;
-    height: 0;
     width: 1rem;
 }
 
-.menu li.alineacion_vertical a {
+.menu li.alineacion-vertical a {
     color: #fff;
 }

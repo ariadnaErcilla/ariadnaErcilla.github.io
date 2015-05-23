@@ -115,45 +115,23 @@ anuncios
             margin-left:20px;
         }
 
-    .cabecera-cursos{
+    .cabecera-cursos, .cabecera-alumnos{
                 padding-top:0;
             }
-
-    .cabecera-alumnos{
-                padding-top:0;
-
-            }
-
-
 }
 
 @media screen and (min-width: 801px){
-
     .ordenar-title {
                 display: none;
         }
-
 }
+
 @media screen and (max-width: 641px){
-
-
-    .image-container{
-
-            display: none;
-        }
-    .img-curso{
-
-        display: none;
-    }
-    .no-display{
-        display: none;
-    }
-    .foto{
-
-        display:none;
-    }
+    .image-container,
+    .img-curso,
+    .no-display,
+    .foto,
     .foto-alumno{
         display: none;
     }
-
 }
