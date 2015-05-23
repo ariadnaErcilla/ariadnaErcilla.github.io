@@ -38,9 +38,7 @@
     width: 80%;
     text-align: center;
 }
-.container-home{
-    width: 1250px;
-}
+
 
 /* Media Querys Top*/
 
@@ -100,6 +98,10 @@
     width: 100%;
     margin: 0 auto;
   }
+   .container-home{
+    margin: 0 auto;
+    width: 1250px;
+}
 
 }
 
@@ -138,6 +140,10 @@
     width: 100%;
     margin: 0 auto;
   }
+  .container-home{
+    width: 1250px;
+    margin: 0 auto;
+}
 
 }
 
