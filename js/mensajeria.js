@@ -23,7 +23,43 @@ $('.pestanya-m-recibido').click(function() {
     $('.pestanya-m-recibido').addClass('seleccionado-m');
     return false;
 });
- $(".mensaje-leido").click(function () {
-     $('.mensaje-desplegado').fadeToggle("fast");
+ $(".mensaje-1").click(function () {
+    $('.mensaje-desplegado-1').fadeToggle("fast");
+    $('.mensaje-desplegado-2').hide();
+    $('.mensaje-desplegado-3').hide();
+    $('.mensaje-desplegado-4').hide();
+    $('.mensaje-desplegado-5').hide();
+    });
+
+$(".mensaje-2").click(function () {
+    $('.mensaje-desplegado-2').fadeToggle("fast");
+    $('.mensaje-desplegado-1').hide();
+    $('.mensaje-desplegado-3').hide();
+    $('.mensaje-desplegado-4').hide();
+    $('.mensaje-desplegado-5').hide();
+    });
+
+$(".mensaje-3").click(function () {
+    $('.mensaje-desplegado-3').fadeToggle("fast");
+    $('.mensaje-desplegado-1').hide();
+    $('.mensaje-desplegado-2').hide();
+    $('.mensaje-desplegado-4').hide();
+    $('.mensaje-desplegado-5').hide();
+    });
+
+$(".mensaje-4").click(function () {
+    $('.mensaje-desplegado-4').fadeToggle("fast");
+    $('.mensaje-desplegado-1').hide();
+    $('.mensaje-desplegado-2').hide();
+    $('.mensaje-desplegado-3').hide();
+    $('.mensaje-desplegado-5').hide();
+    });
+
+$(".mensaje-5").click(function () {
+    $('.mensaje-desplegado-5').fadeToggle("fast");
+    $('.mensaje-desplegado-1').hide();
+    $('.mensaje-desplegado-2').hide();
+    $('.mensaje-desplegado-3').hide();
+    $('.mensaje-desplegado-4').hide();
     });
 })

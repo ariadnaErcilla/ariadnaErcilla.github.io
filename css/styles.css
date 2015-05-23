@@ -311,7 +311,7 @@ body {
 
 .imagen-redondo {
   border-radius: 50%;
-  border: 1px solid rgba 51, 51, 51, 0.15; }
+  border: 1px solid rgba(51, 51, 51, 0.15); }
 
 .espacio-inferior-ampliado {
   padding-bottom: 40px; }
@@ -328,36 +328,33 @@ ul {
 
 .todos-anuncios {
   float: right;
-  width: 83%;
-  margin: 10px 0 40px 0; }
+  margin: 10px 0 40px 0;
+  width: 83%; }
   .todos-anuncios li {
     list-style: none;
     text-align: center; }
 
 .anuncio {
+  background-color: white;
   margin-bottom: 20%;
-  position: relative;
-  background-color: white; }
+  position: relative; }
   .anuncio:hover .hover-container {
     display: block; }
 
-.content-container {
+.content-container, .content-container-cursos {
   padding: 10px 20px 0 20px; }
 
-.content-container-cursos {
-  padding: 20px 20px 0 20px; }
-
 .texto-cuadrado {
-  text-align: center;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  text-align: center; }
 
 .texto-cuadrado-cursos {
   padding-bottom: 20px;
   text-align: center; }
 
 .mas-info {
-  width: 100%;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  width: 100%; }
 
 .anuncio-destacado {
   background-color: #1BA8A6;
@@ -374,11 +371,11 @@ ul {
 Buscador
 -----------*/
 .titular-seccion-buscador {
-  width: 100%;
   float: right;
   margin-bottom: 30px;
+  padding: 15px;
   position: relative;
-  padding: 15px; }
+  width: 100%; }
 
 .especial {
   float: left;
@@ -405,41 +402,40 @@ Buscador
 
 .texto-anuncios-buscador {
   float: right;
-  width: 65%;
-  margin: 25px 0 0 5px; }
+  margin: 25px 0 0 5px;
+  width: 65%; }
 
 .container-dudas-cursos {
-  width: 100%;
-  margin-top: 5px; }
+  margin-top: 5px;
+  width: 100%; }
 
 .container-cantidad {
   float: left;
-  width: 100%;
-  margin-right: 10px 10px 0 0; }
+  margin-right: 10px 10px 0 0;
+  width: 100%; }
 
 .total-icono-buscador {
   float: left;
-  width: 100%;
-  margin-top: 15px; }
+  margin-top: 15px;
+  width: 100%; }
 
 @media all and (min-width: 500px) {
   .button-2 .type-color-3 .full-button {
     font-size: 12px; } }
 /*-------
 ayuda
-
 -------*/
 .foto {
   margin: 0 auto;
-  width: 36%;
-  padding-top: 20px; }
+  padding-top: 20px;
+  width: 36%; }
 
 .foto-alumno {
   width: 100%; }
 
 .texto-cuadrado-large {
-  text-align: center;
-  padding: 70px 20px 78px 20px; }
+  padding: 70px 20px 78px 20px;
+  text-align: center; }
 
 /*----------
 encuentra
@@ -449,11 +445,11 @@ encuentra
   padding: 20px 20px 0 20px; }
 
 .image-container {
-  width: 100%;
   height: 0;
-  position: relative;
   overflow: hidden;
-  padding-bottom: 77%; }
+  padding-bottom: 77%;
+  position: relative;
+  width: 100%; }
 
 .img-curso {
   position: absolute;
@@ -465,22 +461,22 @@ encuentra
   width: 100%; }
 
 .texto-curso {
+  background-color: white;
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 0;
-  background-color: white; }
+  z-index: 0; }
 
 .hover-container {
+  background-color: white;
   display: none;
+  margin: auto;
+  padding: 0 15px;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  margin: auto;
-  z-index: 1;
-  background-color: white;
-  padding: 0 15px; }
+  z-index: 1; }
 
 .hover-container p {
   font-size: 14px; }
@@ -495,9 +491,6 @@ Anuncio ampliado
 .imagen-curso {
   margin-top: 20px;
   max-width: 100%; }
-
-.boton-margen {
-  margin-bottom: 10px; }
 
 .general-button, .button-1,
 .button-2,
@@ -2063,9 +2056,6 @@ dropdown
 .inline {
   display: inline-block; }
 
-.center {
-  margin: 0 auto; }
-
 .texto-valoraciones {
   display: inline-block;
   margin-bottom: 20px;
@@ -2108,7 +2098,11 @@ dropdown
 .mensaje-leido-primero {
   border-width: 1px; }
 
-.mensaje-desplegado {
+.mensaje-desplegado-1,
+.mensaje-desplegado-2,
+.mensaje-desplegado-3,
+.mensaje-desplegado-4,
+.mensaje-desplegado-5 {
   display: none; }
 
 .margenes-valoraciones {
@@ -2156,6 +2150,9 @@ dropdown
   width: 32%;
   display: inline-block; }
 
+.boton-margen {
+  margin-bottom: 10px; }
+
 .fondo-img-top {
   background-image: linear-gradient(90deg, #08A6A6, #007978);
   background-repeat: no-repeat;
@@ -2165,13 +2162,13 @@ dropdown
 
 .texto-top {
   text-align: center;
-  width: 45%;
-  margin-left: 90px; }
+  margin-left: 90px;
+  width: 45%; }
 
 .box-ampersand-top {
   background-image: url(../imagenes/imagen-ampersand-home.svg);
-  height: 100%;
   background-repeat: no-repeat;
+  height: 100%;
   margin: 0 auto; }
 
 .container-button {
@@ -2186,8 +2183,8 @@ dropdown
   width: 100%; }
 
 .container-texto {
-  width: 80%;
-  text-align: center; }
+  text-align: center;
+  width: 80%; }
 
 /* Media Querys Top*/
 @media all {
@@ -2197,14 +2194,14 @@ dropdown
   .box-top-1,
   .box-top-2 {
     background-repeat: no-repeat;
-    text-align: center;
+    margin: 0 auto;
     padding: 30px 10px;
-    margin: 0 auto; }
+    text-align: center; }
 
   .box-ampersand-top {
+    background-position: 50% 50%;
     height: 20%;
-    width: 100%;
-    background-position: 50% 50%; }
+    width: 100%; }
 
   .texto-top {
     width: 100%;
@@ -2247,10 +2244,10 @@ dropdown
 
   .box-top-1,
   .box-top-2 {
-    width: 46%;
     float: left;
     height: 100%;
-    padding-top: 50px; }
+    padding-top: 50px;
+    width: 46%; }
 
   .box-top-1 {
     padding-right: 50px; }
@@ -2259,11 +2256,11 @@ dropdown
     padding-left: 40px; }
 
   .box-ampersand-top {
-    width: 8%;
-    height: 100%;
     background-position: 50% 50%;
     float: left;
-    position: relative; }
+    height: 100%;
+    position: relative;
+    width: 8%; }
 
   .box-ampersand-top::after {
     content: url(../imagenes/imagen-flecha-home.svg);
@@ -2272,28 +2269,28 @@ dropdown
     right: 25px; }
 
   .full-button {
-    width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 100%; }
 
   .container-home {
-    width: 1250px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    width: 1250px; } }
 /* Media Querys Bottom*/
 @media all {
   section.mini-box-2,
   section.mini-box-1,
   section.mini-box-3,
   .container-texto {
-    text-align: center;
+    margin: 0 auto;
     padding: 30px 10px 5px 10px;
-    margin: 0 auto; }
+    text-align: center; }
 
   .imagen-ilustraciones {
     height: 35%; }
 
   .botton {
-    width: 90%;
-    margin: 40px 0px 40px 0px; } }
+    margin: 40px 0;
+    width: 90%; } }
 @media all and (min-width: 600px) {
   section.mini-box-1,
   section.mini-box-2,
@@ -2305,27 +2302,26 @@ dropdown
 
   .botton {
     width: 30%;
-    margin: 20px 0px 40px 0px; } }
+    margin: 20px 0 40px 0; } }
 @media all and (min-width: 1024px) {
   section.mini-box-1,
   section.mini-box-2,
   section.mini-box-3 {
-    width: 33%;
     float: left;
-    margin: 50px 0px 50px 0px; }
+    margin: 50px 0;
+    width: 33%; }
 
   .botton {
     width: 35%;
     margin: 0 auto;
-    padding: 30px 0px 40px 0px; } }
+    padding: 30px 0 40px 0; } }
 /*Como funciona */
 .margen {
-  margin-bottom: 30px;
-  margin-top: 50px; }
+  margin: 30px 0 50px 0; }
 
 .container-como-funciona {
-  overflow: hidden;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  overflow: hidden; }
 
 .container-botones-como-funciona {
   width: 100%;
@@ -2333,8 +2329,8 @@ dropdown
 
 .container-botones {
   display: inline-block;
-  width: 40%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 40%; }
 
 /*
 .contenido-top-2,
