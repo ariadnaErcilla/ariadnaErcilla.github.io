@@ -19,23 +19,23 @@
 .title {
   font-size: 3rem;
   font-family: "Dosis";
-  margin: 0 0 10px 0;
-  text-transform: uppercase;
+  font-weight: 700;
   line-height: 1;
-  font-weight: 700; }
+  margin: 0 0 10px 0;
+  text-transform: uppercase; }
 
 .title-form {
-  font-size: 2rem;
   font-family: "Dosis";
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase; }
 
 .titulo-ampliar-curso {
   color: #404041;
-  max-width: 500px;
   font-weight: 500;
-  margin-top: 50px; }
+  margin-top: 50px;
+  max-width: 500px; }
 
 .profile-name {
   font-size: 24px;
@@ -44,15 +44,14 @@
   font-weight: 400; }
 
 .destacado {
-  font-size: 2.25rem;
   font-family: "Dosis";
+  font-size: 2.25rem;
   font-weight: 400;
-  /*font-style: normal; si se elimina no pasa nada*/
   margin: 0; }
 
 .titulo-nuevo-usuario {
-  font-size: 2.25rem;
   font-family: "Dosis";
+  font-size: 2.25rem;
   font-weight: 400;
   text-transform: uppercase; }
 
@@ -66,16 +65,16 @@
   margin: 0; }
 
 .secondary-subtitle {
+  color: #404041;
   font-size: 0.875rem;
   font-weight: 300;
-  margin: 0;
-  color: #404041; }
+  margin: 0; }
 
 .secondary-subtitle-ampliado {
+  color: #404041;
   font-size: 0.875rem;
   font-weight: 300;
   margin: 0;
-  color: #404041;
   max-width: 110px;
   margin-top: 10px; }
 
@@ -87,8 +86,8 @@ p {
   font-weight: 400; }
 
 .light {
-  font-weight: 300;
   color: #00A6A5;
+  font-weight: 300;
   margin: 0; }
 
 .title-contactar {
@@ -96,19 +95,19 @@ p {
 
 .tags {
   font-size: 0.75rem;
-  font-weight: lighter;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: lighter; }
 
 .terms {
   font-size: 0.75rem;
   clear: both; }
 
 .copyright {
-  text-align: center;
-  padding: 10px;
   color: white;
   font-size: 0.625rem;
-  margin: 0; }
+  margin: 0;
+  padding: 10px;
+  text-align: center; }
 
 .nofloat {
   float: none;
@@ -253,19 +252,19 @@ a {
   clear: both; }
 
 body {
-  margin: 0;
+  color: #404041;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #404041; }
+  margin: 0; }
 
 .background-4 {
-  width: 100%;
-  background-color: rgba(51, 51, 51, 0.15); }
+  background-color: rgba(51, 51, 51, 0.15);
+  width: 100%; }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1024px; }
 
 .left {
   float: left; }
@@ -292,8 +291,7 @@ body {
   margin-top: 5px; }
 
 .margin-top-ampliado {
-  margin-top: 30px;
-  margin-left: 5px; }
+  margin: 30px 0 0 5px; }
 
 .padding-bottom {
   padding-bottom: 10px; }
@@ -303,10 +301,6 @@ body {
   border-top: 1px solid #999;
   margin-top: 20px; }
 
-/*
-.block{
-    display: block;
-}*/
 .in-line {
   display: inline-block; }
 
@@ -317,7 +311,7 @@ body {
 
 .imagen-redondo {
   border-radius: 50%;
-  border: 1px solid rgba(51, 51, 51, 0.15); }
+  border: 1px solid rgba 51, 51, 51, 0.15; }
 
 .espacio-inferior-ampliado {
   padding-bottom: 40px; }
@@ -325,11 +319,6 @@ body {
 .imagen-perfil-aampliado {
   max-width: 40%; }
 
-/*si lelimino pasa algu?
-.texto-perfil-nomargin {
-    margin: 0px;
-}
-*/
 .margin-auto {
   margin: 0 auto; }
 
@@ -514,32 +503,36 @@ Anuncio ampliado
 .button-2,
 .button-3 {
   border: none;
-  text-align: center;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  cursor: pointer;
   display: inline-block;
-  cursor: pointer; }
+  text-align: center;
+  transition: all 0.3s ease; }
 
 .general-button:hover, .button-1:hover,
 .button-2:hover,
+.button-3:hover,
+.button-mail:hover {
+  background-color: #f28960; }
+
 .button-3:hover {
-  opacity: 0.8; }
+  color: white; }
 
 .full-button {
   display: block;
-  width: 100%;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  width: 100%; }
 
 .full-button-header {
   display: block;
-  width: 100%;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  width: 100%; }
 
 .large-button {
   display: block;
-  width: 80%;
+  margin: 0 0 10px;
   padding: 20px 10px;
-  margin: 0 0 10px; }
+  width: 80%; }
 
 .medium-button {
   width: 25%; }
@@ -589,54 +582,51 @@ Anuncio ampliado
   color: #f15c22; }
 
 .button-mail {
-  position: absolute;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
   margin: auto;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: -15px;
-  width: 50%;
-  border-radius: 5px;
+  text-align: center;
   transition: all 0.3s ease;
-  height: 30px;
-  border: none;
-  text-align: center; }
+  width: 50%; }
   .button-mail span {
     background-image: url(../imagenes/mail-b.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
-    width: 16px;
     height: 16px;
+    margin: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto; }
+    width: 16px; }
   .button-mail.mail-alumnos {
     text-align: center; }
     .button-mail.mail-alumnos span {
-      width: 105px;
-      text-align: right;
+      background-size: 16% auto;
       background-position: left center;
       height: 20px;
-      background-size: 16% auto; }
+      text-align: right;
+      width: 105px; }
       .button-mail.mail-alumnos span strong {
-        line-height: 20px;
-        font-weight: normal; }
-
-.button-mail:hover {
-  background-color: #404041; }
+        font-weight: normal;
+        line-height: 20px; }
 
 .button-unete {
   background-color: white;
   border: 1px solid black;
   border-radius: 0;
+  font-size: 13px;
   height: 20px;
   text-align: center;
-  transition: all 0.3s ease;
-  font-size: 13px; }
+  transition: all 0.3s ease; }
 
 .button-unete span {
   color: #404041; }
@@ -647,8 +637,8 @@ Anuncio ampliado
 .mail-cursos {
   background-image: url(../imagenes/mail-b.svg);
   background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 /*--------
 Text inputs and text areas
