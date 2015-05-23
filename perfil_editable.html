@@ -11,6 +11,10 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/tablas.js"></script>
+    <script src="js/mensajeria.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/pestanyas.js"></script>
 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
@@ -672,7 +676,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity-hover cf">
+                            <div class="mensaje-leido cf">
                                 <div class="buscador-cerrar icono cruz-cerrar">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
@@ -801,111 +805,8 @@
 </footer>
 
 <script>
-$('td .icono-tabla-off').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-on').css({
-        'display': 'block'
-    });
-});
-$('td .icono-tabla-on').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-off').css({
-        'display': 'block'
-    });
-});
-<!--tabla menu -->
-$('.pestanya-2').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-2').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-2').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-3').click(function() {
-    $('.option-1').hide();
-    $('.option-2').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-3').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-3').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-4').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-2').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-4').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-4').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-5').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-2').hide();
-    $('.option-6').hide();
-    $('.option-5').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-5').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-6').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-2').hide();
-    $('.option-5').hide();
-    $('.option-6').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-6').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-1').click(function() {
-    $('.option-2').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-1').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-1').addClass('seleccionado');
-    return false;
-});
-<!--tabla mensajes -->
-$('.pestanya-m-no-leido').click(function() {
-    $('.option-recibido').hide();
-    $('.option-no-leido').show();
-    $('.option-enviado').hide();
-    $('.seleccionado-m').removeClass('seleccionado-m');
-    $('.pestanya-m-no-leido').addClass('seleccionado-m');
-    return false;
-});
-$('.pestanya-m-enviado').click(function() {
-    $('.option-recibido').hide();
-    $('.option-no-leido').hide();
-    $('.option-enviado').show();
-    $('.seleccionado-m').removeClass('seleccionado-m');
-    $('.pestanya-m-enviado').addClass('seleccionado-m');
-    return false;
-});
-$('.pestanya-m-recibido').click(function() {
-    $('.option-recibido').show();
-    $('.option-no-leido').hide();
-    $('.option-enviado').hide();
-    $('.seleccionado-m').removeClass('seleccionado-m');
-    $('.pestanya-m-recibido').addClass('seleccionado-m');
-    return false;
-});
-<!--abrir y cerrar mensaje -->
+
+<!--abrir y cerrar mensaje
 $('#abrir').click(function(e){
         $('.mensaje-desplegado').show();
         return false;
@@ -914,7 +815,7 @@ $('#abrir').click(function(e){
     $('#cerrar').click(function(e){
         $('.mensaje-desplegado').hide();
         return false;
-    });
+    });-->
 </script>
 </body>
 </html>
