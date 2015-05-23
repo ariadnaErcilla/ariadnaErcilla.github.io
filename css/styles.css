@@ -2167,9 +2167,6 @@ dropdown
   width: 80%;
   text-align: center; }
 
-.container-home {
-  width: 1250px; }
-
 /* Media Querys Top*/
 @media all {
   .fondo-img-top {
@@ -2217,6 +2214,9 @@ dropdown
 
   .full-button {
     width: 100%;
+    margin: 0 auto; }
+
+  .container-home {
     margin: 0 auto; } }
 @media all and (min-width: 1024px) {
   .fondo-img-top {
@@ -2250,6 +2250,10 @@ dropdown
 
   .full-button {
     width: 100%;
+    margin: 0 auto; }
+
+  .container-home {
+    width: 1250px;
     margin: 0 auto; } }
 /* Media Querys Bottom*/
 @media all {
