@@ -9,12 +9,16 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
-     <script src="js/scroll-funciona.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-     <header class="cf">
+    <header class="cf">
+        <div class="container-home cf">
         <div class="logo">
             <a href="index.html">
                 <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
@@ -23,52 +27,50 @@
         <nav class="menu cf">
             <div class="float-menu">
                 <ul class="esconder">
-                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="registro">
                     <ul class="esconder">
-                        <li><a href="#login">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li><a class="login" href="#login">Log in</a></li>
+                        <li><a class="registro" href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <div class="dropdown__wrap">
+                    <div class="dropdown-wrap">
                         <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
                         </a>
                         <ul class="dropdown">
-                            <li class="alineacion_vertical">
-                                <a href="#">Encuentra tu curso</a>
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
                             </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Busca tu alumno</a>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
                             </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">¿Cómo funciona?</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Mi perfil</a>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
                             </li>
                         </ul>
                     </div>
                     <a id="abrir" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover" alt="Lupa-buscador"></span>
                     </a>
                 </div>
             </div>
         </nav>
+    </div>
         <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
-                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
+                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
                 </div>
                 <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"  alt="Cerrar-buscador"></span>
                 </a>
             </div>
         </div>
@@ -82,10 +84,7 @@
         </div>
     </div>
     </div>
-
-
-
-    <div class="background-4 cf clear">
+     <div class="background-4 cf clear">
         <div class="container">
             <ul class="todos-anuncios">
                  <div class="container-ordenar">
@@ -657,8 +656,9 @@
         </div>
     </div>
 </div>
-    <footer>
-    <div class="pie cf">
+    <div id="popup"></div>
+   <footer>
+        <div class="pie cf">
             <section class="mini-box-pie">
                 <span class="type-color-3">Contacto</span>
                 <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
@@ -666,25 +666,42 @@
             </section>
             <section class="mini-box-pie">
                 <div class="iconos cf">
-                <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
+                    <div class="red-social opacity-hover">
+                        <a target="blank" href="https://twitter.com/puntoyseguidoo">
+                            <span class="icono-rectangular-footer footer-blanco-tw" alt="twitter"></span>
+                        </a>
+                    </div>
 
-                <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
+                    <div class="red-social opacity-hover">
+                        <a target="blank" href="https://www.facebook.com/puntoyseguidoo">
+                            <span class="icono-rectangular-footer footer-blanco-fb" alt="facebook"></span>
+                        </a>
+                    </div>
 
-                 <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
+                    <div class="red-social opacity-hover">
+                        <a target="blank" href="https://www.instagram.com/puntoyseguidoo">
+                            <span class="icono-rectangular-footer footer-blanco-insta" alt="instagram"></span>
+                        </a>
+                    </div>
                 </div>
             </section>
-            <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
-                <div class="newsletter cf">
-                <div class="caja-footer">
-                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
-                <button class="button-unete medium-button left"><a class="type-color-3" href="graciasnews.html"><span>Únete</span></a></button>
-                  </div>
-                 <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+            <section class="mini-box-pie">
+                <div class="newsletter">
+                    <span class="type-color-3">Newsletter</span>
+                    <div class="newsletter-input cf">
+                        <div class="caja-footer">
+                            <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo">
+                        </div>
+                        <div>
+                            <a class="button-unete medium-button type-color-3 left" href="graciasnews.html"><span>Únete</span></a>
+                        </div>
+                        <p class="terms type-color-3"><a class="type-color-3" href="normas_newsletter.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+                    </div>
                 </div>
-                 <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
             </section>
-    </div>
+            <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
 
+        </div>
     </footer>
 </body>
 </html>
