@@ -5,8 +5,7 @@ $( "li.primera-estrella" ).click(function(e){
         $(this).addClass("estrella-activa");
         $(this).removeClass("estrella-inactiva");
     }else{
-        $(this).removeClass("estrella-activa");
-        $(this).addClass("estrella-inactiva");
+        $(this).nextAll().addClass("estrella-inactiva");
     }    
 });
 $( "li.segunda-estrella" ).click(function(e){
@@ -15,10 +14,11 @@ $( "li.segunda-estrella" ).click(function(e){
         $(this).addClass("estrella-activa");
         $(this).removeClass("estrella-inactiva");
         $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-        $(this).removeClass("estrella-activa");
-        $(this).addClass("estrella-inactiva");
-        $(this).prevAll().removeClass("estrella-activa");
+
+        $(this).nextAll().addClass("estrella-inactiva");
+        
     }     
     
 });
@@ -28,10 +28,11 @@ $( "li.tercera-estrella" ).click(function(e){
         $(this).addClass("estrella-activa");
         $(this).removeClass("estrella-inactiva");
         $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-        $(this).removeClass("estrella-activa");
-        $(this).addClass("estrella-inactiva");
-        $(this).prevAll().removeClass("estrella-activa");
+    
+         $(this).nextAll().addClass("estrella-inactiva");
+        
     }    
 });
 $( "li.cuarta-estrella" ).click(function(e){
@@ -39,11 +40,11 @@ $( "li.cuarta-estrella" ).click(function(e){
     if($(this).hasClass("estrella-inactiva")){
         $(this).addClass("estrella-activa");
         $(this).removeClass("estrella-inactiva");
-        $(this).prevAll("li").addClass("estrella-activa");
+        $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-        $(this).removeClass("estrella-activa");
-        $(this).addClass("estrella-inactiva");
-        $(this).prevAll().removeClass("estrella-activa");
+         $(this).nextAll().addClass("estrella-inactiva");
+       
     }    
 });
 $( "li.quinta-estrella" ).click(function(e){
@@ -52,10 +53,10 @@ $( "li.quinta-estrella" ).click(function(e){
         $(this).addClass("estrella-activa");
         $(this).removeClass("estrella-inactiva");
         $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-        $(this).removeClass("estrella-activa");
-        $(this).addClass("estrella-inactiva");
-        $(this).prevAll().removeClass("estrella-activa");
+         $(this).nextAll().addClass("estrella-inactiva");
+       
     }    
 });
  })
