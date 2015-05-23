@@ -100,8 +100,9 @@
 }
 
 .mensaje{
-    clear:both;
+    clear: both;
     position: relative;
+    cursor:pointer;
 }
 
 .mensaje-no-leido {
@@ -167,4 +168,15 @@
 .aun-no-publicado{
     margin-left: 25%;
     margin-top: 25px;
+}
+
+.celdas-perfil {
+    list-style: none;
+    width: 60%;
+    display: inline-block;
+}
+
+.celdas-perfil-corta {
+    width: 32%;
+    display: inline-block;
 }
