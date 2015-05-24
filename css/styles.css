@@ -2194,7 +2194,7 @@ dropdown
 
   .container-home {
     margin: 0 auto;
-    width: 1250px; } }
+    max-width: 1250px; } }
 @media all and (min-width: 1024px) {
   .fondo-img-top {
     height: 70%; }
@@ -2231,7 +2231,7 @@ dropdown
 
   .container-home {
     margin: 0 auto;
-    width: 1250px; } }
+    max-width: 1250px; } }
 /* Media Querys Bottom*/
 @media all {
   section.mini-box-2,
