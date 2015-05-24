@@ -1805,7 +1805,7 @@ header {
 .menu ul {
   padding-left: 10px; }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1110px) {
   .menu li.tamano-fijo {
     max-width: 100px; } }
 @media screen and (max-width: 900px) {
@@ -7423,7 +7423,7 @@ th.hide-for-touch {
   clear: both; }
 
 .sg-margin-top-text {
-  padding-top: 20px; }
+  padding-top: 50px; }
 
 .sg-p-colores {
   margin-top: 160px;
@@ -7438,13 +7438,23 @@ th.hide-for-touch {
 .sg-margin-bottom-links {
   margin-bottom: 20px; }
 
-.sg-sombra {
-  box-shadow: 1px 1px 2px #999; }
+.sg-borde-gris {
+  border: 1px solid rgba(51, 51, 51, 0.15); }
 
 .sg-margin-top-texto {
   margin-top: 180px; }
 
 .sg-margin-iconos {
   margin-bottom: 10px; }
+
+.sg-margin-title {
+  margin-left: 190px; }
+
+.sg-no-margin {
+  margin: 0;
+  padding: 0; }
+
+.sg-margin-negativo {
+  margin-top: -20px; }
 
 /*# sourceMappingURL=styles.css.map */

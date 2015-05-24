@@ -383,7 +383,7 @@
 }
 
 .sg-margin-top-text {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .sg-p-colores {
@@ -403,8 +403,8 @@
     margin-bottom: 20px;
 }
 
-.sg-sombra {
-    box-shadow: 1px 1px 2px #999;
+.sg-borde-gris {
+    border: 1px solid rgba(51, 51, 51, 0.15);
 }
 
 .sg-margin-top-texto {
@@ -413,4 +413,17 @@
 
 .sg-margin-iconos {
     margin-bottom: 10px;
+}
+
+.sg-margin-title {
+    margin-left: 190px;
+}
+
+.sg-no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.sg-margin-negativo {
+    margin-top: -20px
 }
