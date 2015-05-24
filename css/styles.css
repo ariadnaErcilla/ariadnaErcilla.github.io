@@ -515,7 +515,8 @@ Anuncio ampliado
 .button-mail:hover {
   background-color: #f28960; }
 
-.button-3:hover {
+.button-3:hover,
+.hover-boton:hover {
   color: white; }
 
 .full-button,
@@ -2035,6 +2036,10 @@ dropdown
   margin-bottom: 20px;
   vertical-align: top;
   width: 70%; }
+
+.botones-perfil {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .imagen-valoraciones {
   display: inline-block;
