@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
 
@@ -138,6 +140,7 @@ p {
 .button {
   font-family: 'Lato', sans-serif; }
 
+/*colores*/
 .container-colores {
   width: 800px;
   height: 150px;
@@ -224,6 +227,7 @@ p {
   background-color: rgba(51, 51, 51, 0.15);
   float: left; }
 
+/*links*/
 a {
   text-decoration: none; }
 
@@ -236,6 +240,7 @@ a {
 .type-color-2 a, .type-color-3 a:hover {
   color: #f15c22; }
 
+/*general*/
 *,
 *:before,
 *:after {
@@ -326,6 +331,7 @@ body {
 ul {
   padding-left: 0; }
 
+/*anuncios*/
 .todos-anuncios {
   float: right;
   margin: 10px 0 40px 0;
@@ -411,7 +417,7 @@ Buscador
 
 .container-cantidad {
   float: left;
-  margin-right: 10px 10px 0 0;
+  margin: 10px 10px 0 0;
   width: 100%; }
 
 .total-icono-buscador {
@@ -492,6 +498,7 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
+/*botones*/
 .general-button, .button-1,
 .button-2,
 .button-3 {
@@ -733,7 +740,7 @@ select {
 
 #input-portafolio {
   font-size: 0.8rem;
-  margin-left: 0 0 10px 10px;
+  margin: 0 0 10px 10px;
   width: 50%; }
 
 #input-programas {
@@ -751,6 +758,7 @@ select {
   padding: 0.3rem;
   width: 100%; }
 
+/*iconos*/
 .icono-caracteristicas, .animacion-b, .animacion-c, .arquitectura-b, .arquitectura-c, .audiovisual-b, .audiovisual-c, .foto-b, .foto-c, .grafico-b, .grafico-c, .industrial-b, .industrial-c, .moda-b, .moda-c, .programacion-b, .programacion-c, .web-b, .web-c, .estrellas-valorar-1, .estrellas-valorar-2, .estrellas-valorar-4, .estrellas-valorar-5, .estrellas-valorar, .icono-comparte, .icono-disponibilidad, .icono-dudas, .icono-imagenes, .icono-intercambio, .icono-perfil, .iconocomparte-b, .icono-portafolio, .icono-programas, .icono-valoraciones, .mail-b, .manana-off, .manana, .manana-b, .noche-off, .noche, .noche-b, .tarde-off, .tarde, .tarde-b, .buscador-cerrar, .buscador, .icono-fb-large, .icono-link-large, .icono-mensaje-no, .icono-mensaje-si, .icono-mensaje, .icono-tw-large, .lapiz, .lapiz-redonda, .estrellas-anuncios-1, .estrellas-anuncios-2, .estrellas-anuncios-4, .estrellas-anuncios-5, .estrellas-anuncios-3, .portafolio-linkedin-b, .portafolio-linkedin-d, .portafolio-linkedin-c, .portafolio-instagram-b, .portafolio-instagram-d, .portafolio-instagram-c, .portafolio-pinterest-b, .portafolio-pinterest-d, .portafolio-pinterest-c, .portafolio-tumblert-b, .portafolio-tumblert-d, .portafolio-tumblert-c, .portafolio-behance-b, .portafolio-behance-d, .portafolio-behance-c, .portafolio-domestika-b, .portafolio-domestika-d, .portafolio-domestika-c, .nivel0, .nivel1-b, .nivel1, .nivel3-b, .nivel3, .nivel5-b, .nivel5, .consejo-1, .consejo-2, .consejo-3, .consejo-4, .icono-linkedin, .icono-facebook, .icono-twitter, .estrella-activa, .estrella-inactiva, .menu-desplegable, .logotipo-pys, .footer-blanco-fb, .footer-blanco-insta, .footer-blanco-tw, .header-mensajeria {
   background-repeat: no-repeat;
   background-size: contain; }
@@ -1158,6 +1166,7 @@ contenedores anuncios
   height: 20px;
   width: 20px; }
 
+/*media*/
 .apartado-ampliado {
   clear: both;
   padding-top: 40px; }
@@ -1185,6 +1194,7 @@ contenedores anuncios
 .stars-val {
   width: 21%; }
 
+/*pestañas*/
 .box-perfil {
   background-color: white;
   overflow: hidden;
@@ -1247,6 +1257,7 @@ contenedores anuncios
 .seleccionado-m {
   background-color: #f0f0f0; }
 
+/*pop-ups*/
 .masc {
   display: none;
   font-family: "Lato", sans-serif;
@@ -1421,6 +1432,7 @@ ul {
   .img-facebook {
     border-bottom: 1px solid #404041;
     padding: 15px 0px; } }
+/*tabla*/
 table {
   border-collapse: collapse; }
 
@@ -1472,6 +1484,7 @@ th,
   border-width: 20px 20px 20px 0;
   vertical-align: top; }
 
+/*titulos*/
 .cabecera-cursos,
 .cabecera-alumnos {
   margin: 0 auto; }
@@ -1493,6 +1506,7 @@ th,
   margin-right: 5px;
   width: 133px; }
 
+/*ordenar*/
 .menu-ordenar ul {
   padding: 0; }
 
@@ -1635,6 +1649,7 @@ aside perfil
 .informacion-persona {
   margin: 30px 0; }
 
+/*footer*/
 footer {
   background-color: #231F20;
   clear: both;
@@ -1776,6 +1791,7 @@ anuncios
   .foto,
   .foto-alumno {
     display: none; } }
+/*header*/
 header {
   background-color: white;
   margin: 1.5rem 0;
@@ -1963,6 +1979,7 @@ dropdown
 .menu li.alineacion-vertical a {
   color: #fff; }
 
+/*perfil*/
 .parte-derecha {
   float: right;
   margin: 50px 0 0 40px; }
@@ -2003,11 +2020,11 @@ dropdown
 
 .no-cursos-cuadrado {
   border: 1px solid #54c4c7;
-  margin-top: 100px 0 80px 0;
+  margin: 100px 0 80px 0;
   width: 90%; }
 
 .contenido-no-cursos {
-  margin-top: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
   position: relative; }
 
 .inline {
@@ -2110,6 +2127,7 @@ dropdown
 .margen-formulario {
   margin: 10px 0 20px; }
 
+/*home*/
 .fondo-img-top {
   background-image: linear-gradient(90deg, #08A6A6, #007978);
   background-repeat: no-repeat;

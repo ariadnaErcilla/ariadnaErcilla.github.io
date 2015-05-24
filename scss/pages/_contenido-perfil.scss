@@ -1,4 +1,4 @@
-//perfil
+/*perfil*/
 .parte-derecha{
     float: right;
     margin: 50px 0 0 40px;
@@ -50,12 +50,12 @@
 
 .no-cursos-cuadrado{
     border: 1px solid #54c4c7;
-    margin-top: 100px 0 80px 0;
+    margin: 100px 0 80px 0;//ponia top
     width: 90%;
 }
 
 .contenido-no-cursos{
-    margin-top: 30px 0 30px 0;
+    margin: 30px 0 30px 0;//ponia top
     position: relative;
 }
 

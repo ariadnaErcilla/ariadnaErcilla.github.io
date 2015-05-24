@@ -122,7 +122,7 @@ select {
 #input-portafolio {
     @extend #input-generales;
     font-size: 0.8rem;
-    margin-left: 0 0 10px 10px;
+    margin: 0 0 10px 10px; //ponia margin-left
     width: 50%;
 }
 
