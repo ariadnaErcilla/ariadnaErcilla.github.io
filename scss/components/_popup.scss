@@ -28,7 +28,10 @@
     opacity: 1;
     pointer-events: auto;
 }
+.popup-active{
 
+    overflow: hidden;
+}
 .popup{
     margin: 0 auto;
     position: absolute;
