@@ -17,71 +17,71 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-    background:white;
+    background: white;
+    border: 1px solid #A0A0A0;
+    border-radius: 7px;
+    color: #A0A0A0;
     display: block;
     font-size: 0.876rem;
+    font-weight: 400;
     line-height: 1rem;
     padding: .4rem;
     width: 100%;
-    border: 1px solid #A0A0A0;
-    border-radius:7px;
-    color:#A0A0A0;
-    font-weight: 400;
 }
+
 .custom-file-input::-webkit-file-upload-button {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 .custom-file-input::before {
-  content: 'SELECCIONAR';
-  display: inline-block;
-  background: #E6E6E6;
-  border: 1px solid #F15C22;
-  color:#F15C22;
-  border-radius: 0;
-  padding: 5px 8px;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 11pt;
+    background: #E6E6E6;
+    border: 1px solid #F15C22;
+    border-radius: 0;
+    color: #F15C22;
+    content: 'SELECCIONAR';
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 11pt;
+    outline: none;
+    padding: 5px 8px;
+    white-space: nowrap;
+    -webkit-user-select: none;
 }
 
 .custom-file-input:active::before {
-  background: white;
+    background: white;
 }
 
 
 .big-textarea{
-	padding-bottom: 50px;
+	 padding-bottom: 50px;
 
 }
 #mini-input{
-	width: 8%;
-    display: inline-block;
     background-color:white;
     border-bottom:1px solid black;
+    display: inline-block;
     padding:.2rem;
+    width: 8%;
 }
 
 #input-footer{
-    width: 100%;
     background: white;
     border: 1px solid black;
-    height: 20px;
     border-radius: 0;
+    height: 20px;
+    width: 100%;
 }
 
 label.error{
-
-  background-color:#F15C22;
-  font-size:12px;
-  width: 170px;
+  background-color: #F15C22;
   display: none;
-
+  font-size: 12px;
+  width: 170px;
 }
-label{
 
+label{
   display: block;
 }
 
@@ -90,24 +90,23 @@ Checkboxes, selects
 ----------*/
 
 .form-check{
-
-	float:left;
-    padding-right: 10px;
+    float:left;
     margin: 0;
-
+    padding-right: 10px;
 }
+
 .form-check span {
     color:#404041;
     margin-left: 3px;
 }
 
 .box-check {
-     position: relative;
-     background: url(../imagenes/box-dias.svg) no-repeat;
-     background-size: contain;
-     height: 120px;
+    background: url(../imagenes/box-dias.svg) no-repeat;
+    background-size: contain;
     clear: both;
+    height: 120px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 select {
@@ -115,17 +114,16 @@ select {
 }
 
 #input-generales{
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid #C2C2C2;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
 }
 
 #input-portafolio {
     @extend #input-generales;
-    width: 50%;
-    margin-left: 10px;
     font-size: 0.8rem;
-    margin-bottom: 10px;
+    margin: 0 0 10px 10px; //ponia margin-left
+    width: 50%;
 }
 
 #input-sobre-mi {
@@ -134,13 +132,20 @@ select {
 
 #input-programas {
   @extend #input-generales;
-  width: 100%;
-  padding: 0.3rem;
   margin-bottom: 10px;
+  padding: 0.3rem;
+  width: 100%;
 }
 
 .input-mensaje {
-    border: 1px solid #f15c22;
     background-color: white;
+    border: 1px solid #f15c22;
     margin-bottom: 20px;
+}
+
+#input-perfil {
+  @extend #input-generales;
+  margin-bottom: 10px;
+  padding: 0.3rem;
+  width: 100%;
 }

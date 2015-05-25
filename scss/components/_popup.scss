@@ -1,23 +1,24 @@
-
+/*pop-ups*/
 .masc{
-        position:absolute;
+        display: none;
         font-family:"Lato", sans-serif;
+        position: absolute;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
+        transition: opacity 400ms ease-in;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
         z-index:99999;
-        display: none;
-        -webkit-transition:opacity 400ms ease-in;
-        -moz-transition:opacity 400ms ease-in;
-        transition:opacity 400ms ease-in;
     }
+
 .masc::before{
+        background: rgba(0,0,0,0.8);
         display: block;
-        position:absolute;
-        background:rgba(0,0,0,0.8);
-        height: 100%;
         content: '';
+        height: 100%;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
@@ -25,47 +26,40 @@
     }
 
 .masc:target{
-    opacity:1;
-    pointer-events:auto;
-
+    opacity: 1;
+    pointer-events: auto;
 }
 
-
 .popup{
-    position: absolute;
     margin: 0 auto;
+    position: absolute;
     width: 100%;
-
 }
 
 .popup-image-2{
-
     background-position: top 0px right 425px;
     background-repeat: no-repeat;
     background-image: url(../imagenes/muneco-gracias.png);
-    background-size:15% auto;
-
-
-
+    background-size: 15% auto;
 }
+
 .top{
-    top:52px;
-
+    top: 52px;
 }
-.top-gracias{
 
+.top-gracias{
     top:43px;
 }
 
 .close{
     background: #f15c22;
-    color:#FFF;
-    line-height:25px;
-    position:absolute;
-    text-align:center;
+    border-radius: 12px;
+    color: #FFF;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
     width:24px;
-    text-decoration:none;
-    border-radius:12px;
 }
 
 .close:hover{
@@ -73,66 +67,59 @@
 }
 
 .popup-box{
-
-    padding:5px 20px 40px 20px;
-    background:white;
-    border-radius:5px;
-    transition:all 500ms ease-in;
+    background: white;
     border: 5px solid #00A6A5;
-    margin:0 auto;
-    position:relative;
-
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 5px 20px 40px 20px;
+    position: relative;
+    transition: all 500ms ease-in;
 }
 
 .container-popup{
     width: 75%;
     margin: 0 auto;
-
-
 }
 
 .border{
-
-    border:1px solid #404041;
-    padding:0px 5px 0px 5px;
+    border: 1px solid #404041;
+    padding: 0px 5px 0px 5px;
 }
+
 .movedown{
-
-    margin:10% auto;
+    margin: 10% auto;
 }
+
 .movedown-2{
-    margin:1% auto;
+    margin: 1% auto;
 }
 
 .movedown-3{
-
     margin:5% auto;
 }
 
 .link-facebook{
     width: 100%;
-
 }
-.margin-auto-popup{
 
-  margin:0 auto;
+.margin-auto-popup{
+  margin: 0 auto;
+  padding: 20px 0px 10px 0px;
   width: 45%;
-  padding:20px 0px 10px 0px;
 }
 
 .margin-auto-gracias{
-
     width: 78%;
     margin:0 auto;
-    padding:20px 0px 10px 0px;
+    padding:20px 0 10px 0;
 }
-.padding-button-popup{
 
-    padding:23px 10px 24px 0px;
+.padding-button-popup{
+    padding: 23px 10px 24px 0;
 }
 
 .img-facebook{
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0;
     border-bottom: 1px solid #404041;
 }
 
@@ -144,63 +131,56 @@
 .proceso{
     width: 100%;
 }
+
 .show-consejos{
-
-    display:none;
-
+    display: none;
 }
 
 .container-consejos{
-
-    padding:35px 20px 20px 20px;
-
+    padding: 35px 20px 20px 20px;
 }
-ul{
 
+ul{
     padding-left:0;
 }
+
 .consejo{
-
     list-style: none;
-    padding:20px 0px 20px 0px;
-
+    padding: 20px 0px;
 }
-.texto-consejo{
 
+.texto-consejo{
     padding-left:40px;
 }
 
 .consejos-muneco{
-
     background-image: url(../imagenes/muneco-consejos.png);
-    background-repeat:no-repeat;
-    background-position:top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: 26% auto;
-    height:72px;
-    cursor:pointer;
-
+    cursor: pointer;
+    height: 72px;
 }
+
 #valorar ul{
     padding:0;
     margin-bottom: 0;
 }
+
 #valorar li{
     list-style: none;
-    
 }
+
 /*responsive*/
 
 @media screen and (max-width:500px){
 
     .popup-box{
-        width: 100%;
         border:none;
-
-
+        width: 100%;
     }
 
     .close{
-
         top:0;
         right:0;
     }
@@ -208,34 +188,33 @@ ul{
     .popup-image{
         background-image:none;
     }
+
     .img-facebook{
         display: none;
+    }
 }
 
-}
 @media screen and (min-width:501px){
 
     .popup-box{
         width: 500px;
-
     }
-    .close{
 
-        top:-12px;
-        right:-12px;
+    .close{
+        top: -12px;
+        right: -12px;
     }
 
     .popup-image{
+        background-image: url(../imagenes/ninologin.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 20% auto;
+    }
 
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-image: url(../imagenes/ninologin.png);
-    background-size:20% auto;
-
-}
     .img-facebook{
-    padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #404041;
-}
+    padding: 15px 0px;
+    }
 
 }

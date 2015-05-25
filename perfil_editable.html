@@ -11,74 +11,73 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-   <header class="cf">
-        <div class="logo">
-            <a href="index.html">
-                <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
-            </a>
-        </div>
-        <nav class="menu cf">
-            <div class="float-menu">
-                <ul class="esconder">
-                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
-                </ul>
+    <header class="cf">
+        <div class="container-home cf">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
+                </a>
             </div>
-            <div class="right">
-                <div class="registro">
+            <nav class="menu cf">
+                <div class="float-menu">
                     <ul class="esconder">
-                        <li><a href="#login">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                        <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                        <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                     </ul>
                 </div>
-                <div class="lupa-buscador">
-                    <div class="dropdown__wrap">
-                        <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
-                        </a>
-                        <ul class="dropdown">
-                            <li class="alineacion_vertical">
-                                <a href="#">Encuentra tu curso</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Busca tu alumno</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">¿Cómo funciona?</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Mi perfil</a>
-                            </li>
+                <div class="right">
+                    <div class="registro">
+                        <ul class="esconder">
+                            <li><a class="login" href="#login">Log in</a></li>
+                            <li><a class="registro" href="#registro">Regístrate</a></li>
                         </ul>
                     </div>
-                    <a id="abrir" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
-                    </a>
+                    <div class="lupa-buscador">
+                        <div class="dropdown-wrap">
+                            <a href="#">
+                                <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
+                            </a>
+                            <ul class="dropdown">
+                                <li class="alineacion-vertical">
+                                    <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                                </li>
+                                <li class="alineacion-vertical">
+                                    <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                                </li>
+                                <li class="alineacion-vertical">
+                                    <a href="como_funciona.html">¿Cómo funciona?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a id="abrir" href="">
+                            <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover" alt="Lupa-buscador"></span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
-                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
+                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
                 </div>
                 <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"  alt="Cerrar-buscador"></span>
                 </a>
             </div>
         </div>
     </header>
-
-<div class="background-4">
-    <div class="container tabla margin-top">
-        <div class="parte-izquierda cell-tabla">
+    <div class="background-4">
+        <div class="container tabla margin-top">
+            <div class="parte-izquierda cell-tabla">
                 <div class="centrado opacity-hover">
                     <div>
                         <img class="img-perfil imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
@@ -89,7 +88,7 @@
                     <p class="secondary-subtitle block margin-top centrado">280px x 280px. Máximo 30 Kb</p>
                 </div>
 
-               <div class="informacion-persona">
+                <div class="informacion-persona">
                     <div>
                         <h1 class="profile-name left">
                             Silvia Terreiz
@@ -103,26 +102,26 @@
                     </div>
                 </div>
 
-                <a class="button-2 boton-margen large-button type-color-3" href="#contactar">Publica tu curso</a>
+                <a class="button-2 boton-margen large-button type-color-3 publicar-curso" href="#">Publica tu curso</a>
                 <p class="programas-mas"> ¡Aquí podrás publicar la clase que necesitas! </p>
-                <a class="button-3 type-color-2 large-button" href="#valorar">Publica tu duda</a>
-        </div>
+                <a class="button-3 type-color-2 large-button publicar-duda" href="#">Publica tu duda</a>
+            </div>
 
-        <div class="box-perfil cell-tabla cf">
-            <nav class="menu-interior">
-                <ul class="cf">
+            <div class="box-perfil cell-tabla cf">
+                <nav class="menu-interior">
+                    <ul class="cf">
                         <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
                         <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
                         <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
                         <li class="pestanyas"><a class="pestanya-6" href="#option-6">Mensajería</a></li>
-                </ul>
-            </nav>
-            <section id="option-1" class="contenido-perfil option-1">
-                <article class="bloque-perfil cf">
-                    <span class="icono-perfil icono-rectangular-grande left"> </span>
-                    <div class="contenido">
+                    </ul>
+                </nav>
+                <section id="option-1" class="contenido-perfil option-1">
+                    <article class="bloque-perfil cf">
+                        <span class="icono-perfil icono-rectangular-grande left"> </span>
+                        <div class="contenido">
                             <div>
                                 <h2 class="secondary-title left">
                                     Mi Perfil
@@ -132,12 +131,12 @@
                             </div>
                             <div class="descripcion-mi-perfil cf">
                                 <p class="no-margin">
-                                 Soy Silvia y me encanta el diseño web. Actualmente estoy de becaria en una e-commerce de productos de deporte y estoy acabando la carrera en Bau. ME gustaría mejorar mis aptitudes en programación y os puedo ayudar con los programas de Diseño de Adobe.
-                                </p>
-                            </div>
-                     </div>
-                </article>
-                <article class="bloque-perfil cf">
+                                   Soy Silvia y me encanta el diseño web. Actualmente estoy de becaria en una e-commerce de productos de deporte y estoy acabando la carrera en Bau. ME gustaría mejorar mis aptitudes en programación y os puedo ayudar con los programas de Diseño de Adobe.
+                               </p>
+                           </div>
+                       </div>
+                   </article>
+                   <article class="bloque-perfil cf">
                     <span class="icono-disponibilidad icono-rectangular-grande left"> </span>
                     <div class="contenido">
                         <div>
@@ -161,360 +160,360 @@
                                 </tr>
                                 <tr>
                                   <td class="title-table">Mañana</td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                    </td>
-                                   <td>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                       <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
-                                    </td>
-                                </tr>
-                                <tr class="second-td">
-                                    <td class="title-table second-td">Tarde</td>
-                                    <td class="second-td">
-                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                    </td>
-                                   <td class="second-td">
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                    </td>
-                                    <td class="second-td">
-                                       <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                    </td>
-                                    <td class="second-td">
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                    </td>
-                                    <td class="second-td">
-                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                    </td>
-                                    <td class="second-td">
-                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                    </td>
-                                    <td class="second-td">
-                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="title-table">Noche</td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                    </td>
-                                   <td>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                       <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                    </td>
-                                    <td>
-                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
-                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </article>
-                <article class="bloque-perfil cf">
-                    <span class="icono-programas icono-rectangular-grande left margin-top"> </span>
-                    <div class="contenido">
-                        <div class="titulo-perfil">
-                            <h2 class="secondary-title left">
-                            Programas informáticos
-                            </h2>
-                            <span class="lapiz icono-editar opacity-hover left"></span>
-                           <p class="secondary-subtitle margin-top clear"> Añade tus programas y indica en que grado los controlas</p>
-                        </div>
-                        <div class="descripcion-mi-perfil">
-                            <ul class="lista-programas no-margin">
-                                <li class="celdas-programas"> Programa </li>
-                                <li class="celdas-programas-final type-color-2 opacity-hover"> Photoshop</li>
-                                <li class="celdas-programas"> Nivel</li>
-                                <li class="celdas-programas nivel3 icono-conocimientos">
-                                    <p class="visuallyhidden"> conocimiento de 6/10 </p>
-                                </li>
-                            </ul>
+                                  <td>
+                                    <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                    <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                </td>
+                                <td>
+                                    <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                </td>
+                                <td>
+                                 <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                 <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                             </td>
+                             <td>
+                                <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                            </td>
+                            <td>
+                                <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                            </td>
+                            <td>
+                                <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                            </td>
+                            <td>
+                                <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                            </td>
+                        </tr>
+                        <tr class="second-td">
+                            <td class="title-table second-td">Tarde</td>
+                            <td class="second-td">
+                                <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                            </td>
+                            <td class="second-td">
+                                <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                            </td>
+                            <td class="second-td">
+                             <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                             <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                         </td>
+                         <td class="second-td">
+                            <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                            <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                        </td>
+                        <td class="second-td">
+                            <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                            <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                        </td>
+                        <td class="second-td">
+                            <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                            <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                        </td>
+                        <td class="second-td">
+                            <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                            <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title-table">Noche</td>
+                        <td>
+                            <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                            <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                        </td>
+                        <td>
+                            <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                            <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                        </td>
+                        <td>
+                         <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                         <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                     </td>
+                     <td>
+                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                    </td>
+                    <td>
+                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                    </td>
+                    <td>
+                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                    </td>
+                    <td>
+                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</article>
+<article class="bloque-perfil cf">
+    <span class="icono-programas icono-rectangular-grande left margin-top"> </span>
+    <div class="contenido">
+        <div class="titulo-perfil">
+            <h2 class="secondary-title left">
+                Programas informáticos
+            </h2>
+            <span class="lapiz icono-editar opacity-hover left"></span>
+            <p class="secondary-subtitle margin-top clear"> Añade tus programas y indica en que grado los controlas</p>
+        </div>
+        <div class="descripcion-mi-perfil">
+            <ul class="lista-programas no-margin">
+                <li class="celdas-programas"> Programa </li>
+                <li class="celdas-programas-final type-color-2 opacity-hover"> Photoshop</li>
+                <li class="celdas-programas"> Nivel</li>
+                <li class="celdas-programas nivel3 icono-conocimientos">
+                    <p class="visuallyhidden"> conocimiento de 6/10 </p>
+                </li>
+            </ul>
 
-                            <ul class="lista-programas">
-                                <li class="celdas-programas clear"> Programa </li>
-                                <li class="celdas-programas-final type-color-2 opacity-hover"> Ilustrator </li>
-                                <li class="celdas-programas"> Nivel</li>
-                                <li class="celdas-programas nivel5 icono-conocimientos">
-                                    <p class="visuallyhidden"> conocimiento de 6/10 </p>
-                                </li>
-                            </ul>
-                            <p class="type-color-2 opacity-hover programas-mas clear">Añadir programa</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
+            <ul class="lista-programas">
+                <li class="celdas-programas clear"> Programa </li>
+                <li class="celdas-programas-final type-color-2 opacity-hover"> Ilustrator </li>
+                <li class="celdas-programas"> Nivel</li>
+                <li class="celdas-programas nivel5 icono-conocimientos">
+                    <p class="visuallyhidden"> conocimiento de 6/10 </p>
+                </li>
+            </ul>
+            <p class="type-color-2 opacity-hover programas-mas clear">Añadir programa</p>
+        </div>
+    </div>
+</article>
+</section>
 
-            <section id="option-2" class="contenido-perfil option-2">
-                <article class="bloque-perfil cf">
-                   <span class="icono-portafolio icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div>
-                            <h2 class="secondary-title left">
-                                Portafolio
-                            </h2>
-                            <span class="lapiz icono-editar opacity-hover left"></span>
-                            <p class="secondary-subtitle margin-top clear">Añade las diferentes plataformas en las que se puedan ver tus trabajos.</p>
-                            <p class="secondary-subtitle">¡Ayudará a que conozcan mas de ti y dará visibildad a tus proyectos!</p>
-                        </div>
-                        <div class="descripcion-mi-perfil">
-                            <div>
-                                <div class="icono-rectangular portafolio-behance-c left"> </div>
-                                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            </div>
-                            <div>
-                            <div class="icono-rectangular portafolio-domestika-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            </div>
-                            <div>
-                            <div class="icono-rectangular portafolio-linkedin-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            </div>
-                            <div>
-                            <div class="icono-rectangular portafolio-tumblert-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            </div>
-                            <div>
-                            <div class="icono-rectangular portafolio-instagram-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            </div>
-                            <div>
-                            <div class="icono-rectangular portafolio-pinterest-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="bloque-perfil cf">
-                    <span class="icono-imagenes icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div>
-                            <h2 class="secondary-title left">
-                                Galería de imágenes
-                            </h2>
-                            <span class="lapiz icono-editar opacity-hover left"></span>
-                        </div>
-                        <div class="descripcion-mi-perfil clear">
-                            <div class="foto-trabajo">
-                                <img src="imagenes/anuncio-28.jpg" alt="paisaje con arboles">
-                            </div>
-                            <div class="foto-trabajo">
-                                <img src="imagenes/anuncio-5.jpg" alt="fotografia que capta el movimiento">
-                            </div>
-                            <a class="foto-trabajo opacity-hover">
-                                <img src="imagenes/anuncio-30.jpg" alt="añadir más imágenes">
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </section>
+<section id="option-2" class="contenido-perfil option-2">
+    <article class="bloque-perfil cf">
+     <span class="icono-portafolio icono-rectangular-grande left"> </span>
+     <div class="contenido">
+        <div>
+            <h2 class="secondary-title left">
+                Portafolio
+            </h2>
+            <span class="lapiz icono-editar opacity-hover left"></span>
+            <p class="secondary-subtitle margin-top clear">Añade las diferentes plataformas en las que se puedan ver tus trabajos.</p>
+            <p class="secondary-subtitle">¡Ayudará a que conozcan mas de ti y dará visibildad a tus proyectos!</p>
+        </div>
+        <div class="descripcion-mi-perfil">
+            <div>
+                <div class="icono-rectangular portafolio-behance-c left"> </div>
+                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+            </div>
+            <div>
+                <div class="icono-rectangular portafolio-domestika-c left"> </div>
+                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+            </div>
+            <div>
+                <div class="icono-rectangular portafolio-linkedin-c left"> </div>
+                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+            </div>
+            <div>
+                <div class="icono-rectangular portafolio-tumblert-c left"> </div>
+                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+            </div>
+            <div>
+                <div class="icono-rectangular portafolio-instagram-c left"> </div>
+                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+            </div>
+            <div>
+                <div class="icono-rectangular portafolio-pinterest-c left"> </div>
+                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+            </div>
+        </div>
+    </div>
+</article>
+<article class="bloque-perfil cf">
+    <span class="icono-imagenes icono-rectangular-grande left"> </span>
+    <div class="contenido">
+        <div>
+            <h2 class="secondary-title left">
+                Galería de imágenes
+            </h2>
+            <span class="lapiz icono-editar opacity-hover left"></span>
+        </div>
+        <div class="descripcion-mi-perfil clear">
+            <div class="foto-trabajo">
+                <img src="imagenes/anuncio-28.jpg" alt="paisaje con arboles">
+            </div>
+            <div class="foto-trabajo">
+                <img src="imagenes/anuncio-5.jpg" alt="fotografia que capta el movimiento">
+            </div>
+            <a class="foto-trabajo opacity-hover">
+                <img src="imagenes/anuncio-30.jpg" alt="añadir más imágenes">
+            </a>
+        </div>
+    </div>
+</article>
+</section>
 
-            <section id="option-3" class="contenido-perfil option-3">
-                <article class="bloque-perfil cf">
-                    <span class="icono-perfil icono-rectangular-grande left"> </span>
-                    <div class="contenido">
-                        <div class="titulo-perfil">
-                            <h2 class="secondary-title">
-                                Cursos
-                            </h2>
-                            <p class="secondary-subtitle margin-top">Borra los cursos que están desactualizados.¡Así evitarás recibir mensajes no deseados!
-                            </p>
-                            <p class="secondary-subtitle">
-                            </p>
-                        </div>
+<section id="option-3" class="contenido-perfil option-3">
+    <article class="bloque-perfil cf">
+        <span class="icono-perfil icono-rectangular-grande left"> </span>
+        <div class="contenido">
+            <div class="titulo-perfil">
+                <h2 class="secondary-title">
+                    Cursos
+                </h2>
+                <p class="secondary-subtitle margin-top">Borra los cursos que están desactualizados.¡Así evitarás recibir mensajes no deseados!
+                </p>
+                <p class="secondary-subtitle">
+                </p>
+            </div>
 
-                        <div class="descripcion-mi-perfil">
+            <div class="descripcion-mi-perfil">
 
                 <article class="anuncio-perfil">
-                        <a class="type-color-5" href="#">
-                            <div class="image-container cf">
+                    <a class="type-color-5" href="#">
+                        <div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-20.jpg" alt="Imagen fotografía del movimiento">
-                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-                                    </div>
+                            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
                             </div>
+                        </div>
 
-                           <div class="hover-container">
-                                    <p>Aprenderás cómo mejorar tus vídeos añadiendo efectos, renderizar con alta resolución, etc. con Cinema 4D. Explícame tu caso y miramos como organizarnos. </p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Miquel Sanjuan</span></p>
-                                        <p class="tags type-color-1">#cinema 4d</p>
-                                    </div>
-                            </div>
-                        </a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Grandes vídeos con Cinema 4D</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                     <span class="icono left audiovisual-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Audiovisual</span>
-                                    </div>
-                                </div>
-                             <a href="">
-                                <div class="total-icono right opacity-hover">
-                                   <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(8)</span>
-                                </div>
-                            </div></a>
+                        <div class="hover-container">
+                            <p>Aprenderás cómo mejorar tus vídeos añadiendo efectos, renderizar con alta resolución, etc. con Cinema 4D. Explícame tu caso y miramos como organizarnos. </p>
+                            <div class="sub-contenido-curso">
+                                <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                                <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
+                                <p class="light">Nombre:<span class="type-color-5">Miquel Sanjuan</span></p>
+                                <p class="tags type-color-1">#cinema 4d</p>
                             </div>
                         </div>
-                    </article>
-                    <article class="anuncio-perfil-propio">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
-                            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-                            </div>
+                    </a>
+                    <div class="content-container-cursos cf">
+                        <div class="texto-cuadrado-cursos">
+                            <h2 class="secondary-title">Grandes vídeos con Cinema 4D</h2>
                         </div>
-                           <div class="hover-container">
-                                    <p>En este curso puedo enseñarte a maquetar formularios para tu web de la forma más sencilla, con HTML y CSS. No perderás el tiempo, ¡te enseñaré en 1 hora!</p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Jordi Martín</span></p>
-                                        <p class="tags type-color-1">#formulario</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Maquetar formularios en 1 hora</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                    <span class="icono left web-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Web</span>
-                                    </div>
-                                </div>
-                             <a href="">
-                                <div class="total-icono right opacity-hover">
-                                  <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar-2"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(21)</span>
-                                </div>
-                            </div></a>
-                            </div>
+                        <div class="mas-info">
+                            <div class="total-icono">
+                             <div class="container-icon">
+                               <span class="icono left audiovisual-c"></span>
+                           </div>
+                           <div class="container-icon">
+                            <span class="secondary-subtitle">Audiovisual</span>
                         </div>
-                    </article>
-                    <article class="anuncio-perfil">
-                        <a class="type-color-5" href="#"><div class="image-container cf">
-                            <img class="img-curso" src="imagenes/anuncio-23.jpg" alt="Imagen de formatos de imagen">
-                            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-                            </div>
+                    </div>
+                    <a href="">
+                        <div class="total-icono right opacity-hover">
+                         <div class="container-stars">
+                            <span class="icono-stars left estrellas-valorar"></span>
                         </div>
-                            <div class="hover-container">
-                                    <p>Si aún no controlas  cuando se tiene que exportar una imagen en .png .jpg .pdf, en una sesión de una hora te explicaré los pros y los contras de cada extensión y cuando se usan. </p>
-                                    <div class="sub-contenido-curso">
-                                        <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
-                                        <p class="light">Disponibilidad:<span class="type-color-5">Tardes y noches</span></p>
-                                        <p class="light">Nombre:<span class="type-color-5">Santiago Cortés</span></p>
-                                        <p class="tags type-color-1">#extensiones</p>
-                                    </div>
-                            </div></a>
-                        <div class="content-container-cursos cf">
-                            <div class="texto-cuadrado-cursos">
-                                <h2 class="secondary-title">Guarda los documentos de Photoshop</h2>
-                            </div>
-                            <div class="mas-info">
-                                <div class="total-icono">
-                                   <div class="container-icon">
-                                   <span class="icono left grafico-c"></span>
-                                    </div>
-                                     <div class="container-icon">
-                                    <span class="secondary-subtitle">Gráfico</span>
-                                    </div>
-                                </div>
-                             <a href="">
-                                <div class="total-icono right opacity-hover">
-                                 <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar-4"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(11)</span>
-                                </div>
-                            </div></a>
-                            </div>
+                        <div class="container-icon">
+                            <span class="modificar type-color-2">(8)</span>
                         </div>
-                    </article>
-                       </div>
-                   </div>
-               </article>
-           </section>
-    <section id="option-4" class="contenido-perfil option-4">
-        <article class="bloque-perfil cf">
-                    <span class="icono-dudas icono-rectangular-grande left"> </span>
-                        <div class="contenido">
-                            <div>
-                                <h2 class="secondary-title">
-                                    Dudas
-                                </h2>
-                                <p class="secondary-subtitle margin-top">Borra las dudas que ya estén resueltas. ¡Así evitarás recibir mensajes no deseados!</p>
-                            </div>
-                            <div class="descripcion-mi-perfil">
-                                <article class="anuncio-perfil">
-                        <a class="type-color-5" href="#"><div class="foto">
-                            <img class="foto-alumno imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
-                            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-                            </div>
+                    </div></a>
+                </div>
+            </div>
+        </article>
+        <article class="anuncio-perfil-propio">
+            <a class="type-color-5" href="#"><div class="image-container cf">
+                <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
+                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
+                </div>
+            </div>
+            <div class="hover-container">
+                <p>En este curso puedo enseñarte a maquetar formularios para tu web de la forma más sencilla, con HTML y CSS. No perderás el tiempo, ¡te enseñaré en 1 hora!</p>
+                <div class="sub-contenido-curso">
+                    <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                    <p class="light">Disponibilidad:<span class="type-color-5">Mañanas</span></p>
+                    <p class="light">Nombre:<span class="type-color-5">Jordi Martín</span></p>
+                    <p class="tags type-color-1">#formulario</p>
+                </div>
+            </div></a>
+            <div class="content-container-cursos cf">
+                <div class="texto-cuadrado-cursos">
+                    <h2 class="secondary-title">Maquetar formularios en 1 hora</h2>
+                </div>
+                <div class="mas-info">
+                    <div class="total-icono">
+                     <div class="container-icon">
+                        <span class="icono left web-c"></span>
+                    </div>
+                    <div class="container-icon">
+                        <span class="secondary-subtitle">Web</span>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="total-icono right opacity-hover">
+                      <div class="container-stars">
+                        <span class="icono-stars left estrellas-valorar-2"></span>
+                    </div>
+                    <div class="container-icon">
+                        <span class="modificar type-color-2">(21)</span>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </article>
+    <article class="anuncio-perfil">
+        <a class="type-color-5" href="#"><div class="image-container cf">
+            <img class="img-curso" src="imagenes/anuncio-23.jpg" alt="Imagen de formatos de imagen">
+            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
+            </div>
+        </div>
+        <div class="hover-container">
+            <p>Si aún no controlas  cuando se tiene que exportar una imagen en .png .jpg .pdf, en una sesión de una hora te explicaré los pros y los contras de cada extensión y cuando se usan. </p>
+            <div class="sub-contenido-curso">
+                <p class="light">Método:<span class="type-color-5">Skype y Mail</span></p>
+                <p class="light">Disponibilidad:<span class="type-color-5">Tardes y noches</span></p>
+                <p class="light">Nombre:<span class="type-color-5">Santiago Cortés</span></p>
+                <p class="tags type-color-1">#extensiones</p>
+            </div>
+        </div></a>
+        <div class="content-container-cursos cf">
+            <div class="texto-cuadrado-cursos">
+                <h2 class="secondary-title">Guarda los documentos de Photoshop</h2>
+            </div>
+            <div class="mas-info">
+                <div class="total-icono">
+                 <div class="container-icon">
+                     <span class="icono left grafico-c"></span>
+                 </div>
+                 <div class="container-icon">
+                    <span class="secondary-subtitle">Gráfico</span>
+                </div>
+            </div>
+            <a href="">
+                <div class="total-icono right opacity-hover">
+                   <div class="container-stars">
+                    <span class="icono-stars left estrellas-valorar-4"></span>
+                </div>
+                <div class="container-icon">
+                    <span class="modificar type-color-2">(11)</span>
+                </div>
+            </div></a>
+        </div>
+    </div>
+</article>
+</div>
+</div>
+</article>
+</section>
+<section id="option-4" class="contenido-perfil option-4">
+    <article class="bloque-perfil cf">
+        <span class="icono-dudas icono-rectangular-grande left"> </span>
+        <div class="contenido">
+            <div>
+                <h2 class="secondary-title">
+                    Dudas
+                </h2>
+                <p class="secondary-subtitle margin-top">Borra las dudas que ya estén resueltas. ¡Así evitarás recibir mensajes no deseados!</p>
+            </div>
+            <div class="descripcion-mi-perfil">
+                <article class="anuncio-perfil">
+                    <a class="type-color-5" href="#"><div class="foto">
+                        <img class="foto-alumno imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
+                        <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
                         </div>
-                        <div class="content-container cf">
+                    </div>
+                    <div class="content-container cf">
                         <div class="texto-cuadrado">
                             <h2 class="secondary-title">Quiero subir mi wordpress a un servidor</h2>
                             <p class="centrado">He creado una web en local en wordpress. Tengo un dominio y un servidor pero no consigo subirla. Ayudame, porfavor!.
@@ -522,7 +521,7 @@
                         </div></a>
                         <div class="mas-info">
                             <div class="total-icono">
-                            <div class="container-icon">
+                                <div class="container-icon">
                                     <span class="icono left programacion-c"></span>
                                 </div>
                                 <div class="container-icon">
@@ -531,7 +530,7 @@
                             </div>
                             <a class="type-color-5" href="#">
                                 <div class="total-icono right opacity-hover">
-                                 <div class="container-stars">
+                                   <div class="container-stars">
                                     <span class="icono-stars left estrellas-valorar"></span>
                                 </div>
                                 <div class="container-icon">
@@ -541,44 +540,44 @@
                         </div>
                     </div>
                 </article>
-                           </div>
-                       </div>
-                   </article>
-    </section>
-    <section id="option-5" class="contenido-perfil option-5">
-        <article class="bloque-perfil cf">
-            <span class="icono-valoraciones icono-rectangular-grande left"> </span>
-            <div class="contenido">
-                <div>
-                    <h2 class="secondary-title">
-                        Valoraciones
-                    </h2>
-                    <p class="secondary-subtitle margin-top">Visualiza tus valoraciones, y compártelas con tus redes sociales.</p>
+            </div>
+        </div>
+    </article>
+</section>
+<section id="option-5" class="contenido-perfil option-5">
+    <article class="bloque-perfil cf">
+        <span class="icono-valoraciones icono-rectangular-grande left"> </span>
+        <div class="contenido">
+            <div>
+                <h2 class="secondary-title">
+                    Valoraciones
+                </h2>
+                <p class="secondary-subtitle margin-top">Visualiza tus valoraciones, y compártelas con tus redes sociales.</p>
+            </div>
+            <div class="descripcion-mi-perfil">
+                <div class="imagen-valoraciones imagen-hover">
+                    <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-6-buscador.jpg" alt="imagen usuario">
                 </div>
-                <div class="descripcion-mi-perfil">
-                    <div class="imagen-valoraciones imagen-hover">
-                        <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-6-buscador.jpg" alt="imagen usuario">
-                    </div>
-                    <div class="texto-valoraciones">
-                        <p class="margenes-valoraciones">Os recomiendo a Sílvia totalmente! Me pudo ayudar mucho con sus conocimientos y con la paciencia que tiene. Gracias!</p>
-                        <p>Gracias Marta!!</p>
-                        <div>
-                            <div class="stars-grande estrellas-anuncios-4 left"> </div>
-                            <div class="right">
-                                <div class="left">Comparte</div>
-                                <div class="icono-facebook icono-compartir left opacity-hover"></div>
-                                <div class="icono-twitter icono-compartir left opacity-hover"></div>
-                                <div class="icono-linkedin icono-compartir left opacity-hover"></div>
-                            </div>
-                            <hr class="linia clear"/>
+                <div class="texto-valoraciones">
+                    <p class="margenes-valoraciones">Os recomiendo a Sílvia totalmente! Me pudo ayudar mucho con sus conocimientos y con la paciencia que tiene. Gracias!</p>
+                    <p>Gracias Marta!!</p>
+                    <div>
+                        <div class="stars-grande estrellas-anuncios-4 left"> </div>
+                        <div class="right">
+                            <div class="left">Comparte</div>
+                            <div class="icono-facebook icono-compartir left opacity-hover"></div>
+                            <div class="icono-twitter icono-compartir left opacity-hover"></div>
+                            <div class="icono-linkedin icono-compartir left opacity-hover"></div>
                         </div>
+                        <hr class="linia clear"/>
                     </div>
+                </div>
 
-                    <div class="imagen-valoraciones">
-                        <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen usuario">
-                    </div>
-                    <div class="texto-valoraciones">
-                        <p class="margenes-valoraciones">Sílvia me ayudó ha hacer mi portafolio online con un Wordpress. Hicimos 3 clases de una hora y con esto tuve suficiente para tener mi portafolio perfecto.
+                <div class="imagen-valoraciones">
+                    <img class="imagen-anuncios-buscador imagen-redondo" src="imagenes/alumno-4-buscador.jpg" alt="imagen usuario">
+                </div>
+                <div class="texto-valoraciones">
+                    <p class="margenes-valoraciones">Sílvia me ayudó ha hacer mi portafolio online con un Wordpress. Hicimos 3 clases de una hora y con esto tuve suficiente para tener mi portafolio perfecto.
                         La recomiendo 100% :)</p>
                         <div>
                             <div class="stars-grande estrellas-anuncios-4 left"> </div>
@@ -631,7 +630,7 @@
                     </nav>
                     <div class="mensaje-contenido left">
                         <section id="option-recibido" class="option-recibido">
-                            <div class="mensaje-no-leido opacity:hover cf">
+                            <div class="mensaje-1 mensaje-no-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-14-buscador.jpg" alt="imagen del usuario">
@@ -639,10 +638,16 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Laia Terreizo</p>
                                     <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Podemos quedar mañana para aprender Photoshop?
                                     </p>
+                                    <div class="mensaje-desplegado-1">
+                                        <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, podemos quedar este martes?</p>
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
-
                             </div>
-                            <div class="mensaje-no-leido opacity:hover cf">
+                            <div class="mensaje-2 mensaje-no-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
@@ -650,9 +655,16 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Theoi Palazón</p>
                                     <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender retoque fotográfico
                                     </p>
+                                    <div class="mensaje-desplegado-2">
+                                        <p><span class="type-color-1 light">Texto del mensaje: </span> Buenas tardes Marta, podemos quedar este martes?</p>
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity:hover cf">
+                            <div class="mensaje-3 mensaje-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
@@ -660,9 +672,16 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Clara Turrado</p>
                                     <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Te enseño a mejorar tu web con diseño responsive
                                     </p>
+                                    <div class="mensaje-desplegado-3">
+                                        <p><span class="type-color-1 light">Texto del mensaje: </span> He estado practicando pero sigue sin funcionarme el renderizado en V-Ray. Podríamos quedar otro día? Invito a 2 cañas ;)</p>
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity:hover cf">
+                            <div class="mensaje-4 mensaje-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-10-buscador.jpg" alt="imagen del usuario">
@@ -670,9 +689,16 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Sandrita Monero</p>
                                     <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Te puedo resolver tus dudas de Photoshop
                                     </p>
+                                    <div class="mensaje-desplegado-4">
+                                        <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, podemos quedar este martes?</p>
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity-hover cf">
+                            <div class="mensaje-5 mensaje-leido cf">
                                 <div class="buscador-cerrar icono cruz-cerrar">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-2-buscador.jpg" alt="imagen del usuario">
@@ -680,12 +706,11 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Silvia Vertarmin</p>
                                     <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Te enseño a mejorar tus conocimientos de Photoshop
                                     </p>
-                                    <div class="mensaje-desplegado">
+                                    <div class="mensaje-desplegado-5">
                                         <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, te escribo porque e visto el anuncio y me interesó mucho podríamos coordinar para algún día? Estaría encantado en darte una buena merienda a cambio</p>
                                         <hr class="linia clear">
-                                        <p class="secondary-title padding-bottom">Respóndele el mensaje</p>
-                                        <p class="secondary-subtitle padding-bottom">Trata de  responder, tanto si te interesa como si no, para que el interesado sepa que has leído su mensaje</p>
-                                        <textarea id="input-mensaje" class="padding-bottom" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
                                         <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                     </div>
                                 </div>
@@ -693,81 +718,107 @@
 
                         </section>
                         <section id="option-no-leido" class="option-no-leido">
-                           <div class="mensaje-no-leido opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                         <div class="mensaje-1 mensaje-no-leido opacity:hover cf">
+                            <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                            </div>
+                            <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-14-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p class=""><span class="type-color-1 light">De: </span>Laia Terreizo</p>
+                                <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Podemos quedar mañana para aprender Photoshop?
+                                </p>
+                                <div class="mensaje-desplegado-1">
+                                    <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, podemos quedar este martes?</p>
+                                    <hr class="linia clear">
+                                    <p class="secondary-title">Responde el mensaje</p>
+                                    <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                 </div>
-                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-14-buscador.jpg" alt="imagen del usuario">
-                                <div class="texto-mensaje">
-                                    <p class=""><span class="type-color-1 light">De: </span>Laia Terreizo</p>
-                                    <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Podemos quedar mañana para aprender Photoshop?
-                                    </p>
-                                </div>
+                            </div>
 
+                        </div>
+                        <div class="mensaje-2 mensaje-no-leido opacity:hover cf">
+                            <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                             </div>
-                            <div class="mensaje-no-leido opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
-                                </div>
-                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
-                                <div class="texto-mensaje">
-                                    <p class=""><span class="type-color-1 light">De: </span>Theoi Palazón</p>
-                                    <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender retoque fotográfico
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mensaje-leido opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
-                                </div>
-                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-1-buscador.jpg" alt="imagen del usuario">
-                                <div class="texto-mensaje">
-                                    <p class=""><span class="type-color-1 light">De: </span>Marta Torrijo</p>
-                                    <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Te enseño HTML el miércoles
-                                    </p>
+                            <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p class=""><span class="type-color-1 light">De: </span>Theoi Palazón</p>
+                                <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender retoque fotográfico
+                                </p>
+                                <div class="mensaje-desplegado-2">
+                                    <p><span class="type-color-1 light">Texto del mensaje: </span> Buenas tardes Marta, podemos quedar este martes?</p>
+                                    <hr class="linia clear">
+                                    <p class="secondary-title">Responde el mensaje</p>
+                                    <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                 </div>
                             </div>
-                        </section>
-                        <section id="option-enviado" class="option-enviado">
-                            <div class="mensaje-leido-primero opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
-                                </div>
-                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
-                                <div class="texto-mensaje">
-                                    <p class=""><span class="type-color-1 light">De: </span>Jose Luis</p>
-                                    <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender Wordpress
-                                    </p>
+                        </div>
+                    </section>
+                    <section id="option-enviado" class="option-enviado">
+
+                        <div class="mensaje-3 mensaje-leido-primero opacity:hover cf">
+                            <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                            </div>
+                            <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-9-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p><span class="type-color-1 light">De: </span>Jose Luis</p>
+                                <p class="no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender Wordpress
+                                </p>
+                                <div class="mensaje-desplegado-3">
+                                    <p><span class="type-color-1 light">Texto del mensaje: </span>Hola Marta, podemos quedar este martes?</p>
+                                    <hr class="linia clear">
+                                    <p class="secondary-title">Responde el mensaje</p>
+                                    <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
-                                </div>
-                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-7-buscador.jpg" alt="imagen del usuario">
-                                <div class="texto-mensaje">
-                                    <p class=""><span class="type-color-1 light">De: </span>Silvia Etzhir</p>
-                                    <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Me enseñas wordpress?
-                                    </p>
+                        </div>
+
+                        <div class="mensaje-4 mensaje-leido opacity:hover cf">
+                            <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                            </div>
+                            <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-7-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p class=""><span class="type-color-1 light">De: </span>Silvia Etzhir</p>
+                                <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Me enseñas wordpress?
+                                </p>
+                                <div class="mensaje-desplegado-4">
+                                    <p><span class="type-color-1 light">Texto del mensaje: </span> Marta, te puedo ayudar con tus dudas!</p>
+                                    <hr class="linia clear">
+                                    <p class="secondary-title">Responde el mensaje</p>
+                                    <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                 </div>
                             </div>
-                            <div class="mensaje-leido opacity:hover cf">
-                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
-                                </div>
-                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
-                                <div class="texto-mensaje">
-                                    <p><span class="type-color-1 light">De: </span>Zaida Trevil</p>
-                                    <p class="no-margin"><span class="type-color-1 light">Curso: </span>Te enseño HTML el miércoles
-                                    </p>
+                        </div>
+                        <div class="mensaje-5 mensaje-leido opacity:hover cf">
+                            <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                            </div>
+                            <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-11-buscador.jpg" alt="imagen del usuario">
+                            <div class="texto-mensaje">
+                                <p><span class="type-color-1 light">De: </span>Zaida Trevil</p>
+                                <p class="no-margin"><span class="type-color-1 light">Curso: </span>Te enseño HTML el miércoles
+                                </p>
+                                <div class="mensaje-desplegado-5">
+                                    <p><span class="type-color-1 light">Texto del mensaje: </span>Buenos días! Estoy interesado en hacer una clase contigo, crees que podrías ayudarme esta semana?</p>
+                                    <hr class="linia clear">
+                                    <p class="secondary-title">Responde el mensaje</p>
+                                    <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                    </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
-        </article>
+            </div>
+        </div>
     </section>
+</article>
+</section>
 </div>
 </div>
 </div>
 
-<!--footer -->
 <footer>
     <div class="pie cf">
         <section class="mini-box-pie">
@@ -797,124 +848,6 @@
             <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
         </section>
     </div>
-
 </footer>
-
-<script>
-$('td .icono-tabla-off').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-on').css({
-        'display': 'block'
-    });
-});
-$('td .icono-tabla-on').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-off').css({
-        'display': 'block'
-    });
-});
-<!--tabla menu -->
-$('.pestanya-2').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-2').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-2').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-3').click(function() {
-    $('.option-1').hide();
-    $('.option-2').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-3').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-3').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-4').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-2').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-4').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-4').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-5').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-2').hide();
-    $('.option-6').hide();
-    $('.option-5').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-5').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-6').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-2').hide();
-    $('.option-5').hide();
-    $('.option-6').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-6').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-1').click(function() {
-    $('.option-2').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-1').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-1').addClass('seleccionado');
-    return false;
-});
-<!--tabla mensajes -->
-$('.pestanya-m-no-leido').click(function() {
-    $('.option-recibido').hide();
-    $('.option-no-leido').show();
-    $('.option-enviado').hide();
-    $('.seleccionado-m').removeClass('seleccionado-m');
-    $('.pestanya-m-no-leido').addClass('seleccionado-m');
-    return false;
-});
-$('.pestanya-m-enviado').click(function() {
-    $('.option-recibido').hide();
-    $('.option-no-leido').hide();
-    $('.option-enviado').show();
-    $('.seleccionado-m').removeClass('seleccionado-m');
-    $('.pestanya-m-enviado').addClass('seleccionado-m');
-    return false;
-});
-$('.pestanya-m-recibido').click(function() {
-    $('.option-recibido').show();
-    $('.option-no-leido').hide();
-    $('.option-enviado').hide();
-    $('.seleccionado-m').removeClass('seleccionado-m');
-    $('.pestanya-m-recibido').addClass('seleccionado-m');
-    return false;
-});
-<!--abrir y cerrar mensaje -->
-$('#abrir').click(function(e){
-        $('.mensaje-desplegado').show();
-        return false;
-    });
-
-    $('#cerrar').click(function(e){
-        $('.mensaje-desplegado').hide();
-        return false;
-    });
-</script>
 </body>
 </html>

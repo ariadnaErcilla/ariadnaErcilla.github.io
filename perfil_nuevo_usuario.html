@@ -11,12 +11,14 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-  <header class="cf">
+    <header class="cf">
+        <div class="container-home cf">
         <div class="logo">
             <a href="index.html">
                 <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
@@ -25,52 +27,50 @@
         <nav class="menu cf">
             <div class="float-menu">
                 <ul class="esconder">
-                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="registro">
                     <ul class="esconder">
-                        <li><a href="#login">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li><a class="login" href="#login">Log in</a></li>
+                        <li><a class="registro" href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <div class="dropdown__wrap">
+                    <div class="dropdown-wrap">
                         <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
                         </a>
                         <ul class="dropdown">
-                            <li class="alineacion_vertical">
-                                <a href="#">Encuentra tu curso</a>
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
                             </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Busca tu alumno</a>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
                             </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">¿Cómo funciona?</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Mi perfil</a>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
                             </li>
                         </ul>
                     </div>
                     <a id="abrir" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover" alt="Lupa-buscador"></span>
                     </a>
                 </div>
             </div>
         </nav>
+    </div>
         <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
-                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
+                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
                 </div>
                 <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"  alt="Cerrar-buscador"></span>
                 </a>
             </div>
         </div>
@@ -96,15 +96,21 @@
                         <span class="lapiz icono-editar-margen opacity-hover left"></span>
                     </div>
                     <div class="clear">
-                        <p> <span class="type-color-1 light">Status:</span></p>
-                        <p> <span class="type-color-1 light">Categoría:</span></p>
-                        <p> <span class="type-color-1 light">Edad:</span></p>
+                        <ul class="lista-programas no-margin">
+                                <li class="celdas-perfil-corta type-color-1 light"> Status </li>
+                                <li class="celdas-perfil"> <input type="text" id="input-perfil" placeholder="Ej: estudiante"></li>
+                                <li class="celdas-perfil-corta type-color-1 light"> Categoría </li>
+                                <li class="celdas-perfil"> <input type="text" id="input-perfil" placeholder="Ej: gráfico"></li>
+                                <li class="celdas-perfil-corta type-color-1 light"> Edad </li>
+                                <li class="celdas-perfil"> <input type="text" id="input-perfil"></li>
+                        </ul>
                     </div>
                 </div>
 
-                <a class="button-2 boton-margen large-button type-color-3" href="#contactar">Publica tu curso</a>
+                <a class="button-2 boton-margen large-button type-color-3 publicar-curso" href="#">Publica tu curso</a>
+                <a class="button-2 boton-margen large-button type-color-3 contactar" href="#">Contáctale</a>
                 <p class="programas-mas"> ¡Aquí podrás publicar la clase que necesitas! </p>
-                <a class="button-3 type-color-2 large-button" href="#valorar">Publica tu duda</a>
+                <a class="button-3 type-color-2 large-button publicar-duda" href="#">Publica tu duda</a>
         </div>
 
         <div class="box-perfil cell-tabla cf">
@@ -399,7 +405,7 @@
                         <p>Publica todas aquellas dudas que tengas sobre programas informáticos para que otros creativos lo vean y te ayuden.
                         </p>
                         <div class="aun-no-publicado">
-                        <a class="button-2 margin-top type-color-3 publicar-curso margin-auto" href="#"><span>Publica tu duda</span></a>
+                        <a class="button-2 margin-top type-color-3 publicar-duda margin-auto" href="#"><span>Publica tu duda</span></a>
                         </div>
                 </div>
                            </div>
@@ -449,7 +455,7 @@
                     </nav>
                     <div class="mensaje-contenido left">
                         <section id="option-recibido" class="option-recibido">
-                            <div class="mensaje-no-leido opacity:hover cf">
+                            <div class="mensaje-1 mensaje-no-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-29-buscador.jpg" alt="imagen del usuario">
@@ -457,11 +463,17 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Puntoyseguido</p>
                                     <p class=" no-margin secondary-subtitle"> <span class="type-color-2">Bienvenido a la comunidad de Puntoyseguido!</span> Aquí encontrarás los mensajes de los creativos que quieren contactar contigo! Así que... estate atento!
                                     </p>
+                                    <div class="mensaje-desplegado-1">
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                         <section id="option-no-leido" class="option-no-leido">
-                            <div class="mensaje-no-leido opacity:hover cf">
+                            <div class="mensaje-1 mensaje-no-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-29-buscador.jpg" alt="imagen del usuario">
@@ -469,11 +481,17 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Puntoyseguido</p>
                                     <p class=" no-margin secondary-subtitle"> <span class="type-color-2">Bienvenido a la comunidad de Puntoyseguido!</span> Aquí encontrarás los mensajes de los creativos que quieren contactar contigo! Así que... estate atento!
                                     </p>
+                                    <div class="mensaje-desplegado-1">
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                         <section id="option-enviado" class="option-enviado">
-                            <div class="mensaje-no-leido opacity:hover cf">
+                            <div class="mensaje-1 mensaje-no-leido opacity:hover cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-29-buscador.jpg" alt="imagen del usuario">
@@ -481,6 +499,12 @@
                                     <p class=""><span class="type-color-1 light">De: </span>Puntoyseguido</p>
                                     <p class=" no-margin secondary-subtitle"> <span class="type-color-2">Aún no has enviado ningún mensaje!</span> Esta es una buena ocasión para empezar a contactar con otros creativos!
                                     </p>
+                                    <div class="mensaje-desplegado-1">
+                                        <hr class="linia clear">
+                                        <p class="secondary-title">Responde el mensaje</p>
+                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
+                                    </div>
                                 </div>
                             </div>
                         </section>

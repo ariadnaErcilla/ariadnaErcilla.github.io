@@ -1,3 +1,4 @@
+/*pestañas*/
 .box-perfil {
     background-color: white;
     overflow: hidden;
@@ -5,15 +6,15 @@
 }
 
 .menu-interior {
-    width: 100%;
-    text-align: left;
-    padding: 0;
     background-color: #00A6A5;
+    padding: 0;
+    text-align: left;
+    width: 100%;
 }
 
 .menu-interior ul {
-    list-style: none;
     padding: 0;
+    list-style: none;
     margin:0;
 }
 
@@ -22,18 +23,18 @@
 }
 
 .pestanyas a{
-    color:white;
-    text-decoration: none;
     background-color: #00A6A5;
-    padding: 20px 15px;
+    color:white;
     display:block;
+    padding: 20px 15px;
+    text-decoration: none;
 }
 
 .pestanyas a:hover,
 .pestanyas a.seleccionado {
     background-color: white;
-    text-decoration: none;
     color: #00A6A5;
+    text-decoration: none;
 }
 
 .contenido-perfil{
@@ -53,16 +54,16 @@
 
 .ul-mensajes{
     background-color: rgb(240, 240, 240);
-    margin: 0;
     border: 1px solid rgb(240, 240, 240);
+    margin: 0;
 }
 
 .contenido-mensaje{
-    list-style: none;
-    text-decoration: none;
     background-color: white;
-    padding: 16px 10px;
     border-bottom: 1px solid rgb(240, 240, 240);
+    list-style: none;
+    padding: 16px 10px;
+    text-decoration: none;
     &:last-child{
         border-bottom: none;
     }

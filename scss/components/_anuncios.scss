@@ -1,43 +1,34 @@
+/*anuncios*/
 .todos-anuncios {
     float:right;
-    width: 83%;
     margin: 10px 0 40px 0;
+    width: 83%;
 
-     li{
+    li{
         list-style: none;
         text-align: center;
-
     }
 }
 
 .anuncio {
-
-    margin-bottom:20%;
-    position: relative;
     background-color: white;
+    margin-bottom: 20%;
+    position: relative;
 
       &:hover{
-
         .hover-container{
             display: block;
         }
     }
-
 }
-.content-container{
 
-    padding:10px 20px 0 20px;
-
-}
-.content-container-cursos{
-
-    padding:20px 20px 0 20px;
-
+.content-container, .content-container-cursos{
+    padding: 10px 20px 0 20px;
 }
 
 .texto-cuadrado {
-    text-align: center;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 .texto-cuadrado-cursos{
@@ -46,8 +37,8 @@
 }
 
 .mas-info{
-    width: 100%;
     padding-bottom: 60px;
+    width: 100%;
 }
 
 .anuncio-destacado{
@@ -56,11 +47,11 @@
 }
 
 .texto-cuadrado-destacado{
-    padding:35px 20px;
+    padding: 35px 20px;
 }
 
 .mas-info-destacado{
-    margin:10px;
+    margin: 10px;
     padding-bottom: 20px;
 }
 
@@ -69,12 +60,13 @@ Buscador
 -----------*/
 
 .titular-seccion-buscador{
-    width: 100%;
     float: right;
     margin-bottom: 30px;
-    position: relative;
     padding: 15px;
+    position: relative;
+    width: 100%;
 }
+
 .especial{
     float: left;
     width: 100%;
@@ -105,24 +97,26 @@ Buscador
 
 .texto-anuncios-buscador{
     float: right;
-    width: 65%;
     margin: 25px 0 0 5px;
+    width: 65%;
 }
+
 .container-dudas-cursos{
-    width:100%;
     margin-top: 5px;
+    width:100%;
 }
 
 .container-cantidad{
     float: left;
+    margin: 10px 10px 0 0;
+    //ponia margin-right, mal escrito y lo pongo margin
     width: 100%;
-    margin-right: 10px 10px 0 0;
 }
 
 .total-icono-buscador{
     float: left;
-    width: 100%;
     margin-top: 15px;
+    width: 100%;
 }
 
 @media all and (min-width: 500px) {
@@ -133,12 +127,12 @@ Buscador
 
 /*-------
 ayuda
-
 -------*/
+
 .foto{
     margin: 0 auto;
-    width: 36%;
     padding-top: 20px;
+    width: 36%;
 }
 
 .foto-alumno {
@@ -146,8 +140,8 @@ ayuda
 }
 
 .texto-cuadrado-large {
-    text-align: center;
     padding: 70px 20px 78px 20px;
+    text-align: center;
 }
 
 /*----------
@@ -161,42 +155,41 @@ encuentra
 }
 
 .image-container{
-    width: 100%;
     height: 0;
-    position:relative;
     overflow: hidden;
     padding-bottom: 77%;
+    position: relative;
+    width: 100%;
 }
 
 .img-curso{
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    margin:auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 100%;
-
 }
 
 .texto-curso{
+    background-color: white;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
-    background-color: white;
 }
 
 .hover-container{
-    display:none;
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    margin:auto;
-    z-index:1;
-    background-color:white;
-    padding:0 15px;
+    background-color: white;
+    display: none;
+    margin: auto;
+    padding: 0 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .hover-container p{
@@ -211,7 +204,6 @@ Anuncio ampliado
     width: 60%;
     float: left;
 }
-
 
 .imagen-curso {
     margin-top: 20px;

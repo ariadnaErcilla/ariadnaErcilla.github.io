@@ -1,32 +1,27 @@
+/*tabla*/
 table {
   border-collapse: collapse;
 }
 
 td, th {
-    padding: 0.7rem;
-    vertical-align: middle;
-    text-align: center;
     font-weight: 400;
+    padding: 0.7rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .reducir-tamano {
     padding: 0.3rem;
 }
 
-th {
+th,
+.second-td {
 	background-color: #DCDCDB;
 }
 
-.second-th {
-    background-color: #F0F0F0
-}
-
+.second-th,
 td {
-	background-color: #F0F0F0;
-}
-
-.second-td {
-    background-color: #DCDCDB;
+    background-color: #F0F0F0
 }
 
 .white-table{
@@ -48,8 +43,8 @@ td {
 }
 
 .border-table{
+    border: 0;
 	width: 100%;
-	border: 0;
 }
 
 .border-blue{
@@ -63,7 +58,7 @@ td {
 
 .cell-tabla{
     display: table-cell;
-    vertical-align: top;
     border: rgba(51, 51, 51, 0.15) 0 solid;
     border-width: 20px 20px 20px 0;
+    vertical-align: top;
 }

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
+=======
+>>>>>>> f38c1b50d7e0078e0ec4366449f169bee6ee9358
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +12,15 @@
 
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<<<<<<< HEAD
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
+=======
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+>>>>>>> f38c1b50d7e0078e0ec4366449f169bee6ee9358
 </head>
 <body class="sg-style-guide">
     <header class="cf">
@@ -127,7 +137,7 @@
                                     <section>
                                         <h1 class="sg-title-style-guide sg-margin-top-text">Ilustraciones</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">En este apartado verán las ilustraciones de nuestros personajes que hemos utilizado en la plataforma para crear más empatía con el usuario</p>
-                                        <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-1-home.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-1-home.svg">
                                         <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-5-home.jpg">
                                         <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-3-home.jpg">
                                         <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-4-home.jpg">
@@ -310,7 +320,7 @@
                                         <h1 class="sg-title-style-guide sg-margin-top-text cf">Tablas</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">Podrán encontrar las tablas para marcar la disponibilidad de los usuarios</p>
 
-                                    <P>Tabla no clickeable utilizada para mostrar la disponibilidad de los usuarios</P>
+                                    <p class="sg-font-weight">Tabla no clickeable utilizada para mostrar la disponibilidad de los usuarios</p>
                                         <table>
                                             <tr>
                                                 <th></th>
@@ -354,7 +364,7 @@
                                         </tr>
                                     </table>
                                     <div class="sg-margin-top-logo cf">
-                                    <p>Tabla clickeable utilizada para para mostrar la disponibilidad de los usuarios</p>
+                                    <p class="sg-font-weight">Tabla clickeable utilizada para para mostrar la disponibilidad de los usuarios</p>
                                       <table>
                                         <tr>
                                             <th></th>
@@ -461,62 +471,70 @@
                         </tr>
                     </table>
                 </div>
-                <table class="sg-margin-top-logo clear">
-                <p>Tabla utilizada en el anuncio ampliado en el que el usuario puede visualizar mas información de los usuarios</p>
-                  <thead>
-                    <tr>
-                        <th></th>
-                        <th>Mañana</th>
-                        <th>Tarde</th>
-                        <th>Noche</th>
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr>
-                        <th class="title-table">Lunes</th>
-                        <td class="second-td"><img class="icono-tabla" src="imagenes/icono-circulo-azul.svg"></td>
-                        <td class="second-td"><img class="icono-tabla" src="imagenes/icono-circulo-azul.svg"></td>
-                        <td class="second-td"><img class="icono-tabla" src="imagenes/icono-circulo-azul.svg"></td>
-                    </tr>
-                    <tr>
-                        <th class="title-table">Martes</th>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="title-table">Jueves</th>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="title-table">Domingo</th>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                        <td class="second-td">
-                            <img class="icono-tabla" src="imagenes/icono-circulo-azul.svg">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="cf">
+                            <table class="sg-margin-top-logo clear">
+                                  <thead>
+                                    <tr>
+                                        <th class="reducir-tamano"></th>
+                                        <th class="reducir-tamano">Mañana</th>
+                                        <th class="reducir-tamano">Tarde</th>
+                                        <th class="reducir-tamano">Noche</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <th class="title-table reducir-tamano second-th">Lunes</th>
+                                        <td class="reducir-tamano">
+                                            <span class="icono-tabla icono-tabla manana-b"></span>
+                                        </td>
+                                        <td class="reducir-tamano">
+                                        </td>
+                                        <td class="reducir-tamano">
+                                            <span class="icono-tabla icono-tabla noche-b"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="title-table reducir-tamano">Martes</th>
+                                        <td class="reducir-tamano second-td">
+
+                                        </td>
+                                        <td class="reducir-tamano second-td">
+                                            <span class="icono-tabla icono-tabla tarde-b"></span>
+                                        </td>
+                                        <td class="reducir-tamano second-td">
+                                            <span class="icono-tabla icono-tabla noche-b"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="title-table reducir-tamano second-th">Jueves</th>
+                                        <td class="reducir-tamano">
+                                            <span class="icono-tabla icono-tabla manana-b"></span>
+                                        </td>
+                                        <td class="reducir-tamano">
+                                            <span class="icono-tabla icono-tabla tarde-b"></span>
+                                        </td>
+                                        <td class="reducir-tamano">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="title-table reducir-tamano">Domingo</th>
+                                        <td class="reducir-tamano second-td">
+
+                                        </td>
+                                        <td class="educir-tamano second-td">
+
+                                        </td>
+                                        <td class="reducir-tamano second-td">
+                                            <span class="icono-tabla icono-tabla noche-b"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
 
         </section>
 
@@ -615,7 +633,7 @@
                  <div class="sg-margin-auto">
                     <ul class="sg-todos-anuncios cf">
                      <li data-reciente="8" data-popularidad="16" data-puntuacion="3" class="large-4 medium-6 small-12 columns arquitectura">
-                        <article class="anuncio sg-sombra">
+                        <article class="anuncio sg-borde-gris">
                             <a class="type-color-5" href="#"><div class="image-container cf">
                                 <img class="img-curso" src="imagenes/anuncio-7.jpg" alt="Imagen modelar parque infantil">
                             </div>
@@ -655,9 +673,11 @@
                         </div>
                     </div>
                 </article>
+                <p class="sg-no-margin sg-margin-negativo sg-font-weight">Ejemplo anuncio página encuentra tu curso</p>
             </li>
+
             <li data-reciente="1" data-popularidad="1" data-puntuacion="1" class="large-4 medium-6 small-12 columns audiovisual">
-               <article class="anuncio sg-sombra">
+               <article class="anuncio sg-borde-gris">
                 <a class="type-color-5" href="perfil.html"><div class="foto">
                     <img class="foto-alumno imagen-redondo" src="imagenes/alumno-1-buscador.jpg" alt="imagen del usuario">
                 </div>
@@ -693,6 +713,7 @@
                     </a>
                 </div>
             </article>
+            <p class="sg-no-margin sg-margin-negativo sg-font-weight">Ejemplo anuncio página busca tu alumno</p>
         </li>
     </ul>
 </div>
@@ -701,7 +722,7 @@
 <section>
 <h1 class="sg-title-style-guide sg-margin-top-text cf">Pestañas</h1>
 <p class="sg-no-margin sg-font-weight sg-max-width">Verán las pestañas que se utilizan en el perfil del creativo</p>
- <div class="sg-margin-auto">
+ <div class="sg-margin-auto sg-borde-gris">
     <div class="menu-interior">
         <nav class="menu-interior">
             <ul class="cf">
@@ -791,9 +812,10 @@
 </section>
 </div>
 <section class="sg-fondo-header sg-container-full">
-    <h3 class="secondary-title">HEADER NO REGISTRADO</h3>
+    <h3 class="secondary-title sg-margin-title">HEADER NO REGISTRADO</h3>
 
-    <header class="sg-sombra cf">
+    <header class="cf">
+        <div class="container-home cf">
         <div class="logo">
             <a href="index.html">
                 <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
@@ -802,59 +824,58 @@
         <nav class="menu cf">
             <div class="float-menu">
                 <ul class="esconder">
-                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="registro">
                     <ul class="esconder">
-                        <li><a href="#login">Log in</a></li>
-                        <li><a href="#registro">Regístrate</a></li>
+                        <li><a class="login" href="#login">Log in</a></li>
+                        <li><a class="registro" href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="lupa-buscador">
-                    <div class="dropdown__wrap">
+                    <div class="dropdown-wrap">
                         <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
                         </a>
                         <ul class="dropdown">
-                            <li class="alineacion_vertical">
-                                <a href="#">Encuentra tu curso</a>
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
                             </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Busca tu alumno</a>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
                             </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">¿Cómo funciona?</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Mi perfil</a>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
                             </li>
                         </ul>
                     </div>
                     <a id="abrir" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover" alt="Lupa-buscador"></span>
                     </a>
                 </div>
             </div>
         </nav>
+    </div>
         <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
             <div class="buscador-container-derecha cf">
                 <div class="container-button-buscador left">
                     <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
                 </div>
                 <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"  alt="Cerrar-buscador"></span>
                 </a>
             </div>
         </div>
     </header>
-    <h3 class="secondary-title">HEADER REGISTRADO</h3>
+    <h3 class="secondary-title sg-margin-title">HEADER REGISTRADO</h3>
 
-    <header class="sg-sombra cf">
+    <header class="cf">
+        <div class="container-home cf">
         <div class="logo">
             <a href="index.html">
                 <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
@@ -863,61 +884,62 @@
         <nav class="menu cf">
             <div class="float-menu">
                 <ul class="esconder">
-                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
-                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="registro">
                     <ul class="esconder">
-                        <li><a href="#login">
-                            <span class="icono-rectangular-grande header-mensajeria" alt="Menu-navegador-desplegable"></span>
+                         <li><a class="mensajes" href="">
+                            <span class="icono-rectangular-grande header-mensajeria opacity-hover" alt="Menu-navegador-desplegable"></span>
                         </a>
                     </li>
-                    <li><a href="#registro">Mi perfil</a></li>
+                    <li><a href="perfil_nuevo_usuario.html">Mi perfil</a></li>
                 </ul>
             </div>
             <div class="lupa-buscador">
-                <div class="dropdown__wrap">
+                <div class="dropdown-wrap">
                     <a href="#">
-                        <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                        <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
                     </a>
                     <ul class="dropdown">
-                        <li class="alineacion_vertical">
-                            <a href="#">Encuentra tu curso</a>
+                        <li class="alineacion-vertical">
+                            <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
                         </li>
-                        <li class="alineacion_vertical">
-                            <a href="#">Busca tu alumno</a>
+                        <li class="alineacion-vertical">
+                            <a href="busca_tu_alumno.html">Busca tu alumno</a>
                         </li>
-                        <li class="alineacion_vertical">
-                            <a href="#">¿Cómo funciona?</a>
+                        <li class="alineacion-vertical">
+                            <a href="como_funciona.html">¿Cómo funciona?</a>
                         </li>
-                        <li class="alineacion_vertical">
-                            <a href="#">Mi perfil</a>
+                        <li class="alineacion-vertical">
+                            <a href="perfil_nuevo_usuario.html">Mi perfil</a>
                         </li>
                     </ul>
                 </div>
                 <a id="abrir-registrado" href="">
-                    <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                    <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover" alt="Lupa-buscador"></span>
                 </a>
             </div>
         </div>
     </nav>
+</div>
     <div class="buscador-desplegado cf">
-        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
         <div class="buscador-container-derecha cf">
             <div class="container-button-buscador left">
-                <a class="button-2 full-button-header type-color-3" href="#">Buscar</a>
+                <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
             </div>
             <a id="cerrar-registrado" href="">
-                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"  alt="Cerrar-buscador"></span>
             </a>
         </div>
     </div>
 </header>
-<div class="sg-float-none sg-margin-bottom">
-    <h3 class="secondary-title">FOOTER</h3>
+<div class="sg-float-none">
+    <h3 class="secondary-title sg-margin-title">FOOTER</h3>
     <footer>
         <div class="pie cf">
             <section class="mini-box-pie">
@@ -927,19 +949,19 @@
             </section>
             <section class="mini-box-pie">
                 <div class="iconos cf">
-                    <div class="red-social">
+                    <div class="red-social opacity-hover">
                         <a target="blank" href="https://twitter.com/puntoyseguidoo">
                             <span class="icono-rectangular-footer footer-blanco-tw" alt="twitter"></span>
                         </a>
                     </div>
 
-                    <div class="red-social">
+                    <div class="red-social opacity-hover">
                         <a target="blank" href="https://www.facebook.com/puntoyseguidoo">
                             <span class="icono-rectangular-footer footer-blanco-fb" alt="facebook"></span>
                         </a>
                     </div>
 
-                    <div class="red-social">
+                    <div class="red-social opacity-hover">
                         <a target="blank" href="https://www.instagram.com/puntoyseguidoo">
                             <span class="icono-rectangular-footer footer-blanco-insta" alt="instagram"></span>
                         </a>
@@ -956,7 +978,7 @@
                         <div>
                             <a class="button-unete medium-button type-color-3 left" href="graciasnews.html"><span>Únete</span></a>
                         </div>
-                        <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+                        <p class="terms type-color-3"><a class="type-color-3" href="normas_newsletter.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
                     </div>
                 </div>
             </section>
@@ -968,126 +990,11 @@
 </div>
 </section>
 <script>
-$('td .icono-tabla-off').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla').show();
-});
-$('td .icono-tabla').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-off').show();
-}); <!--tabla menu perfil -->
-$('.pestanya-2').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-2').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-2').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-3').click(function() {
-    $('.option-1').hide();
-    $('.option-2').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-3').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-3').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-4').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-2').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-4').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-4').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-5').click(function() {
-    $('.option-1').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-2').hide();
-    $('.option-6').hide();
-    $('.option-5').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-5').addClass('seleccionado');
-    return false;
-});
-$('.pestanya-1').click(function() {
-    $('.option-2').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-1').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-1').addClass('seleccionado');
-    return false;
-});
-    // $('.pestanyas').find('a').click(function() {
-    //     var href = $(this).attr('href');
+$('.mensajes').click(function(e){
+        e.preventDefault();
+        $('this').load('perfil_editable.html #option-6');
 
-    //     return false;
-    // });
-$('#show-popup1').click(function(e){
-    e.preventDefault();
-    $($('#popup1')[0]).show();
-});
-$('.close').click(function(e){
-    $('.masc:visible').hide();
-});
-$('#show-popup2').click(function(e){
-    e.preventDefault();
-    $($('#popup2')[0]).show();
-});
-$('.close').click(function(e){
-    $('.masc:visible').hide();
-});
-
-$('#abrir').click(function(e){
-    $('.buscador-desplegado').show();
-    return false;
-});
-
-$('#cerrar').click(function(e){
-    $('.buscador-desplegado').hide();
-    return false;
-});
-
-$('#cerrar-lupa').click(function(e){
-    $('.buscador-desplegado').hide();
-    return false;
-});
-
-$('#abrir-registrado').click(function(e){
-    $('.buscador-desplegado').show();
-    return false;
-});
-
-$('#cerrar-registrado').click(function(e){
-    $('.buscador-desplegado').hide();
-    return false;
-});
-<!--tabla de diponibilidad horarioa -->
-$('td .icono-tabla-off').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-on').css({
-        'display': 'block'
-    });
-});
-$('td .icono-tabla-on').click(function() {
-    $(this).hide();
-    $(this).siblings('.icono-tabla-off').css({
-        'display': 'block'
-    });
-});
+ });
 </script>
 </body>
 
