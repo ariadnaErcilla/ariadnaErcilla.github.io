@@ -17,19 +17,26 @@
 </head>
 
 <body>
-    <header class="cf">
+   <header class="cf">
         <div class="container-home cf">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
-                </a>
+        <div class="logo">
+            <a href="index.html">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
+            </a>
+        </div>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
             </div>
-            <nav class="menu cf">
-                <div class="float-menu">
+            <div class="right">
+                <div class="registro">
                     <ul class="esconder">
-                        <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                        <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                        <li><a class="login" href="#login">Log in</a></li>
+                        <li><a class="registro" href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
                 <div class="right">
@@ -58,11 +65,31 @@
                         </div>
                         <a id="abrir" href="">
                             <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+
+                <div class="lupa-buscador">
+                    <div class="dropdown-wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
                         </a>
+                        <ul class="dropdown">
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
+                            </li>
+                        </ul>
                     </div>
+                    <a id="abrir" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                    </a>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
         <div class="buscador-desplegado cf">
             <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
             <div class="buscador-container-derecha cf">
@@ -510,19 +537,19 @@
                 <div class="iconos cf">
                     <div class="red-social opacity-hover">
                         <a target="blank" href="https://twitter.com/puntoyseguidoo">
-                            <span class="icono-rectangular-footer footer-blanco-tw" alt="twitter"></span>
+                            <span class="icono-rectangular-footer footer-blanco-tw"></span>
                         </a>
                     </div>
 
                     <div class="red-social opacity-hover">
                         <a target="blank" href="https://www.facebook.com/puntoyseguidoo">
-                            <span class="icono-rectangular-footer footer-blanco-fb" alt="facebook"></span>
+                            <span class="icono-rectangular-footer footer-blanco-fb"></span>
                         </a>
                     </div>
 
                     <div class="red-social opacity-hover">
                         <a target="blank" href="https://www.instagram.com/puntoyseguidoo">
-                            <span class="icono-rectangular-footer footer-blanco-insta" alt="instagram"></span>
+                            <span class="icono-rectangular-footer footer-blanco-insta"></span>
                         </a>
                     </div>
                 </div>
@@ -542,8 +569,8 @@
                 </div>
             </section>
             <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+
         </div>
     </footer>
-</footer>
 </body>
 </html>

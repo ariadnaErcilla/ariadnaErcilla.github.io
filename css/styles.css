@@ -497,6 +497,9 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
+.container-perfil-button {
+  width: 20%; }
+
 /*botones*/
 .general-button, .button-1,
 .button-2,
@@ -516,6 +519,9 @@ Anuncio ampliado
 
 .button-3:hover,
 .hover-boton:hover {
+  color: white; }
+
+.button-3 span:hover {
   color: white; }
 
 .full-button,
@@ -1307,6 +1313,9 @@ contenedores anuncios
 .masc:target {
   opacity: 1;
   pointer-events: auto; }
+
+.popup-active {
+  overflow: hidden; }
 
 .popup {
   margin: 0 auto;
