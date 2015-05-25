@@ -1,3 +1,4 @@
+/*general*/
 *,
 *:before,
 *:after {
@@ -78,7 +79,6 @@ body {
 .linia{
     border: 0;
     border-top: 1px solid #999;
-    margin-top:20px;
 }
 
 .in-line{
@@ -108,7 +108,3 @@ body {
     margin: 0 auto;
 }/*habia una clase para esto? no la he encontrado y ue creado otra */
 
-ul {
-    padding-left:0;
-    //añadido el martes porque petaba todos los ul con un margen raro.
-}

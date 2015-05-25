@@ -1,3 +1,4 @@
+/*perfil*/
 .parte-derecha{
     float: right;
     margin: 50px 0 0 40px;
@@ -49,12 +50,12 @@
 
 .no-cursos-cuadrado{
     border: 1px solid #54c4c7;
-    margin-top: 100px 0 80px 0;
+    margin: 100px 0 80px 0;//ponia top
     width: 90%;
 }
 
 .contenido-no-cursos{
-    margin-top: 30px 0 30px 0;
+    margin: 30px 0 30px 0;//ponia top
     position: relative;
 }
 
@@ -67,6 +68,11 @@
     margin-bottom: 20px;
     vertical-align: top;
     width: 70%;
+}
+
+.botones-perfil{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .imagen-valoraciones{
@@ -180,6 +186,6 @@
     display: inline-block;
 }
 
-.boton-margen {
-    margin-bottom: 10px;
+.margen-formulario {
+    margin: 10px 0 20px;
 }

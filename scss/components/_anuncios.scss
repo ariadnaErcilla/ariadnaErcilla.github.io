@@ -1,3 +1,4 @@
+/*anuncios*/
 .todos-anuncios {
     float:right;
     margin: 10px 0 40px 0;
@@ -107,7 +108,7 @@ Buscador
 
 .container-cantidad{
     float: left;
-    margin-right: 10px 10px 0 0;
+    margin: 10px 10px 0 0;
     width: 100%;
 }
 
@@ -115,6 +116,10 @@ Buscador
     float: left;
     margin-top: 15px;
     width: 100%;
+}
+
+.padding-boton{
+    padding: 30px;
 }
 
 @media all and (min-width: 500px) {
@@ -207,4 +212,6 @@ Anuncio ampliado
     margin-top: 20px;
     max-width: 100%;
 }
-
+.container-perfil-button{
+    width: 20%;
+}

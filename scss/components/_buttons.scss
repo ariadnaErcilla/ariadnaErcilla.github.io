@@ -1,3 +1,4 @@
+/*botones*/
 .general-button{
     border: none;
     border-radius: 8px;
@@ -8,11 +9,15 @@
 }
 
 .general-button:hover,
-.button-mail:hover{
+.button-mail:hover,{
     background-color: #f28960;
 }
 
-.button-3:hover{
+.button-3:hover,
+.hover-boton:hover{
+    color:white;
+}
+.button-3 span:hover{
     color:white;
 }
 
@@ -161,6 +166,19 @@
     background-size:contain;
 }
 
-
-
+.buzon-buscador{
+  background-image: url(../imagenes/mail-b.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 16px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+}
 
