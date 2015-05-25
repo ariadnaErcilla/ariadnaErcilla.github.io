@@ -303,8 +303,7 @@ body {
 
 .linia {
   border: 0;
-  border-top: 1px solid #999;
-  margin-top: 20px; }
+  border-top: 1px solid #999; }
 
 .in-line {
   display: inline-block; }
@@ -328,9 +327,6 @@ body {
   margin: 0 auto; }
 
 /*habia una clase para esto? no la he encontrado y ue creado otra */
-ul {
-  padding-left: 0; }
-
 /*anuncios*/
 .todos-anuncios {
   float: right;
@@ -649,6 +645,9 @@ Anuncio ampliado
 /*--------
 Text inputs and text areas
 --------*/
+select {
+  border-radius: 30px; }
+
 .pform {
   padding-top: 8px;
   margin: 0; }
@@ -1811,6 +1810,9 @@ header {
   margin: 10px;
   width: 200px; }
 
+ul {
+  padding-left: 0; }
+
 .menu ul {
   padding-left: 10px; }
 
@@ -2194,11 +2196,11 @@ dropdown
 
   .texto-top {
     width: 100%;
-    margin: 0; }
+    margin: 0; } }
+.full-button {
+  width: 60%;
+  margin: 0 auto; }
 
-  .button-home {
-    width: 60%;
-    margin: 0 auto; } }
 @media all and (min-width: 500px) {
   .fondo-img-top {
     height: 135%;
@@ -2257,15 +2259,12 @@ dropdown
     top: 85%;
     right: 25px; }
 
-<<<<<<< HEAD
   .button-home {
-    width: 100%;
-    margin: 0 auto; }
-=======
+    width: 100%; }
+
   .full-button {
     margin: 0 auto;
     width: 100%; }
->>>>>>> f38c1b50d7e0078e0ec4366449f169bee6ee9358
 
   .container-home {
     margin: 0 auto;
