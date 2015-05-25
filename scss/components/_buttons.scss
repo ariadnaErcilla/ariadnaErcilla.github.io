@@ -163,15 +163,19 @@
     background-size:contain;
 }
 
-.mail-buscador{
-    background-image:url(../imagenes/mail-b.svg);
-    background-position: center center;
-    background-repeat:no-repeat;
-    background-size:contain;
-    display: block;
-    width: 16px;
-    height: 16px;
-
+.buzon-buscador{
+  background-image: url(../imagenes/mail-b.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 16px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 18px;
 }
-
 

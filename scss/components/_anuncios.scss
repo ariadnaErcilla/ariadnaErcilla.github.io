@@ -109,7 +109,6 @@ Buscador
 .container-cantidad{
     float: left;
     margin: 10px 10px 0 0;
-    //ponia margin-right, mal escrito y lo pongo margin
     width: 100%;
 }
 
@@ -117,6 +116,10 @@ Buscador
     float: left;
     margin-top: 15px;
     width: 100%;
+}
+
+.padding-boton{
+    padding: 30px;
 }
 
 @media all and (min-width: 500px) {
