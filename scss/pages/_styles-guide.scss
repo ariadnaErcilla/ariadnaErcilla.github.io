@@ -150,7 +150,6 @@
 .sg-fondo-header{
     background-color: white;
     border-radius: 0px;
-    padding: 10px;
     margin-top: 20px;
 }
 
@@ -322,7 +321,7 @@
 }
 
 .sg-margin-bottom-title {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .sg-no-margin {
@@ -426,4 +425,8 @@
 
 .sg-margin-negativo {
     margin-top: -20px
+}
+.sg-container-main-title{
+    margin: 0 auto;
+    width: 50%;
 }

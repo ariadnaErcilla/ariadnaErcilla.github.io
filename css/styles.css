@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -425,6 +424,9 @@ Buscador
   margin-top: 15px;
   width: 100%; }
 
+.padding-boton {
+  padding: 30px; }
+
 @media all and (min-width: 500px) {
   .button-2 .type-color-3 .full-button {
     font-size: 12px; } }
@@ -637,14 +639,20 @@ Anuncio ampliado
   background-repeat: no-repeat;
   background-size: contain; }
 
-.mail-buscador {
+.buzon-buscador {
   background-image: url(../imagenes/mail-b.svg);
-  background-position: center center;
+  background-position: left bottom;
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  width: 16px;
-  height: 16px; }
+  height: 16px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 18px; }
 
 /*--------
 Text inputs and text areas
@@ -2147,6 +2155,7 @@ dropdown
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 50px;
+  height: 100%;
   width: 100%; }
 
 .texto-top {
@@ -2157,8 +2166,9 @@ dropdown
 .box-ampersand-top {
   background-image: url(../imagenes/imagen-ampersand-home.svg);
   background-repeat: no-repeat;
-  height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 8%;
+  height: 100%; }
 
 .container-button {
   margin-top: 30px; }
@@ -2175,11 +2185,11 @@ dropdown
   text-align: center;
   width: 80%; }
 
+.article1 {
+  height: 100%; }
+
 /* Media Querys Top*/
 @media all {
-  .fondo-img-top {
-    height: 100%; }
-
   .box-top-1,
   .box-top-2 {
     background-repeat: no-repeat;
@@ -2196,12 +2206,11 @@ dropdown
     width: 100%;
     margin: 0; }
 
-  .button-home {
+  .full-button {
     width: 60%;
     margin: 0 auto; } }
 @media all and (min-width: 500px) {
   .fondo-img-top {
-    height: 135%;
     width: 100%; }
 
   .box-top-1,
@@ -2228,9 +2237,6 @@ dropdown
     margin: 0 auto;
     max-width: 1250px; } }
 @media all and (min-width: 1024px) {
-  .fondo-img-top {
-    height: 70%; }
-
   .box-top-1,
   .box-top-2 {
     float: left;
@@ -2257,15 +2263,12 @@ dropdown
     top: 85%;
     right: 25px; }
 
-<<<<<<< HEAD
   .button-home {
-    width: 100%;
-    margin: 0 auto; }
-=======
+    width: 100%; }
+
   .full-button {
     margin: 0 auto;
     width: 100%; }
->>>>>>> f38c1b50d7e0078e0ec4366449f169bee6ee9358
 
   .container-home {
     margin: 0 auto;
@@ -7288,7 +7291,6 @@ th.hide-for-touch {
 .sg-fondo-header {
   background-color: white;
   border-radius: 0px;
-  padding: 10px;
   margin-top: 20px; }
 
 .sg-fondo-blanco {
@@ -7425,7 +7427,7 @@ th.hide-for-touch {
   margin: 0 auto; }
 
 .sg-margin-bottom-title {
-  margin-bottom: 100px; }
+  margin-bottom: 40px; }
 
 .sg-no-margin {
   margin-top: 5px;
@@ -7506,5 +7508,9 @@ th.hide-for-touch {
 
 .sg-margin-negativo {
   margin-top: -20px; }
+
+.sg-container-main-title {
+  margin: 0 auto;
+  width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
