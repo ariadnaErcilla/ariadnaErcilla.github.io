@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -302,8 +303,7 @@ body {
 
 .linia {
   border: 0;
-  border-top: 1px solid #999;
-  margin-top: 20px; }
+  border-top: 1px solid #999; }
 
 .in-line {
   display: inline-block; }
@@ -327,9 +327,6 @@ body {
   margin: 0 auto; }
 
 /*habia una clase para esto? no la he encontrado y ue creado otra */
-ul {
-  padding-left: 0; }
-
 /*anuncios*/
 .todos-anuncios {
   float: right;
@@ -377,7 +374,7 @@ Buscador
 -----------*/
 .titular-seccion-buscador {
   float: right;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 15px;
   position: relative;
   width: 100%; }
@@ -497,6 +494,9 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
+.container-perfil-button {
+  width: 20%; }
+
 /*botones*/
 .general-button, .button-1,
 .button-2,
@@ -516,6 +516,9 @@ Anuncio ampliado
 
 .button-3:hover,
 .hover-boton:hover {
+  color: white; }
+
+.button-3 span:hover {
   color: white; }
 
 .full-button,
@@ -538,6 +541,10 @@ Anuncio ampliado
 
 .button-1 {
   background-color: #00A6A5; }
+
+.button-1:hover {
+  background-color: #00A6A5;
+  opacity: 0.8; }
 
 .button-2 {
   background-color: #f15c22; }
@@ -649,6 +656,9 @@ span.buzon-buscador {
 /*--------
 Text inputs and text areas
 --------*/
+select {
+  border-radius: 30px; }
+
 .pform {
   padding-top: 8px;
   margin: 0; }
@@ -1296,6 +1306,9 @@ contenedores anuncios
   opacity: 1;
   pointer-events: auto; }
 
+.popup-active {
+  overflow: hidden; }
+
 .popup {
   margin: 0 auto;
   position: absolute;
@@ -1811,6 +1824,9 @@ header {
   margin: 10px;
   width: 200px; }
 
+ul {
+  padding-left: 0; }
+
 .menu ul {
   padding-left: 10px; }
 
@@ -2196,11 +2212,11 @@ dropdown
 
   .texto-top {
     width: 100%;
-    margin: 0; }
+    margin: 0; } }
+.full-button {
+  width: 60%;
+  margin: 0 auto; }
 
-  .full-button {
-    width: 60%;
-    margin: 0 auto; } }
 @media all and (min-width: 500px) {
   .fondo-img-top {
     width: 100%; }
