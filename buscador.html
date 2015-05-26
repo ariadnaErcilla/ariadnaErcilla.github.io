@@ -13,6 +13,8 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/popup.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
@@ -86,6 +88,11 @@
     </div>
      <div class="background-4 cf clear">
         <div class="container">
+        <div class="ordenar-title right">
+        <p class="uppercase left"><strong>Filtrar</strong></p>
+        <div id="abrir-ordenar" class="flecha-abrir left"><a href=""></a></div>
+        <div id="cerrar-ordenar" class="flecha-cerrar left"><a href=""></a></div>
+    </div>
             <ul class="todos-anuncios">
                  <div class="container-ordenar">
             <ul class="menu-ordenar cf">
@@ -105,20 +112,13 @@
             <div class="large-6 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" alt="maqueta revistas" src="imagenes/anuncio-6.jpg">
-                        <a class="full-button button-2 type-color-3" href="anunciosprofes.html"></a>
-                        <span class="mail-buscador"></span>
-                    </div>
 
-                    <div class="texto-anuncios-buscador">
-                        <h3 class="secondary-title">Maqueta tus revistas en Indesign</h3>
-                        <p>Juan García Tenorioa</p>
-                        <div class="total-icono">
-                            <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
-                            <span class="buzon-buscador"></span></a>
+                        <img class="imagenes-buscador" alt="maqueta revistas" src="imagenes/anuncio-6.jpg">
 
+                             <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
                         </div>
-
                         <div class="texto-anuncios-buscador">
                             <h3 class="secondary-title">Maqueta tus revistas en Indesign</h3>
                             <p>Juan García Tenorioa</p>
@@ -142,14 +142,16 @@
                     </div>
             </article>
                 </div>
-
+</section>
                  <div class="large-6 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
 
-                        <img class="imagen-anuncios-buscador" alt="crear tipografía" src="imagenes/anuncio-10.jpg">
+                        <img class="imagenes-buscador" alt="crear tipografía" src="imagenes/anuncio-10.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                    </div>
 
@@ -180,9 +182,11 @@
             <div class="large-6 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" alt="aprender illustrator" src="imagenes/anuncio-28.jpg">
+                        <img class="imagenes-buscador" alt="aprender illustrator" src="imagenes/anuncio-28.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -213,9 +217,11 @@
                  <div class="large-6 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
-                        <img class="imagen-anuncios-buscador" alt="post-produccion grafica" src="imagenes/anuncio-29.jpg">
+                        <img class="imagenes-buscador" alt="post-produccion grafica" src="imagenes/anuncio-29.jpg">
 
-                       <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                       <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -256,7 +262,9 @@
                     <div class="container-imagen-button">
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="alumno y profesor juan perez" src="imagenes/alumno-16-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
                     </div>
 
                     <div class="texto-anuncios-buscador">
@@ -272,7 +280,7 @@
                                 <p class="no-margin">3 dudas</p>
                             </div>
 
-                            <div class="total-icono-buscador">
+                            <div class="total-icono-buscador opacity-hover">
                                 <div class="container-stars">
                                     <span class="stars-grande  left estrellas-valorar-4"></span>
                                 </div>
@@ -291,7 +299,9 @@
                     <div class="container-imagen-button">
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="alumno y profesor juan perez" src="imagenes/alumno-23-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
                     </div>
 
                     <div class="texto-anuncios-buscador">
@@ -307,7 +317,7 @@
                                 <p class="no-margin">2 dudas</p>
                             </div>
 
-                            <div class="total-icono-buscador">
+                            <div class="total-icono-buscador opacity-hover">
                                 <div class="container-stars">
                                     <span class="stars-grande  left estrellas-valorar-5"></span>
                                 </div>
@@ -325,7 +335,9 @@
                     <div class="container-imagen-button">
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-3-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -344,7 +356,7 @@
                                 </div>
                             </div>
 
-                            <div class="total-icono-buscador">
+                            <div class="total-icono-buscador opacity-hover">
                                 <div class="container-stars">
                                     <span class="stars-grande  left estrellas-valorar-5"></span>
                                 </div>
@@ -361,7 +373,9 @@
                     <div class="container-imagen-button">
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-19-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -378,7 +392,7 @@
                                     <p class="no-margin">3 dudas</p>
                                 </div>
                             </div>
-                            <div class="total-icono-buscador">
+                            <div class="total-icono-buscador opacity-hover">
                                 <div class="container-stars">
                                     <span class="stars-grande  left estrellas-valorar"></span>
                                 </div>
@@ -395,7 +409,9 @@
                     <div class="container-imagen-button">
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-5-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -413,7 +429,7 @@
                                 </div>
                             </div>
 
-                            <div class="total-icono-buscador">
+                            <div class="total-icono-buscador opacity-hover">
                                 <div class="container-stars">
                                     <span class="stars-grande  left estrellas-valorar"></span>
                                 </div>
@@ -430,7 +446,9 @@
                     <div class="container-imagen-button">
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-6-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -447,7 +465,7 @@
                                     <p class="no-margin">2 dudas</p>
                                 </div>
                             </div>
-                            <div class="total-icono-buscador">
+                            <div class="total-icono-buscador opacity-hover">
                                 <div class="container-stars">
                                     <span class="stars-grande  left estrellas-valorar-4"></span>
                                 </div>
@@ -469,7 +487,9 @@
 
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-11-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
                         </div>
 
                         <div class="texto-anuncios-buscador">
@@ -501,7 +521,9 @@
 
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usaurio" src="imagenes/alumno-13-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -528,15 +550,15 @@
                     </div>
                     </article>
                 </div>
-
-                 <div class="large-6 columns">
+      <div class="large-6 columns">
                 <article class="container-anuncios-buscador">
                     <div class="container-imagen-button">
 
-                        <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-7-buscador.jpg">
+                        <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-11-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
-
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
                         </div>
 
                         <div class="texto-anuncios-buscador">
@@ -569,7 +591,9 @@
 
                         <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-14-buscador.jpg">
 
-                        <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
@@ -597,36 +621,41 @@
                     </article>
                 </div>
 
-                <div class="large-6 columns">
-                    <article class="container-anuncios-buscador">
-                        <div class="container-imagen-button">
-                            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-8-buscador.jpg">
+               <div class="large-6 columns">
+                <article class="container-anuncios-buscador">
+                    <div class="container-imagen-button">
 
-                            <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a></div>
+                        <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-17-buscador.jpg">
 
-                            <div class="texto-anuncios-buscador">
-                                <h3 class="secondary-title">Quiero aprender a retocar rostros</h3>
-                                <p>Martin García</p>
+                         <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
+
+                        </div>
+
+                        <div class="texto-anuncios-buscador">
+                            <h3 class="secondary-title">Quiero aprender a retocar rostros</h3>
+                            <p>Lola García</p>
 
                             <div class="total-icono">
-                                <div class="container-icon">
-                                    <span class="icono left grafico-c"></span>
-                                </div>
-                                <div class="container-icon">
-                                    <span class="secondary-subtitle">Gráfico</span>
-                                </div>
-                            </div>
-                            <div class="total-icono padding-icono-stars opacity-hover">
-                                <div class="container-stars">
-                                   <span class="stars-grande left estrellas-valorar-2"></span>
-                               </div>
                                <div class="container-icon">
-                                <span class="modificar type-color-2">(5)</span>
-                                </div>
+                                <span class="icono left grafico-c"></span>
                             </div>
+                            <div class="container-icon">
+                                <span class="secondary-subtitle">Gráfico</span>
                             </div>
-                </article>
+                        </div>
+                        <div class="total-icono padding-icono-stars opacity-hover">
+                            <div class="container-stars">
+                             <span class="stars-grande left estrellas-valorar-2"></span>
+                         </div>
+                         <div class="container-icon">
+                            <span class="modificar type-color-2">(4)</span>
+                        </div>
+                    </div>
                 </div>
+            </article>
+        </div>
 
                 <div class="large-6 columns">
                     <article class="container-anuncios-buscador">
@@ -634,7 +663,9 @@
 
                             <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-12-buscador.jpg">
 
-                            <a class="button-2 type-color-3 full-button" href="#contactar">Contáctale</a>
+                             <a class="full-button button-2 type-color-3" href="anunciosprofes.html">
+                            <span class="buzon-buscador no-display cf"></span>
+                            </a>
 
                         </div>
 
