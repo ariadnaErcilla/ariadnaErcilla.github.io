@@ -171,19 +171,14 @@
     background-size:contain;
 }
 
-.buzon-buscador{
+span.buzon-buscador{
   background-image: url(../imagenes/mail-b.svg);
-  background-position: left bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
-  height: 16px;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: inline-block;
+  height: 18px;
   width: 18px;
-}
+  margin: 0 auto;
+  padding: 0px;
 
+}
