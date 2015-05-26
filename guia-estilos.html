@@ -17,8 +17,8 @@
     <script src="js/popup.js"></script>
 
 </head>
-<body class="sg-style-guide">
-    <header class="cf">
+<body class="sg-style-guide cf">
+    <header class="sg-header-position cf">
     <div class="container-home">
         <div class="logo">
             <a href="index.html">
@@ -28,13 +28,17 @@
         <nav class="menu no-margin cf">
             <div class="float-menu">
                 <ul>
-                    <li class="tamano_fijo"><a href="#" class="uppercase">Tipografías</a></li>
-                    <li class="tamano_fijo"><a href="#" class="uppercase">Colores</a></li>
-                    <li class="tamano_fijo"><a href="#" class="uppercase">Botones</a></li>
-                    <li class="tamano_fijo"><a href="#" class="uppercase">Ilustraciones</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">Iconos</a></li>
-                    <li class="tamano_fijo"><a href="#" class="uppercase">Formularios</a></li>
-                    <li class="tamano_fijo"><a href="#" class="uppercase">Tablas</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-tipografias"class="uppercase">Tipografías</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-colores"class="uppercase">Colores</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-botones"class="uppercase">Botones</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-ilustraciones"class="uppercase">Ilustraciones</a></li>
+                    <li class="tamano_fijo"><a href="funciona.html" id="scroll-to-iconos" class="uppercase">Iconos</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-formularios"class="uppercase">Formularios</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-tablas"class="uppercase">Tablas</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-popups"class="uppercase">Popups</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-pestañas"class="uppercase">Pestañas</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-layout"class="uppercase">Layout</a></li>
+                    <li class="tamano_fijo"><a href="#" id="scroll-to-header"class="uppercase">Header</a></li>
                 </ul>
             </div>
         </nav>
@@ -50,7 +54,7 @@
     <div class="sg-wrapper">
 
         <section class="sg-fondo-blanco clear">
-          <h1 class="sg-title-style-guide sg-margin-top-text">Familias tipográficas</h1>
+          <h1 class="sg-title-style-guide sg-margin-top-text" id="tipografias">Familias tipográficas</h1>
           <p class="sg-no-margin sg-font-weight sg-max-width">Estas son las dos familias tipográficas que se utiliza en puntoyseguido</p>
           <div class="sg-float-left">
             <h3 class="secondary-title sg-margin-top-logo">LATO</h3>
@@ -110,7 +114,7 @@
                                       </div>
                                   </section>
                                   <section class="sg-clear ">
-                                    <h1 class="sg-title-style-guide sg-margin-top-text">Colores y bordes</h1>
+                                    <h1 class="sg-title-style-guide sg-margin-top-text" id="colores">Colores y bordes</h1>
                                     <p class="sg-no-margin sg-font-weight sg-max-width">En este apartado se muestran los colores y bordes que utiliza puntoyseguido</p>
                                     <div class="sg-container-colores sg-margin-top-logo">
                                         <div class="sg-color-corporativo1 "><p class="sg-p-colores">#00A6A5</p></div>
@@ -119,16 +123,24 @@
                                         <div class="sg-color-corporativo4"><p class="sg-p-colores">rgba (51, 51, 51, 0.15)</p></div>
                                     </div>
                                     <div class="sg-padding-top">
-                                        <div class="sg-border-grueso"></div>
-                                        <div class="sg-border-fino3"></div>
-                                        <div class="sg-border-fino4"></div>
-                                        <div class="sg-border-fino5"></div>
+                                        <div class="sg-border-grueso">
+                                        <p class="sg-p-colores">5px solid #00A6A5 </p>
+                                        </div>
+                                        <div class="sg-border-fino3">
+                                        <p class="sg-p-colores">2px solid #F15C22 </p>
+                                        </div>
+                                        <div class="sg-border-fino4">
+                                        <p class="sg-p-colores">2px solid #404041 </p>
+                                        </div>
+                                        <div class="sg-border-fino5">
+                                        <p class="sg-p-colores">2px solid rgba(51, 51, 51, 0.15)</p>
+                                        </div>
                                     </div>
 
                                 </section>
                                 <section>
-                                    <div class="sg-float-none">
-                                        <h1 class="sg-title-style-guide sg-margin-top-text">Botones</h1>
+                                    <div class="sg-float-none sg-margin-top-text">
+                                        <h1 class="sg-title-style-guide sg-margin-top-text" id="botones">Botones</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">En este apartado se muestran los diferentes tipos de botones que se utilizan en la plataforma</p>
                                         <div class="sg-margin-top-logo">
                                             <button class="button-1 clear sg-margin-auto sg-margin-buttons type-color-3" href="#"><span>Botón</span></button>
@@ -138,15 +150,20 @@
                                         </div>
                                     </section>
                                     <section>
-                                        <h1 class="sg-title-style-guide sg-margin-top-text">Ilustraciones</h1>
+                                        <h1 class="sg-title-style-guide sg-margin-top-text" id="ilustraciones">Ilustraciones</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">En este apartado verán las ilustraciones de nuestros personajes que hemos utilizado en la plataforma para crear más empatía con el usuario</p>
-                                        <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-1-home.svg">
-                                        <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-5-home.jpg">
-                                        <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-3-home.jpg">
-                                        <img class="imagen-ilustraciones imagen-redondo sg-margin-buttons" src="imagenes/ilustracion-4-home.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/ilustracion-2-home.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/ilustracion-5-home.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/ilustracion-6-home.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/muneco-style-guide.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/muneco-style-guide-02.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/alumno-28-buscador.jpg">
+                                         <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/pepe-style-guide.jpg">
+                                        <img class="imagen-ilustraciones imagen-redondo sg-pepe" src="imagenes/paso-1.svg">
+
                                     </section>
                                     <section>
-                                        <h1 class="sg-title-style-guide sg-margin-top-text cf">Iconografía</h1>
+                                        <h1 class="sg-title-style-guide sg-margin-top-text clear cf" id="iconos">Iconografía</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">En este apartado verán los iconos clickeables, no clickeables y cada icono para cada detalle de la plataforma</p>
                                         <div class="sg-float-left">
                                             <h3 class="secondary-title sg-margin-top-logo">CLICKEABLES</H3>
@@ -288,7 +305,7 @@
                                         </div>
                                     </section>
                                     <section class="clear cf">
-                                        <h1 class="sg-title-style-guide sg-margin-top-text cf">Formularios</h1>
+                                        <h1 class="sg-title-style-guide sg-margin-top-text cf" id="formularios">Formularios</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">Podrán encontrar los formularios que utilizamos en la plataforma</p>
                                         <form class="pform">
                                             <div class="caja-formulario">
@@ -327,7 +344,7 @@
                                         </form>
                                     </section>
                                     <section class="cf">
-                                        <h1 class="sg-title-style-guide sg-margin-top-text cf">Tablas</h1>
+                                        <h1 class="sg-title-style-guide sg-margin-top-text cf" id="tablas">Tablas</h1>
                                         <p class="sg-no-margin sg-font-weight sg-max-width">Podrán encontrar las tablas para marcar la disponibilidad de los usuarios</p>
 
                                     <p>1. Tabla no clickeable utilizada para mostrar la disponibilidad de los usuarios</p>
@@ -550,7 +567,7 @@
         </section>
 
         <section class="cf">
-            <h1 class="sg-title-style-guide sg-margin-top-text cf">Popups</h1>
+            <h1 class="sg-title-style-guide sg-margin-top-text cf" id="popups">Popups</h1>
             <p class="sg-no-margin sg-font-weight sg-max-width">Podrán encontrar las tablas para marcar la disponibilidad de los usuarios</p>
             <div class="sg-float-left sg-margin-top-logo">
                 <p class="sg-float-left clear sg-margin-auto sg-margin-bottom-links">
@@ -639,7 +656,7 @@
             </section>
             <section class="sg-color-anuncios cf">
              <div class="sg-float-none sg-margin-bottom sg-margin-auto">
-                <h1 class="sg-title-style-guide sg-margin-top-text cf">Anuncios</h1>
+                <h1 class="sg-title-style-guide sg-margin-top-text cf" id="anuncios">Anuncios</h1>
                 <p class="sg-no-margin sg-font-weight sg-max-width">Podrán encontrar los dos tipos de anuncio de la plataforma</p>
                  <div class="sg-margin-auto">
                     <ul class="sg-todos-anuncios cf">
@@ -731,7 +748,7 @@
 </div>
 </section>
 <section>
-<h1 class="sg-title-style-guide sg-margin-top-text cf">Pestañas</h1>
+<h1 class="sg-title-style-guide sg-margin-top-text cf" id="pestañas">Pestañas</h1>
 <p class="sg-no-margin sg-font-weight sg-max-width">Verán las pestañas que se utilizan en el perfil del creativo</p>
  <div class="sg-margin-auto sg-borde-gris sg-margin-top-logo">
     <div class="menu-interior">
@@ -789,7 +806,7 @@
         </div>
     </section>
     <section class="sg-margin-bottom">
-        <h1 class="sg-title-style-guide sg-margin-top-text cf">Layout</h1>
+        <h1 class="sg-title-style-guide sg-margin-top-text cf" id="layout">Layout</h1>
         <p class="sg-no-margin sg-font-weight sg-max-width">Verán la retícula de toda la plataforma, los dos tipos de headers y el footer</p>
         <h3 class="secondary-title sg-margin-top-logo">RETÍCULA / GRID</h3>
 
@@ -823,7 +840,7 @@
 </section>
 </div>
 <section class="sg-fondo-header sg-container-full">
-    <h3 class="secondary-title sg-margin-title">HEADER NO REGISTRADO</h3>
+    <h3 class="secondary-title sg-margin-title" id="header">HEADER NO REGISTRADO</h3>
 
    <header class="cf">
         <div class="container-home cf">
@@ -951,7 +968,7 @@
 </header>
 
 <div class="sg-float-none sg-margin-bottom">
-    <h3 class="secondary-title">FOOTER</h3>
+    <h3 class="secondary-title" id="footer">FOOTER</h3>
    <footer>
         <div class="pie cf">
             <section class="mini-box-pie">
