@@ -7144,6 +7144,10 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+.sg-header-position {
+  position: fixed;
+  width: 100%; }
+
 .sg-container-full {
   width: 100%; }
 
@@ -7323,7 +7327,7 @@ th.hide-for-touch {
 .sg-pepe {
   width: 20%;
   float: left;
-  margin-right: 20px; }
+  margin: 40px 40px 25px 0px; }
 
 .sg-pepe-imagen {
   width: 100%; }
