@@ -329,6 +329,7 @@ $('#cerrar').click(function(e){
    $('.buscador-desplegado').hide();
     return false;
     });
+/*estrellas valorar*/
 $( "li.primera-estrella" ).click(function(e){
     e.preventDefault();
     if($(this).hasClass("estrella-inactiva")){
@@ -338,7 +339,7 @@ $( "li.primera-estrella" ).click(function(e){
         $(this).nextAll().addClass("estrella-inactiva");
     }    
 });
-/*estrellas valorar*/
+
 $( "li.segunda-estrella" ).click(function(e){
     e.preventDefault();
     if($(this).hasClass("estrella-inactiva")){
@@ -387,6 +388,128 @@ $( "li.quinta-estrella" ).click(function(e){
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
          $(this).nextAll().addClass("estrella-inactiva");
+       
+    }    
+});
+/*niveles barras*/
+$( "li.primera-barra" ).click(function(e){
+    e.preventDefault();
+    if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+    }else{
+        $(this).nextAll().addClass("barra-inactiva");
+    }    
+});
+
+$( "li.segunda-barra" ).click(function(e){
+    e.preventDefault();
+    if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+
+        $(this).nextAll().addClass("barra-inactiva");
+        
+    }     
+    
+});
+$( "li.tercera-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+    
+         $(this).nextAll().addClass("barra-inactiva");
+        
+    }    
+});
+$( "li.cuarta-barra" ).click(function(e){
+    e.preventDefault();
+    if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
+       
+    }    
+});
+$( "li.quinta-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
+       
+    }    
+});
+$( "li.sexta-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
+       
+    }    
+});
+$( "li.septima-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
+       
+    }    
+});
+$( "li.octava-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
+       
+    }    
+});
+$( "li.novena-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
+       
+    }    
+});
+$( "li.decima-barra" ).click(function(e){
+    e.preventDefault();
+     if($(this).hasClass("barra-inactiva")){
+        $(this).addClass("barra-activa");
+        $(this).removeClass("barra-inactiva");
+        $(this).prevAll().addClass("barra-activa");
+        $(this).prevAll().removeClass("barra-inactiva");
+    }else{
+         $(this).nextAll().addClass("barra-inactiva");
        
     }    
 });
