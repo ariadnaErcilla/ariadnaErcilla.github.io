@@ -8,16 +8,6 @@
     transition: all 0.3s ease;
 }
 
-.general-button:hover,
-.button-mail:hover,{
-    background-color: #f28960;
-}
-
-.button-3:hover,
-.hover-boton:hover{
-    color:white;
-}
-
 .full-button,
 .full-button-header {
     display:block;
@@ -40,9 +30,11 @@
     width: 8%;
 }
 
+
 .button-1{
     background-color: #00A6A5;
 }
+
 
 .button-2{
     background-color: #f15c22;
@@ -152,8 +144,24 @@
     color: #404041;
 }
 
+
+.general-button:hover,
+.button-mail:hover,{
+    background-color: #f28960;
+}
+
+
 .button-unete:hover{
     background-color:#f15c22;
+}
+
+.button-1:hover{
+    background-color: #00A6A5;
+    opacity: 0.8;
+}
+
+.button-3:hover{
+    background-color: #F5C8B7;
 }
 
 .mail-cursos{
@@ -163,6 +171,14 @@
     background-size:contain;
 }
 
+span.buzon-buscador{
+  background-image: url(../imagenes/mail-b.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin: 0 auto;
+  padding: 0px;
 
-
-
+}

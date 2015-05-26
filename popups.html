@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Popup</title>
@@ -7,12 +8,17 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/forms-errors.js"></script>
+    <script src="js/consejos-publicar.js"></script>
+    <script src="js/show-popups.js"></script>
+    <script src="js/stars-valorar.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <script src="js/main.js"></script>
     <script src="js/popup.js"></script>
 </head>
 
 <body>
-
+<div class="popup-active">
     <p class="centrado"><a class="sg-subtitle-style-guide show-login" id="show-login">Log In</a></p>
     <hr>
     <p class="centrado"><a class="sg-subtitle-style-guide" id="show-registro">Registro</a></p>
@@ -58,24 +64,24 @@
                 <a href="#close" title="close" class="close">X</a>
                 <h1 class="title-form centrado">Registro</h1>
                 <div class="container-popup cf">
-                    <div class="img-facebook">
+                    <div class="img-facebook opacity-hover">
                         <img class="link-facebook" src="imagenes/facebooklink.png" alt="link facebook">
                     </div>
                     <form class="pform">
                         <div class="caja-formulario">
                             <span class="secondary-title">Nombre y apellido</span>
                             <label class="error">Este campo es obligatorio</label>
-                            <input class="margin-top" type="text" required="" name="personal">
+                            <input class="margin-top" type="text" name="personal">
                         </div>
                         <div class="caja-formulario">
                             <span class="secondary-title">Email</span>
                             <label class="error">Este campo es obligatorio</label>
-                            <input class="margin-top" type="email" required="" name="email">
+                            <input class="margin-top" type="text" name="email">
                         </div>
                         <div class="caja-formulario">
                             <span class="secondary-title">Contraseña</span>
                             <label class="error">Este campo es obligatorio</label>
-                            <input class="margin-top" type="password" required="" name="password">
+                            <input class="margin-top" type="password" name="password">
                         </div>
                     </form>
                     <div class="padding-button-popup cf">
@@ -99,7 +105,7 @@
                         <div class="caja-formulario">
                             <span class="secondary-title">Email</span>
                             <label class="error">Este campo es obligatorio</label>
-                            <input class="margin-top" name="email" type="email" >
+                            <input class="margin-top" name="email" type="text" >
                         </div>
                         <div class="caja-formulario">
                             <span class="secondary-title">Contraseña</span>
@@ -150,15 +156,15 @@
                     <div class="caja-formulario cf">
                         <span class="light title-contactar margin-right">Mensaje</span>
                         <label class="error">Este campo es obligatorio</label>
-                        <textarea class="big-textarea margin-top" type="text" placeholder=""></textarea>
+                        <textarea class="big-textarea margin-top" name="message" placeholder=""></textarea>
                     </div>
                     <div class="caja-formulario cf">
                         <span class="light title-contactar margin-right">Método de clase</span>
                         <label class="error">Este campo es obligatorio</label>
                         <div class="clear margin-top">
-                            <label class="form-check"><input type="checkbox"><span>Presencial</span></label>
-                            <label class="form-check"><input type="checkbox"><span>Skype</span></label>
-                            <label class="form-check"><input type="checkbox"><span>Email</span></label>
+                            <label class="form-check"><input type="checkbox" name="check"><span>Presencial</span></label>
+                            <label class="form-check"><input type="checkbox" name="check"><span>Skype</span></label>
+                            <label class="form-check"><input type="checkbox" name="check"><span>Email</span></label>
                         </div>
                     </div>
                     <div class="caja-formulario cf">
@@ -213,7 +219,6 @@
                                 <tbody>
                                 </table>
                             </div>
-                        </div>
                     </form>
                     <div class="margin-auto-popup cf">
                         <button class="button-2 full-button type-color-3 show-registro-contactar">Contactar</button>
@@ -223,7 +228,6 @@
             </div>
         </div>
     </div>
-</div>
 <div id="publicar-curso" class="masc">
     <div class="popup">
         <div class="popup-box movedown-3">
@@ -267,7 +271,7 @@
                         Título
                     </span>
                     <label class="error">Este campo es obligatorio</label>
-                    <input class="margin-top" type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="">
+                    <input class="margin-top" type="text" name="title" placeholder="Ej: Clases de retoque fotográfico en Photoshop">
                 </div>
                 <div class="caja-formulario">
                     <span class="secondary-title">
@@ -275,7 +279,7 @@
                    </span>
                     <label class="error">Este campo es obligatorio</label>
                    <label class="error">Este campo es obligatorio</label>
-                   <select class="margin-top" name="text" required="">
+                   <select class="margin-top" name="select">
                     <option value="Arquitectura">Arquitectura</option>
                     <option value="Animación">Animación</option>
                     <option value="Audiovisual">Audiovisual</option>
@@ -292,7 +296,7 @@
                     Descripción
                 </span>
                 <label class="error">Este campo es obligatorio</label>
-                <input class="margin-top" type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias...">
+                <input class="margin-top" type="text" name="description" placeholder="Ej: Te voy a enseñar a retocar fotografias...">
             </div>
             <div class="caja-formulario cf">
                 <span class="secondary-title left">
@@ -300,27 +304,26 @@
                 </span>
                 <label class="error">Este campo es obligatorio</label>
                 <div class="clear margin-top">
-                    <label class="form-check"><input type="checkbox"><span>Presencial</span></label>
-                    <label class="form-check"><input type="checkbox"><span>Skype</span></label>
-                    <label class="form-check"><input type="checkbox"><span>Email</span></label>
+                    <label class="form-check"><input type="checkbox" name="check"><span>Presencial</span></label>
+                    <label class="form-check"><input type="checkbox" name="check"><span>Skype</span></label>
+                    <label class="form-check"><input type="checkbox" name="check"><span>Email</span></label>
                 </div>
             </div>
             <div class="caja-formulario">
                 <span class="secondary-title">
                    Elige la recompensa que más te apetezca
                </span>
-               <select class="margin-top" name="text" required="">
+               <select class="margin-top" name="select2">
                 <option value="Desayuno">Desayuno</option>
                 <option value="Merienda">Merienda</option>
-                <option value="Cena">Cena</option>  
+                <option value="Cena">Cena</option>
             </select>
         </div>
         <div class="caja-formulario cf">
             <span class="secondary-title">
-                Sube una foto/video de tu trabajo
+                Sube una foto de tu trabajo
             </span>
-            <p class="tags no-margin left">Formato jpg. o mov.</p>
-            <input type="file" class="custom-file-input margin-top" name="imagen" accept="image/*" required="">
+            <input type="file" class="custom-file-input margin-top" name="imagen" accept="image/*">
         </div>
     </form>
 </div>
@@ -346,14 +349,14 @@
                             Título
                         </span>
                         <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="text" placeholder="Ej: Clases de retoque fotográfico en Photoshop" required="">
+                        <input class="margin-top" type="text" name="title" placeholder="Ej: Clases de retoque fotográfico en Photoshop">
                     </div>
                     <div class="caja-formulario cf">
                         <span class="secondary-title">
                            Categoría
                        </span>
                        <label class="error">Este campo es obligatorio</label>
-                       <select class="margin-top" name="text" required="">
+                       <select class="margin-top" name="select">
                         <option value="Arquitectura">Arquitectura</option>
                         <option value="Animación">Animación</option>
                         <option value="Audiovisual">Audiovisual</option>
@@ -370,7 +373,7 @@
                         Descripción
                     </span>
                     <label class="error">Este campo es obligatorio</label>
-                    <input class="margin-top" type="text" placeholder="Ej: Te voy a enseñar a retocar fotografias..." required="">
+                    <input class="margin-top" type="text" name="description" placeholder="Ej: Te voy a enseñar a retocar fotografias...">
                 </div>
                 <div class="caja-formulario cf">
                     <span class="secondary-title">
@@ -378,26 +381,26 @@
                     </span>
                     <label class="error">Este campo es obligatorio</label>
                     <div class="clear margin-top">
-                        <label class="form-check"><input type="checkbox"><span>Presencial</span></label>
-                        <label class="form-check"><input type="checkbox"><span>Skype</span></label>
-                        <label class="form-check"><input type="checkbox"><span>Email</span></label>
+                        <label class="form-check"><input type="checkbox" name="check"><span>Presencial</span></label>
+                        <label class="form-check"><input type="checkbox" name="check"><span>Skype</span></label>
+                        <label class="form-check"><input type="checkbox" name="check"><span>Email</span></label>
                     </div>
                 </div>
                 <div class="caja-formulario">
                     <span class="secondary-title">
                        Elige la recompensa que más te apetezca
                    </span>
-                   <select class="margin-top" name="text" required="">
+                   <select class="margin-top" name="select2">
                     <option value="Desayuno">Desayuno</option>
                     <option value="Merienda">Merienda</option>
-                    <option value="Cena">Cena</option>  
+                    <option value="Cena">Cena</option>
                 </select>
             </div>
         </form>
     </div>
     <div class="margin-auto-popup cf">
         <button class="button-2 full-button type-color-3 show-registro-duda">Publicar duda</button>
-    </div>   
+    </div>
 </div>
 </div>
 </div>
@@ -413,14 +416,14 @@
                         Título
                     </span>
                     <label class="error">Este campo es obligatorio</label>
-                    <input class="margin-top" type="text" placeholder="Aprende a usar la página maestra en Indesign" required="">
+                    <input class="margin-top" type="text" name="title" placeholder="Aprende a usar la página maestra en Indesign">
                 </div>
                 <div class="caja-formulario cf">
                     <span class="secondary-title">
                        Categoría
                     </span>
                     <label class="error">Este campo es obligatorio</label>
-                    <select class="margin-top" name="text" required="">
+                    <select class="margin-top" name="select">
                     <option value="Arquitectura">Arquitectura</option>
                     <option value="Animación">Animación</option>
                     <option value="Diseño Audiovisual">Audiovisual</option>
@@ -437,7 +440,7 @@
                     Descripción
                 </span>
                 <label class="error">Este campo es obligatorio</label>
-                <input class="margin-top" type="text" placeholder="En sólo 1 hora te puedo enseñar a usar una de las herramientas más importantes de Indesign, la página maestra. Te permitirá agilizar mucho tus proyectos de maquetación de revistas.">
+                <input class="margin-top" type="text" name="description" placeholder="En sólo 1 hora te puedo enseñar a usar una de las herramientas más importantes de Indesign, la página maestra. Te permitirá agilizar mucho tus proyectos de maquetación de revistas.">
             </div>
             <div class="caja-formulario cf">
                 <span class="secondary-title">
@@ -445,17 +448,16 @@
                 </span>
                 <label class="error">Este campo es obligatorio</label>
                 <div class="clear margin-top">
-                    <label class="form-check"><input type="checkbox"><span>Presencial</span></label>
-                    <label class="form-check"><input type="checkbox"><span>Skype</span></label>
-                    <label class="form-check"><input type="checkbox"><span>Email</span></label>
+                    <label class="form-check"><input type="checkbox" name="check"><span>Presencial</span></label>
+                    <label class="form-check"><input type="checkbox" name="check"><span>Skype</span></label>
+                    <label class="form-check"><input type="checkbox" name="check"><span>Email</span></label>
                 </div>
             </div>
             <div class="caja-formulario cf">
                 <label class="secondary-title">
-                    Sube una foto/video de tu trabajo
+                    Sube una foto de tu trabajo
                 </label>
-                <p class="tags no-margin left">Formato jpg. o mov.</p>
-                <input type="file" class="custom-file-input margin-top" name="imagen" accept="image/*" required="">
+                <input type="file" class="custom-file-input margin-top" name="imagen" accept="image/*">
             </div>
         </form>
     </div>
@@ -495,8 +497,8 @@
                        ¿Qué rol ha cumplido?
                    </label>
                    <div class="clear margin-top">
-                    <p class="categorias-menu left"><input type="checkbox">profesor</p>
-                    <p class="categorias-menu left"><input type="checkbox">alumno</p>
+                    <p class="categorias-menu left"><input type="checkbox" name="check">profesor</p>
+                    <p class="categorias-menu left"><input type="checkbox" name="check">alumno</p>
                 </div>
             </div>
         </form>
@@ -517,9 +519,9 @@
                     <div class="caja-formulario">
                         <span class="secondary-title">Email</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
-                </form> 
+                </form>
                 <div class="padding-button-popup cf">
                     <button class="button-2 left type-color-3 show-login"><span>Recuperar</span></button>
                     <p class="secondary-subtitle margin-left left"><a class="type-color-5 show-login" href=""><u>Cancelar</u></a></p>
@@ -547,17 +549,17 @@
                     <div class="caja-formulario cf">
                         <span class="secondary-title">Nombre y apellido</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="text" required="">
+                        <input class="margin-top" type="text" name="personal">
                     </div>
                     <div class="caja-formulario cf">
                         <span class="secondary-title">Email</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
                     <div class="caja-formulario cf">
                         <span class="secondary-title">Contraseña</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="password" required="">
+                        <input class="margin-top" type="password" name="password">
                     </div>
                 </form>
             </div>
@@ -586,16 +588,16 @@
                     <div class="caja-formulario cf">
                         <span class="secondary-title">Nombre y apellido</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="text" required="">
+                        <input class="margin-top" type="text" name="personal">
                     </div>
                     <div class="caja-formulario cf">
                         <span class="secondary-title">Email</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
                     <div class="caja-formulario cf">
                         <label class="secondary-title">Contraseña</label>
-                        <input class="margin-top" type="password" required="">
+                        <input class="margin-top" type="password" name="password">
                     </div>
                 </form>
             </div>
@@ -624,22 +626,22 @@
                     <div class="caja-formulario">
                         <span class="secondary-title">Nombre y apellido</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="text" required="">
+                        <input class="margin-top" type="text" name="personal">
                     </div>
                     <div class="caja-formulario">
                         <span class="secondary-title">Email</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
                     <div class="caja-formulario">
                         <span class="secondary-title">Contraseña</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="password" required="">
+                        <input class="margin-top" type="password" name="password">
                     </div>
                 </form>
             </div>
             <div class="margin-auto-popup cf">
-                <button class="button-2 full-button type-color-3 show-gracias-contactar"><span>Contactar</span></a></button>
+                <button class="button-2 full-button type-color-3 show-gracias-contactar"><span>Contactar</span></button>
             </div>
         </div>
     </div>
@@ -661,11 +663,11 @@
                     <div class="cajaformulario">
                         <span class="secondary-title">Email</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
                     <div class="cajaformulario">
                         <label class="secondary-title">Contraseña</label>
-                        <input class="margin-top" type="password" required="">
+                        <input class="margin-top" type="password" name="password">
                     </div>
                 </form>
             </div>
@@ -693,12 +695,12 @@
                     <div class="cajaformulario">
                         <span class="secondary-title">Email</span>
                         <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
                     <div class="cajaformulario">
                         <span class="secondary-title">Contraseña</span>
                         <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="password" required="">
+                        <input class="margin-top" type="password" name="password">
                     </div>
                 </form>
             </div>
@@ -723,12 +725,12 @@
                     <div class="caja-formulario">
                         <span class="secondary-title">Email</span>
                         <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="email" required="">
+                        <input class="margin-top" type="text" name="email">
                     </div>
                     <div class="caja-formulario">
                         <span class="secondary-title">Contraseña</span>
                          <label class="error">Este campo es obligatorio</label>
-                        <input class="margin-top" type="password" required="">
+                        <input class="margin-top" type="password" name="password">
                     </div>
                 </form>
             </div>
@@ -746,7 +748,7 @@
             <p class="subtitle centrado">por publicar tu curso!</p>
             <div class="container-popup cf">
                 <div class="pform">
-                    <p>En menos de 24 horas tendrás tu curso publicado.</p> 
+                    <p>En menos de 24 horas tendrás tu curso publicado.</p>
                     <p>Este formulario se enviará a nuestro sistema y si se adapta a nuestra política, será publicado. </p>
                     <p>Disculpa las molestias.</p>
                 </div>
@@ -766,7 +768,7 @@
             <p class="subtitle centrado">por publicar tu duda!</p>
             <div class="container-popup cf">
                 <div class="pform">
-                    <p>En menos de 24 horas tendrás tu duda publicada en el apartado Busca tu alumno.</p> 
+                    <p>En menos de 24 horas tendrás tu duda publicada en el apartado Busca tu alumno.</p>
                     <p>Este formulario se enviará a nuestro sistema y si se adapta a nuestra política, será publicado. </p>
                     <p>Disculpa las molestias.</p>
                 </div>
@@ -790,6 +792,7 @@
            </div>
        </div>
    </div>
+</div>
 </div>
 </body>
 </html>

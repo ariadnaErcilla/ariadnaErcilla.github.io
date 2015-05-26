@@ -303,8 +303,7 @@ body {
 
 .linia {
   border: 0;
-  border-top: 1px solid #999;
-  margin-top: 20px; }
+  border-top: 1px solid #999; }
 
 .in-line {
   display: inline-block; }
@@ -328,9 +327,6 @@ body {
   margin: 0 auto; }
 
 /*habia una clase para esto? no la he encontrado y ue creado otra */
-ul {
-  padding-left: 0; }
-
 /*anuncios*/
 .todos-anuncios {
   float: right;
@@ -378,7 +374,7 @@ Buscador
 -----------*/
 .titular-seccion-buscador {
   float: right;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 15px;
   position: relative;
   width: 100%; }
@@ -398,9 +394,9 @@ Buscador
   width: 25%;
   margin: 15px; }
 
-.imagen-anuncios-buscador {
-  width: 100%;
-  margin: 0 0 10px 5px; }
+.imagenes-buscador {
+  width: 90%;
+  margin: 0px  10px 5px 5px; }
 
 .imagen-anuncios-creativos {
   width: 90%;
@@ -425,9 +421,9 @@ Buscador
   margin-top: 15px;
   width: 100%; }
 
-@media all and (min-width: 500px) {
-  .button-2 .type-color-3 .full-button {
-    font-size: 12px; } }
+.padding-boton {
+  padding: 30px; }
+
 /*-------
 ayuda
 -------*/
@@ -498,6 +494,9 @@ Anuncio ampliado
   margin-top: 20px;
   max-width: 100%; }
 
+.container-perfil-button {
+  width: 20%; }
+
 /*botones*/
 .general-button, .button-1,
 .button-2,
@@ -508,16 +507,6 @@ Anuncio ampliado
   display: inline-block;
   text-align: center;
   transition: all 0.3s ease; }
-
-.general-button:hover, .button-1:hover,
-.button-2:hover,
-.button-3:hover,
-.button-mail:hover {
-  background-color: #f28960; }
-
-.button-3:hover,
-.hover-boton:hover {
-  color: white; }
 
 .full-button,
 .full-button-header {
@@ -628,8 +617,21 @@ Anuncio ampliado
 .button-unete span {
   color: #404041; }
 
+.general-button:hover, .button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-mail:hover {
+  background-color: #f28960; }
+
 .button-unete:hover {
   background-color: #f15c22; }
+
+.button-1:hover {
+  background-color: #00A6A5;
+  opacity: 0.8; }
+
+.button-3:hover {
+  background-color: #F5C8B7; }
 
 .mail-cursos {
   background-image: url(../imagenes/mail-b.svg);
@@ -637,9 +639,22 @@ Anuncio ampliado
   background-repeat: no-repeat;
   background-size: contain; }
 
+span.buzon-buscador {
+  background-image: url(../imagenes/mail-b.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin: 0 auto;
+  padding: 0px; }
+
 /*--------
 Text inputs and text areas
 --------*/
+select {
+  border-radius: 30px; }
+
 .pform {
   padding-top: 8px;
   margin: 0; }
@@ -655,11 +670,11 @@ textarea,
 select {
   background: white;
   border: 1px solid #A0A0A0;
-  border-radius: 7px;
+  border-radius: 5px;
   color: #A0A0A0;
   display: block;
   font-size: 0.876rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1rem;
   padding: .4rem;
   width: 100%; }
@@ -1287,6 +1302,9 @@ contenedores anuncios
   opacity: 1;
   pointer-events: auto; }
 
+.popup-active {
+  overflow: hidden; }
+
 .popup {
   margin: 0 auto;
   position: absolute;
@@ -1802,6 +1820,9 @@ header {
   margin: 10px;
   width: 200px; }
 
+ul {
+  padding-left: 0; }
+
 .menu ul {
   padding-left: 10px; }
 
@@ -2138,6 +2159,7 @@ dropdown
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 50px;
+  height: 100%;
   width: 100%; }
 
 .texto-top {
@@ -2148,8 +2170,9 @@ dropdown
 .box-ampersand-top {
   background-image: url(../imagenes/imagen-ampersand-home.svg);
   background-repeat: no-repeat;
-  height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 8%;
+  height: 100%; }
 
 .container-button {
   margin-top: 30px; }
@@ -2166,11 +2189,11 @@ dropdown
   text-align: center;
   width: 80%; }
 
+.article1 {
+  height: 100%; }
+
 /* Media Querys Top*/
 @media all {
-  .fondo-img-top {
-    height: 100%; }
-
   .box-top-1,
   .box-top-2 {
     background-repeat: no-repeat;
@@ -2185,14 +2208,13 @@ dropdown
 
   .texto-top {
     width: 100%;
-    margin: 0; }
+    margin: 0; } }
+.full-button {
+  width: 60%;
+  margin: 0 auto; }
 
-  .full-button {
-    width: 60%;
-    margin: 0 auto; } }
 @media all and (min-width: 500px) {
   .fondo-img-top {
-    height: 135%;
     width: 100%; }
 
   .box-top-1,
@@ -2211,7 +2233,7 @@ dropdown
   .texto-top {
     width: 45%; }
 
-  .full-button {
+  .button-home {
     width: 100%;
     margin: 0 auto; }
 
@@ -2219,9 +2241,6 @@ dropdown
     margin: 0 auto;
     max-width: 1250px; } }
 @media all and (min-width: 1024px) {
-  .fondo-img-top {
-    height: 70%; }
-
   .box-top-1,
   .box-top-2 {
     float: left;
@@ -2247,6 +2266,9 @@ dropdown
     position: absolute;
     top: 85%;
     right: 25px; }
+
+  .button-home {
+    width: 100%; }
 
   .full-button {
     margin: 0 auto;
@@ -2312,6 +2334,41 @@ dropdown
   margin: 0 auto;
   width: 40%; }
 
+@media all {
+  .container-botones {
+    display: inline-block;
+    width: 100%;
+    margin: 15px;
+    padding-bottom: 20px; }
+
+  .container-botones-funciona {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px; }
+
+  .imagen-anuncios-buscador {
+    width: 80%; } }
+@media all and (min-width: 600px) {
+  .container-botones {
+    display: inline-block;
+    width: 35%; }
+
+  .container-botones-funciona {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px; } }
+@media all and (min-width: 1024px) {
+  .container-botones {
+    display: inline-block;
+    width: 30%; }
+
+  .container-botones-funciona {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px; } }
 /*
 .contenido-top-2,
 .contenido-top-1{
@@ -7238,7 +7295,6 @@ th.hide-for-touch {
 .sg-fondo-header {
   background-color: white;
   border-radius: 0px;
-  padding: 10px;
   margin-top: 20px; }
 
 .sg-fondo-blanco {
@@ -7375,7 +7431,7 @@ th.hide-for-touch {
   margin: 0 auto; }
 
 .sg-margin-bottom-title {
-  margin-bottom: 100px; }
+  margin-bottom: 40px; }
 
 .sg-no-margin {
   margin-top: 5px;
@@ -7456,5 +7512,9 @@ th.hide-for-touch {
 
 .sg-margin-negativo {
   margin-top: -20px; }
+
+.sg-container-main-title {
+  margin: 0 auto;
+  width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

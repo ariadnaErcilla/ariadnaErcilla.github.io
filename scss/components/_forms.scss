@@ -1,6 +1,9 @@
 /*--------
 Text inputs and text areas
 --------*/
+select{
+    border-radius: 30px;
+}
 
 .pform{
     padding-top: 8px;
@@ -19,11 +22,11 @@ textarea,
 select {
     background: white;
     border: 1px solid #A0A0A0;
-    border-radius: 7px;
+    border-radius: 5px;
     color: #A0A0A0;
     display: block;
     font-size: 0.876rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1rem;
     padding: .4rem;
     width: 100%;
