@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-=======
-$(document).ready(function(){  
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-61202468-1', 'auto');
-  ga('send', 'pageview');
->>>>>>> c30fc75bb32e1e9914dd8925146ad3413192eda0
+$(document).ready(function(){  
+
 
 /*filtros-responsive*/
 
@@ -340,72 +332,7 @@ $('#cerrar').click(function(e){
    $('.buscador-desplegado').hide();
     return false;
     });
-<<<<<<< HEAD
-/*estrellas valorar*/
-$( "li.primera-estrella" ).click(function(e){
-    e.preventDefault();
-    if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-    }else{
-        $(this).nextAll().addClass("estrella-inactiva");
-    }
-});
 
-$( "li.segunda-estrella" ).click(function(e){
-    e.preventDefault();
-    if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-
-        $(this).nextAll().addClass("estrella-inactiva");
-
-    }
-
-});
-$( "li.tercera-estrella" ).click(function(e){
-    e.preventDefault();
-     if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-
-         $(this).nextAll().addClass("estrella-inactiva");
-
-    }
-});
-$( "li.cuarta-estrella" ).click(function(e){
-    e.preventDefault();
-    if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-         $(this).nextAll().addClass("estrella-inactiva");
-
-    }
-});
-$( "li.quinta-estrella" ).click(function(e){
-    e.preventDefault();
-     if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-         $(this).nextAll().addClass("estrella-inactiva");
-
-    }
-});
-=======
-
->>>>>>> c30fc75bb32e1e9914dd8925146ad3413192eda0
 /*niveles barras*/
 $( "li.primera-barra" ).click(function(e){
     e.preventDefault();
