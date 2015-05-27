@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -693,7 +694,8 @@ select {
   -webkit-user-select: none; }
 
 .custom-file-input:active::before {
-  background: white; }
+  background: white;
+  margin-right: 10px; }
 
 .big-textarea {
   padding-bottom: 50px; }
