@@ -1,4 +1,4 @@
-  
+
 /*filtros-responsive*/
 $(document).ready(function(){
 
@@ -337,7 +337,7 @@ $( "li.primera-estrella" ).click(function(e){
         $(this).removeClass("estrella-inactiva");
     }else{
         $(this).nextAll().addClass("estrella-inactiva");
-    }    
+    }
 });
 
 $( "li.segunda-estrella" ).click(function(e){
@@ -350,9 +350,9 @@ $( "li.segunda-estrella" ).click(function(e){
     }else{
 
         $(this).nextAll().addClass("estrella-inactiva");
-        
-    }     
-    
+
+    }
+
 });
 $( "li.tercera-estrella" ).click(function(e){
     e.preventDefault();
@@ -362,10 +362,10 @@ $( "li.tercera-estrella" ).click(function(e){
         $(this).prevAll().addClass("estrella-activa");
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-    
+
          $(this).nextAll().addClass("estrella-inactiva");
-        
-    }    
+
+    }
 });
 $( "li.cuarta-estrella" ).click(function(e){
     e.preventDefault();
@@ -376,8 +376,8 @@ $( "li.cuarta-estrella" ).click(function(e){
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
          $(this).nextAll().addClass("estrella-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.quinta-estrella" ).click(function(e){
     e.preventDefault();
@@ -388,8 +388,8 @@ $( "li.quinta-estrella" ).click(function(e){
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
          $(this).nextAll().addClass("estrella-inactiva");
-       
-    }    
+
+    }
 });
 /*niveles barras*/
 $( "li.primera-barra" ).click(function(e){
@@ -399,7 +399,7 @@ $( "li.primera-barra" ).click(function(e){
         $(this).removeClass("barra-inactiva");
     }else{
         $(this).nextAll().addClass("barra-inactiva");
-    }    
+    }
 });
 
 $( "li.segunda-barra" ).click(function(e){
@@ -412,9 +412,9 @@ $( "li.segunda-barra" ).click(function(e){
     }else{
 
         $(this).nextAll().addClass("barra-inactiva");
-        
-    }     
-    
+
+    }
+
 });
 $( "li.tercera-barra" ).click(function(e){
     e.preventDefault();
@@ -424,10 +424,10 @@ $( "li.tercera-barra" ).click(function(e){
         $(this).prevAll().addClass("barra-activa");
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
-    
+
          $(this).nextAll().addClass("barra-inactiva");
-        
-    }    
+
+    }
 });
 $( "li.cuarta-barra" ).click(function(e){
     e.preventDefault();
@@ -438,8 +438,8 @@ $( "li.cuarta-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.quinta-barra" ).click(function(e){
     e.preventDefault();
@@ -450,8 +450,8 @@ $( "li.quinta-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.sexta-barra" ).click(function(e){
     e.preventDefault();
@@ -462,8 +462,8 @@ $( "li.sexta-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.septima-barra" ).click(function(e){
     e.preventDefault();
@@ -474,8 +474,8 @@ $( "li.septima-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.octava-barra" ).click(function(e){
     e.preventDefault();
@@ -486,8 +486,8 @@ $( "li.octava-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.novena-barra" ).click(function(e){
     e.preventDefault();
@@ -498,8 +498,8 @@ $( "li.novena-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.decima-barra" ).click(function(e){
     e.preventDefault();
@@ -510,7 +510,7 @@ $( "li.decima-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 })
