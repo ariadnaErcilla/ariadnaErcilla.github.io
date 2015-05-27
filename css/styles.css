@@ -526,9 +526,9 @@ Anuncio ampliado
 .small-button {
   width: 8%; }
 
-.button-1 {
-  background-color: #00A6A5; }
-
+/*.button-1{
+    background-color: #00A6A5;
+}*/
 .button-2 {
   background-color: #f15c22; }
 
@@ -625,10 +625,6 @@ Anuncio ampliado
 
 .button-unete:hover {
   background-color: #f15c22; }
-
-.button-1:hover {
-  background-color: #00A6A5;
-  opacity: 0.8; }
 
 .button-3:hover {
   background-color: #F5C8B7; }
@@ -1693,6 +1689,9 @@ footer {
 
 .pie {
   margin: 0 auto; }
+
+.terms {
+  padding-top: 10px; }
 
 .mini-box-pie {
   float: left;
