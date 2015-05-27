@@ -7,20 +7,24 @@
 .sg-container-full {
     width: 100%;
 }
+
 .sg-img-logo{
     margin:10px;
 }
+
 .sg-menu{
     float: right;
     line-height: 1.5;
     margin-right: 20px;
     text-align: center;
 }
+
 .sg-menu ul li{
     float: left;
     list-style: none;
     margin-left: 15px;
 }
+
 .sg-menu li a {
     color: #404041;
 }
@@ -29,6 +33,7 @@
 .sg-menu a:hover {
     color: #f15c22;
 }
+
 .sg-logo{
     margin: 0 auto;
     width: 20%;
@@ -38,7 +43,6 @@
 .sg-style-guide{
     margin: 0;
     background: #fff;
-    background: white;
 }
 
 .sg-wrapper{
@@ -101,25 +105,23 @@
     text-align: center;
 }
 
-.sg-border-grueso {
+/*
+.sg-border-grueso,
+.sg-border-fino3,
+.sg-border-fino4,
+.sg-border-fino5, {
     width: 200px;
 }
-
-.sg-border-fino3 {
-    width: 200px;
-}
-
-.sg-border-fino4 {
-    width: 200px;
-}
-
-.sg-border-fino5 {
-    width: 200px;
-}
-
+*/
 .sg-container-colores{
     width: 900px;
     height: 200px;
+}
+
+.container-colores{
+    width:800px;
+    height:150px;
+    margin: 0 auto;
 }
 
 .sg-container-borde{
@@ -128,10 +130,29 @@
     margin: 0 auto;
 }
 
+.container-borde{
+    width:800px;
+    height:150px;
+    margin: 0 auto;
+}
+
+.sg-codigo-color{
+    margin: 40px;
+    color: white;
+}
+
+.sg-codigo-color1{
+    margin: 40px;
+    color: #404041;
+}
+
+.sg-color-corporativo{
+
+}
 .sg-color-corporativo1{
     width:200px;
     height:150px;
-    background-color:#00A6A5;
+    background-color:#yellow;
     float:left;
     color:white;
     margin-left: 5px;
@@ -191,11 +212,8 @@
     margin: 0 auto;
 }
 
-.sg-margin-top{
-    margin-top: 10px;
-}
-
-.sg-margin-top-iconos {
+.sg-margin-top,
+.sg-margin-top-iconos{
     margin-top: 10px;
 }
 
@@ -242,7 +260,7 @@
 .sg-pepe{
     width: 20%;
     float: left;
-    margin: 40px 40px 25px 0px;
+    margin: 40px 40px 25px 0;
 }
 
 .sg-pepe-imagen{
@@ -252,7 +270,7 @@
 .sg-todos-anuncios{
     width: 100%;
     padding-top: 20px;
-    margin: 10px 0px 40px 0px;
+    margin: 10px 0 40px 0;
 }
 
 .sg-todos-anuncios li{
@@ -453,7 +471,42 @@
 .sg-margin-negativo {
     margin-top: -20px
 }
+
 .sg-container-main-title{
     margin: 0 auto;
     width: 50%;
 }
+
+
+.sg-border{
+    width:150px;
+    height:150px;
+    float:left;
+}
+
+.sg-border-grueso{
+    border:5px solid #00A6A5;
+    margin-left: 5px;
+}
+
+.sg-border-fino3{
+    border:2px solid #F15C22;
+    margin-left: 10px;
+}
+
+.sg-border-fino4{
+    border:2px solid #404041;
+    margin-left: 10px;
+}
+.sg-border-fino5{
+    border:2px solid rgba(51, 51, 51, .15);
+    margin-left: 10px;
+}
+
+/*
+.sg-background-4{
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: rgba(51, 51, 51, .15);
+}
+*/
