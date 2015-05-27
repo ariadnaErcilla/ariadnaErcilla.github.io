@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -2329,10 +2328,6 @@ dropdown
   .texto-top {
     width: 100%;
     margin: 0; } }
-.full-button {
-  width: 60%;
-  margin: 0 auto; }
-
 @media all and (min-width: 500px) {
   .fondo-img-top {
     width: 100%; }
@@ -2402,10 +2397,6 @@ dropdown
   .button-home {
     width: 100%; }
 
-  .full-button {
-    margin: 0 auto;
-    width: 100%; }
-
   .container-home {
     margin: 0 auto;
     max-width: 1250px; } }
@@ -2459,16 +2450,42 @@ dropdown
   margin-bottom: 40px;
   overflow: hidden; }
 
-.container-botones-como-funciona {
-  width: 100%;
-  margin: 0 auto; }
+.container-como-funciona {
+  width: 100%; }
 
 .container-botones {
   display: inline-block;
   margin: 0 auto;
   width: 40%; }
 
+.container-uno-como-funciona {
+  float: left;
+  width: 20%;
+  margin: 15px; }
+
+.imagen-anuncios-como-funciona {
+  width: 100%; }
+
+.texto-paso-como-funciona {
+  float: right;
+  margin: 25px 0 0 5px;
+  width: 70%; }
+
 @media all {
+  .texto-paso-como-funciona {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+
+  .container-uno-como-funciona {
+    float: none;
+    width: 20%;
+    margin: 0 auto; }
+
+  .imagen-anuncios-como-funciona {
+    width: 100%; }
+
   .container-botones {
     display: inline-block;
     width: 100%;
@@ -2484,9 +2501,22 @@ dropdown
   .imagen-anuncios-buscador {
     width: 80%; } }
 @media all and (min-width: 600px) {
+  .container-uno-como-funciona {
+    float: left;
+    margin: 15px; }
+
+  .imagen-anuncios-como-funciona {
+    width: 100%; }
+
+  .texto-paso-como-funciona {
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 70%;
+    text-align: left; }
+
   .container-botones {
     display: inline-block;
-    width: 35%; }
+    width: 40%; }
 
   .container-botones-funciona {
     width: 90%;
@@ -2494,6 +2524,18 @@ dropdown
     text-align: center;
     padding-bottom: 50px; } }
 @media all and (min-width: 1024px) {
+  .container-uno-como-funciona {
+    float: left;
+    margin: 15px; }
+
+  .imagen-anuncios-como-funciona {
+    width: 100%; }
+
+  .texto-paso-como-funciona {
+    float: right;
+    margin: 25px 0 0 0;
+    width: 65%; }
+
   .container-botones {
     display: inline-block;
     width: 30%; }
