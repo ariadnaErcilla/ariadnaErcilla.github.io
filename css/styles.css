@@ -714,7 +714,8 @@ select {
   border: 1px solid black;
   border-radius: 0;
   height: 20px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 6px; }
 
 label.error {
   background-color: #F15C22;
