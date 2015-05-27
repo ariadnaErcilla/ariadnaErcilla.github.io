@@ -69,6 +69,7 @@
     margin: 0;
 }
 
+/*
 .sg-subtitle-style-guide{
     font-family: "DOSIS", sans-serif;
     font-size: 1.5rem;
@@ -77,8 +78,9 @@
     margin: 40px;
     text-align: center;
     text-transform: uppercase;
-}
+}*/
 
+/*
 .sg-subtitle-style-guide-2{
     font-family: "DOSIS", sans-serif;
     font-size: 1.5rem;
@@ -87,7 +89,7 @@
     margin: 40px;
     text-align: center;
     text-transform: uppercase;
-}
+}*/
 
 .sg-margin-bottom{
     margin-bottom: 55px;
@@ -149,10 +151,11 @@
 .sg-color-corporativo{
 
 }
+
 .sg-color-corporativo1{
     width:200px;
     height:150px;
-    background-color:#yellow;
+    background-color:#00A6A5;
     float:left;
     color:white;
     margin-left: 5px;
