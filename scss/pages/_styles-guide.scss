@@ -1,12 +1,34 @@
 .sg-header-position{
     position: fixed;
     width: 100%;
+    margin:0;
 }
 
 .sg-container-full {
     width: 100%;
 }
+.sg-img-logo{
+    margin:10px;
+}
+.sg-menu{
+    float: right;
+    line-height: 1.5;
+    margin-right: 20px;
+    text-align: center;
+}
+.sg-menu ul li{
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+}
+.sg-menu li a {
+    color: #404041;
+}
 
+.sg-menu li a.active,
+.sg-menu a:hover {
+    color: #f15c22;
+}
 .sg-logo{
     margin: 0 auto;
     width: 20%;
