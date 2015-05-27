@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -2271,24 +2270,26 @@ dropdown
     padding: 50px 50px 150px 0px; }
 
   .box-top-2 {
-    padding: 50px 0px 150px 80px; }
+    padding: 50px 0px 150px 60px; }
 
   .box-ampersand-top {
     background-position: center;
     float: left;
     position: absolute;
     top: 40%;
-    margin-bottom: 50px; }
+    left: 46%;
+    width: 8%;
+    margin: 0 auto; }
 
   .box-ampersand-top::after {
     content: "";
     background-image: url(../imagenes/imagen-flecha-home.svg);
     background-repeat: no-repeat;
-    width: 15%;
+    width: 100%;
     height: 100%;
     position: absolute;
-    left: 48%;
-    top: 220px; }
+    left: 24%;
+    top: 200px; }
 
   .button-home {
     width: 100%; }
