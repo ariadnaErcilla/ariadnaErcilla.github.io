@@ -1656,6 +1656,9 @@ aside categorias
 .container-ordenar-mobile {
   display: none; }
 
+.iconos-cat {
+  list-style: none; }
+
 /*--------
 aside perfil
 --------*/
@@ -1814,6 +1817,15 @@ anuncios
   .no-display,
   .foto,
   .foto-alumno {
+    display: none; } }
+@media screen and (max-width: 470px) {
+  .lista-categorias ul {
+    width: 100%; }
+
+  .grupo-iconos {
+    width: 100%; }
+
+  .ordenar-title {
     display: none; } }
 /*header*/
 header {
