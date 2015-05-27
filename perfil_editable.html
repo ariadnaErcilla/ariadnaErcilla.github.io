@@ -2,79 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Home</title>
     <title>Perfil</title>
-
     <link rel="stylesheet" href="css/styles.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/popup.js"></script>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-    <header class="cf">
-        <div class="container-home cf">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
-                </a>
+       <header class="cf">
+    <div class="container-home cf">
+        <div class="logo">
+            <a href="index.html">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
+            </a>
+        </div>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
             </div>
-            <nav class="menu cf">
-                <div class="float-menu">
+            <div class="right">
+                <div class="registro">
                     <ul class="esconder">
-                        <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                        <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                        <li><a class="login" href="#login">Log in</a></li>
+                        <li><a class="registro" href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
-                <div class="right">
-                    <div class="registro">
-                        <ul class="esconder">
-                            <li><a class="login" href="#login">Log in</a></li>
-                            <li><a class="registro" href="#registro">Regístrate</a></li>
+                <div class="lupa-buscador">
+                    <div class="dropdown-wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="lupa-buscador">
-                        <div class="dropdown-wrap">
-                            <a href="#">
-                                <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
-                            </a>
-                            <ul class="dropdown">
-                                <li class="alineacion-vertical">
-                                    <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
-                                </li>
-                                <li class="alineacion-vertical">
-                                    <a href="busca_tu_alumno.html">Busca tu alumno</a>
-                                </li>
-                                <li class="alineacion-vertical">
-                                    <a href="como_funciona.html">¿Cómo funciona?</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a id="abrir" href="">
-                            <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
-                        </a>
-                    </div>
+                    <a id="abrir" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                    </a>
                 </div>
-            </nav>
-        </div>
-        <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
-            <div class="buscador-container-derecha cf">
-                <div class="container-button-buscador left">
-                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
-                </div>
-                <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
-                </a>
             </div>
+        </nav>
+    </div>
+    <div class="buscador-desplegado cf">
+        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
+        <div class="buscador-container-derecha cf">
+            <div class="container-button-buscador left">
+                <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
+            </div>
+            <a id="cerrar" href="">
+                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
+            </a>
         </div>
-    </header>
+    </div>
+</header>
     <div class="background-4">
         <div class="container tabla margin-top">
             <div class="parte-izquierda cell-tabla">

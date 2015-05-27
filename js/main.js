@@ -1,6 +1,14 @@
-  
+$(document).ready(function(){  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61202468-1', 'auto');
+  ga('send', 'pageview');
+
 /*filtros-responsive*/
-$(document).ready(function(){
+
 
   $('#abrir-filtros').click(function(e){
         $(this).hide();
@@ -28,7 +36,7 @@ $(document).ready(function(){
         $('.container-ordenar-mobile').hide();
         return false;
     });
-/*flitros*/
+/*filtros*/
     $('.categoria-arquitectura').click(function(e){
         e.preventDefault();
         if($('.categoria-arquitectura').hasClass('select')) {
@@ -329,68 +337,7 @@ $('#cerrar').click(function(e){
    $('.buscador-desplegado').hide();
     return false;
     });
-/*estrellas valorar*/
-$( "li.primera-estrella" ).click(function(e){
-    e.preventDefault();
-    if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-    }else{
-        $(this).nextAll().addClass("estrella-inactiva");
-    }    
-});
 
-$( "li.segunda-estrella" ).click(function(e){
-    e.preventDefault();
-    if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-
-        $(this).nextAll().addClass("estrella-inactiva");
-        
-    }     
-    
-});
-$( "li.tercera-estrella" ).click(function(e){
-    e.preventDefault();
-     if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-    
-         $(this).nextAll().addClass("estrella-inactiva");
-        
-    }    
-});
-$( "li.cuarta-estrella" ).click(function(e){
-    e.preventDefault();
-    if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-         $(this).nextAll().addClass("estrella-inactiva");
-       
-    }    
-});
-$( "li.quinta-estrella" ).click(function(e){
-    e.preventDefault();
-     if($(this).hasClass("estrella-inactiva")){
-        $(this).addClass("estrella-activa");
-        $(this).removeClass("estrella-inactiva");
-        $(this).prevAll().addClass("estrella-activa");
-        $(this).prevAll().removeClass("estrella-inactiva");
-    }else{
-         $(this).nextAll().addClass("estrella-inactiva");
-       
-    }    
-});
 /*niveles barras*/
 $( "li.primera-barra" ).click(function(e){
     e.preventDefault();
