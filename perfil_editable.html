@@ -110,9 +110,9 @@
             <div class="box-perfil cell-tabla cf">
                 <nav class="menu-interior">
                     <ul class="cf">
-                        <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
-                        <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
-                        <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
+                        <li class="pestanyas"><a class="pestanya-1 seleccionado" id="pestanya-1" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-2" name="ancla" id="pestanya-2" href="#option-2">Portafolio</a></li>
+                        <li class="pestanyas"><a class="pestanya-3" id="pestanya-3" href="perfil-editable/pestanya-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
                         <li class="pestanyas"><a class="pestanya-6" href="#option-6">Mensajería</a></li>
@@ -130,6 +130,9 @@
                                 <p class="secondary-subtitle margin-top clear  clear">Añade una descripción que te defina y que muestre tus habilidades.</p>
                             </div>
                             <div class="descripcion-mi-perfil cf">
+                                <a href="#ancla"> prueba de link </a>
+                                <a href="#option-3"> prueba de link </a>
+                                <a href="pestanya-3"> prueba de link </a>
                                 <p class="no-margin">
                                    Soy Silvia y me encanta el diseño web. Actualmente estoy de becaria en una e-commerce de productos de deporte y estoy acabando la carrera en Bau. ME gustaría mejorar mis aptitudes en programación y os puedo ayudar con los programas de Diseño de Adobe.
                                </p>
@@ -270,15 +273,15 @@
                 <li class="celdas-programas"> Programa </li>
                 <li class="celdas-programas-final type-color-2 opacity-hover"> Photoshop</li>
                 <li class="celdas-programas"> Nivel</li>
-                <ul class="margin-right cf">
-                <li class="icono-conocimientos primera-barra barra-inactiva left">
-                <li class="icono-conocimientos segunda-barra barra-inactiva left">
-                <li class="icono-conocimientos tercera-barra barra-inactiva left">
-                <li class="icono-conocimientos cuarta-barra barra-inactiva left">
-                <li class="icono-conocimientos quinta-barra barra-inactiva left">
-                <li class="icono-conocimientos sexta-barra barra-inactiva left">
-                <li class="icono-conocimientos septima-barra barra-inactiva left">
-                <li class="icono-conocimientos octava-barra barra-inactiva left">
+                <ul class="margin-right cf pointer">
+                <li class="icono-conocimientos primera-barra barra-activa left">
+                <li class="icono-conocimientos segunda-barra barra-activa left">
+                <li class="icono-conocimientos tercera-barra barra-activa left">
+                <li class="icono-conocimientos cuarta-barra barra-activa left">
+                <li class="icono-conocimientos quinta-barra barra-activa left">
+                <li class="icono-conocimientos sexta-barra barra-activa left">
+                <li class="icono-conocimientos septima-barra barra-activa left">
+                <li class="icono-conocimientos octava-barra barra-activa left">
                 <li class="icono-conocimientos novena-barra barra-inactiva left">
                 <li class="icono-conocimientos decima-barra barra-inactiva left">
                 </ul>
@@ -286,17 +289,17 @@
                 </li>
             </ul>
 
-            <ul class="lista-programas">
+            <ul class="lista-programas pointer">
                  <li class="celdas-programas"> Programa </li>
                 <li class="celdas-programas-final type-color-2 opacity-hover"> Illustrator</li>
                 <li class="celdas-programas"> Nivel</li>
                 <ul class="margin-right cf">
-                <li class="icono-conocimientos primera-barra barra-inactiva left">
-                <li class="icono-conocimientos segunda-barra barra-inactiva left">
-                <li class="icono-conocimientos tercera-barra barra-inactiva left">
-                <li class="icono-conocimientos cuarta-barra barra-inactiva left">
-                <li class="icono-conocimientos quinta-barra barra-inactiva left">
-                <li class="icono-conocimientos sexta-barra barra-inactiva left">
+                <li class="icono-conocimientos primera-barra barra-activa left">
+                <li class="icono-conocimientos segunda-barra barra-activa left">
+                <li class="icono-conocimientos tercera-barra barra-activa left">
+                <li class="icono-conocimientos cuarta-barra barra-activa left">
+                <li class="icono-conocimientos quinta-barra barra-activa left">
+                <li class="icono-conocimientos sexta-barra barra-activa left">
                 <li class="icono-conocimientos septima-barra barra-inactiva left">
                 <li class="icono-conocimientos octava-barra barra-inactiva left">
                 <li class="icono-conocimientos novena-barra barra-inactiva left">
@@ -392,7 +395,11 @@
                     <a class="type-color-5" href="#">
                         <div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-20.jpg" alt="Imagen fotografía del movimiento">
-                            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
+                            <div class="iconos-anuncios">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                </div>
+                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
+                                </div>
                             </div>
                         </div>
 
@@ -434,8 +441,12 @@
         <article class="anuncio-perfil-propio">
             <a class="type-color-5" href="#"><div class="image-container cf">
                 <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
-                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-                </div>
+                <div class="iconos-anuncios">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                </div>
+                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
+                                </div>
+                            </div>
             </div>
             <div class="hover-container">
                 <p>En este curso puedo enseñarte a maquetar formularios para tu web de la forma más sencilla, con HTML y CSS. No perderás el tiempo, ¡te enseñaré en 1 hora!</p>
@@ -474,8 +485,12 @@
     <article class="anuncio-perfil">
         <a class="type-color-5" href="#"><div class="image-container cf">
             <img class="img-curso" src="imagenes/anuncio-23.jpg" alt="Imagen de formatos de imagen">
-            <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-            </div>
+            <div class="iconos-anuncios">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                </div>
+                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
+                                </div>
+                            </div>
         </div>
         <div class="hover-container">
             <p>Si aún no controlas  cuando se tiene que exportar una imagen en .png .jpg .pdf, en una sesión de una hora te explicaré los pros y los contras de cada extensión y cuando se usan. </p>
@@ -529,8 +544,12 @@
                 <article class="anuncio-perfil">
                     <a class="type-color-5" href="#"><div class="foto">
                         <img class="foto-alumno imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
-                        <div class="lapiz-redonda icono-lapiz-redonda opacity-hover">
-                        </div>
+                        <div class="iconos-anuncios">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                </div>
+                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
+                                </div>
+                            </div>
                     </div>
                     <div class="content-container cf">
                         <div class="texto-cuadrado">
