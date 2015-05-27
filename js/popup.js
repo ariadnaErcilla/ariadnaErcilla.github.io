@@ -150,6 +150,16 @@ $('#cerrar-consejos').click(function(e){
         return false;
     });
 /*links-popups*/
+ $('.registro').click(function(e){
+        e.preventDefault();
+        $('#popup').load('popups.html #registro', function() {
+            $('#registro').show();
+            $('.close').click(function(e){
+                $('.masc:visible').hide();
+            });
+        });
+
+      });
 $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
@@ -160,17 +170,6 @@ $('.login').click(function(e){
         });
 
       });
-/*
-  $('.registro').click(function(e){
-        e.preventDefault();
-        $('#popup').load('popups.html #registro', function() {
-            $('#registro').show();
-            $('.close').click(function(e){
-                $('.masc:visible').hide();
-            });
-        });
-
-      });*/
 $('.publicar-curso').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #publicar-curso', function() {
