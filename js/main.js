@@ -1,6 +1,17 @@
+<<<<<<< HEAD
+=======
+$(document).ready(function(){  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61202468-1', 'auto');
+  ga('send', 'pageview');
+>>>>>>> c30fc75bb32e1e9914dd8925146ad3413192eda0
 
 /*filtros-responsive*/
-$(document).ready(function(){
+
 
   $('#abrir-filtros').click(function(e){
         $(this).hide();
@@ -28,7 +39,7 @@ $(document).ready(function(){
         $('.container-ordenar-mobile').hide();
         return false;
     });
-/*flitros*/
+/*filtros*/
     $('.categoria-arquitectura').click(function(e){
         e.preventDefault();
         if($('.categoria-arquitectura').hasClass('select')) {
@@ -329,6 +340,7 @@ $('#cerrar').click(function(e){
    $('.buscador-desplegado').hide();
     return false;
     });
+<<<<<<< HEAD
 /*estrellas valorar*/
 $( "li.primera-estrella" ).click(function(e){
     e.preventDefault();
@@ -391,6 +403,9 @@ $( "li.quinta-estrella" ).click(function(e){
 
     }
 });
+=======
+
+>>>>>>> c30fc75bb32e1e9914dd8925146ad3413192eda0
 /*niveles barras*/
 $( "li.primera-barra" ).click(function(e){
     e.preventDefault();

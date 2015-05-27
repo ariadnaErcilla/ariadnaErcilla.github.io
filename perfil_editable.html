@@ -2,79 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Home</title>
     <title>Perfil</title>
-
     <link rel="stylesheet" href="css/styles.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/popup.js"></script>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-    <header class="cf">
-        <div class="container-home cf">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
-                </a>
+       <header class="cf">
+    <div class="container-home cf">
+        <div class="logo">
+            <a href="index.html">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
+            </a>
+        </div>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
             </div>
-            <nav class="menu cf">
-                <div class="float-menu">
+            <div class="right">
+                <div class="registro">
                     <ul class="esconder">
-                        <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                        <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                        <li><a class="login" href="#login">Log in</a></li>
+                        <li><a class="registro" href="#registro">Regístrate</a></li>
                     </ul>
                 </div>
-                <div class="right">
-                    <div class="registro">
-                        <ul class="esconder">
-                            <li><a class="login" href="#login">Log in</a></li>
-                            <li><a class="registro" href="#registro">Regístrate</a></li>
+                <div class="lupa-buscador">
+                    <div class="dropdown-wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="lupa-buscador">
-                        <div class="dropdown-wrap">
-                            <a href="#">
-                                <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
-                            </a>
-                            <ul class="dropdown">
-                                <li class="alineacion-vertical">
-                                    <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
-                                </li>
-                                <li class="alineacion-vertical">
-                                    <a href="busca_tu_alumno.html">Busca tu alumno</a>
-                                </li>
-                                <li class="alineacion-vertical">
-                                    <a href="como_funciona.html">¿Cómo funciona?</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a id="abrir" href="">
-                            <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
-                        </a>
-                    </div>
+                    <a id="abrir" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                    </a>
                 </div>
-            </nav>
-        </div>
-        <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
-            <div class="buscador-container-derecha cf">
-                <div class="container-button-buscador left">
-                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
-                </div>
-                <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
-                </a>
             </div>
+        </nav>
+    </div>
+    <div class="buscador-desplegado cf">
+        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
+        <div class="buscador-container-derecha cf">
+            <div class="container-button-buscador left">
+                <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
+            </div>
+            <a id="cerrar" href="">
+                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
+            </a>
         </div>
-    </header>
+    </div>
+</header>
     <div class="background-4">
         <div class="container tabla margin-top">
             <div class="parte-izquierda cell-tabla">
@@ -394,11 +391,10 @@
             <div class="descripcion-mi-perfil">
 
                 <article class="anuncio-perfil">
-                    <a class="type-color-5" href="#">
                         <div class="image-container cf">
                             <img class="img-curso" src="imagenes/anuncio-20.jpg" alt="Imagen fotografía del movimiento">
                             <div class="iconos-anuncios">
-                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                                 </div>
                                 <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
                                 </div>
@@ -414,7 +410,6 @@
                                 <p class="tags type-color-1">#cinema 4d</p>
                             </div>
                         </div>
-                    </a>
                     <div class="content-container-cursos cf">
                         <div class="texto-cuadrado-cursos">
                             <h2 class="secondary-title">Grandes vídeos con Cinema 4D</h2>
@@ -436,15 +431,16 @@
                         <div class="container-icon">
                             <span class="modificar type-color-2">(8)</span>
                         </div>
-                    </div></a>
+                    </div>
+                </a>
                 </div>
             </div>
         </article>
         <article class="anuncio-perfil-propio">
-            <a class="type-color-5" href="#"><div class="image-container cf">
+            <div class="image-container cf">
                 <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
                 <div class="iconos-anuncios">
-                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                                 </div>
                                 <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
                                 </div>
@@ -458,7 +454,7 @@
                     <p class="light">Nombre:<span class="type-color-5">Jordi Martín</span></p>
                     <p class="tags type-color-1">#formulario</p>
                 </div>
-            </div></a>
+            </div>
             <div class="content-container-cursos cf">
                 <div class="texto-cuadrado-cursos">
                     <h2 class="secondary-title">Maquetar formularios en 1 hora</h2>
@@ -485,10 +481,10 @@
         </div>
     </article>
     <article class="anuncio-perfil">
-        <a class="type-color-5" href="#"><div class="image-container cf">
+            <div class="image-container cf">
             <img class="img-curso" src="imagenes/anuncio-23.jpg" alt="Imagen de formatos de imagen">
             <div class="iconos-anuncios">
-                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                                 </div>
                                 <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
                                 </div>
@@ -502,7 +498,7 @@
                 <p class="light">Nombre:<span class="type-color-5">Santiago Cortés</span></p>
                 <p class="tags type-color-1">#extensiones</p>
             </div>
-        </div></a>
+        </div>
         <div class="content-container-cursos cf">
             <div class="texto-cuadrado-cursos">
                 <h2 class="secondary-title">Guarda los documentos de Photoshop</h2>
@@ -544,11 +540,10 @@
             </div>
             <div class="descripcion-mi-perfil">
                 <article class="anuncio-perfil">
-                    <a class="type-color-5" href="#">
                         <div class="foto">
                         <img class="foto-alumno imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
                         <div class="iconos-anuncios">
-                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left">
+                                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                                 </div>
                                 <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
                                 </div>
@@ -560,7 +555,6 @@
                             <p class="centrado">He creado una web en local en wordpress. Tengo un dominio y un servidor pero no consigo subirla. Ayudame, porfavor!.
                             </p>
                         </div>
-                    </a>
                         <div class="mas-info">
                             <div class="total-icono">
                                 <div class="container-icon">
@@ -860,7 +854,7 @@
 </div>
 </div>
 </div>
-
+<div id="popup"></div>
 <footer>
         <div class="pie cf">
             <section class="mini-box-pie">
