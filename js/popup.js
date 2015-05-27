@@ -356,5 +356,8 @@ $('.valorar').click(function(e){
                  
               }    
           });
+           
+        });
+   });
 
  })
