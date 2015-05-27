@@ -1,4 +1,6 @@
+
 $(document).ready(function(){  
+
 
 /*filtros-responsive*/
 
@@ -339,7 +341,7 @@ $( "li.primera-barra" ).click(function(e){
         $(this).removeClass("barra-inactiva");
     }else{
         $(this).nextAll().addClass("barra-inactiva");
-    }    
+    }
 });
 
 $( "li.segunda-barra" ).click(function(e){
@@ -352,9 +354,9 @@ $( "li.segunda-barra" ).click(function(e){
     }else{
 
         $(this).nextAll().addClass("barra-inactiva");
-        
-    }     
-    
+
+    }
+
 });
 $( "li.tercera-barra" ).click(function(e){
     e.preventDefault();
@@ -364,10 +366,10 @@ $( "li.tercera-barra" ).click(function(e){
         $(this).prevAll().addClass("barra-activa");
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
-    
+
          $(this).nextAll().addClass("barra-inactiva");
-        
-    }    
+
+    }
 });
 $( "li.cuarta-barra" ).click(function(e){
     e.preventDefault();
@@ -378,8 +380,8 @@ $( "li.cuarta-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.quinta-barra" ).click(function(e){
     e.preventDefault();
@@ -390,8 +392,8 @@ $( "li.quinta-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.sexta-barra" ).click(function(e){
     e.preventDefault();
@@ -402,8 +404,8 @@ $( "li.sexta-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.septima-barra" ).click(function(e){
     e.preventDefault();
@@ -414,8 +416,8 @@ $( "li.septima-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.octava-barra" ).click(function(e){
     e.preventDefault();
@@ -426,8 +428,8 @@ $( "li.octava-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.novena-barra" ).click(function(e){
     e.preventDefault();
@@ -438,8 +440,8 @@ $( "li.novena-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 $( "li.decima-barra" ).click(function(e){
     e.preventDefault();
@@ -450,7 +452,7 @@ $( "li.decima-barra" ).click(function(e){
         $(this).prevAll().removeClass("barra-inactiva");
     }else{
          $(this).nextAll().addClass("barra-inactiva");
-       
-    }    
+
+    }
 });
 })

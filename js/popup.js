@@ -1,5 +1,5 @@
 $(document).ready(function(){
- /*forms-errors*/   
+ /*forms-errors*/
 function validateEmail(sEmail) {
               var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
               if (filter.test(sEmail))
@@ -29,7 +29,7 @@ function validateEmail(sEmail) {
               passwordname.addClass('error');
               labelpass.show();
             }
-           
+
           });
 
 $('#registro button, #registro-curso button, #registro-duda button, #registro-contactar button').click(function(e) {
@@ -63,7 +63,7 @@ $('#registro button, #registro-curso button, #registro-duda button, #registro-co
               passwordname.addClass('error');
               labelpass.show();
             }
-           
+
           });
 $('#contactar button, #publicar-curso button, #publicar-duda button, #modificar-curso').click(function(e) {
             e.preventDefault();
@@ -182,6 +182,16 @@ $('#cerrar-consejos').click(function(e){
         return false;
     });
 /*links-popups*/
+ $('.registro').click(function(e){
+        e.preventDefault();
+        $('#popup').load('popups.html #registro', function() {
+            $('#registro').show();
+            $('.close').click(function(e){
+                $('.masc:visible').hide();
+            });
+        });
+
+      });
 $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
@@ -190,17 +200,7 @@ $('.login').click(function(e){
                 $('.masc:visible').hide();
             });
         });
-        
-      });
-  $('.registro').click(function(e){
-        e.preventDefault();
-        $('#popup').load('popups.html #registro', function() {
-            $('#registro').show();
-            $('.close').click(function(e){
-                $('.masc:visible').hide();
-            });
-        });
-        
+
       });
 $('.publicar-curso').click(function(e){
       e.preventDefault();
@@ -317,9 +317,9 @@ $('.modificar-curso').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-           
+
         });
-});       
+});
 $('.valorar').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #valorar', function() {
@@ -334,7 +334,7 @@ $('.valorar').click(function(e){
                     $(this).removeClass("estrella-inactiva");
                 }else{
                     $(this).nextAll().addClass("estrella-inactiva");
-                }    
+                }
             });
 
           $( "li.segunda-estrella" ).click(function(e){
@@ -347,9 +347,9 @@ $('.valorar').click(function(e){
               }else{
 
                   $(this).nextAll().addClass("estrella-inactiva");
-                  
-              }     
-              
+
+              }
+
           });
           $( "li.tercera-estrella" ).click(function(e){
               e.preventDefault();
@@ -359,10 +359,10 @@ $('.valorar').click(function(e){
                   $(this).prevAll().addClass("estrella-activa");
                   $(this).prevAll().removeClass("estrella-inactiva");
               }else{
-              
+
                    $(this).nextAll().addClass("estrella-inactiva");
-                  
-              }    
+
+              }
           });
           $( "li.cuarta-estrella" ).click(function(e){
               e.preventDefault();
@@ -373,8 +373,8 @@ $('.valorar').click(function(e){
                   $(this).prevAll().removeClass("estrella-inactiva");
               }else{
                    $(this).nextAll().addClass("estrella-inactiva");
-                 
-              }    
+
+              }
           });
           $( "li.quinta-estrella" ).click(function(e){
               e.preventDefault();
@@ -385,10 +385,10 @@ $('.valorar').click(function(e){
                   $(this).prevAll().removeClass("estrella-inactiva");
               }else{
                    $(this).nextAll().addClass("estrella-inactiva");
-                 
-              }    
+
+              }
           });
-           
+
         });
    });
 

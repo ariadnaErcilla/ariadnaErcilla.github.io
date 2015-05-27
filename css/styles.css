@@ -51,6 +51,15 @@
   font-weight: 400;
   margin: 0; }
 
+.typo-pop-up {
+  font-family: "DOSIS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+  margin: 40px;
+  text-align: center;
+  text-transform: uppercase; }
+
 .titulo-nuevo-usuario {
   font-family: "Dosis";
   font-size: 2.25rem;
@@ -141,92 +150,105 @@ p {
   font-family: 'Lato', sans-serif; }
 
 /*colores*/
-.container-colores {
-  width: 800px;
-  height: 150px;
-  margin: 0 auto; }
+/*
+.container-colores{
+    width:800px;
+    height:150px;
+    margin: 0 auto;
+}
+.container-borde{
+    width:800px;
+    height:150px;
+    margin: 0 auto;
+}
 
-.container-borde {
-  width: 800px;
-  height: 150px;
-  margin: 0 auto; }
+.sg-codigo-color{
+    margin: 40px;
+    color: white;
+}
 
-.sg-codigo-color {
-  margin: 40px;
-  color: white; }
+.sg-codigo-color1{
+    margin: 40px;
+    color: #404041;
+}
 
-.sg-codigo-color1 {
-  margin: 40px;
-  color: #404041; }
 
-.sg-color-corporativo1 {
-  width: 150px;
-  height: 150px;
-  background-color: #00A6A5;
-  float: left;
-  color: white;
-  margin-left: 80px; }
+.sg-color-corporativo1{
+    width:150px;
+    height:150px;
+    background-color:#00A6A5;
+    float:left;
+    color:white;
+    margin-left: 80px;
+}
 
-.sg-color-corporativo2 {
-  width: 150px;
-  height: 150px;
-  background-color: #F15C22;
-  float: left;
-  color: white;
-  margin-left: 10px; }
+.sg-color-corporativo2{
+    width:150px;
+    height:150px;
+    background-color:#F15C22;
+    float:left;
+    color:white;
+    margin-left: 10px;
+}
 
-.sg-color-corporativo3 {
-  width: 150px;
-  height: 150px;
-  background-color: #404041;
-  color: white;
-  float: left;
-  margin-left: 10px; }
+.sg-color-corporativo3{
+    width:150px;
+    height:150px;
+    background-color:#404041;
+    color:white;
+    float:left;
+    margin-left: 10px;
+}
 
-.sg-color-corporativo4 {
-  width: 150px;
-  height: 150px;
-  background-color: #E6E6E6;
-  color: #404041;
-  float: left;
-  margin-left: 10px; }
+.sg-color-corporativo4{
+    width:150px;
+    height:150px;
+    background-color:#E6E6E6;
+    color: #404041;
+    float:left;
+    margin-left: 10px;
+}
 
-.sg-border-grueso {
-  width: 150px;
-  height: 150px;
-  border: 5px solid #00A6A5;
-  float: left;
-  margin-left: 5px; }
+.sg-border-grueso{
+    width:150px;
+    height:150px;
+    border:5px solid #00A6A5;
+    float:left;
+    margin-left: 5px;
+}
 
-.sg-border-fino3 {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #F15C22;
-  float: left;
-  margin-left: 10px; }
+.sg-border-fino3{
+    width:150px;
+    height:150px;
+    border:2px solid #F15C22;
+    float:left;
+    margin-left: 10px;
+}
+.sg-border-fino4{
+    width:150px;
+    height:150px;
+    border:2px solid #404041;
+    float: left;
+    margin-left: 10px;
+}
+.sg-border-fino5{
+    width:150px;
+    height:150px;
+    border:2px solid rgba(51, 51, 51, .15);
+    float: left;
+    margin-left: 10px;
+}
 
-.sg-border-fino4 {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #404041;
-  float: left;
-  margin-left: 10px; }
+.sg-background-4{
+    width:150px;
+    height:150px;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: rgba(51, 51, 51, .15);
+    float: left;
+}
 
-.sg-border-fino5 {
-  width: 150px;
-  height: 150px;
-  border: 2px solid rgba(51, 51, 51, 0.15);
-  float: left;
-  margin-left: 10px; }
-
-.sg-background-4 {
-  width: 150px;
-  height: 150px;
-  margin-left: 10px;
-  margin-top: 30px;
-  background-color: rgba(51, 51, 51, 0.15);
-  float: left; }
-
+*/
 /*links*/
 a {
   text-decoration: none; }
@@ -389,25 +411,11 @@ Buscador
 .container-anuncios-buscador {
   background-color: white;
   overflow: hidden;
-  margin-bottom: 30px; }
-
-.container-imagen-button {
-  float: left;
-  width: 25%;
-  margin: 15px; }
-
-.imagenes-buscador {
-  width: 90%;
-  margin: 0px  10px 5px 5px; }
+  margin-bottom: 35px; }
 
 .imagen-anuncios-creativos {
   width: 90%;
   margin: 0 0 10px 5px; }
-
-.texto-anuncios-buscador {
-  float: right;
-  margin: 25px 0 0 5px;
-  width: 65%; }
 
 .container-dudas-cursos {
   margin-top: 5px;
@@ -426,6 +434,56 @@ Buscador
 .padding-boton {
   padding: 30px; }
 
+@media all {
+  .container-imagen-button {
+    display: none; }
+
+  .textos-anuncios-buscador {
+    width: 100%; }
+
+  .container-anuncios-buscador {
+    padding: 30px; }
+
+  .button-mail-responsive {
+    display: block; } }
+@media all and (min-width: 500px) {
+  .container-imagen-button {
+    display: block; }
+
+  .texto-anuncios-buscador {
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%; }
+
+  .container-imagen-button {
+    float: left;
+    width: 25%;
+    margin: 15px; }
+
+  .container-anuncios-buscador {
+    padding: 5px; }
+
+  .button-mail-responsive {
+    display: none; } }
+@media all and (min-width: 1024px) {
+  .container-imagen-button {
+    display: block; }
+
+  .texto-anuncios-buscador {
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%; }
+
+  .container-imagen-button {
+    float: left;
+    width: 25%;
+    margin: 15px; }
+
+  .container-anuncios-buscador {
+    padding: 5px; }
+
+  .button-mail-responsive {
+    display: none; } }
 /*-------
 ayuda
 -------*/
@@ -646,6 +704,37 @@ span.buzon-buscador {
   width: 18px;
   margin: 0 auto;
   padding: 0px; }
+
+.boton-buscador {
+  padding: 6px 0px 5px 0px; }
+
+.button-mail-responsive {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 30%;
+  background-color: #f15c22; }
+  .button-mail-responsive span {
+    background-image: url(../imagenes/mail-b.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 16px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 16px; }
 
 /*--------
 Text inputs and text areas
@@ -1126,6 +1215,11 @@ contenedores anuncios
 .icono-conocimientos {
   height: 21px;
   width: 7px;
+  list-style: none; }
+
+.icono-conocimientos-no-editables {
+  height: 21px;
+  width: 80px;
   list-style: none; }
 
 .icono-rectangular-grande, .icono-rectangular-footer, .icono-redes-an-ampliado {
@@ -7182,380 +7276,5 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
-.sg-header-position {
-  position: fixed;
-  width: 100%;
-  margin: 0; }
-
-.sg-container-full {
-  width: 100%; }
-
-.sg-img-logo {
-  margin: 10px; }
-
-.sg-menu {
-  float: right;
-  line-height: 1.5;
-  margin-right: 20px;
-  text-align: center; }
-
-.sg-menu ul li {
-  float: left;
-  list-style: none;
-  margin-left: 15px; }
-
-.sg-menu li a {
-  color: #404041; }
-
-.sg-menu li a.active,
-.sg-menu a:hover {
-  color: #f15c22; }
-
-.sg-logo {
-  margin: 0 auto;
-  width: 20%;
-  padding-bottom: 20px; }
-
-.sg-style-guide {
-  margin: 0;
-  background: #fff;
-  background: white; }
-
-.sg-wrapper {
-  max-width: 970px;
-  margin: 0 auto;
-  background: white;
-  padding: 1rem; }
-
-.sg-main-title {
-  text-align: center;
-  font-family: "Dosis", sans-serif;
-  font-size: 3rem;
-  color: #00A6A5;
-  text-transform: uppercase;
-  margin: 0;
-  margin-top: 10px; }
-
-.sg-title-style-guide {
-  font-family: "DOSIS", sans-serif;
-  font-size: 2rem;
-  color: #404041;
-  margin: 0; }
-
-.sg-subtitle-style-guide {
-  font-family: "DOSIS", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: black;
-  margin: 40px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.sg-subtitle-style-guide-2 {
-  font-family: "DOSIS", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: white;
-  margin: 40px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.sg-margin-bottom {
-  margin-bottom: 55px; }
-
-.sg-padding-top {
-  padding-top: 20px; }
-
-.sg-text-left {
-  text-align: left; }
-
-.sg-subtitle {
-  text-align: center; }
-
-.sg-border-grueso {
-  width: 200px; }
-
-.sg-border-fino3 {
-  width: 200px; }
-
-.sg-border-fino4 {
-  width: 200px; }
-
-.sg-border-fino5 {
-  width: 200px; }
-
-.sg-container-colores {
-  width: 900px;
-  height: 200px; }
-
-.sg-container-borde {
-  width: 650px;
-  height: 150px;
-  margin: 0 auto; }
-
-.sg-color-corporativo1 {
-  width: 200px;
-  height: 150px;
-  background-color: #00A6A5;
-  float: left;
-  color: white;
-  margin-left: 5px; }
-
-.sg-color-corporativo2 {
-  width: 200px;
-  height: 150px;
-  background-color: #F15C22;
-  color: white;
-  float: left;
-  margin-left: 10px; }
-
-.sg-color-corporativo3 {
-  width: 200px;
-  height: 150px;
-  background-color: #404041;
-  color: white;
-  float: left;
-  margin-left: 10px; }
-
-.sg-color-corporativo4 {
-  width: 200px;
-  height: 150px;
-  background-color: rgba(51, 51, 51, 0.15);
-  color: white;
-  float: left;
-  margin-left: 10px; }
-
-.sg-color-tipografia {
-  background-color: #808284;
-  margin-left: 20px;
-  float: none; }
-
-.sg-izquierda {
-  padding-left: 0px; }
-
-.sg-fondo-header {
-  background-color: white;
-  border-radius: 0px;
-  margin-top: 20px; }
-
-.sg-fondo-blanco {
-  background-color: white;
-  border-radius: 0px;
-  padding: 10px;
-  margin-bottom: 20px; }
-
-.sg-margin-auto {
-  margin: 0 auto; }
-
-.sg-margin-top {
-  margin-top: 10px; }
-
-.sg-margin-top-iconos {
-  margin-top: 10px; }
-
-.sg-margin-top-logo {
-  margin-top: 25px; }
-
-.sg-margin-top-texto {
-  margin-top: 60px; }
-
-.sg-display-block {
-  display: block; }
-
-.sg-ancho-estrellas {
-  width: 120px; }
-
-.sg-ancho-conocimientos {
-  width: 120px; }
-
-.sg-ancho-caja {
-  width: 30%; }
-
-.sg-float-none {
-  float: none;
-  clear: both; }
-
-.sg-contenedor-header {
-  width: 1500px; }
-
-.sg-container-button {
-  width: 500px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  margin: 0 auto; }
-
-.sg-pepe {
-  width: 20%;
-  float: left;
-  margin: 40px 40px 25px 0px; }
-
-.sg-pepe-imagen {
-  width: 100%; }
-
-.sg-todos-anuncios {
-  width: 100%;
-  padding-top: 20px;
-  margin: 10px 0px 40px 0px; }
-
-.sg-todos-anuncios li {
-  list-style: none; }
-
-.sg-row {
-  border: 2px solid  white;
-  margin-bottom: 20px;
-  max-width: 1280px; }
-
-.sg-col-3 {
-  background-color: rgba(51, 51, 51, 0.15);
-  float: left;
-  width: 30%; }
-
-.sg-col-9 {
-  background-color: #F0F0F0;
-  float: left;
-  width: 70%; }
-
-.sg-col-4 {
-  background-color: white;
-  border: 1px solid #DCDCDB; }
-
-.sg-contenido-valoraciones {
-  width: 70%; }
-
-.sg-iconos-lateral {
-  width: 320px;
-  margin: 0 auto; }
-
-.sg-iconos-lateral-azules {
-  width: 220px;
-  margin: 0 auto; }
-
-.sg-iconos-header {
-  width: 180px;
-  margin: 0 auto;
-  padding-top: 20px; }
-
-.sg-ilustraciones-margin {
-  width: 750px;
-  padding-top: 20px;
-  margin: 0 auto; }
-
-.sg-color-anuncios {
-  background-color: white; }
-
-.sg-iconos-negros {
-  width: 370px;
-  margin: 0 auto;
-  padding-top: 25px;
-  clear: both; }
-
-.sg-centrar-tabla {
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 20px; }
-
-.sg-text-align {
-  text-align: center; }
-
-.sg-centrar-munecos {
-  width: 400px;
-  margin: 0 auto;
-  margin-top: 100px; }
-
-.sg-imagen-munecos {
-  width: 400px; }
-
-.sg-max-width {
-  max-width: 600px; }
-
-.sg-margin-centro {
-  margin: 0 auto; }
-
-.sg-margin-bottom-title {
-  margin-bottom: 40px; }
-
-.sg-no-margin {
-  margin-top: 5px;
-  margin-bottom: 30px; }
-
-.sg-float-left {
-  float: left;
-  width: 45%; }
-
-.sg-float-right {
-  float: right;
-  width: 45%; }
-
-.sg-letterspacing {
-  letter-spacing: 3px; }
-
-.sg-font-weight {
-  font-weight: 300; }
-
-.lato-1 {
-  font-family: 'Lato';
-  font-weight: 100; }
-
-.lato-2 {
-  font-family: 'Lato';
-  font-weight: 300; }
-
-.lato-3 {
-  font-family: 'Lato';
-  font-weight: 700; }
-
-.dosis-1 {
-  font-family: 'Dosis';
-  font-weight: 200; }
-
-.dosis-2 {
-  font-family: 'Dosis';
-  font-weight: 500; }
-
-.dosis-3 {
-  font-family: 'Dosis';
-  font-weight: 700; }
-
-.sg-clear {
-  clear: both; }
-
-.sg-margin-top-text {
-  padding-top: 50px; }
-
-.sg-p-colores {
-  margin-top: 160px;
-  color: black; }
-
-.sg-margin-buttons {
-  margin-right: 20px; }
-
-.sg-float-iconos {
-  float: left; }
-
-.sg-margin-bottom-links {
-  margin-bottom: 20px; }
-
-.sg-borde-gris {
-  border: 1px solid rgba(51, 51, 51, 0.15); }
-
-.sg-margin-top-texto {
-  margin-top: 180px; }
-
-.sg-margin-iconos {
-  margin-bottom: 10px; }
-
-.sg-margin-title {
-  margin-left: 190px; }
-
-.sg-no-margin {
-  margin: 0;
-  padding: 0; }
-
-.sg-margin-negativo {
-  margin-top: -20px; }
-
-.sg-container-main-title {
-  margin: 0 auto;
-  width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

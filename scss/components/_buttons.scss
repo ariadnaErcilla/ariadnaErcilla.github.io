@@ -173,4 +173,43 @@ span.buzon-buscador{
   width: 18px;
   margin: 0 auto;
   padding: 0px;
+<<<<<<< HEAD
+}
+.boton-buscador{
+    padding: 6px 0px 5px 0px;
+
+}
+
+.button-mail-responsive{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 30%;
+    background-color: #f15c22;
+
+    span{
+         background-image:url(../imagenes/mail-b.svg);
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size: contain;
+        display: block;
+        height: 16px;
+        margin: auto;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        width: 16px;
+
+    }
+=======
+>>>>>>> c30fc75bb32e1e9914dd8925146ad3413192eda0
 }

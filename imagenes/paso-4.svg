@@ -2,8 +2,16 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="74.57px" height="69.532px" viewBox="0 0 74.57 69.532" enable-background="new 0 0 74.57 69.532" xml:space="preserve">
+	 width="74.57px" height="69.531px" viewBox="0 0 74.57 69.531" enable-background="new 0 0 74.57 69.531" xml:space="preserve">
 <circle fill="#00A7A6" cx="35.798" cy="35.777" r="26.677"/>
 <rect x="18.798" y="20.878" fill="none" width="34" height="30.166"/>
-<text transform="matrix(1 0 0 1 27.8052 48.3457)" fill="#FFFFFF" font-family="'Dosis-Book'" font-size="36">4</text>
+<g enable-background="new    ">
+	<path fill="#FFFFFF" d="M38.174,42.153H29.03c-0.312,0-0.546-0.096-0.702-0.288c-0.156-0.191-0.234-0.419-0.234-0.684
+		c0-0.239,0.048-0.443,0.144-0.612l9.036-17.819c0.12-0.264,0.282-0.45,0.486-0.559c0.203-0.107,0.414-0.162,0.63-0.162
+		c0.239,0,0.491,0.091,0.756,0.271s0.396,0.414,0.396,0.702c0,0.144-0.035,0.3-0.107,0.468l-8.316,16.416h7.056v-6.948
+		c0-0.312,0.119-0.54,0.359-0.684c0.24-0.145,0.516-0.216,0.828-0.216c0.289,0,0.559,0.071,0.811,0.216
+		c0.252,0.144,0.378,0.372,0.378,0.684v6.948h1.979c0.312,0,0.541,0.12,0.685,0.36s0.216,0.492,0.216,0.756
+		c0,0.288-0.084,0.552-0.252,0.792s-0.385,0.359-0.648,0.359H40.55v5.257c0,0.312-0.126,0.546-0.378,0.701
+		c-0.252,0.157-0.521,0.234-0.811,0.234c-0.312,0-0.588-0.077-0.828-0.234c-0.24-0.155-0.359-0.39-0.359-0.701V42.153z"/>
+</g>
 </svg>

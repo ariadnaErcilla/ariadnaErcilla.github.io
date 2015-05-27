@@ -79,29 +79,12 @@ Buscador
 .container-anuncios-buscador{
     background-color: white;
     overflow: hidden;
-    margin-bottom: 30px;
-}
-
-.container-imagen-button{
-    float: left;
-    width: 25%;
-    margin: 15px;
-}
-
-.imagenes-buscador{
-    width: 90%;
-    margin: 0px  10px 5px 5px;
+    margin-bottom: 35px;
 }
 
 .imagen-anuncios-creativos{
     width: 90%;
     margin: 0 0 10px 5px;
-}
-
-.texto-anuncios-buscador{
-    float: right;
-    margin: 25px 0 0 5px;
-    width: 65%;
 }
 
 .container-dudas-cursos{
@@ -125,6 +108,67 @@ Buscador
     padding: 30px;
 }
 
+
+@media all {
+    .container-imagen-button{
+    display: none;
+    }
+    .textos-anuncios-buscador{
+        width: 100%;
+    }
+    .container-anuncios-buscador{
+        padding: 30px;
+    }
+
+     .button-mail-responsive{
+        display: block;
+    }
+}
+@media all and (min-width: 500px){
+    .container-imagen-button{
+    display: block;
+}
+    .texto-anuncios-buscador{
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%;
+}
+    .container-imagen-button{
+    float: left;
+    width: 25%;
+    margin: 15px;
+}
+    .container-anuncios-buscador{
+        padding: 5px;
+}
+
+    .button-mail-responsive{
+        display: none;
+    }
+
+}
+@media all and (min-width: 1024px){
+    .container-imagen-button{
+    display: block;
+}
+    .texto-anuncios-buscador{
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%;
+}
+    .container-imagen-button{
+    float: left;
+    width: 25%;
+    margin: 15px;
+}
+    .container-anuncios-buscador{
+    padding: 5px;
+    }
+
+    .button-mail-responsive{
+        display: none;
+    }
+}
 
 /*-------
 ayuda
