@@ -28,7 +28,7 @@ $(document).ready(function(){
         $('.container-ordenar-mobile').hide();
         return false;
     });
-/*flitros*/
+/*filtros*/
     $('.categoria-arquitectura').click(function(e){
         e.preventDefault();
         if($('.categoria-arquitectura').hasClass('select')) {
