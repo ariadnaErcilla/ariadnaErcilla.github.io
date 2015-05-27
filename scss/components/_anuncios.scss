@@ -18,6 +18,7 @@
       &:hover{
         .hover-container{
             display: block;
+            cursor:pointer;
         }
     }
 }
@@ -29,11 +30,13 @@
 .texto-cuadrado {
     padding-bottom: 5px;
     text-align: center;
+    cursor:pointer;
 }
 
 .texto-cuadrado-cursos{
     padding-bottom: 20px;
     text-align: center;
+
 }
 
 .mas-info{

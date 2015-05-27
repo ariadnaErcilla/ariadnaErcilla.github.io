@@ -341,14 +341,16 @@ body {
   margin-bottom: 20%;
   position: relative; }
   .anuncio:hover .hover-container {
-    display: block; }
+    display: block;
+    cursor: pointer; }
 
 .content-container, .content-container-cursos {
   padding: 10px 20px 0 20px; }
 
 .texto-cuadrado {
   padding-bottom: 5px;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .texto-cuadrado-cursos {
   padding-bottom: 20px;
@@ -1382,7 +1384,7 @@ contenedores anuncios
   width: 45%; }
 
 .margin-auto-gracias {
-  width: 78%;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 0 10px 0; }
 
