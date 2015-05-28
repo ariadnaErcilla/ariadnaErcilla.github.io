@@ -9,6 +9,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/main.js"></script>
@@ -26,37 +28,37 @@
             <div class="sg-float-menu">
                 <ul>
                     <li class="dropdown-wrap">
-                        <a href="#" id="scroll-to-tipografias"class="uppercase">Styles</a>
+                        <a href="#" class="uppercase">Styles</a>
                         <ul class="dropdown">
-                            <li class="alineacion-vertical"><a>Tipografía</a></li>
-                            <li class="alineacion-vertical"><a>Colores</a></li>
-                            <li class="alineacion-vertical"><a>Botones</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-tipografia">Tipografía</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-colores">Colores</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-botones">Botones</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-wrap">
                         <a href="#" id="scroll-to-colores"class="uppercase">Assets</a>
                         <ul class="dropdown">
-                            <li class="alineacion-vertical"><a>Iconos</a></li>
-                            <li class="alineacion-vertical"><a>Ilustraciones</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-iconos">Iconos</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-ilustraciones">Ilustraciones</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-wrap">
                         <a href="#" id="scroll-to-botones"class="uppercase">Components</a>
                         <ul class="dropdown">
-                            <li class="alineacion-vertical"><a>Formularios</a></li>
-                            <li class="alineacion-vertical"><a>Tablas</a></li>
-                            <li class="alineacion-vertical"><a>Popups</a></li>
-                            <li class="alineacion-vertical"><a>Anuncios</a></li>
-                            <li class="alineacion-vertical"><a>Pestañas</a></li>
-                            <li class="alineacion-vertical"><a>Valoraciones</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-formularios">Formularios</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-tablas">Tablas</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-popups">Popups</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-anuncios">Anuncios</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-pestanas">Pestañas</a></li>
+                            <li class="alineacion-vertical"><a href="#" id="scroll-to-valoraciones">Valoraciones</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-wrap">
                         <a href="#" id="scroll-to-ilustraciones"class="uppercase">Layout</a>
                         <ul class="dropdown">
-                            <li class="alineacion-vertical"><a>Grill</a></li>
-                            <li class="alineacion-vertical"><a>Header</a></li>
-                            <li class="alineacion-vertical"><a>Footer</a></li>
+                            <li class="alineacion-vertical"><a id="scroll-to-grid">Grid</a></li>
+                            <li class="alineacion-vertical"><a id="scroll-to-header">Header</a></li>
+                            <li class="alineacion-vertical"><a id="scroll-to-footer">Footer</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -74,7 +76,7 @@
     <div class="sg-wrapper">
 
         <section class="sg-fondo-header clear">
-          <h1 class="sg-title-style-guide sg-margin-top-text" id="tipografias">Familias tipográficas</h1>
+          <h1 class="sg-title-style-guide sg-margin-top-text" id="tipografia">Familias tipográficas</h1>
           <p class="sg-no-margin sg-font-weight sg-max-width">Estas son las dos familias tipográficas que se utiliza en puntoyseguido</p>
           <div class="sg-float-left">
             <h3 class="secondary-title sg-margin-top-logo">LATO</h3>
@@ -804,7 +806,7 @@
 </div>
 </section>
 <section>
-<h1 class="sg-title-style-guide sg-margin-top-text cf" id="pestañas">Pestañas</h1>
+<h1 class="sg-title-style-guide sg-margin-top-text cf" id="pestanas">Pestañas</h1>
 <p class="sg-no-margin sg-font-weight sg-max-width">Verán las pestañas que se utilizan en el perfil del creativo</p>
  <div class="sg-margin-auto sg-borde-gris sg-margin-top-logo">
     <div class="menu-interior">
@@ -862,9 +864,9 @@
         </div>
     </section>
     <section class="sg-margin-bottom">
-        <h1 class="sg-title-style-guide sg-margin-top-text cf" id="layout">Layout</h1>
+        <h1 class="sg-title-style-guide sg-margin-top-text cf">Layout</h1>
         <p class="sg-no-margin sg-font-weight sg-max-width">Verán la retícula de toda la plataforma, los dos tipos de headers y el footer</p>
-        <h3 class="secondary-title sg-margin-top-logo">RETÍCULA / GRID</h3>
+        <h3 class="secondary-title sg-margin-top-logo" id="grid">RETÍCULA / GRID</h3>
         <p>Puntoyseguido ha utilizado el fundation5 para optimizar su grilla y crear una plataforma responsive</p>
         <div class="sg-row cf">
             <p class="centrado">row</p>
@@ -1077,8 +1079,8 @@
 $('.mensajes').click(function(e){
         e.preventDefault();
         $('this').load('perfil_editable.html #option-6');
-
  });
+
 </script>
 </body>
 

@@ -1,5 +1,5 @@
 
-$(document).ready(function(){  
+$(document).ready(function(){
 
 
 /*filtros-responsive*/
@@ -293,22 +293,47 @@ $('.pestanya-1').click(function() {
     return false;
 });
 /*scroll*/
-$('#scroll-to-cursos').click(function(e) {
+$('#scroll-to-cursos').click(function() {
     e.preventDefault();
     $(window).scrollTo($('#cursos'), 800);
 });
-$('#scroll-to-creativos').click(function(e) {
+$('#scroll-to-creativos').click(function() {
     e.preventDefault();
     $(window).scrollTo($('#creativos'), 800);
 });
-$('#scroll-to-dudas').click(function(e) {
+$('#scroll-to-dudas').click(function() {
     e.preventDefault();
     $(window).scrollTo($('#dudas'), 800);
 });
-$('#scroll-to-como-funciona').click(function(e) {
+
+$('#scroll-to-tipografia').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#como-funciona'), 800);
+    $(window).scrollTo($('#tipografia'), 100);
 });
+$('#scroll-to-colores').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#colores'), 800);
+});
+$('#scroll-to-botones').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#botones'), 800);
+});
+
+
+
+$('#scroll-to-cursos').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#tipografias'), 800);
+});
+$('#scroll-to-creativos').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#colores'), 800);
+});
+$('#scroll-to-dudas').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#botones'), 800);
+});
+
 /*tablas*/
 $('td .icono-tabla-off').click(function() {
     $(this).hide();
