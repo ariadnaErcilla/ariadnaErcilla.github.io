@@ -3,6 +3,8 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: rgb(245,245,245);
+    padding: 10px;
 }
 
 .sg-container-full {
@@ -13,8 +15,12 @@
     margin:10px;
 }
 
+.sg-float-menu {
+    width: 350px;
+    margin: 0 auto;
+}
+
 .sg-menu{
-    float: right;
     line-height: 1.5;
     margin-right: 20px;
     text-align: center;
@@ -493,3 +499,96 @@
     background-color: rgba(51, 51, 51, .15);
 }
 */
+
+/*---
+dropdown
+---*/
+
+.dropdown-wrap {
+    float: left;
+    overflow: visible;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.dropdown-wrap a {
+    color: rgb(144, 197, 219);
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none;
+    padding: 0;
+    position: absolute;
+        top: 70%;
+        right: -20%;
+}
+
+.sg-menu .dropdown li {
+    background: #404041;
+    border-bottom: 1px solid #fff;
+    float: none;
+    padding: 0;
+}
+
+.sg-menu .dropdown a {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: .5rem 1rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 10rem;
+}
+
+.dropdown-wrap:hover .dropdown {
+    display: block;
+}
+
+.sg-menu .dropdown li:last-child {
+    border-bottom: 0;
+}
+
+.dropdown li:hover a::before {
+    background: #F15C22;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+        top: 0;
+        left: -.5rem;
+    width: .5rem;
+}
+
+.dropdown li:hover a {
+    color: #fff;
+}
+
+.dropdown:hover li:not(:hover) a {
+    background-color: #000;
+    color: #A4A4A4;
+    opacity: .4;
+}
+
+.dropdown li:first-child {
+    background-clip: padding-box;
+    border-top: .75rem solid transparent;
+    position: relative;
+}
+
+.dropdown li:first-child::before {
+    border-color: transparent transparent #404041 transparent;
+    border-style: solid;
+    border-width: 0 .75rem .75rem .75rem;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+        top: -.70rem;
+        right: 1rem;
+    width: 1rem;
+}
+
+.sg-menu li.alineacion-vertical a {
+    color: #fff;
+}
