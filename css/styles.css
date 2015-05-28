@@ -2225,7 +2225,8 @@ dropdown
 .mensaje-desplegado-2,
 .mensaje-desplegado-3,
 .mensaje-desplegado-4,
-.mensaje-desplegado-5 {
+.mensaje-desplegado-5,
+.perfil-hide {
   display: none; }
 
 .margenes-valoraciones {
@@ -2495,7 +2496,7 @@ dropdown
     padding-bottom: 20px; }
 
   .container-botones-funciona {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 20px; }
