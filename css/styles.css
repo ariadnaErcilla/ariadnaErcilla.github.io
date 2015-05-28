@@ -1427,6 +1427,10 @@ contenedores anuncios
 .top {
   top: 52px; }
 
+.height-scroll {
+  max-height: 400px;
+  overflow: scroll; }
+
 .top-gracias {
   top: 43px; }
 
@@ -1541,7 +1545,13 @@ ul {
     background-image: none; }
 
   .img-facebook {
-    display: none; } }
+    display: none; }
+
+  .margin-auto-gracias {
+    width: 100%; }
+
+  .margin-auto-popup {
+    width: 80%; } }
 @media screen and (min-width: 501px) {
   .popup-box {
     width: 500px; }
@@ -1920,7 +1930,6 @@ anuncios
 @media screen and (max-width: 641px) {
   .image-container,
   .img-curso,
-  .no-display,
   .foto,
   .foto-alumno {
     display: none; } }
@@ -2226,7 +2235,8 @@ dropdown
 .mensaje-desplegado-2,
 .mensaje-desplegado-3,
 .mensaje-desplegado-4,
-.mensaje-desplegado-5 {
+.mensaje-desplegado-5,
+.perfil-hide {
   display: none; }
 
 .margenes-valoraciones {

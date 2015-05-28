@@ -48,7 +48,11 @@
 .top{
     top: 52px;
 }
+.height-scroll{
 
+    max-height: 400px;
+    overflow: scroll;
+}
 .top-gracias{
     top:43px;
 }
@@ -194,6 +198,13 @@ ul{
     .img-facebook{
         display: none;
     }
+    .margin-auto-gracias{
+
+        width: 100%;
+    }
+    .margin-auto-popup{
+        width: 80%;
+    }
 }
 
 @media screen and (min-width:501px){
@@ -218,5 +229,6 @@ ul{
     border-bottom: 1px solid #404041;
     padding: 15px 0px;
     }
+
 
 }

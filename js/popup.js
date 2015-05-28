@@ -8,9 +8,9 @@ function validateEmail(sEmail) {
                   return false;
           }
 
-    $('#login button, #login-duda button, #login-curso button, #login-contactar').click(function(e) {
+    $('#login button, #login-duda button, #login-curso button, #login-contactar button, #recuperar button').click(function(e) {
             e.preventDefault();
-            var email = $('#login input[name="email"], #login-curso input[name="email"], #login-duda input[name="email"], #login-contactar input[name="email"]');
+            var email = $('#login input[name="email"], #login-curso input[name="email"], #login-duda input[name="email"], #login-contactar input[name="email"], #recuperar input[name="email"]');
             var label = email.siblings('label');
             var passwordname = $(' #login input[name="password"], #login-curso input[name="password"], #login-duda input[name="password"], #login-contactar input[name="password"]');
             var labelpass = passwordname.siblings('label');
@@ -42,12 +42,12 @@ $('#registro button, #registro-curso button, #registro-duda button, #registro-co
             var name = $('#registro input[name="personal"], #registro-curso input[name="personal"], #registro-duda input[name="personal"], #registro-contactar input[name="personal"]');
             var labelname = name.siblings('label');
             var personalname = $.trim(name.val());
-            if(personalname.length >= 4 && personalname.length <= 15) {
-              name.removeClass('error');
-              labelname.hide();
-            } else {
+            if(personalname== "") {
               name.addClass('error');
               labelname.show();
+            } else {
+              name.removeClass('error');
+              labelname.hide();
             }
             if(validateEmail(email.val())) {
               email.removeClass('error');
@@ -67,33 +67,46 @@ $('#registro button, #registro-curso button, #registro-duda button, #registro-co
           });
 $('#contactar button, #publicar-curso button, #publicar-duda button, #modificar-curso').click(function(e) {
             e.preventDefault();
-            var message = $('#contactar textarea[name="message"], #publicar-duda input[name="description"], #publicar-curso input[name="description"]');
+            var message = $('#contactar textarea[name="message"], #publicar-duda input[name="description"], #publicar-curso input[name="description"],#modificar-curso input[name="description"]');
             var labelmessage = message.siblings('label');
             var textmessage = $.trim(message.val());
-            var check = $('#contactar input[name="check"],#publicar-curso input[name="check"],#publicar-duda input[name="check"]');
+            var check = $('#contactar input[name="check"],#publicar-curso input[name="check"],#publicar-duda input[name="check"],#modificar-curso input[name="check"]');
             var labelcheck = check.siblings('label');
             var checkname= $.trim(check.val());
-            var title = $('#publicar-curso input[name="title"], #publicar-duda input[name="title"]');
+            var title = $('#publicar-curso input[name="title"], #publicar-duda input[name="title"], #modificar-curso input[name="title"]');
             var labeltitle = title.siblings('label');
             var titlename= $.trim(title.val());
-            var select = $('#publicar-curso input[name="select"], #publicar-duda input[name="select"]');
+            var select = $('#publicar-curso input[name="select"], #publicar-duda input[name="select"], #modificar-curso input[name="select"]');
             var labelselect = select.siblings('label');
             var selectname= $.trim(select.val());
-            if(textmessage.length >= 4) {
-              message.removeClass('error');
-              labelmessage.hide();
-            } else {
+            if(textmessage == "") {
               message.addClass('error');
               labelmessage.show();
-            }
-            if(titlename.length >= 4) {
-              title.removeClass('error');
-              labeltitle.hide();
             } else {
+              message.removeClass('error');
+              labelmessage.hide();
+            }
+            if(titlename == "") {
               title.addClass('error');
               labeltitle.show();
+            } else {
+              title.removeClass('error');
+              labeltitle.hide();
             }
-            
+            if(checkname.checked=="false") {
+              check.addClass('error');
+              labelcheck.show();
+            } else {
+              check.removeClass('error');
+              labelcheck.hide();
+            }
+            if(selectname.value =="") {
+              select.addClass('error');
+              labelselect.show();
+            } else {
+              select.removeClass('error');
+              labelselect.hide();
+            }
           
            
           });
