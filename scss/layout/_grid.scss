@@ -117,7 +117,7 @@ anuncios
 
     .cabecera-cursos, .cabecera-alumnos{
                 padding-top:0;
-            }
+        }
 }
 
 @media screen and (min-width: 801px){
@@ -134,4 +134,18 @@ anuncios
     .foto-alumno{
         display: none;
     }
+}
+@media screen and (max-width: 470px){
+
+    .lista-categorias ul{
+        width: 100%;
+    }
+    .grupo-iconos{
+        width: 100%;
+    }
+    .ordenar-title{
+
+        display: none;
+    }
+
 }

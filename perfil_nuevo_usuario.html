@@ -1,22 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Perfil</title>
-
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/popup.js"></script>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <script src="js/popup.js"></script>   
 </head>
-
 <body>
     <header class="cf">
         <div class="container-home cf">
@@ -86,7 +80,7 @@
                     <span class="type-color-2 margin-top">Sube tu foto</span>
                 </div>
                 <div>
-                    <p class="secondary-subtitle block margin-top centrado">280px x 280px. Máximo 30 Kb</p>
+                    <p class="secondary-subtitle block margin-top centrado">Recomendado 400px x 400px</p>
                 </div>
 
                <div class="informacion-persona">
@@ -109,7 +103,6 @@
                 </div>
 
                 <a class="button-2 boton-margen large-button type-color-3 publicar-curso" href="#">Publica tu curso</a>
-                <a class="button-2 boton-margen large-button type-color-3 contactar" href="#">Contáctale</a>
                 <p class="programas-mas"> ¡Aquí podrás publicar la clase que necesitas! </p>
                 <a class="button-3 type-color-2 large-button publicar-duda" href="#">Publica tu duda</a>
         </div>
@@ -275,7 +268,7 @@
                                 <li class="celdas-programas"> Programa </li>
                                 <li class="celdas-programas"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
                                 <li class="celdas-programas"> Nivel</li>
-                                <ul class="margin-right cf">
+                                <ul class="margin-right cf pointer">
                                 <li class="icono-conocimientos primera-barra barra-inactiva left">
                                 <li class="icono-conocimientos segunda-barra barra-inactiva left">
                                 <li class="icono-conocimientos tercera-barra barra-inactiva left">
@@ -292,7 +285,7 @@
                                 <li class="celdas-programas clear"> Programa </li>
                                 <li class="celdas-programas"> <input type="text" id="input-programas" placeholder="Ej: Wordpress" name="buscador"></li>
                                 <li class="celdas-programas"> Nivel</li>
-                                <ul class="margin-right cf">
+                                <ul class="margin-right cf pointer">
                                 <li class="icono-conocimientos primera-barra barra-inactiva left">
                                 <li class="icono-conocimientos segunda-barra barra-inactiva left">
                                 <li class="icono-conocimientos tercera-barra barra-inactiva left">
@@ -537,7 +530,7 @@
 </div>
 </div>
 </div>
-
+<div id="popup"></div>
 <!--footer -->
 <footer>
         <div class="pie cf">
@@ -589,7 +582,7 @@
 
 <script>
 
-<!--abrir y cerrar mensaje 
+<!--abrir y cerrar mensaje
 $('#abrir').click(function(e){
         $('.mensaje-desplegado').show();
         return false;

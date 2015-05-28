@@ -127,7 +127,8 @@
 .mensaje-desplegado-2,
 .mensaje-desplegado-3,
 .mensaje-desplegado-4,
-.mensaje-desplegado-5 {
+.mensaje-desplegado-5,
+.perfil-hide {
     display:none;
 }
 
@@ -156,7 +157,7 @@
     border: 2px solid #00A6A5;
     border-radius: 5px;
     width: 90%;
-    margin: 100px 40px 40px 40px;
+    margin: 100px 40px 40px;
     padding: 50px;
     position: relative;
 }
@@ -189,4 +190,10 @@
 
 .margen-formulario {
     margin: 10px 0 20px;
+}
+
+.iconos-anuncios{
+    position: absolute;
+    top: 4px;
+    right: 4px;
 }
