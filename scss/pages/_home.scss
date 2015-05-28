@@ -41,9 +41,6 @@
 /* Media Querys Top*/
 
 @media all {
-   .fondo-img-top {
-
-    }
 
     .box-top-1,
     .box-top-2 {
@@ -63,14 +60,6 @@
     margin: 0;
     }
   }
-
-  .button-home{
-}
-
-  .full-button{
-    width: 60%;
-    margin: 0 auto;
-}
 
 @media all and (min-width: 500px){
     .fondo-img-top{
@@ -160,11 +149,6 @@
     width: 100%;
 }
 
-    .full-button{
-    margin: 0 auto;
-    width: 100%;
-    }
-
   .container-home{
     margin: 0 auto;
     max-width: 1250px;
@@ -240,9 +224,9 @@
     overflow: hidden;
 }
 
-.container-botones-como-funciona{
+.container-como-funciona{
     width: 100%;
-    margin: 0 auto;
+
 }
 
 .container-botones{
@@ -250,9 +234,35 @@
     margin: 0 auto;
     width: 40%;
 }
+.container-uno-como-funciona{
+    float: left;
+    width: 20%;
+    margin: 15px;
+}
+.imagen-anuncios-como-funciona{
+    width: 100%;
+}
+.texto-paso-como-funciona{
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 70%;
+}
 
 @media all{
-
+    .texto-paso-como-funciona{
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+    .container-uno-como-funciona{
+    float: none;
+    width: 20%;
+    margin: 0 auto;
+}
+    .imagen-anuncios-como-funciona{
+    width: 100%;
+}
     .container-botones{
     display: inline-block;
     width: 100%;
@@ -271,10 +281,23 @@
 }
 
 @media all and (min-width: 600px) {
+  .container-uno-como-funciona{
+    float: left;
+    margin: 15px;
+}
+.imagen-anuncios-como-funciona{
+    width: 100%;
+}
+.texto-paso-como-funciona{
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 70%;
+    text-align: left;
+}
 
    .container-botones{
     display: inline-block;
-    width: 35%;
+    width: 40%;
 }
     .container-botones-funciona{
     width: 90%;
@@ -285,6 +308,18 @@
 }
 
 @media all and (min-width:1024px){
+    .container-uno-como-funciona{
+    float: left;
+    margin: 15px;
+}
+.imagen-anuncios-como-funciona{
+    width: 100%;
+}
+.texto-paso-como-funciona{
+    float: right;
+    margin: 25px 0 0 0;
+    width: 65%;
+}
   .container-botones{
     display: inline-block;
     width: 30%;
