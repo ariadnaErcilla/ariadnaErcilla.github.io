@@ -150,105 +150,92 @@ p {
   font-family: 'Lato', sans-serif; }
 
 /*colores*/
-/*
-.container-colores{
-    width:800px;
-    height:150px;
-    margin: 0 auto;
-}
-.container-borde{
-    width:800px;
-    height:150px;
-    margin: 0 auto;
-}
+.container-colores {
+  width: 800px;
+  height: 150px;
+  margin: 0 auto; }
 
-.sg-codigo-color{
-    margin: 40px;
-    color: white;
-}
+.container-borde {
+  width: 800px;
+  height: 150px;
+  margin: 0 auto; }
 
-.sg-codigo-color1{
-    margin: 40px;
-    color: #404041;
-}
+.sg-codigo-color {
+  margin: 40px;
+  color: white; }
 
+.sg-codigo-color1 {
+  margin: 40px;
+  color: #404041; }
 
-.sg-color-corporativo1{
-    width:150px;
-    height:150px;
-    background-color:#00A6A5;
-    float:left;
-    color:white;
-    margin-left: 80px;
-}
+.sg-color-corporativo1 {
+  width: 150px;
+  height: 150px;
+  background-color: #00A6A5;
+  float: left;
+  color: white;
+  margin-left: 80px; }
 
-.sg-color-corporativo2{
-    width:150px;
-    height:150px;
-    background-color:#F15C22;
-    float:left;
-    color:white;
-    margin-left: 10px;
-}
+.sg-color-corporativo2 {
+  width: 150px;
+  height: 150px;
+  background-color: #F15C22;
+  float: left;
+  color: white;
+  margin-left: 10px; }
 
-.sg-color-corporativo3{
-    width:150px;
-    height:150px;
-    background-color:#404041;
-    color:white;
-    float:left;
-    margin-left: 10px;
-}
+.sg-color-corporativo3 {
+  width: 150px;
+  height: 150px;
+  background-color: #404041;
+  color: white;
+  float: left;
+  margin-left: 10px; }
 
-.sg-color-corporativo4{
-    width:150px;
-    height:150px;
-    background-color:#E6E6E6;
-    color: #404041;
-    float:left;
-    margin-left: 10px;
-}
+.sg-color-corporativo4 {
+  width: 150px;
+  height: 150px;
+  background-color: #E6E6E6;
+  color: #404041;
+  float: left;
+  margin-left: 10px; }
 
-.sg-border-grueso{
-    width:150px;
-    height:150px;
-    border:5px solid #00A6A5;
-    float:left;
-    margin-left: 5px;
-}
+.sg-border-grueso {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #00A6A5;
+  float: left;
+  margin-left: 5px; }
 
-.sg-border-fino3{
-    width:150px;
-    height:150px;
-    border:2px solid #F15C22;
-    float:left;
-    margin-left: 10px;
-}
-.sg-border-fino4{
-    width:150px;
-    height:150px;
-    border:2px solid #404041;
-    float: left;
-    margin-left: 10px;
-}
-.sg-border-fino5{
-    width:150px;
-    height:150px;
-    border:2px solid rgba(51, 51, 51, .15);
-    float: left;
-    margin-left: 10px;
-}
+.sg-border-fino3 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #F15C22;
+  float: left;
+  margin-left: 10px; }
 
-.sg-background-4{
-    width:150px;
-    height:150px;
-    margin-left: 10px;
-    margin-top: 30px;
-    background-color: rgba(51, 51, 51, .15);
-    float: left;
-}
+.sg-border-fino4 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #404041;
+  float: left;
+  margin-left: 10px; }
 
-*/
+.sg-border-fino5 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(51, 51, 51, 0.15);
+  float: left;
+  margin-left: 10px; }
+
+.sg-background-4 {
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: rgba(51, 51, 51, 0.15);
+  float: left; }
+
 /*links*/
 a {
   text-decoration: none; }
@@ -706,7 +693,7 @@ span.buzon-buscador {
   padding: 0px; }
 
 .boton-buscador {
-  padding: 6px 0px 5px 0px; }
+  padding: 6px 0 5px; }
 
 .button-mail-responsive {
   border: none;
@@ -1272,9 +1259,9 @@ contenedores anuncios
   width: 175px; }
 
 .stars-popup {
-  height: 35px;
+  height: 30px;
   margin: 7px 10px 0 0;
-  width: 35px; }
+  width: 30px; }
 
 .icono-margin {
   margin: 5px 4px 5px 0; }
@@ -1462,7 +1449,7 @@ contenedores anuncios
 
 .border {
   border: 1px solid #404041;
-  padding: 0px 5px 0px 5px; }
+  padding: 0 5px; }
 
 .movedown {
   margin: 10% auto; }
@@ -1478,13 +1465,13 @@ contenedores anuncios
 
 .margin-auto-popup {
   margin: 0 auto;
-  padding: 20px 0px 10px 0px;
+  padding: 20px 0 10px;
   width: 45%; }
 
 .margin-auto-gracias {
   width: 85%;
   margin: 0 auto;
-  padding: 20px 0 10px 0; }
+  padding: 20px 0 10px; }
 
 .padding-button-popup {
   padding: 23px 10px 24px 0; }
@@ -1504,7 +1491,7 @@ contenedores anuncios
   display: none; }
 
 .container-consejos {
-  padding: 35px 20px 20px 20px; }
+  padding: 35px 20px 20px; }
 
 ul {
   padding-left: 0; }
@@ -2341,10 +2328,6 @@ dropdown
   .texto-top {
     width: 100%;
     margin: 0; } }
-.full-button {
-  width: 60%;
-  margin: 0 auto; }
-
 @media all and (min-width: 500px) {
   .fondo-img-top {
     width: 100%; }
@@ -2414,10 +2397,6 @@ dropdown
   .button-home {
     width: 100%; }
 
-  .full-button {
-    margin: 0 auto;
-    width: 100%; }
-
   .container-home {
     margin: 0 auto;
     max-width: 1250px; } }
@@ -2471,16 +2450,42 @@ dropdown
   margin-bottom: 40px;
   overflow: hidden; }
 
-.container-botones-como-funciona {
-  width: 100%;
-  margin: 0 auto; }
+.container-como-funciona {
+  width: 100%; }
 
 .container-botones {
   display: inline-block;
   margin: 0 auto;
   width: 40%; }
 
+.container-uno-como-funciona {
+  float: left;
+  width: 20%;
+  margin: 15px; }
+
+.imagen-anuncios-como-funciona {
+  width: 100%; }
+
+.texto-paso-como-funciona {
+  float: right;
+  margin: 25px 0 0 5px;
+  width: 70%; }
+
 @media all {
+  .texto-paso-como-funciona {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+
+  .container-uno-como-funciona {
+    float: none;
+    width: 20%;
+    margin: 0 auto; }
+
+  .imagen-anuncios-como-funciona {
+    width: 100%; }
+
   .container-botones {
     display: inline-block;
     width: 100%;
@@ -2488,7 +2493,7 @@ dropdown
     padding-bottom: 20px; }
 
   .container-botones-funciona {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 20px; }
@@ -2496,9 +2501,22 @@ dropdown
   .imagen-anuncios-buscador {
     width: 80%; } }
 @media all and (min-width: 600px) {
+  .container-uno-como-funciona {
+    float: left;
+    margin: 15px; }
+
+  .imagen-anuncios-como-funciona {
+    width: 100%; }
+
+  .texto-paso-como-funciona {
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 70%;
+    text-align: left; }
+
   .container-botones {
     display: inline-block;
-    width: 35%; }
+    width: 40%; }
 
   .container-botones-funciona {
     width: 90%;
@@ -2506,6 +2524,18 @@ dropdown
     text-align: center;
     padding-bottom: 50px; } }
 @media all and (min-width: 1024px) {
+  .container-uno-como-funciona {
+    float: left;
+    margin: 15px; }
+
+  .imagen-anuncios-como-funciona {
+    width: 100%; }
+
+  .texto-paso-como-funciona {
+    float: right;
+    margin: 25px 0 0 0;
+    width: 65%; }
+
   .container-botones {
     display: inline-block;
     width: 30%; }
