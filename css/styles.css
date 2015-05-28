@@ -704,7 +704,7 @@ span.buzon-buscador {
   padding: 0px; }
 
 .boton-buscador {
-  padding: 6px 0px 5px 0px; }
+  padding: 6px 0 5px; }
 
 .button-mail-responsive {
   border: none;
@@ -2224,7 +2224,8 @@ dropdown
 .mensaje-desplegado-2,
 .mensaje-desplegado-3,
 .mensaje-desplegado-4,
-.mensaje-desplegado-5 {
+.mensaje-desplegado-5,
+.perfil-hide {
   display: none; }
 
 .margenes-valoraciones {

@@ -911,17 +911,22 @@
 
         </div>
     </footer>
+<script>
 
-<!--abrir y cerrar mensaje
-$('#abrir').click(function(e){
-        $('.mensaje-desplegado').show();
-        return false;
+$(document).ready(function(){
+    botonMobil.click(function() {
+            $('.perfil-show').hide();
+            $('.perfil-hide').show();
+        });
+
+        cruzMobil.click(function() {
+            contenidoMenu.hide();
+            cruzMobil.hide();
+            botonMobil.show();
+        });
+
     });
 
-    $('#cerrar').click(function(e){
-        $('.mensaje-desplegado').hide();
-        return false;
-    });-->
-
+</script>
 </body>
 </html>
