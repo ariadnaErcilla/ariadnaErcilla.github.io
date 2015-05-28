@@ -1259,9 +1259,9 @@ contenedores anuncios
   width: 175px; }
 
 .stars-popup {
-  height: 35px;
+  height: 30px;
   margin: 7px 10px 0 0;
-  width: 35px; }
+  width: 30px; }
 
 .icono-margin {
   margin: 5px 4px 5px 0; }
@@ -1445,7 +1445,7 @@ contenedores anuncios
 
 .border {
   border: 1px solid #404041;
-  padding: 0px 5px 0px 5px; }
+  padding: 0 5px; }
 
 .movedown {
   margin: 10% auto; }
@@ -1461,13 +1461,13 @@ contenedores anuncios
 
 .margin-auto-popup {
   margin: 0 auto;
-  padding: 20px 0px 10px 0px;
+  padding: 20px 0 10px;
   width: 45%; }
 
 .margin-auto-gracias {
   width: 85%;
   margin: 0 auto;
-  padding: 20px 0 10px 0; }
+  padding: 20px 0 10px; }
 
 .padding-button-popup {
   padding: 23px 10px 24px 0; }
@@ -1487,7 +1487,7 @@ contenedores anuncios
   display: none; }
 
 .container-consejos {
-  padding: 35px 20px 20px 20px; }
+  padding: 35px 20px 20px; }
 
 ul {
   padding-left: 0; }
