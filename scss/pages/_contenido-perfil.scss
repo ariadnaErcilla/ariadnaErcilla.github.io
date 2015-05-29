@@ -216,10 +216,16 @@
     .icono-conocimientos-no-editables{
         margin-top: 5px;
     }
+
+    .profile-name{
+        font-size: 18px;
+    }
+
 }
 
 
-@media all and (max-width:930px){
+
+@media all and (max-width:920px){
     .background-pagina-show{
         display: none;
     }

@@ -90,7 +90,7 @@
                         <h1 class="profile-name left">
                             Silvia Terreiz
                         </h1>
-                        <span class="lapiz icono-editar-margen opacity-hover left"></span>
+                        <span class="lapiz icono-editar-margen opacity-hover left lapiz-clicar"></span>
                     </div>
                     <div class="clear perfil-show">
                         <p><span class="type-color-1 light">Status:</span> Estudiante / empleada</p>
@@ -138,9 +138,12 @@
                             </div>
                             <div class="descripcion-mi-perfil cf">
                                 <p class="no-margin">
-                                   Soy Silvia y me encanta el diseño web. Actualmente estoy de becaria en una e-commerce de productos de deporte y estoy acabando la carrera en Bau. ME gustaría mejorar mis aptitudes en programación y os puedo ayudar con los programas de Diseño de Adobe.
+                                   Soy Silvia y me encanta el diseño web. Actualmente estoy de becaria en una e-commerce de productos de deporte y estoy acabando la carrera en Bau. Me gustaría mejorar mis aptitudes en programación y os puedo ayudar con los programas de Diseño de Adobe.
                                </p>
                            </div>
+                           <div class="descripcion-mi-perfil perfil-hide cf">
+                                <textarea id="input-sobre-mi" class="padding-bottom" name="message" rows="4" placeholder="Preséntate y explícanos que puedes aportar y que quieres conseguir de puntoyseguido"></textarea>
+                            </div>
                        </div>
                    </article>
                    <article class="bloque-perfil cf">
@@ -930,19 +933,12 @@
 <script>
 
 $(document).ready(function(){
-    botonMobil.click(function() {
+    $("lapiz-clicar").click(function() {
             $('.perfil-show').hide();
             $('.perfil-hide').show();
         });
-
-        cruzMobil.click(function() {
-            contenidoMenu.hide();
-            cruzMobil.hide();
-            botonMobil.show();
-        });
-
     });
-
 </script>
+
 </body>
 </html>
