@@ -128,6 +128,7 @@
 .mensaje-desplegado-3,
 .mensaje-desplegado-4,
 .mensaje-desplegado-5,
+.background-pagina-hide,
 .perfil-hide {
     display:none;
 }
@@ -196,4 +197,34 @@
     position: absolute;
     top: 4px;
     right: 4px;
+}
+
+
+//media-querys
+
+
+@media all and (max-width:1020px){
+    td,
+    th{
+    padding: 0.4rem;
+    }
+
+    .contenido-mensaje{
+        padding: 10px 4px;
+    }
+
+    .icono-conocimientos-no-editables{
+        margin-top: 5px;
+    }
+}
+
+
+@media all and (max-width:930px){
+    .background-pagina-show{
+        display: none;
+    }
+    .background-pagina-hide{
+        display: block;
+        margin-bottom: 60px;
+    }
 }
