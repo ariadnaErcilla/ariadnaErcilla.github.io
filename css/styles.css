@@ -366,10 +366,6 @@ Buscador
   .button-mail-responsive {
     display: block; }
 
-  .container-ordenar-3 {
-    width: 100%;
-    margin: 0 auto; }
-
   .menu-scroll li {
     float: left;
     list-style: none;
@@ -382,6 +378,19 @@ Buscador
 @media all and (min-width: 500px) {
   .container-imagen-button {
     display: block; }
+
+  .texto-anuncios-buscador {
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%; }
+
+  .container-imagen-button {
+    float: left;
+    margin: 15px;
+    width: 25%; }
+
+  .container-anuncios-buscador {
+    padding: 5px; }
 
   .texto-anuncios-buscador {
     float: right;
@@ -415,10 +424,16 @@ Buscador
 
   .container-ordenar-2 {
     margin: 0 auto;
+<<<<<<< HEAD
     width: 50%; } }
 .background-pagina-show {
   z-index: 1; }
+=======
+    width: 50%; }
+>>>>>>> 9a7c8ad798e2e5ffec222f6487d71c4fde94bddb
 
+  .background-pagina-show {
+    z-index: 1; } }
 @media all and (min-width: 1024px) {
   .container-imagen-button {
     display: block; }
