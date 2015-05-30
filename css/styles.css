@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -336,6 +337,9 @@ body {
   margin: 0 auto; }
 
 /*habia una clase para esto? no la he encontrado y ue creado otra */
+.background-pagina-hide {
+  margin: 20px; }
+
 /*anuncios*/
 .todos-anuncios {
   float: right;
