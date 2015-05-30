@@ -228,7 +228,7 @@ $('.login').click(function(e){
             });
               $('.show-login').click(function(e){
               e.preventDefault();
-              $('#popup-registro').load('popups.html #login', function() {
+              $('#popup').load('popups.html #login', function() {
               $($('#login')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
