@@ -202,9 +202,17 @@ $('#cerrar-consejos').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-        });
+              $('.show-login').click(function(e){
+              e.preventDefault();
+              $($('#login')[0]).show();
+              $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+            })
+        })
 
-      });
+  });
+  });
 $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
@@ -212,9 +220,17 @@ $('.login').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-        });
+            $('.show-registro').click(function(e){
+              e.preventDefault();
+              $($('#registro')[0]).show();
+              $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+            })
+        })
 
-      });
+  });
+ });
 $('.publicar-curso').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #publicar-curso', function() {
