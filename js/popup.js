@@ -212,7 +212,6 @@ $('#cerrar-consejos').click(function(e){
         })
 
   });
-  });
 $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
@@ -230,7 +229,6 @@ $('.login').click(function(e){
         })
 
   });
- });
 $('.publicar-curso').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #publicar-curso', function() {

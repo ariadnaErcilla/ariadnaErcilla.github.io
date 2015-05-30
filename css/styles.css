@@ -452,15 +452,11 @@ Buscador
     float: left;
     list-style: none;
     margin: 15px;
-<<<<<<< HEAD
-    text-transform: uppercase; } }
-=======
     text-transform: uppercase; }
 
   .container-ordenar-2 {
     float: none;
     width: 100%; } }
->>>>>>> 650ed17e8631d5b5330b235b80faf4444ac77ca2
 @media all and (min-width: 500px) {
   .container-imagen-button {
     display: block; }
@@ -591,9 +587,6 @@ Anuncio ampliado
     padding-top: 60px;
     margin: 0 auto;
     width: 70%; } }
-.container-ordenar-2 {
-  margin: 0 auto; }
-
 @media screen and (min-width: 1118px) {
   .cabecera-cursos {
     padding-top: 60px;
@@ -1510,7 +1503,20 @@ contenedores anuncios
   z-index: 99999; }
 
 .masc::before {
-  background: rgba(0, 0, 0, 0.8);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.78) 53%, rgba(255, 255, 255, 0.76) 54%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(53%, rgba(255, 255, 255, 0.78)), color-stop(54%, rgba(255, 255, 255, 0.76)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.78) 53%, rgba(255, 255, 255, 0.76) 54%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.78) 53%, rgba(255, 255, 255, 0.76) 54%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.78) 53%, rgba(255, 255, 255, 0.76) 54%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.78) 53%, rgba(255, 255, 255, 0.76) 54%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
   display: block;
   content: '';
   height: 100%;
