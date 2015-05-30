@@ -146,9 +146,14 @@ $(document).ready(function(){
             $('.perfil-show-1').toggle();
 
         });
-    $(".lapiz-clicar-2").click(function() {
+  $(".lapiz-clicar-2").click(function() {
             $('.perfil-hide-2').toggle();
             $('.perfil-show-2').toggle();
+
+        });
+  $(".lapiz-clicar-3").click(function() {
+            $('.perfil-hide-3').toggle();
+            $('.perfil-show-3').toggle();
 
         });
 /*mensajeria*/
@@ -532,16 +537,16 @@ $(".contenedor-eliminar-1").hide();
 $( ".boton-eliminar-2" ).click(function(e){
 $(".contenedor-eliminar-2").hide();
 });
-$( ".boton-eliminar-3" ).click(function(e){
+$( ".boton-eliminar-3").click(function(e){
 $(".contenedor-eliminar-3").hide();
 });
-$( ".boton-eliminar-4" ).click(function(e){
+$( ".boton-eliminar-4").click(function(e){
 $(".contenedor-eliminar-4").hide();
 });
-$( ".boton-eliminar-5" ).click(function(e){
+$( ".boton-eliminar-5").click(function(e){
 $(".contenedor-eliminar-5").hide();
 });
-$( ".boton-eliminar-6" ).click(function(e){
+$( ".boton-eliminar-6").click(function(e){
 $(".contenedor-eliminar-6").hide();
 });
 })

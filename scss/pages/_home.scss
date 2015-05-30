@@ -115,11 +115,11 @@
     }
 
     .box-top-1{
-    padding: 50px 50px 150px 0px;
+    padding: 50px 50px 150px 0;
 }
 
     .box-top-2{
-    padding: 50px 0px 150px 60px;
+    padding: 50px 0 150px 60px;
 }
 
   .box-ampersand-top{
@@ -142,7 +142,6 @@
     position: absolute;
         left: 24%;
         top: 200px;
-
     }
 
      .button-home{
@@ -164,7 +163,7 @@
     section.mini-box-3,
     .container-texto{
     margin: 0 auto;
-    padding: 30px 10px 5px 10px;
+    padding: 30px 10px 5px;
     text-align: center;
     }
 
@@ -175,7 +174,7 @@
   .botton{
     margin: 0 auto;
     width: 85%;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0;
   }
 }
 
@@ -184,7 +183,7 @@
     section.mini-box-2,
     section.mini-box-3{
     text-align: center;
-    padding: 30px 10px 5px 10px;
+    padding: 30px 10px 5px;
     width: 50%;
     float: left;
     }
@@ -192,7 +191,7 @@
     .botton{
     width: 35%;
     margin: 0 auto;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0;
 
   }
 }

@@ -116,9 +116,9 @@
             <div class="box-perfil cell-tabla cf">
                 <nav class="menu-interior">
                     <ul class="cf">
-                        <li class="pestanyas"><a class="pestanya-1 seleccionado" id="pestanya-1" href="#option-1">Sobre Mi</a></li>
-                        <li class="pestanyas"><a class="pestanya-2" id="pestanya-2" href="#option-2">Portafolio</a></li>
-                        <li class="pestanyas"><a class="pestanya-3" id="pestanya-3" href="#option-3">Cursos</a></li>
+                        <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-2" href="pestanya-2">Portafolio</a></li>
+                        <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
                         <li class="pestanyas"><a class="pestanya-6" href="#option-6">Mensajería</a></li>
@@ -129,8 +129,7 @@
                         <span class="icono-perfil icono-rectangular-grande left"> </span>
                         <div class="contenido">
                             <div>
-                                <h2 class="secondary-title left">
-                                    Mi Perfil
+                                <h2 class="secondary-title left">Sobre mi
                                 </h2>
                                 <span class="lapiz icono-editar opacity-hover left lapiz-clicar-2"></span>
                                 <p class="secondary-subtitle margin-top clear  clear">Añade una descripción que te defina y que muestre tus habilidades.</p>
@@ -270,13 +269,14 @@
             <h2 class="secondary-title left">
                 Programas informáticos
             </h2>
-            <span class="lapiz icono-editar opacity-hover left"></span>
+            <span class="lapiz icono-editar opacity-hover left lapiz-clicar-3"></span>
             <p class="secondary-subtitle margin-top clear"> Añade tus programas y indica en que grado los controlas</p>
         </div>
         <div class="descripcion-mi-perfil">
             <ul class="lista-programas no-margin">
                 <li class="celdas-programas"> Programa </li>
-                <li class="celdas-programas-final type-color-2 opacity-hover"> Photoshop</li>
+                <li class="celdas-programas-final type-color-2 opacity-hover perfil-show-3"> Photoshop</li>
+                <li class="celdas-programas perfil-hide-3"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
                 <li class="celdas-programas"> Nivel</li>
                 <li>
                     <ul class="margin-right cf pointer">
@@ -297,7 +297,8 @@
 
             <ul class="lista-programas pointer">
                  <li class="celdas-programas"> Programa </li>
-                <li class="celdas-programas-final type-color-2 opacity-hover"> Illustrator</li>
+                <li class="celdas-programas-final type-color-2 opacity-hover perfil-show-3"> Illustrator</li>
+                <li class="celdas-programas perfil-hide-3"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
                 <li class="celdas-programas"> Nivel</li>
                 <li>
                     <ul class="margin-right cf">
@@ -408,7 +409,7 @@
                             <div class="iconos-anuncios">
                                 <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                                 </div>
-                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left eliminar-curso-3">
+                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left boton-eliminar-3">
                                 </div>
                             </div>
                         </div>
@@ -425,16 +426,9 @@
                             <span class="secondary-subtitle">Audiovisual</span>
                         </div>
                     </div>
-                    <a href="">
-                        <div class="total-icono right opacity-hover">
-                         <div class="container-stars">
-                            <span class="icono-stars left estrellas-valorar"></span>
-                        </div>
-                        <div class="container-icon">
-                            <span class="modificar type-color-2">(8)</span>
-                        </div>
+                    <div class="total-icono right opacity-hover container-stars">
+                            <span class="icono-stars left estrellas-anuncios-4"></span>
                     </div>
-                </a>
                 </div>
             </div>
         </article>
@@ -461,25 +455,19 @@
                         <span class="secondary-subtitle">Web</span>
                     </div>
                 </div>
-                <a href="">
-                    <div class="total-icono right opacity-hover">
-                      <div class="container-stars">
-                        <span class="icono-stars left estrellas-valorar-2"></span>
-                    </div>
-                    <div class="container-icon">
-                        <span class="modificar type-color-2">(21)</span>
-                    </div>
-                </div></a>
+                <div class="total-icono right opacity-hover container-stars">
+                        <span class="icono-stars left estrellas-anuncios-4"></span>
+                </div>
             </div>
         </div>
     </article>
-    <article class="anuncio-perfil eliminar-curso-5">
+    <article class="anuncio-perfil-propio contenedor-eliminar-5">
         <div class="image-container cf">
             <img class="img-curso" src="imagenes/anuncio-23.jpg" alt="Imagen de formatos de imagen">
             <div class="iconos-anuncios">
-                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso boton-eliminar-5">
+                <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                 </div>
-                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left">
+                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left boton-eliminar-5">
                 </div>
             </div>
         </div>
@@ -496,15 +484,9 @@
                     <span class="secondary-subtitle">Gráfico</span>
                 </div>
             </div>
-            <a href="">
-                <div class="total-icono right opacity-hover">
-                   <div class="container-stars">
-                    <span class="icono-stars left estrellas-valorar-4"></span>
-                </div>
-                <div class="container-icon">
-                    <span class="modificar type-color-2">(11)</span>
-                </div>
-            </div></a>
+                <div class="total-icono right opacity-hover container-stars">
+                    <span class="icono-stars left estrellas-anuncios-4"></span>
+            </div>
         </div>
     </div>
 </article>
@@ -523,13 +505,14 @@
                 <p class="secondary-subtitle margin-top">Borra las dudas que ya estén resueltas. ¡Así evitarás recibir mensajes no deseados!</p>
             </div>
             <div class="descripcion-mi-perfil">
-                <article class="anuncio-perfil eliminar-curso-6">
+                <article class="anuncio-perfil contenedor-eliminar-6">
                         <div class="foto">
                         <img class="foto-alumno imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
                         <div class="iconos-anuncios">
                                 <div class="lapiz-redonda icono-lapiz-redonda opacity-hover left modificar-curso">
                                 </div>
-                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left boton-eliminar-6">
+                                <div class="buscador-cerrar icono-lapiz-redonda opacity-hover left
+                                boton-eliminar-6">
                                 </div>
                             </div>
                     </div>
@@ -548,15 +531,12 @@
                                     <span class="secondary-subtitle">Programación</span>
                                 </div>
                             </div>
-                            <a class="type-color-5" href="#">
-                                <div class="total-icono right opacity-hover">
+                                <div class="total-icono right opacity-hover container-stars">
                                    <div class="container-stars">
-                                    <span class="icono-stars left estrellas-valorar"></span>
+                                    <span class="icono-stars left estrellas-anuncios-4"></span>
                                 </div>
-                                <div class="container-icon">
-                                    <span class="modificar type-color-2">(6)</span>
-                                </div>
-                            </div></a>
+
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -839,14 +819,15 @@
 </div>
 </div>
 <div class="background background-pagina-hide">
-    <div class="title-margin">
-        <h1 class="title type-color-1">Uops! </h1>
-        <h1 class="title type-color-1"> Esta página aún no es responsive</h1>
-        <p>Lo sentimos, pero esta página no está disponible en versión móbil.
-            Para visualizar el contenido, les recomendamos que usen su ordenador.
+        <h1 class="title type-color-1 centrado padding-top">Uops! </h1>
+        <p class="centrado no-margin padding-top">Puntoyseguido está trabajando para poder visualizar esta pantalla desde su dispositivo.</p>
+        <p class="no-margin centrado">Mientras, le recomendamos que use el PC.
         </p>
-        <p>Muchas gracias!</p>
-    </div>
+        <p class="centrado"><strong>¿Quieres contactar directamente con el usuario?</strong></p>
+        <div class="botton clear">
+            <a class="button-home full-button button-2 type-color-3 general-button contactar">Contáctale
+            </a>
+        </div>
 </div>
 <div id="popup"></div>
 <footer>
