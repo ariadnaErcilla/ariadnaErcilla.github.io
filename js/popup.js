@@ -219,9 +219,9 @@ $('.login').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-            $('.show-registro').click(function(e){
+            $('.show-recuperar').click(function(e){
               e.preventDefault();
-              $($('#registro')[0]).show();
+              $($('#recuperar')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
