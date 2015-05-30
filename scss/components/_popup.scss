@@ -56,11 +56,12 @@
 .top{
     top: 52px;
 }
-.height-scroll{
 
+.height-scroll{
     max-height: 400px;
     overflow: scroll;
 }
+
 .top-gracias{
     top:43px;
 }
@@ -109,7 +110,7 @@
 }
 
 .movedown-3{
-    margin:5% auto;
+    margin: 5% auto;
 }
 
 .link-facebook{
@@ -193,21 +194,17 @@ ul{
         border:none;
         width: 100%;
     }
-
     .close{
         top:0;
         right:0;
     }
-
     .popup-image{
         background-image:none;
     }
-
     .img-facebook{
         display: none;
     }
     .margin-auto-gracias{
-
         width: 100%;
     }
     .margin-auto-popup{
@@ -220,23 +217,18 @@ ul{
     .popup-box{
         width: 500px;
     }
-
     .close{
         top: -12px;
         right: -12px;
     }
-
     .popup-image{
         background-image: url(../imagenes/ninologin.png);
         background-position: top center;
         background-repeat: no-repeat;
         background-size: 20% auto;
     }
-
     .img-facebook{
-    border-bottom: 1px solid #404041;
-    padding: 15px 0px;
+        border-bottom: 1px solid #404041;
+        padding: 15px 0;
     }
-
-
 }

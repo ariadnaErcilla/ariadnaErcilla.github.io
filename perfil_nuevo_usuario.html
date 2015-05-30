@@ -37,7 +37,7 @@
                 <div class="lupa-buscador">
                     <div class="dropdown-wrap">
                         <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover" alt="Menu-navegador-desplegable"></span>
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
                         </a>
                         <ul class="dropdown">
                             <li class="alineacion-vertical">
@@ -52,23 +52,23 @@
                         </ul>
                     </div>
                     <a id="abrir" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover" alt="Lupa-buscador"></span>
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
                     </a>
                 </div>
             </div>
         </nav>
-    </div>
-        <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
-            <div class="buscador-container-derecha cf">
-                <div class="container-button-buscador left">
-                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
-                </div>
-                <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"  alt="Cerrar-buscador"></span>
-                </a>
-            </div>
         </div>
+            <div class="buscador-desplegado cf">
+                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
+                <div class="buscador-container-derecha cf">
+                    <div class="container-button-buscador left">
+                        <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
+                    </div>
+                    <a id="cerrar" href="">
+                        <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
+                    </a>
+                </div>
+            </div>
     </header>
 <div class="background-4 background-pagina-show">
     <div class="container tabla margin-top">
@@ -93,11 +93,11 @@
                     <div class="clear">
                         <ul class="lista-programas no-margin">
                                 <li class="celdas-perfil-corta type-color-1 light"> Status </li>
-                                <li class="celdas-perfil"> <input type="text" id="input-perfil" placeholder="Ej: estudiante"></li>
+                                <li class="celdas-perfil"> <input type="text" placeholder="Ej: estudiante"></li>
                                 <li class="celdas-perfil-corta type-color-1 light"> Categoría </li>
-                                <li class="celdas-perfil"> <input type="text" id="input-perfil" placeholder="Ej: gráfico"></li>
+                                <li class="celdas-perfil"> <input type="text" placeholder="Ej: gráfico"></li>
                                 <li class="celdas-perfil-corta type-color-1 light"> Edad </li>
-                                <li class="celdas-perfil"> <input type="text" id="input-perfil"></li>
+                                <li class="celdas-perfil"> <input type="text"></li>
                         </ul>
                     </div>
                 </div>
@@ -265,37 +265,42 @@
                         <div class="descripcion-mi-perfil">
                             <ul class="lista-programas no-margin">
                                 <li class="celdas-programas"> Programa </li>
-                                <li class="celdas-programas"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
+                                <li class="celdas-programas"> <input type="text" placeholder="Ej: Photoshop" name="buscador"></li>
                                 <li class="celdas-programas"> Nivel</li>
-                                <ul class="margin-right cf pointer">
-                                <li class="icono-conocimientos primera-barra barra-inactiva left">
-                                <li class="icono-conocimientos segunda-barra barra-inactiva left">
-                                <li class="icono-conocimientos tercera-barra barra-inactiva left">
-                                <li class="icono-conocimientos cuarta-barra barra-inactiva left">
-                                <li class="icono-conocimientos quinta-barra barra-inactiva left">
-                                <li class="icono-conocimientos sexta-barra barra-inactiva left">
-                                <li class="icono-conocimientos septima-barra barra-inactiva left">
-                                <li class="icono-conocimientos octava-barra barra-inactiva left">
-                                <li class="icono-conocimientos novena-barra barra-inactiva left">
-                                <li class="icono-conocimientos decima-barra barra-inactiva left">
-                                </ul>
+                                <li class="celdas-programas">
+                                    <ul class="margin-right cf pointer">
+                                        <li class="icono-conocimientos primera-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos segunda-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos tercera-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos cuarta-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos quinta-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos sexta-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos septima-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos octava-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos novena-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos decima-barra barra-inactiva left"></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="lista-programas">
                                 <li class="celdas-programas clear"> Programa </li>
-                                <li class="celdas-programas"> <input type="text" id="input-programas" placeholder="Ej: Wordpress" name="buscador"></li>
+                                <li class="celdas-programas"> <input type="text"
+                                    placeholder="Ej: Wordpress" name="buscador"></li>
                                 <li class="celdas-programas"> Nivel</li>
-                                <ul class="margin-right cf pointer">
-                                <li class="icono-conocimientos primera-barra barra-inactiva left">
-                                <li class="icono-conocimientos segunda-barra barra-inactiva left">
-                                <li class="icono-conocimientos tercera-barra barra-inactiva left">
-                                <li class="icono-conocimientos cuarta-barra barra-inactiva left">
-                                <li class="icono-conocimientos quinta-barra barra-inactiva left">
-                                <li class="icono-conocimientos sexta-barra barra-inactiva left">
-                                <li class="icono-conocimientos septima-barra barra-inactiva left">
-                                <li class="icono-conocimientos octava-barra barra-inactiva left">
-                                <li class="icono-conocimientos novena-barra barra-inactiva left">
-                                <li class="icono-conocimientos decima-barra barra-inactiva left">
-                                </ul>
+                                <li class="celdas-programas">
+                                    <ul class="margin-right cf pointer">
+                                        <li class="icono-conocimientos primera-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos segunda-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos tercera-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos cuarta-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos quinta-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos sexta-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos septima-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos octava-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos novena-barra barra-inactiva left"></li>
+                                        <li class="icono-conocimientos decima-barra barra-inactiva left"></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <p class="type-color-2 opacity-hover programas-mas clear">Añadir programa</p>
                         </div>
@@ -317,27 +322,27 @@
                         <div class="descripcion-mi-perfil">
                             <div>
                                 <div class="icono-rectangular portafolio-behance-c left"> </div>
-                                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                                <input type="text" id="input-portafolio-1" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-domestika-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio-2" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-linkedin-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio-3" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-tumblert-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio-4" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-instagram-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio-5" placeholder="http://..." name="buscador">
                             </div>
                             <div>
                             <div class="icono-rectangular portafolio-pinterest-c left"> </div>
-                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            <input type="text" id="input-portafolio-6" placeholder="http://..." name="buscador">
                             </div>
                         </div>
                     </div>
@@ -499,7 +504,7 @@
                                     <div class="mensaje-desplegado-1">
                                         <hr class="linia clear">
                                         <p class="secondary-title">Responde el mensaje</p>
-                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <textarea class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
                                         <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                     </div>
                                 </div>
@@ -517,7 +522,7 @@
                                     <div class="mensaje-desplegado-1">
                                         <hr class="linia clear">
                                         <p class="secondary-title">Responde el mensaje</p>
-                                        <textarea id="input-mensaje" class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
+                                        <textarea class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
                                         <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
                                     </div>
                                 </div>
@@ -526,7 +531,7 @@
                     </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </article>
     </section>
 </div>

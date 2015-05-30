@@ -76,28 +76,6 @@
     margin: 0;
 }
 
-/*
-.sg-subtitle-style-guide{
-    font-family: "DOSIS", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: black;
-    margin: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}*/
-
-/*
-.sg-subtitle-style-guide-2{
-    font-family: "DOSIS", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: white;
-    margin: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}*/
-
 .sg-margin-bottom{
     margin-bottom: 55px;
 }
@@ -106,25 +84,10 @@
     padding-top: 20px;
 }
 
-/*
-.sg-border-grueso,
-.sg-border-fino3,
-.sg-border-fino4,
-.sg-border-fino5, {
-    width: 200px;
-}
-*/
 .sg-container-colores{
     height: 200px;
     width: 900px;
 }
-
-/*
-.container-colores{
-    width:800px;
-    height:150px;
-    margin: 0 auto;
-}*/
 
 .sg-container-borde{
     height: 150px;
@@ -137,18 +100,6 @@
     margin: 0 auto;
     width: 800px;
 }
-
-/*
-.sg-codigo-color{
-    margin: 40px;
-    color: white;
-}*/
-
-/*
-.sg-codigo-color1{
-    margin: 40px;
-    color: #404041;
-}*/
 
 .sg-color-corporativo{
     color: white;
@@ -180,26 +131,12 @@
     margin-left: 20px;
 }
 
-/*
-.sg-izquierda{
-    padding-left: 0px;
-}*/
-
 .sg-fondo-header{
     background-color: white;
     border-radius: 0px;
     margin-top: 20px;
     padding: 10px;
 }
-
-/*
-.sg-fondo-blanco{
-    background-color: white;
-    border-radius: 0px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-*/
 
 .sg-margin-auto{
     margin: 0 auto;
@@ -329,10 +266,6 @@
 .sg-centrar-tabla {
     margin: 20px auto 0;
     width: 300px;
-    /*
-    margin: 20px;
-    margin-top: 20px;
-    */
 }
 
 .sg-text-align {
@@ -367,7 +300,7 @@
 
 .sg-float-left {
     float: left;
-    width: 45%;
+    width: 30%;
 }
 
 .sg-float-right {
@@ -493,18 +426,6 @@
     border: 2px solid rgba(51, 51, 51, .15);
     margin-left: 10px;
 }
-
-/*
-.sg-background-4{
-    margin-left: 10px;
-    margin-top: 30px;
-    background-color: rgba(51, 51, 51, .15);
-}
-*/
-
-/*---
-dropdown
----*/
 
 .dropdown-wrap {
     float: left;

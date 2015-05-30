@@ -24,7 +24,7 @@
 }
 
 .content-container, .content-container-cursos{
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px 0;
 }
 
 .texto-cuadrado {
@@ -36,7 +36,6 @@
 .texto-cuadrado-cursos{
     padding-bottom: 20px;
     text-align: center;
-
 }
 
 .mas-info{
@@ -51,6 +50,11 @@
 
 .texto-cuadrado-destacado{
     padding: 35px 20px;
+}
+
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .mas-info-destacado{
@@ -89,7 +93,7 @@ Buscador
 
 .container-dudas-cursos{
     margin-top: 5px;
-    width:100%;
+    width: 100%;
 }
 
 .container-cantidad{
@@ -109,9 +113,9 @@ Buscador
 }
 .menu-scroll li{
     float: left;
-  list-style: none;
-  margin: 15px;
-  text-transform: uppercase;
+    list-style: none;
+    margin: 15px;
+    text-transform: uppercase;
 }
 .back-to-top{
     position:absolute;
@@ -130,44 +134,100 @@ Buscador
     padding: 30px;
     }
 
+<<<<<<< HEAD
      .button-mail-responsive{
      display: block;
+=======
+    .button-mail-responsive{
+        display: block;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
+
+
     .menu-scroll li{
-    float: left;
-    list-style: none;
-    margin: 15px;
-    text-transform: uppercase;
+        float: left;
+        list-style: none;
+        margin: 15px;
+        text-transform: uppercase;
     }
+<<<<<<< HEAD
      .container-ordenar-2{
     float:none;
     width: 100%;
+=======
+
+    .container-ordenar-2{
+        float:none;
+        width: 100%;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
+
 }
 
 @media all and (min-width: 500px){
+<<<<<<< HEAD
+=======
+    .container-imagen-button{
+        display: block;
+    }
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     .texto-anuncios-buscador{
-    float: right;
-    margin: 25px 0 0 5px;
-    width: 65%;
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+        .container-imagen-button{
+        float: left;
+        margin: 15px;
+        width: 25%;
+    }
+    .container-anuncios-buscador{
+        padding: 5px;
+    }
+
+    .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+        .container-imagen-button{
+        float: left;
+        margin: 15px;
+        width: 25%;
+    }
+    .container-anuncios-buscador{
+        padding: 5px;
+        display: block;
+    }
+    .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
     }
     .container-imagen-button{
+<<<<<<< HEAD
     float: left;
     width: 25%;
     margin: 15px;
     display: block;
+=======
+        float: left;
+        margin: 15px;
+        width: 25%;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
     .container-anuncios-buscador{
-    padding: 5px;
+        padding: 5px;
     }
+
 
     .button-mail-responsive{
     display: none;
     }
 
     .container-ordenar-2{
-    width: 60%;
-    margin:0 auto;
+        margin: 0 auto;
+        width: 50%;
     }
 
     .background-pagina-show{
@@ -178,33 +238,37 @@ Buscador
 
 @media all and (min-width: 1024px){
     .container-imagen-button{
-    display: block;
-}
-    .texto-anuncios-buscador{
-    float: right;
-    margin: 25px 0 0 5px;
-    width: 65%;
-}
-    .container-imagen-button{
-    float: left;
-    width: 25%;
-    margin: 15px;
-}
-    .container-anuncios-buscador{
-    padding: 5px;
+        display: block;
     }
-
+    .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+    .container-imagen-button{
+        float: left;
+        width: 25%;
+        margin: 15px;
+    }
+    .container-anuncios-buscador{
+        padding: 5px;
+        }
     .button-mail-responsive{
     display: none;
     }
     .container-ordenar-2{
+<<<<<<< HEAD
     width: 33%;
     margin: 0 auto;
+=======
+        margin:0 auto;
+        width: 33%;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
+
     .background-pagina-show{
     z-index: 1;
     }
-
 }
 
 /*-------
@@ -222,7 +286,7 @@ ayuda
 }
 
 .texto-cuadrado-large {
-    padding: 70px 20px 78px 20px;
+    padding: 70px 20px 78px;
     text-align: center;
 }
 
@@ -230,10 +294,9 @@ ayuda
 encuentra
 ---------*/
 
-
 .texto-cuadrado-small{
     text-align: center;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0;
 }
 
 .image-container{
@@ -300,118 +363,112 @@ Anuncio ampliado
 @media screen and (max-width: 1117px){
 
     .cabecera-cursos{
-                margin: 0 auto;
-                padding-top:60px;
-                width: 90%;
-            }
+        margin: 0 auto;
+        padding-top:60px;
+        width: 90%;
+    }
 
     .cabecera-alumnos{
-                padding-top: 60px;
-                margin: 0 auto;
-                width: 70%;
-            }
+        padding-top: 60px;
+        margin: 0 auto;
+        width: 70%;
     }
+}
 
 @media screen and (min-width: 1118px) {
 
     .cabecera-cursos{
-                    padding-top: 60px;
-                    width: 70%;
-                }
+        padding-top: 60px;
+        width: 70%;
+    }
 
     .cabecera-alumnos{
-                    padding-top: 60px;
-                    width: 50%;
-                }
+        padding-top: 60px;
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 966px){
 
     .filtros {
-            display: none;
-            }
+        display: none;
+    }
 
     .todos-anuncios{
-            width: 100%;
-            float: none;
-            }
+        float: none;
+        width: 100%;
+    }
 
     .row ul{
-            width: 100%;
-            }
+        width: 100%;
+    }
 
     .filtros-hide-tablet {
-            display: block;
-            }
+        display: block;
+    }
 
     .anuncio:hover{
-            .hover-container{
+        .hover-container{
             display: none;
-                }
-            }
+        }
+    }
 }
 
 @media screen and (min-width: 967px){
 
     .filtros-hide-tablet {
         display: none;
-        }
+    }
 
     .container-button-title{
         float: right;
-        }
+    }
 }
 
 
 @media screen and (max-width: 865px){
 
     .cabecera-cursos{
-                    width: 100%;
-        }
+        width: 100%;
+    }
 
     .cabecera-alumnos{
-                    width: 90%;
-        }
+        width: 90%;
     }
+}
 
 @media screen and (max-width: 800px){
 
-    .muneco-busqueda{
-                display:none;
-        }
-
-    .hide-sub{
-            display: none;
-        }
-
+    .muneco-busqueda,
+    .hide-sub,
     .container-ordenar{
-            display:none;
-        }
+        display: none;
+    }
 
     .ordenar-title{
-            display: block;
-        }
+        display: block;
+    }
 
     .container-button-title{
-            float: none;
-            margin:0 0 20px 20px;
-        }
+        float: none;
+        margin: 0 0 20px 20px;
+    }
 
      .title-margin{
-            margin-left:20px;
-        }
+        margin-left: 20px;
+    }
 
-    .cabecera-cursos, .cabecera-alumnos{
-                padding-top:0;
-        }
+    .cabecera-cursos,
+    .cabecera-alumnos{
+        padding-top: 0;
+    }
 }
 
 @media screen and (min-width: 801px){
     .ordenar-title {
-                display: none;
-        }
+        display: none;
+    }
 }
-
 
 @media screen and (max-width: 641px){
     .image-container,
@@ -425,17 +482,12 @@ Anuncio ampliado
 
 @media screen and (max-width: 470px){
 
-    .lista-categorias ul{
-        width: 100%;
-    }
+    .lista-categorias ul,
     .grupo-iconos{
         width: 100%;
     }
     .ordenar-title{
-
         display: none;
     }
-
-
 }
 
