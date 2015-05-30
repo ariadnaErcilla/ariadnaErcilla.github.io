@@ -222,6 +222,7 @@ $('.login').click(function(e){
             $('#registro').show();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
+                $('#registro').hide();
             });
               $('.show-login').click(function(e){
               e.preventDefault();
