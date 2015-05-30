@@ -140,6 +140,17 @@ $(document).ready(function(){
           $('.lista-categorias a:not(.categoria-programacion)').removeClass('select');
         }
       });
+/*editar perfil*/
+ $(".lapiz-clicar-1").click(function() {
+            $('.perfil-hide-1').toggle();
+            $('.perfil-show-1').toggle();
+
+        });
+    $(".lapiz-clicar-2").click(function() {
+            $('.perfil-hide-2').toggle();
+            $('.perfil-show-2').toggle();
+
+        });
 /*mensajeria*/
 
 $('.pestanya-m-no-leido').click(function() {
@@ -479,4 +490,7 @@ $( "li.decima-barra" ).click(function(e){
 
     }
 });
+//eliminar elementos perfil
+
+
 })
