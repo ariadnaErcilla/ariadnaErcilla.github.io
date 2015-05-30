@@ -117,6 +117,10 @@ Buscador
     margin: 15px;
     text-transform: uppercase;
 }
+.back-to-top{
+    position:absolute;
+    z-index: 1;
+}
 
 
 @media all {
@@ -133,24 +137,40 @@ Buscador
     .button-mail-responsive{
         display: block;
     }
+<<<<<<< HEAD
     .container-ordenar-3{
         width: 100%;
         margin:0 auto;
     }
+=======
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
     .menu-scroll li{
         float: left;
         list-style: none;
         margin: 15px;
         text-transform: uppercase;
     }
+<<<<<<< HEAD
     .container-ordenar-2{
         float:none;
         width: 100%;
+=======
+
+<<<<<<< HEAD
+    .container-ordenar-2{
+    float: none;
+=======
+     .container-ordenar-2{
+    float:none;
+>>>>>>> f4986953915d0a85b8964b5fbe36f4c6a1ddc8b9
+    width: 100%;
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
     }
 }
 
 @media all and (min-width: 500px){
     .container-imagen-button{
+<<<<<<< HEAD
         display: block;
     }
     .texto-anuncios-buscador{
@@ -166,15 +186,47 @@ Buscador
     .container-anuncios-buscador{
         padding: 5px;
     }
+=======
+    display: block;
+    }
+    .texto-anuncios-buscador{
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%;
+    }
+    .container-imagen-button{
+    float: left;
+    width: 25%;
+    margin: 15px;
+    }
+    .container-anuncios-buscador{
+    padding: 5px;
+    }
+
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
     .button-mail-responsive{
         display: none;
     }
+
     .container-ordenar-2{
+<<<<<<< HEAD
         margin:0 auto;
         width: 50%;
     }
 }
 
+=======
+    width: 60%;
+    margin:0 auto;
+    }
+
+    .background-pagina-show{
+        z-index: 1;
+    }
+
+}
+
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
 @media all and (min-width: 1024px){
     .container-imagen-button{
         display: block;
@@ -196,9 +248,19 @@ Buscador
         display: none;
     }
     .container-ordenar-2{
+<<<<<<< HEAD
         margin:0 auto;
         width: 33%;
     }
+=======
+    width: 33%;
+    margin:0 auto;
+    }
+    .background-pagina-show{
+        z-index: 1;
+    }
+
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
 }
 
 /*-------

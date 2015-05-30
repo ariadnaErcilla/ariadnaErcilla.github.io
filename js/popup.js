@@ -195,33 +195,15 @@ $('#cerrar-consejos').click(function(e){
         return false;
     });
 /*links-popups*/
- $('.registro').click(function(e){
-        e.preventDefault();
-        $('#popup-registro').load('popups.html #registro', function() {
-            $('#registro').show();
-            $('.close').click(function(e){
-                $('.masc:visible').hide();
-            });
-              $('.show-login').click(function(e){
-              e.preventDefault();
-              $('#popup-login').load('popups.html #registro-curso', function() {
-              $($('#login')[0]).show();
-              $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
-            })
-            })
-        });
-
-  });
 
 $('.login').click(function(e){
         e.preventDefault();
-        $('#popup-login').load('popups.html #login', function() {
+        $('#popup').load('popups.html #login', function() {
             $('#login').show();
-            $('#rpopup-registro').hide();
+            $('#registro').hide();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
+                $('#registro').hide();
             });
             $('.show-recuperar').click(function(e){
               e.preventDefault();
@@ -235,7 +217,27 @@ $('.login').click(function(e){
         });
 
   });
+ $('.registro').click(function(e){
+        e.preventDefault();
+        $('#popup').load('popups.html #registro', function() {
+            $('#registro').show();
+            $('#login').show();
+            $('.close').click(function(e){
+                $('.masc:visible').hide();
+                $('#registro').hide();
+            });
+              $('.show-login').click(function(e){
+              e.preventDefault();
+              $('#popup').load('popups.html #login', function() {
+              $($('#login')[0]).show();
+              $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+            })
+            })
+        });
 
+  });
 $('.publicar-curso').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #publicar-curso', function() {
@@ -250,26 +252,27 @@ $('.publicar-curso').click(function(e){
             $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-             })
-             })
-        $('.show-login-curso').click(function(e) {
-              e.preventDefault();
-              $('#popup').load('popups.html #login-curso', function() {
-                $('#login-curso').show();
-                $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
-              })
-              })
-          $('.show-gracias-curso').click(function(e) {
+             $('.show-gracias-curso').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #gracias-curso', function() {
                 $('#gracias-curso').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
+              $('.show-login').click(function(e) {
+              e.preventDefault();
+              $('#popup').load('popups.html #login', function() {
+                $('#login').show();
+                $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+              })
+              })
               })
             })
+             })
+            })
+         
         });
   });
 $('.publicar-duda').click(function(e){
@@ -286,26 +289,27 @@ $('.publicar-duda').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-              })
-               })
-              $('.show-login-duda').click(function(e) {
-              e.preventDefault();
-              $('#popup').load('popups.html #login-duda', function() {
-                $('#login-duda').show();
-                $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
-              })
-               })
-              $('.show-gracias-curso').click(function(e) {
+                 $('.show-gracias-curso').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #gracias-duda', function() {
                 $('#gracias-duda').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
+                $('.show-login-duda').click(function(e) {
+              e.preventDefault();
+              $('#popup').load('popups.html #login-duda', function() {
+                $('#login-duda').show();
+                $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+                })
+               })
               })
             })
+          })
+      })
+
   });
   });
 $('.contactar').click(function(e){
@@ -322,8 +326,17 @@ $('.contactar').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
+                $('.show-gracias-contactar').click(function(e) {
+              e.preventDefault();
+              $('#popup').load('popups.html #gracias-contactar', function() {
+                $('#gracias-contactar').show();
+                $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
               })
-              })
+           })
+                })
+            })
               $('.show-login-contactar').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #login-contactar', function() {
@@ -331,17 +344,10 @@ $('.contactar').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
+
               })
               })
-              $('.show-gracias-contactar').click(function(e) {
-              e.preventDefault();
-              $('#popup').load('popups.html #gracias-contactar', function() {
-                $('#gracias-contactar').show();
-                $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
-            })
-      })
+            
 });
 });
 $('.modificar-curso').click(function(e){

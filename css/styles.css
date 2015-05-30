@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -349,6 +348,10 @@ Buscador
   margin: 15px;
   text-transform: uppercase; }
 
+.back-to-top {
+  position: absolute;
+  z-index: 1; }
+
 @media all {
   .container-imagen-button {
     display: none; }
@@ -361,10 +364,6 @@ Buscador
 
   .button-mail-responsive {
     display: block; }
-
-  .container-ordenar-3 {
-    width: 100%;
-    margin: 0 auto; }
 
   .menu-scroll li {
     float: left;
@@ -396,8 +395,16 @@ Buscador
     display: none; }
 
   .container-ordenar-2 {
+<<<<<<< HEAD
     margin: 0 auto;
     width: 50%; } }
+=======
+    width: 60%;
+    margin: 0 auto; }
+
+  .background-pagina-show {
+    z-index: 1; } }
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
 @media all and (min-width: 1024px) {
   .container-imagen-button {
     display: block; }
@@ -419,8 +426,16 @@ Buscador
     display: none; }
 
   .container-ordenar-2 {
+<<<<<<< HEAD
     margin: 0 auto;
     width: 33%; } }
+=======
+    width: 33%;
+    margin: 0 auto; }
+
+  .background-pagina-show {
+    z-index: 1; } }
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
 /*-------
 ayuda
 -------*/
@@ -688,7 +703,8 @@ Anuncio ampliado
 .general-button:hover, .button-1:hover,
 .button-2:hover,
 .button-3:hover,
-.button-mail:hover {
+.button-mail:hover,
+.back-to-top:hover {
   background-color: #f28960; }
 
 .button-unete:hover {
@@ -743,6 +759,15 @@ span.buzon-buscador {
     left: 0;
     right: 0;
     width: 16px; }
+
+.back-to-top {
+  position: fixed;
+  right: 0px;
+  text-decoration: none;
+  background-color: #F15C22;
+  padding: 1em;
+  display: none;
+  text-transform: uppercase; }
 
 /*--------
 Text inputs and text areas
@@ -2461,7 +2486,7 @@ dropdown
     padding-bottom: 20px; }
 
   .imagen-anuncios-buscador {
-    width: 80%; } }
+    width: 100%; } }
 @media all and (min-width: 600px) {
   .container-uno-como-funciona {
     float: left;
