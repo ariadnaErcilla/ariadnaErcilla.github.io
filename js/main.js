@@ -146,14 +146,9 @@ $(document).ready(function(){
             $('.perfil-show-1').toggle();
 
         });
-  $(".lapiz-clicar-2").click(function() {
+    $(".lapiz-clicar-2").click(function() {
             $('.perfil-hide-2').toggle();
             $('.perfil-show-2').toggle();
-
-        });
-  $(".lapiz-clicar-3").click(function() {
-            $('.perfil-hide-3').toggle();
-            $('.perfil-show-3').toggle();
 
         });
 /*mensajeria*/
@@ -308,81 +303,7 @@ $('.pestanya-1').click(function() {
     $('.pestanya-1').addClass('seleccionado');
     return false;
 });
-/*scroll*/
 
-$('#scroll-to-cursos').click(function(e) {
-  e.preventDefault();
-  $(window).scrollTo($('#cursos'), 800);
- });
-$('#scroll-to-creativos').click(function(e) {
-  e.preventDefault();
-  $(window).scrollTo($('#creativos'), 800);
-});
- $('#scroll-to-dudas').click(function(e) {
-   e.preventDefault();
-   $(window).scrollTo($('#dudas'), 800);
-});
-
-$('#scroll-to-tipografia').click(function(e) {
-    e.preventDefault();
-    $(window).scrollTo($('#tipografia'), 800);
-});
-$('#scroll-to-colores').click(function(e) {
-    e.preventDefault();
-    $(window).scrollTo($('#colores'), 800);
-});
-$('#scroll-to-botones').click(function(e) {
-    e.preventDefault();
-    $(window).scrollTo($('#botones'), 800);
-});
-$('#scroll-to-tipografia').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#iconos'), 800);
-});
-$('#scroll-to-colores').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#ilustraciones'), 800);
-});
-$('#scroll-to-botones').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#formularios'), 800);
-});
-$('#scroll-to-tipografia').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#tablas'), 800);
-});
-$('#scroll-to-colores').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#popups'), 800);
-});
-$('#scroll-to-botones').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#anuncios'), 800);
-});
-$('#scroll-to-tipografia').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#pestanas'), 800);
-});
-$('#scroll-to-colores').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#valoraciones'), 800);
-});
-$('#scroll-to-botones').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#grid'), 800);
-});
-$('#scroll-to-tipografia').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#header'), 800);
-});
-$('#scroll-to-colores').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#footer'), 800);
-});
-$('#scroll-to-botones').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#formularios'), 800);
-});
 /*tablas*/
 $('td .icono-tabla-off').click(function() {
     $(this).hide();
@@ -537,22 +458,22 @@ $(".contenedor-eliminar-1").hide();
 $( ".boton-eliminar-2" ).click(function(e){
 $(".contenedor-eliminar-2").hide();
 });
-$( ".boton-eliminar-3").click(function(e){
+$( ".boton-eliminar-3" ).click(function(e){
 $(".contenedor-eliminar-3").hide();
 });
-$( ".boton-eliminar-4").click(function(e){
+$( ".boton-eliminar-4" ).click(function(e){
 $(".contenedor-eliminar-4").hide();
 });
-$( ".boton-eliminar-5").click(function(e){
+$( ".boton-eliminar-5" ).click(function(e){
 $(".contenedor-eliminar-5").hide();
 });
-$( ".boton-eliminar-6").click(function(e){
+$( ".boton-eliminar-6" ).click(function(e){
 $(".contenedor-eliminar-6").hide();
 });
 })
 
 jQuery(document).ready(function() {
-    var offset = 1200;
+    var offset = 900;
     var duration = 500;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
