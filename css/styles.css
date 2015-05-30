@@ -2293,7 +2293,10 @@ dropdown
     margin-top: 5px; }
 
   .profile-name {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .icono-rectangular-grande, .icono-rectangular-footer, .icono-redes-an-ampliado {
+    margin-right: 3px; } }
 @media all and (max-width: 920px) {
   .background-pagina-show {
     display: none; }
