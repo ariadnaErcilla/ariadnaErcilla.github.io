@@ -197,7 +197,7 @@ $('#cerrar-consejos').click(function(e){
 /*links-popups*/
  $('.registro').click(function(e){
         e.preventDefault();
-        $('#popup').load('popups.html #registro', function() {
+        $('#popup-registro').load('popups.html #registro', function() {
             $('#registro').show();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
@@ -214,14 +214,14 @@ $('#cerrar-consejos').click(function(e){
   });
 $('.login').click(function(e){
         e.preventDefault();
-        $('#popup').load('popups.html #login', function() {
+        $('#popup-login').load('popups.html #login', function() {
             $('#login').show();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-            $('.show-registro').click(function(e){
+            $('.show-recuperar').click(function(e){
               e.preventDefault();
-              $($('#registro')[0]).show();
+              $($('#recuperar')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
