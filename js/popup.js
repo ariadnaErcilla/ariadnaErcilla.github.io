@@ -200,6 +200,7 @@ $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
             $('#login').show();
+            $('#registro').hide();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
                 $('#registro').hide();
