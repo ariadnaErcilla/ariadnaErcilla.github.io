@@ -40,7 +40,6 @@
 
 .profile-name {
   font-size: 24px;
-  /*lo pongo en rem 2rem y se me mucho mas grande */
   text-transform: uppercase;
   font-weight: 400; }
 
@@ -84,9 +83,8 @@
   color: #404041;
   font-size: 0.875rem;
   font-weight: 300;
-  margin: 0;
-  width: 45%;
-  margin-top: 10px; }
+  margin: 10px 0 0 0;
+  width: 45%; }
 
 p {
   font-size: 1rem;
@@ -152,13 +150,17 @@ p {
 a {
   text-decoration: none; }
 
-.type-color-5 a, .pestanya-mensaje, .type-color-2 a:hover {
+.type-color-5 a,
+.pestanya-mensaje,
+.type-color-2 a:hover {
   color: #404041; }
 
-.type-color-5 a:hover, .type-color-3 a {
+.type-color-5 a:hover,
+.type-color-3 a {
   color: white; }
 
-.type-color-2 a, .type-color-3 a:hover {
+.type-color-2 a,
+.type-color-3 a:hover {
   color: #f15c22; }
 
 /*general*/
@@ -248,7 +250,6 @@ body {
 .margin-auto {
   margin: 0 auto; }
 
-/*habia una clase para esto? no la he encontrado y ue creado otra */
 .background-pagina-hide {
   margin: 20px; }
 
@@ -270,7 +271,7 @@ body {
     cursor: pointer; }
 
 .content-container, .content-container-cursos {
-  padding: 10px 20px 0 20px; }
+  padding: 10px 20px 0; }
 
 .texto-cuadrado {
   padding-bottom: 5px;
@@ -291,6 +292,10 @@ body {
 
 .texto-cuadrado-destacado {
   padding: 35px 20px; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
 
 .mas-info-destacado {
   margin: 10px;
@@ -380,8 +385,8 @@ Buscador
 
   .container-imagen-button {
     float: left;
-    width: 25%;
-    margin: 15px; }
+    margin: 15px;
+    width: 25%; }
 
   .container-anuncios-buscador {
     padding: 5px; }
@@ -390,11 +395,16 @@ Buscador
     display: none; }
 
   .container-ordenar-2 {
+<<<<<<< HEAD
+    margin: 0 auto;
+    width: 50%; } }
+=======
     width: 60%;
     margin: 0 auto; }
 
   .background-pagina-show {
     z-index: 1; } }
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
 @media all and (min-width: 1024px) {
   .container-imagen-button {
     display: block; }
@@ -416,11 +426,16 @@ Buscador
     display: none; }
 
   .container-ordenar-2 {
+<<<<<<< HEAD
+    margin: 0 auto;
+    width: 33%; } }
+=======
     width: 33%;
     margin: 0 auto; }
 
   .background-pagina-show {
     z-index: 1; } }
+>>>>>>> 3136c003aad4e8e3d546c0a2ed2d398e8b62fea7
 /*-------
 ayuda
 -------*/
@@ -433,7 +448,7 @@ ayuda
   width: 100%; }
 
 .texto-cuadrado-large {
-  padding: 70px 20px 78px 20px;
+  padding: 70px 20px 78px;
   text-align: center; }
 
 /*----------
@@ -441,7 +456,7 @@ encuentra
 ---------*/
 .texto-cuadrado-small {
   text-align: center;
-  padding: 20px 20px 0 20px; }
+  padding: 20px 20px 0; }
 
 .image-container {
   height: 0;
@@ -518,8 +533,8 @@ Anuncio ampliado
     display: none; }
 
   .todos-anuncios {
-    width: 100%;
-    float: none; }
+    float: none;
+    width: 100%; }
 
   .row ul {
     width: 100%; }
@@ -542,12 +557,8 @@ Anuncio ampliado
   .cabecera-alumnos {
     width: 90%; } }
 @media screen and (max-width: 800px) {
-  .muneco-busqueda {
-    display: none; }
-
-  .hide-sub {
-    display: none; }
-
+  .muneco-busqueda,
+  .hide-sub,
   .container-ordenar {
     display: none; }
 
@@ -561,7 +572,8 @@ Anuncio ampliado
   .title-margin {
     margin-left: 20px; }
 
-  .cabecera-cursos, .cabecera-alumnos {
+  .cabecera-cursos,
+  .cabecera-alumnos {
     padding-top: 0; } }
 @media screen and (min-width: 801px) {
   .ordenar-title {
@@ -573,9 +585,7 @@ Anuncio ampliado
   .foto-alumno {
     display: none; } }
 @media screen and (max-width: 470px) {
-  .lista-categorias ul {
-    width: 100%; }
-
+  .lista-categorias ul,
   .grupo-iconos {
     width: 100%; }
 
@@ -610,9 +620,6 @@ Anuncio ampliado
 .small-button {
   width: 8%; }
 
-/*.button-1{
-    background-color: #00A6A5;
-}*/
 .button-2 {
   background-color: #f15c22; }
 
@@ -864,30 +871,25 @@ Checkboxes, selects
 select {
   height: 35px; }
 
-#input-generales, #input-portafolio, #input-sobre-mi, #input-programas, #input-perfil {
+#input-generales, #input-portafolio-1,
+#input-portafolio-2,
+#input-portafolio-3,
+#input-portafolio-4,
+#input-portafolio-5,
+#input-portafolio-6, #input-sobre-mi {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #C2C2C2; }
 
-#input-portafolio {
+#input-portafolio-1,
+#input-portafolio-2,
+#input-portafolio-3,
+#input-portafolio-4,
+#input-portafolio-5,
+#input-portafolio-6 {
   font-size: 0.8rem;
   margin: 0 0 10px 10px;
   width: 50%; }
-
-#input-programas {
-  margin-bottom: 10px;
-  padding: 0.3rem;
-  width: 100%; }
-
-.input-mensaje {
-  background-color: white;
-  border: 1px solid #f15c22;
-  margin-bottom: 20px; }
-
-#input-perfil {
-  margin-bottom: 10px;
-  padding: 0.3rem;
-  width: 100%; }
 
 /*iconos*/
 .icono-caracteristicas, .animacion-b, .animacion-c, .arquitectura-b, .arquitectura-c, .audiovisual-b, .audiovisual-c, .foto-b, .foto-c, .grafico-b, .grafico-c, .industrial-b, .industrial-c, .moda-b, .moda-c, .programacion-b, .programacion-c, .web-b, .web-c, .estrellas-valorar-1, .estrellas-valorar-2, .estrellas-valorar-3, .estrellas-valorar-4, .estrellas-valorar-5, .estrellas-valorar, .icono-comparte, .icono-disponibilidad, .icono-dudas, .icono-imagenes, .icono-intercambio, .icono-perfil, .iconocomparte-b, .icono-portafolio, .icono-programas, .icono-valoraciones, .mail-b, .manana-off, .manana, .manana-b, .noche-off, .noche, .noche-b, .tarde-off, .tarde, .tarde-b, .buscador-cerrar, .buscador, .icono-fb-large, .icono-link-large, .icono-mensaje-no, .icono-mensaje-si, .icono-mensaje, .icono-tw-large, .lapiz, .lapiz-redonda, .estrellas-anuncios-1, .estrellas-anuncios-2, .estrellas-anuncios-4, .estrellas-anuncios-5, .estrellas-anuncios-3, .portafolio-linkedin-b, .portafolio-linkedin-d, .portafolio-linkedin-c, .portafolio-instagram-b, .portafolio-instagram-d, .portafolio-instagram-c, .portafolio-pinterest-b, .portafolio-pinterest-d, .portafolio-pinterest-c, .portafolio-tumblert-b, .portafolio-tumblert-d, .portafolio-tumblert-c, .portafolio-behance-b, .portafolio-behance-d, .portafolio-behance-c, .portafolio-domestika-b, .portafolio-domestika-d, .portafolio-domestika-c, .nivel0, .nivel1-b, .nivel1, .nivel3-b, .nivel3, .nivel5-b, .nivel5, .consejo-1, .consejo-2, .consejo-3, .consejo-4, .icono-linkedin, .icono-facebook, .icono-twitter, .estrella-activa, .estrella-inactiva, .menu-desplegable, .logotipo-pys, .footer-blanco-fb, .footer-blanco-insta, .footer-blanco-tw, .header-mensajeria, .barra-activa, .barra-inactiva {
@@ -1607,7 +1609,7 @@ ul {
 
   .img-facebook {
     border-bottom: 1px solid #404041;
-    padding: 15px 0px; } }
+    padding: 15px 0; } }
 /*tabla*/
 table {
   border-collapse: collapse; }
@@ -1706,7 +1708,7 @@ aside ampliado
   background-color: white;
   float: left;
   margin-left: 30px;
-  padding: 10px 30px 80px 30px;
+  padding: 10px 30px 80px;
   width: 30%; }
 
 .mini-box-info {
@@ -1886,13 +1888,6 @@ footer {
   .iconos {
     margin: 0 auto;
     width: 185px; } }
-/*---------
-grid
----------*/
-.row {
-  margin-left: -15px;
-  margin-right: -15px; }
-
 /*header*/
 header {
   background-color: white;
@@ -2233,7 +2228,8 @@ dropdown
 .celdas-perfil {
   list-style: none;
   display: inline-block;
-  width: 60%; }
+  width: 60%;
+  margin-bottom: 10px; }
 
 .celdas-perfil-corta {
   width: 32%;

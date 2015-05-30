@@ -60,13 +60,13 @@ select {
 
 .big-textarea{
 	 padding-bottom: 50px;
-
 }
+
 #mini-input{
-    background-color:white;
+    background-color: white;
     border-bottom:1px solid black;
     display: inline-block;
-    padding:.2rem;
+    padding: .2rem;
     width: 8%;
 }
 
@@ -124,33 +124,18 @@ select {
     border: 1px solid #C2C2C2;
 }
 
-#input-portafolio {
+#input-portafolio-1,
+#input-portafolio-2,
+#input-portafolio-3,
+#input-portafolio-4,
+#input-portafolio-5,
+#input-portafolio-6,{
     @extend #input-generales;
     font-size: 0.8rem;
-    margin: 0 0 10px 10px; //ponia margin-left
+    margin: 0 0 10px 10px;
     width: 50%;
 }
 
 #input-sobre-mi {
     @extend #input-generales;
-}
-
-#input-programas {
-  @extend #input-generales;
-  margin-bottom: 10px;
-  padding: 0.3rem;
-  width: 100%;
-}
-
-.input-mensaje {
-    background-color: white;
-    border: 1px solid #f15c22;
-    margin-bottom: 20px;
-}
-
-#input-perfil {
-  @extend #input-generales;
-  margin-bottom: 10px;
-  padding: 0.3rem;
-  width: 100%;
 }
