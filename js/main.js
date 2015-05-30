@@ -304,6 +304,7 @@ $('.pestanya-1').click(function() {
     return false;
 });
 /*scroll*/
+
 $('#scroll-to-cursos').click(function(e) {
   e.preventDefault();
   $(window).scrollTo($('#cursos'), 800);
@@ -315,35 +316,68 @@ $('#scroll-to-creativos').click(function(e) {
  $('#scroll-to-dudas').click(function(e) {
    e.preventDefault();
    $(window).scrollTo($('#dudas'), 800);
-})
+});
+
+$('#scroll-to-tipografia').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#tipografia'), 800);
+});
+$('#scroll-to-colores').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#colores'), 800);
+});
+$('#scroll-to-botones').click(function(e) {
+    e.preventDefault();
+    $(window).scrollTo($('#botones'), 800);
+});
 $('#scroll-to-tipografia').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#tipografia'), 100);
+    $(window).scrollTo($('#iconos'), 800);
 });
 $('#scroll-to-colores').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#colores'), 800);
+    $(window).scrollTo($('#ilustraciones'), 800);
 });
 $('#scroll-to-botones').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#botones'), 800);
+    $(window).scrollTo($('#formularios'), 800);
 });
-
-
-
-$('#scroll-to-cursos').click(function(e) {
+$('#scroll-to-tipografia').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#tipografias'), 800);
+    $(window).scrollTo($('#tablas'), 800);
 });
-$('#scroll-to-creativos').click(function(e) {
+$('#scroll-to-colores').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#colores'), 800);
+    $(window).scrollTo($('#popups'), 800);
 });
-$('#scroll-to-dudas').click(function(e) {
+$('#scroll-to-botones').click(function() {
     e.preventDefault();
-    $(window).scrollTo($('#botones'), 800);
+    $(window).scrollTo($('#anuncios'), 800);
 });
-
+$('#scroll-to-tipografia').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#pestanas'), 800);
+});
+$('#scroll-to-colores').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#valoraciones'), 800);
+});
+$('#scroll-to-botones').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#grid'), 800);
+});
+$('#scroll-to-tipografia').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#header'), 800);
+});
+$('#scroll-to-colores').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#footer'), 800);
+});
+$('#scroll-to-botones').click(function() {
+    e.preventDefault();
+    $(window).scrollTo($('#formularios'), 800);
+});
 /*tablas*/
 $('td .icono-tabla-off').click(function() {
     $(this).hide();
@@ -511,3 +545,21 @@ $( ".boton-eliminar-6" ).click(function(e){
 $(".contenedor-eliminar-6").hide();
 });
 })
+
+jQuery(document).ready(function() {
+    var offset = 1200;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});

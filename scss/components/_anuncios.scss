@@ -113,6 +113,10 @@ Buscador
   margin: 15px;
   text-transform: uppercase;
 }
+.back-to-top{
+    position:absolute;
+    z-index: 1;
+}
 
 
 @media all {
@@ -129,50 +133,52 @@ Buscador
      .button-mail-responsive{
         display: block;
     }
-      .container-ordenar-3{
-    width: 100%;
-    margin:0 auto;
-    }
     .menu-scroll li{
     float: left;
     list-style: none;
     margin: 15px;
     text-transform: uppercase;
     }
-     .container-ordenar-2{
-    float:none;
+
+    .container-ordenar-2{
+    float: none;
     width: 100%;
     }
-
-
 }
+
 @media all and (min-width: 500px){
     .container-imagen-button{
     display: block;
-}
+    }
     .texto-anuncios-buscador{
     float: right;
     margin: 25px 0 0 5px;
     width: 65%;
-}
+    }
     .container-imagen-button{
     float: left;
     width: 25%;
     margin: 15px;
-}
+    }
     .container-anuncios-buscador{
-        padding: 5px;
-}
+    padding: 5px;
+    }
 
     .button-mail-responsive{
         display: none;
     }
+
     .container-ordenar-2{
-    width: 50%;
+    width: 60%;
     margin:0 auto;
-}
+    }
+
+    .background-pagina-show{
+        z-index: 1;
+    }
 
 }
+
 @media all and (min-width: 1024px){
     .container-imagen-button{
     display: block;
@@ -195,10 +201,13 @@ Buscador
         display: none;
     }
     .container-ordenar-2{
-
     width: 33%;
     margin:0 auto;
-}
+    }
+    .background-pagina-show{
+        z-index: 1;
+    }
+
 }
 
 /*-------
