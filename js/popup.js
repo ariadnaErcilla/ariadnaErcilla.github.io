@@ -195,6 +195,12 @@ $('#cerrar-consejos').click(function(e){
         return false;
     });
 /*links-popups*/
+if(".login").click(function(e){
+  $('#registro').hide();
+}else{
+  $('#registro').show();
+}
+});
 $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
