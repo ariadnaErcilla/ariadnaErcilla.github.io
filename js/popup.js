@@ -204,31 +204,38 @@ $('#cerrar-consejos').click(function(e){
             });
               $('.show-login').click(function(e){
               e.preventDefault();
+              $('#popup-login').load('popups.html #registro-curso', function() {
               $($('#login')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
             })
-        })
+            })
+        });
 
   });
+
 $('.login').click(function(e){
         e.preventDefault();
         $('#popup-login').load('popups.html #login', function() {
             $('#login').show();
+            $('#rpopup-registro').hide();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
             $('.show-recuperar').click(function(e){
               e.preventDefault();
+              $('#popup').load('popups.html #recuperar', function() {
               $($('#recuperar')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
             })
-        })
+            })
+        });
 
   });
+
 $('.publicar-curso').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #publicar-curso', function() {
