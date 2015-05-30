@@ -503,16 +503,16 @@ $(".contenedor-eliminar-1").hide();
 $( ".boton-eliminar-2" ).click(function(e){
 $(".contenedor-eliminar-2").hide();
 });
-$( ".boton-eliminar-3" ).click(function(e){
+$( ".boton-eliminar-3").click(function(e){
 $(".contenedor-eliminar-3").hide();
 });
-$( ".boton-eliminar-4" ).click(function(e){
+$( ".boton-eliminar-4").click(function(e){
 $(".contenedor-eliminar-4").hide();
 });
-$( ".boton-eliminar-5" ).click(function(e){
+$( ".boton-eliminar-5").click(function(e){
 $(".contenedor-eliminar-5").hide();
 });
-$( ".boton-eliminar-6" ).click(function(e){
+$( ".boton-eliminar-6").click(function(e){
 $(".contenedor-eliminar-6").hide();
 });
 })
