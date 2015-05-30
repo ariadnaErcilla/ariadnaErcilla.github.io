@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -383,13 +382,14 @@ Buscador
 
   .container-imagen-button {
     float: left;
-<<<<<<< HEAD
+    margin: 15px;
     width: 25%;
-    margin: 15px;
     display: block; }
-=======
-    margin: 15px;
-    width: 25%; }
+
+  .texto-anuncios-buscador {
+    float: right;
+    margin: 25px 0 0 5px;
+    width: 65%; }
 
   .container-anuncios-buscador {
     padding: 5px; }
@@ -401,23 +401,9 @@ Buscador
 
   .container-imagen-button {
     float: left;
+    width: 25%;
     margin: 15px;
-    width: 25%; }
-
-  .container-anuncios-buscador {
-    padding: 5px;
     display: block; }
-
-  .texto-anuncios-buscador {
-    float: right;
-    margin: 25px 0 0 5px;
-    width: 65%; }
-
-  .container-imagen-button {
-    float: left;
-    margin: 15px;
-    width: 25%; }
->>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
 
   .container-anuncios-buscador {
     padding: 5px; }
@@ -427,20 +413,11 @@ Buscador
 
   .container-ordenar-2 {
     margin: 0 auto;
-<<<<<<< HEAD
-    width: 50%; } }
-.background-pagina-show {
-  z-index: 1; }
-=======
-    width: 50%; }
->>>>>>> 9a7c8ad798e2e5ffec222f6487d71c4fde94bddb
+    width: 60%; }
 
   .background-pagina-show {
     z-index: 1; } }
 @media all and (min-width: 1024px) {
-  .container-imagen-button {
-    display: block; }
-
   .texto-anuncios-buscador {
     float: right;
     margin: 25px 0 0 5px;
@@ -449,7 +426,8 @@ Buscador
   .container-imagen-button {
     float: left;
     width: 25%;
-    margin: 15px; }
+    margin: 15px;
+    display: block; }
 
   .container-anuncios-buscador {
     padding: 5px; }
@@ -458,8 +436,8 @@ Buscador
     display: none; }
 
   .container-ordenar-2 {
-    margin: 0 auto;
-    width: 33%; }
+    width: 33%;
+    margin: 0 auto; }
 
   .background-pagina-show {
     z-index: 1; } }
