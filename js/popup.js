@@ -217,7 +217,7 @@ $('.login').click(function(e){
         });
 
   });
- $('.registro').click(function(e){
+ $('.registrate').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #registro', function() {
             $('#registro').show();
