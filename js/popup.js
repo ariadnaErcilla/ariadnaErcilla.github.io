@@ -245,6 +245,17 @@ $('.publicar-curso').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
+            $('#abrir-consejos').click(function(e){
+              $('.show-consejos').show();
+              $('.hide-consejos').hide();
+              return false;
+          });
+
+          $('#cerrar-consejos').click(function(e){
+              $('.show-consejos').hide();
+              $('.hide-consejos').show();
+              return false;
+          });
             $('.show-registro-curso').click(function(e) {
             e.preventDefault();
             $('#popup').load('popups.html #registro-curso', function() {
@@ -252,6 +263,7 @@ $('.publicar-curso').click(function(e){
             $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
+
              $('.show-gracias-curso').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #gracias-curso', function() {
@@ -259,10 +271,10 @@ $('.publicar-curso').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-              $('.show-login').click(function(e) {
+              $('.show-login-curso').click(function(e) {
               e.preventDefault();
-              $('#popup').load('popups.html #login', function() {
-                $('#login').show();
+              $('#popup').load('popups.html #login-curso', function() {
+                $('#login-curso').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
@@ -326,7 +338,14 @@ $('.contactar').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-                $('.show-gracias-contactar').click(function(e) {
+                    $('.show-login-contactar').click(function(e) {
+              e.preventDefault();
+              $('#popup').load('popups.html #login-contactar', function() {
+                $('#login-contactar').show();
+                $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+                  $('.show-gracias-contactar').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #gracias-contactar', function() {
                 $('#gracias-contactar').show();
@@ -335,18 +354,12 @@ $('.contactar').click(function(e){
                 })
               })
            })
-                })
-            })
-              $('.show-login-contactar').click(function(e) {
-              e.preventDefault();
-              $('#popup').load('popups.html #login-contactar', function() {
-                $('#login-contactar').show();
-                $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
 
-              })
-              })
+          })
+          })
+          
+      })
+  })
             
 });
 });
