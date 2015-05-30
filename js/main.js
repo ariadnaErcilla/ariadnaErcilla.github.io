@@ -491,4 +491,7 @@ $( "li.decima-barra" ).click(function(e){
 
     }
 });
+//eliminar elementos perfil
+
+
 })

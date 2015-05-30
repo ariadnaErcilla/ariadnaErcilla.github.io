@@ -2156,7 +2156,8 @@ dropdown
 .foto-trabajo {
   float: left;
   margin: 0 10px 10px 0;
-  width: 30%; }
+  width: 30%;
+  position: relative; }
 
 .descripcion-mi-perfil {
   padding-top: 20px; }
