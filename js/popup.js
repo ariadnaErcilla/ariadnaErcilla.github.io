@@ -259,10 +259,10 @@ $('.publicar-curso').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-              $('.show-login-curso').click(function(e) {
+              $('.show-login').click(function(e) {
               e.preventDefault();
-              $('#popup').load('popups.html #login-curso', function() {
-                $('#login-curso').show();
+              $('#popup').load('popups.html #login', function() {
+                $('#login').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
