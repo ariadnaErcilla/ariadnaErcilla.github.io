@@ -370,9 +370,6 @@ Buscador
     float: none;
     width: 100%; } }
 @media all and (min-width: 500px) {
-  .container-imagen-button {
-    display: block; }
-
   .texto-anuncios-buscador {
     float: right;
     margin: 25px 0 0 5px;
@@ -381,7 +378,8 @@ Buscador
   .container-imagen-button {
     float: left;
     width: 25%;
-    margin: 15px; }
+    margin: 15px;
+    display: block; }
 
   .container-anuncios-buscador {
     padding: 5px; }
