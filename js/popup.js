@@ -200,15 +200,10 @@ $('.login').click(function(e){
         e.preventDefault();
         $('#popup').load('popups.html #login', function() {
             $('#login').show();
-            $('#registro').hide();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
+                $('#registro').hide();
             });
-            if($("#registro").hide()){
-              $('#login').show();
-                }else{
-              $('#registro').show();
-            }
             $('.show-recuperar').click(function(e){
               e.preventDefault();
               $('#popup').load('popups.html #recuperar', function() {
