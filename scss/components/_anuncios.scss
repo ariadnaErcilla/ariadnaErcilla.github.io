@@ -107,6 +107,12 @@ Buscador
 .padding-boton{
     padding: 30px;
 }
+.menu-scroll li{
+    float: left;
+  list-style: none;
+  margin: 15px;
+  text-transform: uppercase;
+}
 
 
 @media all {
@@ -123,6 +129,16 @@ Buscador
      .button-mail-responsive{
         display: block;
     }
+      .container-ordenar-3{
+    width: 100%;
+    margin:0 auto;
+    }
+    .menu-scroll li{
+    float: left;
+    list-style: none;
+    margin: 15px;
+    text-transform: uppercase;
+}
 }
 @media all and (min-width: 500px){
     .container-imagen-button{
@@ -275,7 +291,6 @@ Anuncio ampliado
             }
     }
     .container-ordenar-2{
-
     width: 50%;
     margin:0 auto;
 }
