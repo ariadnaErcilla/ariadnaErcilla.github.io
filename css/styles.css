@@ -448,7 +448,11 @@ Buscador
     float: left;
     list-style: none;
     margin: 15px;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+
+  .container-ordenar-2 {
+    float: none;
+    width: 100%; } }
 @media all and (min-width: 500px) {
   .container-imagen-button {
     display: block; }
@@ -467,7 +471,11 @@ Buscador
     padding: 5px; }
 
   .button-mail-responsive {
-    display: none; } }
+    display: none; }
+
+  .container-ordenar-2 {
+    width: 50%;
+    margin: 0 auto; } }
 @media all and (min-width: 1024px) {
   .container-imagen-button {
     display: block; }
@@ -486,7 +494,11 @@ Buscador
     padding: 5px; }
 
   .button-mail-responsive {
-    display: none; } }
+    display: none; }
+
+  .container-ordenar-2 {
+    width: 33%;
+    margin: 0 auto; } }
 /*-------
 ayuda
 -------*/
@@ -572,7 +584,6 @@ Anuncio ampliado
     margin: 0 auto;
     width: 70%; } }
 .container-ordenar-2 {
-  width: 50%;
   margin: 0 auto; }
 
 @media screen and (min-width: 1118px) {
@@ -582,11 +593,7 @@ Anuncio ampliado
 
   .cabecera-alumnos {
     padding-top: 60px;
-    width: 50%; }
-
-  .container-ordenar-2 {
-    width: 50%;
-    margin: 0 auto; } }
+    width: 50%; } }
 @media screen and (max-width: 966px) {
   .filtros {
     display: none; }
@@ -640,20 +647,12 @@ Anuncio ampliado
 @media screen and (min-width: 801px) {
   .ordenar-title {
     display: none; } }
-@media screen and (max-width: 780px) {
-  .container-ordenar-2 {
-    float: none;
-    width: 100%; } }
 @media screen and (max-width: 641px) {
   .image-container,
   .img-curso,
   .foto,
   .foto-alumno {
     display: none; } }
-@media screen and (max-width: 400px) {
-  .container-ordenar-2 {
-    float: none;
-    width: 50%; } }
 @media screen and (max-width: 470px) {
   .lista-categorias ul {
     width: 100%; }
