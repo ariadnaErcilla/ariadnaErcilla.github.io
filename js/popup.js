@@ -197,6 +197,7 @@ $('#cerrar-consejos').click(function(e){
 /*links-popups*/
 $('.login').click(function(e){
         e.preventDefault();
+        $('#popup').unload('popups.html #registro');
         $('#popup').load('popups.html #login', function() {
             $('#login').show();
             $('#registro').hide();
