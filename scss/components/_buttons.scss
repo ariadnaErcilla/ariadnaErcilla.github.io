@@ -135,7 +135,8 @@
 
 
 .general-button:hover,
-.button-mail:hover,{
+.button-mail:hover,
+.back-to-top:hover{
     background-color: #f28960;
 }
 
@@ -202,3 +203,12 @@ span.buzon-buscador{
 
 }
 
+.back-to-top {
+    position: fixed;
+    right: 0px;
+    text-decoration: none;
+    background-color: #F15C22;
+    padding: 1em;
+    display: none;
+    text-transform: uppercase;
+}
