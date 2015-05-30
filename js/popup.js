@@ -197,7 +197,7 @@ $('#cerrar-consejos').click(function(e){
 /*links-popups*/
 $('.login').click(function(e){
         e.preventDefault();
-        $('#popup-registro').hide();
+         $('#popup-registro').unload('popups.html #registro');
         $('#popup-login').load('popups.html #login', function() {
             $('#login').show();
             $('.close').click(function(e){
@@ -217,7 +217,6 @@ $('.login').click(function(e){
   });
  $('.registro').click(function(e){
         e.preventDefault();
-        $('#popup-registro').show();
         $('#popup-login').unload('popups.html #login');
         $('#popup-registro').load('popups.html #registro', function() {
             $('#registro').show();
@@ -226,7 +225,7 @@ $('.login').click(function(e){
             });
               $('.show-login').click(function(e){
               e.preventDefault();
-              $('#popup-login').load('popups.html #registro-curso', function() {
+              $('#popup-registro').load('popups.html #login', function() {
               $($('#login')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
