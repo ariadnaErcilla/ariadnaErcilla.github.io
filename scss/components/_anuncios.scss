@@ -258,3 +258,168 @@ Anuncio ampliado
 .margin-top-ampliado{
     margin: 30px 0 0 5px;
 }
+/*responsive*/
+
+@media screen and (max-width: 1117px){
+
+    .cabecera-cursos{
+                margin: 0 auto;
+                padding-top:60px;
+                width: 90%;
+            }
+
+    .cabecera-alumnos{
+                padding-top: 60px;
+                margin: 0 auto;
+                width: 70%;
+            }
+    }
+    .container-ordenar-2{
+
+    width: 50%;
+    margin:0 auto;
+}
+
+@media screen and (min-width: 1118px) {
+
+    .cabecera-cursos{
+                    padding-top: 60px;
+                    width: 70%;
+                }
+
+    .cabecera-alumnos{
+                    padding-top: 60px;
+                    width: 50%;
+                }
+    .container-ordenar-2{
+
+    width: 50%;
+    margin:0 auto;
+}
+}
+
+@media screen and (max-width: 966px){
+
+    .filtros {
+            display: none;
+            }
+
+    .todos-anuncios{
+            width: 100%;
+            float: none;
+            }
+
+    .row ul{
+            width: 100%;
+            }
+
+    .filtros-hide-tablet {
+            display: block;
+            }
+
+    .anuncio:hover{
+            .hover-container{
+            display: none;
+                }
+            }
+}
+
+@media screen and (min-width: 967px){
+
+    .filtros-hide-tablet {
+        display: none;
+        }
+
+    .container-button-title{
+        float: right;
+        }
+}
+
+
+@media screen and (max-width: 865px){
+
+    .cabecera-cursos{
+                    width: 100%;
+        }
+
+    .cabecera-alumnos{
+                    width: 90%;
+        }
+    }
+
+@media screen and (max-width: 800px){
+
+    .muneco-busqueda{
+                display:none;
+        }
+
+    .hide-sub{
+            display: none;
+        }
+
+    .container-ordenar{
+            display:none;
+        }
+
+    .ordenar-title{
+            display: block;
+        }
+
+    .container-button-title{
+            float: none;
+            margin:0 0 20px 20px;
+        }
+
+     .title-margin{
+            margin-left:20px;
+        }
+
+    .cabecera-cursos, .cabecera-alumnos{
+                padding-top:0;
+        }
+}
+
+@media screen and (min-width: 801px){
+    .ordenar-title {
+                display: none;
+        }
+}
+@media screen and (max-width: 780px){
+    .container-ordenar-2{
+        float:none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 641px){
+    .image-container,
+    .img-curso,
+    .foto,
+    .foto-alumno{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .container-ordenar-2{
+        float:none;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 470px){
+
+    .lista-categorias ul{
+        width: 100%;
+    }
+    .grupo-iconos{
+        width: 100%;
+    }
+    .ordenar-title{
+
+        display: none;
+    }
+
+
+}
+
