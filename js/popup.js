@@ -197,8 +197,8 @@ $('#cerrar-consejos').click(function(e){
 /*links-popups*/
 $('.login').click(function(e){
         e.preventDefault();
-        $('#popup').unload('popups.html #registro');
-        $('#popup').load('popups.html #login', function() {
+        $('#popup-registro').unload('popups.html #registro');
+        $('#popup-login').load('popups.html #login', function() {
             $('#login').show();
             $('#registro').hide();
             $('.close').click(function(e){
@@ -208,6 +208,26 @@ $('.login').click(function(e){
               e.preventDefault();
               $('#popup').load('popups.html #recuperar', function() {
               $($('#recuperar')[0]).show();
+              $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+            })
+            })
+        });
+
+  });
+ $('.registro').click(function(e){
+        e.preventDefault();
+        $('#popup-login').unload('popups.html #login');
+        $('#popup-registro').load('popups.html #registro', function() {
+            $('#registro').show();
+            $('.close').click(function(e){
+                $('.masc:visible').hide();
+            });
+              $('.show-login').click(function(e){
+              e.preventDefault();
+              $('#popup-login').load('popups.html #registro-curso', function() {
+              $($('#login')[0]).show();
               $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
