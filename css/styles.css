@@ -2263,7 +2263,8 @@ dropdown
 .mensaje-desplegado-5,
 .background-pagina-hide,
 .perfil-hide-1,
-.perfil-hide-2 {
+.perfil-hide-2,
+.perfil-hide-3 {
   display: none; }
 
 .margenes-valoraciones {

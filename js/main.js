@@ -146,9 +146,14 @@ $(document).ready(function(){
             $('.perfil-show-1').toggle();
 
         });
-    $(".lapiz-clicar-2").click(function() {
+  $(".lapiz-clicar-2").click(function() {
             $('.perfil-hide-2').toggle();
             $('.perfil-show-2').toggle();
+
+        });
+  $(".lapiz-clicar-3").click(function() {
+            $('.perfil-hide-3').toggle();
+            $('.perfil-show-3').toggle();
 
         });
 /*mensajeria*/

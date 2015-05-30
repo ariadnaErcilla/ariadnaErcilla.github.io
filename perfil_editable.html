@@ -116,9 +116,9 @@
             <div class="box-perfil cell-tabla cf">
                 <nav class="menu-interior">
                     <ul class="cf">
-                        <li class="pestanyas"><a class="pestanya-1 seleccionado" id="pestanya-1" href="#option-1">Sobre Mi</a></li>
-                        <li class="pestanyas"><a class="pestanya-2" id="pestanya-2" href="#option-2">Portafolio</a></li>
-                        <li class="pestanyas"><a class="pestanya-3" id="pestanya-3" href="#option-3">Cursos</a></li>
+                        <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-2" href="pestanya-2">Portafolio</a></li>
+                        <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
                         <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
                         <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
                         <li class="pestanyas"><a class="pestanya-6" href="#option-6">Mensajería</a></li>
@@ -129,8 +129,7 @@
                         <span class="icono-perfil icono-rectangular-grande left"> </span>
                         <div class="contenido">
                             <div>
-                                <h2 class="secondary-title left">
-                                    Mi Perfil
+                                <h2 class="secondary-title left">Sobre mi
                                 </h2>
                                 <span class="lapiz icono-editar opacity-hover left lapiz-clicar-2"></span>
                                 <p class="secondary-subtitle margin-top clear  clear">Añade una descripción que te defina y que muestre tus habilidades.</p>
@@ -270,13 +269,14 @@
             <h2 class="secondary-title left">
                 Programas informáticos
             </h2>
-            <span class="lapiz icono-editar opacity-hover left"></span>
+            <span class="lapiz icono-editar opacity-hover left lapiz-clicar-3"></span>
             <p class="secondary-subtitle margin-top clear"> Añade tus programas y indica en que grado los controlas</p>
         </div>
         <div class="descripcion-mi-perfil">
             <ul class="lista-programas no-margin">
                 <li class="celdas-programas"> Programa </li>
-                <li class="celdas-programas-final type-color-2 opacity-hover"> Photoshop</li>
+                <li class="celdas-programas-final type-color-2 opacity-hover perfil-show-3"> Photoshop</li>
+                <li class="celdas-programas perfil-hide-3"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
                 <li class="celdas-programas"> Nivel</li>
                 <li>
                     <ul class="margin-right cf pointer">
@@ -297,7 +297,8 @@
 
             <ul class="lista-programas pointer">
                  <li class="celdas-programas"> Programa </li>
-                <li class="celdas-programas-final type-color-2 opacity-hover"> Illustrator</li>
+                <li class="celdas-programas-final type-color-2 opacity-hover perfil-show-3"> Illustrator</li>
+                <li class="celdas-programas perfil-hide-3"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
                 <li class="celdas-programas"> Nivel</li>
                 <li>
                     <ul class="margin-right cf">
