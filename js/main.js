@@ -293,19 +293,18 @@ $('.pestanya-1').click(function() {
     return false;
 });
 /*scroll*/
-$('#scroll-to-cursos').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#cursos'), 800);
+$('#scroll-to-cursos').click(function(e) {
+  e.preventDefault();
+  $(window).scrollTo($('#cursos'), 800);
+ });
+$('#scroll-to-creativos').click(function(e) {
+  e.preventDefault();
+  $(window).scrollTo($('#creativos'), 800);
 });
-$('#scroll-to-creativos').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#creativos'), 800);
-});
-$('#scroll-to-dudas').click(function() {
-    e.preventDefault();
-    $(window).scrollTo($('#dudas'), 800);
-});
-
+ $('#scroll-to-dudas').click(function(e) {
+   e.preventDefault();
+   $(window).scrollTo($('#dudas'), 800);
+})
 $('#scroll-to-tipografia').click(function() {
     e.preventDefault();
     $(window).scrollTo($('#tipografia'), 100);
