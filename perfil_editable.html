@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <title>Home</title>
     <title>Perfil</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
@@ -90,14 +89,14 @@
                         <h1 class="profile-name left">
                             Silvia Terreiz
                         </h1>
-                        <span class="lapiz icono-editar-margen opacity-hover left lapiz-clicar"></span>
+                        <span class="lapiz icono-editar-margen opacity-hover left lapiz-clicar-1"></span>
                     </div>
-                    <div class="clear perfil-show">
+                    <div class="clear perfil-show-1">
                         <p><span class="type-color-1 light">Status:</span> Estudiante / empleada</p>
                         <p><span class="type-color-1 light">Categoría:</span> Diseñadora web</p>
                         <p><span class="type-color-1 light">Edad:</span> 26 años</p>
                     </div>
-                    <div class="clear perfil-hide">
+                    <div class="clear perfil-hide-1">
                         <ul class="lista-programas no-margin">
                                 <li class="celdas-perfil-corta type-color-1 light"> Status </li>
                                 <li class="celdas-perfil"> <input type="text" id="input-perfil" placeholder="Ej: estudiante"></li>
@@ -133,15 +132,15 @@
                                 <h2 class="secondary-title left">
                                     Mi Perfil
                                 </h2>
-                                <span class="lapiz icono-editar opacity-hover left"></span>
+                                <span class="lapiz icono-editar opacity-hover left lapiz-clicar-2"></span>
                                 <p class="secondary-subtitle margin-top clear  clear">Añade una descripción que te defina y que muestre tus habilidades.</p>
                             </div>
-                            <div class="descripcion-mi-perfil cf">
+                            <div class="descripcion-mi-perfil perfil-show-2 cf">
                                 <p class="no-margin">
                                    Soy Silvia y me encanta el diseño web. Actualmente estoy de becaria en una e-commerce de productos de deporte y estoy acabando la carrera en Bau. Me gustaría mejorar mis aptitudes en programación y os puedo ayudar con los programas de Diseño de Adobe.
                                </p>
                            </div>
-                           <div class="descripcion-mi-perfil perfil-hide cf">
+                           <div class="descripcion-mi-perfil perfil-hide-2 cf">
                                 <textarea id="input-sobre-mi" class="padding-bottom" name="message" rows="4" placeholder="Preséntate y explícanos que puedes aportar y que quieres conseguir de puntoyseguido"></textarea>
                             </div>
                        </div>
@@ -930,15 +929,5 @@
 
         </div>
     </footer>
-<script>
-
-$(document).ready(function(){
-    $("lapiz-clicar").click(function() {
-            $('.perfil-show').hide();
-            $('.perfil-hide').show();
-        });
-    });
-</script>
-
 </body>
 </html>
