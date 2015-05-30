@@ -195,29 +195,12 @@ $('#cerrar-consejos').click(function(e){
         return false;
     });
 /*links-popups*/
- $('.registro').click(function(e){
-        e.preventDefault();
-        $('#popup-registro').load('popups.html #registro', function() {
-            $('#registro').show();
-            $('.close').click(function(e){
-                $('.masc:visible').hide();
-            });
-              $('.show-login').click(function(e){
-              e.preventDefault();
-              $('#popup-login').load('popups.html #registro-curso', function() {
-              $($('#login')[0]).show();
-              $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
-            })
-            })
-        });
-
-  });
-
 $('.login').click(function(e){
         e.preventDefault();
-        $('#popup-login').load('popups.html #login', function() {
+        $('#popup').load('popups.html #registro', function() {
+          $('#registro').hide();
+        });
+        $('#popup').load('popups.html #login', function() {
             $('#login').show();
             $('#popup-registro').hide();
             $('.close').click(function(e){
@@ -235,7 +218,28 @@ $('.login').click(function(e){
         });
 
   });
+ $('.registro').click(function(e){
+        e.preventDefault();
+        $('#popup').load('popups.html #login', function() {
+          $('#login').hide();
+        });
+        $('#popup').load('popups.html #registro', function() {
+            $('#registro').show();
+            $('.close').click(function(e){
+                $('.masc:visible').hide();
+            });
+              $('.show-login').click(function(e){
+              e.preventDefault();
+              $('#popup-login').load('popups.html #registro-curso', function() {
+              $($('#login')[0]).show();
+              $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+            })
+            })
+        });
 
+  });
 $('.publicar-curso').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #publicar-curso', function() {
