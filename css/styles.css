@@ -41,6 +41,7 @@
 
 .profile-name {
   font-size: 24px;
+  /*lo pongo en rem 2rem y se me mucho mas grande */
   text-transform: uppercase;
   font-weight: 400; }
 
@@ -84,8 +85,9 @@
   color: #404041;
   font-size: 0.875rem;
   font-weight: 300;
-  margin: 10px 0 0;
+  margin: 0;
   width: 45%;
+  margin-top: 10px; }
 
 p {
   font-size: 1rem;
@@ -738,7 +740,7 @@ Anuncio ampliado
 /*
 .button-1 span,
 .button-2 span,
-.button-mail span{
+.button-maddil span{
     color:white;
 }
 
@@ -1788,8 +1790,7 @@ td {
   text-transform: uppercase; }
 
 .menu-ordenar li a:hover,
-.menu-ordenar li a.selection,
-.menu-scroll li:hover {
+.menu-ordenar li a.selection {
   color: #00A6A5; }
 
 /*------
