@@ -219,7 +219,7 @@ $('.login').click(function(e){
         e.preventDefault();
         $('#popup-login').load('popups.html #login', function() {
             $('#login').show();
-            $('#registro').hide();
+            $('#rpopup-registro').hide();
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
