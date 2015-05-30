@@ -128,14 +128,19 @@ Buscador
     display: none;
     }
     .textos-anuncios-buscador{
-        width: 100%;
+    width: 100%;
     }
     .container-anuncios-buscador{
-        padding: 30px;
+    padding: 30px;
     }
 
+<<<<<<< HEAD
+     .button-mail-responsive{
+     display: block;
+=======
     .button-mail-responsive{
         display: block;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
 
 
@@ -145,18 +150,27 @@ Buscador
         margin: 15px;
         text-transform: uppercase;
     }
+<<<<<<< HEAD
+     .container-ordenar-2{
+    float:none;
+    width: 100%;
+=======
 
     .container-ordenar-2{
         float:none;
         width: 100%;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
 
 }
 
 @media all and (min-width: 500px){
+<<<<<<< HEAD
+=======
     .container-imagen-button{
         display: block;
     }
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     .texto-anuncios-buscador{
         float: right;
         margin: 25px 0 0 5px;
@@ -191,9 +205,16 @@ Buscador
         width: 65%;
     }
     .container-imagen-button{
+<<<<<<< HEAD
+    float: left;
+    width: 25%;
+    margin: 15px;
+    display: block;
+=======
         float: left;
         margin: 15px;
         width: 25%;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
     .container-anuncios-buscador{
         padding: 5px;
@@ -201,7 +222,7 @@ Buscador
 
 
     .button-mail-responsive{
-        display: none;
+    display: none;
     }
 
     .container-ordenar-2{
@@ -233,15 +254,20 @@ Buscador
         padding: 5px;
         }
     .button-mail-responsive{
-        display: none;
+    display: none;
     }
     .container-ordenar-2{
+<<<<<<< HEAD
+    width: 33%;
+    margin: 0 auto;
+=======
         margin:0 auto;
         width: 33%;
+>>>>>>> a93d8c1a4d24ef4711f327302a015c2f604785bf
     }
 
     .background-pagina-show{
-        z-index: 1;
+    z-index: 1;
     }
 }
 
