@@ -259,11 +259,7 @@ $('.publicar-curso').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-              })
-            })
-             })
-            })
-        $('.show-login-curso').click(function(e) {
+              $('.show-login-curso').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #login-curso', function() {
                 $('#login-curso').show();
@@ -272,6 +268,10 @@ $('.publicar-curso').click(function(e){
                 })
               })
               })
+              })
+            })
+             })
+            })
          
         });
   });
