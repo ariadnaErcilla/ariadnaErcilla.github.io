@@ -399,10 +399,10 @@ $('.publicar-curso2').click(function(e){
               $('.hide-consejos').show();
               return false;
           });
-          $('.show-gracias-curso').click(function(e) {
+          $('.show-gracias-curso2').click(function(e) {
               e.preventDefault();
-              $('#popup').load('popups.html #gracias-curso', function() {
-                $('#gracias-curso').show();
+              $('#popup').load('popups.html #gracias-curso-2', function() {
+                $('#gracias-curso-2').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
@@ -417,10 +417,10 @@ $('.publicar-duda2').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-            $('.show-gracias-duda').click(function(e) {
+            $('.show-gracias-duda2').click(function(e) {
               e.preventDefault();
-              $('#popup').load('popups.html #gracias-duda', function() {
-                $('#gracias-duda').show();
+              $('#popup').load('popups.html #gracias-duda-2', function() {
+                $('#gracias-duda-2').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
@@ -435,10 +435,10 @@ $('.contactar-2').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-        $('.show-gracias-contactar').click(function(e) {
+        $('.show-gracias-contactar2').click(function(e) {
               e.preventDefault();
-              $('#popup').load('popups.html #gracias-contactar', function() {
-                $('#gracias-contactar').show();
+              $('#popup').load('popups.html #gracias-contactar-2', function() {
+                $('#gracias-contactar-2').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
