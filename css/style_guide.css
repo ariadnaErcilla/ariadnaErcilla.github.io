@@ -515,3 +515,30 @@
 .sg-menu li.alineacion-vertical a {
     color: #fff;
 }
+.sg-popup{
+    width:100%;
+    margin:0 auto;
+}
+.sg-top{
+    top:147px;
+}
+.sg-movedown{
+    margin-top:8%;
+}
+.sg-movedown-2{
+    margin-bottom:18%;
+
+}
+.sg-popup-image{
+        background-image: url(../imagenes/ninologin.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 22% auto;
+}
+.sg-popup-image-2{
+    background-position: top 0px right 250px;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/muneco-gracias.png);
+    background-size: 17% auto;
+}
+}
