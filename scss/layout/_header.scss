@@ -85,7 +85,7 @@ ul {
 }
 
 .menu li a.active,
-.menu a:hover {
+.menu a:hover,{
     color: #f15c22;
 }
 
@@ -233,4 +233,8 @@ dropdown
 
 .menu li.alineacion-vertical a {
     color: #fff;
+}
+
+.menu li.alineacion-vertical a.active{
+    background-color: #f15c22;
 }

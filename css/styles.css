@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -2084,6 +2085,9 @@ dropdown
 .menu li.alineacion-vertical a {
   color: #fff; }
 
+.menu li.alineacion-vertical a.active {
+  background-color: #f15c22; }
+
 /*perfil*/
 .parte-derecha {
   float: right;
@@ -2102,7 +2106,8 @@ dropdown
 
 .lista-programas {
   padding-left: 0px;
-  list-style: none; }
+  list-style: none;
+  margin-top: 8px; }
 
 .celdas-programas, .celdas-programas-final {
   float: left;
