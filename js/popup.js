@@ -32,6 +32,7 @@ function validateEmail(sEmail) {
 
           });
 
+
 $('#registro button, #registro-curso button, #registro-duda button, #registro-contactar button').click(function(e) {
             e.preventDefault();
             var email = $('#registro input[name="email"],#registro-curso input[name="email"],#registro-duda input[name="email"],#registro-contactar input[name="email"] ');
@@ -110,6 +111,7 @@ $('#contactar button, #publicar-curso button, #publicar-duda button, #modificar-
           
            
           });
+
 /*show-popup*/
 $('.show-login').click(function(e){
         e.preventDefault();
@@ -498,7 +500,7 @@ $('.contactar').click(function(e){
             $('#contactar').show();
             $('#contactar button').click(function(e) {
             e.preventDefault();
-            var message = $('#contactar input[name="description"]');
+            var message = $('#contactar textarea[name="message"]');
             var labelmessage = message.siblings('label');
             var textmessage = $.trim(message.val());
             var check = $('#contactar input[name="check"]');
@@ -695,7 +697,7 @@ $('.contactar-2').click(function(e){
             $('#contactar-2').show();
             $('#contactar-2 button').click(function(e) {
             e.preventDefault();
-            var message = $('#contactar-2 input[name="description"]');
+            var message = $('#contactar-2 textarea[name="message"]');
             var labelmessage = message.siblings('label');
             var textmessage = $.trim(message.val());
             var check = $('#contactar-2 input[name="check"]');
