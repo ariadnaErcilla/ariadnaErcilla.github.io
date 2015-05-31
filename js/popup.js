@@ -530,17 +530,17 @@ $('.contactar').click(function(e){
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
-                    $('.show-login-contactar').click(function(e) {
-              e.preventDefault();
-              $('#popup').load('popups.html #login-contactar', function() {
-                $('#login-contactar').show();
-                $('.close').click(function(e) {
-                  $('.masc:visible').hide();
-                })
                   $('.show-gracias-contactar').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #gracias-contactar', function() {
                 $('#gracias-contactar').show();
+                $('.close').click(function(e) {
+                  $('.masc:visible').hide();
+                })
+                $('.show-login-contactar').click(function(e) {
+              e.preventDefault();
+              $('#popup').load('popups.html #login-contactar', function() {
+                $('#login-contactar').show();
                 $('.close').click(function(e) {
                   $('.masc:visible').hide();
                 })
