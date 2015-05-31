@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Buscador</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+        <header class="cf">
+        <div class="container-home cf">
+        <div class="logo">
+            <a href="index_registrado.html">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
+            </a>
+        </div>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso_registrado.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno_registrado.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona_registrado.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="registro">
+                    <ul class="esconder">
+                         <li><a class="mensajes" href="perfil_mensajeria.html">
+                            <span class="icono-rectangular-grande header-mensajeria opacity-hover"></span>
+                        </a>
+                    </li>
+                    <li><a href="perfil_editable.html">Mi perfil</a></li>
+                </ul>
+            </div>
+            <div class="lupa-buscador">
+                <div class="dropdown-wrap">
+                    <a href="#">
+                        <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
+                    </a>
+                    <ul class="dropdown">
+                        <li class="alineacion-vertical">
+                            <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                        </li>
+                        <li class="alineacion-vertical">
+                            <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                        </li>
+                        <li class="alineacion-vertical">
+                            <a href="como_funciona.html">¿Cómo funciona?</a>
+                        </li>
+                        <li class="alineacion-vertical">
+                            <a href="perfil_editable.html">Mi perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <a id="abrir" href="">
+                    <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                </a>
+            </div><a name="Ancla17"></a>
+        </div>
+    </nav>
+</div>
+<div class="buscador-desplegado cf">
+        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
+        <div class="buscador-container-derecha cf">
+            <div class="container-button-buscador left">
+                <a class="button-2 full-button-header type-color-3" href="buscador_registrado.html">Buscar</a>
+            </div>
+            <a id="cerrar" href="">
+                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
+            </a>
+        </div>
+    </div>
+</header>
+<div class="cabecera-alumnos cf">
+    <div class="titulo-encabezado cf">
+        <div class="muneco-busqueda left"></div>
+        <div class="contenido-titulo cf">
+            <h1 class="title type-color-1">SE HAN ENCONTRADO...</h1>
+            <p class="subtitle">4 cursos, 6 creativos, 6 dudas </p>
+            <a class="back-to-top type-color-3" href="#">Top</a>
+        </div>
+    </div>
+</div>
+<!--filtros desktop-->
+<div class="background-4 cf clear">
+    <div class="container cf">
+        <div class="container-ordenar-2">
+            <ul class="menu-scroll type-color-5 cf">
+                <li><a href="#Ancla1">Cursos</a></li>
+                <li><a href="#Ancla2">Creativos</a></li>
+                <li><a href="#Ancla3">Dudas</a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="titular-seccion-buscador">
+                <h2 class="secondary-title"><a name="Ancla1">Cursos</a></h2>
+                <hr class="linia">
+            </div>
+
+            <div class="large-6 columns">
+                <article class="container-anuncios-buscador">
+                    <div class="container-imagen-button">
+
+                        <img class="imagen-anuncios-buscador" alt="maqueta revistas" src="imagenes/anuncio-6.jpg">
+                        <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                            <span class="buzon-buscador no-display cf"></span>
+                        </a>
+                    </div>
+                    <div class="texto-anuncios-buscador">
+                        <h3 class="secondary-title">Maqueta tus revistas en Indesign</h3>
+                        <p>Juan García Tenorioa</p>
+
+                        <div class="total-icono">
+                           <div class="container-icon">
+                            <span class="icono left grafico-c"></span>
+                        </div>
+                        <div class="container-icon">
+                            <span class="secondary-subtitle">Gráfico</span>
+                        </div>
+                    </div>
+                    <div class="total-icono padding-icono-stars opacity-hover">
+                        <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                            <span class="stars-grande left estrellas-valorar-2"></span>
+                        </div>
+                        <div class="container-icon">
+                            <span class="modificar type-color-2">(5)</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="button-mail-responsive contactar">
+                    <span></span>
+                </a>
+
+            </article>
+        </div>
+
+        <div class="large-6 columns">
+            <article class="container-anuncios-buscador">
+                <div class="container-imagen-button">
+                    <img class="imagen-anuncios-buscador" alt="crear tipografía" src="imagenes/anuncio-10.jpg">
+
+                    <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                        <span class="buzon-buscador no-display cf"></span>
+                    </a>
+
+                </div>
+
+                <div class="texto-anuncios-buscador">
+                    <h3 class="secondary-title">¡Aprende a crear tu propia tipografía!</h3>
+                    <p>Rosa Domínguez</p>
+
+                    <div class="total-icono">
+                       <div class="container-icon">
+                        <span class="icono left grafico-c"></span>
+                    </div>
+                    <div class="container-icon">
+                        <span class="secondary-subtitle">Gráfico</span>
+                    </div>
+                </div>
+                <div class="total-icono padding-icono-stars opacity-hover">
+                    <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                     <span class="stars-grande left estrellas-valorar-1"></span>
+                 </div>
+                 <div class="container-icon">
+                    <span class="modificar type-color-2">(3)</span>
+                </div>
+            </div>
+        </div>
+        <a class="button-mail-responsive contactar">
+            <span></span>
+        </a>
+
+    </article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-buscador" alt="aprender illustrator" src="imagenes/anuncio-28.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">¿Quieres iniciarte en illustrator?</h3>
+            <p>Teresa Ramirez</p>
+
+            <div class="total-icono">
+               <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+             <span class="stars-grande left estrellas-valorar"></span>
+         </div>
+         <div class="container-icon">
+            <span class="modificar type-color-2">(4)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-buscador" alt="post-produccion grafica" src="imagenes/anuncio-29.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Clase de Post-producción gráfica</h3>
+            <p>Gonzalo La fuente</p>
+
+            <div class="total-icono">
+               <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+             <span class="stars-grande left estrellas-valorar-4"></span>
+         </div>
+         <div class="container-icon">
+            <span class="modificar type-color-2">(10)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+</section>
+
+<section>
+    <div class="titular-seccion-buscador">
+        <h2 class="secondary-title"><a name="Ancla2">Creativos</a></h2>
+        <hr class="linia">
+    </div>
+    <div class="large-6 columns">
+        <article class="container-anuncios-buscador">
+            <div class="container-imagen-button">
+                <img class="imagen-anuncios-creativos imagen-redondo" alt="alumno y profesor juan perez" src="imagenes/alumno-16-buscador.jpg">
+
+                <a class="full-button boton-buscador button-2 type-color-3">
+                    <span class="buzon-buscador no-display cf"></span>
+                </a>
+            </div>
+
+            <div class="texto-anuncios-buscador">
+                <h3 class="secondary-title">Juan Perez</h3>
+
+                <div class="container-dudas-cursos cf">
+                    <div class="container-cantidad">
+                        <p class="no-margin">2 cursos</p>
+                    </div>
+                </div>
+                <div class="container-dudas-cursos cf">
+                    <div class="container-cantidad">
+                        <p class="no-margin">3 dudas</p>
+                    </div>
+
+                    <div class="total-icono-buscador opacity-hover">
+                        <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                            <span class="stars-grande  left estrellas-valorar-4"></span>
+                        </div>
+                        <div class="container-icon">
+                            <span class="modificar type-color-2">(6)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="button-mail-responsive contactar">
+                <span></span>
+            </a>
+        </article>
+    </div>
+</section>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="alumno y profesor juan perez" src="imagenes/alumno-23-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Paula Rodriguez</h3>
+
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">4 cursos</p>
+                </div>
+            </div>
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">2 dudas</p>
+                </div>
+
+                <div class="total-icono-buscador opacity-hover">
+                    <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                        <span class="stars-grande  left estrellas-valorar-5"></span>
+                    </div>
+                    <div class="container-icon">
+                        <span class="modificar type-color-2">(7)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="button-mail-responsive contactar">
+            <span></span>
+        </a>
+    </article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-3-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Anastasia Barreiro</h3>
+
+
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">6 cursos</p>
+                </div>
+            </div>
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">4 dudas</p>
+                </div>
+            </div>
+
+            <div class="total-icono-buscador opacity-hover">
+                <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                    <span class="stars-grande  left estrellas-valorar-5"></span>
+                </div>
+                <div class="container-icon">
+                    <span class="modificar type-color-2">(10)</span>
+                </div>
+            </div>
+        </div>
+        <a class="button-mail-responsive contactar">
+            <span></span>
+        </a>
+    </article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-19-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Malena Aros</h3>
+
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">1 curso</p>
+                </div>
+            </div>
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">3 dudas</p>
+                </div>
+            </div>
+            <div class="total-icono-buscador opacity-hover">
+                <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                    <span class="stars-grande  left estrellas-valorar"></span>
+                </div>
+                <div class="container-icon">
+                    <span class="modificar type-color-2">(5)</span>
+                </div>
+            </div>
+        </div>
+        <a class="button-mail-responsive contactar">
+            <span></span>
+        </a>
+    </article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-5-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Juan Perez</h3>
+
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">2 cursos</p>
+                </div>
+            </div>
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">3 dudas</p>
+                </div>
+            </div>
+
+            <div class="total-icono-buscador opacity-hover">
+                <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                    <span class="stars-grande  left estrellas-valorar"></span>
+                </div>
+                <div class="container-icon">
+                    <span class="modificar type-color-2">(5)</span>
+                </div>
+            </div>
+        </div>
+        <a class="button-mail-responsive contactar">
+            <span></span>
+        </a>
+    </article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-6-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Francisco Brandi</h3>
+
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">4 cursos</p>
+                </div>
+            </div>
+            <div class="container-dudas-cursos cf">
+                <div class="container-cantidad">
+                    <p class="no-margin">2 dudas</p>
+                </div>
+            </div>
+            <div class="total-icono-buscador opacity-hover">
+                <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+                    <span class="stars-grande  left estrellas-valorar-4"></span>
+                </div>
+                <div class="container-icon">
+                    <span class="modificar type-color-2">(8)</span>
+                </div>
+            </div>
+        </div>
+        <a class="button-mail-responsive contactar">
+            <span></span>
+        </a>
+    </article>
+</div>
+
+<div class="titular-seccion-buscador">
+  <h2 class="secondary-title"><a name="Ancla3">Dudas</a></h2>
+  <hr class="linia">
+</div>
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-11-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Busco aprender a maquetar folletos en Indesign a cambio de una caña</h3>
+            <p>Martina Milaso</p>
+
+            <div class="total-icono">
+               <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+             <span class="stars-grande left estrellas-valorar-2"></span>
+         </div>
+         <div class="container-icon">
+            <span class="modificar type-color-2">(5)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usaurio" src="imagenes/alumno-13-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Quiero aprender a hacer revistas electrónicas en Indesign</h3>
+            <p>Jimena Terrile</p>
+
+            <div class="total-icono">
+               <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+             <span class="stars-grande left estrellas-valorar-2"></span>
+         </div>
+         <div class="container-icon">
+            <span class="modificar type-color-2">(5)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-11-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">¿Alguien me puede enseñar a ilustrar con illustrator?</h3>
+            <p>Simona Perez</p>
+
+            <div class="total-icono">
+               <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+             <span class="stars-grande left estrellas-valorar-2"></span>
+         </div>
+         <div class="container-icon">
+            <span class="modificar type-color-2">(5)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-14-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Quiero aprender a hacer retratos nocturnos profesionales</h3>
+            <p>Santi Bustos</p>
+
+            <div class="total-icono">
+               <div class="container-icon">
+                <span class="icono left foto-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Fotografía</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+             <span class="stars-grande left estrellas-valorar-2"></span>
+         </div>
+         <div class="container-icon">
+            <span class="modificar type-color-2">(5)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-17-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Quiero aprender a retocar rostros</h3>
+            <p>Lola García</p>
+
+            <div class="total-icono">
+             <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+               <span class="stars-grande left estrellas-valorar-2"></span>
+           </div>
+           <div class="container-icon">
+            <span class="modificar type-color-2">(4)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar">
+    <span></span>
+</a>
+</article>
+</div>
+
+<div class="large-6 columns">
+    <article class="container-anuncios-buscador">
+        <div class="container-imagen-button">
+
+            <img class="imagen-anuncios-creativos imagen-redondo" alt="imagen usuario" src="imagenes/alumno-12-buscador.jpg">
+
+            <a class="full-button boton-buscador button-2 type-color-3 contactar">
+                <span class="buzon-buscador no-display cf"></span>
+            </a>
+
+        </div>
+
+        <div class="texto-anuncios-buscador">
+            <h3 class="secondary-title">Quiero aprender a crear mi propia tipografía</h3>
+            <p>Marta Perez</p>
+
+            <div class="total-icono">
+             <div class="container-icon">
+                <span class="icono left grafico-c"></span>
+            </div>
+            <div class="container-icon">
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono padding-icono-stars opacity-hover">
+            <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
+               <span class="stars-grande left estrellas-valorar-2"></span>
+           </div>
+           <div class="container-icon">
+            <span class="modificar type-color-2">(4)</span>
+        </div>
+    </div>
+</div>
+<a class="button-mail-responsive contactar contactar">
+    <span></span>
+</a>
+</article>
+</div>
+</div>
+</div>
+<div id="popup"></div>
+<footer>
+    <div class="pie cf">
+        <section class="mini-box-pie">
+            <span class="type-color-3">Contacto</span>
+            <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
+            <p class="terms type-color-3">(+34)722 563 505</p>
+        </section>
+        <section class="mini-box-pie">
+            <div class="iconos cf">
+                <div class="red-social opacity-hover">
+                    <a target="blank" href="https://twitter.com/puntoyseguidoo">
+                        <span class="icono-rectangular-footer footer-blanco-tw"></span>
+                    </a>
+                </div>
+
+                <div class="red-social opacity-hover">
+                    <a target="blank" href="https://www.facebook.com/puntoyseguidoo">
+                        <span class="icono-rectangular-footer footer-blanco-fb"></span>
+                    </a>
+                </div>
+
+                <div class="red-social opacity-hover">
+                    <a target="blank" href="https://www.instagram.com/puntoyseguidoo">
+                        <span class="icono-rectangular-footer footer-blanco-insta"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="mini-box-pie">
+            <div class="newsletter">
+                <span class="type-color-3">Newsletter</span>
+                <div class="newsletter-input cf">
+                    <div class="caja-footer">
+                        <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo">
+                    </div>
+                    <div>
+                        <a class="button-unete medium-button type-color-3 left" href="graciasnews.html"><span>Únete</span></a>
+                    </div>
+                    <p class="terms type-color-3"><a class="type-color-3" href="normas_newsletter.html" target="_blank">Haciendo click aquí aceptas nuestras<span><u> bases y condiciones</u></span></a></p>
+                </div>
+            </div>
+        </section>
+        <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+
+    </div>
+</footer>
+</body>
+
+</html>
+
+
+
+
