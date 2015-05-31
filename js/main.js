@@ -151,6 +151,11 @@ $(document).ready(function(){
             $('.perfil-show-2').toggle();
 
         });
+    $(".lapiz-clicar-3").click(function() {
+            $('.perfil-hide-3').toggle();
+            $('.perfil-show-3').toggle();
+
+        });
 /*mensajeria*/
 
 $('.pestanya-m-no-leido').click(function() {
