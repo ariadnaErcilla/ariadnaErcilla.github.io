@@ -523,7 +523,7 @@ $('.contactar').click(function(e){
             $('.close').click(function(e){
                 $('.masc:visible').hide();
             });
-            if ("labelmessage".hide(){
+            if ("labelmessage".hide()){
             $('.show-registro-contactar').click(function(e) {
               e.preventDefault();
               $('#popup').load('popups.html #registro-contactar', function() {
