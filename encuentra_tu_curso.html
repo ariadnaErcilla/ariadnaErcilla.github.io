@@ -7,151 +7,156 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/popup.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
 </head>
 
 <body>
     <header class="cf">
-    <div class="container-home cf">
-        <div class="logo">
-            <a href="index.html">
-                <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
-            </a>
-        </div>
-        <nav class="menu cf">
-            <div class="float-menu">
-                <ul class="esconder">
-                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase active">Encuentra tu curso</a></li>
-                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
-                </ul>
-            </div>
-            <div class="right">
-                <div class="registro">
-                    <ul class="esconder">
-                        <li><a class="login">Log in</a></li>
-                        <li><a class="registrate">Regístrate</a></li>
-                    </ul>
+        <div class="container-home cf">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
                 </div>
-                <div class="lupa-buscador">
-                    <div class="dropdown-wrap">
-                        <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
-                        </a>
-                        <ul class="dropdown">
-                            <li class="alineacion-vertical">
-                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
-                            </li>
-                            <li class="alineacion-vertical">
-                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
-                            </li>
-                            <li class="alineacion-vertical">
-                                <a href="como_funciona.html">¿Cómo funciona?</a>
-                            </li>
+                <nav class="menu cf">
+                    <div class="float-menu">
+                        <ul class="esconder">
+                            <li class="tamano-fijo"><a href="encuentra_tu_curso.html active" class="uppercase">Encuentra tu curso</a></li>
+                            <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                            <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                         </ul>
                     </div>
-                    <a id="abrir" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                    <div class="right">
+                        <div class="registro">
+                            <ul class="esconder">
+                                <li><a class="login">Log in</a></li>
+                                <li><a class="registrate">Regístrate</a></li>
+                            </ul>
+                        </div>
+                        <div class="lupa-buscador">
+                            <div class="dropdown-wrap">
+                                <a href="#">
+                                    <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="alineacion-vertical">
+                                        <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                                    </li>
+                                    <li class="alineacion-vertical">
+                                        <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                                    </li>
+                                    <li class="alineacion-vertical">
+                                        <a href="como_funciona.html">¿Cómo funciona?</a>
+                                    </li>
+                                    <li class="alineacion-vertical registrarse">
+                                        <a class="registrarse"> Registro </a>
+                                    </li>
+                                    <li class="alineacion-vertical login">
+                                        <a class="login"> Login </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a id="abrir" href="">
+                                <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="buscador-desplegado cf">
+                <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
+                <div class="buscador-container-derecha cf">
+                    <div class="container-button-buscador left">
+                        <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
+                    </div>
+                    <a id="cerrar" href="">
+                        <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
                     </a>
                 </div>
             </div>
-        </nav>
-    </div>
-    <div class="buscador-desplegado cf">
-        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
-        <div class="buscador-container-derecha cf">
-            <div class="container-button-buscador left">
-                <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
+        </header>
+        <div class="cabecera-cursos cf">
+            <div class="titulo-encabezado-1 left cf">
+             <div class="muneco-busqueda left"></div>
+             <div class="contenido-titulo cf">
+                <h1 class="title type-color-1 title-margin">Encuentra tu curso</h1>
+                <p class="subtitle hide-sub">Busca el curso que te interesa según tu área creativa y contacta con el profesor </p>
             </div>
-            <a id="cerrar" href="">
-                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
-            </a>
+            <a class="back-to-top type-color-3" href="#">Top</a>
+        </div>
+        <div class="container-button-title">
+            <a class="button-2 margin-top type-color-3 publicar-curso" href="#"><span>Publica tu curso</span></a>
         </div>
     </div>
-</header>
-<div class="cabecera-cursos cf">
-    <div class="titulo-encabezado-1 left cf">
-       <div class="muneco-busqueda left"></div>
-       <div class="contenido-titulo cf">
-        <h1 class="title type-color-1 title-margin">Encuentra tu curso</h1>
-        <p class="subtitle hide-sub">Busca el curso que te interesa según tu área creativa y contacta con el profesor </p>
-    </div>
-       <a class="back-to-top type-color-3" href="#">Top</a>
-</div>
-<div class="container-button-title">
-    <a class="button-2 margin-top type-color-3 publicar-curso" href="#"><span>Publica tu curso</span></a>
-</div>
-</div>
-<!--filtros y ordenar de tablet y mobil-->
-<div class="filtros-hide-tablet background-4 cf">
-    <div class="left">
-        <p class="uppercase left"><strong>Filtrar por</strong></p>
-        <div id="abrir-filtros" class="flecha-abrir left"></div>
-        <div id="cerrar-filtros" class="flecha-cerrar left"><a href=""></a></div>
-    </div>
-    <div class="ordenar-title right">
-        <p class="uppercase left"><strong>Ordenar por</strong></p>
-        <div id="abrir-ordenar" class="flecha-abrir left"><a href=""></a></div>
-        <div id="cerrar-ordenar" class="flecha-cerrar left"><a href=""></a></div>
-    </div>
-    <div class="filtros-2 clear">
-        <div class="categorias-hide cf">
-           <h2 class="secondary-title">Categorías</h2>
+    <!--filtros y ordenar de tablet y mobil-->
+    <div class="filtros-hide-tablet background-4 cf">
+        <div class="left">
+            <p class="uppercase left"><strong>Filtrar por</strong></p>
+            <div id="abrir-filtros" class="flecha-abrir left"></div>
+            <div id="cerrar-filtros" class="flecha-cerrar left"><a href=""></a></div>
+        </div>
+        <div class="ordenar-title right">
+            <p class="uppercase left"><strong>Ordenar por</strong></p>
+            <div id="abrir-ordenar" class="flecha-abrir left"><a href=""></a></div>
+            <div id="cerrar-ordenar" class="flecha-cerrar left"><a href=""></a></div>
+        </div>
+        <div class="filtros-2 clear">
+            <div class="categorias-hide cf">
+             <h2 class="secondary-title">Categorías</h2>
+             <hr>
+             <nav class="lista-categorias">
+                <ul class="left grupo-iconos cf">
+                    <li class="iconos-cat cf">
+                        <span class="icono left arquitectura-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
+                    </li>
+                    <li class="iconos-cat cf">
+                        <span class="icono left animacion-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-animacion" href="#">Animación</a></p>
+                    </li>
+                    <li class="iconos-cat cf">
+                        <span class="icono left audiovisual-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
+                    </li>
+                </ul>
+                <ul class="left grupo-iconos cf">
+                    <li class="iconos-cat cf">
+                        <span class="icono left industrial-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
+                    </li>
+                    <li class="iconos-cat cf">
+                        <span class="icono left grafico-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-grafico" href="#">Gráfico</a></p>
+                    </li>
+                    <li class="iconos-cat cf">
+                        <span class="icono left moda-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
+                    </li>
+                </ul>
+                <ul class="left grupo-iconos cf">
+                    <li class="iconos-cat cf">
+                        <span class="icono left web-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
+                    </li>
+                    <li class="iconos-cat cf">
+                        <span class="icono left foto-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-fotografia" href="#">Fotografía</a></p>
+                    </li>
+                    <li class="iconos-cat cf">
+                        <span class="icono left programacion-b icono-margin"></span>
+                        <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="categorias-hide-2 cf clear">
+           <h2 class="secondary-title">Disponibilidad</h2>
            <hr>
-           <nav class="lista-categorias">
-            <ul class="left grupo-iconos cf">
-                <li class="iconos-cat cf">
-                    <span class="icono left arquitectura-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-arquitectura" href="#">Arquitectura</a></p>
-                </li>
-                <li class="iconos-cat cf">
-                    <span class="icono left animacion-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-animacion" href="#">Animación</a></p>
-                </li>
-                <li class="iconos-cat cf">
-                    <span class="icono left audiovisual-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-audiovisual" href="#">Audiovisual</a></p>
-                </li>
-            </ul>
-            <ul class="left grupo-iconos cf">
-                <li class="iconos-cat cf">
-                    <span class="icono left industrial-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-industrial" href="#">Industrial</a></p>
-                </li>
-                <li class="iconos-cat cf">
-                    <span class="icono left grafico-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-grafico" href="#">Gráfico</a></p>
-                </li>
-                <li class="iconos-cat cf">
-                    <span class="icono left moda-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-moda" href="#">Moda</a></p>
-                </li>
-            </ul>
-            <ul class="left grupo-iconos cf">
-                <li class="iconos-cat cf">
-                    <span class="icono left web-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-web" href="#">Web</a></p>
-                </li>
-                <li class="iconos-cat cf">
-                    <span class="icono left foto-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-fotografia" href="#">Fotografía</a></p>
-                </li>
-                <li class="iconos-cat cf">
-                    <span class="icono left programacion-b icono-margin"></span>
-                    <p class="categorias-menu"><a class="type-color-5 categoria-programacion" href="#">Programación</a></p>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="categorias-hide-2 cf clear">
-     <h2 class="secondary-title">Disponibilidad</h2>
-     <hr>
-     <form class="checkbox">
+           <form class="checkbox">
             <p class="grupo-iconos left"><input type="checkbox" checked>Mañana</p>
             <p class=" grupo-iconos left"><input type="checkbox" checked>Tarde</p>
             <p class=" grupo-iconos left"><input type="checkbox" checked>Noche</p>
@@ -222,37 +227,37 @@
                     </ul>
                 </div>
                 <div class="categorias-2">
-                 <h2 class="secondary-title">Disponibilidad</h2>
-                 <form class="checkbox">
-                        <p class="no-float"><input type="checkbox" checked>Mañana</p>
-                        <p class="no-float"><input type="checkbox" checked>Tarde</p>
-                        <p class="no-float"><input type="checkbox" checked>Noche</p>
-                    </form>
-                </div>
-                <div class="categorias-2">
-                    <h2 class="secondary-title">Método de clase</h2>
-                    <form class="checkbox">
-                        <p class="no-float"><input type="checkbox" checked>Presencial</p>
-                        <p class="no-float"><input type="checkbox" checked>Videollamada</p>
-                        <p class="no-float"><input type="checkbox" checked>E-mail</p>
-                    </form>
-                </div>
+                   <h2 class="secondary-title">Disponibilidad</h2>
+                   <form class="checkbox">
+                    <p class="no-float"><input type="checkbox" checked>Mañana</p>
+                    <p class="no-float"><input type="checkbox" checked>Tarde</p>
+                    <p class="no-float"><input type="checkbox" checked>Noche</p>
+                </form>
             </div>
-            <div class="todos-anuncios cf">
-               <div class="container-ordenar">
-                <ul class="menu-ordenar cf">
-                    <li><strong>Ordenar por:</strong></li>
-                    <li><a class="type-color-5 reciente" href="">Más recientes</a></li>
-                    <li><a class="type-color-5 popular" href="">Más populares</a></li>
-                    <li><a class="type-color-5 puntuado" href="">Mejor puntuados</a></li>
+            <div class="categorias-2">
+                <h2 class="secondary-title">Método de clase</h2>
+                <form class="checkbox">
+                    <p class="no-float"><input type="checkbox" checked>Presencial</p>
+                    <p class="no-float"><input type="checkbox" checked>Videollamada</p>
+                    <p class="no-float"><input type="checkbox" checked>E-mail</p>
+                </form>
+            </div>
+        </div>
+        <div class="todos-anuncios cf">
+         <div class="container-ordenar">
+            <ul class="menu-ordenar cf">
+                <li><strong>Ordenar por:</strong></li>
+                <li><a class="type-color-5 reciente" href="">Más recientes</a></li>
+                <li><a class="type-color-5 popular" href="">Más populares</a></li>
+                <li><a class="type-color-5 puntuado" href="">Mejor puntuados</a></li>
 
-                </ul>
-            </div>
-            <ul class="row anuncios">
-               <li data-reciente="4" data-popularidad="9" data-puntuacion="2" class="large-4 medium-6 small-12 columns audiovisual">
-                <article class="anuncio">
-                    <div onClick="window.location.href ='anuncio_ampliado.html'">
-                        <div class="image-container cf">
+            </ul>
+        </div>
+        <ul class="row anuncios">
+         <li data-reciente="4" data-popularidad="9" data-puntuacion="2" class="large-4 medium-6 small-12 columns audiovisual">
+            <article class="anuncio">
+                <div onClick="window.location.href ='anuncio_ampliado.html'">
+                    <div class="image-container cf">
                         <img class="img-curso" src="imagenes/anuncio-3.jpg" alt="Imagen lightpainting">
                     </div>
                     <div class="hover-container">
@@ -265,16 +270,16 @@
                         </div>
                     </div>
                 </div>
-                    <div class="content-container-cursos cf">
-                        <div class="texto-cuadrado-cursos">
-                            <h2 class="secondary-title"><a class="type-color-5" href="anuncio_ampliado.html">Retoque de fotos Lightpainting en 1 hora</h2></a>
-                        </div>
-                        <div class="mas-info">
-                            <div class="total-icono">
-                             <div class="container-icon">
-                               <span class="icono left animacion-c"></span>
-                           </div>
+                <div class="content-container-cursos cf">
+                    <div class="texto-cuadrado-cursos">
+                        <h2 class="secondary-title"><a class="type-color-5" href="anuncio_ampliado.html">Retoque de fotos Lightpainting en 1 hora</h2></a>
+                    </div>
+                    <div class="mas-info">
+                        <div class="total-icono">
                            <div class="container-icon">
+                             <span class="icono left animacion-c"></span>
+                         </div>
+                         <div class="container-icon">
                             <span class="secondary-subtitle">Animación</span>
                         </div>
                     </div>
@@ -315,7 +320,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left audiovisual-c"></span>
                 </div>
                 <div class="container-icon">
@@ -323,7 +328,7 @@
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-             <div class="container-stars">
+               <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar-1"></span>
             </div>
             <div class="container-icon">
@@ -359,25 +364,25 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
+                   <div class="container-icon">
+                     <span class="icono left audiovisual-c"></span>
+                 </div>
                  <div class="container-icon">
-                   <span class="icono left audiovisual-c"></span>
-               </div>
-               <div class="container-icon">
-                <span class="secondary-subtitle">Audiovisual</span>
+                    <span class="secondary-subtitle">Audiovisual</span>
+                </div>
+            </div>
+            <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
+               <div class="container-stars">
+                <span class="icono-stars left estrellas-valorar"></span>
+            </div>
+            <div class="container-icon">
+                <span class="modificar type-color-2">(8)</span>
             </div>
         </div>
-        <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-         <div class="container-stars">
-            <span class="icono-stars left estrellas-valorar"></span>
-        </div>
-        <div class="container-icon">
-            <span class="modificar type-color-2">(8)</span>
-        </div>
+        <a class="button-mail contactar" href="#">
+            <span></span>
+        </a>
     </div>
-    <a class="button-mail contactar" href="#">
-        <span></span>
-    </a>
-</div>
 </div>
 </article>
 </li>
@@ -403,7 +408,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left animacion-c"></span>
                 </div>
                 <div class="container-icon">
@@ -411,7 +416,7 @@
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-             <div class="container-stars">
+               <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar-4"></span>
             </div>
             <div class="container-icon">
@@ -426,7 +431,7 @@
 </article>
 </li>
 <li data-reciente="26" data-popularidad="21" data-puntuacion="2" class="large-4 medium-6 small-12 columns">
- <article class="anuncio-destacado">
+   <article class="anuncio-destacado">
     <div class="texto-cuadrado-destacado">
         <h3 class="destacado type-color-3">¿No encuentras el curso que quieres?</h3>
     </div>
@@ -457,7 +462,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left animacion-c"></span>
                 </div>
                 <div class="container-icon">
@@ -501,7 +506,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left arquitectura-c"></span>
                 </div>
                 <div class="container-icon">
@@ -545,7 +550,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left arquitectura-c"></span>
                 </div>
                 <div class="container-icon">
@@ -553,7 +558,7 @@
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-             <div class="container-stars">
+               <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar"></span>
             </div>
             <div class="container-icon">
@@ -589,7 +594,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left industrial-c"></span>
                 </div>
                 <div class="container-icon">
@@ -633,7 +638,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left industrial-c"></span>
                 </div>
                 <div class="container-icon">
@@ -641,7 +646,7 @@
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-             <div class="container-stars">
+               <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar-2"></span>
             </div>
             <div class="container-icon">
@@ -658,7 +663,7 @@
 <li data-reciente="11" data-popularidad="9" data-puntuacion="3" class="large-4 medium-6 small-12 columns grafico">
     <article class="anuncio">
         <div onClick="window.location.href ='anuncio_ampliado.html'">
-         <div class="image-container cf">
+           <div class="image-container cf">
             <img class="img-curso" src="imagenes/anuncio-13.jpg" alt="Imagen maquetar cartel">
         </div>
         <div class="hover-container">
@@ -677,7 +682,7 @@
         </div>
         <div class="mas-info">
             <div class="total-icono">
-             <div class="container-icon">
+               <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -685,7 +690,7 @@
             </div>
         </div>
         <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-         <div class="container-stars">
+           <div class="container-stars">
             <span class="icono-stars left estrellas-valorar"></span>
         </div>
         <div class="container-icon">
@@ -721,15 +726,15 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
-                     <span class="icono left grafico-c"></span>
-                 </div>
-                 <div class="container-icon">
+                   <div class="container-icon">
+                       <span class="icono left grafico-c"></span>
+                   </div>
+                   <div class="container-icon">
                     <span class="secondary-subtitle">Gráfico</span>
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-               <div class="container-stars">
+             <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar-4"></span>
             </div>
             <div class="container-icon">
@@ -765,7 +770,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left grafico-c"></span>
                 </div>
                 <div class="container-icon">
@@ -788,7 +793,7 @@
 </article>
 </li>
 <li data-reciente="15" data-popularidad="15" data-puntuacion="4" class="large-4 medium-6 small-12 columns">
- <article class="anuncio-destacado">
+   <article class="anuncio-destacado">
     <div class="texto-cuadrado-destacado">
         <h3 class="destacado type-color-3">¿No encuentras el curso que quieres?</h3>
     </div>
@@ -819,7 +824,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left programacion-c"></span>
                 </div>
                 <div class="container-icon">
@@ -827,7 +832,7 @@
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-               <div class="container-stars">
+             <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar-1"></span>
             </div>
             <div class="container-icon">
@@ -863,7 +868,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left grafico-c"></span>
                 </div>
                 <div class="container-icon">
@@ -871,7 +876,7 @@
                 </div>
             </div>
             <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-             <div class="container-stars">
+               <div class="container-stars">
                 <span class="icono-stars left estrellas-valorar-4"></span>
             </div>
             <div class="container-icon">
@@ -888,7 +893,7 @@
 <li data-reciente="17" data-popularidad="2" data-puntuacion="2" class="large-4 medium-6 small-12 columns grafico">
     <article class="anuncio">
         <div onClick="window.location.href ='anuncio_ampliado.html'">
-         <div class="image-container cf">
+           <div class="image-container cf">
             <img class="img-curso" src="imagenes/anuncio-11.jpg" alt="Imagen de una tipo en retícula">
         </div>
         <div class="hover-container">
@@ -907,24 +912,24 @@
         </div>
         <div class="mas-info">
             <div class="total-icono">
+               <div class="container-icon">
+                 <span class="icono left grafico-c"></span>
+             </div>
              <div class="container-icon">
-               <span class="icono left grafico-c"></span>
-           </div>
-           <div class="container-icon">
-            <span class="secondary-subtitle">Gráfico</span>
+                <span class="secondary-subtitle">Gráfico</span>
+            </div>
+        </div>
+        <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
+           <div class="container-stars">
+            <span class="icono-stars left estrellas-valorar-2"></span>
+        </div>
+        <div class="container-icon">
+            <span class="modificar type-color-2">(2)</span>
         </div>
     </div>
-    <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-     <div class="container-stars">
-        <span class="icono-stars left estrellas-valorar-2"></span>
-    </div>
-    <div class="container-icon">
-        <span class="modificar type-color-2">(2)</span>
-    </div>
-</div>
-<a class="button-mail contactar" href="#">
-    <span></span>
-</a>
+    <a class="button-mail contactar" href="#">
+        <span></span>
+    </a>
 </div>
 </div>
 </article>
@@ -951,7 +956,7 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
-                 <div class="container-icon">
+                   <div class="container-icon">
                     <span class="icono left grafico-c"></span>
                 </div>
                 <div class="container-icon">
@@ -995,32 +1000,32 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
+                   <div class="container-icon">
+                     <span class="icono left foto-c"></span>
+                 </div>
                  <div class="container-icon">
-                   <span class="icono left foto-c"></span>
-               </div>
-               <div class="container-icon">
-                <span class="secondary-subtitle">Fotografía</span>
+                    <span class="secondary-subtitle">Fotografía</span>
+                </div>
+            </div>
+            <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
+               <div class="container-stars">
+                <span class="icono-stars left estrellas-valorar"></span>
+            </div>
+            <div class="container-icon">
+                <span class="modificar type-color-2">(8)</span>
             </div>
         </div>
-        <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-         <div class="container-stars">
-            <span class="icono-stars left estrellas-valorar"></span>
-        </div>
-        <div class="container-icon">
-            <span class="modificar type-color-2">(8)</span>
-        </div>
+        <a class="button-mail contactar" href="#">
+            <span></span>
+        </a>
     </div>
-    <a class="button-mail contactar" href="#">
-        <span></span>
-    </a>
-</div>
 </div>
 </article>
 </li>
 <li data-reciente="25" data-popularidad="21" data-puntuacion="2" class="large-4 medium-6 small-12 columns web">
     <article class="anuncio">
         <div onClick="window.location.href ='anuncio_ampliado.html'">
-         <div class="image-container cf">
+           <div class="image-container cf">
             <img class="img-curso" src="imagenes/anuncio-26.jpg" alt="Imagen programar formulario">
         </div>
         <div class="hover-container">
@@ -1039,7 +1044,7 @@
         </div>
         <div class="mas-info">
             <div class="total-icono">
-             <div class="container-icon">
+               <div class="container-icon">
                 <span class="icono left web-c"></span>
             </div>
             <div class="container-icon">
@@ -1083,25 +1088,25 @@
             </div>
             <div class="mas-info">
                 <div class="total-icono">
+                   <div class="container-icon">
+                     <span class="icono left moda-c"></span>
+                 </div>
                  <div class="container-icon">
-                   <span class="icono left moda-c"></span>
-               </div>
-               <div class="container-icon">
-                <span class="secondary-subtitle">Moda</span>
+                    <span class="secondary-subtitle">Moda</span>
+                </div>
+            </div>
+            <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
+               <div class="container-stars">
+                <span class="icono-stars left estrellas-valorar"></span>
+            </div>
+            <div class="container-icon">
+                <span class="modificar type-color-2">(5)</span>
             </div>
         </div>
-        <div class="total-icono right opacity-hover" onClick="window.location.href='perfil_valoraciones.html'">
-         <div class="container-stars">
-            <span class="icono-stars left estrellas-valorar"></span>
-        </div>
-        <div class="container-icon">
-            <span class="modificar type-color-2">(5)</span>
-        </div>
+        <a class="button-mail contactar" href="#">
+            <span></span>
+        </a>
     </div>
-    <a class="button-mail contactar" href="#">
-        <span></span>
-    </a>
-</div>
 </div>
 </article>
 </li>
