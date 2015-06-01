@@ -62,10 +62,69 @@
     padding-bottom: 20px;
 }
 
-/*--------
-Buscador
------------*/
+.foto{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 36%;
+}
 
+.foto-alumno {
+    width: 100%;
+}
+
+.texto-cuadrado-large {
+    padding: 70px 20px 78px;
+    text-align: center;
+}
+
+.texto-cuadrado-small{
+    text-align: center;
+    padding: 20px 20px 0;
+}
+
+.image-container{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 77%;
+    position: relative;
+    width: 100%;
+}
+
+.img-curso{
+    position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.texto-curso{
+    background-color: white;
+    position: absolute;
+        right: 0;
+        top: 0;
+    z-index: 0;
+}
+
+.hover-container{
+    background-color: white;
+    display: none;
+    margin: auto;
+    padding: 0 15px;
+    position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    z-index: 1;
+}
+
+.hover-container p{
+    font-size: 14px;
+}
+
+/*buscador*/
 .titular-seccion-buscador{
     float: right;
     margin-bottom: 10px;
@@ -111,204 +170,20 @@ Buscador
 .padding-boton{
     padding: 30px;
 }
+
 .menu-scroll li{
     float: left;
     list-style: none;
     margin: 15px;
     text-transform: uppercase;
 }
+
 .back-to-top{
     position:absolute;
     z-index: 1;
 }
 
-
-@media all {
-    .container-imagen-button{
-    display: none;
-    }
-    .textos-anuncios-buscador{
-    width: 100%;
-    }
-    .container-anuncios-buscador{
-    padding: 30px;
-    }
-
-    .button-mail-responsive{
-     display: block;
-    }
-
-
-    .menu-scroll li{
-        float: left;
-        list-style: none;
-        margin: 15px;
-        text-transform: uppercase;
-    }
-     .container-ordenar-2{
-    float:none;
-    width: 100%;
-    }
-
-}
-
-@media all and (min-width: 500px){
-
-   .texto-anuncios-buscador{
-        float: right;
-        margin: 25px 0 0 5px;
-        width: 65%;
-    }
-        .container-imagen-button{
-        float: left;
-        margin: 15px;
-        width: 25%;
-        display: block;
-    }
-
-    .texto-anuncios-buscador{
-        float: right;
-        margin: 25px 0 0 5px;
-        width: 65%;
-    }
-
-    .container-anuncios-buscador{
-        padding: 5px;
-    }
-    .texto-anuncios-buscador{
-        float: right;
-        margin: 25px 0 0 5px;
-        width: 65%;
-    }
-    .container-imagen-button{
-    float: left;
-    width: 25%;
-    margin: 15px;
-    display: block;
-    }
-    .container-anuncios-buscador{
-        padding: 5px;
-    }
-
-
-    .button-mail-responsive{
-    display: none;
-    }
-
-    .container-ordenar-2{
-        margin: 0 auto;
-        width: 60%;
-    }
-
-    .background-pagina-show{
-        z-index: 1;
-    }
-
-}
-
-@media all and (min-width: 1024px){
-
-    .texto-anuncios-buscador{
-        float: right;
-        margin: 25px 0 0 5px;
-        width: 65%;
-    }
-    .container-imagen-button{
-        float: left;
-        width: 25%;
-        margin: 15px;
-        display: block;
-    }
-    .container-anuncios-buscador{
-        padding: 5px;
-        }
-    .button-mail-responsive{
-    display: none;
-    }
-    .container-ordenar-2{
-    width: 33%;
-    margin: 0 auto;
-    }
-
-    .background-pagina-show{
-    z-index: 1;
-    }
-}
-
-/*-------
-ayuda
--------*/
-
-.foto{
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 36%;
-}
-
-.foto-alumno {
-    width: 100%;
-}
-
-.texto-cuadrado-large {
-    padding: 70px 20px 78px;
-    text-align: center;
-}
-
-/*----------
-encuentra
----------*/
-
-.texto-cuadrado-small{
-    text-align: center;
-    padding: 20px 20px 0;
-}
-
-.image-container{
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 77%;
-    position: relative;
-    width: 100%;
-}
-
-.img-curso{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-}
-
-.texto-curso{
-    background-color: white;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-}
-
-.hover-container{
-    background-color: white;
-    display: none;
-    margin: auto;
-    padding: 0 15px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.hover-container p{
-    font-size: 14px;
-}
-
-/*---------
-Anuncio ampliado
----------*/
-
+/*anuncio ampliado*/
 .parte-izquierda-info {
     width: 60%;
     float: left;
@@ -322,16 +197,113 @@ Anuncio ampliado
 .margin-top-ampliado{
     margin: 30px 0 0 5px;
 }
-/*responsive*/
 
+/*media querys buscador*/
+@media all {
+    .container-imagen-button{
+        display: none;
+    }
+    .textos-anuncios-buscador{
+        width: 100%;
+    }
+    .container-anuncios-buscador{
+        padding: 30px;
+    }
+    .button-mail-responsive{
+        display: block;
+    }
+    .menu-scroll li{
+        float: left;
+        list-style: none;
+        margin: 15px;
+        text-transform: uppercase;
+    }
+    .container-ordenar-2{
+        float:none;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 500px){
+   .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+    .container-imagen-button{
+        float: left;
+        margin: 15px;
+        width: 25%;
+        display: block;
+    }
+    .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+    .container-anuncios-buscador{
+        padding: 5px;
+    }
+    .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+    .container-imagen-button{
+        float: left;
+        width: 25%;
+        margin: 15px;
+        display: block;
+    }
+    .container-anuncios-buscador{
+        padding: 5px;
+    }
+    .button-mail-responsive{
+        display: none;
+    }
+
+    .container-ordenar-2{
+        margin: 0 auto;
+        width: 60%;
+    }
+    .background-pagina-show{
+        z-index: 1;
+    }
+}
+
+@media all and (min-width: 1024px){
+    .texto-anuncios-buscador{
+        float: right;
+        margin: 25px 0 0 5px;
+        width: 65%;
+    }
+    .container-imagen-button{
+        float: left;
+        width: 25%;
+        margin: 15px;
+        display: block;
+    }
+    .container-anuncios-buscador{
+        padding: 5px;
+    }
+    .button-mail-responsive{
+        display: none;
+    }
+    .container-ordenar-2{
+        width: 33%;
+        margin: 0 auto;
+    }
+    .background-pagina-show{
+        z-index: 1;
+    }
+}
+/*media querys anuncios*/
 @media screen and (max-width: 1117px){
-
     .cabecera-cursos{
         margin: 0 auto;
         padding-top:60px;
         width: 90%;
     }
-
     .cabecera-alumnos{
         padding-top: 60px;
         margin: 0 auto;
@@ -340,12 +312,10 @@ Anuncio ampliado
 }
 
 @media screen and (min-width: 1118px) {
-
     .cabecera-cursos{
         padding-top: 60px;
         width: 70%;
     }
-
     .cabecera-alumnos{
         padding-top: 60px;
         width: 50%;
@@ -353,7 +323,6 @@ Anuncio ampliado
 }
 
 @media screen and (max-width: 966px){
-
     .filtros {
         display: none;
     }
@@ -362,15 +331,12 @@ Anuncio ampliado
         float: none;
         width: 100%;
     }
-
     .row ul{
         width: 100%;
     }
-
     .filtros-hide-tablet {
         display: block;
     }
-
     .anuncio:hover{
         .hover-container{
             display: none;
@@ -379,36 +345,29 @@ Anuncio ampliado
 }
 
 @media screen and (min-width: 967px){
-
     .filtros-hide-tablet {
         display: none;
     }
-
     .container-button-title{
         float: right;
     }
 }
 
-
 @media screen and (max-width: 865px){
-
     .cabecera-cursos{
         width: 100%;
     }
-
     .cabecera-alumnos{
         width: 90%;
     }
 }
 
 @media screen and (max-width: 800px){
-
     .muneco-busqueda,
     .hide-sub,
     .container-ordenar{
         display: none;
     }
-
     .ordenar-title{
         display: block;
     }
@@ -417,11 +376,9 @@ Anuncio ampliado
         float: none;
         margin: 0 0 20px 20px;
     }
-
      .title-margin{
         margin-left: 20px;
     }
-
     .cabecera-cursos,
     .cabecera-alumnos{
         padding-top: 0;
@@ -441,11 +398,9 @@ Anuncio ampliado
     .foto-alumno{
         display: none;
     }
-
 }
 
 @media screen and (max-width: 470px){
-
     .lista-categorias ul,
     .grupo-iconos{
         width: 100%;
