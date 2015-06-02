@@ -621,6 +621,12 @@
             <span class="icono-mensaje icono-rectangular-grande left"> </span>
 
             <div class="contenido">
+                <div>
+                    <h2 class="secondary-title">
+                        Mis mensajes
+                    </h2>
+                    <p class="secondary-subtitle margin-top">Aquí podrás visualizar tus mensajes y contactar con otros creativos.</p>
+                </div>
                 <div class="descripcion-mi-perfil">
                     <nav class="menu-mensajes left">
                         <ul class="ul-mensajes cf">
@@ -877,14 +883,14 @@
     </footer>
     <script>
     $(document).ready(function() {
-  var pestanya_seleccionada = window.location.hash; 
-  if(pestanya_seleccionada) { 
+  var pestanya_seleccionada = window.location.hash;
+  if(pestanya_seleccionada) {
     $(pestanya_seleccionada).addClass('seleccionado');
     $('.pestanya-1').removeClass('seleccionado');
     $('.option-1').hide();
     $('.option-6').show();
-  
-  } else { 
+
+  } else {
     $('.pestanya-1').addClass('seleccionado');
     $(pestanya_seleccionada).removeClass('seleccionado');
   }
