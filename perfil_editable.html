@@ -128,7 +128,7 @@
                         <li class="pestanyas"><a class="pestanya-6" id="option-6" href="#option-6">Mensajería</a></li>
                     </ul>
                 </nav>
-                <section id="option-1" class="contenido-perfil option-1">
+                <section class="contenido-perfil option-1">
                                 <article class="bloque-perfil cf">
                                     <span class="icono-perfil icono-rectangular-grande left"> </span>
                                     <div class="contenido">
@@ -326,7 +326,7 @@
                         </div>
                     </article>
                 </section>
-                <section id="option-2" class="contenido-perfil option-2">
+                <section class="contenido-perfil option-2">
                     <article class="bloque-perfil cf">
                                    <span class="icono-portafolio icono-rectangular-grande left"> </span>
                                     <div class="contenido">
@@ -391,7 +391,7 @@
                         </div>
                     </article>
                 </section>
-                <section id="option-3" class="contenido-perfil option-3">
+                <section class="contenido-perfil option-3">
                     <article class="bloque-perfil cf">
                         <span class="icono-perfil icono-rectangular-grande left"> </span>
                         <div class="contenido">
@@ -497,7 +497,7 @@
                         </div>
                     </article>
                 </section>
-                <section id="option-4" class="contenido-perfil option-4">
+                <section class="contenido-perfil option-4">
                     <article class="bloque-perfil cf">
                         <span class="icono-dudas icono-rectangular-grande left"> </span>
                         <div class="contenido">
@@ -547,7 +547,7 @@
                         </div>
                     </article>
                 </section>
-                <section id="option-5" class="contenido-perfil option-5">
+                <section class="contenido-perfil option-5">
                     <article class="bloque-perfil cf">
                         <span class="icono-valoraciones icono-rectangular-grande left"> </span>
                         <div class="contenido">
@@ -616,7 +616,7 @@
                         </div>
                     </article>
                 </section>
-                <section id="option-6" class="contenido-perfil option-6">
+                <section class="contenido-perfil option-6">
         <article class="bloque-perfil cf">
             <span class="icono-mensaje icono-rectangular-grande left"> </span>
 
@@ -631,7 +631,7 @@
                     <nav class="menu-mensajes left">
                         <ul class="ul-mensajes cf">
                             <li class="contenido-mensaje seleccionado-m pestanya-m-recibido"><a class="type-color-5" href="#option-recibido">5 mensajes recibidos</a></li>
-                            <li class="contenido-mensaje pestanya-m-no-leido"><a class="type-color-5" href="#option-no-leido">2 mensajes no leídos</a></li>
+                            <li class="contenido-mensaje pestanya-m-no-leido"><a class="type-color-5" href="#option-no-leido">1 mensaje no leído</a></li>
                             <li class="contenido-mensaje pestanya-m-enviado"><a class="type-color-5" href="#option-enviado">3 mensajes enviados</a></li>
                         </ul>
                     </nav>
@@ -654,7 +654,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mensaje-2 mensaje-no-leido cf">
+                            <div class="mensaje-2 mensaje-leido cf">
                                 <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
                                 </div>
                                 <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
@@ -734,23 +734,6 @@
                                 </p>
                                 <div class="mensaje-desplegado-1">
                                     <p><span class="type-color-1 light">Texto del mensaje: </span> Hola Marta, podemos quedar este martes?</p>
-                                    <hr class="linia clear">
-                                    <p class="secondary-title">Responde el mensaje</p>
-                                    <textarea class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
-                                    <a class="button-2 boton-margen full-button type-color-3" href="#mensaje">Respóndele</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mensaje-2 mensaje-no-leido cf">
-                            <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
-                            </div>
-                            <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-24-buscador.jpg" alt="imagen del usuario">
-                            <div class="texto-mensaje">
-                                <p class=""><span class="type-color-1 light">De: </span>Theoi Palazón</p>
-                                <p class=" no-margin"><span class="type-color-1 light">Curso: </span>Quiero aprender retoque fotográfico
-                                </p>
-                                <div class="mensaje-desplegado-2">
-                                    <p><span class="type-color-1 light">Texto del mensaje: </span> Buenas tardes Marta, podemos quedar este martes?</p>
                                     <hr class="linia clear">
                                     <p class="secondary-title">Responde el mensaje</p>
                                     <textarea class="margen-formulario" name="message" rows="4" placeholder="Escribe tu respuesta"></textarea>
@@ -879,7 +862,7 @@
         </div>
     </footer>
     <script>
-    $(document).ready(function() {
+$(document).ready(function() {
   var pestanya_seleccionada = window.location.hash;
   if(pestanya_seleccionada) {
     $(pestanya_seleccionada).addClass('seleccionado');
