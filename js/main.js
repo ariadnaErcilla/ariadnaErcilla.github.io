@@ -821,14 +821,6 @@ $('.registrate').click(function(e){
         labelpass.show();
         hay_error = true;
       }
-
-    });
-$('#login').show();
-$('.close').click(function(e){
-  $('.masc:visible').hide();
-  $('#registro').hide();
-});
-
 $('.show-login').click(function(e){
   e.preventDefault();
 if (hay_error){
@@ -840,6 +832,13 @@ if (hay_error){
   })
 }
 })
+});
+$('#login').show();
+$('.close').click(function(e){
+  $('.masc:visible').hide();
+  $('#registro').hide();
+});
+
 });
 });
 $('.publicar-curso').click(function(e){
