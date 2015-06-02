@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*tipografia*/
 .type-color-1 {
   color: #00A6A5; }
@@ -2033,6 +2034,9 @@ ul {
 .menu li.alineacion-vertical a {
   color: #fff; }
 
+.menu li.alineacion-vertical a.active {
+  background-color: #f15c22; }
+
 /*media queries header*/
 @media screen and (max-width: 1110px) {
   .menu li.tamano-fijo {
@@ -2350,7 +2354,7 @@ ul {
     background-position: center;
     float: left;
     position: absolute;
-    top: 40%;
+    top: 34%;
     left: 46%;
     width: 8%;
     margin: 0 auto; }
@@ -2362,8 +2366,8 @@ ul {
     width: 100px;
     height: 100px;
     position: absolute;
-    left: 20px;
-    top: 220px; }
+    left: 27px;
+    top: 225px; }
 
   .button-home {
     width: 100%; }
