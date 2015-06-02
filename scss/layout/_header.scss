@@ -193,11 +193,10 @@ ul {
     color: #fff;
 }
 
-<<<<<<< HEAD
 .menu li.alineacion-vertical a.active{
     background-color: #f15c22;
-=======
-/*responsive*/
+
+/*media queries header*/
 @media screen and (max-width: 1110px){
     .menu li.tamano-fijo {
         max-width: 100px;
@@ -235,5 +234,4 @@ ul {
     .container-button-buscador {
         min-width: 70px;
     }
->>>>>>> 39a86e213308188386bfd68e8ec615945c33cbc9
 }

@@ -416,7 +416,7 @@ body {
 .margin-top-ampliado {
   margin: 30px 0 0 5px; }
 
-/*media querys buscador*/
+/*media queries buscador*/
 @media all {
   .container-imagen-button {
     display: none; }
@@ -506,7 +506,7 @@ body {
 
   .background-pagina-show {
     z-index: 1; } }
-/*media querys anuncios*/
+/*media queries anuncios*/
 @media screen and (max-width: 1117px) {
   .cabecera-cursos {
     margin: 0 auto;
@@ -1561,7 +1561,7 @@ ul {
 #valorar li {
   list-style: none; }
 
-/*media querys*/
+/*media queries popups*/
 @media screen and (max-width: 500px) {
   .popup-box {
     border: none;
@@ -1856,7 +1856,7 @@ footer {
 .caja-footer {
   float: left; }
 
-/*responsive*/
+/*media queries footer*/
 @media screen and (max-width: 800px) {
   .mini-box-pie {
     width: 100%;
@@ -2035,11 +2035,15 @@ ul {
   color: #fff; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu li.alineacion-vertical a.active {
   background-color: #f15c22; }
 
 =======
 /*responsive*/
+=======
+/*media queries header*/
+>>>>>>> 7bf1d0021d263f5549149426731a03adcc2109d7
 @media screen and (max-width: 1110px) {
   .menu li.tamano-fijo {
     max-width: 100px; } }
@@ -2233,7 +2237,7 @@ ul {
   top: 4px;
   right: 4px; }
 
-/*media querys*/
+/*media queries perfil*/
 @media all and (max-width: 1020px) {
   td,
   th {
@@ -2290,7 +2294,7 @@ ul {
   text-align: center;
   width: 80%; }
 
-/* media querys top*/
+/* media queries top home*/
 @media all {
   .box-top-1,
   .box-top-2 {
@@ -2378,7 +2382,7 @@ ul {
   .container-home {
     margin: 0 auto;
     max-width: 1250px; } }
-/* media querys bottom*/
+/* media queries bottom home*/
 @media all {
   section.mini-box-2,
   section.mini-box-1,
@@ -2449,7 +2453,7 @@ ul {
   margin: 25px 0 0 5px;
   width: 70%; }
 
-/*media querys*/
+/*media queries como funciona*/
 @media all {
   .texto-paso-como-funciona {
     float: none;
