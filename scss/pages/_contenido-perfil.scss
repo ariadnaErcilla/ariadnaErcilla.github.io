@@ -53,12 +53,12 @@
 
 .no-cursos-cuadrado{
     border: 1px solid #54c4c7;
-    margin: 100px 0 80px 0;//ponia top
+    margin: 100px 0 80px 0;
     width: 90%;
 }
 
 .contenido-no-cursos{
-    margin: 30px 0 30px 0;//ponia top
+    margin: 30px 0 30px 0;
     position: relative;
 }
 
@@ -204,33 +204,25 @@
     right: 4px;
 }
 
-
-//media-querys
-
-
+/*media querys*/
 @media all and (max-width:1020px){
     td,
     th{
-    padding: 0.4rem;
+        padding: 0.4rem;
     }
-
     .contenido-mensaje{
         padding: 10px 4px;
     }
-
     .icono-conocimientos-no-editables{
         margin-top: 5px;
     }
-
     .profile-name{
         font-size: 18px;
     }
-
     .icono-rectangular-grande{
         margin-right: 3px;
     }
 }
-
 
 @media all and (max-width:920px){
     .background-pagina-show{

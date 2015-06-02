@@ -1,8 +1,7 @@
-/*--------
-Text inputs and text areas
---------*/
+/*forms*/
 select{
     border-radius: 30px;
+    height: 35px;
 }
 
 .pform{
@@ -57,7 +56,6 @@ select {
     margin-right: 10px;
 }
 
-
 .big-textarea{
 	 padding-bottom: 50px;
 }
@@ -90,10 +88,6 @@ label{
   display: block;
 }
 
-/*----------
-Checkboxes, selects
-----------*/
-
 .form-check{
     float:left;
     margin: 0;
@@ -112,10 +106,6 @@ Checkboxes, selects
     height: 120px;
     margin-bottom: 10px;
     position: relative;
-}
-
-select {
-    height: 35px;
 }
 
 #input-generales{

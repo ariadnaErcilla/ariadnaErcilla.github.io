@@ -297,6 +297,7 @@ $('.pestanya-6').click(function() {
     $('.pestanya-6').addClass('seleccionado');
     return false;
 });
+
 $('.pestanya-1').click(function() {
     $('.option-2').hide();
     $('.option-3').hide();
