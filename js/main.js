@@ -766,17 +766,17 @@ $('.login').click(function(e){
         labelpass.show();
       }
 
-    if (hay_error){
     $('.show-recuperar').click(function(e){
       e.preventDefault();
+      if (hay_error){
       $('#popup').load('popups.html #recuperar', function() {
         $($('#recuperar')[0]).show();
         $('.close').click(function(e) {
           $('.masc:visible').hide();
         })
       })
-      })
-    }
+      }
+    })
     });
     $('#registro').hide();
     $('.close').click(function(e){
