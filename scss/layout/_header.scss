@@ -46,7 +46,7 @@ ul {
 }
 
 .menu li a.active,
-.menu a:hover {
+.menu a:hover,{
     color: #f15c22;
 }
 
@@ -192,6 +192,9 @@ ul {
 .menu li.alineacion-vertical a {
     color: #fff;
 }
+
+.menu li.alineacion-vertical a.active{
+    background-color: #f15c22;
 
 /*media queries header*/
 @media screen and (max-width: 1110px){
