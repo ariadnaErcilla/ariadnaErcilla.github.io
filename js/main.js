@@ -916,7 +916,7 @@ $('.show-registro-curso').click(function(e) {
   if (hay_error){
   $('#popup').load('popups.html #registro-curso', function() {
     $('#registro-curso').show();
-    })   
+    });   
     $('#registro-curso button').click(function(e) {
       e.preventDefault();
       var email = $('#registro-curso input[name="email"]');
