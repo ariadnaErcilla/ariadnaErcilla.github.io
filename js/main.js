@@ -1,38 +1,35 @@
 
 $(document).ready(function(){
-
-
 /*filtros-responsive*/
-
-
-  $('#abrir-filtros').click(function(e){
+$('#abrir-filtros').click(function(e){
         $(this).hide();
         $('#cerrar-filtros').show();
         $('.filtros-2').show();
         return false;
-    });
+});
 
-      $('#cerrar-filtros').click(function(e){
+$('#cerrar-filtros').click(function(e){
         $(this).hide();
         $('#abrir-filtros').show();
         $('.filtros-2').hide();
         return false;
-    });
-     $('#abrir-ordenar').click(function(e){
+});
+
+$('#abrir-ordenar').click(function(e){
         $(this).hide();
         $('#cerrar-ordenar').show();
         $('.container-ordenar-mobile').show();
         return false;
-    });
+});
 
-      $('#cerrar-ordenar').click(function(e){
+$('#cerrar-ordenar').click(function(e){
         $(this).hide();
         $('#abrir-ordenar').show();
         $('.container-ordenar-mobile').hide();
         return false;
-    });
+});
 /*filtros*/
-    $('.categoria-arquitectura').click(function(e){
+$('.categoria-arquitectura').click(function(e){
         e.preventDefault();
         if($('.categoria-arquitectura').hasClass('select')) {
           $('.categoria-arquitectura').removeClass('select');
@@ -43,8 +40,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.arquitectura)').hide();
           $('.lista-categorias a:not(.categoria-arquitectura)').removeClass('select');
         }
-      });
-      $('.categoria-animacion').click(function(e){
+});
+$('.categoria-animacion').click(function(e){
         e.preventDefault();
         if($('.categoria-animacion').hasClass('select')) {
           $('.categoria-animacion').removeClass('select');
@@ -55,7 +52,7 @@ $(document).ready(function(){
           $('.anuncios li:not(.animacion)').hide();
           $('.lista-categorias a:not(.categoria-animacion)').removeClass('select');
         }
-      });
+});
       $('.categoria-audiovisual').click(function(e){
         e.preventDefault();
         if($('.categoria-audiovisual').hasClass('select')) {
@@ -67,8 +64,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.audiovisual)').hide();
           $('.lista-categorias a:not(.categoria-audiovisual)').removeClass('select');
         }
-      });
-      $('.categoria-industrial').click(function(e){
+});
+$('.categoria-industrial').click(function(e){
         e.preventDefault();
         if($('.categoria-industrial').hasClass('select')) {
           $('.categoria-industrial').removeClass('select');
@@ -79,8 +76,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.industrial)').hide();
           $('.lista-categorias a:not(.categoria-industrial)').removeClass('select');
         }
-      });
-      $('.categoria-grafico').click(function(e){
+});
+$('.categoria-grafico').click(function(e){
         e.preventDefault();
         if($('.categoria-grafico').hasClass('select')) {
           $('.categoria-grafico').removeClass('select');
@@ -91,8 +88,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.grafico)').hide();
           $('.lista-categorias a:not(.categoria-grafico)').removeClass('select');
         }
-      });
-      $('.categoria-moda').click(function(e){
+});
+$('.categoria-moda').click(function(e){
        e.preventDefault();
         if($('.categoria-moda').hasClass('select')) {
           $('.categoria-moda').removeClass('select');
@@ -103,8 +100,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.moda)').hide();
           $('.lista-categorias a:not(.categoria-moda)').removeClass('select');
         }
-      });
-      $('.categoria-web').click(function(e){
+});
+$('.categoria-web').click(function(e){
         e.preventDefault();
         if($('.categoria-web').hasClass('select')) {
           $('.categoria-web').removeClass('select');
@@ -115,8 +112,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.web)').hide();
           $('.lista-categorias a:not(.categoria-web)').removeClass('select');
         }
-      });
-      $('.categoria-fotografia').click(function(e){
+});
+$('.categoria-fotografia').click(function(e){
         e.preventDefault();
         if($('.categoria-fotografia').hasClass('select')) {
           $('.categoria-fotografia').removeClass('select');
@@ -127,8 +124,8 @@ $(document).ready(function(){
           $('.anuncios li:not(.fotografia)').hide();
           $('.lista-categorias a:not(.categoria-fotografia)').removeClass('select');
         }
-      });
-      $('.categoria-programacion').click(function(e){
+});
+$('.categoria-programacion').click(function(e){
         e.preventDefault();
         if($('.categoria-programacion').hasClass('select')) {
           $('.categoria-programacion').removeClass('select');
@@ -139,23 +136,20 @@ $(document).ready(function(){
           $('.anuncios li:not(.programacion)').hide();
           $('.lista-categorias a:not(.categoria-programacion)').removeClass('select');
         }
-      });
+});
 /*editar perfil*/
- $(".lapiz-clicar-1").click(function() {
+$(".lapiz-clicar-1").click(function() {
             $('.perfil-hide-1').toggle();
             $('.perfil-show-1').toggle();
-
-        });
-    $(".lapiz-clicar-2").click(function() {
+});
+$(".lapiz-clicar-2").click(function() {
             $('.perfil-hide-2').toggle();
             $('.perfil-show-2').toggle();
-
-        });
-    $(".lapiz-clicar-3").click(function() {
+});
+$(".lapiz-clicar-3").click(function() {
             $('.perfil-hide-3').toggle();
             $('.perfil-show-3').toggle();
-
-        });
+});
 /*mensajeria*/
 
 $('.pestanya-m-no-leido').click(function() {
@@ -229,13 +223,13 @@ $('a.reciente').click(function(e) {
         $('.menu-ordenar a:not(.reciente').removeClass('selection');
       });
 
-      $('a.popular').click(function(e) {
+$('a.popular').click(function(e) {
         e.preventDefault();
         tinysort('ul.anuncios>li',{data:'popularidad', order:'desc'});
         $('.popular').addClass('selection');
         $('.menu-ordenar a:not(.popular').removeClass('selection');
       });
-      $('a.puntuado').click(function(e) {
+$('a.puntuado').click(function(e) {
         e.preventDefault();
         tinysort('ul.anuncios>li',{data:'puntuacion', order:'desc'});
         $('.puntuado').addClass('selection');
@@ -459,25 +453,25 @@ $( "li.decima-barra" ).click(function(e){
 
 /*eliminar en perfil*/
 $( ".boton-eliminar-1" ).click(function(e){
-$(".contenedor-eliminar-1").hide();
+  $(".contenedor-eliminar-1").hide();
 });
 $( ".boton-eliminar-2" ).click(function(e){
-$(".contenedor-eliminar-2").hide();
+  $(".contenedor-eliminar-2").hide();
 });
 $( ".boton-eliminar-3" ).click(function(e){
-$(".contenedor-eliminar-3").hide();
+  $(".contenedor-eliminar-3").hide();
 });
 $( ".boton-eliminar-4" ).click(function(e){
-$(".contenedor-eliminar-4").hide();
+  $(".contenedor-eliminar-4").hide();
 });
 $( ".boton-eliminar-5" ).click(function(e){
-$(".contenedor-eliminar-5").hide();
+  $(".contenedor-eliminar-5").hide();
 });
 $( ".boton-eliminar-6" ).click(function(e){
-$(".contenedor-eliminar-6").hide();
+  $(".contenedor-eliminar-6").hide();
 });
 })
-
+/*scroll*/
 jQuery(document).ready(function() {
     var offset = 900;
     var duration = 500;
