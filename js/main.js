@@ -913,10 +913,8 @@ $('.cerrar-consejos').click(function(e){
 });
 $('.show-registro-curso').click(function(e) {
   e.preventDefault();
-  if (hay_error){
   $('#popup').load('popups.html #registro-curso', function() {
-    $('#registro-curso').show();
-    });   
+    $('#registro-curso').show(); 
     $('#registro-curso button').click(function(e) {
       e.preventDefault();
       var email = $('#registro-curso input[name="email"]');
@@ -956,7 +954,6 @@ $('.show-registro-curso').click(function(e) {
 $('.close').click(function(e) {
   $('.masc:visible').hide();
 })
-
 $('.show-gracias-curso').click(function(e) {
   e.preventDefault();
   $('#popup').load('popups.html #gracias-curso', function() {
