@@ -55,8 +55,8 @@ ul {
 }
 
 .buscador-desplegado {
-    clear: both;
     background-color: rgba(51, 51, 51, 0.15);
+    clear: both;
     display:none;
 }
 
@@ -85,8 +85,7 @@ ul {
 }
 
 .imagen-cerrar-buscador {
-    margin-left: 0;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     max-width: 30px;
 }
 
