@@ -201,16 +201,6 @@ $('.cerrar-consejos').click(function(e){
   return false;
 });
 /*links-popups*/
-$('.show-gracias-curso').click(function(e){
-  e.preventDefault();
-  $('#popup').load('popups.html #gracias-curso', function() {
-    $('#gracias-curso').show();
-    $('.close').click(function(e){
-      $('.masc:visible').hide();
-    });
-  });
-
-});
 $('.login').click(function(e){
   e.preventDefault();
   $('#popup').load('popups.html #login', function() {
