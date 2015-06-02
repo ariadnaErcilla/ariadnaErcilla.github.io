@@ -293,17 +293,83 @@ $('.pestanya-6').click(function() {
 });
 
 $('.pestanya-1').click(function() {
-    $('.option-2').hide();
-    $('.option-3').hide();
-    $('.option-4').hide();
-    $('.option-5').hide();
-    $('.option-6').hide();
-    $('.option-1').show();
+    $('.option-2-1').hide();
+    $('.option-3-1').hide();
+    $('.option-4-1').hide();
+    $('.option-5-1').hide();
+    $('.option-6-1').hide();
+    $('.option-1-1').show();
     $('.seleccionado').removeClass('seleccionado');
     $('.pestanya-1').addClass('seleccionado');
     return false;
 });
+$('.pestanya-2').click(function() {
+    $('.option-1-1').hide();
+    $('.option-3-1').hide();
+    $('.option-4-1').hide();
+    $('.option-5-1').hide();
+    $('.option-6-1').hide();
+    $('.option-2-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-2').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-3').click(function() {
+    $('.option-1-1').hide();
+    $('.option-2-1').hide();
+    $('.option-4-1').hide();
+    $('.option-5-1').hide();
+    $('.option-6-1').hide();
+    $('.option-3-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-3').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-4').click(function() {
+    $('.option-1-1').hide();
+    $('.option-3-1').hide();
+    $('.option-2-1').hide();
+    $('.option-5-1').hide();
+    $('.option-6-1').hide();
+    $('.option-4-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-4').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-5').click(function() {
+    $('.option-1-1').hide();
+    $('.option-3-1').hide();
+    $('.option-4-1').hide();
+    $('.option-2-1').hide();
+    $('.option-6-1').hide();
+    $('.option-5-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-5').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-6').click(function() {
+    $('.option-1-1').hide();
+    $('.option-3-1').hide();
+    $('.option-4-1').hide();
+    $('.option-2-1').hide();
+    $('.option-5-1').hide();
+    $('.option-6-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-6').addClass('seleccionado');
+    return false;
+});
 
+$('.pestanya-1').click(function() {
+    $('.option-2-1').hide();
+    $('.option-3-1').hide();
+    $('.option-4-1').hide();
+    $('.option-5-1').hide();
+    $('.option-6-1').hide();
+    $('.option-1-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-1').addClass('seleccionado');
+    return false;
+});
 /*tablas*/
 $('td .icono-tabla-off').click(function() {
     $(this).hide();
@@ -573,7 +639,7 @@ $('#contactar button, #publicar-curso button, #publicar-duda button, #modificar-
   } else {
     select.removeClass('error');
     labelselect.hide();
-  }  
+  }
 });
 
 /*show-popup*/
@@ -1071,7 +1137,7 @@ $('.contactar').click(function(e){
       } else {
         check.removeClass('error');
         labelcheck.hide();
-      }          
+      }
     });
     $('.close').click(function(e){
       $('.masc:visible').hide();
@@ -1154,9 +1220,9 @@ $('.show-gracias-contactar').click(function(e) {
       })
     })
   })
-})      
 })
-})          
+})
+})
 });
 });
 $('.publicar-curso2').click(function(e){
@@ -1316,7 +1382,7 @@ $('.contactar-2').click(function(e){
       } else {
         check.removeClass('error');
         labelcheck.hide();
-      }       
+      }
     });
     $('.close').click(function(e){
       $('.masc:visible').hide();
@@ -1329,7 +1395,7 @@ $('.contactar-2').click(function(e){
           $('.masc:visible').hide();
         })
       })
-    })      
+    })
   });
 });
 $('.modificar-curso').click(function(e){
