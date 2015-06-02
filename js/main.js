@@ -864,34 +864,37 @@ $('.publicar-curso').click(function(e){
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
-        hay_error = true;
       } else {
         message.removeClass('error');
         labelmessage.hide();
+        hay_error = true;
       }
       if(titlename == "") {
         title.addClass('error');
         labeltitle.show();
-        hay_error = true;
+
       } else {
         title.removeClass('error');
         labeltitle.hide();
+        hay_error = true;
       }
       if(checkname.checked=="false") {
         check.addClass('error');
         labelcheck.show();
-        hay_error = true;
+
       } else {
         check.removeClass('error');
         labelcheck.hide();
+        hay_error = true;
       }
       if(selectname.value =="") {
         select.addClass('error');
         labelselect.show();
-        hay_error = true;
+
       } else {
         select.removeClass('error');
         labelselect.hide();
+        hay_error = true;
       }
     });
 $('.close').click(function(e){
