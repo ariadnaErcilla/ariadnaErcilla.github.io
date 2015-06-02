@@ -748,41 +748,35 @@ $('.login').click(function(e){
       var passwordname = $(' #login input[name="password"]');
       var labelpass = passwordname.siblings('label');
       var password = $.trim(passwordname.val());
-      var hay_error = false;
       if(validateEmail(email.val())) {
         email.removeClass('error');
         label.hide();
       } else {
-        hay_error = true;
         email.addClass('error');
         label.show();
       }
       if(password.length >= 4 && password.length <= 15) {
-        hay_error = true;
         passwordname.removeClass('error');
         labelpass.hide();
       } else {
         passwordname.addClass('error');
         labelpass.show();
       }
-
-    $('.show-recuperar').click(function(e){
-      e.preventDefault();
-      if (hay_error){
-      $('#popup').load('popups.html #recuperar', function() {
-        $($('#recuperar')[0]).show();
-        $('.close').click(function(e) {
-          $('.masc:visible').hide();
-        })
-      })
-      }
-    })
     });
     $('#registro').hide();
     $('.close').click(function(e){
       $('.masc:visible').hide();
       $('#registro').hide();
     });
+    $('.show-recuperar').click(function(e){
+      e.preventDefault();
+      $('#popup').load('popups.html #recuperar', function() {
+        $($('#recuperar')[0]).show();
+        $('.close').click(function(e) {
+          $('.masc:visible').hide();
+        })
+      })
+    })
   });
 });
 $('.registrate').click(function(e){
@@ -799,11 +793,9 @@ $('.registrate').click(function(e){
       var name = $('#registro input[name="personal"]');
       var labelname = name.siblings('label');
       var personalname = $.trim(name.val());
-      var hay_error = false;
       if(personalname== "") {
         name.addClass('error');
         labelname.show();
-        hay_error = true;
       } else {
         name.removeClass('error');
         labelname.hide();
@@ -814,7 +806,6 @@ $('.registrate').click(function(e){
       } else {
         email.addClass('error');
         label.show();
-        hay_error = true;
       }
       if(password.length >= 4 && password.length <= 15) {
         passwordname.removeClass('error');
@@ -822,26 +813,23 @@ $('.registrate').click(function(e){
       } else {
         passwordname.addClass('error');
         labelpass.show();
-        hay_error = true;
       }
+
+    });
+$('#login').show();
+$('.close').click(function(e){
+  $('.masc:visible').hide();
+  $('#registro').hide();
+});
 $('.show-login').click(function(e){
   e.preventDefault();
-if (hay_error){
   $('#popup').load('popups.html #login', function() {
     $($('#login')[0]).show();
     $('.close').click(function(e) {
       $('.masc:visible').hide();
     })
   })
-}
 })
-});
-$('#login').show();
-$('.close').click(function(e){
-  $('.masc:visible').hide();
-  $('#registro').hide();
-});
-
 });
 });
 $('.publicar-curso').click(function(e){
@@ -862,41 +850,33 @@ $('.publicar-curso').click(function(e){
       var select = $('#publicar-curso input[name="select"]');
       var labelselect = select.siblings('label');
       var selectname= $.trim(select.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
       } else {
         message.removeClass('error');
         labelmessage.hide();
-        hay_error = true;
       }
       if(titlename == "") {
         title.addClass('error');
         labeltitle.show();
-
       } else {
         title.removeClass('error');
         labeltitle.hide();
-        hay_error = true;
       }
       if(checkname.checked=="false") {
         check.addClass('error');
         labelcheck.show();
-
       } else {
         check.removeClass('error');
         labelcheck.hide();
-        hay_error = true;
       }
       if(selectname.value =="") {
         select.addClass('error');
         labelselect.show();
-
       } else {
         select.removeClass('error');
         labelselect.hide();
-        hay_error = true;
       }
     });
 $('.close').click(function(e){
@@ -916,7 +896,7 @@ $('.cerrar-consejos').click(function(e){
 $('.show-registro-curso').click(function(e) {
   e.preventDefault();
   $('#popup').load('popups.html #registro-curso', function() {
-    $('#registro-curso').show(); 
+    $('#registro-curso').show();
     $('#registro-curso button').click(function(e) {
       e.preventDefault();
       var email = $('#registro-curso input[name="email"]');
@@ -927,11 +907,9 @@ $('.show-registro-curso').click(function(e) {
       var name = $('#registro-curso input[name="personal"]');
       var labelname = name.siblings('label');
       var personalname = $.trim(name.val());
-      var hay_error = false;
       if(personalname== "") {
         name.addClass('error');
         labelname.show();
-        hay_error = true;
       } else {
         name.removeClass('error');
         labelname.hide();
@@ -942,7 +920,6 @@ $('.show-registro-curso').click(function(e) {
       } else {
         email.addClass('error');
         label.show();
-        hay_error = true;
       }
       if(password.length >= 4 && password.length <= 15) {
         passwordname.removeClass('error');
@@ -950,12 +927,12 @@ $('.show-registro-curso').click(function(e) {
       } else {
         passwordname.addClass('error');
         labelpass.show();
-        hay_error = true;
       }
     });
 $('.close').click(function(e) {
   $('.masc:visible').hide();
 })
+
 $('.show-gracias-curso').click(function(e) {
   e.preventDefault();
   $('#popup').load('popups.html #gracias-curso', function() {
@@ -974,14 +951,12 @@ $('.show-gracias-curso').click(function(e) {
           var passwordname = $(' #login-curso input[name="password"]');
           var labelpass = passwordname.siblings('label');
           var password = $.trim(passwordname.val());
-          var hay_error = false;
           if(validateEmail(email.val())) {
             email.removeClass('error');
             label.hide();
           } else {
             email.addClass('error');
             label.show();
-            hay_error = true;
           }
           if(password.length >= 4 && password.length <= 15) {
             passwordname.removeClass('error');
@@ -989,7 +964,6 @@ $('.show-gracias-curso').click(function(e) {
           } else {
             passwordname.addClass('error');
             labelpass.show();
-            hay_error = true;
           }
 
         });
@@ -1022,11 +996,9 @@ $('.publicar-duda').click(function(e){
       var select = $('#publicar-duda input[name="select"]');
       var labelselect = select.siblings('label');
       var selectname= $.trim(select.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
-        hay_error = true;
       } else {
         message.removeClass('error');
         labelmessage.hide();
@@ -1034,7 +1006,6 @@ $('.publicar-duda').click(function(e){
       if(titlename == "") {
         title.addClass('error');
         labeltitle.show();
-        hay_error = true;
       } else {
         title.removeClass('error');
         labeltitle.hide();
@@ -1042,7 +1013,6 @@ $('.publicar-duda').click(function(e){
       if(checkname.checked=="false") {
         check.addClass('error');
         labelcheck.show();
-        hay_error = true;
       } else {
         check.removeClass('error');
         labelcheck.hide();
@@ -1050,7 +1020,6 @@ $('.publicar-duda').click(function(e){
       if(selectname.value =="") {
         select.addClass('error');
         labelselect.show();
-        hay_error = true;
       } else {
         select.removeClass('error');
         labelselect.hide();
@@ -1073,11 +1042,9 @@ $('.show-registro-duda').click(function(e) {
       var name = $('#registro-duda input[name="personal"]');
       var labelname = name.siblings('label');
       var personalname = $.trim(name.val());
-      var hay_error = false;
       if(personalname== "") {
         name.addClass('error');
         labelname.show();
-        hay_error = true;
       } else {
         name.removeClass('error');
         labelname.hide();
@@ -1088,7 +1055,6 @@ $('.show-registro-duda').click(function(e) {
       } else {
         email.addClass('error');
         label.show();
-        hay_error = true;
       }
       if(password.length >= 4 && password.length <= 15) {
         passwordname.removeClass('error');
@@ -1119,7 +1085,6 @@ $('.show-gracias-duda').click(function(e) {
           var passwordname = $(' #login-duda input[name="password"]');
           var labelpass = passwordname.siblings('label');
           var password = $.trim(passwordname.val());
-          var hay_error = false;
           if(validateEmail(email.val())) {
             email.removeClass('error');
             label.hide();
@@ -1158,7 +1123,6 @@ $('.contactar').click(function(e){
       var check = $('#contactar input[name="check"]');
       var labelcheck = check.siblings('label');
       var checkname= $.trim(check.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
@@ -1191,7 +1155,6 @@ $('.contactar').click(function(e){
           var name = $('#registro-contactar input[name="personal"]');
           var labelname = name.siblings('label');
           var personalname = $.trim(name.val());
-          var hay_error = false;
           if(personalname== "") {
             name.addClass('error');
             labelname.show();
@@ -1235,7 +1198,6 @@ $('.show-gracias-contactar').click(function(e) {
           var passwordname = $(' #login-contactar input[name="password"]');
           var labelpass = passwordname.siblings('label');
           var password = $.trim(passwordname.val());
-          var hay_error = false;
           if(validateEmail(email.val())) {
             email.removeClass('error');
             label.hide();
@@ -1280,7 +1242,6 @@ $('.publicar-curso2').click(function(e){
       var select = $('#publicar-curso-2 input[name="select"]');
       var labelselect = select.siblings('label');
       var selectname= $.trim(select.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
@@ -1352,7 +1313,6 @@ $('.publicar-duda2').click(function(e){
       var select = $('#publicar-duda-2 input[name="select"]');
       var labelselect = select.siblings('label');
       var selectname= $.trim(select.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
@@ -1408,7 +1368,6 @@ $('.contactar-2').click(function(e){
       var check = $('#contactar-2 input[name="check"]');
       var labelcheck = check.siblings('label');
       var checkname= $.trim(check.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
@@ -1456,7 +1415,6 @@ $('.modificar-curso').click(function(e){
       var select = $('#modificar-curso input[name="select"]');
       var labelselect = select.siblings('label');
       var selectname= $.trim(select.val());
-      var hay_error = false;
       if(textmessage == "") {
         message.addClass('error');
         labelmessage.show();
