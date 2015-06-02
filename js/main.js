@@ -765,12 +765,8 @@ $('.login').click(function(e){
         passwordname.addClass('error');
         labelpass.show();
       }
-    });
-    $('#registro').hide();
-    $('.close').click(function(e){
-      $('.masc:visible').hide();
-      $('#registro').hide();
-    });
+
+    if (hay_error){
     $('.show-recuperar').click(function(e){
       e.preventDefault();
       $('#popup').load('popups.html #recuperar', function() {
@@ -779,7 +775,14 @@ $('.login').click(function(e){
           $('.masc:visible').hide();
         })
       })
-    })
+      })
+    }
+    });
+    $('#registro').hide();
+    $('.close').click(function(e){
+      $('.masc:visible').hide();
+      $('#registro').hide();
+    });
   });
 });
 $('.registrate').click(function(e){
