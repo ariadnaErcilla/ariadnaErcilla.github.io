@@ -589,6 +589,9 @@ body {
   .ordenar-title {
     display: none; } }
 /*botones*/
+button {
+  font-family: "Lato", sans-serif; }
+
 .general-button, .button-1,
 .button-2,
 .button-3 {
