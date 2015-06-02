@@ -2034,7 +2034,16 @@ ul {
 .menu li.alineacion-vertical a {
   color: #fff; }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.menu li.alineacion-vertical a.active {
+  background-color: #f15c22; }
+
+=======
+/*responsive*/
+=======
 /*media queries header*/
+>>>>>>> 7bf1d0021d263f5549149426731a03adcc2109d7
 @media screen and (max-width: 1110px) {
   .menu li.tamano-fijo {
     max-width: 100px; } }
@@ -2062,6 +2071,7 @@ ul {
 
   .container-button-buscador {
     min-width: 70px; } }
+>>>>>>> 39a86e213308188386bfd68e8ec615945c33cbc9
 /*perfil*/
 .parte-derecha {
   float: right;
@@ -2080,7 +2090,8 @@ ul {
 
 .lista-programas {
   padding-left: 0px;
-  list-style: none; }
+  list-style: none;
+  margin-top: 8px; }
 
 .celdas-programas, .celdas-programas-final {
   float: left;
