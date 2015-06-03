@@ -90,17 +90,17 @@ $(document).ready(function(){
       }
   });
     $('.categoria-moda').click(function(e){
-     e.preventDefault();
-     if($('.categoria-moda').hasClass('select')) {
-      $('.categoria-moda').removeClass('select');
-      $('.anuncios li:not(.moda)').show();
-  } else {
-      $('.categoria-moda').addClass('select');
-      $('.anuncios li.moda').show();
-      $('.anuncios li:not(.moda)').hide();
-      $('.lista-categorias a:not(.categoria-moda)').removeClass('select');
-  }
-});
+       e.preventDefault();
+       if($('.categoria-moda').hasClass('select')) {
+          $('.categoria-moda').removeClass('select');
+          $('.anuncios li:not(.moda)').show();
+      } else {
+          $('.categoria-moda').addClass('select');
+          $('.anuncios li.moda').show();
+          $('.anuncios li:not(.moda)').hide();
+          $('.lista-categorias a:not(.categoria-moda)').removeClass('select');
+      }
+  });
     $('.categoria-web').click(function(e){
         e.preventDefault();
         if($('.categoria-web').hasClass('select')) {
@@ -389,9 +389,9 @@ $(document).ready(function(){
     });
 
     $('#cerrar').click(function(e){
-     $('.buscador-desplegado').hide();
-     return false;
- });
+       $('.buscador-desplegado').hide();
+       return false;
+   });
 
     /*niveles barras*/
     $( "li.primera-barra" ).click(function(e){
@@ -427,10 +427,10 @@ $(document).ready(function(){
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
 
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.cuarta-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -439,10 +439,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.quinta-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -451,10 +451,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.sexta-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -463,10 +463,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.septima-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -475,10 +475,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.octava-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -487,10 +487,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.novena-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -499,10 +499,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
     $( "li.decima-barra" ).click(function(e){
         e.preventDefault();
         if($(this).hasClass("barra-inactiva")){
@@ -511,10 +511,10 @@ $(document).ready(function(){
             $(this).prevAll().addClass("barra-activa");
             $(this).prevAll().removeClass("barra-inactiva");
         }else{
-           $(this).nextAll().addClass("barra-inactiva");
+         $(this).nextAll().addClass("barra-inactiva");
 
-       }
-   });
+     }
+ });
 
     /*eliminar en perfil*/
     $( ".boton-eliminar-1" ).click(function(e){
@@ -766,8 +766,8 @@ $('.login').click(function(e){
         hay_error = true;
     }
     if (hay_error){
-       $('#popup').load('perfil_editable.html');
-   }
+     $('#popup').load('perfil_editable.html');
+ }
 });
     $('#registro').hide();
     $('.close').click(function(e){
@@ -797,13 +797,41 @@ $('.login').click(function(e){
             e.preventDefault();
             $('#popup').load('popups.html #login', function() {
                 $($('#login')[0]).show();
-                $('.close').click(function(e) {
-                    $('.masc:visible').hide();
-                })
-            })
-        })
-    })
-  })
+                $('#login button, #recuperar button').click(function(e) {
+                  e.preventDefault();
+                  var email = $('#login input[name="email"], #recuperar input[name="email"]');
+                  var label = email.siblings('label');
+                  var passwordname = $(' #login input[name="password"]');
+                  var labelpass = passwordname.siblings('label');
+                  var password = $.trim(passwordname.val());
+                  var hay_error = false;
+                  if(validateEmail(email.val())) {
+                    email.removeClass('error');
+                    label.hide();
+                } else {
+                    email.addClass('error');
+                    label.show();
+                    hay_error = true;
+                }
+                if(password.length >= 4 && password.length <= 15) {
+                    passwordname.removeClass('error');
+                    labelpass.hide();
+                } else {
+                    passwordname.addClass('error');
+                    labelpass.show();
+                    hay_error = true;
+                }
+                if (hay_error){
+                 $('#popup').load('perfil_editable.html');
+             }
+         });
+$('.close').click(function(e) {
+    $('.masc:visible').hide();
+})
+})
+})
+})
+})
 });
 });
 $('.registrate').click(function(e){
@@ -852,6 +880,34 @@ $('.show-login').click(function(e){
   e.preventDefault();
   $('#popup').load('popups.html #login', function() {
     $($('#login')[0]).show();
+    $('#login button, #recuperar button').click(function(e) {
+      e.preventDefault();
+      var email = $('#login input[name="email"], #recuperar input[name="email"]');
+      var label = email.siblings('label');
+      var passwordname = $(' #login input[name="password"]');
+      var labelpass = passwordname.siblings('label');
+      var password = $.trim(passwordname.val());
+      var hay_error = false;
+      if(validateEmail(email.val())) {
+        email.removeClass('error');
+        label.hide();
+    } else {
+        email.addClass('error');
+        label.show();
+        hay_error = true;
+    }
+    if(password.length >= 4 && password.length <= 15) {
+        passwordname.removeClass('error');
+        labelpass.hide();
+    } else {
+        passwordname.addClass('error');
+        labelpass.show();
+        hay_error = true;
+    }
+    if (hay_error){
+       $('#popup').load('perfil_editable.html');
+   }
+});
     $('.close').click(function(e) {
       $('.masc:visible').hide();
   })
@@ -1514,8 +1570,8 @@ $('.valorar').click(function(e){
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
 
-     $(this).nextAll().addClass("estrella-inactiva");
- }
+       $(this).nextAll().addClass("estrella-inactiva");
+   }
 });
     $( "li.cuarta-estrella" ).click(function(e){
       e.preventDefault();
@@ -1525,9 +1581,9 @@ $('.valorar').click(function(e){
         $(this).prevAll().addClass("estrella-activa");
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-     $(this).nextAll().addClass("estrella-inactiva");
+       $(this).nextAll().addClass("estrella-inactiva");
 
- }
+   }
 });
     $( "li.quinta-estrella" ).click(function(e){
       e.preventDefault();
@@ -1537,9 +1593,9 @@ $('.valorar').click(function(e){
         $(this).prevAll().addClass("estrella-activa");
         $(this).prevAll().removeClass("estrella-inactiva");
     }else{
-     $(this).nextAll().addClass("estrella-inactiva");
+       $(this).nextAll().addClass("estrella-inactiva");
 
- }
+   }
 });
 });
 });
