@@ -236,6 +236,17 @@ $(document).ready(function(){
     $('.menu-ordenar a:not(.puntuado').removeClass('selection');
   });
   /*pestanyas*/
+    $('.pestanya-1').click(function() {
+    $('.option-1').show();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-2').hide();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-1').addClass('seleccionado');
+    return false;
+  });
   $('.pestanya-2').click(function() {
     $('.option-1').hide();
     $('.option-3').hide();
@@ -358,17 +369,6 @@ $(document).ready(function(){
     return false;
   });
 
-  $('.pestanya-1').click(function() {
-    $('.option-2-1').hide();
-    $('.option-3-1').hide();
-    $('.option-4-1').hide();
-    $('.option-5-1').hide();
-    $('.option-6-1').hide();
-    $('.option-1-1').show();
-    $('.seleccionado').removeClass('seleccionado');
-    $('.pestanya-1').addClass('seleccionado');
-    return false;
-  });
   /*tablas*/
   $('td .icono-tabla-off').click(function() {
     $(this).hide();
