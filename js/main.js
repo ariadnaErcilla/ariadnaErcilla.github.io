@@ -748,12 +748,14 @@ $('.login').click(function(e){
       var passwordname = $(' #login input[name="password"]');
       var labelpass = passwordname.siblings('label');
       var password = $.trim(passwordname.val());
+      var hay_error = false;
       if(validateEmail(email.val())) {
         email.removeClass('error');
         label.hide();
       } else {
         email.addClass('error');
         label.show();
+        hay_error = true;
       }
       if(password.length >= 4 && password.length <= 15) {
         passwordname.removeClass('error');
@@ -761,6 +763,10 @@ $('.login').click(function(e){
       } else {
         passwordname.addClass('error');
         labelpass.show();
+        hay_error = true;
+      }
+      if (hay_error){
+         $('#popup').load('perfil_editable.html');
       }
     });
     $('#registro').hide();
