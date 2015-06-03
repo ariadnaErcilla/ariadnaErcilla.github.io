@@ -1005,6 +1005,13 @@ $('.show-registro-curso').click(function(e) {
 $('.close').click(function(e) {
   $('.masc:visible').hide();
 })
+$('.show-gracias-curso').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-curso', function() {
+    $('#gracias-curso').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
 $('.show-login-curso').click(function(e) {
   e.preventDefault();
   $('#popup').load('popups.html #login-curso', function() {
@@ -1075,6 +1082,9 @@ $('.show-login-curso').click(function(e) {
             hay_error = true;
           }
         });
+ $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
 $('.show-gracias-curso').click(function(e) {
   e.preventDefault();
   $('#popup').load('popups.html #gracias-curso', function() {
@@ -1084,6 +1094,8 @@ $('.show-gracias-curso').click(function(e) {
     })
 
   })
+})
+})
 })
 })
 })
