@@ -535,6 +535,12 @@ $(document).ready(function(){
   $( ".boton-eliminar-6" ).click(function(e){
     $(".contenedor-eliminar-6").hide();
   });
+   $( ".boton-eliminar-7" ).click(function(e){
+    $(".contenedor-eliminar-7").hide();
+  });
+  $( ".boton-eliminar-8" ).click(function(e){
+    $(".contenedor-eliminar-8").hide();
+  });
   /*forms-errors*/
   function validateEmail(sEmail) {
     var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;

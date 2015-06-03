@@ -305,7 +305,8 @@ body {
 .foto {
   margin: 0 auto;
   padding-top: 20px;
-  width: 36%; }
+  width: 36%;
+  cursor: pointer; }
 
 .foto-alumno {
   width: 100%; }

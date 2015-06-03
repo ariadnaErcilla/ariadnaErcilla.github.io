@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <title>Buscador</title>
+    <title>Resultados de búsqueda</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="imagenes/favicon.png"/>
     <script src="js/foundation.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/main.js"></script>
@@ -15,72 +16,71 @@
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-
 </head>
 <body>
-   <header class="cf">
-        <div class="container-home cf">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
-                </a>
+ <header class="cf">
+    <div class="container-home cf">
+        <div class="logo">
+            <a href="index.html">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys"></span>
+            </a>
+        </div>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
             </div>
-            <nav class="menu cf">
-                <div class="float-menu">
+            <div class="right">
+                <div class="registro">
                     <ul class="esconder">
-                        <li class="tamano-fijo"><a href="encuentra_tu_curso.html" class="uppercase">Encuentra tu curso</a></li>
-                        <li class="tamano-fijo"><a href="busca_tu_alumno.html" class="uppercase">Busca tu alumno</a></li>
-                        <li class="tamano-fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                        <li><a class="login">Log in</a></li>
+                        <li><a class="registrate">Regístrate</a></li>
                     </ul>
                 </div>
-                <div class="right">
-                    <div class="registro">
-                        <ul class="esconder">
-                            <li><a class="login">Log in</a></li>
-                            <li><a class="registrate">Regístrate</a></li>
+                <div class="lupa-buscador">
+                    <div class="dropdown-wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion-vertical">
+                                <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="busca_tu_alumno.html">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion-vertical">
+                                <a href="como_funciona.html">¿Cómo funciona?</a>
+                            </li>
+                            <li class="alineacion-vertical registrarse">
+                                <a class="registrate"> Regístrate </a>
+                            </li>
+                            <li class="alineacion-vertical login">
+                                <a class="login"> Login </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="lupa-buscador">
-                        <div class="dropdown-wrap">
-                            <a href="#">
-                                <span class="imagen-desplegable icono-rectangular-grande menu-desplegable opacity-hover"></span>
-                            </a>
-                            <ul class="dropdown">
-                                <li class="alineacion-vertical">
-                                    <a href="encuentra_tu_curso.html">Encuentra tu curso</a>
-                                </li>
-                                <li class="alineacion-vertical">
-                                    <a href="busca_tu_alumno.html">Busca tu alumno</a>
-                                </li>
-                                <li class="alineacion-vertical">
-                                    <a href="como_funciona.html">¿Cómo funciona?</a>
-                                </li>
-                                <li class="alineacion-vertical registrarse">
-                                    <a class="registrate"> Regístrate </a>
-                                </li>
-                                <li class="alineacion-vertical login">
-                                    <a class="login"> Login </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a id="abrir" href="">
-                            <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
-                        </a>
-                    </div>
+                    <a id="abrir" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande opacity-hover"></span>
+                    </a>
                 </div>
-            </nav>
-        </div>
-        <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
-            <div class="buscador-container-derecha cf">
-                <div class="container-button-buscador left">
-                    <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
-                </div>
-                <a id="cerrar" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
-                </a>
             </div>
+        </nav>
+    </div>
+    <div class="buscador-desplegado cf">
+        <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" name="buscador">
+        <div class="buscador-container-derecha cf">
+            <div class="container-button-buscador left">
+                <a class="button-2 full-button-header type-color-3" href="buscador.html">Buscar</a>
+            </div>
+            <a id="cerrar" href="">
+                <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right opacity-hover"></span>
+            </a>
         </div>
+    </div>
 </header>
 <div class="cabecera-alumnos cf">
     <div class="titulo-encabezado cf">
@@ -122,7 +122,7 @@
                         <p>Juan García Tenorioa</p>
 
                         <div class="total-icono">
-                           <div class="container-icon">
+                         <div class="container-icon">
                             <span class="icono left grafico-c"></span>
                         </div>
                         <div class="container-icon">
@@ -161,7 +161,7 @@
                     <p>Rosa Domínguez</p>
 
                     <div class="total-icono">
-                       <div class="container-icon">
+                     <div class="container-icon">
                         <span class="icono left grafico-c"></span>
                     </div>
                     <div class="container-icon">
@@ -170,9 +170,9 @@
                 </div>
                 <div class="total-icono padding-icono-stars opacity-hover">
                     <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-                     <span class="stars-grande left estrellas-valorar-1"></span>
-                 </div>
-                 <div class="container-icon">
+                       <span class="stars-grande left estrellas-valorar-1"></span>
+                   </div>
+                   <div class="container-icon">
                     <span class="modificar type-color-2">(3)</span>
                 </div>
             </div>
@@ -200,7 +200,7 @@
             <p>Teresa Ramirez</p>
 
             <div class="total-icono">
-               <div class="container-icon">
+             <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -209,9 +209,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-             <span class="stars-grande left estrellas-valorar"></span>
-         </div>
-         <div class="container-icon">
+               <span class="stars-grande left estrellas-valorar"></span>
+           </div>
+           <div class="container-icon">
             <span class="modificar type-color-2">(4)</span>
         </div>
     </div>
@@ -238,7 +238,7 @@
             <p>Gonzalo La fuente</p>
 
             <div class="total-icono">
-               <div class="container-icon">
+             <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -247,9 +247,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-             <span class="stars-grande left estrellas-valorar-4"></span>
-         </div>
-         <div class="container-icon">
+               <span class="stars-grande left estrellas-valorar-4"></span>
+           </div>
+           <div class="container-icon">
             <span class="modificar type-color-2">(10)</span>
         </div>
     </div>
@@ -509,7 +509,7 @@
             <h3 class="secondary-title">Busco aprender a maquetar folletos en Indesign a cambio de una caña</h3>
             <p>Martina Milaso</p>
             <div class="total-icono">
-               <div class="container-icon">
+             <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -518,9 +518,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-             <span class="stars-grande left estrellas-valorar-2"></span>
-         </div>
-         <div class="container-icon">
+               <span class="stars-grande left estrellas-valorar-2"></span>
+           </div>
+           <div class="container-icon">
             <span class="modificar type-color-2">(5)</span>
         </div>
     </div>
@@ -545,7 +545,7 @@
             <p>Jimena Terrile</p>
 
             <div class="total-icono">
-               <div class="container-icon">
+             <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -554,9 +554,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-             <span class="stars-grande left estrellas-valorar-2"></span>
-         </div>
-         <div class="container-icon">
+               <span class="stars-grande left estrellas-valorar-2"></span>
+           </div>
+           <div class="container-icon">
             <span class="modificar type-color-2">(5)</span>
         </div>
     </div>
@@ -582,7 +582,7 @@
             <p>Simona Perez</p>
 
             <div class="total-icono">
-               <div class="container-icon">
+             <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -591,9 +591,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-             <span class="stars-grande left estrellas-valorar-2"></span>
-         </div>
-         <div class="container-icon">
+               <span class="stars-grande left estrellas-valorar-2"></span>
+           </div>
+           <div class="container-icon">
             <span class="modificar type-color-2">(5)</span>
         </div>
     </div>
@@ -611,14 +611,14 @@
 
             <a class="full-button boton-buscador button-2 type-color-3 contactar">
                 <span class="buzon-buscador no-display cf"></span>
-         </a>
+            </a>
         </div>
         <div class="texto-anuncios-buscador">
             <h3 class="secondary-title">Quiero aprender a hacer retratos nocturnos profesionales</h3>
             <p>Santi Bustos</p>
 
             <div class="total-icono">
-               <div class="container-icon">
+             <div class="container-icon">
                 <span class="icono left foto-c"></span>
             </div>
             <div class="container-icon">
@@ -627,9 +627,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-             <span class="stars-grande left estrellas-valorar-2"></span>
-         </div>
-         <div class="container-icon">
+               <span class="stars-grande left estrellas-valorar-2"></span>
+           </div>
+           <div class="container-icon">
             <span class="modificar type-color-2">(5)</span>
         </div>
     </div>
@@ -657,7 +657,7 @@
             <p>Lola García</p>
 
             <div class="total-icono">
-             <div class="container-icon">
+               <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -666,9 +666,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-               <span class="stars-grande left estrellas-valorar-2"></span>
-           </div>
-           <div class="container-icon">
+             <span class="stars-grande left estrellas-valorar-2"></span>
+         </div>
+         <div class="container-icon">
             <span class="modificar type-color-2">(4)</span>
         </div>
     </div>
@@ -696,7 +696,7 @@
             <p>Marta Perez</p>
 
             <div class="total-icono">
-             <div class="container-icon">
+               <div class="container-icon">
                 <span class="icono left grafico-c"></span>
             </div>
             <div class="container-icon">
@@ -705,9 +705,9 @@
         </div>
         <div class="total-icono padding-icono-stars opacity-hover">
             <div class="container-stars" onclick="window.location.href='perfil_valoraciones.html'">
-               <span class="stars-grande left estrellas-valorar-2"></span>
-           </div>
-           <div class="container-icon">
+             <span class="stars-grande left estrellas-valorar-2"></span>
+         </div>
+         <div class="container-icon">
             <span class="modificar type-color-2">(4)</span>
         </div>
     </div>
