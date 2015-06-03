@@ -743,6 +743,15 @@ $('.cerrar-consejos').click(function(e){
   return false;
 });
 /*links-popups*/
+$('.show-gracias-contactar').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-contactar', function() {
+    $('#gracias-contactar').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
+  })
+});
 $('.login').click(function(e){
   e.preventDefault();
   $('#popup').load('popups.html #login', function() {
