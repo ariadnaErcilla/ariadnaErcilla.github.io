@@ -798,14 +798,14 @@ $('.login').click(function(e){
               var passwordname = $(' #login input[name="password"]');
               var labelpass = passwordname.siblings('label');
               var password = $.trim(passwordname.val());
-              
+
               if(validateEmail(email.val())) {
                 email.removeClass('error');
                 label.hide();
               } else {
                 email.addClass('error');
                 label.show();
-                
+
               }
               if(password.length >= 4 && password.length <= 15) {
                 passwordname.removeClass('error');
@@ -813,7 +813,7 @@ $('.login').click(function(e){
               } else {
                 passwordname.addClass('error');
                 labelpass.show();
-                
+
               }
             });
             $('.close').click(function(e) {
@@ -1000,47 +1000,56 @@ $('.show-registro-curso').click(function(e) {
 $('.close').click(function(e) {
   $('.masc:visible').hide();
 })
-$('.show-login-curso').click(function(e) {
+$('.show-gracias-curso').click(function(e) {
   e.preventDefault();
-  $('#popup').load('popups.html #login-curso', function() {
-    $('#login-curso').show();
-    $('#login-curso button').click(function(e) {
-      e.preventDefault();
-      var email = $('#login-curso input[name="email"]');
-      var label = email.siblings('label');
-      var passwordname = $(' #login-curso input[name="password"]');
-      var labelpass = passwordname.siblings('label');
-      var password = $.trim(passwordname.val());
-      if(validateEmail(email.val())) {
-        email.removeClass('error');
-        label.hide();
-      } else {
-        email.addClass('error');
-        label.show();
-      }
-      if(password.length >= 4 && password.length <= 15) {
-        passwordname.removeClass('error');
-        labelpass.hide();
-      } else {
-        passwordname.addClass('error');
-        labelpass.show();
-      }
-
-    });
+  $('#popup').load('popups.html #gracias-curso', function() {
+    $('#gracias-curso').show();
     $('.close').click(function(e) {
       $('.masc:visible').hide();
     })
-    $('.show-gracias-curso').click(function(e) {
+    $('.show-login-curso').click(function(e) {
       e.preventDefault();
-      $('#popup').load('popups.html #gracias-curso', function() {
-        $('#gracias-curso').show();
+      $('#popup').load('popups.html #login-curso', function() {
+        $('#login-curso').show();
+        $('#login-curso button').click(function(e) {
+          e.preventDefault();
+          var email = $('#login-curso input[name="email"]');
+          var label = email.siblings('label');
+          var passwordname = $(' #login-curso input[name="password"]');
+          var labelpass = passwordname.siblings('label');
+          var password = $.trim(passwordname.val());
+          if(validateEmail(email.val())) {
+            email.removeClass('error');
+            label.hide();
+          } else {
+            email.addClass('error');
+            label.show();
+          }
+          if(password.length >= 4 && password.length <= 15) {
+            passwordname.removeClass('error');
+            labelpass.hide();
+          } else {
+            passwordname.addClass('error');
+            labelpass.show();
+          }
+
+        });
         $('.close').click(function(e) {
           $('.masc:visible').hide();
         })
-        
+        $('.show-gracias-curso').click(function(e) {
+          e.preventDefault();
+          $('#popup').load('popups.html #gracias-curso', function() {
+            $('#gracias-curso').show();
+            $('.close').click(function(e) {
+              $('.masc:visible').hide();
+            })
+
+          })
+        })
       })
+     })
     })
-  })
 })
 })
 })
