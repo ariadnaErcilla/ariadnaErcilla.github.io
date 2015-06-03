@@ -1228,6 +1228,13 @@ $('.show-login-duda').click(function(e) {
     $('.close').click(function(e) {
       $('.masc:visible').hide();
     })
+  $('.show-gracias-duda').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-duda', function() {
+    $('#gracias-duda').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
     $('.show-registro-duda').click(function(e) {
       e.preventDefault();
       $('#popup').load('popups.html #registro-duda', function() {
@@ -1276,6 +1283,8 @@ $('.show-gracias-duda').click(function(e) {
     })
 
   })
+})
+})
 })
 })
 })
