@@ -1663,6 +1663,47 @@ $('.contactar-2').click(function(e){
     })
   });
 });
+$('.contactar-3').click(function(e){
+  e.preventDefault();
+  $('#popup').load('popups.html #contactar-3', function() {
+    $('#contactar-3').show();
+    $('#contactar-3 button').click(function(e) {
+      e.preventDefault();
+      var message = $('#contactar-2 textarea[name="message"]');
+      var labelmessage = message.siblings('label');
+      var textmessage = $.trim(message.val());
+      var check = $('#contactar-2 input[name="check"]');
+      var labelcheck = check.siblings('label');
+      var checkname= $.trim(check.val());
+      if(textmessage == "") {
+        message.addClass('error');
+        labelmessage.show();
+      } else {
+        message.removeClass('error');
+        labelmessage.hide();
+      }
+      if(checkname.checked=="false") {
+        check.addClass('error');
+        labelcheck.show();
+      } else {
+        check.removeClass('error');
+        labelcheck.hide();
+      }
+    });
+    $('.close').click(function(e){
+      $('.masc:visible').hide();
+    });
+    $('.show-gracias-contactar').click(function(e) {
+      e.preventDefault();
+      $('#popup').load('popups.html #gracias-contactar', function() {
+        $('#gracias-contactar').show();
+        $('.close').click(function(e) {
+          $('.masc:visible').hide();
+        })
+      })
+    })
+  });
+});
 $('.modificar-curso').click(function(e){
   e.preventDefault();
   $('#popup').load('popups.html #modificar-curso', function() {
@@ -1780,6 +1821,91 @@ $('.valorar').click(function(e){
 
      }
    });
+    $('.show-gracias-contactar').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-contactar', function() {
+    $('#gracias-contactar').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
+  })
+  })
+  });
+});
+$('.valorar-2').click(function(e){
+  e.preventDefault();
+  $('#popup').load('popups.html #valorar-2', function() {
+    $('#valorar-2').show();
+    $('.close').click(function(e){
+      $('.masc:visible').hide();
+    });
+    $( "li.primera-estrella" ).click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("estrella-inactiva")){
+        $(this).addClass("estrella-activa");
+        $(this).removeClass("estrella-inactiva");
+      }else{
+        $(this).nextAll().addClass("estrella-inactiva");
+      }
+    });
+
+    $( "li.segunda-estrella" ).click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("estrella-inactiva")){
+        $(this).addClass("estrella-activa");
+        $(this).removeClass("estrella-inactiva");
+        $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
+      }else{
+
+        $(this).nextAll().addClass("estrella-inactiva");
+      }
+    });
+    $( "li.tercera-estrella" ).click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("estrella-inactiva")){
+        $(this).addClass("estrella-activa");
+        $(this).removeClass("estrella-inactiva");
+        $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
+      }else{
+
+       $(this).nextAll().addClass("estrella-inactiva");
+     }
+   });
+    $( "li.cuarta-estrella" ).click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("estrella-inactiva")){
+        $(this).addClass("estrella-activa");
+        $(this).removeClass("estrella-inactiva");
+        $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
+      }else{
+       $(this).nextAll().addClass("estrella-inactiva");
+
+     }
+   });
+    $( "li.quinta-estrella" ).click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("estrella-inactiva")){
+        $(this).addClass("estrella-activa");
+        $(this).removeClass("estrella-inactiva");
+        $(this).prevAll().addClass("estrella-activa");
+        $(this).prevAll().removeClass("estrella-inactiva");
+      }else{
+       $(this).nextAll().addClass("estrella-inactiva");
+
+     }
+   });
+    $('.show-gracias-contactar2').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-contactar-2', function() {
+    $('#gracias-contactar').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
+  })
+   })
   });
 });
 })

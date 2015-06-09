@@ -310,6 +310,9 @@
         margin: 0 auto;
         width: 70%;
     }
+     .menu-ordenar li{
+        float:left;
+    }
 }
 
 @media screen and (min-width: 1118px) {
@@ -321,13 +324,15 @@
         padding-top: 60px;
         width: 50%;
     }
+      .menu-ordenar li{
+        float:left;
+    }
 }
 
 @media screen and (max-width: 966px){
     .filtros {
         display: none;
     }
-
     .todos-anuncios{
         float: none;
         width: 100%;
@@ -372,7 +377,7 @@
     .ordenar-title{
         display: block;
     }
-
+    
     .container-button-title{
         float: none;
         margin: 0 0 20px 20px;
@@ -390,6 +395,10 @@
     .ordenar-title {
         display: none;
     }
+    .container-ordenar-mobile{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 641px){
@@ -399,6 +408,13 @@
     .foto-alumno{
         display: none;
     }
+    .menu-ordenar li{
+        float:none;
+    }
+    .container-ordenar-mobile{
+        margin:0 auto;
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 470px){
@@ -406,8 +422,11 @@
     .grupo-iconos{
         width: 100%;
     }
+    .container-ordenar-mobile,
+    .menu-ordenar,
     .ordenar-title{
         display: none;
     }
+
 }
 

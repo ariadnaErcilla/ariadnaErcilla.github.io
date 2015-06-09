@@ -517,7 +517,10 @@ body {
   .cabecera-alumnos {
     padding-top: 60px;
     margin: 0 auto;
-    width: 70%; } }
+    width: 70%; }
+
+  .menu-ordenar li {
+    float: left; } }
 @media screen and (min-width: 1118px) {
   .cabecera-cursos {
     padding-top: 60px;
@@ -525,7 +528,10 @@ body {
 
   .cabecera-alumnos {
     padding-top: 60px;
-    width: 50%; } }
+    width: 50%; }
+
+  .menu-ordenar li {
+    float: left; } }
 @media screen and (max-width: 966px) {
   .filtros {
     display: none; }
@@ -575,18 +581,30 @@ body {
     padding-top: 0; } }
 @media screen and (min-width: 801px) {
   .ordenar-title {
+    display: none; }
+
+  .container-ordenar-mobile {
     display: none; } }
 @media screen and (max-width: 641px) {
   .image-container,
   .img-curso,
   .foto,
   .foto-alumno {
-    display: none; } }
+    display: none; }
+
+  .menu-ordenar li {
+    float: none; }
+
+  .container-ordenar-mobile {
+    margin: 0 auto;
+    width: 50%; } }
 @media screen and (max-width: 470px) {
   .lista-categorias ul,
   .grupo-iconos {
     width: 100%; }
 
+  .container-ordenar-mobile,
+  .menu-ordenar,
   .ordenar-title {
     display: none; } }
 /*botones*/
@@ -1686,7 +1704,6 @@ td {
   padding: 0; }
 
 .menu-ordenar li {
-  float: left;
   list-style: none;
   margin: 30px; }
 
