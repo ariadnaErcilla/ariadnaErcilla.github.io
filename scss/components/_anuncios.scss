@@ -324,7 +324,7 @@
         padding-top: 60px;
         width: 50%;
     }
-      .menu-ordenar li{
+    .menu-ordenar li{
         float:left;
     }
 }
@@ -410,10 +410,10 @@
     }
     .menu-ordenar li{
         float:none;
+        text-align:right;
     }
     .container-ordenar-mobile{
-        margin:0 auto;
-        width: 50%;
+        float:right;
     }
 }
 

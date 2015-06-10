@@ -149,6 +149,9 @@
     .imagen-ilustraciones{
         width: 55%;
     }
+    .imagen-ilustraciones-2{
+         width: 55%;
+    }
     .botton{
         margin: 0 auto;
         width: 85%;
@@ -158,12 +161,17 @@
 
 @media all and (min-width: 600px) {
     section.mini-box-1,
-    section.mini-box-2,
-    section.mini-box-3{
+    section.mini-box-2{
         text-align: center;
         padding: 30px 10px 5px;
         float: left;
-        width: 33%;
+        width: 50%;
+    }
+
+    section.mini-box-3{
+        width:50%;
+        margin:0 auto;
+
     }
     .botton{
         width: 35%;
