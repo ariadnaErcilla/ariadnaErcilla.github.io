@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   /*filtros-responsive*/
   $('#abrir-filtros').click(function(e){
@@ -730,6 +729,10 @@ $('.show-publicardud-2').click(function(e){
 $('.show-contactar-2').click(function(e){
   e.preventDefault();
   $($('#contactar-2')[0]).show();
+});
+$('.show-registro-valorar').click(function(e){
+  e.preventDefault();
+  $($('#registro-valorar')[0]).show();
 });
 /*show-consejos*/
 $('.abrir-consejos').click(function(e){
@@ -1821,16 +1824,58 @@ $('.valorar').click(function(e){
 
      }
    });
-    $('.show-gracias-contactar').click(function(e) {
-  e.preventDefault();
-  $('#popup').load('popups.html #gracias-contactar', function() {
-    $('#gracias-contactar').show();
-    $('.close').click(function(e) {
+    $('.show-registro-valorar').click(function(e) {
+      e.preventDefault();
+      $('#popup').load('popups.html #registro-contactar', function() {
+        $('#registro-valorar').show();
+        $('#registro-valorar button').click(function(e) {
+          e.preventDefault();
+          var email = $('#registro-contactar input[name="email"]');
+          var label = email.siblings('label');
+          var passwordname = $('#registro-contactar input[name="password"]');
+          var labelpass = passwordname.siblings('label');
+          var password = $.trim(passwordname.val());
+          var name = $('#registro-contactar input[name="personal"]');
+          var labelname = name.siblings('label');
+          var personalname = $.trim(name.val());
+          if(personalname== "") {
+            name.addClass('error');
+            labelname.show();
+          } else {
+            name.removeClass('error');
+            labelname.hide();
+          }
+          if(validateEmail(email.val())) {
+            email.removeClass('error');
+            label.hide();
+          } else {
+            email.addClass('error');
+            label.show();
+          }
+          if(password.length >= 4 && password.length <= 15) {
+            passwordname.removeClass('error');
+            labelpass.hide();
+          } else {
+            passwordname.addClass('error');
+            labelpass.show();
+          }
+        });
+$('.close').click(function(e){
       $('.masc:visible').hide();
+    });
+$('.show-gracias-contactar').click(function(e) {
+      e.preventDefault();
+      $('#popup').load('popups.html #gracias-contactar', function() {
+        $('#gracias-contactar').show();
+        $('.close').click(function(e) {
+          $('.masc:visible').hide();
     })
+
   })
-  })
-  });
+})
+})
+})
+});
 });
 $('.valorar-2').click(function(e){
   e.preventDefault();
