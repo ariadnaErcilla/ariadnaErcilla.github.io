@@ -228,6 +228,7 @@ $(document).ready(function(){
     $('.popular').addClass('selection');
     $('.menu-ordenar a:not(.popular').removeClass('selection');
   });
+  
   $('a.puntuado').click(function(e) {
     e.preventDefault();
     tinysort('ul.anuncios>li',{data:'puntuacion', order:'desc'});
