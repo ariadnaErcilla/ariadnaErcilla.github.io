@@ -1672,10 +1672,10 @@ $('.contactar-3').click(function(e){
     $('#contactar-3').show();
     $('#contactar-3 button').click(function(e) {
       e.preventDefault();
-      var message = $('#contactar-2 textarea[name="message"]');
+      var message = $('#contactar-3 textarea[name="message"]');
       var labelmessage = message.siblings('label');
       var textmessage = $.trim(message.val());
-      var check = $('#contactar-2 input[name="check"]');
+      var check = $('#contactar-3 input[name="check"]');
       var labelcheck = check.siblings('label');
       var checkname= $.trim(check.val());
       if(textmessage == "") {
@@ -1826,16 +1826,16 @@ $('.valorar').click(function(e){
    });
     $('.show-registro-valorar').click(function(e) {
       e.preventDefault();
-      $('#popup').load('popups.html #registro-contactar', function() {
+      $('#popup').load('popups.html #registro-valorar', function() {
         $('#registro-valorar').show();
         $('#registro-valorar button').click(function(e) {
           e.preventDefault();
-          var email = $('#registro-contactar input[name="email"]');
+          var email = $('#registro-valorar input[name="email"]');
           var label = email.siblings('label');
-          var passwordname = $('#registro-contactar input[name="password"]');
+          var passwordname = $('#registro-valorar input[name="password"]');
           var labelpass = passwordname.siblings('label');
           var password = $.trim(passwordname.val());
-          var name = $('#registro-contactar input[name="personal"]');
+          var name = $('#registro-valorar input[name="personal"]');
           var labelname = name.siblings('label');
           var personalname = $.trim(name.val());
           if(personalname== "") {
