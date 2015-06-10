@@ -235,7 +235,7 @@ $(document).ready(function(){
     $('.menu-ordenar a:not(.puntuado').removeClass('selection');
   });
   /*pestanyas*/
-    $('.pestanya-1').click(function() {
+  $('.pestanya-1').click(function() {
     $('.option-1').show();
     $('.option-3').hide();
     $('.option-4').hide();
@@ -534,7 +534,7 @@ $(document).ready(function(){
   $( ".boton-eliminar-6" ).click(function(e){
     $(".contenedor-eliminar-6").hide();
   });
-   $( ".boton-eliminar-7" ).click(function(e){
+  $( ".boton-eliminar-7" ).click(function(e){
     $(".contenedor-eliminar-7").hide();
   });
   $( ".boton-eliminar-8" ).click(function(e){
@@ -1040,6 +1040,53 @@ $('.show-registro-curso').click(function(e) {
 $('.close').click(function(e) {
   $('.masc:visible').hide();
 })
+$('.show-gracias-curso').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-curso', function() {
+    $('#gracias-curso').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
+    $('.show-registro-curso').click(function(e) {
+      e.preventDefault();
+      $('#popup').load('popups.html #registro-curso', function() {
+        $('#registro-curso').show();
+        $('#registro-curso button').click(function(e) {
+          e.preventDefault();
+          var email = $('#registro-curso input[name="email"]');
+          var label = email.siblings('label');
+          var passwordname = $('#registro-curso input[name="password"]');
+          var labelpass = passwordname.siblings('label');
+          var password = $.trim(passwordname.val());
+          var name = $('#registro-curso input[name="personal"]');
+          var labelname = name.siblings('label');
+          var personalname = $.trim(name.val());
+          if(personalname== "") {
+            name.addClass('error');
+            labelname.show();
+          } else {
+            name.removeClass('error');
+            labelname.hide();
+          }
+          if(validateEmail(email.val())) {
+            email.removeClass('error');
+            label.hide();
+          } else {
+            email.addClass('error');
+            label.show();
+          }
+          if(password.length >= 4 && password.length <= 15) {
+            passwordname.removeClass('error');
+            labelpass.hide();
+          } else {
+            passwordname.addClass('error');
+            labelpass.show();
+
+          }
+        });
+$('.close').click(function(e) {
+  $('.masc:visible').hide();
+})
 $('.show-login-curso').click(function(e) {
   e.preventDefault();
   $('#popup').load('popups.html #login-curso', function() {
@@ -1077,57 +1124,10 @@ $('.show-login-curso').click(function(e) {
         $('.close').click(function(e) {
           $('.masc:visible').hide();
         })
-        $('.show-registro-curso').click(function(e) {
-          e.preventDefault();
-          $('#popup').load('popups.html #registro-curso', function() {
-            $('#registro-curso').show();
-            $('#registro-curso button').click(function(e) {
-              e.preventDefault();
-              var email = $('#registro-curso input[name="email"]');
-              var label = email.siblings('label');
-              var passwordname = $('#registro-curso input[name="password"]');
-              var labelpass = passwordname.siblings('label');
-              var password = $.trim(passwordname.val());
-              var name = $('#registro-curso input[name="personal"]');
-              var labelname = name.siblings('label');
-              var personalname = $.trim(name.val());
-              if(personalname== "") {
-                name.addClass('error');
-                labelname.show();
-              } else {
-                name.removeClass('error');
-                labelname.hide();
-              }
-              if(validateEmail(email.val())) {
-                email.removeClass('error');
-                label.hide();
-              } else {
-                email.addClass('error');
-                label.show();
-              }
-              if(password.length >= 4 && password.length <= 15) {
-                passwordname.removeClass('error');
-                labelpass.hide();
-              } else {
-                passwordname.addClass('error');
-                labelpass.show();
 
-              }
-            });
-$('.close').click(function(e) {
-  $('.masc:visible').hide();
-})
-$('.show-gracias-curso').click(function(e) {
-  e.preventDefault();
-  $('#popup').load('popups.html #gracias-curso', function() {
-    $('#gracias-curso').show();
-    $('.close').click(function(e) {
-      $('.masc:visible').hide();
+      })
     })
-
   })
-})
-})
 })
 })
 })
@@ -1696,10 +1696,182 @@ $('.contactar-3').click(function(e){
     $('.close').click(function(e){
       $('.masc:visible').hide();
     });
-    $('.show-gracias-contactar').click(function(e) {
+    $('.show-registro-contactar').click(function(e) {
       e.preventDefault();
-      $('#popup').load('popups.html #gracias-contactar', function() {
-        $('#gracias-contactar').show();
+      $('#popup').load('popups.html #registro-contactar', function() {
+        $('#registro-contactar').show();
+        $('#registro-contactar button').click(function(e) {
+          e.preventDefault();
+          var email = $('#registro-contactar input[name="email"]');
+          var label = email.siblings('label');
+          var passwordname = $('#registro-contactar input[name="password"]');
+          var labelpass = passwordname.siblings('label');
+          var password = $.trim(passwordname.val());
+          var name = $('#registro-contactar input[name="personal"]');
+          var labelname = name.siblings('label');
+          var personalname = $.trim(name.val());
+          if(personalname== "") {
+            name.addClass('error');
+            labelname.show();
+          } else {
+            name.removeClass('error');
+            labelname.hide();
+          }
+          if(validateEmail(email.val())) {
+            email.removeClass('error');
+            label.hide();
+          } else {
+            email.addClass('error');
+            label.show();
+          }
+          if(password.length >= 4 && password.length <= 15) {
+            passwordname.removeClass('error');
+            labelpass.hide();
+          } else {
+            passwordname.addClass('error');
+            labelpass.show();
+          }
+        });
+$('.close').click(function(e) {
+  $('.masc:visible').hide();
+})
+$('.show-gracias-contactar').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-contactar', function() {
+    $('#gracias-contactar').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
+    $('.show-login-contactar').click(function(e) {
+      e.preventDefault();
+      $('#popup').load('popups.html #login-contactar', function() {
+        $('#login-contactar').show();
+        $('#login-contactar button').click(function(e) {
+          e.preventDefault();
+          var email = $('#login-contactar input[name="email"]');
+          var label = email.siblings('label');
+          var passwordname = $(' #login-contactar input[name="password"]');
+          var labelpass = passwordname.siblings('label');
+          var password = $.trim(passwordname.val());
+          if(validateEmail(email.val())) {
+            email.removeClass('error');
+            label.hide();
+          } else {
+            email.addClass('error');
+            label.show();
+          }
+          if(password.length >= 4 && password.length <= 15) {
+            passwordname.removeClass('error');
+            labelpass.hide();
+          } else {
+            passwordname.addClass('error');
+            labelpass.show();
+          }
+        });
+        $('.close').click(function(e) {
+          $('.masc:visible').hide();
+        })
+        $('.show-gracias-contactar').click(function(e) {
+          e.preventDefault();
+          $('#popup').load('popups.html #gracias-contactar', function() {
+            $('#gracias-contactar').show();
+            $('.close').click(function(e) {
+              $('.masc:visible').hide();
+            })
+            $('.show-registro-contactar').click(function(e) {
+              e.preventDefault();
+              $('#popup').load('popups.html #registro-contactar', function() {
+                $('#registro-contactar').show();
+                $('#registro-contactar button').click(function(e) {
+                  e.preventDefault();
+                  var email = $('#registro-contactar input[name="email"]');
+                  var label = email.siblings('label');
+                  var passwordname = $('#registro-contactar input[name="password"]');
+                  var labelpass = passwordname.siblings('label');
+                  var password = $.trim(passwordname.val());
+                  var name = $('#registro-contactar input[name="personal"]');
+                  var labelname = name.siblings('label');
+                  var personalname = $.trim(name.val());
+                  if(personalname== "") {
+                    name.addClass('error');
+                    labelname.show();
+                  } else {
+                    name.removeClass('error');
+                    labelname.hide();
+                  }
+                  if(validateEmail(email.val())) {
+                    email.removeClass('error');
+                    label.hide();
+                  } else {
+                    email.addClass('error');
+                    label.show();
+                  }
+                  if(password.length >= 4 && password.length <= 15) {
+                    passwordname.removeClass('error');
+                    labelpass.hide();
+                  } else {
+                    passwordname.addClass('error');
+                    labelpass.show();
+                  }
+                });
+$('.close').click(function(e) {
+  $('.masc:visible').hide();
+})
+$('.show-gracias-contactar').click(function(e) {
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-contactar', function() {
+    $('#gracias-contactar').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
+    })
+  })
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+});
+});
+$('.contactar-4').click(function(e){
+  e.preventDefault();
+  $('#popup').load('popups.html #contactar-4', function() {
+    $('#contactar-4').show();
+    $('#contactar-4 button').click(function(e) {
+      e.preventDefault();
+      var message = $('#contactar-4 textarea[name="message"]');
+      var labelmessage = message.siblings('label');
+      var textmessage = $.trim(message.val());
+      var check = $('#contactar-4 input[name="check"]');
+      var labelcheck = check.siblings('label');
+      var checkname= $.trim(check.val());
+      if(textmessage == "") {
+        message.addClass('error');
+        labelmessage.show();
+      } else {
+        message.removeClass('error');
+        labelmessage.hide();
+      }
+      if(checkname.checked=="false") {
+        check.addClass('error');
+        labelcheck.show();
+      } else {
+        check.removeClass('error');
+        labelcheck.hide();
+      }
+    });
+    $('.close').click(function(e){
+      $('.masc:visible').hide();
+    });
+    $('.show-gracias-contactar2').click(function(e) {
+      e.preventDefault();
+      $('#popup').load('popups.html #gracias-contactar2', function() {
+        $('#gracias-contactar2').show();
         $('.close').click(function(e) {
           $('.masc:visible').hide();
         })
@@ -1861,14 +2033,14 @@ $('.valorar').click(function(e){
           }
         });
 $('.close').click(function(e){
-      $('.masc:visible').hide();
-    });
+  $('.masc:visible').hide();
+});
 $('.show-gracias-contactar').click(function(e) {
-      e.preventDefault();
-      $('#popup').load('popups.html #gracias-contactar', function() {
-        $('#gracias-contactar').show();
-        $('.close').click(function(e) {
-          $('.masc:visible').hide();
+  e.preventDefault();
+  $('#popup').load('popups.html #gracias-contactar', function() {
+    $('#gracias-contactar').show();
+    $('.close').click(function(e) {
+      $('.masc:visible').hide();
     })
 
   })
@@ -1943,14 +2115,14 @@ $('.valorar-2').click(function(e){
      }
    });
     $('.show-gracias-contactar2').click(function(e) {
-  e.preventDefault();
-  $('#popup').load('popups.html #gracias-contactar-2', function() {
-    $('#gracias-contactar').show();
-    $('.close').click(function(e) {
-      $('.masc:visible').hide();
+      e.preventDefault();
+      $('#popup').load('popups.html #gracias-contactar-2', function() {
+        $('#gracias-contactar').show();
+        $('.close').click(function(e) {
+          $('.masc:visible').hide();
+        })
+      })
     })
-  })
-   })
   });
 });
 })
